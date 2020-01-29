@@ -1,4 +1,4 @@
-package variables;
+package d200128;
 
 public class TypeEx {
 	public static void main(String[] args) {
