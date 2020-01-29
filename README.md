@@ -1,9 +1,8 @@
 # java-2020-academy
 
-## Java 2020 Academy lectures
+##Java 2020 Academy lectures
 
-### 2020. 1. 28. 부터 2020. ?. ?.
-
+###2020. 1. 28. 부터 2020. ?. ?.
 Java의 정석 3rd Edition 교재 기준으로 목차를 구성.
 실습 자료는 날짜별로 패키지가 구성되어 있음.
 진도는 Java의 정석의 목차대로 나가되 교재는 개인적으로 참고하며 복습
