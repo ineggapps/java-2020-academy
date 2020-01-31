@@ -13,6 +13,7 @@ public class OperEx6 {
 		a = sc.nextInt();
 
 		s = a % 2 == 0 ? "Â¦¼ö" : "È¦¼ö";
+		s = (a & 1) == 0 ? "Â¦¼ö" : "È¦¼ö";
 		System.out.println(a + "Àº " + s + "ÀÔ´Ï´Ù.");
 
 		sc.close();
