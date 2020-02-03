@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class FlowEx7 {
 	public static void main(String[] args) {
-		System.out.print("가위, 바위, 보 중 하나를 입력하세요.> ");
+		System.out.print("가위(1), 바위(2), 보(3) 중 하나를 입력하세요.> ");
 		
 		Scanner sc = new Scanner(System.in);
 		int user = sc.nextInt();
