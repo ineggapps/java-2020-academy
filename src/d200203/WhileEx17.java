@@ -32,7 +32,9 @@ public class WhileEx17 {
 //			}
 		}
 		//결과
-		System.out.println();
+		if(cnt%5!=0) {
+			System.out.println();
+		}
 		System.out.print("홀수의 합: "+s);
 		sc.close();
 	}
