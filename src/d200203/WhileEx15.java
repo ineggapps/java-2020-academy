@@ -17,6 +17,7 @@ public class WhileEx15 {
 		//¿¬»ê
 		while(n<num) {
 			n++;
+			System.out.printf("%d+%d=%d%n",s,n,s+n);
 			s+=n;
 		}
 		
