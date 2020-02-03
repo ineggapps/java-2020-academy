@@ -11,4 +11,3 @@ public class WhileEx3 {
 		System.out.println("¹Û:"+n);//11
 	}
 }
-dfsdfsdf
