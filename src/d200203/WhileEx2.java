@@ -5,7 +5,7 @@ public class WhileEx2 {
 		int n;
 		n=0;//초기화가 필요하다
 		while(n<10) {//while(조건) { //조건: true또는 false만 가능하다
-			n++;
+			n+=2;
 			System.out.println("안:"+n);
 			/*
 			 * n<10 n+=2 (n=2 출력) 2회 반복 
