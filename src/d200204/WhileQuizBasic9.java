@@ -1,35 +1,30 @@
 package d200204;
 
 public class WhileQuizBasic9 {
-	//TODO: 면접 기출
-	//피보나치수열 1+1+2+3+5+8+13+21
+	// TODO: 면접 기출
+	// 피보나치수열 1+1+2+3+5+8+13+21
 	public static void main(String[] args) {
-		//짜깁기용
-		int a=1,b=1,c,s,n;
-		
-		n=2;
-		s=2;
-		while(n<8) {
-			System.out.println(a+","+b);
-			c=a+b;
-			s+=c;
-			a=b;
-			b=c;
+		// 짜깁기용
+		// 0 1 1 2 3 5 8 13 21 중에서 a=2번째의 1, b=3번째의 1부터 시작.
+		int a = 1, b = 1, c, s, n;
+
+		n = 2;
+		// n=2라는 의미는 피보나치 수열 중 0 1 1 에서 3번째의 값(인덱스가 2)부터 시작한다는 것이다.
+		s = 2;
+		// 합은 피보나치수열의 인덱스가 2인 숫자까지 더한 상태인 2부터 시작한다.
+		while (n < 8) {
+			System.out.println(a + "," + b);
+			// 0 1 1 2 3 5 8 13 21
+			// 위의 피보나치수열에서 c는 2(인덱스가 3)값을 미리 계산하기 위해 a+b를 더한다.
+			c = a + b;
+			// 누적하기 위해 c의 값을 s에 더한다.
+			s += c;
+			// 이전 값은 버려도 되므로 하나씩 오른쪽으로 값을 당긴다.
+			a = b;
+			b = c;
+			// 횟수를 계산하기 위하여 n값에 1을 증가시킨다.
 			n++;
 		}
-		
-//		TODO: 다시 코딩해 보기
-//		int n=1, sum=0;
-//		int prev=0;
-//		
-//		System.out.printf("prev\t\tn\t\tsum\n");
-//		while(n<=21) {
-//			System.out.printf("%d\t\t%d\t\t%d\t\t(n=%d)%n",prev,n,prev+n,n);
-//			sum+=n;
-//			System.out.printf("%d+%d=%d%n",prev,n,n+prev);
-//			n=prev+n;
-//			prev=n;
-//		}
-//		System.out.println("결과: "+sum);
+		System.out.println(s);
 	}
 }
