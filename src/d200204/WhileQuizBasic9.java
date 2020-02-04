@@ -17,6 +17,8 @@ public class WhileQuizBasic9 {
 			b=c;
 			n++;
 		}
+		
+//		TODO: 다시 코딩해 보기
 //		int n=1, sum=0;
 //		int prev=0;
 //		
