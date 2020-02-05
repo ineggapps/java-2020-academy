@@ -3,32 +3,28 @@ package d200205;
 import java.util.Scanner;
 
 public class ForQuizHard1 {
+	//5개의 정수를 입력 받아 입력 받은 정수 중 7에 가장 가까운 수를 출력하는 프로그램을 작성
+	/*
+	 * 1. 5개의 정수는 for문을 이용하여 입력 받는다
+	 * 만약 6과 8처럼 차이가 같은 수인 경우 먼저 입력한 수를 출력한다
+	 * 정수의 입력은 Scanner 클래스의 nextInt()메서드를 이용한다.
+	 * */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int num,apx=0;
-		//받는 수, 가까운 수 저장변수
-		int sub;
-		//특정 수-7
-		System.out.println("5개의 정수를 입력하세요...");
-		for(int i=0;i<5;i++) {
+		int num, num7 = 0;// 입력 수, 입력 수에서 7 빼기
+		int best = 0, best7 = 0;// 가장 가까운 수, 가장 가까운 수에서 7 뺌
+		System.out.println("5개의 숫자를 입력하세요... ");
+		for (int i = 0; i < 5; i++) {
 			num = sc.nextInt();
-			if(i==0) {
-				//처음일 때 apx변수에 num 입력
-				apx=num;
-			}
-			sub=num-7;
-			if(sub==1 || sub==-1) {
-				//처음이 아니면 apx변수와 현재 입력된 num의 변수와 무엇이 더 가까운지 비교할 것
-				//단, 7과의 근삿값이 같다면 먼저 들어온 값을 출력해야 함.
-				//(정수라고 하였으므로 7과의 근삿값은 최솟값이 -1이거나 1이므로 조건을 만족하면 apx변수에 값을 담고 break;
-				apx=num;
-				break;
-			} else if(apx-7>sub) {
-				//근삿값이 갱신되면
-				apx=num;
+			num7 = num - 7;
+			num7 = num7 > 0 ? num7 : -num7; // 절댓값으로 변경
+			if (best7 > num7 || i==0) {
+				best = num;
+				best7 = num - 7;
+				best7 = best7 > 0 ? best7 : -best7;
 			}
 		}
-		System.out.println("7에 가장 가까운 수: "+apx);
+		System.out.println("7에 가장 가까운 수: " + best);
 		sc.close();
 	}
 }
