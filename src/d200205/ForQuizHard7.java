@@ -2,6 +2,7 @@ package d200205;
 
 public class ForQuizHard7 {
 	public static void main(String[] args) {
+		//구구단을 한 줄에 4단씩 출력하는 프로그램
 		int unit = 4;
 		// 2~9단까지의 구구단을 한 줄에 4단씩 출력하는 프로그램을 작성한다.
 		for (int i = 2; i < 10; i += unit) {
