@@ -3,6 +3,8 @@ package d200204;
 import java.util.Scanner;
 
 public class WhileQuizHard8 {
+	//2 이상의 정수를 입력받아 소인수 분해하여 출력하는 프로그램 작성하기
+	//Ex: 60 = 2*2*3*5
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num;//입력 받는 정수를 저장하는 변수
