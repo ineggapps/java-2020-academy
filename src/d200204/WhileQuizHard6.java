@@ -8,14 +8,13 @@ public class WhileQuizHard6 {
 		Scanner sc = new Scanner(System.in);
 		int number = (int) (Math.random() * 100) + 1;
 		int input, cnt = 0;
-		boolean isCorrect = false;
 
-		while (!isCorrect) {
+		while (true) {
 			cnt++;
 			System.out.print("수? ");
 			input = sc.nextInt();
 			if (number == input) {
-				isCorrect = true;
+				break;
 			} else if (number > input) {
 				System.out.println("입력한 수보다는 큰 수 입니다.");
 			} else {
