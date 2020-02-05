@@ -24,15 +24,15 @@ public class WhileQuizHard3A {
 		}
 		
 		//최대공약수 연산
-		r1=num1%num2;
-		r2=num2%r1;
-		while(r2!=0) {
-			tmp=r1;
-			r1=r2;
-			r2=tmp%r1;
-		}
-		gcd=r1;
-		lcm=num1*num2/gcd;
+//		r1=num1%num2;
+//		r2=num2%r1;
+//		while(r2!=0) {
+//			tmp=r1;
+//			r1=r2;
+//			r2=tmp%r1;
+//		}
+//		gcd=r1;
+//		lcm=num1*num2/gcd;
 		
 		//출력
 		System.out.printf("GCD(최대공약수): %d%n", gcd);
