@@ -13,10 +13,10 @@ public class WhileQuizHard3B {
 
 		// 입력
 		System.out.print("두 수 ? ");
-		num1 = sc.nextInt();//32
-		num2 = sc.nextInt();//72
-//		num1=1071;
-//		num2=1029;
+//		num1 = sc.nextInt();//32
+//		num2 = sc.nextInt();//72
+		num1=1071;
+		num2=1029;
 		
 		//연산 편의를 위해 오름차순 정렬
 		//대소 판별 (num1<num2)로 정렬
@@ -27,14 +27,15 @@ public class WhileQuizHard3B {
 		}
 		
 		//최대공약수 연산
-		//TODO: (미해결)
 		/*
 			방법2: 두 정수 a,b에 대해서 a>b일 경우 a=a-b를, a<b의 경우 b=b-a를 a==b가 될 때가지 반복하면 그 수가 최대공약수가 된다.
 		*/
-		a=num2;
-		b=num1;
-		while(b==0) {
+		a=num2;//1071
+		b=num1;//1029
+		while(b!=0) {
+			System.out.println(a);
 			a-=b;
+			System.out.println(a);
 			if(a<0) {
 				a+=b;
 				tmp=a;
