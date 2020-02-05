@@ -13,8 +13,9 @@ public class HapEx {
 				System.out.print("1. 합, 2.홀수의 합, 3.짝수의 합, 4.종료 => ");
 				ch = sc.nextInt();
 			} while (ch < 1 || ch > 4);
-			if (ch == 4)
+			if (ch == 4) {
 				break;
+			}
 
 			System.out.print("원하는 수: ");
 			num = sc.nextInt();
