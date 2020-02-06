@@ -1,0 +1,187 @@
+■ 자바 테스트
+
+오류인 경우 컴파일 오류인지 런타임 오류 인지와 이유를 간단히 기술하세요
+
+1] 다음 실행 결과는 ?
+int value=0;
+boolean setting = true;
+float f=0;
+if (value || (setting && f == 0)) { System.out.println("1"); }
+if (value == 1 & f==0) { System.out.println("2"); }
+
+답안: 컴파일 오류
+if (value || (setting && f == 0)) { System.out.println("1"); }
+★ 위의 문장에서 value는 boolean형이아니다.
+조건식에는 항상 논리형만 올 수 있다. 
+
+2] 다음 실행 결과는 ?
+int x =5;
+boolean b1 = true;
+boolean b2 = false;
+
+if((x==4) && !b2) 
+  System.out.print("1 ");
+System.out.print("2 ");
+if ((b2 = true) && b1)
+  System.out.print("3 ");
+
+답안:23
+
+
+3] 다음의 실행 결과는 ?
+int i = 1;
+int j = i++;
+if((i == ++j) | (i++ == j)) {
+    i += j;
+}
+System.out.println("i = " + i);
+
+답안: i = 5
+
+4] 다음의 실행 결과는 ?
+int i = 0, j = 1;
+if((i++ == 0) || (j++ == 2)) {
+    i = 42;
+}
+System.out.println("i = " + i + ", j = " + j);
+
+답안: i = 42, j = 1
+
+
+5] 다음 실행 결과는 ?
+public class Test {
+  public static void main(String [] args){
+    int a=2;
+    switch(a){
+      case 1:
+        System.out.println("*");
+      case 2:
+        System.out.println("**");
+      case default:
+        System.out.println("#");
+      case 3:
+        System.out.println("***");
+    }
+  }
+}
+
+답안: 컴파일 오류
+★ case 조건값: default: 가 되어야 한다.
+
+6] 다음 실행 결과는 ?
+int a=0, s=0;
+while(a++ <= 9) {
+    s+=a;
+}
+System.out.println("a:"+a+", s:"+s);
+
+답: a:11, s:55
+
+7] 1~100까지의 3의 배수의 합을 구하는 프로그램입니다. [   ]를 채우세요.
+int [         ];
+for([                 ]) {
+   s+=n;
+}
+System.out.println("결과 : " + s);
+
+답안:
+int s=0;
+for(int n=1;n<=100;n++){
+  s+=n;
+}
+System.out.println("결과 : " + s);
+
+8] 1~100까지의 홀수의 합을 구하는 프로그램입니다. [   ]를 채우세요.
+int s, n;
+s=0;
+[                ];
+while([                   ]) {
+    s+=n;
+    [                   ];
+}
+System.out.println("결과 : " + s);
+
+답안:
+int s,n;
+s=0;
+n=1;
+while(n<=100){
+  s+=n;
+  n++;
+}
+System.out.println("결과 : " + s);
+
+9] 다음 실행 결과는 ?
+int x = 0;
+int y = 10;
+do {
+   y--;
+   ++x;
+}while(x < 5);
+System.out.print(x + "," + y);
+
+답안:5,5
+
+
+10] 다음 실행 결과는 ?
+int x=12;
+while (x < 10) {
+    x--;
+}
+System.out.print(x);
+
+답안:12
+
+11] 다음의 코드에서 37 라인의 실행 회수는 ?
+35. int x = 10;
+36. do {
+37.  x--;
+38. }while(x < 10);
+
+가. 10번
+나. 한 번도 실행되지 않음
+다. 한 번에서 9번까지
+라. 10번 이상
+
+답안:라
+처음 진입했을 때 x--; 구문에 의해 x는 9가 되고 
+while 조건식에서 9<10이므로 조건식을 만족한다.
+따라서 오버플로가 발생할 때까지 지속적으로 실행되므로
+최소 10번 이상 실행된다.
+
+12] 다음 실행 결과는 ?
+for (int i=0; i<=10; i++){
+    if( i>6) break;
+}
+System.out.println(i);
+
+답안:★컴파일 오류
+i가 7일 때 if의 조건식인 7>6을 만족하므로
+break;구문에 의해 for문 바깥으로 빠져나간다고 생각할 수 있겠지만
+i는 for문 안에서만 사용되도록 정의되었기 때문에 for문 블록 바깥에서 사용할 수 없다.
+
+13] 실행결과는 ?
+int s=0, i;
+for (i=2; i<=10; i+=2){
+    s+=i;
+}
+System.out.print(i + "," + s);
+
+답안:12,30
+
+
+14] 다음 실행 결과는 ?
+String o="";
+z:
+for(int x=0; x<3; x++) {
+    for(int y=0; y<2; y++) {
+        if(x==1) break;
+        if(x==2 && y==1) break z;
+       o=o+x+y;
+    }
+}
+System.out.println(o);
+
+답안:★000120
+for(int y~)블록 안에 if문과 연산하는 문장이 있다.
+정렬 후 유심히 볼 것

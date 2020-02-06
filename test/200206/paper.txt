@@ -1,0 +1,248 @@
+■ 자바 테스트
+
+오류인 경우 컴파일 오류인지 런타임 오류 인지 기술하세요
+
+1] 다음 실행 결과는 ?
+int value=0;
+boolean setting = true;
+float f=0;
+if (value || (setting && f == 0)) { System.out.println("1"); }
+if (value == 1 & f==0) { System.out.println("2"); }
+
+답안: 컴파일오류
+if (value || (setting && f == 0)) { System.out.println("1"); }
+★논리연산에서는 boolean형만 올 수 있다.
+
+2] 다음 실행 결과는 ?
+int x =5;
+boolean b1 = true;
+boolean b2 = false;
+
+if((x==4) && !b2) 
+  System.out.print("1 ");
+System.out.print("2 ");
+if ((b2 = true) && b1)
+  System.out.print("3 ");
+
+
+3] 다음의 실행 결과는 ?
+int i = 1;
+int j = i++;
+if((i == ++j) | (i++ == j)) {
+    i += j;
+}
+System.out.println("i = " + i);
+
+
+4] 다음의 실행 결과는 ?
+int i = 0, j = 1;
+if((i++ == 0) || (j++ == 2)) {
+    i = 42;
+}
+System.out.println("결과:" + i + j);
+
+
+5] 다음 실행 결과는 ?
+public class Test {
+  public static void main(String [] args){
+    int a=2;
+    switch(a){
+      case 1:
+        System.out.println("*");
+      case 2:
+        System.out.println("**");
+      case default:
+        System.out.println("#");
+      case 3:
+        System.out.println("***");
+    }
+  }
+}
+
+
+6] 다음 실행 결과는 ?
+int a=0, s=0;
+while(a++ <= 9) {
+    s+=a;
+}
+System.out.println("a:"+a+", s:"+s);
+
+
+7] 다음 실행 결과는 ?
+int x = 0;
+int y = 10;
+while(x++ < 5) {
+   y--;
+   ++x;
+}
+System.out.print(x + "," + y);
+
+
+8] 다음 실행 결과는 ?
+int x=12;
+while (x < 10) {
+    x--;
+}
+System.out.print(x);
+
+
+9] 다음의 코드에서 37 라인의 실행 회수는 ?
+35. int x = 10;
+36. while(x <= 10) {
+37.  x--;
+38. }
+
+가. 10번
+나. 한 번도 실행되지 않음
+다. 한 번에서 9번까지
+라. 10번 이상
+
+
+10] 다음 실행 결과는 ?
+int a;
+a='0'+17;
+System.out.printf("%1$d %1$c\n", a);
+
+
+11] 다음의 실행 결과는 ?
+String s="ko", str;
+switch(s) {
+case "en" : str = "영어"; break;
+case "ko" : str = "한국어"; break;
+case "fr" : str = "프랑스어"; break;
+}
+System.out.println(str);
+
+
+12] 다음의 결과는 ?
+int a=13;
+String s;
+if(a&1==1)
+	s="홀수";
+else
+	s="짝수";
+System.out.println(s);	
+
+
+13] 다음 실행 결과는 ?
+int a=10, b=10;
+int c;
+c=a++>10 ? ++b : b++;
+System.out.println(a+","+b+","+c);
+
+
+14] 다음 결과는 ?
+byte a=67;
+char b=(char)a;
+System.out.println(b);
+
+
+15] 다음 결과는 ?
+short a=12, b=6, c;
+c=a|b;
+System.out.println(c);
+
+
+16] 다음 결과는 ?
+float a='C';
+System.out.println(a);
+
+
+17] 다음 결과는 ?
+int a=65;
+System.out.printf("%c", a);
+
+
+18] 다음 결과는 ?
+char a='A';
+System.out.printf("%d", a);
+
+
+19] 다음 결과는 ?
+System.out.println(('A'+10) + " : " + ('A'+'0'));
+
+
+20] 다음 실행 결과는 ?
+String s = '0' + 9 + "Hello";
+System.out.println(s);
+
+
+21] 다음중 올바른것을 모두 고르면 ?
+가. float foo = 0;
+나. float foo = 1.0;
+다. float foo = 42e2;
+라. float foo = 1.2e-04f;
+마. float foo = 3.03d;
+바. float foo = 0123;
+사. float foo = 'X';
+
+
+22] 다음의 실행 결과는 ?
+char a=65;
+a=a+2;
+System.out.println(a);
+
+
+23] 다음의 실행 결과는 ?
+int a=0b102;
+char b='A';
+b+=a;
+System.out.println(b);
+
+
+24] 다음의 실행 결과는 ?
+char a=65;
+a+=2;
+System.out.println(++a);
+
+
+25] 다음의 실행 결과는 ?
+float a=5.2f;
+char b='A';
+b+=a;
+System.out.println(b);
+
+
+26] 다음중 올바른것을 모두 고르면 ?
+  가. String name# = "자바";
+  나. int $123=24;
+  다. double _height = 123.5;
+  라. double ~temp = 37.5;
+  마. int 총점 = 0;
+  사. int a123b = 0;
+  아. float a=0.0;
+
+
+27] 다음의 실행 결과는 ?
+double a=14.0%4.5;
+System.out.println(a);
+
+
+28] 다음의 실행 결과는 ?
+String s = "Hello" + 9 + 'A';
+System.out.println(s);
+
+
+29] 다음의 실행 결과는 ?
+double a=32;
+a<<=3;
+System.out.println(a);
+
+
+30] 다음의 실행 결과는 ?
+int a;
+System.out.println("a:"+a);
+
+
+31] 다음의 실행 결과는 ?
+int a=32;
+a>>=2;
+System.out.println(a);
+
+
+32] 다음의 실행 결과는 ?
+System.out.printf("%.0f\n", 123.536);
+
+
+33] 자바의 기본 자료 형(primitive Type) 8가지와 각 자료형의 byte 수를 쓰시오.
+
