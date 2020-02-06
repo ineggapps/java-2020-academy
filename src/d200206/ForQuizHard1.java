@@ -34,16 +34,25 @@ public class ForQuizHard1 {
 				System.out.println("보");
 			}
 			
-			
-			
 			// user와 com이랑 비교하여 누가 이겼는지 출력하기
 			if(user==com) {
 				System.out.println("비겼습니다.");
-			}else if(user-com==1 || user-com==-2) {
+			}else if(
+					(user==1&&com==3)||
+					(user==2&&com==1)||
+					(user==3&&com==2)
+			) {
 				System.out.println("당신이 이겼습니다.");
 			}else {//user-com==2 혹은 -1
 				System.out.println("당신이 졌습니다.");
 			}
+//			if(user==com) {
+//				System.out.println("비겼습니다.");
+//			}else if(user-com==1 || user-com==-2) {
+//				System.out.println("당신이 이겼습니다.");
+//			}else {//user-com==2 혹은 -1
+//				System.out.println("당신이 졌습니다.");
+//			}
 		}
 
 		sc.close();
