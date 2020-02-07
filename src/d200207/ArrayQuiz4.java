@@ -46,8 +46,8 @@ public class ArrayQuiz4 {
 		}
 		tot++; //현재 월의 1일을 카운트
 		startDay = tot%7;//시작하는 날의 값
-//		System.out.println(month[m-1]+"(말일)까지 있음");
-//		System.out.println(tot+"시작일은 " + tot%7 +" " + week[tot%7]);
+		System.out.println(month[m-1]+"(말일)까지 있음");
+		System.out.println(tot+"시작일은 " + tot%7 +" " + week[tot%7]);
 		System.out.printf("%d년 %d월\n",y,m);
 		for(String i: week) {
 			System.out.printf("%s\t\t",i);
@@ -55,6 +55,8 @@ public class ArrayQuiz4 {
 		System.out.println("\n==========================================");
 		//달력은 7일 단위로 줄바꿈을 하니까 7은 literal값으로 사용할게!
 		int day=1;
+		/*
+		#1. 제1안  
 		int cursor=0;
 		while(day<=month[m-1]) {
 			cursor++;
@@ -67,7 +69,27 @@ public class ArrayQuiz4 {
 			if(cursor%7==0) {
 				System.out.println();
 			}
+		}*/
+		
+		//제일 첫 줄은 공백이 필요하므로 다음과 같이 출력한다
+//		System.out.println("시작일:"+startDay);
+		//#2. 제2안
+		//2020년 2월을 예로 들면 2월 1일은 토요일이다.
+		//일월화수목금요일에는 공백을 찍어야 한다.
+		for(int i=0;i<startDay;i++) {
+			System.out.print("*\t\t");
 		}
+		//2020년 2월을 예로 들면 2월은 29일까지 있다.
+		//공백을 띄운 곳에서부터 말일을 순차적으로 찍으면 된다.
+		//단, 말일이 토요일인 경우에는 줄바꿈을 하지 않도록 처리한다.
+		for (int i=1;i<=month[m-1];i++) {
+			System.out.printf("%d\t\t",day++);
+			if((startDay+i)%7==0 && i<month[m-1]) {
+				//7개 찍을 때마다 다음줄로, 마지막에는 찍지 않음.
+				System.out.println();
+			}
+		}
+		
 		System.out.println("\n==========================================");
 		sc.close();
 	}
