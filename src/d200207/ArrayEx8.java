@@ -25,7 +25,7 @@ public class ArrayEx8 {
 		} while (m < 1 || m > 12);
 
 		// 2월의 말일이 며칠인지 계산하기
-		if (y % 4 == 0 && y % 10 != 0 || y % 4 == 0) {
+		if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
 			month[1] = 29;
 		} else {
 			month[1] = 28;
