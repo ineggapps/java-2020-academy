@@ -9,10 +9,17 @@ public class ArrayEx6 {
 		int[] u = new int[] { 500, 100, 50, 10 };
 		int tmp;
 		System.out.printf("금액: %d\n",m);
-		for (int i = 0; i < u.length; i++) {
-			tmp = m/u[i];
-			System.out.printf("%d원: %d장\n",u[i],tmp);
-			m-=u[i]*tmp;
+		//작성한 답안
+//		for (int i = 0; i < u.length; i++) {
+//			tmp = m/u[i];
+//			System.out.printf("%d원: %d장\n",u[i],tmp);
+//			m-=u[i]*tmp; //====이것은 곧 나머지연산과 동일함.
+//		}
+		int x;
+		for(int n:u) {
+			x= m/n;
+			System.out.printf("%d원: %d장\n",n,x);
+			m%=n;
 		}
 	}
 }
