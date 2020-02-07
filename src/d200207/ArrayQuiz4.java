@@ -2,7 +2,7 @@ package d200207;
 
 import java.util.Scanner;
 
-public class ArrayCalendar {
+public class ArrayQuiz4 {
 	public static void main(String[] args) {
 		// 달력 만들기
 		Scanner sc = new Scanner(System.in);
@@ -52,7 +52,7 @@ public class ArrayCalendar {
 		for(String i: week) {
 			System.out.printf("%s\t\t",i);
 		}
-		System.out.println("");
+		System.out.println("\n==========================================");
 		//달력은 7일 단위로 줄바꿈을 하니까 7은 literal값으로 사용할게!
 		int day=1;
 		int cursor=0;
@@ -68,6 +68,7 @@ public class ArrayCalendar {
 				System.out.println();
 			}
 		}
+		System.out.println("\n==========================================");
 		sc.close();
 	}
 }
