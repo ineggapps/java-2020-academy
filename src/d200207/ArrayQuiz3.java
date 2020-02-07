@@ -22,6 +22,12 @@ public class ArrayQuiz3 {
 			for (int j = 0; j < num.length; j++) {
 				num[j] = (int) (Math.random() * 45) + 1;
 				//TODO: 중복된 값이 나올 수 있다. 중복을 어떻게 해결하느냐?
+				for(int k=0;k<j;k++) {
+					if(num[j]==num[k]) {
+						j--;//횟수 차감하고 다시 추출을 실행함
+						break;
+					}
+				}
 			}
 			// 정렬하기
 			Arrays.sort(num);
