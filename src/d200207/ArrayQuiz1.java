@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ArrayQuiz1 {
 	public static void main(String[] args) {
+		//양력을 기준으로 계산할 경우임.
 		Scanner sc = new Scanner(System.in);
 		int y;
 		String band[] = { "원숭이", "닭", "개", "돼지", "쥐", "소", "범", "토끼", "용", "뱀", "말", "양" };
