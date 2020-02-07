@@ -14,7 +14,7 @@ Java의 정석 3rd Edition 교재 기준으로 목차를 구성.
 
 - [x] 변수
 - [x] 연산자
-- [ ] 조건문, 반복문
+- [x] 조건문, 반복문
 - [ ] 배열
 - [ ] 객체지향 프로그래밍1
 - [ ] 객체지향 프로그래밍2
@@ -27,3 +27,12 @@ Java의 정석 3rd Edition 교재 기준으로 목차를 구성.
 - [ ] 람다와 스트림
 - [ ] 입출력(I/O)
 - [ ] 네트워킹
+
+# 참조
+
+알고리즘 비교 사이트
+
+- https://www.toptal.com/developers/sorting-algorithms/
+- http://www.sorting-algorithms.com/
+- http://www.cs.rit.edu/~atk/Java/Sorting/sorting.html
+- http://www.cs.ubc.ca/~harrison/Java/sorting-demo.html
