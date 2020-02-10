@@ -21,6 +21,12 @@ public class InsertionSortEx {
 					num[j] = temp;
 				}
 			}
+			
+			System.out.printf("%dÈ¸Àü: ", i);
+			for (int n : num) {
+				System.out.print(n + " ");
+			}
+			System.out.println();
 		}
 
 		System.out.print("Sorted data: ");
