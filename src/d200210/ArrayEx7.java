@@ -11,7 +11,7 @@ public class ArrayEx7 {
 			System.out.println();
 		}
 		System.out.println("==============");
-
+		//향상된 for문을 사용한 방식, 하지만 잘 쓰이지는 않는다.
 		for (int[] rows : a) {
 			for (int n : rows) {
 				System.out.printf("%3d\t", n);
