@@ -14,7 +14,17 @@ public class ArrayQuiz3 {
 		//삽입하기
 		for(int i=0;i<a[0].length;i++) {
 			for(int j=0;j<a.length;j++) {
-				a[((i&1)==1?a.length-1-j:j)][i]=cnt++;
+//				한 줄로 함축시킨 삼항연산자는 다음과 같다.
+//				a[((i&1)==1?a.length-1-j:j)][i]=cnt++;
+				
+				//전개하면 다음과 같다.
+				cnt++;
+				if(i%2==0) {
+					a[j][i]=cnt;
+				}else {
+					a[a.length-1-j][i]=cnt;
+				}
+				
 			}
 		}
 		//출력
