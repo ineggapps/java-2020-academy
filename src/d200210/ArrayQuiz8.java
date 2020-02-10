@@ -11,49 +11,41 @@ public class ArrayQuiz8 {
 		int col = a.length / 2;// 가로 좌표
 		// 연산
 		for (int i = 0; i < a.length * a[0].length; i++) {
-			//조절된 좌표에 값이 있는지 판단하기 (값이 있으면 세로 한 칸 내리기)
-			System.out.printf("cnt=%d, i=%d\n\trow=%d, col=%d\n",cnt, i, row, col);
-			System.out.printf("\ti=%d, a[%d][%d]=%d 마킹합니다.\n",i,row,col,a[row][col]);
-			if(a[row][col]>0) {
-				System.out.printf("\ti=%d, a[%d][%d]=%d 값 존재!\n",i,row,col,a[row][col]);
-				//값이 있다면 보정하기
-				System.out.printf("\t\trow(row+2), col(col-1)값 보정");
-				System.out.printf("\n\t(전) row=%d, col=%d\n", row, col);
-				row+=2;
-//				col--;
-				
-				//아래에서 위치보정이 또 실행될 것을 감안함
-				row++;
-//				col--;
-				
-				if(col-2<0) {
-					col=3;
-				}else {
-					col-=2;
-				}
-				
-				System.out.printf("\t(후) row=%d, col=%d\n", row, col);
+			System.out.printf("현재 cnt=%d, i=%d %nrow=%d, col=%d그리기!%n",cnt,i,row,col);
+			//출력
+			a[row][col]=cnt++;
+			
+			//좌표 이동
+			if(row-1<0) {
+				row=a.length-1;
 			}else {
-				//값이 없으면 삽입하기
-				a[row][col] = cnt++;				
-			}
-			System.out.println(col + 1 >= a.length);
-			//들어갈 위치를 보정하기 (세로는 계속 위로, 가로는 계속 오른쪽으로)
-			if (row - 1 < 0) {// 세로 무한
-				row = a.length - 1;
-			} else {
 				row--;
 			}
+			if(col+1>=a.length) {
+				col=0;
+			}else {
+				col++;
+			}
 			
-			col=(col+1)%a.length;
-			System.out.printf("\t다음 커서: row=%d, col=%d\n", row, col);
-//			if (col + 1 >= a.length) {// 가로 무한
-//				col = 0;
-//			} else {
-//				col++;
-//			}
+			//조절된 좌표에 값이 있는지 판단하기 (값이 있으면 세로 한 칸 내리기)
+			if(a[row][col]>0) {
+				System.out.printf("값이 존재 a[%d][%d]=%d%n",row,col,a[row][col]);
+				//값 보정하기
+				row+=2;
+				col--;
+				System.out.printf("보정: row=%d, col=%d%n",row,col);
+			}
 			
-			// 출력
+			//위치가 유효하지 않은 범위의 영역이라면 보정하기
+			if(row>=a.length) {
+				row=row-a.length;
+			}
+			if(col<0) {
+				col=5+col;
+			}
+			
+			
+			//중간 출력
 			System.out.println();
 			for (int ii = 0; ii < a.length; ii++) {
 				for (int jj = 0; jj < a[0].length; jj++) {
@@ -63,6 +55,7 @@ public class ArrayQuiz8 {
 			}
 		}
 
+		System.out.println();
 		// 출력
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
