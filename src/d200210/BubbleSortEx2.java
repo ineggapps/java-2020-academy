@@ -20,12 +20,19 @@ public class BubbleSortEx2 {
 			for (int i = 0; i < num.length - pass; i++) {
 				// 대소 비교하여 정렬 실시
 				if (num[i] > num[i + 1]) {
+					System.out.printf("%d > %d\n",num[i],num[i+1]);
 					temp = num[i];
 					num[i] = num[i + 1];
 					num[i + 1] = temp;
 					flag = true;
 				}
 			}
+			System.out.print(pass+"회전: ");
+			for (int n : num) {
+				System.out.print(n + " ");
+			}
+			System.out.print(flag);
+			System.out.println();
 			pass++;
 		} while (flag);
 
