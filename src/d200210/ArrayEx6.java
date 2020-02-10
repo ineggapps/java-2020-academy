@@ -16,6 +16,15 @@ public class ArrayEx6 {
 			}
 		}
 
+		// b변수는 a변수의 모양을 변환하여 담는다.
+		for (int i = 0; i < b.length; i++) {// 0~3 (4)
+			for (int j = 0; j < b[i].length; j++) {// 0~4 (5)
+				// b는 4X5행렬, a는 5X4행렬이니까
+				// b[4행][5열] = a[5행][4열]
+				b[i][j] = a[j][i];
+			}
+		}
+
 		// a변수 출력
 		System.out.println("a변수: 5X4 행렬");
 		for (int i = 0; i < a.length; i++) {
@@ -24,15 +33,7 @@ public class ArrayEx6 {
 			}
 			System.out.println();
 		}
-
-		// b변수는 a변수의 모양을 변환하여 담는다.
-		for (int i = 0; i < a[i].length; i++) {//0~3 (4)
-			for (int j = 0; j < a.length; j++) {//0~4 (5)
-				// b는 4X5행렬 4행 5열, a는 5X4 5행4열 행렬이니까
-				b[i][j] = a[j][i];
-			}
-		}
-
+		
 		// b변수 출력
 		System.out.println("b변수: 4X5 행렬");
 		for (int i = 0; i < b.length; i++) {
