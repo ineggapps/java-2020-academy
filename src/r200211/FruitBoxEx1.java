@@ -41,9 +41,12 @@ public class FruitBoxEx1 {
 		appleBox.add(new Apple());
 		appleBox.add(new Apple());
 //		appleBox.add(new Toy());//불가능, Apple에는 Apple만 담을 수 있음
-		
+
 		toyBox.add(new Toy());
 //		toyBox.add(new Apple());//불가능, Toy박스에는 Toy만 담기 가능
+
+		FruitBox<Fruit> onlyFruitBox = new FruitBox<Fruit>();
+//		onlyFruitBox.add(new Fruit());
 		
 		System.out.println(fruitBox);
 		System.out.println(appleBox);
@@ -69,4 +72,7 @@ class Box<T> {
 	public String toString() {
 		return list.toString();
 	}
+}
+
+class FruitBox<T extends Fruit> {
 }
