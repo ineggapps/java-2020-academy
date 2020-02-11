@@ -46,11 +46,14 @@ public class FruitBoxEx1 {
 //		toyBox.add(new Apple());//불가능, Toy박스에는 Toy만 담기 가능
 
 		FruitBox<Fruit> onlyFruitBox = new FruitBox<Fruit>();
-//		onlyFruitBox.add(new Fruit());
+		onlyFruitBox.add(new Apple());
+		onlyFruitBox.add(new Fruit());
+//		onlyFruitBox.add(new Toy());
 		
 		System.out.println(fruitBox);
 		System.out.println(appleBox);
 		System.out.println(toyBox);
+		System.out.println(onlyFruitBox);
 	}
 }
 
@@ -74,5 +77,7 @@ class Box<T> {
 	}
 }
 
-class FruitBox<T extends Fruit> {
+class FruitBox<T extends Fruit> extends Box<T> {
+	//BOX의 속성을 모두 물려받고 FruitBox는 Fruit을 상속받는 객체만을 담을 수 있다는 의미임.
+	//Fruit 객체도 마찬가지로 FruitBox에 담을 수 있음.
 }
