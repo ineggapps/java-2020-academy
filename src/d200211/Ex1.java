@@ -14,6 +14,16 @@ public class Ex1 {
 		System.out.println("둘레: " + b );
 	}
 }
+//접근제한자 private은 자식도 상속받을 수 없다.
+//class TestParent{
+//	private int a;
+//	public int b;
+//}
+//class TestChild extends TestParent{
+//	void test() {
+//		System.out.println(a); //a 사용 불가 (not visible)
+//	}
+//}
 /*
 - 사각형
 	- 필드
