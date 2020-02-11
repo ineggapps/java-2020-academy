@@ -13,6 +13,7 @@ public class Ex7 {
 		int a=1,b=10;
 		result = tt.sum2(a,b);
 		System.out.printf("%d에서 %d까지의 합은 %d입니다.%n",a,b,result);
+		tt.gugu(2);
 	}
 }
 
@@ -57,4 +58,14 @@ class Test7 {
 		return s;
 	}
 
+	//매개변수를 입력 받아서 해당하는 수의 구구단표를 출력
+	public void gugu(int dan) {
+		System.out.println(dan+"단 출력");
+		for(int i=1;i<=9;i++) {
+			System.out.printf("%d X %d = %2d%n",dan,i,dan*i);
+		}
+		return; //return type이 void형인 경우에는 생략이 가능하다
+		//return type이 void형인 경우에는 메서드를 실행한 후 호출한 곳으로 돌아간다.
+		//값을 넘겨줄 일이 없는 경우에 void형을 이용하여 메서드를 작성한다.
+	}
 }
