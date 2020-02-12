@@ -35,4 +35,25 @@ public class Score {
 		}
 		return result;
 	}
+
+	public void resetRank(ScoreVO[] list, int length) {
+		for(int i=0;i<length;i++) {
+			list[i].rank=1;
+		}
+	}
+	
+	public void setRank(ScoreVO[] list,int length) {
+		resetRank(list, length);
+		for (int i = 0; i < length-1; i++) {
+			for (int j = i+1; j < length; j++) {
+				if (list[i].tot < list[j].tot) {
+					list[i].rank++;
+				} else if(list[i].tot > list[j].tot){
+					list[j].rank++;
+				}else {
+					//동점자일 경우 카운트하지 않아야 하니까!
+				}
+			}
+		}
+	}
 }

@@ -1,5 +1,6 @@
 package score1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ScoreService {
@@ -36,23 +37,59 @@ public class ScoreService {
 	}
 
 	public void print() {
+		//출력 전에 석차 계산하기
+		//입력할 때 매번 석차 계산하는 대신 출력하기 전에 한 번만 수행하기 위함
+		score.setRank(list,cnt);
 		System.out.println("데이터 출력...");
 		System.out.println("학번\t이름\t국어\t수학\t영어\t총점\t평균\t석차");
 		System.out.println("========================");
 		for (int i = 0; i < cnt; i++) {
 			System.out.printf("%s\t%s\t", list[i].hak, list[i].name);
 			for (int j = 0; j < list[i].score.length; j++) {
-				System.out.print(list[i].score[j]+"\t");
+				System.out.print(list[i].score[j] + "\t");
 			}
 			System.out.printf("%d\t%d\t%d\t\n", list[i].tot, score.getAve(list[i].score), list[i].rank);
 		}
 	}
 
 	public void findByName() {
+		// 순차 검색 구현
 		System.out.println("이름 검색");
+		System.out.print("검색할 이름 ? ");
+		String name = sc.next();
+		for (int i = 0; i < cnt; i++) {
+//			if(name.equals(list[i].name)) {//name과 문자열 값이 같으면
+			if (list[i].name.startsWith(name)) {// 문자열 값이 name으로 시작하면 (앞부분 검색)
+				System.out.println("학번\t이름\t총점");
+				System.out.printf("%s\t%s\t%d\n", list[i].hak, list[i].name, list[i].tot);
+				break;
+			} else if (i == cnt - 1) {
+				System.out.println("검색 결과 없음");
+			}
+		}
 	}
 
 	public void delete() {
 		System.out.println("데이터 삭제...");
+		// 학번은 중복되지 않게 입력되었다는 가정 하에 삭제 기능을 구현한다.
+		System.out.print("삭제할 항목의 학번 ? ");
+		String hak = sc.next();
+		boolean b = false;
+		for (int i = 0; i < cnt; i++) {
+			if (hak.equals(list[i].hak)) {
+				// 찾았으면 배열 당기기
+				for (int j = i; j < cnt; j++) {
+					list[j] = list[j + 1];
+				}
+				list[--cnt] = null;
+				b=true;
+				break;
+			}
+		}
+		if(!b) {
+			System.out.println("등록된 자료가 아닙니다. (학번을 찾지 못한 경우)");
+		}else {
+			System.out.println("삭제되었습니다.");
+		}
 	}
 }
