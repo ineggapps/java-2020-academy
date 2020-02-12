@@ -1,0 +1,229 @@
+■ 자바 테스트
+
+오류인 경우 컴파일 오류인지 런타임 오류 인지와 이유를 간단히 기술하세요
+
+1] java Pass2 라고 실행 할 때 결과는 ?
+public class Pass2 {
+   public void main(String [] args) {
+       int x=6;
+       Pass2 p = new Pass2();
+       p.test(x);
+       System.out.print(" main x = "+ x);
+   }
+
+   void test(int x) {
+       System.out.print(" test = "+ x++);
+   }
+}
+
+
+2]  Client 클래스를 실행한 결과는 ?
+class Target{
+    private int i = 0;
+    public int addOne(){
+       return ++i;
+    }
+}
+
+public class Client {
+   public static void main(String[] args){
+       Target t;
+       System.out.println(t.addOne());
+   }
+}
+
+답: 컴파일 오류
+Target t는 선언만 되었을 뿐 객체가 생성되지 않았다.
+Target t = new Target();이 되어야 한다.
+
+3]  Client 클래스를 실행한 결과는 ?
+class Target{
+    private int i = 0;
+    public int addOne(){
+       return ++i;
+    }
+}
+
+public class Client {
+   public static void main(String[] args){
+       Target t=null;
+       System.out.println(t.addOne());
+   }
+}
+
+답: 런타임 오류 (NullPointerException)
+Target t가 null값으로 초기화되었을 뿐 객체가 생성되지 않았다.
+하지만 null로 초기화할 경우 프로그램 실행 시에 오류가 발생하며, 컴파일 시에는 오류가 발생하지 않는다.
+
+4]  Client 클래스를 실행한 결과는 ?
+class Target{
+    private int i = 0;
+    public int addOne(){
+       return ++i;
+    }
+}
+
+public class Client {
+   public static void main(String[] args){
+       Target t=new Target();
+       System.out.println(t.i);
+   }
+}
+
+답: 컴파일 오류
+접근제한자 private은 Target 클래스 내에서만 사용이 가능하다.
+
+5]  Client 클래스를 실행한 결과는 ?
+class Target{
+    private int i = 0;
+    String name = "홍길동";
+    public String getName(){
+       return name;
+    }
+    public int addOne(){
+       return ++i;
+    }
+}
+
+public class Client {
+   public static void main(String[] args){
+       Target t=new Target();
+       t.name="자바";
+       System.out.println(t.getName() +":" + t.addOne());
+   }
+}
+
+답: 자바:1
+
+
+6]  Client 클래스를 실행한 결과는 ?
+class Target{
+    private int i = 0;
+    public int addOne(){
+       return ++i;
+    }
+}
+
+public class Client {
+   public static void main(String[] args){
+       System.out.println(new Target().addOne());
+   }
+}
+
+답: 1
+new Target().addOne()을 전개하면 다음과 같다.
+Target t = new Target();
+t.addOne();
+
+int a = new Target().addOne(); 과 같이 함축도 가능하다.
+
+new Target()은 참조하는 주솟값을 반환할 것이다. 
+그리고 그 주솟값에 있는 객체의 addOne()이라는 메서드를 호출한다는 의미이다.
+
+7] 실행 결과는 ?
+public class Test {
+   private String name;
+   private int score=90;
+
+   public void write() {
+      System.out.println(name+":"+score);
+   }
+   public static void main(String[] args){
+       write();
+   }
+}
+
+답: 컴파일 오류
+static메서드에서 인스턴스 메서드를 호출할 수 없다.
+cf) 역으로 인스턴스 메서드에서 static 메서드 호출은 가능하다.
+
+
+8] 실행 결과는 ?
+public class Test {
+   private String name;
+   private int score=90;
+
+   public void write() {
+      System.out.println(name+":"+score);
+   }
+   public static void main(String[] args){
+       Test t=new Test();
+       t.name="이순신";
+       t.write();
+   }
+}
+
+
+9] 실행 결과는 ?
+class Test {
+    public double pow(int a, int b) {
+        double s=1;
+        for(int i=1; i<=b; i++)
+           s*=a;
+        return s;
+    }
+}
+
+public class Ex {
+    public static void main(String[] args) {
+        Test ob=new Test();
+        int d=ob.pow(2, 10);
+        System.out.println("2의 10승 : "+d);
+    }
+}
+
+답: 컴파일 오류
+★ ob.pow의 반환형은 double이다.
+double형은 int에 들어갈 수 없어서 컴파일 오류가 발생한다.
+
+10] 실행 결과는 ?
+class Test {
+    private int x = 12;
+    public void method(int x) {
+       x += x;
+       System.out.println(x);
+    }
+    public void method2() {
+       System.out.println(x);
+    }
+}
+
+public class Ex {
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.method(5);
+        t.method();
+    }
+}
+
+
+11] 다음에서, 
+public class ClassA {
+   public int getValue() {
+      int value=0;
+      boolean setting = true;
+      String title="Hello"
+      if (value || (setting && title == "Hello")) { return 1; }
+      if (value == 1 & title.equals("Hello")) { return 2; }
+  }
+}
+    :
+ClassA a = new ClassA();
+a.getValue();
+
+결과는 ?
+
+
+12] 다음 프로그램 실행 결과는 ?
+public class Test {
+  public static void main(String[] args){
+    String str = "null";
+    if (str == null){
+       System.out.println("null");
+    } else (str.length() == 0) {
+       System.out.println("zero");
+    } else {
+     System.out.println("some"); 
+    }
+  }
+}
