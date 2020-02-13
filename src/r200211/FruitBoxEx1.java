@@ -2,7 +2,10 @@ package r200211;
 
 import java.util.ArrayList;
 
-class Fruit {
+interface Eatable {
+}
+
+class Fruit implements Eatable {
 	public String toString() {
 		return "Fruit";
 	}
@@ -49,7 +52,7 @@ public class FruitBoxEx1 {
 		onlyFruitBox.add(new Apple());
 		onlyFruitBox.add(new Fruit());
 //		onlyFruitBox.add(new Toy());
-		
+
 		System.out.println(fruitBox);
 		System.out.println(appleBox);
 		System.out.println(toyBox);
@@ -75,9 +78,35 @@ class Box<T> {
 	public String toString() {
 		return list.toString();
 	}
+
+	public ArrayList<T> getList() {
+		return list;
+	}
+
 }
 
-class FruitBox<T extends Fruit> extends Box<T> {
-	//BOX의 속성을 모두 물려받고 FruitBox는 Fruit을 상속받는 객체만을 담을 수 있다는 의미임.
-	//Fruit 객체도 마찬가지로 FruitBox에 담을 수 있음.
+class FruitBox<T extends Fruit & Eatable> extends Box<T> {
+	// BOX의 속성을 모두 물려받고 FruitBox는 Fruit을 상속받는 객체만을 담을 수 있다는 의미임.
+	// Fruit 객체도 마찬가지로 FruitBox에 담을 수 있음.
+}
+
+class Juice{
+	String s;
+	Juice(String s){
+		this.s = s;
+	}
+	@Override
+	public String toString() {
+		return "Juice [s=" + s + "]";
+	}
+}
+
+class Juicer{
+	static Juice makeJuice(FruitBox<? extends Fruit> box) {//<Fruit>으로 지정한다
+		String tmp="";
+		for(Fruit f: box.getList()) {
+			tmp += f + " ";
+		}
+		return new Juice(tmp);
+	}
 }
