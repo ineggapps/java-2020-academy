@@ -39,7 +39,7 @@ public class ScoreService {
 	public void print() {
 		//출력 전에 석차 계산하기
 		//입력할 때 매번 석차 계산하는 대신 출력하기 전에 한 번만 수행하기 위함
-		score.setRank(list,cnt);
+		setRank(list,cnt);
 		System.out.println("데이터 출력...");
 		System.out.println("학번\t이름\t국어\t수학\t영어\t총점\t평균\t석차");
 		System.out.println("========================");
@@ -49,7 +49,17 @@ public class ScoreService {
 				System.out.print(list[i].score[j] + "\t");
 			}
 			System.out.printf("%d\t%d\t%d\t\n", list[i].tot, score.getAve(list[i].score), list[i].rank);
+			System.out.print("\t\t");
+			double tot=0;
+			for(int j=0;j<3;j++) {
+				tot+=score.getGrade(list[i].score[j]);
+				System.out.print(score.getGrade(list[i].score[j])+"\t");
+			}
+			System.out.print(tot+"\t");
+			System.out.printf("%.1f",tot/list[i].score.length);
+			System.out.println();
 		}
+		
 	}
 
 	public void findByName() {
@@ -90,6 +100,23 @@ public class ScoreService {
 			System.out.println("등록된 자료가 아닙니다. (학번을 찾지 못한 경우)");
 		}else {
 			System.out.println("삭제되었습니다.");
+		}
+	}
+	
+	private void setRank(ScoreVO[] list,int length) {
+		for (int i = 0; i < length; i++) {
+			list[i].rank = 1;
+		}
+		for (int i = 0; i < length-1; i++) {
+			for (int j = i+1; j < length; j++) {
+				if (list[i].tot < list[j].tot) {
+					list[i].rank++;
+				} else if(list[i].tot > list[j].tot){
+					list[j].rank++;
+				}else {
+					//동점자일 경우 카운트하지 않아야 하니까!
+				}
+			}
 		}
 	}
 }
