@@ -103,6 +103,10 @@ class Juice{
 
 class Juicer{
 	static Juice makeJuice(FruitBox<? extends Fruit> box) {//<Fruit>으로 지정한다
+		/*
+		 static에서는 타입 매개변수 T를 매개변수에 사용할 수 없으므로 특정 타입을 지정할 수밖에 없다.
+		 혹은 와일드카드인 ?표기를 함.
+		 */
 		String tmp="";
 		for(Fruit f: box.getList()) {
 			tmp += f + " ";
