@@ -64,5 +64,24 @@ public class Ex4 {
 		s = "자바 123 스프링 345 HTML";
 		s = s.replaceAll("[^0-09]","");//숫자 없애기
 		System.out.println(s);
+		
+		//문자열을 패턴으로 분리하여 배열로 반환한다.
+		//split 메서드에서도 정규식으로 표현할 수 있다.
+		String[] ss="java,html,css".split(",");
+		for(String a: ss) {
+			System.out.print(a+" ");
+		}
+		System.out.println();
+		
+		for(String a: ss) {
+			System.out.print(a+" ");
+		}
+		System.out.println();
+		
+		String[] ss2= "010-1234-1234".split("-");
+		for(String a: ss2) {
+			System.out.print(a);
+		}
+		System.out.println();
 	}
 }
