@@ -9,7 +9,7 @@ public class Ex4 {
 		System.out.println("길이: " + s.length());
 
 		// 인덱스는 0부터 시작
-		System.out.println(s.substring(6,9));
+		System.out.println(s.substring(6, 9));
 		// substring(S,e): s인덱스에서 "e-1"인덱스까지
 		// s<=e이고 e<=length()이어야 한다.
 		System.out.println(s.substring(6));
@@ -30,11 +30,11 @@ public class Ex4 {
 		// "seoul korea"와 "seoul corea"는 누가 더 클까?
 		// 사전식 배열(ASCII 코드 차이)
 		// ★ 문자열 비교 시 compareTo
-		System.out.println(s.compareTo("seoul corea"));//k-c =8 (c에서 8칸 이동해야  k이다.)
-		//문자열은 >, <, ==와 같은 연산자로는 비교할 수 없다.
+		System.out.println(s.compareTo("seoul corea"));// k-c =8 (c에서 8칸 이동해야 k이다.)
+		// 문자열은 >, <, ==와 같은 연산자로는 비교할 수 없다.
 
 		// "kor"의 위치는 어디서?
-		System.out.println(s.indexOf("kor"));//위치가 시작하는 index부터
+		System.out.println(s.indexOf("kor"));// 위치가 시작하는 index부터
 		System.out.println(s.indexOf("busan"));// 없으면 -1을 반환한다.
 
 		// 처음부터 찾는다
@@ -43,14 +43,26 @@ public class Ex4 {
 		System.out.println(s.indexOf("o", 3));
 		// 뒤에서부터 찾는다.
 		System.out.println(s.lastIndexOf("o"));
-		
-		s="우리나라 대한민국 대한독립 만세 대한의 건아";
-		s = s.replaceAll("대한", "大韓");//String은 불변이므로 대입연산자로 어딘가에 기억을 시켜줘야겠지?
-		//replace메서드는 정규표현식을 사용할 수 없고, replaceAll은 정규표현식을 사용할 수 있다.
+
+		s = "우리나라 대한민국 대한독립 만세 대한의 건아";
+		s = s.replaceAll("대한", "大韓");// String은 불변이므로 대입연산자로 어딘가에 기억을 시켜줘야겠지?
+		// replace메서드는 정규표현식을 사용할 수 없고, replaceAll은 정규표현식을 사용할 수 있다.
 		System.out.println(s);
-		
-		s="우리123나라 대한65민국";
+
+		s = "우리123나라 대한65민국";
 		s = s.replaceAll("\\d", "");// \\d: 숫자를 의미 (역슬래시는 java에서 \ escape character로인식하므로 한 번 더 기입하여 \\로 작성)
+		System.out.println(s);
+
+		s = "자바 123 스프링 345 HTML";
+		s = s.replaceAll("[0-9]","");//숫자 없애기
+		System.out.println(s);
+
+		s = "자바 123 스프링 345 HTML";
+		s = s.replaceAll("\\w|\\s","");//영어 및 공백 없애기
+		System.out.println(s);
+
+		s = "자바 123 스프링 345 HTML";
+		s = s.replaceAll("[^0-09]","");//숫자 없애기
 		System.out.println(s);
 	}
 }
