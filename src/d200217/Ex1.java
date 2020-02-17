@@ -62,5 +62,25 @@ public class Ex1 {
 		s = Integer.toHexString(a);
 		System.out.println(s);// 16진수로 변환된 7b
 
+		System.out.println(Integer.MAX_VALUE);//정적 상수 (정수의 최댓값을 볼 수 있다)
+		System.out.println(Integer.MIN_VALUE);//정적 상수 (정수의 최솟값을 볼 수 있다)
+		System.out.println(Integer.BYTES);//정적 상수 (정수의 용량 4byte인 용량을 확인할 수 있음)
+		System.out.println(Integer.TYPE);//int 
+		System.out.println(Integer.SIZE);//32(bit)
+		
+		
+		//실수 예제
+		
+		//문자열을 실수로
+		s="123.45";
+		d=Double.parseDouble(s);
+		System.out.println(d);
+		
+		//실수를 문자열로
+		s=Double.toString(d);
+		System.out.println(s);
+		
+		
+		
 	}
 }
