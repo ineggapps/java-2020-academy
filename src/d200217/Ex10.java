@@ -15,6 +15,7 @@ public class Ex10 {
 		// 예외처리 대신 (아직 예외처리 진도 나가지 않았음)
 		if (str.length() != 10 || str.split("-").length != 3) {
 			System.out.println("날짜 입력 형식 오류");
+			sc.close();
 			return;
 		}
 
