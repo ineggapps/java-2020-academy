@@ -23,8 +23,18 @@ public class Ex5 {
 
 //		String s = String.format("%tF %tA %tT", cal, cal, cal);
 		String s = String.format("%1$tF %1$tA %1$tT", cal);
-		//$숫자는 %바로 뒤에 온다는 것도 기억.
+		// $숫자는 %바로 뒤에 온다는 것도 기억.
 		System.out.println(s);
+
+		int y = cal.get(Calendar.YEAR);
+		int m = cal.get(Calendar.MONTH) + 1;// 월은 인덱스 개념으로 0~11까지로 반환해 준다.
+		int d = cal.get(Calendar.DATE);
+		int w = cal.get(Calendar.DAY_OF_WEEK);// 일요일은 1, 토요일은 7로 반환한다.
+		String[] ww = { "일", "월", "화", "수", "목", "금", "토" };
+		System.out.printf("%d년 %d월 %d일 %s요일", y, m, d, ww[w - 1]);// 일요일 값이 1인데 배열의 인덱스는 0이니까 w-1 수식으로 계산한다.
+
+		int days = cal.getActualMaximum(Calendar.DATE);
+		System.out.println("이번 달은 " + days + "일까지 있습니다.");
 	}
 }
 
