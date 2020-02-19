@@ -54,7 +54,7 @@ class Test3 extends Demo3 {
 	}
 
 	public Test3(int a, int x) {
-		super(a);
+		super(a);//슈퍼 클래스의 생성자 호출. 최상단에서 한 번만 가능하다
 		this.x = x;
 		System.out.println("Test3 인자가 두 개인 생성자");
 	}
