@@ -40,14 +40,14 @@ class Box {
 	}
 }
 
-class BoxGeneric<T> {
-	T item;
+class BoxGeneric<WHAT> {
+	WHAT item;
 
-	void setItem(T item) {
+	void setItem(WHAT item) {
 		this.item = item;
 	}
 
-	T getItem() {
+	WHAT getItem() {
 		return item;
 	}
 }
