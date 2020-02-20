@@ -1,0 +1,353 @@
+■ 자바 테스트
+
+오류인 경우 컴파일 오류인지 런타임 오류 인지와 이유를 간단히 기술하세요
+
+1] 다음 실행 결과는 ? b 3
+class Test {
+    public int a=3;
+    public void print() { a+=5; System.out.print("f "); }
+}
+
+class Ex extends Test{
+    public int a=8; // 13
+	// override
+    public void print() { this.a+=5; System.out.print("b "); }
+}
+
+public class Sam {
+     public static void main(String[] args) {
+        Test ob = new Ex(); // 업캐스팅
+	ob.print();  // b
+	System.out.print(ob.a);
+    }
+}
+
+
+2] 다음에서
+class Aclass{}
+class Bclass extends Aclass {}
+class Cclass extends Aclass {}
+    :
+Aclass p0= new Aclass();
+Bclass p1= new Bclass();
+Cclass p2= new Cclass();
+Aclass p3= new Bclass(); // 업캐스팅
+Aclass p4= new Cclass(); // 업캐스팅
+
+잘못 작성된 것을 모두 고루면 ? 
+
+  가. p0=p1; // 가능. 업캐스팅
+  나. p1=p2; // 컴오류. 
+  다. p2=p4; // 컴오류. 다운캐스팅을 하기 위해서는 명시적으로 형변환해야
+             // p2 = (Cclass)p4;  
+  라. p2=(Cclass)p1;  // 컴오류. 상하관계가 아니면 형변환 불가
+  마. p1=(Bclass)p3;  // 다운캐스팅
+  바. p1=(Bclass)p0;  // 런타임. 다운은 업한것만 가능
+  사. p2=(Cclass)p4;  // 다운캐스팅
+
+
+3] 다음에서
+ class One {
+  void test() { }
+ }
+
+ class Two extends One {
+      [                ]
+ }
+ 
+ [         ] 에 추가 할 수 있는 것을 모두 고르면 ?
+ 
+   가. int test() { /*more code here */ } // 불가능
+   나. void test() { /*more code here */ } // 가능. override
+   다. public void test() { /* more code here */ } // 가능. override
+   라. private void test() { /*more code here*/ } // 불가. 
+   마. protected void test() { /*more code here */ } // 가능
+
+
+4] 다음 클래스에서 몇 번째 라인을 제거하면 컴파일 오류가 없어지며, 컴파일 오류가 없어진 후 결과는 ?
+
+1:   class Test { }
+2:   public class Ex extends Test {
+3:       public static void main(String[] args) {
+4:            Test t1 = new Test();
+5:            Ex e1 = new Ex();
+6:            Ex e2 = (Ex)t1;  // 런타임
+7:            Object o1 = (Object)t1;
+8:            String s1 = (String)t1; // 컴오류
+9:            Test t2 = (Test)e1;
+10:          System.out.println(t2);
+11:     }
+12: }
+
+
+5] SubTest 클래스 객체를 『SubTest ob=new SubTest();』처럼 생성될 때 SuperTest 의 인스턴스 변수에 10을 대입하기 위해 다음 프로그램의 [  ] 에 들어갈 코딩 방법 두가지는 ? 
+class SuperTest {
+    private int a;
+    protected SuperTest(int a) {
+        this.a=a;
+    }
+  }
+  class SubTest extends SuperTest {
+      public SubTest(int a) { super(a); }
+      public SubTest() { [   super(10); 또는 this(10);           ] }
+  }
+
+
+6] 다음 실행 결과는 ? // 1234
+class X {
+    X() { System.out.print(1);  }
+    X(int x) { this();  System.out.print(2); }
+}
+
+public class Y extends X {
+    Y() { super(6);  System.out.print(3); }
+    Y(int y) { this();  System.out.println(4); }
+    public static void main(String[] args) {
+        new Y(5);
+    }
+}
+
+
+<< 7~8 번 문제 클래스 >>
+class Test{
+    int a=10;
+}
+class Ex extends Test {
+    int b=20;
+}
+
+Object > Test > Ex
+
+7] Object ob=new Ex(); 에서 가능한 모든것을 고르면 ?
+가. int x=ob.a;          // 컴오류
+                    //  int x = ((Ex)ob).a;
+나. int x=(Test)ob.a;    // 컴오류
+다. int x=((Test)ob).a;  // 다운
+라. int x=((Ex)ob).a;    // 다운
+마. int x=((Test)ob).b;  // 컴오류
+바. int x=((Ex)ob).b;   // 다운
+
+
+Object > Test > Ex
+
+8] 다음중 가능한 모든것을 고르면 ?
+가. Test ob=new Ex();   // 업
+나. Ex ob=new Test();   // 불
+다. Object ob=new Ex(); // 업
+라. Object ob=new Test(); // 업
+마. Ex ob=new Object();  // 불
+
+
+9] 15번 라인을 실행 할 경우 garbage collector은 몇 번 객체의 메모리를 해제하는가 ? 4
+1. class Test {
+2.    Long a=1200L;
+3.    public void print() {
+4.        System.out.println("슈퍼 클래스...");
+5.    }
+6. }
+
+7. public class Ex extends Test {
+8.    public void print() {
+9.        System.out.println("서브 클래스...");
+10.    }
+11.    public static void main(String[] args) {
+12.        Ex e1 = new Ex();
+13.        Ex e2 = new Ex();
+14.        Ex e3 = new Ex();
+15.	    e3=e1; e1=e2; e2=null; e3=e1;  
+16.    }
+17. }
+
+
+10] 다음은 Object 클래스의 equals() 메소드를 override 할 소스이다. 잘못된 부분을 수정하면 ?
+public class Test {
+    private String name;
+    public Test(String name) {this.name=name;}
+
+    public boolean equals(Test p) {
+        return name.equals(p.name);
+    }
+}
+
+    public boolean equals(Object p) {
+        return name.equals(((Test)p).name);
+    }
+	
+	
+
+11] 다음 실행 결과는 ?
+1. class Test {
+2.     protected static int add(int a, int b) {return a+b;}
+3. }
+
+4. class Ex extends Test {
+5.     protected static int add(int a, int b) {
+6.         int x = super.add(10, 5);
+7.         return x;
+8.    }
+9. }
+
+10. public class Sam {
+11.     public static void main(String[] args) {
+12.        Ex.add(10, 5);
+13.    }
+14. }
+
+  가. 15
+  나. 런 타임 오류
+  다. 2번 라인으로 인하여 컴파일 오류 발생
+  라. 6번 라인으로 인하여 컴파일 오류 발생
+  마. 12번 라인으로 인하여 컴파일 오류 발생
+
+
+12] 다음 실행 결과는 ? 단, 프로그램 실행에 오류 발생한다면 수정하라. 420
+class Aclass {
+    public int a;
+    protected Aclass(int a) { this.a=a; }
+}
+
+class Bclass extends Aclass {
+    private Bclass(int a) { super(a); }
+    public static void main(String[] args) {
+        Bclass ob=new Bclass(420);
+	System.out.print(ob.a);
+    }
+}
+
+
+13] 다음 실행 결과는 ?  // 컴오류. 상위 클래스에 인자가 있는 생성자만 존재하므로 하위 클래스는 반드시 생성자를 만들어서 명시적으로 상위 생성자 super(10); 식으로 호출해야함.
+class A{
+   int x;
+   public A(int x) {x=10;}
+}
+class B extends A {
+    public void write() {System.out.println(x);}
+}
+public class C {
+    public static void main(String[] args)  {
+       B ob=new B();
+       ob.write();
+    }
+}
+
+14] 다음에서
+class Test {
+   private int x;
+   public void setX( int x ) { this.x = x;}
+   public int getX(){ return x; }
+}
+
+class Ex{
+   private Test y;
+   public void setY( Test y ) { this.y =y; }
+   public Test getY() { return y; }
+}
+
+public class Sample{
+   public static void main(String[] args){
+     Ex o = new Ex();
+     Test i = new Test();
+     int n = 10;
+     i.setX( n );
+     o.setY( i );
+     [                 ]
+     System.out.println( o.getY().getX() );
+   }
+}
+
+[      ]에 어떤 코드가 추가되었을 때 100이라는 출력 결과가 나오는지 모두 고르면 ? 나 다 라
+
+  가. n = 100;
+  나. i.setX(100);
+  다. o.getY().setX(100);
+  라. i = new Test(); i.setX(100);
+  마. o.setY(i); i=new Test(); i.setX(100);
+  바. i = new Test(); i.setX(100); o.setY(i);
+
+
+15] 다음 실행 결과는 ? b
+ class A {
+  protected void write() {System.out.println("a"); }
+ }
+ class B extends A {
+   public void write() {System.out.println("b"); }
+ }
+ public class C {
+     public static void main(String[] args) {
+         B ob=new B();
+	 ob.write();
+     }
+ }
+
+
+16] 다음 실행 결과는 ? 컴오류. 부정인수는 가장 오른쪽에
+public class Test {
+  public static void main(String[] args) {
+      new Test().go("a", 1);
+      new Test().go("c", "d", 2);
+  }
+
+  public void go(String... s, int x) {
+      System.out.println(s[s.length-1]+" ");
+  }
+}
+
+
+17] 다음과 같은 코드가 있다.
+10. class One {
+11.  void foo() { }
+12. }
+13.  class Two extends One {
+14.   //insert method here
+15. }
+ 
+ 다음 중 어떤 메서드를 14번 라인에 삽입했을 때 Two 클래스를 올바르게 완성할 수 있나? 나 다 라
+ (세 개를 고르십시오.)
+ 
+가. int foo() { /*more code here */ }
+나. void foo() { /*more code here */ }
+다. public void foo() { /* more code here */ }
+라. private void foo() { /*more code here*/ }
+마. protected void foo() { /*more code here */ }
+ 
+
+18] 다음 실행  결과는 ? 20살
+class Test {
+	int a=20;
+	public String toString() {
+	    return a+"살";
+	}
+        public static void main(String[] args) {
+              Object ob=new Test();
+	      System.out.println(ob);
+        }
+}
+
+
+19] 다음의 실행 결과는 ? 컴오류. String는 하위 클래스를 가질 수 없음
+class Test extends String {
+	String s="서울";
+
+        public static void main(String[] args) {
+	      Test ob=new Test();
+	      System.out.println(ob.s.length());
+        }
+}
+
+
+20] 다음 실행 결과는 ? 컴오류. final 메소드는 재정의 불가
+class Test {
+   private int x;
+   public final void set( int x ) { this.x = x+10;}
+   public int get(){ return x; }
+}
+class Ex extends Test {
+   public void set( int x ) { this.x =x; }
+}
+
+public class Sample{
+   public static void main(String[] args){
+     Ex o = new Ex();
+     System.out.println( o.get() );
+   }
+}
