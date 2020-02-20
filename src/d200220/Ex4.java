@@ -21,6 +21,9 @@ abstract class SortInt {
 	public void sort(int[] value) {
 		this.value = value;
 		sorting();// ★ 아직 내용이 정의되지 않은 추상메서드임에도 불구하고 호출할 수 있다니!
+		//어차피 abstract클래스는 객체생성을 못하지만
+		//객체를 생성할 수 있는 상속받는(extended된 클래스) 클래스들은 이미 재정의를 했을 테니까!
+		//확장한 클래스의 메서드, 즉 기술된 메서드의 sorting()를 호출하는 거니까 상관이 없겠구나!
 	}
 
 	protected int length() {
