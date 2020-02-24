@@ -52,7 +52,7 @@ public class FriendImpl implements Friend {
 		do {
 			System.out.print("전화번호 ? ");
 			tel = sc.nextLine().replaceAll("-", "");
-			valid = isCheckTel(tel);
+			valid = isCheckDuplicate(vo.getName(), tel);
 			if (valid) {
 				vo.setTel(tel);
 			} else {
@@ -169,9 +169,9 @@ public class FriendImpl implements Friend {
 		return null;
 	}
 
-	public boolean isCheckTel(String tel) {
+	public boolean isCheckDuplicate(String name, String tel) {
 		for (FriendVO vo : list) {
-			if (vo.getTel().equals(tel)) {
+			if (vo.getName().equals(name) && vo.getTel().equals(tel)) {
 				return false;
 			}
 		}
