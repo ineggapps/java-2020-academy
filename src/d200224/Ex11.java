@@ -54,21 +54,22 @@ public class Ex11 {
 //		list.remove("대한민국"); //또는 이렇게 지우기도 가능하다. (흔하지는 않음)
 		System.out.println(list);
 
-		System.out.println("전체-1");
+		System.out.println("전체1");
 		for (int i = 0; i < list.size(); i++) {
 			System.out.print(list.get(i) + "\t");
 		}
 		System.out.println();
-		System.out.println("전체 출력2");
+		
+		System.out.println("전체2");
 		for (String i : list) {
 			System.out.print(i + "\t");
 		}
 		System.out.println();
 
-		System.out.println("전체3");// ★
+		System.out.println("전체3");// ★ (반복자 사용)
 		Iterator<String> it = list.iterator();
 		while (it.hasNext()) {
-			String str = it.next();
+			String str = it.next();//첫 번째 데이터 꺼내고 다음 포인터로 향한다.
 			System.out.print(str + "\t");
 		}
 		System.out.println();
@@ -81,10 +82,12 @@ public class Ex11 {
 		System.out.println();
 
 		System.out.println("역순-2");
-		ListIterator<String> it2 = list.listIterator(list.size());
+		ListIterator<String> it2 = list.listIterator(list.size());//역으로 가져올 수 있는 방법을 제공한다. (커서를 list.size() 쪽까지 줬으니까 역순으로 갈 수 있는 것임!)
+		//previos 메서드를 제공하여 역순으로 커서를 이동할 수 있음.
 		while (it2.hasPrevious()) {
 			String str = it2.previous();
 			System.out.print(str + "\t");
 		}
+		System.out.println();
 	}
 }
