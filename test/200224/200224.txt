@@ -1,0 +1,196 @@
+[문항1]  다음의 실행 결과는 무엇인가요 ? (배점:10)
+String s = '0' + 9 + "Hello";
+System.out.println(s);
+
+1) 09Hello
+2) 57Hello
+3) 9Hello
+4) 489Hello
+정답 : 2
+
+
+[문항2]  다음 Status 인터페이스의 [    ]에 들어갈 수 없는 것은 무엇인가요 ? (배점:10) 
+public interface Status {
+    [        ]  int MY_VALUE = 10;
+}
+
+1) public
+2) static
+3) abstract
+4) final
+정답 : 3
+해설: abstract는 클래스나 메서드에만 기술할 수 있는 키워드이다.
+	
+[문항3]  다음 Two 클래스의 [    ]에 추가 할 수 없는 것은 무엇인가요 ?  (배점:10)
+class One {
+    void test() { }
+}
+
+class Two extends One {
+    [                 ]
+}
+
+1) void test() { /*more code here */ }
+2) public void test() { /* more code here */ }
+3) private void test() { /*more code here*/ }
+4) protected void test() { /*more code here */ }
+정답 : 3
+해설: 오버라이딩된 메서드는 super class의 메서드의 접근제한자와 같거나 더 개방적이어야 한다.
+	
+[문항4]   다음 if 의 [       ] 조건으로 사용할 경우 false 인 것은 무엇인가요? (배점:10)
+class Test {
+    public static void main(String[] args) {
+        Integer a = new Integer(10);
+        Integer b = new Integer(10);
+        Integer c = a;
+        int d = 10;
+        double e = 10.0;
+        if([      ]) { /*more code here */ }
+    }
+}
+
+1) a == c
+2) d == e
+3) b == d
+4) b == c
+정답 : 4
+해설: 객체끼리는 주소를 비교한다.
+
+
+[문항5]  다음의 코드에서 [          ] 에 추가 할 수 있는것은 무엇인가요? (배점:10) 
+class Aclass{}
+class Bclass extends Aclass {}
+class Cclass extends Aclass {}
+
+class Dclass {
+    public void fun() {
+         Aclass p0= new Aclass();
+         Bclass p1= new Bclass();
+         Cclass p2= new Cclass();
+         Aclass p3= new Bclass();
+         Aclass p4= new Cclass();
+         [                             ]
+    }
+         :
+}
+
+1) p1=p2;
+2) p2=(Cclass)p1;
+3) p1=(Bclass)p0;
+4) p2=(Cclass)p4;
+정답 : 4
+해설:
+1) p1의 참조변수는 BClass인데 p2에 담긴 객체는 CClass이므로 서로 캐스팅할 수 없다.
+2) p2의 참조변수는 CClass인데 p0에 담긴 객체는 AClass이므로 이를 CClass로 다운캐스팅할 수 없다.
+3) p1의 참조변수는 BClass인데 p0에 담긴 객체는 AClass이므로 이를 BClass로 다운캐스팅할 수 없다.
+
+[문항6]  다음 프로그램의 실행 결과는 무엇인가요? (배점:10)
+String str=null;
+try {
+    int n = str.length();
+    System.out.println(n);
+} catch (NullPointerException e) {
+    System.out.print("a");
+} catch (RuntimeException e) {
+    System.out.print("b");
+} finally {
+    System.out.print("c");
+}
+
+1) 4
+2) bc
+3) ac
+4) 4c
+정답 : 3
+해설: str에 null이 대입된 상태에서 .length()메서드를 참조하고자 하였다.
+그런데, str에 객체주솟값이 없으므로 NullPointerException이 발생하게 된다.
+finally블록은 오류 발생여부와 관계없이 무조건 실행된다.
+따라서 ac가 출력된다.
+
+
+[문항7]   다음의 코드에서 [          ] 에 추가 할 수 있는것은 무엇인가요? (배점:10) 
+class Test{
+    int a=10;
+}
+class Ex extends Test {
+    int b=20;
+}
+
+class Demo {
+    public void fun() {
+          Object ob=new Ex();
+          [                       ]
+    }
+         :
+}
+
+1) int x=ob.a;
+2) int x=(Test)ob.a;
+3) int x=((Test)ob).a;
+4) int x=((Test)ob).b;
+정답 : 3
+힌트: 연산자 우선순위
+
+
+[문항8]  다음 코드의 실행 결과는 무엇인가요? (배점:10)
+1. class Test {
+2.     protected static int add(int a, int b) {return a+b;}
+3. }
+
+4. class Ex extends Test {
+5.     protected static int add(int a, int b) {
+6.         int x = super.add(10, 5);
+7.         return x;
+8.    }
+9. }
+
+10. public class Sam {
+11.     public static void main(String[] args) {
+12.        Ex.add(10, 5);
+13.    }
+14. }
+
+1) 15
+2) 런 타임 오류
+3) 2번 라인으로 인하여 컴파일 오류 발생
+4) 6번 라인으로 인하여 컴파일 오류 발생
+정답 : 4
+
+
+[문항9]  다음 코드의 실행 결과는 무엇인가요? (배점:10) 
+public class Test {
+    Integer i;
+    int x;
+    public Test(int y) {
+        x=i+y;
+        System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+        new Test(new Integer(4));
+    }
+}
+
+1) 4
+2) 런타임 오류(NullPointerException)
+3) 런타임 오류(NumberFormatException)
+4) 컴파일 오류
+정답 : 2
+해설: 인스턴스 변수 Integer i는 null로 초기화가 된 상태이다.
+이 상태에서 Test(int y) 생성자에서 i를 참조하고자 하였다.
+따라서 NullPointerException이 발생한다.
+
+
+[문항10] 다음 코드의 실행 결과는 무엇인가요? (배점:10)
+String test= "a1b2c3";
+String[] tokens = test.split("\\d");
+for(String s: tokens) System.out.print(s +" ");
+
+1) a b c
+2) 1 2 3
+3) a 1 b 2 c 3
+4) 컴파일 오류
+정답 : 1
+답안: \\d는 숫자를 의미하는 정규표현식이다.
+숫자를 기준으로 String문자열을 잘라 배열을 만들라는 의미이다.
+따라서 tokens의 배열에는 {"a","b","c"}의 값이 담긴다.
