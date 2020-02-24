@@ -6,6 +6,18 @@ public class FriendVO {
 	private String city;
 	private String birth;
 
+	public FriendVO() {
+		super();
+	}
+
+	public FriendVO(String name, String tel, String city, String birth) {
+		super();
+		this.name = name;
+		this.tel = tel;
+		this.city = city;
+		this.birth = birth;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -40,7 +52,8 @@ public class FriendVO {
 
 	@Override
 	public String toString() {
-		return "FriendVO [name=" + name + ", tel=" + tel + ", city=" + city + ", birth=" + birth + "]";
+		return String.format("%s, %s, %s, %s", name, tel, city, birth);
+//		return "FriendVO [name=" + name + ", tel=" + tel + ", city=" + city + ", birth=" + birth + "]";
 	}
 
 }
