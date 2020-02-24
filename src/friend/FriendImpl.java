@@ -42,13 +42,17 @@ public class FriendImpl implements Friend {
 		FriendVO vo = new FriendVO();
 		System.out.print("이름 ? ");
 		vo.setName(sc.nextLine());
-		return inputProcess(vo);
+		return inputProcess(vo, false);
 	}
 
-	public FriendVO inputProcess(FriendVO vo) {
+	public FriendVO inputProcess(FriendVO vo, boolean isUpdate) {
 		// 이미 해당 전화번호가 등록이 되어있나?
 		boolean valid = false;
 		String tel;
+		if (isUpdate) {
+			System.out.print("이름 ? ");
+			vo.setName(sc.nextLine());
+		}
 		do {
 			System.out.print("전화번호 ? ");
 			tel = sc.nextLine().replaceAll("-", "");
@@ -127,7 +131,7 @@ public class FriendImpl implements Friend {
 			return;
 		}
 		System.out.println("정보 수정에 필요한 값을 입력해 주세요.");
-		inputProcess(vo);
+		inputProcess(vo,true);
 	}
 
 	@Override
