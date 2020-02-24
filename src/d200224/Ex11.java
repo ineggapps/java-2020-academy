@@ -1,5 +1,6 @@
 package d200224;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Ex11 {
@@ -61,5 +62,12 @@ public class Ex11 {
 			System.out.print(i+"\t");
 		}
 		System.out.println();
+		
+		System.out.println("ÀüÃ¼3");//¡Ú
+		Iterator<String> it = list.iterator();
+		while(it.hasNext()) {
+			String str=it.next();
+			System.out.print(str+"\t");
+		}
 	}
 }
