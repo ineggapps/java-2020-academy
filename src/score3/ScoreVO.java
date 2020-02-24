@@ -3,7 +3,7 @@ package score3;
 public class ScoreVO {
 	private String hak;
 	private String name;
-	private int kor;
+	private int kor;//Integer형으로 할당하면 null을 초깃값으로 갖는다.
 	private int eng;
 	private int mat;
 
