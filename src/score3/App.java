@@ -10,10 +10,10 @@ public class App {
 		try {
 			while (true) {
 				do {
-					System.out.print("1.입력 2.출력 3.학번검색 4.이름검색 5.수정 6.삭제 7.종료 > ");
+					System.out.print("1.입력 2.출력 3.학번검색 4.이름검색 5.수정 6.삭제 7.총점순 8.종료 > ");
 					ch = sc.nextInt();
-				} while (ch < 1 || ch > 7);
-				if (ch == 7) {// 종료
+				} while (ch < 1 || ch > 8);
+				if (ch == 8) {// 종료
 					break;
 				}
 				switch (ch) {
@@ -34,6 +34,9 @@ public class App {
 					break;
 				case 6:// 6. 삭제
 					ss.remove();
+					break;
+				case 7: //7. 총점순 출력
+					ss.toDescPrint();
 					break;
 				}
 			}

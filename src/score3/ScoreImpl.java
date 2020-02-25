@@ -1,6 +1,8 @@
 package score3;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
@@ -49,16 +51,25 @@ public class ScoreImpl implements Score {
 	@Override
 	public void print() {
 		System.out.println("\n데이터 출력...");
-		int tot;
+
+		// 학번순 정렬
+		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
+			// 정렬을 위한 재료 만들기
+			@Override
+			public int compare(ScoreVO o1, ScoreVO o2) {
+				// TODO Auto-generated method stub
+				return o1.getHak().compareTo(o2.getHak());
+			}
+		};
+		Collections.sort(list, comp);
 
 		for (ScoreVO vo : list) {
-			tot = vo.getKor() + vo.getEng() + vo.getMat();
 			System.out.print(vo.getHak() + "\t");
 			System.out.print(vo.getName() + "\t");
 			System.out.print(vo.getKor() + "\t");
 			System.out.print(vo.getEng() + "\t");
 			System.out.print(vo.getMat() + "\t");
-			System.out.println(tot);
+			System.out.println(vo.getTot());
 		}
 		System.out.println();
 	}
@@ -69,35 +80,35 @@ public class ScoreImpl implements Score {
 		String hak;
 		int tot;
 		System.out.println("검색할 학번? ");
-		hak =sc.next();
+		hak = sc.next();
 		System.out.println("학번 검색 결과");
 		ScoreVO vo = readScore(hak);
 
-		if(vo==null) {
+		if (vo == null) {
 			System.out.println("등록된 학번이 아닙니다");
 			return;
 		}
-		
-		tot = vo.getKor() + vo.getEng() + vo.getMat();
+
 		System.out.print(vo.getHak() + "\t");
 		System.out.print(vo.getName() + "\t");
 		System.out.print(vo.getKor() + "\t");
 		System.out.print(vo.getEng() + "\t");
 		System.out.print(vo.getMat() + "\t");
-		System.out.println(tot);
+		System.out.println(vo.getTot());
+		System.out.println();
 	}
 
 	@Override
 	public void findByName() {
 		System.out.println("\n이름 검색...");
 		String name;
-		
+
 		System.out.print("검색할 이름? ");
 		name = sc.next();
-		
-		System.out.println(name+"님 검색 결과");
-		for(ScoreVO vo: list) {
-			if(vo.getName().startsWith(name)) {
+
+		System.out.println(name + "님 검색 결과");
+		for (ScoreVO vo : list) {
+			if (vo.getName().startsWith(name)) {
 				int tot = vo.getKor() + vo.getEng() + vo.getMat();
 				System.out.print(vo.getHak() + "\t");
 				System.out.print(vo.getName() + "\t");
@@ -134,6 +145,8 @@ public class ScoreImpl implements Score {
 
 			System.out.print("수학 ? ");
 			vo.setMat(sc.nextInt());
+
+			System.out.println("데이터 수정 완료\n");
 		} catch (InputMismatchException e) {
 			System.out.println("점수는 숫자만 입력이 가능합니다.");
 			sc.next();
@@ -154,7 +167,7 @@ public class ScoreImpl implements Score {
 			System.out.println("등록된 학번이 아닙니다.");
 			return;
 		}
-		
+
 		list.remove(vo);
 		System.out.println("데이터 삭제 완료...\n");
 	}
@@ -168,6 +181,29 @@ public class ScoreImpl implements Score {
 			}
 		}
 		return vo;
+	}
+
+	@Override
+	public void toDescPrint() {
+		System.out.println("\n데이터 출력(총점 내림차순)");
+
+		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
+			@Override
+			public int compare(ScoreVO o1, ScoreVO o2) {
+				return -(o1.getTot() - o2.getTot());
+			}
+		};
+		Collections.sort(list, comp);
+
+		for (ScoreVO vo : list) {
+			System.out.print(vo.getHak() + "\t");
+			System.out.print(vo.getName() + "\t");
+			System.out.print(vo.getKor() + "\t");
+			System.out.print(vo.getEng() + "\t");
+			System.out.print(vo.getMat() + "\t");
+			System.out.println(vo.getTot());
+		}
+		System.out.println();
 	}
 
 }

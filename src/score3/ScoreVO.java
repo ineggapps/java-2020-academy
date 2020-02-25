@@ -3,9 +3,10 @@ package score3;
 public class ScoreVO {
 	private String hak;
 	private String name;
-	private int kor;//Integer형으로 할당하면 null을 초깃값으로 갖는다.
+	private int kor;// Integer형으로 할당하면 null을 초깃값으로 갖는다.
 	private int eng;
 	private int mat;
+	private int tot;
 
 	public String getHak() {
 		return hak;
@@ -45,6 +46,11 @@ public class ScoreVO {
 
 	public void setMat(int mat) {
 		this.mat = mat;
+	}
+
+	public int getTot() {
+		tot = kor + eng + mat;
+		return tot;
 	}
 
 }
