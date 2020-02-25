@@ -10,7 +10,7 @@ public class App {
 		try {
 			while (true) {
 				do {
-					System.out.print("1.입력 2.출력 3.수정 4.탈퇴 5.이메일검색 6.이름검색 7.종료");
+					System.out.print("1.입력 2.출력 3.수정 4.탈퇴 5.이메일검색 6.이름검색 7.종료 > ");
 					ch = sc.nextInt();
 				} while (ch < 1 || ch > 7);
 				if (ch == 7) {

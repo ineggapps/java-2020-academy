@@ -42,5 +42,22 @@ public class MemberVO {
 	public String toString() {
 		return "MemberVO [name=" + name + ", pwd=" + pwd + ", tel=" + tel + ", birth=" + birth + "]";
 	}
+	
+	public String toStringExceptPwd() {
+		return "MemberVO [name=" + name + ", tel=" + tel + ", birth=" + birth + "]";
 
+	}
+
+	
+	public MemberVO() {
+	}
+
+	public MemberVO(String name, String pwd, String tel, String birth) {
+		this.name = name;
+		this.pwd = pwd;
+		this.tel = tel;
+		this.birth = birth;
+	}
+
+	
 }
