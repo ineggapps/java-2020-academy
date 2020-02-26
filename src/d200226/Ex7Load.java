@@ -1,7 +1,7 @@
 package d200226;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.util.Iterator;
 import java.util.Properties;
 
 public class Ex7Load {
@@ -24,5 +24,14 @@ public class Ex7Load {
 		p.list(System.out);
 		String s = p.getProperty("자바");
 		System.out.println("자바: " + s);
+		System.out.println();
+
+		System.out.println("전체 순회...");
+		Iterator<Object> it = p.keySet().iterator();
+		while (it.hasNext()) {
+			String k = (String) it.next();
+			String v = p.getProperty(k);
+			System.out.println(k + "=>" + v);
+		}
 	}
 }
