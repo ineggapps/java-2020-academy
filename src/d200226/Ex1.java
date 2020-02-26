@@ -1,7 +1,11 @@
 package d200226;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -21,6 +25,13 @@ public class Ex1 {
 		Set<String> set = map.keySet();
 		System.out.println(set);
 
+		// map의 값을 list로 가져오기
+		List<Integer> list = new LinkedList<>(map.values());
+		System.out.println(list);
+		list.clear();
+		list.addAll(map.values());
+		System.out.println(list);
+		
 		System.out.println("map 전체-1");
 		Iterator<String> it = map.keySet().iterator();
 		while (it.hasNext()) {
@@ -49,5 +60,19 @@ public class Ex1 {
 			int score = map.get(s);// map에서 key에 해당하는 값 가져오기
 			System.out.println(s + ": " + score);
 		}
+		System.out.println();
+		
+		//값을 컬렉션으로
+		System.out.println("값을 컬렉션으로 가져오기");
+		Collection<Integer> col = map.values();
+		Iterator<Integer> it3 = col.iterator();
+		while(it3.hasNext()) {
+			int a = it3.next();
+			System.out.print(a + " ");
+		}
+		System.out.println();
+		
+		System.out.println("최고 점수: "+ Collections.max(col));
+		System.out.println("최저 점수: "+ Collections.min(col));
 	}
 }
