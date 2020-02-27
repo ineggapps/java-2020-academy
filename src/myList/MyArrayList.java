@@ -1,5 +1,7 @@
 package myList;
 
+import java.util.Arrays;
+
 public class MyArrayList<E> implements MyList<E> {
 	private E[] elementData;
 	private int size;
@@ -121,8 +123,38 @@ public class MyArrayList<E> implements MyList<E> {
 
 	@Override
 	public MyIterator<E> iterator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new MyIteratorImpl();
+	}
+
+	private class MyIteratorImpl implements MyIterator<E> {
+		private int nextIndex = 0;
+
+		@Override
+		public boolean hasNext() {
+			return nextIndex < size();
+		}
+
+		@Override
+		public E next() {
+			if (nextIndex >= size()) {
+//				throw new ArrayIndexOutOfBoundsException();//예외 던지기
+				return null;
+			}
+			return elementData[nextIndex++];
+		}
+
+		@Override
+		public void remove() {// 현재 위치에 있는 데이터를 지운다.
+			// MyArrayList의 remove메서드랑 MyIteratorImpl의 remove메서드랑 이름이 겹치니까!
+			// 명시적으로 표현을 해줘야 한다.
+			MyArrayList.this.remove(nextIndex--);
+		}
+
+	}
+
+	@Override
+	public String toString() {
+		return Arrays.toString(elementData);
 	}
 
 }
