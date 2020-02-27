@@ -12,7 +12,7 @@ public class Ex2 {
 		list.add("java");
 		list.add("spring");
 		list.add("html");
-		list.add("css");
+		list.add("css");คร
 		list.add("javascript");
 		System.out.println(list);
 		Collections.shuffle(list);
