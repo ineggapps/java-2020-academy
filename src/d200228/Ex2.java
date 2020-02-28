@@ -1,0 +1,45 @@
+package d200228;
+
+public class Ex2 {
+	public static void main(String[] args) {
+		// 내부 클래스는 외부에서 단독으로 객체 생성이 불가능하다.
+//		User2.Test2 tt = new User2.Test2(); //컴파일오류
+		// 내부 클레스의 객체를 외부에서 생성하는 방법
+		User2 uu = new User2();
+		User2.Test2 tt = uu.new Test2(); // 만들 수는 있어도 잘 사용하지 않는다.
+		tt.write();
+	}
+}
+
+class User2 {
+	// 내부 클래스 실습 (MemberClass)
+	// 중첩 클래스와 용어가 다르다. 중첩 클래스는 class 내부의 static class로 선언된 것이고
+	// 내부 클래스는 class 내부의 일반 class로 선언된 것이다.
+	// 중첩 클래스는 User2외부의 클래스에서 직접 객체 생성이 가능한 반면,
+	// 내부 클래스(MemerClass)는 User2 외부에서는 Test2클래스 객체를 직접적으로 생성하는 것은 불가능하다.
+	// 다만 User2의 클래스의 객체를 먼저 생성한 뒤에 내부 클래스를 선언하는 것은 가능하다
+	// User2.Test2 tt = uu.new Test2(); // 하지만 이러한 구문은 잘 사용하지 않는다.
+	// 내부 클래스의 목적 자체는 User2 내부에서 사용하기 위해 만들어진 클래스이다.
+	int a = 10;
+	static int b = 20;
+
+	/*private*/ class Test2 {//마찬가지로 private으로 선언하면 Ex2 등의 클래스에서 절대로 생성이 불가능하다.
+		int x = 100;
+
+		public void write() {
+			System.out.println(a + ":" + b + ":" + x);
+			print();// 가능하다 왜냐하면 이 메서드 또한 Test2의 객체 메서드이기 때문이다.
+		}
+
+	}
+
+	public void print() {
+		System.out.println("print 메서드");
+		System.out.println(a+":"+b);
+	}
+	
+	public void fun() {
+		Test2 oo = new Test2();//User2 클래스의 메서드이니까 Test2의 객체를 생성할 수 있다.
+		oo.write();
+	}
+}
