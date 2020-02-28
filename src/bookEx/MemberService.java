@@ -53,23 +53,29 @@ public class MemberService {
 	public void join() {
 		System.out.println("\n회원 가입...");
 		
-		MemberVO vo = new MemberVO();
-		System.out.print("아이디 ? ");
-		vo.setId(sc.next());
-		
-		if(memberInfo.readMember(vo.getId())!=null) {
-			System.out.println("등록된 아이디 입니다.\n");
-			return;
+		try {
+			MemberVO vo = new MemberVO();
+			System.out.print("아이디 ? ");
+			vo.setId(sc.next());
+			
+			if(memberInfo.readMember(vo.getId())!=null) {
+				System.out.println("등록된 아이디 입니다.\n");
+				return;
+			}
+			
+			System.out.print("패스워드 ? ");
+			vo.setPwd(sc.next());
+			
+			System.out.print("이름 ? ");
+			vo.setName(sc.next());
+			
+			memberInfo.insertMember(vo);
+			
+			System.out.println("회원 가입이 정상적으로 처리 되었습니다.\n");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		
-		System.out.print("패스워드 ? ");
-		vo.setPwd(sc.next());
-		
-		System.out.print("이름 ? ");
-		vo.setName(sc.next());
-		
-		memberInfo.insertMember(vo);
-		
-		System.out.println("회원 가입이 정상적으로 처리 되었습니다.\n");
 	}
 }

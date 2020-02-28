@@ -3,7 +3,13 @@ package bookEx;
 public class BookVO {
 	private String code;
 	public String subject;
-	public int count;
+	
+	public BookVO() {
+	}
+	public BookVO(String code, String subject) {
+		this.code = code;
+		this.subject = subject;
+	}
 	
 	public String getCode() {
 		return code;
@@ -16,11 +22,5 @@ public class BookVO {
 	}
 	public void setSubject(String subject) {
 		this.subject = subject;
-	}
-	public int getCount() {
-		return count;
-	}
-	public void setCount(int count) {
-		this.count = count;
 	}
 }
