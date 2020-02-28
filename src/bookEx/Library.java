@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Library {
 	private Scanner sc=new Scanner(System.in);
-	private MemberService ms;
 	
+	private MemberService ms;
 	private Book book;
 	private BookService bs;
 	private RentalService rs;
@@ -24,14 +24,20 @@ public class Library {
 	
 	public int mainForm() {
 		int ch = 0;
-		do {
-			System.out.print("1.로그인 2.회원가입 3.종료 => ");
-			ch = sc.nextInt();
-		} while(ch<1||ch>3);
 		
-		switch(ch) {
-		case 1: ms.login(); break;
-		case 2: ms.join(); break;
+		try {
+			do {
+				System.out.print("1.로그인 2.회원가입 3.종료 => ");
+				ch = sc.nextInt();
+			} while(ch<1||ch>3);
+			
+			switch(ch) {
+			case 1: ms.login(); break;
+			case 2: ms.join(); break;
+			}
+
+		} catch (InputMismatchException e) {
+			sc.nextLine();
 		}
 		
 		return ch;
@@ -44,15 +50,20 @@ public class Library {
 			return;
 		
 		System.out.println(lm.getName()+"님...");
-		do {
-			System.out.print("1.도서관리 2.회원관리 3.로그아웃 =>");
-			ch = sc.nextInt();
-		} while(ch<1||ch>3);
 		
-		switch(ch) {
-		case 1:bookManage(); break;
-		case 2:memberManage(); break;
-		case 3:ms.logout(); break;
+		try {
+			do {
+				System.out.print("1.도서관리 2.회원관리 3.로그아웃 =>");
+				ch = sc.nextInt();
+			} while(ch<1||ch>3);
+			
+			switch(ch) {
+			case 1:bookManage(); break;
+			case 2:memberManage(); break;
+			case 3:ms.logout(); break;
+			}
+		} catch (InputMismatchException e) {
+			sc.nextInt();
 		}
 		
 	}
