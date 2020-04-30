@@ -1,25 +1,25 @@
-package d200129;
+ï»¿package d200129;
 
 import java.util.Scanner;
 
 public class InputEx1 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);//System.inÀ» Å°º¸µå¶ó°í »ı°¢
+		Scanner sc = new Scanner(System.in);//System.inì„ í‚¤ë³´ë“œë¼ê³  ìƒê°
 		String name;
 		int age;
 		char gender;
 		double height;
 		
-		System.out.print("ÀÌ¸§? ");
-		name=sc.next();//¹®ÀÚ¿­ ÀÔ·Â (Áß°£¿¡ °ø¹é ÀÔ·ÂÀº ºÒ°¡´É)
-		System.out.print("³ªÀÌ? ");
-		age=sc.nextInt();//Á¤¼ö ÀÔ·Â
-		System.out.print("¼ºº°[M/F]? ");
-		gender=sc.next().charAt(0);//¹®ÀÚ ÀÔ·Â
-		System.out.print("Å°? ");
-		height=sc.nextDouble();//½Ç¼ö ÀÔ·Â
-		sc.close();//ÀÔ·Â ÀÚ¿øÀ» ´Ù »ç¿ëÇÏ¿´À¸¸é closeÇÏ¿© ÀÚ¿øÀ» ¹İ³³ÇÑ´Ù.
+		System.out.print("ì´ë¦„? ");
+		name=sc.next();//ë¬¸ìì—´ ì…ë ¥ (ì¤‘ê°„ì— ê³µë°± ì…ë ¥ì€ ë¶ˆê°€ëŠ¥)
+		System.out.print("ë‚˜ì´? ");
+		age=sc.nextInt();//ì •ìˆ˜ ì…ë ¥
+		System.out.print("ì„±ë³„[M/F]? ");
+		gender=sc.next().charAt(0);//ë¬¸ì ì…ë ¥
+		System.out.print("í‚¤? ");
+		height=sc.nextDouble();//ì‹¤ìˆ˜ ì…ë ¥
+		sc.close();//ì…ë ¥ ìì›ì„ ë‹¤ ì‚¬ìš©í•˜ì˜€ìœ¼ë©´ closeí•˜ì—¬ ìì›ì„ ë°˜ë‚©í•œë‹¤.
 		
-		System.out.format("ÀÌ¸§:%s, ³ªÀÌ:%d, ¼ºº°:%C, Å°:%f",name,age,gender,height);
+		System.out.format("ì´ë¦„:%s, ë‚˜ì´:%d, ì„±ë³„:%C, í‚¤:%f",name,age,gender,height);
 	}
 }

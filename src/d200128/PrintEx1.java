@@ -1,24 +1,24 @@
-package d200128;
+ï»¿package d200128;
 
 public class PrintEx1 {
 
 	public static void main(String[] args) {
 		/*
-		 * System.out.print() ¿¹Á¦ °ªÀ» Ãâ·ÂÇÑ´Ù. Ãâ·Â ÈÄ ¶óÀÎÀ» ³Ñ±âÁö ¾Ê´Â´Ù.
+		 * System.out.print() ì˜ˆì œ ê°’ì„ ì¶œë ¥í•œë‹¤. ì¶œë ¥ í›„ ë¼ì¸ì„ ë„˜ê¸°ì§€ ì•ŠëŠ”ë‹¤.
 		 */
 
-		System.out.print("korea");// ¹®ÀÚ"¿­" Ãâ·Â
-		System.out.print(30);// Á¤¼ö Ãâ·Â
-		System.out.print('A');// ¹®ÀÚ Ãâ·Â
-//		System.out.print();//ÄÄÆÄÀÏ ¿À·ù. ¹®¹ıÀûÀ¸·Î Àß¸øµÊ		
-		System.out.print("X\n");// \n: Ãâ·Â ÈÄ ¶óÀÎ ³Ñ±è
+		System.out.print("korea");// ë¬¸ì"ì—´" ì¶œë ¥
+		System.out.print(30);// ì •ìˆ˜ ì¶œë ¥
+		System.out.print('A');// ë¬¸ì ì¶œë ¥
+//		System.out.print();//ì»´íŒŒì¼ ì˜¤ë¥˜. ë¬¸ë²•ì ìœ¼ë¡œ ì˜ëª»ë¨		
+		System.out.print("X\n");// \n: ì¶œë ¥ í›„ ë¼ì¸ ë„˜ê¹€
 		System.out.print("Y");
 		System.out.print("\n\n");
 		System.out.print("Z");
-		// System.out.print();//¹®ÀÚ Ãâ·Â
+		// System.out.print();//ë¬¸ì ì¶œë ¥
 
 		/*
-		 * System.out.println()¿¹Á¦ °ªÀ» Ãâ·ÂÇÑ´Ù. Ãâ·Â ÈÄ ¶óÀÎÀ» ³Ñ±ä´Ù.
+		 * System.out.println()ì˜ˆì œ ê°’ì„ ì¶œë ¥í•œë‹¤. ì¶œë ¥ í›„ ë¼ì¸ì„ ë„˜ê¸´ë‹¤.
 		 */
 
 		System.out.println("1");

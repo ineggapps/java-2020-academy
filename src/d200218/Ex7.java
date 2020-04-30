@@ -1,17 +1,17 @@
-package d200218;
+ï»¿package d200218;
 
 import java.text.ChoiceFormat;
 
 public class Ex7 {
 	public static void main(String[] args) {
-		//#, < µÎ °¡Áö´Â "limit#value" "limit<value" ÇüÅÂ·Î ÀÛ¼ºÇÑ´Ù.
-		//<´Â °æ°ì°ªÀ» Æ÷ÇÔÇÏÁö ¾Ê°í, #Àº °æ°ì°ªÀ» Æ÷ÇÔÇÑ´Ù.
+		//#, < ë‘ ê°€ì§€ëŠ” "limit#value" "limit<value" í˜•íƒœë¡œ ìž‘ì„±í•œë‹¤.
+		//<ëŠ” ê²½ê³—ê°’ì„ í¬í•¨í•˜ì§€ ì•Šê³ , #ì€ ê²½ê³—ê°’ì„ í¬í•¨í•œë‹¤.
 		String p = "0#F|60#D|70#C|80<B|90#A";
 		int []ss= {20,99,95,88,70,52,60,100,80,50};
 		ChoiceFormat f = new ChoiceFormat(p);
 		
 		for(int s:ss) {
-			System.out.println(s+"ÀÇ µî±ÞÀº " + f.format(s)+"µî±ÞÀÔ´Ï´Ù.");
+			System.out.println(s+"ì˜ ë“±ê¸‰ì€ " + f.format(s)+"ë“±ê¸‰ìž…ë‹ˆë‹¤.");
 		}
 	}
 }

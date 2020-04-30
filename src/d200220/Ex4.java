@@ -1,4 +1,4 @@
-package d200220;
+ï»¿package d200220;
 
 import java.util.Arrays;
 
@@ -6,9 +6,9 @@ public class Ex4 {
 	public static void main(String[] args) {
 		SortInt s = new SelectionSort();
 		SortInt s2 = new BubbleSort();
-		System.out.println("¼±ÅÃ Á¤·Ä");
+		System.out.println("ì„ íƒ ì •ë ¬");
 		s.sort(new int[] { 2, 4, 99, 3, 5 });
-		System.out.println("¹öºí Á¤·Ä");
+		System.out.println("ë²„ë¸” ì •ë ¬");
 		s2.sort(new int[] { 2, 4, 99, 3, 5 });
 	}
 }
@@ -16,14 +16,14 @@ public class Ex4 {
 abstract class SortInt {
 	private int[] value;
 
-	protected abstract void sorting();// Ãß»ó ¸Þ¼­µå
+	protected abstract void sorting();// ì¶”ìƒ ë©”ì„œë“œ
 
 	public void sort(int[] value) {
 		this.value = value;
-		sorting();// ¡Ú ¾ÆÁ÷ ³»¿ëÀÌ Á¤ÀÇµÇÁö ¾ÊÀº Ãß»ó¸Þ¼­µåÀÓ¿¡µµ ºÒ±¸ÇÏ°í È£ÃâÇÒ ¼ö ÀÖ´Ù´Ï!
-		//¾îÂ÷ÇÇ abstractÅ¬·¡½º´Â °´Ã¼»ý¼ºÀ» ¸øÇÏÁö¸¸
-		//°´Ã¼¸¦ »ý¼ºÇÒ ¼ö ÀÖ´Â »ó¼Ó¹Þ´Â(extendedµÈ Å¬·¡½º) Å¬·¡½ºµéÀº ÀÌ¹Ì ÀçÁ¤ÀÇ¸¦ ÇßÀ» Å×´Ï±î!
-		//È®ÀåÇÑ Å¬·¡½ºÀÇ ¸Þ¼­µå, Áï ±â¼úµÈ ¸Þ¼­µåÀÇ sorting()¸¦ È£ÃâÇÏ´Â °Å´Ï±î »ó°üÀÌ ¾ø°Ú±¸³ª!
+		sorting();// â˜… ì•„ì§ ë‚´ìš©ì´ ì •ì˜ë˜ì§€ ì•Šì€ ì¶”ìƒë©”ì„œë“œìž„ì—ë„ ë¶ˆêµ¬í•˜ê³  í˜¸ì¶œí•  ìˆ˜ ìžˆë‹¤ë‹ˆ!
+		//ì–´ì°¨í”¼ abstractí´ëž˜ìŠ¤ëŠ” ê°ì²´ìƒì„±ì„ ëª»í•˜ì§€ë§Œ
+		//ê°ì²´ë¥¼ ìƒì„±í•  ìˆ˜ ìžˆëŠ” ìƒì†ë°›ëŠ”(extendedëœ í´ëž˜ìŠ¤) í´ëž˜ìŠ¤ë“¤ì€ ì´ë¯¸ ìž¬ì •ì˜ë¥¼ í–ˆì„ í…Œë‹ˆê¹Œ!
+		//í™•ìž¥í•œ í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œ, ì¦‰ ê¸°ìˆ ëœ ë©”ì„œë“œì˜ sorting()ë¥¼ í˜¸ì¶œí•˜ëŠ” ê±°ë‹ˆê¹Œ ìƒê´€ì´ ì—†ê² êµ¬ë‚˜!
 	}
 
 	protected int length() {
@@ -57,20 +57,20 @@ class SortIntReal extends SortInt {
 
 }
 
-//Ãß»óÈ­ ÀÛ¾÷ (selection sort)
-//ÇÊµå
+//ì¶”ìƒí™” ìž‘ì—… (selection sort)
+//í•„ë“œ
 //		value[]: int
-//¸Þ¼­µå
-//		Á¤·Ä
-//		ºñ±³
-//		¸Â±³È¯
-//		µ¥ÀÌÅÍ ±æÀÌ È®ÀÎ
+//ë©”ì„œë“œ
+//		ì •ë ¬
+//		ë¹„êµ
+//		ë§žêµí™˜
+//		ë°ì´í„° ê¸¸ì´ í™•ì¸
 
-// ¾î¶² Á¤·Ä¹ýÀÌµç Á¤·Ä, ºñ±³, ¸Â±³È¯, µ¥ÀÌÅÍ ±æÀÌ¸¦ È®ÀÎÇÏ´Â ÀýÂ÷´Â ¹«Á¶°Ç µé¾î°£´Ù.
-// ´Ù¸¸ Á¤·ÄÇÒ ¶§ÀÇ °úÁ¤¸¸ ´Ù¸¦ »ÓÀÌ´Ù. (Á¤·Ä)
+// ì–´ë–¤ ì •ë ¬ë²•ì´ë“  ì •ë ¬, ë¹„êµ, ë§žêµí™˜, ë°ì´í„° ê¸¸ì´ë¥¼ í™•ì¸í•˜ëŠ” ì ˆì°¨ëŠ” ë¬´ì¡°ê±´ ë“¤ì–´ê°„ë‹¤.
+// ë‹¤ë§Œ ì •ë ¬í•  ë•Œì˜ ê³¼ì •ë§Œ ë‹¤ë¥¼ ë¿ì´ë‹¤. (ì •ë ¬)
 
-//Ãß»ó Å¬·¡½º¸¦ »ó¼Ó ¹ÞÀº Å¬·¡½º°¡ Ãß»ó Å¬·¡½º°¡ ¾Æ´Ï¸é 
-//¹Ýµå½Ã ‘™´À Ãß»ó ¸Þ¼­µå¸¦ ¿À¹ö¶óÀÌµùÇÏ¿© ½ÇÁ¦·Î ±¸ÇöÇØ¾ß ÇÑ´Ù.
+//ì¶”ìƒ í´ëž˜ìŠ¤ë¥¼ ìƒì† ë°›ì€ í´ëž˜ìŠ¤ê°€ ì¶”ìƒ í´ëž˜ìŠ¤ê°€ ì•„ë‹ˆë©´ 
+//ë°˜ë“œì‹œ Â‘Â™ëŠ ì¶”ìƒ ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”©í•˜ì—¬ ì‹¤ì œë¡œ êµ¬í˜„í•´ì•¼ í•œë‹¤.
 class SelectionSort extends SortInt {
 	@Override
 	protected void sorting() {

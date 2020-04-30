@@ -1,7 +1,7 @@
-public class Quiz108_Hap20 {
+ï»¿public class Quiz108_Hap20 {
 	public static void main(String[] args) {
 /*		
-		1+2+4+7+11 ... ÀÇ 20¹øÂ° Ç×±îÁöÀÇ ÇÕ
+		1+2+4+7+11 ... ì˜ 20ë²ˆì§¸ í•­ê¹Œì§€ì˜ í•©
 */
 		int s = 0, t = 1, n = 0;
 
@@ -10,6 +10,6 @@ public class Quiz108_Hap20 {
 			n++;
 			t += n;
 		}
-		System.out.println("°á°ú : "+s); // 1350
+		System.out.println("ê²°ê³¼ : "+s); // 1350
 	}
 }

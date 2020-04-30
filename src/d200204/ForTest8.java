@@ -1,7 +1,7 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForTest8 {
-	//1~100±îÁö ¼ö Áß 3ÀÇ ¹è¼ö¸¦ ÇÑ ÁÙ¿¡ 10°³¾¿ Ãâ·ÂÇÏ°í ¸¶Áö¸·¿¡ 3ÀÇ ¹è¼ö ÇÕ ¹× Æò±ÕÀ» Ãâ·Â
+	//1~100ê¹Œì§€ ìˆ˜ ì¤‘ 3ì˜ ë°°ìˆ˜ë¥¼ í•œ ì¤„ì— 10ê°œì”© ì¶œë ¥í•˜ê³  ë§ˆì§€ë§‰ì— 3ì˜ ë°°ìˆ˜ í•© ë° í‰ê· ì„ ì¶œë ¥
 	public static void main(String[] args) {
 		int cnt = 0;
 		int sum=0, avg=0;
@@ -17,7 +17,7 @@ public class ForTest8 {
 		if(cnt%10!=0) {
 			System.out.println();
 		}
-		System.out.println("ÇÕ: "+sum);
-		System.out.println("Æò±Õ: "+avg);
+		System.out.println("í•©: "+sum);
+		System.out.println("í‰ê· : "+avg);
 	}
 }

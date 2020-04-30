@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 import java.util.Random;
 
@@ -13,7 +13,7 @@ public class Ex16 {
 			n = r.nextInt(s.length());
 			b.append(s.substring(n, n + 1));
 		}
-		System.out.printf("±æÀÌ: %d\n", b.toString().length());
-		System.out.printf("¾ÏÈ£: %s\n", b.toString());
+		System.out.printf("ê¸¸ì´: %d\n", b.toString().length());
+		System.out.printf("ì•”í˜¸: %s\n", b.toString());
 	}
 }

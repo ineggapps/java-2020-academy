@@ -1,13 +1,13 @@
-package d200203;
+ï»¿package d200203;
 
 public class WhileEx7 {
 	public static void main(String[] args) {
 		int n = 0, s = 0;
-		//1~10±îÁöÀÇ ÇÕÀ» ±¸ÇÏ±â
+		//1~10ê¹Œì§€ì˜ í•©ì„ êµ¬í•˜ê¸°
 		while (n < 10) {
 			n++;
 			s += n;
 		}
-		System.out.println("°á°ú: " + s);
+		System.out.println("ê²°ê³¼: " + s);
 	}
 }

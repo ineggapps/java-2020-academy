@@ -1,4 +1,4 @@
-package d200226;
+ï»¿package d200226;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -12,27 +12,27 @@ import java.util.Set;
 public class Ex1 {
 	public static void main(String[] args) {
 		Map<String, Integer> map = new HashMap<>();
-		map.put("°¡°¡°¡", 80);
-		map.put("°í°í°í", 90);
-		map.put("È÷È÷È÷", 100);
-		map.put("¸¶¸¶¸¶", 60);
-		map.put("Å©Å©Å©", 80);
+		map.put("ê°€ê°€ê°€", 80);
+		map.put("ê³ ê³ ê³ ", 90);
+		map.put("íˆíˆíˆ", 100);
+		map.put("ë§ˆë§ˆë§ˆ", 60);
+		map.put("í¬í¬í¬", 80);
 
 		System.out.println(map);
 
-		// Å°¸¦ SetÀ¸·Î °¡Á®¿À±â
-		System.out.println("Å°¸¦ SETÀ¸·Î °¡Á®¿À±â");
+		// í‚¤ë¥¼ Setìœ¼ë¡œ ê°€ì ¸ì˜¤ê¸°
+		System.out.println("í‚¤ë¥¼ SETìœ¼ë¡œ ê°€ì ¸ì˜¤ê¸°");
 		Set<String> set = map.keySet();
 		System.out.println(set);
 
-		// mapÀÇ °ªÀ» list·Î °¡Á®¿À±â
+		// mapì˜ ê°’ì„ listë¡œ ê°€ì ¸ì˜¤ê¸°
 		List<Integer> list = new LinkedList<>(map.values());
 		System.out.println(list);
 		list.clear();
 		list.addAll(map.values());
 		System.out.println(list);
 		
-		System.out.println("map ÀüÃ¼-1");
+		System.out.println("map ì „ì²´-1");
 		Iterator<String> it = map.keySet().iterator();
 		while (it.hasNext()) {
 			String key = it.next();
@@ -41,11 +41,11 @@ public class Ex1 {
 		}
 		System.out.println();
 
-		// - entry: key¿Í value¸¦ ¹­¾îÁÖ±â À§ÇØ »ç¿ë
-		// - Map.Entry: ÀÎÅÍÆäÀÌ½º (Å°¿Í °ªÀ» ÇÏ³ª·Î º¸±â À§ÇØ »ç¿ëÇÏ´Â °ÍÀÌ EntryÀÌ´Ù)
-		// Å°¿Í °ªÀ» Set ÇüÅÂ·Î ÀúÀåÇÏ±â À§ÇØ »ç¿ë
-		// Áï, MapÀÇ Entry(Å°¿Í °ªÀÇ ÇÑ ½Ö)ÀÌ´Ù.
-		System.out.println("map ÀüÃ¼-2");
+		// - entry: keyì™€ valueë¥¼ ë¬¶ì–´ì£¼ê¸° ìœ„í•´ ì‚¬ìš©
+		// - Map.Entry: ì¸í„°í˜ì´ìŠ¤ (í‚¤ì™€ ê°’ì„ í•˜ë‚˜ë¡œ ë³´ê¸° ìœ„í•´ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ Entryì´ë‹¤)
+		// í‚¤ì™€ ê°’ì„ Set í˜•íƒœë¡œ ì €ì¥í•˜ê¸° ìœ„í•´ ì‚¬ìš©
+		// ì¦‰, Mapì˜ Entry(í‚¤ì™€ ê°’ì˜ í•œ ìŒ)ì´ë‹¤.
+		System.out.println("map ì „ì²´-2");
 		Set<Map.Entry<String, Integer>> set2 = map.entrySet();
 		Iterator<Map.Entry<String, Integer>> it2 = set2.iterator();
 		while (it2.hasNext()) {
@@ -54,16 +54,16 @@ public class Ex1 {
 		}
 		System.out.println();
 
-		// Çâ»óµÈ for¹®
-		System.out.println("map ÀüÃ¼-3");
+		// í–¥ìƒëœ forë¬¸
+		System.out.println("map ì „ì²´-3");
 		for (String s : map.keySet()) {
-			int score = map.get(s);// map¿¡¼­ key¿¡ ÇØ´çÇÏ´Â °ª °¡Á®¿À±â
+			int score = map.get(s);// mapì—ì„œ keyì— í•´ë‹¹í•˜ëŠ” ê°’ ê°€ì ¸ì˜¤ê¸°
 			System.out.println(s + ": " + score);
 		}
 		System.out.println();
 		
-		//°ªÀ» ÄÃ·º¼ÇÀ¸·Î
-		System.out.println("°ªÀ» ÄÃ·º¼ÇÀ¸·Î °¡Á®¿À±â");
+		//ê°’ì„ ì»¬ë ‰ì…˜ìœ¼ë¡œ
+		System.out.println("ê°’ì„ ì»¬ë ‰ì…˜ìœ¼ë¡œ ê°€ì ¸ì˜¤ê¸°");
 		Collection<Integer> col = map.values();
 		Iterator<Integer> it3 = col.iterator();
 		while(it3.hasNext()) {
@@ -72,7 +72,7 @@ public class Ex1 {
 		}
 		System.out.println();
 		
-		System.out.println("ÃÖ°í Á¡¼ö: "+ Collections.max(col));
-		System.out.println("ÃÖÀú Á¡¼ö: "+ Collections.min(col));
+		System.out.println("ìµœê³  ì ìˆ˜: "+ Collections.max(col));
+		System.out.println("ìµœì € ì ìˆ˜: "+ Collections.min(col));
 	}
 }

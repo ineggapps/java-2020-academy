@@ -1,4 +1,4 @@
-package d200213;
+ï»¿package d200213;
 
 public class Ex8 {
 	public static void main(String[] args) {
@@ -13,18 +13,18 @@ class Test8 {
 	private int a;
 
 	public Test8() {
-		//´Ù¸¥ »ı¼ºÀÚ¸¦ ºÎ¸£´Â °ÍÀº ´Ü ÇÑ ¹ø ÃÖ»ó´Ü¿¡¼­¸¸ °¡´ÉÇÏ´Ù.
-		//		this();//ÄÄÆÄÀÏ ¿À·ù (Recursive constructor invocation Test8());
-		this(999);//ÀÎ¼ö°¡´Ù¸¥ ÀÚ½ÅÀÇ ´Ù¸¥ »ı¼ºÀÚ¸¦ È£ÃâÇÏ°íÀÚ ÇÑ´Ù¸é °¡Àå ¸ÕÀú ½ÇÇàÇØ¾ß ÇÑ´Ù.
-		//=> ´Ù¸¥ »ı¼ºÀÚÀÇ ÄÚµå¸¦ ½ÇÇàÇÏ°í µ¹¾Æ¿Â´Ù.
-		//Test8(999); ÀÌ°Íµµ ¸¶Âù°¡Áö·Î ¸Ş¼­µå¸¦ ºÎ¸£´Â °ÍÀÌ¹Ç·Î ÄÄÆÄÀÏ ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
-		System.out.println("ÀÎÀÚ ¾ø´Â »ı¼ºÀÚ");
+		//ë‹¤ë¥¸ ìƒì„±ìë¥¼ ë¶€ë¥´ëŠ” ê²ƒì€ ë‹¨ í•œ ë²ˆ ìµœìƒë‹¨ì—ì„œë§Œ ê°€ëŠ¥í•˜ë‹¤.
+		//		this();//ì»´íŒŒì¼ ì˜¤ë¥˜ (Recursive constructor invocation Test8());
+		this(999);//ì¸ìˆ˜ê°€ë‹¤ë¥¸ ìì‹ ì˜ ë‹¤ë¥¸ ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ê³ ì í•œë‹¤ë©´ ê°€ì¥ ë¨¼ì € ì‹¤í–‰í•´ì•¼ í•œë‹¤.
+		//=> ë‹¤ë¥¸ ìƒì„±ìì˜ ì½”ë“œë¥¼ ì‹¤í–‰í•˜ê³  ëŒì•„ì˜¨ë‹¤.
+		//Test8(999); ì´ê²ƒë„ ë§ˆì°¬ê°€ì§€ë¡œ ë©”ì„œë“œë¥¼ ë¶€ë¥´ëŠ” ê²ƒì´ë¯€ë¡œ ì»´íŒŒì¼ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
+		System.out.println("ì¸ì ì—†ëŠ” ìƒì„±ì");
 //		this(999);//Constructor call must be the first statement in a constructor
 	}
 
 	public Test8(int n) {
 		a = n;
-		System.out.println("ÀÎÀÚ°¡ ÀÖ´Â »ı¼ºÀÚ");
+		System.out.println("ì¸ìê°€ ìˆëŠ” ìƒì„±ì");
 	}
 	
 	public void write() {

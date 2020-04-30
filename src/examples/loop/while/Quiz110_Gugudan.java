@@ -1,7 +1,7 @@
-public class Quiz110_Gugudan {
+ï»¿public class Quiz110_Gugudan {
 	public static void main(String[] args) {
 /*		
-		°¡·Î Ãâ·Â ±¸±¸´Ü
+		ê°€ë¡œ ì¶œë ¥ êµ¬êµ¬ë‹¨
 */
 		int dan, n;
 		

@@ -1,42 +1,42 @@
-package d200129;
+ï»¿package d200129;
 
 import java.util.Scanner;
 /*
- * Ã¼Áß°ú Å°¸¦ ÀÔ·Â ¹Þ¾Æ BMI(Ã¼Áú·®Áö¼ö)¸¦ °è»êÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
- * [Ã³¸®Á¶°Ç]
- * - Ã¼ÁßÀÇ ÀÔ·Â ´ÜÀ§´Â kgÀÌ¸ç ÀÔ·ÂÀº Scanner Å¬·¡½ºÀÇ nextDouble() ¸Þ¼­µå¸¦ ÀÌ¿ëÇÏ¿© ½Ç¼ö¸¦ ÀÔ·Â ¹Þ´Â´Ù.
- * - Å°ÀÇ ÀÔ·Â ´ÜÀ§´Â cmÀÌ¸ç ÀÔ·ÂÀº Scanner Å¬·¡½ºÀÇ nextDouble() ¸Þ¼­µå¸¦ ÀÌ¿ëÇÏ¿© ½Ç¼ö·Î ÀÔ·Â ¹Þ´Â´Ù.
- * - Ã¼ÁßÀº kg, Å°´Â m ´ÜÀ§·Î Ãâ·ÂÇÏ¸ç ¼Ò¼öÁ¡ ¼Â Â° ÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²ÇÏ¿© ¼Ò¼öÁ¡ µÎ ÀÚ¸®·Î Ãâ·ÂÇÑ´Ù.
- * - BMI Ãâ·ÂÀº ¼Ò¼öÁ¡ µÑ Â° ÀÚ¸®¿¡¼­ ¹æ³î¸²ÇÏ¿© ¼Ò¼öÁ¡ ÇÑ ÀÚ¸®·Î Ãâ·ÂÇÑ´Ù.
- * [¹®Á¦ ¼³¸í]
- * - BMI(Ã¼Áú·®Áö¼ö, Body Mass Index)
- * BMI´Â ¼ºÀÎÀÇ ½ÅÀå°ú Ã¼ÁßÀ» ÀÌ¿ëÇÏ¿© Áö¹æÀÇ ¾çÀ» ÃßÁ¤ÇÏ´Â °ø½ÄÀ¸·Î Ã¼Áö¹æ·ü ¹× °Ç°­ À§Çèµµ¸¦ ¹Ý¿µÇÏ´Â ÁöÇ¥¶ó°í ÇÒ ¼ö ÀÖ´Ù. 
- * ÇÏÁö¸¸ BMI´Â ½ÅÀå°ú Ã¼Áß¸¸À» ÀÌ¿ëÇÏ¿© °è»êµÇ¹Ç·Î »ç¶÷ÀÌ °°Àº Ã¼Áú·®Áö¼ö¸¦ °¡Á®µµ Ã¼Áö¹æ·üÀº ´Ù¸¦ ¼ö ÀÖ´Ù.
- * BMI = Ã¼Áß / (Å°*Å°)
- * Ã¼Áß ´ÜÀ§´Â kgÀÌ¸ç Å°´Â mÀÌ´Ù.
- * ¿¹¸¦ µé¾î Ã¼ÁßÀÌ 80kgÀÌ°í Å°°¡ 183cm(1.83m)ÀÌ¸é
- * BMI = 80 / (1.83 * 1.83) = 23.9ÀÌ´Ù.
- * - BMI¿¡ µû¸¥ Ã¼Áß »óÅÂ
- * 18.5ÀÌÇÏ: ÀúÃ¼Áß
- * 18.5 ~ 24.9: Á¤»ó
- * 25.0 ~ 29.9: °úÃ¼Áß
- * 30.0 ÀÌ»ó: ºñ¸¸
+ * ì²´ì¤‘ê³¼ í‚¤ë¥¼ ìž…ë ¥ ë°›ì•„ BMI(ì²´ì§ˆëŸ‰ì§€ìˆ˜)ë¥¼ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+ * [ì²˜ë¦¬ì¡°ê±´]
+ * - ì²´ì¤‘ì˜ ìž…ë ¥ ë‹¨ìœ„ëŠ” kgì´ë©° ìž…ë ¥ì€ Scanner í´ëž˜ìŠ¤ì˜ nextDouble() ë©”ì„œë“œë¥¼ ì´ìš©í•˜ì—¬ ì‹¤ìˆ˜ë¥¼ ìž…ë ¥ ë°›ëŠ”ë‹¤.
+ * - í‚¤ì˜ ìž…ë ¥ ë‹¨ìœ„ëŠ” cmì´ë©° ìž…ë ¥ì€ Scanner í´ëž˜ìŠ¤ì˜ nextDouble() ë©”ì„œë“œë¥¼ ì´ìš©í•˜ì—¬ ì‹¤ìˆ˜ë¡œ ìž…ë ¥ ë°›ëŠ”ë‹¤.
+ * - ì²´ì¤‘ì€ kg, í‚¤ëŠ” m ë‹¨ìœ„ë¡œ ì¶œë ¥í•˜ë©° ì†Œìˆ˜ì  ì…‹ ì§¸ ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼í•˜ì—¬ ì†Œìˆ˜ì  ë‘ ìžë¦¬ë¡œ ì¶œë ¥í•œë‹¤.
+ * - BMI ì¶œë ¥ì€ ì†Œìˆ˜ì  ë‘˜ ì§¸ ìžë¦¬ì—ì„œ ë°©ë†€ë¦¼í•˜ì—¬ ì†Œìˆ˜ì  í•œ ìžë¦¬ë¡œ ì¶œë ¥í•œë‹¤.
+ * [ë¬¸ì œ ì„¤ëª…]
+ * - BMI(ì²´ì§ˆëŸ‰ì§€ìˆ˜, Body Mass Index)
+ * BMIëŠ” ì„±ì¸ì˜ ì‹ ìž¥ê³¼ ì²´ì¤‘ì„ ì´ìš©í•˜ì—¬ ì§€ë°©ì˜ ì–‘ì„ ì¶”ì •í•˜ëŠ” ê³µì‹ìœ¼ë¡œ ì²´ì§€ë°©ë¥  ë° ê±´ê°• ìœ„í—˜ë„ë¥¼ ë°˜ì˜í•˜ëŠ” ì§€í‘œë¼ê³  í•  ìˆ˜ ìžˆë‹¤. 
+ * í•˜ì§€ë§Œ BMIëŠ” ì‹ ìž¥ê³¼ ì²´ì¤‘ë§Œì„ ì´ìš©í•˜ì—¬ ê³„ì‚°ë˜ë¯€ë¡œ ì‚¬ëžŒì´ ê°™ì€ ì²´ì§ˆëŸ‰ì§€ìˆ˜ë¥¼ ê°€ì ¸ë„ ì²´ì§€ë°©ë¥ ì€ ë‹¤ë¥¼ ìˆ˜ ìžˆë‹¤.
+ * BMI = ì²´ì¤‘ / (í‚¤*í‚¤)
+ * ì²´ì¤‘ ë‹¨ìœ„ëŠ” kgì´ë©° í‚¤ëŠ” mì´ë‹¤.
+ * ì˜ˆë¥¼ ë“¤ì–´ ì²´ì¤‘ì´ 80kgì´ê³  í‚¤ê°€ 183cm(1.83m)ì´ë©´
+ * BMI = 80 / (1.83 * 1.83) = 23.9ì´ë‹¤.
+ * - BMIì— ë”°ë¥¸ ì²´ì¤‘ ìƒíƒœ
+ * 18.5ì´í•˜: ì €ì²´ì¤‘
+ * 18.5 ~ 24.9: ì •ìƒ
+ * 25.0 ~ 29.9: ê³¼ì²´ì¤‘
+ * 30.0 ì´ìƒ: ë¹„ë§Œ
  * */
 public class OperQuiz6 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		double weight, height, heightM, bmi;
-		System.out.print("Ã¼Áß(kg) ? ");
+		System.out.print("ì²´ì¤‘(kg) ? ");
 		weight = sc.nextDouble();
-		System.out.print("Å°(cm) ? ");
+		System.out.print("í‚¤(cm) ? ");
 		height = sc.nextDouble();
 		
 		heightM = height*0.01;
 		bmi = weight / (heightM * heightM);
 		
-		//°á±£°ª
-		System.out.printf("¸ö¹«°Ô: %.2fkg\n",weight);
-		System.out.printf("Å°: %.2fm\n",height*0.01);
+		//ê²°ê´ê°’
+		System.out.printf("ëª¸ë¬´ê²Œ: %.2fkg\n",weight);
+		System.out.printf("í‚¤: %.2fm\n",height*0.01);
 		System.out.printf("BMI: %.1f\n",bmi);
 		sc.close();	
 	}

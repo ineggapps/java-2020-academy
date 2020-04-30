@@ -1,7 +1,7 @@
-public class Quiz103_Alphabet5 {
+ï»¿public class Quiz103_Alphabet5 {
 	public static void main(String[] args) {
 /*		
-		A~Z ±îÁöÀÇ ¿µ¹®ÀÚ¸¦ ÇÑ ÁÙ¿¡ 5°³¾¿ Ãâ·Â
+		A~Z ê¹Œì§€ì˜ ì˜ë¬¸ìë¥¼ í•œ ì¤„ì— 5ê°œì”© ì¶œë ¥
 */
 		char ch='A';
 		int cnt;

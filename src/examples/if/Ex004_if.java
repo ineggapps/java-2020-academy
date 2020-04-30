@@ -1,19 +1,19 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex004_if {
 	public static void main(String[] args) {
 /*
-		¼¼¼ö¸¦ ÀÔ·Â ¹Þ¾Æ Å©±â¼øÀ¸·Î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		ì„¸ìˆ˜ë¥¼ ìž…ë ¥ ë°›ì•„ í¬ê¸°ìˆœìœ¼ë¡œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */
 		Scanner sc=new Scanner(System.in);
 		
 		int a, b, c, temp;
 
-		System.out.print("Ã¹¹øÂ° ¼ö ? ");
+		System.out.print("ì²«ë²ˆì§¸ ìˆ˜ ? ");
 		a = sc.nextInt();
-		System.out.print("µÎ¹øÂ° ¼ö ? ");
+		System.out.print("ë‘ë²ˆì§¸ ìˆ˜ ? ");
 		b = sc.nextInt();
-		System.out.print("¼¼¹øÂ° ¼ö ? ");
+		System.out.print("ì„¸ë²ˆì§¸ ìˆ˜ ? ");
 		c = sc.nextInt();
 
 		if(a>b) {
@@ -27,7 +27,7 @@ public class Ex004_if {
 		if(b>c) {
 			temp = b;	b = c;	c = temp;
 		}
-		System.out.println("°á°ú : " + a + "  " + b + "  " + c);
+		System.out.println("ê²°ê³¼ : " + a + "  " + b + "  " + c);
 		
 		sc.close();
 	}

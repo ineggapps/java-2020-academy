@@ -1,4 +1,4 @@
-package d200227;
+ï»¿package d200227;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Ex2 {
 	public static void main(String[] args) {
-		//Shuffle ¿¹Á¦ 2
-		//ArrayList °´Ã¼¸¦ shuffleÇÏ±â
+		//Shuffle ì˜ˆì œ 2
+		//ArrayList ê°ì²´ë¥¼ shuffleí•˜ê¸°
 		List<String> list = new ArrayList<String>();
 		list.add("java");
 		list.add("spring");

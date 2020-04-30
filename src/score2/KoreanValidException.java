@@ -1,4 +1,4 @@
-package score2;
+﻿package score2;
 
 public class KoreanValidException extends Exception {
 	private static final long serialVersionUID = 1L;

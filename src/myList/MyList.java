@@ -1,4 +1,4 @@
-package myList;
+﻿package myList;
 
 public interface MyList<E> {
 	public void add(E element);

@@ -1,18 +1,18 @@
-package d200224;
+ï»¿package d200224;
 
 public class Ex10 {
 	public static void main(String[] args) {
 		User10<Integer> ob = new User10<>();
 		ob.set(new Integer(10));
 		
-//		User10<Number> ob2=ob;//ÄÄÆÄÀÏ ¿À·ù. »ó¼Ó °ü°è°¡ ¾Æ´Ï´Ù.
+//		User10<Number> ob2=ob;//ì»´íŒŒì¼ ì˜¤ë¥˜. ìƒì† ê´€ê³„ê°€ ì•„ë‹ˆë‹¤.
 		
 		User10<?> ob2 = ob;
-		// ? : ¸ðµç Å¬·¡½º³ª ÀÎÅÍÆäÀÌ½º°¡ °¡´ÉÇÏ´Ù
-		// Á¦³×¸¯ Å¸ÀÔ¿¡ ÀÇÁ¸ÀûÀÌÁö ¾Ê´Â ¸Þ¼­µå µîÀ» È£ÃâÇÒ ¶§ »ç¿ëÇÑ´Ù.
+		// ? : ëª¨ë“  í´ëž˜ìŠ¤ë‚˜ ì¸í„°íŽ˜ì´ìŠ¤ê°€ ê°€ëŠ¥í•˜ë‹¤
+		// ì œë„¤ë¦­ íƒ€ìž…ì— ì˜ì¡´ì ì´ì§€ ì•ŠëŠ” ë©”ì„œë“œ ë“±ì„ í˜¸ì¶œí•  ë•Œ ì‚¬ìš©í•œë‹¤.
 //		ob2.set(new Integer(200)); The method set(capture#1-of ?) in the type User10<capture#1-of ?> is not applicable for the arguments (Integer)
-//		ob2´Â ÀÚ·áÇüÀÌ ¾ÆÁ÷ °áÁ¤µÇÁö ¾ÊÀº »óÅÂ¿¡¼­ µ¥ÀÌÅÍ¸¦ »ðÀÔÇÏ¿´´Ù.
-//		¿ÍÀÏµåÄ«µå´Â ¾Æ¹« °÷¿¡¼­³ª »ç¿ëÇÏ´Â °ÍÀÌ ¾Æ´Ô.
+//		ob2ëŠ” ìžë£Œí˜•ì´ ì•„ì§ ê²°ì •ë˜ì§€ ì•Šì€ ìƒíƒœì—ì„œ ë°ì´í„°ë¥¼ ì‚½ìž…í•˜ì˜€ë‹¤.
+//		ì™€ì¼ë“œì¹´ë“œëŠ” ì•„ë¬´ ê³³ì—ì„œë‚˜ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ ì•„ë‹˜.
 		ob2.print();
 	}
 }

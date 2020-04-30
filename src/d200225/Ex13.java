@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Iterator;
@@ -10,18 +10,18 @@ public class Ex13 {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
 
-		list.add("¼­¿ï");
-		list.add("ºÎ»ê");
-		list.add("´ë±¸");
-		list.add("±¤ÁÖ");
+		list.add("ì„œìš¸");
+		list.add("ë¶€ì‚°");
+		list.add("ëŒ€êµ¬");
+		list.add("ê´‘ì£¼");
 
-		System.out.println("ÀüÃ¼-1");
+		System.out.println("ì „ì²´-1");
 		for (String s : list) {
 			System.out.print(s + " ");
 		}
 		System.out.println();
 
-		System.out.println("ÀüÃ¼-2");
+		System.out.println("ì „ì²´-2");
 		Iterator<String> it = list.iterator();
 		while (it.hasNext()) {
 			String s = it.next();
@@ -29,8 +29,8 @@ public class Ex13 {
 		}
 		System.out.println();
 
-		System.out.println("ÀüÃ¼-3");
-		// ListIterator: ¿ªÀ¸·Î Ãâ·Âµµ °¡´É
+		System.out.println("ì „ì²´-3");
+		// ListIterator: ì—­ìœ¼ë¡œ ì¶œë ¥ë„ ê°€ëŠ¥
 		ListIterator<String> it2 = list.listIterator();
 		while (it2.hasNext()) {
 			String s = it2.next();
@@ -38,8 +38,8 @@ public class Ex13 {
 		}
 		System.out.println();
 
-		System.out.println("ÀüÃ¼-4(¿ª¼ø)");
-		// ListIterator ¿ªÀ¸·Î Ãâ·ÂÇØ º¸±â
+		System.out.println("ì „ì²´-4(ì—­ìˆœ)");
+		// ListIterator ì—­ìœ¼ë¡œ ì¶œë ¥í•´ ë³´ê¸°
 		ListIterator<String> it3 = list.listIterator(list.size());
 		while (it3.hasPrevious()) {
 			String s = it3.previous();
@@ -50,19 +50,19 @@ public class Ex13 {
 		//////////////////////////////////
 
 		Vector<String> v = new Vector<String>();
-		v.add("°­¿ø");
-		v.add("°æ±â");
-		v.add("°æ»ó");
+		v.add("ê°•ì›");
+		v.add("ê²½ê¸°");
+		v.add("ê²½ìƒ");
 
 		Enumeration<String> e = v.elements();
-		System.out.println("º¤ÅÍ ÀüÃ¼-1");
+		System.out.println("ë²¡í„° ì „ì²´-1");
 		while (e.hasMoreElements()) {
 			String s = e.nextElement();
 			System.out.print(s + " ");
 		}
 		System.out.println();
 
-		System.out.println("º¤ÅÍ ÀüÃ¼-2");
+		System.out.println("ë²¡í„° ì „ì²´-2");
 		Iterator<String> vi = v.iterator();
 		while (vi.hasNext()) {
 			String s = vi.next();
@@ -70,7 +70,7 @@ public class Ex13 {
 		}
 		System.out.println();
 
-		System.out.println("º¤ÅÍ ÀüÃ¼-3");
+		System.out.println("ë²¡í„° ì „ì²´-3");
 		for (String s : v) {
 			System.out.print(s + " ");
 		}

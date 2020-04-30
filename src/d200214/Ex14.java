@@ -1,4 +1,4 @@
-package d200214;
+ï»¿package d200214;
 
 import java.util.StringTokenizer;
 
@@ -12,22 +12,22 @@ public class Ex14 {
 		}
 		System.out.println();
 		
-		//¹öÀüÀÌ ³·À¸¸é String¿¡ split±â´ÉÀÌ ¾ø¾î¼­ StringTokenizerÀ» »ç¿ëÇß¾î¾ß Çß´Ù.
-		//String split±â´ÉÀ» »ç¿ëÇÒ ¼ö ÀÖ´Ù¸é StringTokenizerÅ¬·¡½º »ç¿ëÀ» ±ÇÀåÇÏÁö ¾Ê´Â´Ù.
-		//¡ñ StringÀÇ splitÀº Á¤±Ô½ÄÀ¸·Î Àß¶ó³¾ ¼ö ÀÖÀ½.
+		//ë²„ì „ì´ ë‚®ìœ¼ë©´ Stringì— splitê¸°ëŠ¥ì´ ì—†ì–´ì„œ StringTokenizerì„ ì‚¬ìš©í–ˆì–´ì•¼ í–ˆë‹¤.
+		//String splitê¸°ëŠ¥ì„ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤ë©´ StringTokenizerí´ë˜ìŠ¤ ì‚¬ìš©ì„ ê¶Œì¥í•˜ì§€ ì•ŠëŠ”ë‹¤.
+		//âˆµ Stringì˜ splitì€ ì •ê·œì‹ìœ¼ë¡œ ì˜ë¼ë‚¼ ìˆ˜ ìˆìŒ.
 		StringTokenizer st = new StringTokenizer(s,",");
 		String x;
-		while(st.hasMoreTokens()) {//ºĞ¸®ÇÑ ¹®ÀÚ¿­ÀÌ ÀÖ´Ù¸é?
-			x=st.nextToken();//±âÁØ ¹®ÀÚ¿­ ,·Î ÀÚ¸¥ ¹®ÀÚ¿­À» ¼ø¼­´ë·Î ³Ñ±ä´Ù
+		while(st.hasMoreTokens()) {//ë¶„ë¦¬í•œ ë¬¸ìì—´ì´ ìˆë‹¤ë©´?
+			x=st.nextToken();//ê¸°ì¤€ ë¬¸ìì—´ ,ë¡œ ìë¥¸ ë¬¸ìì—´ì„ ìˆœì„œëŒ€ë¡œ ë„˜ê¸´ë‹¤
 			System.out.print(x+" ");
 		}
 		System.out.println();
 
 		
-		StringTokenizer st2 = new StringTokenizer(s,",",true);//boolean returnDelimsÀÌ true¸é ±¸ºĞÀÚµµ ÀÔ·ÂµÇ¾î ¹İÈ¯À» ÇÑ´Ù
+		StringTokenizer st2 = new StringTokenizer(s,",",true);//boolean returnDelimsì´ trueë©´ êµ¬ë¶„ìë„ ì…ë ¥ë˜ì–´ ë°˜í™˜ì„ í•œë‹¤
 		String x2;
-		while(st2.hasMoreTokens()) {//ºĞ¸®ÇÑ ¹®ÀÚ¿­ÀÌ ÀÖ´Ù¸é?
-			x2=st2.nextToken();//±âÁØ ¹®ÀÚ¿­ ,·Î ÀÚ¸¥ ¹®ÀÚ¿­À» ¼ø¼­´ë·Î ³Ñ±ä´Ù
+		while(st2.hasMoreTokens()) {//ë¶„ë¦¬í•œ ë¬¸ìì—´ì´ ìˆë‹¤ë©´?
+			x2=st2.nextToken();//ê¸°ì¤€ ë¬¸ìì—´ ,ë¡œ ìë¥¸ ë¬¸ìì—´ì„ ìˆœì„œëŒ€ë¡œ ë„˜ê¸´ë‹¤
 			System.out.print(x2);
 		}
 		System.out.println();

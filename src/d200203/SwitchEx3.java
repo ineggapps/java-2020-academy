@@ -1,4 +1,4 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class SwitchEx3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a;
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ ìž…ë ¥: ");
 		a = sc.nextInt();
 
 		switch (a) {

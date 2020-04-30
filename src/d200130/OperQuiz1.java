@@ -1,17 +1,17 @@
-package d200130;
+ï»¿package d200130;
 
 import java.util.Scanner;
 
 public class OperQuiz1 {
-	//°¡·Î¿Í ¼¼·Î¸¦ ÀÔ·Â ¹Ş¾Æ Á÷»ç°¢ÇüÀÇ ³ĞÀÌ¿Í µÑ·¹ °è»ê
+	//ê°€ë¡œì™€ ì„¸ë¡œë¥¼ ì…ë ¥ ë°›ì•„ ì§ì‚¬ê°í˜•ì˜ ë„“ì´ì™€ ë‘˜ë ˆ ê³„ì‚°
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int width, height;
-		System.out.print("³Êºñ ? ");
+		System.out.print("ë„ˆë¹„ ? ");
 		width = sc.nextInt();
-		System.out.print("³ôÀÌ ? ");
+		System.out.print("ë†’ì´ ? ");
 		height = sc.nextInt();
-		System.out.printf("°¡·Î %d, ¼¼·Î %dÀÎ »ç°¢ÇüÀÇ ³ĞÀÌ´Â %dÀÌ¸ç, µÑ·¹´Â %dÀÔ´Ï´Ù.\n",width,height,width*height,(width+height)*2);
+		System.out.printf("ê°€ë¡œ %d, ì„¸ë¡œ %dì¸ ì‚¬ê°í˜•ì˜ ë„“ì´ëŠ” %dì´ë©°, ë‘˜ë ˆëŠ” %dì…ë‹ˆë‹¤.\n",width,height,width*height,(width+height)*2);
 		sc.close();
 	}
 }

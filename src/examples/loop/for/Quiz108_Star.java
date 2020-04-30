@@ -1,9 +1,9 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz108_Star {
 	public static void main(String[] args) {
 /*
-		È¦¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ´ÙÀÌ¾Æ¸óµå ¸ğ¾çÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		í™€ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ë‹¤ì´ì•„ëª¬ë“œ ëª¨ì–‘ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 *****
  ***
   *
@@ -15,7 +15,7 @@ public class Quiz108_Star {
 		int m;
 		
 		do {
-			System.out.print("Å©±â ?");
+			System.out.print("í¬ê¸° ?");
 			size=sc.nextInt();
 		} while(size<1 || size > 10 || size%2==0);
 		

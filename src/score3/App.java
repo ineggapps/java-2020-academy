@@ -1,4 +1,4 @@
-package score3;
+ï»¿package score3;
 
 import java.util.Scanner;
 
@@ -10,38 +10,38 @@ public class App {
 		try {
 			while (true) {
 				do {
-					System.out.print("1.ÀÔ·Â 2.Ãâ·Â 3.ÇĞ¹ø°Ë»ö 4.ÀÌ¸§°Ë»ö 5.¼öÁ¤ 6.»èÁ¦ 7.ÃÑÁ¡¼ø 8.Á¾·á > ");
+					System.out.print("1.ì…ë ¥ 2.ì¶œë ¥ 3.í•™ë²ˆê²€ìƒ‰ 4.ì´ë¦„ê²€ìƒ‰ 5.ìˆ˜ì • 6.ì‚­ì œ 7.ì´ì ìˆœ 8.ì¢…ë£Œ > ");
 					ch = sc.nextInt();
 				} while (ch < 1 || ch > 8);
-				if (ch == 8) {// Á¾·á
+				if (ch == 8) {// ì¢…ë£Œ
 					break;
 				}
 				switch (ch) {
-				case 1:// 1. ÀÔ·Â
+				case 1:// 1. ì…ë ¥
 					ss.input();
 					break;
-				case 2:// 2. Ãâ·Â
+				case 2:// 2. ì¶œë ¥
 					ss.print();
 					break;
-				case 3:// 3. ÇĞ¹ø °Ë»ö
+				case 3:// 3. í•™ë²ˆ ê²€ìƒ‰
 					ss.findByHak();
 					break;
-				case 4:// 4. ÀÌ¸§ ¼¶»ö
+				case 4:// 4. ì´ë¦„ ì„¬ìƒ‰
 					ss.findByName();
 					break;
-				case 5:// 5. ¼öÁ¤
+				case 5:// 5. ìˆ˜ì •
 					ss.update();
 					break;
-				case 6:// 6. »èÁ¦
+				case 6:// 6. ì‚­ì œ
 					ss.remove();
 					break;
-				case 7: //7. ÃÑÁ¡¼ø Ãâ·Â
+				case 7: //7. ì´ì ìˆœ ì¶œë ¥
 					ss.toDescPrint();
 					break;
 				}
 			}
 		} finally {
-			System.out.println("Á¾·á");
+			System.out.println("ì¢…ë£Œ");
 			sc.close();
 		}
 	}

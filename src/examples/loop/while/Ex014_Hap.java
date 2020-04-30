@@ -1,7 +1,7 @@
-public class Ex014_Hap {
+ï»¿public class Ex014_Hap {
 	public static void main(String[] args) {
 /*
-		1/2+2/3+3/4+...+9/10ÀÇ °á°ú¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1/2+2/3+3/4+...+9/10ì˜ ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int n;
 		double s;
@@ -13,6 +13,6 @@ public class Ex014_Hap {
 			s+=(double)n/(n+1);
 			// s=s+(double)n/(n+1);
 		}
-		System.out.println("°á°ú : "+s); // 7.071031746031746
+		System.out.println("ê²°ê³¼ : "+s); // 7.071031746031746
 	}
 }

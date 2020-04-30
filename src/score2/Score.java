@@ -1,4 +1,4 @@
-package score2;
+﻿package score2;
 
 public interface Score {
 	public int getCount();

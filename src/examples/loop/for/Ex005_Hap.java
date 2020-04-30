@@ -1,7 +1,7 @@
-public class Ex005_Hap {
+ï»¿public class Ex005_Hap {
 	public static void main(String[] args) {
 /*
-		1~10 ±îÁö Á¤¼öÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		1~10 ê¹Œì§€ ì •ìˆ˜ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */	
 		int s, n;
 		s=0;
@@ -10,16 +10,16 @@ public class Ex005_Hap {
 			// System.out.print(n+":"+s+"  ");
 			//  1:1  2:3  3:6  4:10  5:15  6:21  7:28  8:36  9:45  10:55
 		}
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 		// System.out.println(" out ->"+n+":"+s); // 11:55
 		
 /*		
 		int s=0;
-		for(int n=1; n<=10; n++) { // for¹® ¾È¿¡¼­ º¯¼ö ¼±¾ð
+		for(int n=1; n<=10; n++) { // forë¬¸ ì•ˆì—ì„œ ë³€ìˆ˜ ì„ ì–¸
 			s+=n;
 		}
-		// System.out.println(n); // ÄÄÆÄÀÏ ¿À·ù. for¹®¿¡¼­ ¼±¾ðÇÑ º¯¼ö´Â ¿ÜºÎ »ç¿ë ºÒ°¡
-		System.out.println("°á°ú : "+s);
+		// System.out.println(n); // ì»´íŒŒì¼ ì˜¤ë¥˜. forë¬¸ì—ì„œ ì„ ì–¸í•œ ë³€ìˆ˜ëŠ” ì™¸ë¶€ ì‚¬ìš© ë¶ˆê°€
+		System.out.println("ê²°ê³¼ : "+s);
 */
 
 /*		
@@ -27,7 +27,7 @@ public class Ex005_Hap {
 		for(n=1, s=0; n<=10; s+=n, n++)
 			;
 		
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 */
 	}
 }

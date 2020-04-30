@@ -1,8 +1,8 @@
-public class Ex008_Multiple3 {
+ï»¿public class Ex008_Multiple3 {
 	public static void main(String[] args) {
 /*
-		1~100 ±îÁö ¼ö Áß 3ÀÇ ¹è¼ö¸¦ ÇÑ ÁÙ¿¡ 10°³¾¿ Ãâ·ÂÇÏ°í
-		¸¶Áö¸·¿¡ 3ÀÇ ¹è¼ö ÇÕÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~100 ê¹Œì§€ ìˆ˜ ì¤‘ 3ì˜ ë°°ìˆ˜ë¥¼ í•œ ì¤„ì— 10ê°œì”© ì¶œë ¥í•˜ê³ 
+		ë§ˆì§€ë§‰ì— 3ì˜ ë°°ìˆ˜ í•©ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int s, cnt;
 		s=cnt=0;
@@ -13,8 +13,8 @@ public class Ex008_Multiple3 {
 			if(cnt%10==0)
 				System.out.println();
 		}
-		System.out.println("\nÇÕ : "+s);
-		System.out.println("Æò±Õ : "+(s/cnt));
+		System.out.println("\ní•© : "+s);
+		System.out.println("í‰ê·  : "+(s/cnt));
 		
 	}
 }

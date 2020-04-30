@@ -1,4 +1,4 @@
-package d200203;
+ï»¿package d200203;
 
 public class WhileEx14 {
 	public static void main(String[] args) {
@@ -7,6 +7,6 @@ public class WhileEx14 {
 		while(n++<10){
 			s*=n;
 		}
-		System.out.println("1~10ÀÇ °ö: "+s);
+		System.out.println("1~10ì˜ ê³±: "+s);
 	}
 }

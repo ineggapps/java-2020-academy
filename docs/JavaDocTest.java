@@ -1,9 +1,9 @@
-public class JavaDocTest {
+ï»¿public class JavaDocTest {
 	/**
-	 * Â¦¼öÀÎÁö ÆÇº°ÇÏ´Â ¸Ş¼­µå
-	 * <p> Á¤¼ö¸¦ 2·Î ³ª´©¾î ³ª¸ÓÁö°¡ 0ÀÌ¸é Â¦¼öÀÌ´Ù.</p>
-	 * @param num Â¦¼öÀÎÁö ÆÇº°ÇÏ±â À§ÇÑ ¼ö <code>int</code>
-	 * @return		  Â¦¼ö ¿©ºÎ¸¦ ¹İÈ¯ <code>boolean</code>
+	 * ì§ìˆ˜ì¸ì§€ íŒë³„í•˜ëŠ” ë©”ì„œë“œ
+	 * <p> ì •ìˆ˜ë¥¼ 2ë¡œ ë‚˜ëˆ„ì–´ ë‚˜ë¨¸ì§€ê°€ 0ì´ë©´ ì§ìˆ˜ì´ë‹¤.</p>
+	 * @param num ì§ìˆ˜ì¸ì§€ íŒë³„í•˜ê¸° ìœ„í•œ ìˆ˜ <code>int</code>
+	 * @return		  ì§ìˆ˜ ì—¬ë¶€ë¥¼ ë°˜í™˜ <code>boolean</code>
 	 */
 	public boolean isEven(int num) {
 		return num%2==0;

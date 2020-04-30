@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 public class Ex14 {
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ class User14 {
 
 	public void setAge(int age) throws Exception {
 		if (age < 0) {
-			throw new Exception("³ªÀÌ´Â 0 ÀÌ»óÀÌ´Ù.");
+			throw new Exception("ë‚˜ì´ëŠ” 0 ì´ìƒì´ë‹¤.");
 		}
 		this.age = age;
 	}
@@ -33,7 +33,7 @@ class User14 {
 			setAge(age);
 		} catch (Exception e) {
 //			System.out.println(e.toString());
-			throw e;// ÀâÀº ¿¹¿Ü¸¦ ´Ù½Ã ´øÁø´Ù.
+			throw e;// ìž¡ì€ ì˜ˆì™¸ë¥¼ ë‹¤ì‹œ ë˜ì§„ë‹¤.
 		}
 	}
 

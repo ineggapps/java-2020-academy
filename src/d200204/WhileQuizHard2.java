@@ -1,26 +1,26 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class WhileQuizHard2 {
-	//Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº Á¤¼ö°¡ ¸î ÀÚ¸® Á¤¼öÀÎÁö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+	//ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì •ìˆ˜ê°€ ëª‡ ìë¦¬ ì •ìˆ˜ì¸ì§€ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n,r, cnt=1;
-		//n: ÀÔ·Â ¹ŞÀ» Á¤¼ö
-		//r: nÀ» ¿¬»êÇÑ Áß°£ ÀúÀå°ª
-		//cnt: Á¤¼öÀÇ ÀÚ¸´¼ö¸¦ ¼¼¾î ÀúÀå
-		System.out.print("Á¤¼ö ÀÔ·Â? ");
+		//n: ì…ë ¥ ë°›ì„ ì •ìˆ˜
+		//r: nì„ ì—°ì‚°í•œ ì¤‘ê°„ ì €ì¥ê°’
+		//cnt: ì •ìˆ˜ì˜ ìë¦¿ìˆ˜ë¥¼ ì„¸ì–´ ì €ì¥
+		System.out.print("ì •ìˆ˜ ì…ë ¥? ");
 		n = sc.nextInt();
 		
-		r = n;//100 ÀÔ·Â
+		r = n;//100 ì…ë ¥
 		while(r!=0) {
 			r /= 10;
 			if(r!=0) {				
 				cnt++;
 			}
 		}
-		System.out.printf("%dÀº %dÀÚ¸® Á¤¼ö",n,cnt);
+		System.out.printf("%dì€ %dìë¦¬ ì •ìˆ˜",n,cnt);
 		sc.close();
 	}
 }

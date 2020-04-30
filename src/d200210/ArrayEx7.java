@@ -1,4 +1,4 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayEx7 {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class ArrayEx7 {
 			System.out.println();
 		}
 		System.out.println("==============");
-		//Çâ»óµÈ for¹®À» »ç¿ëÇÑ ¹æ½Ä, ÇÏÁö¸¸ Àß ¾²ÀÌÁö´Â ¾Ê´Â´Ù.
+		//í–¥ìƒëœ forë¬¸ì„ ì‚¬ìš©í•œ ë°©ì‹, í•˜ì§€ë§Œ ì˜ ì“°ì´ì§€ëŠ” ì•ŠëŠ”ë‹¤.
 		for (int[] rows : a) {
 			for (int n : rows) {
 				System.out.printf("%3d\t", n);

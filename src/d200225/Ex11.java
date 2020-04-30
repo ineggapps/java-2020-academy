@@ -1,11 +1,11 @@
-package d200225;
+﻿package d200225;
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class Ex11 {
 	public static void main(String[] args) {
-		//�ζ�
+		//로또
 		Set<Integer> set = new TreeSet<Integer>();
 		Random rd = new Random();
 		int num;

@@ -1,4 +1,4 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
@@ -7,13 +7,13 @@ public class ForQuiz1 {
 		Scanner sc = new Scanner(System.in);
 		int num, n, s = 0;
 		do {
-			System.out.print("¼ö ? ");
+			System.out.print("ìˆ˜ ? ");
 			num = sc.nextInt();
 		} while (num < 1 || num > 1000);
 		for (int i = 1; i <= num; i++) {
 			s += i;
 		}
-		System.out.println("1~20±îÁöÀÇ ÇÕ: " + s);
+		System.out.println("1~20ê¹Œì§€ì˜ í•©: " + s);
 		sc.close();
 
 	}

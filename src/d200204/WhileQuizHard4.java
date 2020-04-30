@@ -1,4 +1,4 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
@@ -7,18 +7,18 @@ public class WhileQuizHard4 {
 		Scanner sc = new Scanner(System.in);
 		int n, cnt=1;
 		int before=0,current=1,tmp;
-		System.out.print("°³¼ö ÀÔ·Â: ");
+		System.out.print("ê°œìˆ˜ ì…ë ¥: ");
 		n = sc.nextInt();
 
-		System.out.printf("%d\t",0);//cnt 1°³ Ä«¿îÆ®
+		System.out.printf("%d\t",0);//cnt 1ê°œ ì¹´ìš´íŠ¸
 		//0 1 1 2 3 5 8 
 		while(cnt++<n && n>0) {
-			//n=10ÀÏ °æ¿ì ¸ÕÀú »ı°¢
-			//current´Â 3¹øÂ° °á±£°ªºÎÅÍ ¸¸µé¾î ³½´Ù´Â Á¡À» °¨¾È
+			//n=10ì¼ ê²½ìš° ë¨¼ì € ìƒê°
+			//currentëŠ” 3ë²ˆì§¸ ê²°ê´ê°’ë¶€í„° ë§Œë“¤ì–´ ë‚¸ë‹¤ëŠ” ì ì„ ê°ì•ˆ
 			System.out.printf("%d\t",current);
 			tmp = before;
 			before=current;
-			current=tmp+current;//´ÙÀ½ Ç×À¸·Î ÀÌµ¿
+			current=tmp+current;//ë‹¤ìŒ í•­ìœ¼ë¡œ ì´ë™
 		}
 		sc.close();
 	}

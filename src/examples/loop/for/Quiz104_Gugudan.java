@@ -1,7 +1,7 @@
-public class Quiz104_Gugudan {
+ï»¿public class Quiz104_Gugudan {
 	public static void main(String[] args) {
 /*
-		 2~9´Ü±îÁöÀÇ ±¸±¸´ÜÀ» °¡·Î·Î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		 2~9ë‹¨ê¹Œì§€ì˜ êµ¬êµ¬ë‹¨ì„ ê°€ë¡œë¡œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */	
 		for(int i = 1; i <= 9; i++) {
 			for(int j = 2; j <= 9; j++) {

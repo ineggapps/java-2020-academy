@@ -1,9 +1,9 @@
-package r200217;
+ï»¿package r200217;
 
 public class CloneTest {
 	public static void main(String[] args) {
 		Person p1 = new Person();
-		p1.setName("È«±æµ¿");
+		p1.setName("í™ê¸¸ë™");
 		try {
 			Person p2 = p1.clone();
 			System.out.println(p2.getName());
@@ -33,7 +33,7 @@ class Person implements Cloneable{
 	
 	@Override
 	protected Person clone() throws CloneNotSupportedException {
-		return (Person)super.clone();//°øº¯ ¹İÈ¯Å¸ÀÔÀ¸·Îµµ ÁöÁ¤ÀÌ °¡´ÉÇÏ´Ù
+		return (Person)super.clone();//ê³µë³€ ë°˜í™˜íƒ€ì…ìœ¼ë¡œë„ ì§€ì •ì´ ê°€ëŠ¥í•˜ë‹¤
 	}
 	
 }

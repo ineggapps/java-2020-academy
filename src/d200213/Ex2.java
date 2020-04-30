@@ -1,4 +1,4 @@
-package d200213;
+ï»¿package d200213;
 
 public class Ex2 {
 	public static void main(String[] args) {
@@ -7,32 +7,32 @@ public class Ex2 {
 		short a=10;
 		Short b = 10;
 		int c=10;
-		Integer d = 10;//int¸¦ Å¬·¡½º·Î ¸¸µç °Í
+		Integer d = 10;//intë¥¼ í´ëž˜ìŠ¤ë¡œ ë§Œë“  ê²ƒ
 		long e = 10;
-		Long f=10L; // Long f=10; //¿À·ù
+		Long f=10L; // Long f=10; //ì˜¤ë¥˜
 		
 		/*
-		 * ¸Þ¼­µå¸¦ Ã£´Â ¼ø¼­ Á¤ÇÏ±â
-			¸Þ¼­µå¸í°ú ÆÄ¶ó¹ÌÅÍ·Î ¸Þ¼­µå¸¦ °áÁ¤ÇÑ´Ù.
-			1. ½Ç¸Å°³º¯¼ö¿Í ÀÚ·áÇüÀÌ 100% µ¿ÀÏÇÑ °Í °Ë»ö (Å¬·¡½º´Â Å¬·¡½º, ±âº»ÀÚ·áÇüÀº ±âº»ÀÚ·áÇü)
-			2. ±âº»ÇüÀº ±âº»Çü Áß °¡Àå °¡±î¿ì¸é¼­ Å« ÀÚ·áÇüÀ» Ã£´Â´Ù.
-			3. µ¿ÀÏÇÑ ÀÚ·áÇüÀÌ ¾ø°í ±âº»Çü Áß Å« ÀÚ·áÇüÀÌ ¾øÀ¸¸é °°Àº Å©±âÀÇ Wrapper class¸¦ Ã£´Â´Ù.
+		 * ë©”ì„œë“œë¥¼ ì°¾ëŠ” ìˆœì„œ ì •í•˜ê¸°
+			ë©”ì„œë“œëª…ê³¼ íŒŒë¼ë¯¸í„°ë¡œ ë©”ì„œë“œë¥¼ ê²°ì •í•œë‹¤.
+			1. ì‹¤ë§¤ê°œë³€ìˆ˜ì™€ ìžë£Œí˜•ì´ 100% ë™ì¼í•œ ê²ƒ ê²€ìƒ‰ (í´ëž˜ìŠ¤ëŠ” í´ëž˜ìŠ¤, ê¸°ë³¸ìžë£Œí˜•ì€ ê¸°ë³¸ìžë£Œí˜•)
+			2. ê¸°ë³¸í˜•ì€ ê¸°ë³¸í˜• ì¤‘ ê°€ìž¥ ê°€ê¹Œìš°ë©´ì„œ í° ìžë£Œí˜•ì„ ì°¾ëŠ”ë‹¤.
+			3. ë™ì¼í•œ ìžë£Œí˜•ì´ ì—†ê³  ê¸°ë³¸í˜• ì¤‘ í° ìžë£Œí˜•ì´ ì—†ìœ¼ë©´ ê°™ì€ í¬ê¸°ì˜ Wrapper classë¥¼ ì°¾ëŠ”ë‹¤.
 		 * */
 		
 		ob.write();
 		ob.write(a);
 		ob.write(b);
 		ob.write(c);
-		ob.write(d);//IntegerÅ¬·¡½º°´Ã¼ÀÓ¿¡µµ ºÒ±¸ÇÏ°í intÇü ¸Þ¼­µå¸¦ È£ÃâÇÑ °á°ú°¡ ³ª¿Ô´Ù.
-		//¸Å°³º¯¼ö¿¡ Integer°¡ ¾øÁö¸¸ int¸¦ ³Ñ°Ü ¹ÞÀ» ¼ö ÀÖ´Ù.
-		ob.write(a,b);//¡Ú(int, int)¸Þ¼­µå¸¦ È£ÃâÇÑ °á°ú°¡ ³ª¿Ô´Ù.
-		//intÇüÀº short(¶Ç´Â Short¿¡ µç °ª)º¸´Ù Å©±â ¶§¹®¿¡ ÀÚµ¿À¸·Î ¸Å°³º¯¼ö°¡ ¸Â´Â ¸Þ¼­µå¸¦ È£ÃâÇÑ´Ù.
-		ob.write(e);//long ÀÚ·áÇüÀº LongÅ¬·¡½º¸¦ ¸Å°³º¯¼ö·Î ÇÑ Å¸ÀÔÀÌ Àâ¾Ò´Ù.
-		ob.write(f);//long ÀÚ·áÇüÀº LongÅ¬·¡½º¸¦ ¸Å°³º¯¼ö·Î ÇÑ Å¸ÀÔÀÌ Àâ¾Ò´Ù.
+		ob.write(d);//Integerí´ëž˜ìŠ¤ê°ì²´ìž„ì—ë„ ë¶ˆêµ¬í•˜ê³  intí˜• ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œ ê²°ê³¼ê°€ ë‚˜ì™”ë‹¤.
+		//ë§¤ê°œë³€ìˆ˜ì— Integerê°€ ì—†ì§€ë§Œ intë¥¼ ë„˜ê²¨ ë°›ì„ ìˆ˜ ìžˆë‹¤.
+		ob.write(a,b);//â˜…(int, int)ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œ ê²°ê³¼ê°€ ë‚˜ì™”ë‹¤.
+		//intí˜•ì€ short(ë˜ëŠ” Shortì— ë“  ê°’)ë³´ë‹¤ í¬ê¸° ë•Œë¬¸ì— ìžë™ìœ¼ë¡œ ë§¤ê°œë³€ìˆ˜ê°€ ë§žëŠ” ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤.
+		ob.write(e);//long ìžë£Œí˜•ì€ Longí´ëž˜ìŠ¤ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ í•œ íƒ€ìž…ì´ ìž¡ì•˜ë‹¤.
+		ob.write(f);//long ìžë£Œí˜•ì€ Longí´ëž˜ìŠ¤ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ í•œ íƒ€ìž…ì´ ìž¡ì•˜ë‹¤.
 	
 		short s=10;
-		//Test2Å¬·¡½º¿¡¼­ shortÇüÀ» ¹Þ´Â ¸Å°³º¯¼ö¸¦ ÁÖ¼®Ã³¸®ÇÏ¿© ½ÇÇàÇÏ¸é intÇü ¸Å°³º¯¼ö¸¦ ¹Þ´Â ¸Þ¼­µå¸¦ È£ÃâÇÑ´Ù.
-		System.out.println("shortÇüÀ» º¸³»¸é ¾î¶² ¸Þ¼­µå°¡ È£ÃâµÉ±î?");
+		//Test2í´ëž˜ìŠ¤ì—ì„œ shortí˜•ì„ ë°›ëŠ” ë§¤ê°œë³€ìˆ˜ë¥¼ ì£¼ì„ì²˜ë¦¬í•˜ì—¬ ì‹¤í–‰í•˜ë©´ intí˜• ë§¤ê°œë³€ìˆ˜ë¥¼ ë°›ëŠ” ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤.
+		System.out.println("shortí˜•ì„ ë³´ë‚´ë©´ ì–´ë–¤ ë©”ì„œë“œê°€ í˜¸ì¶œë ê¹Œ?");
 		ob.write(s);
 	
 	}
@@ -40,10 +40,10 @@ public class Ex2 {
 
 class Test2 {
 	public void write() {
-		System.out.println("ÀÎÀÚ ¾ø´Â ¸Þ¼­µå");
+		System.out.println("ì¸ìž ì—†ëŠ” ë©”ì„œë“œ");
 	}
 
-//	//ÄÄÆÄÀÏ ¿À·ù (¸Þ¼­µå ¿À¹ö·ÎµùÀº ¸Å°³º¯¼ö·Î¸¸ ±¸ºÐÇÏ±â ¶§¹®¿¡)
+//	//ì»´íŒŒì¼ ì˜¤ë¥˜ (ë©”ì„œë“œ ì˜¤ë²„ë¡œë”©ì€ ë§¤ê°œë³€ìˆ˜ë¡œë§Œ êµ¬ë¶„í•˜ê¸° ë•Œë¬¸ì—)
 //	public int write() {
 //		return 0;
 //	}
@@ -57,15 +57,15 @@ class Test2 {
 	}
 
 	public void write(int a, int b) {
-		System.out.println("int°¡ 2°³!..." + a + "," + b);
+		System.out.println("intê°€ 2ê°œ!..." + a + "," + b);
 	}
 
-//	short¸¦ Å¬·¡½º·Î ¸¸µç °Í
+//	shortë¥¼ í´ëž˜ìŠ¤ë¡œ ë§Œë“  ê²ƒ
 	public void write(Short a) {
 		System.out.println("Short....." + a);
 	}
 
-	//LongÀ» Å¬·¡½º·Î ¸¸µç °Í
+	//Longì„ í´ëž˜ìŠ¤ë¡œ ë§Œë“  ê²ƒ
 	public void write(Long a) {
 		System.out.println("Long....." + a);
 	}

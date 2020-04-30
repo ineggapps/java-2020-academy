@@ -1,8 +1,8 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex3 {
 	public static void main(String[] args) {
-//		SingletonEx2 ob = new SingletonEx2();//ÄÄÆÄÀÏ ¿À·ù
+//		SingletonEx2 ob = new SingletonEx2();//ì»´íŒŒì¼ ì˜¤ë¥˜
 		SingletonEx2 ob = SingletonEx2.getInstance();
 		SingletonEx2 ob2 = SingletonEx2.getInstance();
 		System.out.println(ob==ob2);
@@ -11,13 +11,13 @@ public class Ex3 {
 }
 
 
-class SingletonEx2{//Real ½Ì±ÛÅæÆĞÅÏ ±¸Á¶ (µ¿½Ã¼º ¹®Á¦ ÇØ°á)
+class SingletonEx2{//Real ì‹±ê¸€í†¤íŒ¨í„´ êµ¬ì¡° (ë™ì‹œì„± ë¬¸ì œ í•´ê²°)
 	
 	private SingletonEx2() {
 	}
 	
-	//static ÁßÃ¸ Å¬·¡½º
-	//SingletonEx2°¡ ·ÎµåµÉ ¶§ ¸ÖÆ¼½º·¹µå È¯°æ¿¡¼­µµ ´Ü ÇÑ ¹ø¸¸ ½ÇÇàÀÌ µÇ´Â ±¸Á¶ÀÌ´Ù.
+	//static ì¤‘ì²© í´ë˜ìŠ¤
+	//SingletonEx2ê°€ ë¡œë“œë  ë•Œ ë©€í‹°ìŠ¤ë ˆë“œ í™˜ê²½ì—ì„œë„ ë‹¨ í•œ ë²ˆë§Œ ì‹¤í–‰ì´ ë˜ëŠ” êµ¬ì¡°ì´ë‹¤.
 	private static class Holder{
 		public static final SingletonEx2 INSTANCE= new SingletonEx2();
 	}

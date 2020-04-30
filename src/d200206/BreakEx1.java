@@ -1,15 +1,15 @@
-package d200206;
+ï»¿package d200206;
 
 import java.util.Scanner;
 
 public class BreakEx1 {
 	public static void main(String[] args) {
-		//Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼öÀÇ ÇÕ ±¸ÇÏ±â
-		//´Ü, ÀÔ·Â ¹ŞÀº ¼ö°¡ 0ÀÌ¸é ÇÁ·Î±×·¥ Á¾·á
+		//ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ì˜ í•© êµ¬í•˜ê¸°
+		//ë‹¨, ì…ë ¥ ë°›ì€ ìˆ˜ê°€ 0ì´ë©´ í”„ë¡œê·¸ë¨ ì¢…ë£Œ
 		Scanner sc = new Scanner(System.in);
 		int n,s=0;
 		
-		System.out.print("Á¤¼ö ÀÔ·Â[Á¾·á: 0] ? ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥[ì¢…ë£Œ: 0] ? ");
 		while(true) {
 			n = sc.nextInt();
 			if(n==0) {
@@ -17,7 +17,7 @@ public class BreakEx1 {
 			}
 			s+=n;
 		}
-		System.out.println("°á°ú: "+ s);
+		System.out.println("ê²°ê³¼: "+ s);
 		sc.close();
 	}
 }

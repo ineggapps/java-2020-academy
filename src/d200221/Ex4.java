@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,30 +11,30 @@ public class Ex4 {
 		int a, b, c;
 
 		try {
-			System.out.print("Ã¹ ¹øÂ° ¼ö > ");
+			System.out.print("ì²« ë²ˆì§¸ ìˆ˜ > ");
 			a = Integer.parseInt(br.readLine());
-			System.out.print("µÎ ¹øÂ° ¼ö > ");
+			System.out.print("ë‘ ë²ˆì§¸ ìˆ˜ > ");
 			b = Integer.parseInt(br.readLine());
 			c = a / b;
 			System.out.println(a + "/" + b + "=" + c);
-		} catch (IOException e) { // checked ¿¹¿Ü
+		} catch (IOException e) { // checked ì˜ˆì™¸
 			System.out.println(e.getMessage());
 		} catch (NumberFormatException e) {
 			// NumberFormatException: unchecked exception
-			// ¹İµå½Ã catchÇÒ ÇÊ¿ä ¾øÁö¸¸, ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é ÇÁ·Î±×·¥Àº ºñÁ¤»óÀûÀ¸·Î Á¾·áµÈ´Ù.
-			// ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯°æÀÌ ºÒ°¡´ÉÇÑ °æ¿ì ¹ß»ıÇÑ´Ù.
-//			System.out.println("¼ıÀÚ¸¸ ÀÔ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.");
+			// ë°˜ë“œì‹œ catchí•  í•„ìš” ì—†ì§€ë§Œ, ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ í”„ë¡œê·¸ë¨ì€ ë¹„ì •ìƒì ìœ¼ë¡œ ì¢…ë£Œëœë‹¤.
+			// ë¬¸ìì—´ì„ ìˆ«ìë¡œ ë³€ê²½ì´ ë¶ˆê°€ëŠ¥í•œ ê²½ìš° ë°œìƒí•œë‹¤.
+//			System.out.println("ìˆ«ìë§Œ ì…ë ¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			System.out.println(e);
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		} catch (ArithmeticException e) {
-			// unchecked ¿¹¿Ü
-			System.out.println("0À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+			// unchecked ì˜ˆì™¸
+			System.out.println("0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 //			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
-			// Exception: ¸ğµç ¿¹¿Ü¸¦ catchÇÒ ¼ö ÀÖÀ½.
-			// ¿©·¯ ¿¹¿Ü¸¦ catchÇÑ °æ¿ì °¡Àå ¸¶Áö¸·¿¡ ±â¼úÇÑ´Ù. (Exception e)s
+			// Exception: ëª¨ë“  ì˜ˆì™¸ë¥¼ catchí•  ìˆ˜ ìˆìŒ.
+			// ì—¬ëŸ¬ ì˜ˆì™¸ë¥¼ catchí•œ ê²½ìš° ê°€ì¥ ë§ˆì§€ë§‰ì— ê¸°ìˆ í•œë‹¤. (Exception e)s
 			System.out.println(e.toString());
 		}
 

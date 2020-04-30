@@ -1,72 +1,72 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex4 {
 	public static void main(String[] args) {
 		String s = "seoul korea";
 		System.out.println(s);
 
-		// ¹®ÀÚ¿­ ±æÀÌ
-		System.out.println("±æÀÌ: " + s.length());
+		// ë¬¸ìì—´ ê¸¸ì´
+		System.out.println("ê¸¸ì´: " + s.length());
 
-		// ÀÎµ¦½º´Â 0ºÎÅÍ ½ÃÀÛ
+		// ì¸ë±ìŠ¤ëŠ” 0ë¶€í„° ì‹œì‘
 		System.out.println(s.substring(6, 9));
-		// substring(S,e): sÀÎµ¦½º¿¡¼­ "e-1"ÀÎµ¦½º±îÁö
-		// s<=eÀÌ°í e<=length()ÀÌ¾î¾ß ÇÑ´Ù.
+		// substring(S,e): sì¸ë±ìŠ¤ì—ì„œ "e-1"ì¸ë±ìŠ¤ê¹Œì§€
+		// s<=eì´ê³  e<=length()ì´ì–´ì•¼ í•œë‹¤.
 		System.out.println(s.substring(6));
-		// substring(S): sÀÎµ¦½º¿¡¼­ ³¡±îÁö
+		// substring(S): sì¸ë±ìŠ¤ì—ì„œ ëê¹Œì§€
 
-		char c = s.charAt(6); // ÇØ´ç ÀÎµ¦½ºÀÇ ¹®ÀÚ
+		char c = s.charAt(6); // í•´ë‹¹ ì¸ë±ìŠ¤ì˜ ë¬¸ì
 		System.out.println(c);
-		System.out.println("===¹®ÀÚ¿­ equal, equalsIgnoreCase ºñ±³===");
-		System.out.println(s.equals("seoul korea"));// true ¹®ÀÚ¿­ ºñ±³°á°ú
-		System.out.println(s.equals("Seoul KOREA"));// false (´ë¼Ò¹®ÀÚ ±¸ºĞÇÑ´Ù)
-		System.out.println(s.equalsIgnoreCase("Seoul KOREA"));// true (´ë¼Ò¹®ÀÚ ±¸ºĞ ¾øÀ½)
+		System.out.println("===ë¬¸ìì—´ equal, equalsIgnoreCase ë¹„êµ===");
+		System.out.println(s.equals("seoul korea"));// true ë¬¸ìì—´ ë¹„êµê²°ê³¼
+		System.out.println(s.equals("Seoul KOREA"));// false (ëŒ€ì†Œë¬¸ì êµ¬ë¶„í•œë‹¤)
+		System.out.println(s.equalsIgnoreCase("Seoul KOREA"));// true (ëŒ€ì†Œë¬¸ì êµ¬ë¶„ ì—†ìŒ)
 
-		// ¹®ÀÚ¿­ÀÌ "seoul"·Î ½ÃÀÛ ¿©ºÎ startsWithµµ ´ë¼Ò¹®ÀÚ ±¸ºĞÇÑ´Ù.
+		// ë¬¸ìì—´ì´ "seoul"ë¡œ ì‹œì‘ ì—¬ë¶€ startsWithë„ ëŒ€ì†Œë¬¸ì êµ¬ë¶„í•œë‹¤.
 		System.out.println(s.startsWith("seoul"));
-		// ¹®ÀÚ¿­ÀÌ "korea"·Î ³¡³ª´ÂÁö ¿©ºÎ
+		// ë¬¸ìì—´ì´ "korea"ë¡œ ëë‚˜ëŠ”ì§€ ì—¬ë¶€
 		System.out.println(s.endsWith("korea"));
 
-		// "seoul korea"¿Í "seoul corea"´Â ´©°¡ ´õ Å¬±î?
-		// »çÀü½Ä ¹è¿­(ASCII ÄÚµå Â÷ÀÌ)
-		// ¡Ú ¹®ÀÚ¿­ ºñ±³ ½Ã compareTo
-		System.out.println(s.compareTo("seoul corea"));// k-c =8 (c¿¡¼­ 8Ä­ ÀÌµ¿ÇØ¾ß kÀÌ´Ù.)
-		// ¹®ÀÚ¿­Àº >, <, ==¿Í °°Àº ¿¬»êÀÚ·Î´Â ºñ±³ÇÒ ¼ö ¾ø´Ù.
+		// "seoul korea"ì™€ "seoul corea"ëŠ” ëˆ„ê°€ ë” í´ê¹Œ?
+		// ì‚¬ì „ì‹ ë°°ì—´(ASCII ì½”ë“œ ì°¨ì´)
+		// â˜… ë¬¸ìì—´ ë¹„êµ ì‹œ compareTo
+		System.out.println(s.compareTo("seoul corea"));// k-c =8 (cì—ì„œ 8ì¹¸ ì´ë™í•´ì•¼ kì´ë‹¤.)
+		// ë¬¸ìì—´ì€ >, <, ==ì™€ ê°™ì€ ì—°ì‚°ìë¡œëŠ” ë¹„êµí•  ìˆ˜ ì—†ë‹¤.
 
-		// "kor"ÀÇ À§Ä¡´Â ¾îµğ¼­?
-		System.out.println(s.indexOf("kor"));// À§Ä¡°¡ ½ÃÀÛÇÏ´Â indexºÎÅÍ
-		System.out.println(s.indexOf("busan"));// ¾øÀ¸¸é -1À» ¹İÈ¯ÇÑ´Ù.
+		// "kor"ì˜ ìœ„ì¹˜ëŠ” ì–´ë””ì„œ?
+		System.out.println(s.indexOf("kor"));// ìœ„ì¹˜ê°€ ì‹œì‘í•˜ëŠ” indexë¶€í„°
+		System.out.println(s.indexOf("busan"));// ì—†ìœ¼ë©´ -1ì„ ë°˜í™˜í•œë‹¤.
 
-		// Ã³À½ºÎÅÍ Ã£´Â´Ù
+		// ì²˜ìŒë¶€í„° ì°¾ëŠ”ë‹¤
 		System.out.println(s.indexOf("o"));
-		// ÀÎµ¦½º 3ºÎÅÍ Ã£´Â´Ù.
+		// ì¸ë±ìŠ¤ 3ë¶€í„° ì°¾ëŠ”ë‹¤.
 		System.out.println(s.indexOf("o", 3));
-		// µÚ¿¡¼­ºÎÅÍ Ã£´Â´Ù.
+		// ë’¤ì—ì„œë¶€í„° ì°¾ëŠ”ë‹¤.
 		System.out.println(s.lastIndexOf("o"));
 
-		s = "¿ì¸®³ª¶ó ´ëÇÑ¹Î±¹ ´ëÇÑµ¶¸³ ¸¸¼¼ ´ëÇÑÀÇ °Ç¾Æ";
-		s = s.replaceAll("´ëÇÑ", "ÓŞùÛ");// StringÀº ºÒº¯ÀÌ¹Ç·Î ´ëÀÔ¿¬»êÀÚ·Î ¾îµò°¡¿¡ ±â¾ïÀ» ½ÃÄÑÁà¾ß°ÚÁö?
-		// replace¸Ş¼­µå´Â Á¤±ÔÇ¥Çö½ÄÀ» »ç¿ëÇÒ ¼ö ¾ø°í, replaceAllÀº Á¤±ÔÇ¥Çö½ÄÀ» »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+		s = "ìš°ë¦¬ë‚˜ë¼ ëŒ€í•œë¯¼êµ­ ëŒ€í•œë…ë¦½ ë§Œì„¸ ëŒ€í•œì˜ ê±´ì•„";
+		s = s.replaceAll("ëŒ€í•œ", "å¤§éŸ“");// Stringì€ ë¶ˆë³€ì´ë¯€ë¡œ ëŒ€ì…ì—°ì‚°ìë¡œ ì–´ë”˜ê°€ì— ê¸°ì–µì„ ì‹œì¼œì¤˜ì•¼ê² ì§€?
+		// replaceë©”ì„œë“œëŠ” ì •ê·œí‘œí˜„ì‹ì„ ì‚¬ìš©í•  ìˆ˜ ì—†ê³ , replaceAllì€ ì •ê·œí‘œí˜„ì‹ì„ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
 		System.out.println(s);
 
-		s = "¿ì¸®123³ª¶ó ´ëÇÑ65¹Î±¹";
-		s = s.replaceAll("\\d", "");// \\d: ¼ıÀÚ¸¦ ÀÇ¹Ì (¿ª½½·¡½Ã´Â java¿¡¼­ \ escape character·ÎÀÎ½ÄÇÏ¹Ç·Î ÇÑ ¹ø ´õ ±âÀÔÇÏ¿© \\·Î ÀÛ¼º)
+		s = "ìš°ë¦¬123ë‚˜ë¼ ëŒ€í•œ65ë¯¼êµ­";
+		s = s.replaceAll("\\d", "");// \\d: ìˆ«ìë¥¼ ì˜ë¯¸ (ì—­ìŠ¬ë˜ì‹œëŠ” javaì—ì„œ \ escape characterë¡œì¸ì‹í•˜ë¯€ë¡œ í•œ ë²ˆ ë” ê¸°ì…í•˜ì—¬ \\ë¡œ ì‘ì„±)
 		System.out.println(s);
 
-		s = "ÀÚ¹Ù 123 ½ºÇÁ¸µ 345 HTML";
-		s = s.replaceAll("[0-9]","");//¼ıÀÚ ¾ø¾Ö±â
+		s = "ìë°” 123 ìŠ¤í”„ë§ 345 HTML";
+		s = s.replaceAll("[0-9]","");//ìˆ«ì ì—†ì• ê¸°
 		System.out.println(s);
 
-		s = "ÀÚ¹Ù 123 ½ºÇÁ¸µ 345 HTML";
-		s = s.replaceAll("\\w|\\s","");//¿µ¾î ¹× °ø¹é ¾ø¾Ö±â
+		s = "ìë°” 123 ìŠ¤í”„ë§ 345 HTML";
+		s = s.replaceAll("\\w|\\s","");//ì˜ì–´ ë° ê³µë°± ì—†ì• ê¸°
 		System.out.println(s);
 
-		s = "ÀÚ¹Ù 123 ½ºÇÁ¸µ 345 HTML";
-		s = s.replaceAll("[^0-09]","");//¼ıÀÚ ¾ø¾Ö±â
+		s = "ìë°” 123 ìŠ¤í”„ë§ 345 HTML";
+		s = s.replaceAll("[^0-09]","");//ìˆ«ì ì—†ì• ê¸°
 		System.out.println(s);
 		
-		//¹®ÀÚ¿­À» ÆĞÅÏÀ¸·Î ºĞ¸®ÇÏ¿© ¹è¿­·Î ¹İÈ¯ÇÑ´Ù.
-		//split ¸Ş¼­µå¿¡¼­µµ Á¤±Ô½ÄÀ¸·Î Ç¥ÇöÇÒ ¼ö ÀÖ´Ù.
+		//ë¬¸ìì—´ì„ íŒ¨í„´ìœ¼ë¡œ ë¶„ë¦¬í•˜ì—¬ ë°°ì—´ë¡œ ë°˜í™˜í•œë‹¤.
+		//split ë©”ì„œë“œì—ì„œë„ ì •ê·œì‹ìœ¼ë¡œ í‘œí˜„í•  ìˆ˜ ìˆë‹¤.
 		String[] ss="java,html,css".split(",");
 		for(String a: ss) {
 			System.out.print(a+" ");

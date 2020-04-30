@@ -1,4 +1,4 @@
-package friend;
+﻿package friend;
 
 public class FriendVO {
 	private String name;

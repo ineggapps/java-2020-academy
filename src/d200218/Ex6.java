@@ -1,18 +1,18 @@
-package d200218;
+ï»¿package d200218;
 
 import java.text.ChoiceFormat;
 
 public class Ex6 {
 	public static void main(String[] args) {
-		// ³·Àº °ÍºÎÅÍ Å« ¼ø¼­´ë·Î ÀÔ·Â
+		// ë‚®ì€ ê²ƒë¶€í„° í° ìˆœì„œëŒ€ë¡œ ì…ë ¥
 		//If the limit array is not in ascending order, the results of formatting will be incorrect.
-		// s¿Í g°£ÀÇ ¼ø¼­, °³¼ö°¡ ¼­·Î °°¾Æ¾ß ÇÑ´Ù.
+		// sì™€ gê°„ì˜ ìˆœì„œ, ê°œìˆ˜ê°€ ì„œë¡œ ê°™ì•„ì•¼ í•œë‹¤.
 //		double[] s = { 60, 70, 80, 90 };
 //		String[] g = { "D", "C", "B", "A" };
-		//À§ÀÇ ¹è¿­´ë·Î ¼³Á¤ÇÏ¸é 50Á¡ÀÌ D°¡ ³ª¿Â´Ù.
+		//ìœ„ì˜ ë°°ì—´ëŒ€ë¡œ ì„¤ì •í•˜ë©´ 50ì ì´ Dê°€ ë‚˜ì˜¨ë‹¤.
 		double[] s = { 0, 60, 70, 80, 90 };
 		String[] g = { "F", "D", "C", "B", "A" };
-		//À§ÀÇ ¹è¿­´ë·Î ¼³Á¤ÇÏ¸é 50Á¡ÀÌ F°¡ ³ª¿Â´Ù.
+		//ìœ„ì˜ ë°°ì—´ëŒ€ë¡œ ì„¤ì •í•˜ë©´ 50ì ì´ Fê°€ ë‚˜ì˜¨ë‹¤.
 		int[] scores = { 100, 95, 88, 80, 52, 60, 70 };
 		ChoiceFormat f = new ChoiceFormat(s, g);
 		for (int i = 0; i < scores.length; i++) {

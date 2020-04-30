@@ -1,7 +1,7 @@
-public class Ex014_Gugudan {
+ï»¿public class Ex014_Gugudan {
 	public static void main(String[] args) {
 /*
-		 2~9´Ü ±îÁöÀÇ ±¸±¸´ÜÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		 2~9ë‹¨ ê¹Œì§€ì˜ êµ¬êµ¬ë‹¨ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */	
 		for(int i = 2; i <= 9; i++) {
 			for(int j = 1; j <= 9; j++) {

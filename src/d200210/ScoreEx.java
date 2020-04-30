@@ -1,4 +1,4 @@
-package d200210;
+ï»¿package d200210;
 
 import java.util.Scanner;
 
@@ -11,41 +11,41 @@ public class ScoreEx {
 		int[] rank;
 
 		do {
-			System.out.print("ÀÎ¿ø ¼ö[1~50]?");
+			System.out.print("ì¸ì› ìˆ˜[1~50]?");
 			cnt = sc.nextInt();
 		} while (cnt < 1 || cnt > 50);
 
-		// ÀÎ¿ø¼ö¸¸Å­ ¹è¿­ ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÑ´Ù.
+		// ì¸ì›ìˆ˜ë§Œí¼ ë°°ì—´ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•œë‹¤.
 		name = new String[cnt];
 		score = new int[cnt];
 		rank = new int[cnt];
 
-		// ÀÎ¿ø¼ö¸¸Å­ ÀÌ¸§°ú Á¡¼ö¸¦ ÀÔ·Â¹Ş´Â´Ù.
+		// ì¸ì›ìˆ˜ë§Œí¼ ì´ë¦„ê³¼ ì ìˆ˜ë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
 		for (int i = 0; i < cnt; i++) {
-			System.out.print((i + 1) + "¹øÂ° ÀÌ¸§ ? ");
+			System.out.print((i + 1) + "ë²ˆì§¸ ì´ë¦„ ? ");
 			name[i] = sc.next();
-			System.out.print("Á¡¼ö? ");
+			System.out.print("ì ìˆ˜? ");
 			score[i] = sc.nextInt();
 		}
 
-//		ÀÔ·Â ´ë½Å µğ¹ö±ë µ¥ÀÌÅÍ
+//		ì…ë ¥ ëŒ€ì‹  ë””ë²„ê¹… ë°ì´í„°
 //		cnt = 5;
 //		name = new String[] { "a", "b", "c", "d", "e" };
 //		score = new int[] { 90, 80, 90, 100, 70 };
 //		rank = new int[cnt];
 		
-		// ¼øÀ§ ÃÊ±âÈ­ÇÏ±â
+		// ìˆœìœ„ ì´ˆê¸°í™”í•˜ê¸°
 		for (int i = 0; i < cnt; i++) {
 			rank[i] = 1;
 		}
 
-		// ¼®Â÷ °è»êÇÏ±â
+		// ì„ì°¨ ê³„ì‚°í•˜ê¸°
 		for (int i = 0; i < cnt - 1; i++) {
 			for (int j = i + 1; j < cnt; j++) {
 				/*
-				 1. Å©´Ù
-				 2. ÀÛ´Ù
-				 3. °°´Ù
+				 1. í¬ë‹¤
+				 2. ì‘ë‹¤
+				 3. ê°™ë‹¤
 				 */
 				if (score[i] > score[j]) {
 					rank[j]++;
@@ -55,8 +55,8 @@ public class ScoreEx {
 			}
 		}
 
-		// Ãâ·Â
-		System.out.println("ÀÌ¸§\tÁ¡¼ö\t¼®Â÷");
+		// ì¶œë ¥
+		System.out.println("ì´ë¦„\tì ìˆ˜\tì„ì°¨");
 		for (int i = 0; i < cnt; i++) {
 			System.out.println(name[i] + "\t" + score[i] + "\t" + rank[i]);
 		}

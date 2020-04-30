@@ -1,31 +1,31 @@
-package d200203;
+ï»¿package d200203;
 
 public class SwitchEx5 {
-	// switch¹® ¾È¿¡ switch¹®À» »ç¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» º¸¿©ÁÖ´Â ¿¹Á¦ (but, ±ÇÀåÇÏÁö ¾ÊÀ½)
+	// switchë¬¸ ì•ˆì— switchë¬¸ì„ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤ëŠ” ê²ƒì„ ë³´ì—¬ì£¼ëŠ” ì˜ˆì œ (but, ê¶Œì¥í•˜ì§€ ì•ŠìŒ)
 	public static void main(String[] args) {
 		int a = 12;
 		switch (a % 2) {
 		case 0:
-			System.out.println("2ÀÇ ¹è¼ö");
+			System.out.println("2ì˜ ë°°ìˆ˜");
 			switch (a % 3) {
 			case 0:
-				System.out.println("3ÀÇ ¹è¼ö");
+				System.out.println("3ì˜ ë°°ìˆ˜");
 				break;
 			case 1:
 			case 2:
-				System.out.println("3ÀÇ ¹è¼ö°¡ ¾Æ´Ô");
-				break; // ¾ø¾îµµ ¹®Á¦°¡ »ı±âÁö ¾ÊÀ¸³ª Åë»óÀûÀ¸·Î´Â »óÈ²¿¡ µû¶ó ¸ğµç case ±¸¹® ¾È¿¡ break;¹®À» µ¡ºÙÀÎ´Ù.
+				System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹˜");
+				break; // ì—†ì–´ë„ ë¬¸ì œê°€ ìƒê¸°ì§€ ì•Šìœ¼ë‚˜ í†µìƒì ìœ¼ë¡œëŠ” ìƒí™©ì— ë”°ë¼ ëª¨ë“  case êµ¬ë¬¸ ì•ˆì— break;ë¬¸ì„ ë§ë¶™ì¸ë‹¤.
 			}
 			break;
 		case 1:
-			System.out.println("2ÀÇ ¹è¼ö°¡ ¾Æ´Ô");
+			System.out.println("2ì˜ ë°°ìˆ˜ê°€ ì•„ë‹˜");
 			switch (a % 3) {
 			case 0:
-				System.out.println("3ÀÇ ¹è¼ö");
+				System.out.println("3ì˜ ë°°ìˆ˜");
 				break;
 			case 1:
 			case 2:
-				System.out.println("3ÀÇ ¹è¼ö°¡ ¾Æ´Ô");
+				System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹˜");
 				break; 
 			}
 			break;

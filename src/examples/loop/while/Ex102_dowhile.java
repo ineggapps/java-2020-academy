@@ -1,7 +1,7 @@
-public class Ex102_dowhile {
+ï»¿public class Ex102_dowhile {
 	public static void main(String[] args) {
 /*
-		1~100 ±îÁö ¼öÀÇ ÇÕÀ» °è»êÇÏ¿© Ãâ·Â
+		1~100 ê¹Œì§€ ìˆ˜ì˜ í•©ì„ ê³„ì‚°í•˜ì—¬ ì¶œë ¥
 */
 		int n, s;
 		
@@ -10,6 +10,6 @@ public class Ex102_dowhile {
 			n++;
 			s+=n;
 		}while(n<100);
-		System.out.println("°á°ú : "+s); // 5050
+		System.out.println("ê²°ê³¼ : "+s); // 5050
 	}
 }

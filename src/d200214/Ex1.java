@@ -1,4 +1,4 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex1 {
 	public static void main(String[] args) {
@@ -14,14 +14,14 @@ public class Ex1 {
 		System.out.println(b);
 
 		String s ;
-		s=t1.toString();//Å¬·¡½º Á¤º¸: ÆĞÅ°Áö¸í.Å¬·¡½º¸í@ÇØ½ÃÁÖ¼Ò16Áø¼ö·ÎÃâ·Â
+		s=t1.toString();//í´ë˜ìŠ¤ ì •ë³´: íŒ¨í‚¤ì§€ëª….í´ë˜ìŠ¤ëª…@í•´ì‹œì£¼ì†Œ16ì§„ìˆ˜ë¡œì¶œë ¥
 		System.out.println(s);
 		
 		System.out.println(t2);
 		System.out.println(t3.toString());
 		System.out.println(t3);
 		
-		System.out.println("==ÇØ½ÃÄÚµå==");
+		System.out.println("==í•´ì‹œì½”ë“œ==");
 		System.out.println(t1.hashCode());
 		System.out.println(t2.hashCode());
 		System.out.println(t3.hashCode());

@@ -1,4 +1,4 @@
-package user;
+ï»¿package user;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class App {
 
 		while (true) {
 			do {
-				System.out.print("1.ÀÔ·Â 2.Ãâ·Â 3.Á¾·á => ");
+				System.out.print("1.ìž…ë ¥ 2.ì¶œë ¥ 3.ì¢…ë£Œ => ");
 				ch = sc.nextInt();
 			} while (ch < 1 || ch > 3);
 

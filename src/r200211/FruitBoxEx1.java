@@ -1,4 +1,4 @@
-package r200211;
+ï»¿package r200211;
 
 import java.util.ArrayList;
 
@@ -34,19 +34,19 @@ public class FruitBoxEx1 {
 		Box<Fruit> fruitBox = new Box<Fruit>();
 		Box<Apple> appleBox = new Box<Apple>();
 		Box<Toy> toyBox = new Box<Toy>();
-//		Box<Grape> grapeBox = new Box<Apple>(); // ¿À·ù Å¸ÀÔ ºÒÀÏÄ¡
+//		Box<Grape> grapeBox = new Box<Apple>(); // ì˜¤ë¥˜ íƒ€ì… ë¶ˆì¼ì¹˜
 
 		fruitBox.add(new Fruit());
-		fruitBox.add(new Apple()); // °¡´É void add(Fruit item)
-		fruitBox.add(new Grape()); // °¡´É void add(Fruit item)
+		fruitBox.add(new Apple()); // ê°€ëŠ¥ void add(Fruit item)
+		fruitBox.add(new Grape()); // ê°€ëŠ¥ void add(Fruit item)
 
 		appleBox.add(new Apple());
 		appleBox.add(new Apple());
 		appleBox.add(new Apple());
-//		appleBox.add(new Toy());//ºÒ°¡´É, Apple¿¡´Â Apple¸¸ ´ãÀ» ¼ö ÀÖÀ½
+//		appleBox.add(new Toy());//ë¶ˆê°€ëŠ¥, Appleì—ëŠ” Appleë§Œ ë‹´ì„ ìˆ˜ ìˆìŒ
 
 		toyBox.add(new Toy());
-//		toyBox.add(new Apple());//ºÒ°¡´É, Toy¹Ú½º¿¡´Â Toy¸¸ ´ã±â °¡´É
+//		toyBox.add(new Apple());//ë¶ˆê°€ëŠ¥, Toyë°•ìŠ¤ì—ëŠ” Toyë§Œ ë‹´ê¸° ê°€ëŠ¥
 
 		FruitBox<Fruit> onlyFruitBox = new FruitBox<Fruit>();
 		onlyFruitBox.add(new Apple());
@@ -86,8 +86,8 @@ class Box<T> {
 }
 
 class FruitBox<T extends Fruit & Eatable> extends Box<T> {
-	// BOXÀÇ ¼Ó¼ºÀ» ¸ğµÎ ¹°·Á¹Ş°í FruitBox´Â FruitÀ» »ó¼Ó¹Ş´Â °´Ã¼¸¸À» ´ãÀ» ¼ö ÀÖ´Ù´Â ÀÇ¹ÌÀÓ.
-	// Fruit °´Ã¼µµ ¸¶Âù°¡Áö·Î FruitBox¿¡ ´ãÀ» ¼ö ÀÖÀ½.
+	// BOXì˜ ì†ì„±ì„ ëª¨ë‘ ë¬¼ë ¤ë°›ê³  FruitBoxëŠ” Fruitì„ ìƒì†ë°›ëŠ” ê°ì²´ë§Œì„ ë‹´ì„ ìˆ˜ ìˆë‹¤ëŠ” ì˜ë¯¸ì„.
+	// Fruit ê°ì²´ë„ ë§ˆì°¬ê°€ì§€ë¡œ FruitBoxì— ë‹´ì„ ìˆ˜ ìˆìŒ.
 }
 
 class Juice{
@@ -102,10 +102,10 @@ class Juice{
 }
 
 class Juicer{
-	static Juice makeJuice(FruitBox<? extends Fruit> box) {//<Fruit>À¸·Î ÁöÁ¤ÇÑ´Ù
+	static Juice makeJuice(FruitBox<? extends Fruit> box) {//<Fruit>ìœ¼ë¡œ ì§€ì •í•œë‹¤
 		/*
-		 static¿¡¼­´Â Å¸ÀÔ ¸Å°³º¯¼ö T¸¦ ¸Å°³º¯¼ö¿¡ »ç¿ëÇÒ ¼ö ¾øÀ¸¹Ç·Î Æ¯Á¤ Å¸ÀÔÀ» ÁöÁ¤ÇÒ ¼ö¹Û¿¡ ¾ø´Ù.
-		 È¤Àº ¿ÍÀÏµåÄ«µåÀÎ ?Ç¥±â¸¦ ÇÔ.
+		 staticì—ì„œëŠ” íƒ€ì… ë§¤ê°œë³€ìˆ˜ Të¥¼ ë§¤ê°œë³€ìˆ˜ì— ì‚¬ìš©í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ íŠ¹ì • íƒ€ì…ì„ ì§€ì •í•  ìˆ˜ë°–ì— ì—†ë‹¤.
+		 í˜¹ì€ ì™€ì¼ë“œì¹´ë“œì¸ ?í‘œê¸°ë¥¼ í•¨.
 		 */
 		String tmp="";
 		for(Fruit f: box.getList()) {

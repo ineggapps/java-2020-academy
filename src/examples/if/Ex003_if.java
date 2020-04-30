@@ -1,20 +1,20 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex003_if {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼ö°¡ Â¦¼öÀÎÁö È¦¼öÀÎÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ê°€ ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc=new Scanner(System.in);
 		int n;
 		
-		System.out.print("Á¤¼ö ? ");
+		System.out.print("ì •ìˆ˜ ? ");
 		n=sc.nextInt();
 		
 		if(n%2==0) {
-			System.out.println(n + " : Â¦¼ö");
+			System.out.println(n + " : ì§ìˆ˜");
 		} else {
-			System.out.println(n + " : È¦¼ö");
+			System.out.println(n + " : í™€ìˆ˜");
 		}
 		
 		sc.close();

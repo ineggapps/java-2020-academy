@@ -1,7 +1,7 @@
-public class Ex015_Odd5 {
+ï»¿public class Ex015_Odd5 {
 	public static void main(String[] args) {
 /*
-		1~100±îÁö ¼öÁß È¦¼ö¸¦ ÇÑ ÁÙ¿¡ 5°³¾¿ Ãâ·ÂÇÏ°í ¸¶Áö¸·¿¡ È¦¼ö ÇÕÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~100ê¹Œì§€ ìˆ˜ì¤‘ í™€ìˆ˜ë¥¼ í•œ ì¤„ì— 5ê°œì”© ì¶œë ¥í•˜ê³  ë§ˆì§€ë§‰ì— í™€ìˆ˜ í•©ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int n, s, cnt;
 		
@@ -18,7 +18,7 @@ public class Ex015_Odd5 {
 			
 			n+=2;
 		}
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 		
 	}
 }

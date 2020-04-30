@@ -1,38 +1,38 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Scanner;
 
 public class InstantQuiz2 {
 	public static void main(String[] args) {
 		/*
-		 * ÀÌ¸§°ú ±Þ¿©¸¦ ÀÔ·Â ¹Þ¾Æ ¼¼±ÝÀ» °è»êÇÏ´Â ÇÁ·Î±×·¥ ¼¼±ÝÀº ±Þ¿©°¡ 300¸¸¿ø ÀÌ»óÀÌ¸é 3.3% ¼¼±ÝÀº ±Þ¿©°¡ 200¸¸¿ø ÀÌ»óÀÌ¸é 2.2%
-		 * ±âÅ¸ ±Þ¿©´Â 0¿ø ´Ü, ¼¼±ÝÀº ÀÏÀÇÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²ÇÑ´Ù. ¿¹¸¦ µé¾î ¼¼±ÝÀÌ 3057ÀÌ¸é 3060ÀÌ´Ù.
+		 * ì´ë¦„ê³¼ ê¸‰ì—¬ë¥¼ ìž…ë ¥ ë°›ì•„ ì„¸ê¸ˆì„ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ëž¨ ì„¸ê¸ˆì€ ê¸‰ì—¬ê°€ 300ë§Œì› ì´ìƒì´ë©´ 3.3% ì„¸ê¸ˆì€ ê¸‰ì—¬ê°€ 200ë§Œì› ì´ìƒì´ë©´ 2.2%
+		 * ê¸°íƒ€ ê¸‰ì—¬ëŠ” 0ì› ë‹¨, ì„¸ê¸ˆì€ ì¼ì˜ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼í•œë‹¤. ì˜ˆë¥¼ ë“¤ì–´ ì„¸ê¸ˆì´ 3057ì´ë©´ 3060ì´ë‹¤.
 		 * 
-		 * <Ãâ·Â> ÀÌ¸§ ±Þ¿© ¼¼±Ý ½Ç¼ö·É¾×
+		 * <ì¶œë ¥> ì´ë¦„ ê¸‰ì—¬ ì„¸ê¸ˆ ì‹¤ìˆ˜ë ¹ì•¡
 		 */
 
 		Scanner sc = new Scanner(System.in);
 		String name;
 		int salary, tax, income;
-		// ±Þ¿©°¡ 0º¸´Ù ÀÛÀ» °æ¿ì Á¾·á
+		// ê¸‰ì—¬ê°€ 0ë³´ë‹¤ ìž‘ì„ ê²½ìš° ì¢…ë£Œ
 		do {
-			System.out.print("ÀÌ¸§ ÀÔ·Â > ");
+			System.out.print("ì´ë¦„ ìž…ë ¥ > ");
 			name = sc.next();
-			System.out.print("±Þ¿© ÀÔ·Â > ");
+			System.out.print("ê¸‰ì—¬ ìž…ë ¥ > ");
 			salary = sc.nextInt();
 
 			tax = salary > 3000000 ? (int) (salary * 0.033) : (int) (salary * 0.022);
-			System.out.println("¹Ý¿Ã¸² Àü:" + tax);
-			// 1ÀÇÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²ÇÏ±â
+			System.out.println("ë°˜ì˜¬ë¦¼ ì „:" + tax);
+			// 1ì˜ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼í•˜ê¸°
 			if (tax % 10 >= 5) {
 				tax += 10;
 			}
 			tax -= (tax % 10);
-			System.out.println("¹Ý¿Ã¸² ÈÄ:" + tax);
+			System.out.println("ë°˜ì˜¬ë¦¼ í›„:" + tax);
 
 			income = salary - tax;
 
-			System.out.print("ÀÌ¸§\t\t\t±Þ¿©\t\t\t¼¼±Ý\t\t\t½Ç¼ö·É¾×\n");
+			System.out.print("ì´ë¦„\t\t\tê¸‰ì—¬\t\t\tì„¸ê¸ˆ\t\t\tì‹¤ìˆ˜ë ¹ì•¡\n");
 			System.out.printf("%s\t\t%d\t\t%d\t\t%d\n", name, salary, tax, income);
 		} while (salary > 0);
 

@@ -1,14 +1,14 @@
-package d200206;
+ï»¿package d200206;
 
 import java.util.Scanner;
 
 public class ContinueEx1 {
 	public static void main(String[] args) {
-		// 5°³ÀÇ È¦¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº È¦¼öÀÇ ÇÕ ±¸ÇÏ±â.
-		// ´Ü, ÀÔ·Â ¹ŞÀº ¼ö°¡ 0º¸´Ù ÀÛ°Å³ª Â¦¼öÀÌ¸é ´Ù½Ã ÀÔ·Â ¹Ş±â
+		// 5ê°œì˜ í™€ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ í™€ìˆ˜ì˜ í•© êµ¬í•˜ê¸°.
+		// ë‹¨, ì…ë ¥ ë°›ì€ ìˆ˜ê°€ 0ë³´ë‹¤ ì‘ê±°ë‚˜ ì§ìˆ˜ì´ë©´ ë‹¤ì‹œ ì…ë ¥ ë°›ê¸°
 		Scanner sc = new Scanner(System.in);
 		int n, s = 0;
-		System.out.print("È¦¼ö¸¸ ÀÔ·Â: ");
+		System.out.print("í™€ìˆ˜ë§Œ ì…ë ¥: ");
 		for(int i=1;i<=5;i++) {
 			n=sc.nextInt();
 			if(n<0 || n%2==0) {
@@ -17,7 +17,7 @@ public class ContinueEx1 {
 			}
 			s+=n;
 		}
-		System.out.println("°á°ú: "+s);
+		System.out.println("ê²°ê³¼: "+s);
 		sc.close();
 	}
 }

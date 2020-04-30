@@ -1,11 +1,11 @@
-package d200227;
+ï»¿package d200227;
 
 import myList.MyArrayList;
 import myList.MyList;
 
 public class Ex4 {
 	public static void main(String[] args) {
-		System.out.println("MyArrayList ±¸Çö. ÆÐÅ°Áö ÂüÁ¶");
+		System.out.println("MyArrayList êµ¬í˜„. íŒ¨í‚¤ì§€ ì°¸ì¡°");
 		MyList<String> list = new MyArrayList<String>();
 		list.add("sample");
 	}

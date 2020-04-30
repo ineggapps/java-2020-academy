@@ -1,4 +1,4 @@
-package d200219;
+ï»¿package d200219;
 
 public class CoffeeTest {
 	public static void main(String[] args) {
@@ -20,18 +20,18 @@ public class CoffeeTest {
 
 class CoffeeMachine{
 	public void make() {
-		System.out.println("ÀÏ¹İ Á¦Á¶");
+		System.out.println("ì¼ë°˜ ì œì¡°");
 	}
 }
 
 class ACoffeeMachine extends CoffeeMachine{
 	public void make() {
-		System.out.println("Ä«Æä¶ó¶¼ Á¦Á¶");
+		System.out.println("ì¹´í˜ë¼ë–¼ ì œì¡°");
 	}
 }
 
 class BCoffeeMachine extends CoffeeMachine{
 	public void make() {
-		System.out.println("¾Æ¸Ş¸®Ä«³ë Á¦Á¶");
+		System.out.println("ì•„ë©”ë¦¬ì¹´ë…¸ ì œì¡°");
 	}
 }

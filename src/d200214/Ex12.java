@@ -1,10 +1,10 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex12 {
 	/**
-	 * StringBuffer, StringBuilder : °¡º¯ÀûÀÎ ¹®ÀÚ¿­À» Ã³¸®ÇÏ´Â °æ¿ì Stringº¸´Ù À¯¸® 
-	 * StringBuilder:µ¿±âÈ­¸¦ Áö¿øÇÏÁö ¾ÊÀ½. StringBufferº¸´Ù ºü¸§ 
-	 * StringBuffer: µ¿±âÈ­ Áö¿ø. ¸ÖÆ¼ ½º·¹µå¿¡¼­ ¾ÈÀü ÇÑ ÁÙÀÇ ¹®ÀÚ¿­À» Ã³¸®ÇÏ´Â °æ¿ì¿¡´Â StringÀÌ ´õ À¯¸®
+	 * StringBuffer, StringBuilder : ê°€ë³€ì ì¸ ë¬¸ìì—´ì„ ì²˜ë¦¬í•˜ëŠ” ê²½ìš° Stringë³´ë‹¤ ìœ ë¦¬ 
+	 * StringBuilder:ë™ê¸°í™”ë¥¼ ì§€ì›í•˜ì§€ ì•ŠìŒ. StringBufferë³´ë‹¤ ë¹ ë¦„ 
+	 * StringBuffer: ë™ê¸°í™” ì§€ì›. ë©€í‹° ìŠ¤ë ˆë“œì—ì„œ ì•ˆì „ í•œ ì¤„ì˜ ë¬¸ìì—´ì„ ì²˜ë¦¬í•˜ëŠ” ê²½ìš°ì—ëŠ” Stringì´ ë” ìœ ë¦¬
 	 */
 	public static void main(String[] args) {
 		StringBuffer sb1 = new StringBuffer("korea");
@@ -12,61 +12,61 @@ public class Ex12 {
 
 		System.out.println(sb1);
 		System.out.println(sb1);
-		System.out.println(sb1 == sb2);// ÁÖ¼Ò ºñ±³
-		System.out.println(sb1.equals(sb2)); // ¡Ú false (ÁÖ¼Ú°ªÀ» ºñ±³ÇÏ±â ¶§¹®)
-		// ¹®ÀÚ¿­À» ºñ±³ÇÏ±â À§ÇØ¼­´Â StringÀ¸·Î º¯È¯ ÈÄ ºñ±³ÇÏÀÚ!
+		System.out.println(sb1 == sb2);// ì£¼ì†Œ ë¹„êµ
+		System.out.println(sb1.equals(sb2)); // â˜… false (ì£¼ì†Ÿê°’ì„ ë¹„êµí•˜ê¸° ë•Œë¬¸)
+		// ë¬¸ìì—´ì„ ë¹„êµí•˜ê¸° ìœ„í•´ì„œëŠ” Stringìœ¼ë¡œ ë³€í™˜ í›„ ë¹„êµí•˜ì!
 		System.out.println(sb1.toString().equals(sb1.toString()));// true
-		System.out.println("±æÀÌ: " + sb1.length());// 5(korea)
+		System.out.println("ê¸¸ì´: " + sb1.length());// 5(korea)
 
 		StringBuffer sb3 = new StringBuffer();
-		System.out.println("ÃÊ±â¹öÆÛÅ©±â:" + sb3.capacity());// 16
+		System.out.println("ì´ˆê¸°ë²„í¼í¬ê¸°:" + sb3.capacity());// 16
 
 		sb3.append("seoul");
 		sb3.append("korea");
-		sb3.append("´ëÇÑ¹Î±¹");
-		sb3.append("¿ì¸®³ª¶ó");
-		sb3.append("ÀÚ¹Ù");
-		sb3.append("½ºÇÁ¸µ");
-		System.out.println("append ÈÄ ¹öÆÛÅ©±â:" + sb3.capacity());// ¹öÆÛ: 34, ºÎÁ· ½Ã ÀÚµ¿À¸·Î ´Ã¸°´Ù.
+		sb3.append("ëŒ€í•œë¯¼êµ­");
+		sb3.append("ìš°ë¦¬ë‚˜ë¼");
+		sb3.append("ìë°”");
+		sb3.append("ìŠ¤í”„ë§");
+		System.out.println("append í›„ ë²„í¼í¬ê¸°:" + sb3.capacity());// ë²„í¼: 34, ë¶€ì¡± ì‹œ ìë™ìœ¼ë¡œ ëŠ˜ë¦°ë‹¤.
 		
 		System.out.println(sb3);
-		System.out.println(sb3.indexOf("ÀÚ¹Ù"));
+		System.out.println(sb3.indexOf("ìë°”"));
 
 		String s2 = sb3.toString();
 		System.out.println(s2.toUpperCase());
 		
-		//¸Ç ¾Õ¿¡ ÇÑ±¹ ¹®ÀÚ¿­ »ğÀÔ
-		sb3.insert(0, "ÇÑ±¹");
+		//ë§¨ ì•ì— í•œêµ­ ë¬¸ìì—´ ì‚½ì…
+		sb3.insert(0, "í•œêµ­");
 		System.out.println(sb3.toString());
 		
-		//korea ¾Õ¿¡ super ¹®ÀÚ¿­ »ğÀÔ
+		//korea ì•ì— super ë¬¸ìì—´ ì‚½ì…
 		sb3.insert(sb3.indexOf("korea"),"super");
 		System.out.println(sb3.toString());
 
-		//korea µÚ¿¡ »ç¶û ¹®ÀÚ¿­ »ğÀÔ
-		sb3.insert(sb3.indexOf("korea")+"korea".length(),"»ç¶û");
+		//korea ë’¤ì— ì‚¬ë‘ ë¬¸ìì—´ ì‚½ì…
+		sb3.insert(sb3.indexOf("korea")+"korea".length(),"ì‚¬ë‘");
 		System.out.println(sb3.toString());
 		
-		//´ëÇÑ¹Î±¹ ¹®ÀÚ¿­ Áö¿ì±â
-		sb3.delete(sb3.indexOf("´ëÇÑ¹Î±¹"), sb3.indexOf("´ëÇÑ¹Î±¹")+"´ëÇÑ¹Î±¹".length()); //(end-1) ÀÎµ¦½º±îÁö »èÁ¦
+		//ëŒ€í•œë¯¼êµ­ ë¬¸ìì—´ ì§€ìš°ê¸°
+		sb3.delete(sb3.indexOf("ëŒ€í•œë¯¼êµ­"), sb3.indexOf("ëŒ€í•œë¯¼êµ­")+"ëŒ€í•œë¯¼êµ­".length()); //(end-1) ì¸ë±ìŠ¤ê¹Œì§€ ì‚­ì œ
 		System.out.println(sb3.toString());
 		
-		//korea ¹®ÀÚ¿­ºÎÅÍ ³¡±îÁö Áö¿ì±â
+		//korea ë¬¸ìì—´ë¶€í„° ëê¹Œì§€ ì§€ìš°ê¸°
 		sb3.delete(sb3.indexOf("korea"),sb3.length());
 		System.out.println(sb3.toString());
 		
-		System.out.println("±æÀÌ:"+sb3.length()+", ¹öÆÛ Å©±â: "+sb3.capacity());//¹öÆÛ Å©±â ¿©ÀüÈ÷ 34
-		sb3.trimToSize();//¹öÆÛÀÇ Å©±â¸¦ ¹®ÀÚ¿­ ±æÀÌ·Î 
-		System.out.println("±æÀÌ:"+sb3.length()+", ¹öÆÛ Å©±â: "+sb3.capacity());//¹öÆÛ Å©±â ÁÙÀÌ¸é ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¸Å­¸¸ ÀâÈû
+		System.out.println("ê¸¸ì´:"+sb3.length()+", ë²„í¼ í¬ê¸°: "+sb3.capacity());//ë²„í¼ í¬ê¸° ì—¬ì „íˆ 34
+		sb3.trimToSize();//ë²„í¼ì˜ í¬ê¸°ë¥¼ ë¬¸ìì—´ ê¸¸ì´ë¡œ 
+		System.out.println("ê¸¸ì´:"+sb3.length()+", ë²„í¼ í¬ê¸°: "+sb3.capacity());//ë²„í¼ í¬ê¸° ì¤„ì´ë©´ ë¬¸ìì—´ì˜ ê¸¸ì´ë§Œí¼ë§Œ ì¡í˜
 		
-		System.out.println("¡Ú"+sb1+"¡Ú");
+		System.out.println("â˜…"+sb1+"â˜…");
 		sb1.delete(0, sb1.length());
-		System.out.println("¡Ú"+sb1+"¡Ú");
+		System.out.println("â˜…"+sb1+"â˜…");
 		
-		//°´Ã¼ ¾ÈÀÇ ³»¿ë¹°À» Áö¿ì´Â È¿°ú¸¦ ³»´Â ´Ù¸¥ ¹æ¹ı
-		System.out.println("¡Ú"+sb2+"¡Ú");
+		//ê°ì²´ ì•ˆì˜ ë‚´ìš©ë¬¼ì„ ì§€ìš°ëŠ” íš¨ê³¼ë¥¼ ë‚´ëŠ” ë‹¤ë¥¸ ë°©ë²•
+		System.out.println("â˜…"+sb2+"â˜…");
 		sb2 = new StringBuffer();
-		//»õ·Î¿î °´Ã¼¸¦ »ı¼ºÇÏ¸é ÀÌÀü¿¡ ¾²ÀÎ °´Ã¼ÀÇ ÁÖ¼Ú°ªÀÌ ¾Æ´Ñ »õ·Î »ı¼ºµÈ °÷ÀÇ ÁÖ¼Ú°ªÀ» °¡¸®Å³ Å×´Ï±î.
-		System.out.println("¡Ú"+sb2+"¡Ú");
+		//ìƒˆë¡œìš´ ê°ì²´ë¥¼ ìƒì„±í•˜ë©´ ì´ì „ì— ì“°ì¸ ê°ì²´ì˜ ì£¼ì†Ÿê°’ì´ ì•„ë‹Œ ìƒˆë¡œ ìƒì„±ëœ ê³³ì˜ ì£¼ì†Ÿê°’ì„ ê°€ë¦¬í‚¬ í…Œë‹ˆê¹Œ.
+		System.out.println("â˜…"+sb2+"â˜…");
 	}
 }

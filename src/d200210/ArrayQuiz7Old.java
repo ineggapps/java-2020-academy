@@ -1,20 +1,20 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayQuiz7Old {
 	public static void main(String[] args) {
-		// 1~25±îÁöÀÇ ¼ö ½ÇÇà°á°úÃ³·³ ´ŞÆØÀÌ ¸ğ¾çÀ¸·Î Ã¤¿ö ³Ö±â
+		// 1~25ê¹Œì§€ì˜ ìˆ˜ ì‹¤í–‰ê²°ê³¼ì²˜ëŸ¼ ë‹¬íŒ½ì´ ëª¨ì–‘ìœ¼ë¡œ ì±„ì›Œ ë„£ê¸°
 		int[][] a = new int[5][5];
 		int n = 1;
-		int size = a.length; // ÇÑ ¶óÀÎ(°¡·Î, ¼¼·Î)´ç ¸î ¹øÀÇ ¼ıÀÚ¸¦ Ã¤¿ö³Ö´ÂÁö
+		int size = a.length; // í•œ ë¼ì¸(ê°€ë¡œ, ì„¸ë¡œ)ë‹¹ ëª‡ ë²ˆì˜ ìˆ«ìë¥¼ ì±„ì›Œë„£ëŠ”ì§€
 
 		int start= 0;
 		int increment = 1;
 		int rowCount = 0;
-		// ¿¬»ê
+		// ì—°ì‚°
 		for (int i = 0; i < a.length * 2 - 1; i++) {
 			for (int j = 0; j < size; j += increment) {
 				System.out.println();
-				System.out.printf("i=%d, j=%d, size=%d, start=%dÀÏ ¶§ ±¸¹® ½ÃÀÛ\n", i, j,size,start);
+				System.out.printf("i=%d, j=%d, size=%d, start=%dì¼ ë•Œ êµ¬ë¬¸ ì‹œì‘\n", i, j,size,start);
 				if(rowCount%4<2) {
 					System.out.printf("a[%d][%d]=%d%n",start,j,n);
 					a[start][j] = n++;
@@ -27,17 +27,17 @@ public class ArrayQuiz7Old {
 				}
 			}
 			rowCount++;
-			System.out.printf("¿¬»ê ¸¶Ä¡°í rowCount=%dµÊ%n",rowCount);
+			System.out.printf("ì—°ì‚° ë§ˆì¹˜ê³  rowCount=%dë¨%n",rowCount);
 			if (i > 0 && rowCount % 2 == 1) {
-				System.out.printf("size °¨¼Ò %d=>%d\n", size, size - 1);
+				System.out.printf("size ê°ì†Œ %d=>%d\n", size, size - 1);
 				size--;
 			}
 			if (i > 0 && rowCount % 2 == 0) {
-				System.out.printf("offset ¹İÀü %d=>%d\n", increment, -increment);
+				System.out.printf("offset ë°˜ì „ %d=>%d\n", increment, -increment);
 				increment = -increment;// *-1
 			}
 
-			// Áß°£ Ãâ·Â
+			// ì¤‘ê°„ ì¶œë ¥
 			System.out.println();
 			for (int ii = 0; ii < a.length; ii++) {
 				for (int jj = 0; jj < a[0].length; jj++) {
@@ -47,7 +47,7 @@ public class ArrayQuiz7Old {
 			}
 		}
 		System.out.println();
-		// Ãâ·Â
+		// ì¶œë ¥
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.printf("%3d\t", a[i][j]);

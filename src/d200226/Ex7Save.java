@@ -1,27 +1,27 @@
-package d200226;
+ï»¿package d200226;
 
 import java.io.FileOutputStream;
 import java.util.Properties;
 
 public class Ex7Save {
 	public static void main(String[] args) {
-		// Hashtable Å¬·¡½º¸¦ »ó¼Ó ¹ŞÀ½
-		// Å°¿Í °ªÀÌ ¹®ÀÚ¿­¸¸ °¡´ÉÇÏ´Ù.
-		// ÆÄÀÏ ÀúÀå ¹× ºÒ·¯¿À±â°¡ °£´ÜÇØ¼­ È¯°æ¼³Á¤ µî¿¡¼­ ¸¹ÀÌ »ç¿ëµÈ´Ù.
+		// Hashtable í´ë˜ìŠ¤ë¥¼ ìƒì† ë°›ìŒ
+		// í‚¤ì™€ ê°’ì´ ë¬¸ìì—´ë§Œ ê°€ëŠ¥í•˜ë‹¤.
+		// íŒŒì¼ ì €ì¥ ë° ë¶ˆëŸ¬ì˜¤ê¸°ê°€ ê°„ë‹¨í•´ì„œ í™˜ê²½ì„¤ì • ë“±ì—ì„œ ë§ì´ ì‚¬ìš©ëœë‹¤.
 		Properties p = new Properties();
-		// Properties´Â Á¦³×¸¯ÀÌ ¾ø´Ù
-		// Properties ¿ª½Ã put() ¸Ş¼­µå¸¦ »ç¿ëÇÒ ¼ö ÀÖÀ¸³ª ±ÇÀåÇÏÁö ¾Ê´Â´Ù.
-		// Å°¿Í °ªÀ» ÀúÀåÇÑ´Ù.
-		p.setProperty("ÀÚ¹Ù", "80");
-		p.setProperty("½ºÇÁ¸µ", "90");
-		p.setProperty("¼­ºí¸´", "85");
-		p.setProperty("¿À¶óÅ¬", "90");
+		// PropertiesëŠ” ì œë„¤ë¦­ì´ ì—†ë‹¤
+		// Properties ì—­ì‹œ put() ë©”ì„œë“œë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆìœ¼ë‚˜ ê¶Œì¥í•˜ì§€ ì•ŠëŠ”ë‹¤.
+		// í‚¤ì™€ ê°’ì„ ì €ì¥í•œë‹¤.
+		p.setProperty("ìë°”", "80");
+		p.setProperty("ìŠ¤í”„ë§", "90");
+		p.setProperty("ì„œë¸”ë¦¿", "85");
+		p.setProperty("ì˜¤ë¼í´", "90");
 		p.setProperty("HTML", "100");
 
 		String pathname = "subject.properties";
 		try (FileOutputStream fos = new FileOutputStream(pathname)) {
-			p.store(fos, "°ú¸ñº° ¼ºÀû");
-			System.out.println("ÆÄÀÏ ÀúÀå ¿Ï·á");
+			p.store(fos, "ê³¼ëª©ë³„ ì„±ì ");
+			System.out.println("íŒŒì¼ ì €ì¥ ì™„ë£Œ");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

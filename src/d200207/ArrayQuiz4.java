@@ -1,62 +1,62 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Scanner;
 
 public class ArrayQuiz4 {
 	public static void main(String[] args) {
-		// ´Þ·Â ¸¸µé±â
+		// ë‹¬ë ¥ ë§Œë“¤ê¸°
 		Scanner sc = new Scanner(System.in);
 		int y, m, d;
 		int month[] = new int[] { 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-		String week[] = new String[] { "ÀÏ", "¿ù", "È­", "¼ö", "¸ñ", "±Ý", "Åä" };
-		int tot;//±¸ÇÏ°íÀÚ ÇÏ´Â ¿ùÀÇ Àü¿ù±îÁöÀÇ °æ°úÀÏÀ» ±¸ÇÏ±â
+		String week[] = new String[] { "ì¼", "ì›”", "í™”", "ìˆ˜", "ëª©", "ê¸ˆ", "í† " };
+		int tot;//êµ¬í•˜ê³ ìž í•˜ëŠ” ì›”ì˜ ì „ì›”ê¹Œì§€ì˜ ê²½ê³¼ì¼ì„ êµ¬í•˜ê¸°
 		int startDay;
 		
 		do {
-			System.out.print("¿¬µµ > ");
+			System.out.print("ì—°ë„ > ");
 			y = sc.nextInt();
 		} while (y < 1);
 
 		do {
-			System.out.print("¿ù > ");
+			System.out.print("ì›” > ");
 			m = sc.nextInt();
 		} while (m < 1 || m > 12);
 
-		// º¸°íÀÚ ÇÏ´Â ¿¬µµ°¡ À±³âÀÎÁö ±¸ÇÏ±â (2¿ù)
+		// ë³´ê³ ìž í•˜ëŠ” ì—°ë„ê°€ ìœ¤ë…„ì¸ì§€ êµ¬í•˜ê¸° (2ì›”)
 		if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
-			month[1]=29;//À±³âÀÌ¸é 2¿ù¿¡ 1ÀÏÀ» ´õ Ãß°¡ÇÑ´Ù.
+			month[1]=29;//ìœ¤ë…„ì´ë©´ 2ì›”ì— 1ì¼ì„ ë” ì¶”ê°€í•œë‹¤.
 		}else {
 			month[1]=28;
 		}
 		
-//		´Þ·ÂÀº ¿ù±îÁö¸¸ ±¸ÇÏ¸é µÈ´Ù.
+//		ë‹¬ë ¥ì€ ì›”ê¹Œì§€ë§Œ êµ¬í•˜ë©´ ëœë‹¤.
 //		do {
-//			System.out.print("ÀÏ > ");
+//			System.out.print("ì¼ > ");
 //			d = sc.nextInt();
 //		} while (d < 1 || d > month[d - 1]);
 
-		//´Þ·Â ±×¸®±â
-		//´Þ·ÂÀ» ±×¸®±â À§ÇØ¼­´Â ¿ù ½ÃÀÛÀÏÀÇ ¿äÀÏÀ» °è»êÇØ¾ß ÇÑ´Ù.
-		//±¸ÇÏ°íÀÚ ÇÏ´Â Àü³âµµÀÇ ¸»¿ù ¸»ÀÏ±îÁöÀÇ ³¯Â¥ ¼ö Ä«¿îÆ®
-		//Àü³âµµ*365ÀÏ + (1*Àü³âµµ±îÁö À±³âÀÌ¾ú´ø ¿¬µµÀÇ °³¼ö)
+		//ë‹¬ë ¥ ê·¸ë¦¬ê¸°
+		//ë‹¬ë ¥ì„ ê·¸ë¦¬ê¸° ìœ„í•´ì„œëŠ” ì›” ì‹œìž‘ì¼ì˜ ìš”ì¼ì„ ê³„ì‚°í•´ì•¼ í•œë‹¤.
+		//êµ¬í•˜ê³ ìž í•˜ëŠ” ì „ë…„ë„ì˜ ë§ì›” ë§ì¼ê¹Œì§€ì˜ ë‚ ì§œ ìˆ˜ ì¹´ìš´íŠ¸
+		//ì „ë…„ë„*365ì¼ + (1*ì „ë…„ë„ê¹Œì§€ ìœ¤ë…„ì´ì—ˆë˜ ì—°ë„ì˜ ê°œìˆ˜)
 		tot = (y-1)*365 + ((y-1)/4 - (y-1)/100 + (y-1)/400);
-		//±¸ÇÏ°íÀÚ ÇÏ´Â ¿¬µµÀÇ ¿ùÀÇ Àü¿ù±îÁöÀÇ ³¯Â¥ ¼ö Ä«¿îÆ®ÇÏ±â
+		//êµ¬í•˜ê³ ìž í•˜ëŠ” ì—°ë„ì˜ ì›”ì˜ ì „ì›”ê¹Œì§€ì˜ ë‚ ì§œ ìˆ˜ ì¹´ìš´íŠ¸í•˜ê¸°
 		for(int i=0;i<m-1;i++) {
 			tot+=month[i];
 		}
-		tot++; //ÇöÀç ¿ùÀÇ 1ÀÏÀ» Ä«¿îÆ®
-		startDay = tot%7;//½ÃÀÛÇÏ´Â ³¯ÀÇ °ª
-		System.out.println(month[m-1]+"(¸»ÀÏ)±îÁö ÀÖÀ½");
-		System.out.println(tot+"½ÃÀÛÀÏÀº " + tot%7 +" " + week[tot%7]);
-		System.out.printf("%d³â %d¿ù\n",y,m);
+		tot++; //í˜„ìž¬ ì›”ì˜ 1ì¼ì„ ì¹´ìš´íŠ¸
+		startDay = tot%7;//ì‹œìž‘í•˜ëŠ” ë‚ ì˜ ê°’
+		System.out.println(month[m-1]+"(ë§ì¼)ê¹Œì§€ ìžˆìŒ");
+		System.out.println(tot+"ì‹œìž‘ì¼ì€ " + tot%7 +" " + week[tot%7]);
+		System.out.printf("%dë…„ %dì›”\n",y,m);
 		for(String i: week) {
 			System.out.printf("%s\t\t",i);
 		}
 		System.out.println("\n==========================================");
-		//´Þ·ÂÀº 7ÀÏ ´ÜÀ§·Î ÁÙ¹Ù²ÞÀ» ÇÏ´Ï±î 7Àº literal°ªÀ¸·Î »ç¿ëÇÒ°Ô!
+		//ë‹¬ë ¥ì€ 7ì¼ ë‹¨ìœ„ë¡œ ì¤„ë°”ê¿ˆì„ í•˜ë‹ˆê¹Œ 7ì€ literalê°’ìœ¼ë¡œ ì‚¬ìš©í• ê²Œ!
 		int day=1;
 		/*
-		#1. Á¦1¾È  
+		#1. ì œ1ì•ˆ  
 		int cursor=0;
 		while(day<=month[m-1]) {
 			cursor++;
@@ -71,21 +71,21 @@ public class ArrayQuiz4 {
 			}
 		}*/
 		
-		//Á¦ÀÏ Ã¹ ÁÙÀº °ø¹éÀÌ ÇÊ¿äÇÏ¹Ç·Î ´ÙÀ½°ú °°ÀÌ Ãâ·ÂÇÑ´Ù
-//		System.out.println("½ÃÀÛÀÏ:"+startDay);
-		//#2. Á¦2¾È
-		//2020³â 2¿ùÀ» ¿¹·Î µé¸é 2¿ù 1ÀÏÀº Åä¿äÀÏÀÌ´Ù.
-		//ÀÏ¿ùÈ­¼ö¸ñ±Ý¿äÀÏ¿¡´Â °ø¹éÀ» Âï¾î¾ß ÇÑ´Ù.
+		//ì œì¼ ì²« ì¤„ì€ ê³µë°±ì´ í•„ìš”í•˜ë¯€ë¡œ ë‹¤ìŒê³¼ ê°™ì´ ì¶œë ¥í•œë‹¤
+//		System.out.println("ì‹œìž‘ì¼:"+startDay);
+		//#2. ì œ2ì•ˆ
+		//2020ë…„ 2ì›”ì„ ì˜ˆë¡œ ë“¤ë©´ 2ì›” 1ì¼ì€ í† ìš”ì¼ì´ë‹¤.
+		//ì¼ì›”í™”ìˆ˜ëª©ê¸ˆìš”ì¼ì—ëŠ” ê³µë°±ì„ ì°ì–´ì•¼ í•œë‹¤.
 		for(int i=0;i<startDay;i++) {
 			System.out.print("*\t\t");
 		}
-		//2020³â 2¿ùÀ» ¿¹·Î µé¸é 2¿ùÀº 29ÀÏ±îÁö ÀÖ´Ù.
-		//°ø¹éÀ» ¶ç¿î °÷¿¡¼­ºÎÅÍ ¸»ÀÏÀ» ¼øÂ÷ÀûÀ¸·Î ÂïÀ¸¸é µÈ´Ù.
-		//´Ü, ¸»ÀÏÀÌ Åä¿äÀÏÀÎ °æ¿ì¿¡´Â ÁÙ¹Ù²ÞÀ» ÇÏÁö ¾Êµµ·Ï Ã³¸®ÇÑ´Ù.
+		//2020ë…„ 2ì›”ì„ ì˜ˆë¡œ ë“¤ë©´ 2ì›”ì€ 29ì¼ê¹Œì§€ ìžˆë‹¤.
+		//ê³µë°±ì„ ë„ìš´ ê³³ì—ì„œë¶€í„° ë§ì¼ì„ ìˆœì°¨ì ìœ¼ë¡œ ì°ìœ¼ë©´ ëœë‹¤.
+		//ë‹¨, ë§ì¼ì´ í† ìš”ì¼ì¸ ê²½ìš°ì—ëŠ” ì¤„ë°”ê¿ˆì„ í•˜ì§€ ì•Šë„ë¡ ì²˜ë¦¬í•œë‹¤.
 		for (int i=1;i<=month[m-1];i++) {
 			System.out.printf("%d\t\t",day++);
 			if((startDay+i)%7==0 && i<month[m-1]) {
-				//7°³ ÂïÀ» ¶§¸¶´Ù ´ÙÀ½ÁÙ·Î, ¸¶Áö¸·¿¡´Â ÂïÁö ¾ÊÀ½.
+				//7ê°œ ì°ì„ ë•Œë§ˆë‹¤ ë‹¤ìŒì¤„ë¡œ, ë§ˆì§€ë§‰ì—ëŠ” ì°ì§€ ì•ŠìŒ.
 				System.out.println();
 			}
 		}

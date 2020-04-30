@@ -1,7 +1,7 @@
-public class Ex006_OddHap {
+ï»¿public class Ex006_OddHap {
 	public static void main(String[] args) {
 /*
-		1~100 ±îÁö ¼ö Áß È¦¼öÀÇ ÇÕÀ» °è»êÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~100 ê¹Œì§€ ìˆ˜ ì¤‘ í™€ìˆ˜ì˜ í•©ì„ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int s, n;
 		s=0;
@@ -10,6 +10,6 @@ public class Ex006_OddHap {
 			s+=n;
 			n+=2;
 		}
-		System.out.println("°á°ú : "+s); // 2500
+		System.out.println("ê²°ê³¼ : "+s); // 2500
 	}
 }

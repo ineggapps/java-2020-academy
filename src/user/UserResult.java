@@ -1,4 +1,4 @@
-package user;
+ï»¿package user;
 
 public class UserResult {
 
@@ -9,7 +9,7 @@ public class UserResult {
 	}
 
 	public void write() {
-		System.out.println("\nµ¥ÀÌÅÍ Ãâ·Â...");
+		System.out.println("\në°ì´í„° ì¶œë ¥...");
 		int cnt = user.getCount();
 		UserVO[] list = user.getDataList();
 		for(int i=0;i<cnt;i++) {
@@ -21,6 +21,6 @@ public class UserResult {
 	}
 
 	public String adult(int age) {
-		return age >= 19 ? "¼ºÀÎ" : "¹Ì¼º³âÀÚ";
+		return age >= 19 ? "ì„±ì¸" : "ë¯¸ì„±ë…„ì";
 	}
 }

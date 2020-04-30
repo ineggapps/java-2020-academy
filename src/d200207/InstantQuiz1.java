@@ -1,10 +1,10 @@
-package d200207;
+ï»¿package d200207;
 
 public class InstantQuiz1 {
 	public static void main(String[] args) {
 		/*
-		 * 1~100 »çÀÌÀÇ ³­¼ö¸¦ 100°³ ¹ß»ıÇÏ¿© ÇÑ ÁÙ¿¡ 10°³¾¿ Ãâ·ÂÇÏ°í
-		 * ¸¶Áö¸·ÁÙ¿¡ ¹ß»ıµÈ ³­¼öÀÇ Â¦¼ö¿Í È¦¼öÀÇ °³¼ö Ãâ·ÂÇÏ±â
+		 * 1~100 ì‚¬ì´ì˜ ë‚œìˆ˜ë¥¼ 100ê°œ ë°œìƒí•˜ì—¬ í•œ ì¤„ì— 10ê°œì”© ì¶œë ¥í•˜ê³ 
+		 * ë§ˆì§€ë§‰ì¤„ì— ë°œìƒëœ ë‚œìˆ˜ì˜ ì§ìˆ˜ì™€ í™€ìˆ˜ì˜ ê°œìˆ˜ ì¶œë ¥í•˜ê¸°
 		 * */
 		int num[]= new int[10];
 		int tmp;
@@ -13,11 +13,11 @@ public class InstantQuiz1 {
 			tmp = (int)(Math.random()*100)+1;
 			System.out.printf("%d\t",tmp);
 			if(i>=91) {
-				//91¹øÂ°ºÎÅÍ 100¹øÂ°±îÁöÀÇ °ªÀº º¯¼ö¿¡ ÀúÀåÇÏ±â
+				//91ë²ˆì§¸ë¶€í„° 100ë²ˆì§¸ê¹Œì§€ì˜ ê°’ì€ ë³€ìˆ˜ì— ì €ì¥í•˜ê¸°
 				num[i-91]=tmp;
 			}
 			if(i%10==0) {
-				//10°³¾¿ Ãâ·ÂµÉ ¶§¸¶´Ù ÁÙ¹Ù²ŞÇÏ±â
+				//10ê°œì”© ì¶œë ¥ë  ë•Œë§ˆë‹¤ ì¤„ë°”ê¿ˆí•˜ê¸°
 				System.out.println();
 			}
 		}
@@ -29,8 +29,8 @@ public class InstantQuiz1 {
 				odd++;
 			}
 		}
-		System.out.printf("Â¦¼öÀÇ °³¼ö: %d\n",even );
-		System.out.printf("È¦¼öÀÇ °³¼ö: %d\n",odd);
+		System.out.printf("ì§ìˆ˜ì˜ ê°œìˆ˜: %d\n",even );
+		System.out.printf("í™€ìˆ˜ì˜ ê°œìˆ˜: %d\n",odd);
 		
 	}
 }

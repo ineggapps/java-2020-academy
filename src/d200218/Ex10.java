@@ -1,4 +1,4 @@
-package d200218;
+ï»¿package d200218;
 
 import java.util.Arrays;
 
@@ -8,14 +8,14 @@ public class Ex10 {
 		int[] b = { 1, 2, 3 };
 		int[] c = { 1, 2, 3, 4, 5, 6 };
 
-		// ÁÖ¼Ò ºñ±³
-		System.out.println(a == b);// ¡Úfalse
+		// ì£¼ì†Œ ë¹„êµ
+		System.out.println(a == b);// â˜…false
 		System.out.println(a == c);// false
 		System.out.println(a.equals(b));// false
 
 		System.out.println();
 
-		// °ª ºñ±³
+		// ê°’ ë¹„êµ
 		System.out.println(Arrays.equals(a, b));// true
 		System.out.println(Arrays.equals(a, c));// false
 
@@ -23,10 +23,10 @@ public class Ex10 {
 
 		int[][] aa = { { 1, 2, 3 }, { 4, 5, 6 } };
 		int[][] bb = { { 1, 2, 3 }, { 4, 5, 6 } };
-		// 2Â÷¿ø ¹è¿­¿¡¼­´Â 1Â÷¿øÀÌ °¡Áø ÁÖ¼Ò¸¦ ºñ±³ÇÏ¹Ç·Î false°¡ ³ª¿Â´Ù.
-		// ¾èÀº ºñ±³¸¦ ¼öÇàÇÑ´Ù.
+		// 2ì°¨ì› ë°°ì—´ì—ì„œëŠ” 1ì°¨ì›ì´ ê°€ì§„ ì£¼ì†Œë¥¼ ë¹„êµí•˜ë¯€ë¡œ falseê°€ ë‚˜ì˜¨ë‹¤.
+		// ì–•ì€ ë¹„êµë¥¼ ìˆ˜í–‰í•œë‹¤.
 		System.out.println(Arrays.equals(aa, bb));// false
-		// ±íÀº ºñ±³¸¦ ¼öÇàÇÏ¸é 1Â÷¿øÀÌ °¡Áø ÁÖ¼Ò°¡ °¡Áø °ª±îÁö ºñ±³ÇÑ´Ù.
+		// ê¹Šì€ ë¹„êµë¥¼ ìˆ˜í–‰í•˜ë©´ 1ì°¨ì›ì´ ê°€ì§„ ì£¼ì†Œê°€ ê°€ì§„ ê°’ê¹Œì§€ ë¹„êµí•œë‹¤.
 		System.out.println(Arrays.deepEquals(aa, bb));// true
 
 	}

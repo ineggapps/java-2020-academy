@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,36 +6,36 @@ import java.util.Date;
 
 public class Ex11 {
 	public static void main(String[] args) {
-		// java.util.Date ½Ç½À
+		// java.util.Date ì‹¤ìŠµ
 		Date d1 = new Date();
 		System.out.println(d1);
 
-//		//deprecatedµÈ ¸Ş¼­µåÀÌ¹Ç·Î »ç¿ëÀ» ±ÇÀåÇÏÁö ¾Ê´Â ¹æ½ÄÀÓ.
+//		//deprecatedëœ ë©”ì„œë“œì´ë¯€ë¡œ ì‚¬ìš©ì„ ê¶Œì¥í•˜ì§€ ì•ŠëŠ” ë°©ì‹ì„.
 //		int y = d1.getYear()+1900;
 //		int m = d1.getMonth();
 //		int d = d1.getDate();
-//		System.out.printf("%d³â %d¿ù %dÀÏ", y, m, d);
+//		System.out.printf("%dë…„ %dì›” %dì¼", y, m, d);
 
-		// 1970³â 1¿ù 1ÀÏ 0½Ã 0ºĞ 0ÃÊ ±âÁØÀ¸·Î ms·Î ¹İÈ¯ÇÑ´Ù.
+		// 1970ë…„ 1ì›” 1ì¼ 0ì‹œ 0ë¶„ 0ì´ˆ ê¸°ì¤€ìœ¼ë¡œ msë¡œ ë°˜í™˜í•œë‹¤.
 		long t = d1.getTime();
 		System.out.println(t);
 
 		Date d2 = new Date(1581908783300L);
 		System.out.println(d2);
-		System.out.println(d1.after(d2));// d1ÀÌ ºñ±³´ë»óº¸´Ù µÚ¿¡ ÀÖ´ÂÁö?
+		System.out.println(d1.after(d2));// d1ì´ ë¹„êµëŒ€ìƒë³´ë‹¤ ë’¤ì— ìˆëŠ”ì§€?
 
-		SimpleDateFormat f = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ hh½Ã mmºĞ ssÃÊ S");
+		SimpleDateFormat f = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ hhì‹œ mmë¶„ ssì´ˆ S");
 		String s = f.format(d1);
 		System.out.println(s);
 
-		// String => DateÇüÀ¸·Î º¯È¯ÇÏ´Â ¹æ¹ı
+		// String => Dateí˜•ìœ¼ë¡œ ë³€í™˜í•˜ëŠ” ë°©ë²•
 		String s2 = "2000-01-20";
-		SimpleDateFormat f2 = new SimpleDateFormat("yyyy-MM-dd");// String¿¡ ÀÔ·ÂµÈ Çü½Ä ±×´ë·Î ÀÔ·ÂÇØ ÁÖ¾î¾ß ÇÔ.
+		SimpleDateFormat f2 = new SimpleDateFormat("yyyy-MM-dd");// Stringì— ì…ë ¥ëœ í˜•ì‹ ê·¸ëŒ€ë¡œ ì…ë ¥í•´ ì£¼ì–´ì•¼ í•¨.
 		Date date;
 		try {
 			date = f2.parse(s2);
 			System.out.println(date);
-			System.out.println(new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ").format(date));
+			System.out.println(new SimpleDateFormat("yyyyë…„ MMì›” ddì¼").format(date));
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}

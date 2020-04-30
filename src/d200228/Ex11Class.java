@@ -1,39 +1,39 @@
-package d200228;
+ï»¿package d200228;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-//Ex11 ÀÌÈÄ ½Ç½ÀÇÑ ¼Ò½ººÎÅÍ ¾öÃ» ¾î·Á¿ï ¼ö ÀÖ´Ù~
-//ÀÌ·± °Íµµ ÀÖ±¸³ª ÇÏ°í ³Ñ¾î°¡¸é µÊ.
-//¾îÂ¿ ¼ö ¾øÀÌ ¼ö¾÷ ÁøÇà
+//Ex11 ì´í›„ ì‹¤ìŠµí•œ ì†ŒìŠ¤ë¶€í„° ì—„ì²­ ì–´ë ¤ìš¸ ìˆ˜ ìˆë‹¤~
+//ì´ëŸ° ê²ƒë„ ìˆêµ¬ë‚˜ í•˜ê³  ë„˜ì–´ê°€ë©´ ë¨.
+//ì–´ì©” ìˆ˜ ì—†ì´ ìˆ˜ì—… ì§„í–‰
 public class Ex11Class {
 	public static void main(String[] args) {
 		try {
 			Class<?> cls = Class.forName("java.lang.String");
 			System.out.println("===========================");
-			System.out.println("»óÀ§ Å¬·¡½º¸¦ ¾Ë¾Æº¸ÀÚ...");
-			if (cls.getSuperclass() != null) {// ¸ğµç Å¬·¡½ºÀÇ super class´Â ObjectÀÌ´Ï±î ObjectÅ¬·¡½º ¿Ü¿¡ null°ªÀÌ ³ª¿Ã ÀÏÀº ¾ø´Ù
+			System.out.println("ìƒìœ„ í´ë˜ìŠ¤ë¥¼ ì•Œì•„ë³´ì...");
+			if (cls.getSuperclass() != null) {// ëª¨ë“  í´ë˜ìŠ¤ì˜ super classëŠ” Objectì´ë‹ˆê¹Œ Objectí´ë˜ìŠ¤ ì™¸ì— nullê°’ì´ ë‚˜ì˜¬ ì¼ì€ ì—†ë‹¤
 				System.out.println(cls.getSuperclass().getName());
 			}
 			System.out.println("===========================");
-			System.out.println("»ı¼ºÀÚ¸¦ ¾Ë¾Æº¸ÀÚ...");
+			System.out.println("ìƒì„±ìë¥¼ ì•Œì•„ë³´ì...");
 			Constructor<?>[] cc = cls.getConstructors();
 			for(Constructor<?> c: cc) {
-				//¸Ş¼­µå¸íÀÌ ÁÂ¸£¸¤ Ãâ·ÂµÈ´Ù.
+				//ë©”ì„œë“œëª…ì´ ì¢Œë¥´ë¥µ ì¶œë ¥ëœë‹¤.
 				System.out.println(c);
 			}
 			System.out.println("===========================");
-			System.out.println("ÇÊµå ¿µ¿ª¿¡ ¼±¾ğµÈ ¿ä¼ÒµéÀ» ¾Ë¾Æº¸ÀÚ.");
-			Field[] ff = cls.getDeclaredFields(); //private±îÁö ¸ù¶¥ Ãâ·Â
-//			Field[] ff = cls.getFields();//public¸¸
+			System.out.println("í•„ë“œ ì˜ì—­ì— ì„ ì–¸ëœ ìš”ì†Œë“¤ì„ ì•Œì•„ë³´ì.");
+			Field[] ff = cls.getDeclaredFields(); //privateê¹Œì§€ ëª½ë•… ì¶œë ¥
+//			Field[] ff = cls.getFields();//publicë§Œ
 			for(Field f: ff) {
 				System.out.println(f);
 			}
 			System.out.println("===========================");
-			System.out.println("¼±¾ğµÈ ¸Ş¼­µåµéÀ» ¾Ë¾Æº¸ÀÚ.");
-			Method[] mm = cls.getDeclaredMethods();//private±îÁö Æ÷ÇÔ
-//			Method[] mm = cls.getMethods();//public¸¸
+			System.out.println("ì„ ì–¸ëœ ë©”ì„œë“œë“¤ì„ ì•Œì•„ë³´ì.");
+			Method[] mm = cls.getDeclaredMethods();//privateê¹Œì§€ í¬í•¨
+//			Method[] mm = cls.getMethods();//publicë§Œ
 			for(Method m : mm) {
 				System.out.println(m);
 			}

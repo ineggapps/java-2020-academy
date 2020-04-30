@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -8,19 +8,19 @@ public class Ex7 {
 		int a, b, c;
 
 		try {
-			System.out.print("µÎ ¼ö ? ");
+			System.out.print("ë‘ ìˆ˜ ? ");
 			a = sc.nextInt();
 			b = sc.nextInt();
 			c = a + b;
 			System.out.println(c);
 		} catch (InputMismatchException e) {
-			//InputMismatchException: unchecked ¿¹¿Ü
-			//ScannerÀÇ nextInt()¸Ş µî¿¡¼­ ¼ıÀÚ°¡ ÀÔ·ÂµÇÁö ¾ÊÀº °æ¿ì ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
-			System.out.println("¼ıÀÚ¸¸ ÀÔ·Â °¡´ÉÇÕ´Ï´Ù.");
+			//InputMismatchException: unchecked ì˜ˆì™¸
+			//Scannerì˜ nextInt()ë©” ë“±ì—ì„œ ìˆ«ìê°€ ì…ë ¥ë˜ì§€ ì•Šì€ ê²½ìš° ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
+			System.out.println("ìˆ«ìë§Œ ì…ë ¥ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			e.printStackTrace();
 		} finally {
-			// ¿¹¿Ü°¡ ¹ß»ıÇÏ¿©µµ ¹«Á¶°Ç ½ÇÇàÇÑ´Ù. (¡ñ ¹ØÀÇ end±¸¹®Àº ½ÇÇàµÇÁö ¾Ê°Åµç!)
-			System.out.println("¿¹¿Ü¿Í °ü°è¾øÀÌ ½ÇÇàµÈ´Ù.");
+			// ì˜ˆì™¸ê°€ ë°œìƒí•˜ì—¬ë„ ë¬´ì¡°ê±´ ì‹¤í–‰í•œë‹¤. (âˆµ ë°‘ì˜ endêµ¬ë¬¸ì€ ì‹¤í–‰ë˜ì§€ ì•Šê±°ë“ !)
+			System.out.println("ì˜ˆì™¸ì™€ ê´€ê³„ì—†ì´ ì‹¤í–‰ëœë‹¤.");
 			sc.close();
 		}
 

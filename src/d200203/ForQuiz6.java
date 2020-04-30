@@ -1,23 +1,23 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
 public class ForQuiz6 {
 	public static void main(String[] args) {
-		// 10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹ŞÀº Á¤¼ö Áß °¡Àå ÀÛÀº °ªÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+		// 10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì€ ì •ìˆ˜ ì¤‘ ê°€ì¥ ì‘ì€ ê°’ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 		int min =0, n;
-		System.out.println("(ÃÖ¼Ú°ª ±¸ÇÏ±â) 10°³ÀÇ Á¤¼ö ÀÔ·Â");
+		System.out.println("(ìµœì†Ÿê°’ êµ¬í•˜ê¸°) 10ê°œì˜ ì •ìˆ˜ ì…ë ¥");
 		for (int i = 1; i <= 10; i++) {
 			n = sc.nextInt();
-			if(i==1) {//Ã³À½¿¡ ÀÔ·Â¹Ş´Â °ªÀ» minÀ¸·Î ¼¼ÆÃÇÏ°í ºñ±³ÇÑ´Ù.
+			if(i==1) {//ì²˜ìŒì— ì…ë ¥ë°›ëŠ” ê°’ì„ minìœ¼ë¡œ ì„¸íŒ…í•˜ê³  ë¹„êµí•œë‹¤.
 				min = n;
 			}
 			else if (min> n) {
 				min= n;
 			}
 		}
-		System.out.println("ÃÖ¼Ú°ª: "+ min);
+		System.out.println("ìµœì†Ÿê°’: "+ min);
 		sc.close();
 	}
 }

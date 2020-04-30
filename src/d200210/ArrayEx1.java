@@ -1,21 +1,21 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayEx1 {
 	public static void main(String[] args) {
 		/*
-		 ¾ö¹ĞÈ÷ µûÁö¸é JAVA¿¡¼­´Â 2Â÷¿ø¹è¿­ÀÌ¶ó´Â ¸íÄªº¸´Ù´Â ¹è¿­ÀÇ ¹è¿­ÀÌ¶ó´Â ¸íÄªÀÌ ¸Â´Ù. 
+		 ì—„ë°€íˆ ë”°ì§€ë©´ JAVAì—ì„œëŠ” 2ì°¨ì›ë°°ì—´ì´ë¼ëŠ” ëª…ì¹­ë³´ë‹¤ëŠ” ë°°ì—´ì˜ ë°°ì—´ì´ë¼ëŠ” ëª…ì¹­ì´ ë§ë‹¤. 
 		 */
-		int[][] a = new int[3][4];// 3Çà 4¿­ 2Â÷¿ø ¹è¿­À» »ı¼º
+		int[][] a = new int[3][4];// 3í–‰ 4ì—´ 2ì°¨ì› ë°°ì—´ì„ ìƒì„±
 		/*
 		 0	0	0	0
 		 0	0	0	0
 		 0	0	0	0
 		 */
-		System.out.println("Çà ¼ö: " + a.length);
-		System.out.println("0ÇàÀÇ ¿­ ¼ö: " + a[0].length);
+		System.out.println("í–‰ ìˆ˜: " + a.length);
+		System.out.println("0í–‰ì˜ ì—´ ìˆ˜: " + a[0].length);
 
-		System.out.println("¹è¿­ÀÇ ÂüÁ¶ À§Ä¡: " + a);
-		System.out.println("0ÇàÀÇ ÂüÁ¶ À§Ä¡: " + a[0]);
-		System.out.println("1Çà 2¿­ÀÇ °ª: " + a[1][2]);
+		System.out.println("ë°°ì—´ì˜ ì°¸ì¡° ìœ„ì¹˜: " + a);
+		System.out.println("0í–‰ì˜ ì°¸ì¡° ìœ„ì¹˜: " + a[0]);
+		System.out.println("1í–‰ 2ì—´ì˜ ê°’: " + a[1][2]);
 	}
 }

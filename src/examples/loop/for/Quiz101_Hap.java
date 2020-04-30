@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz101_Hap {
 	public static void main(String[] args) {
 /*		
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼ö±îÁö ÇÕ±¸ÇÏ±â
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ í•©êµ¬í•˜ê¸°
 */		
 		Scanner sc=new Scanner(System.in);
 		int s, n;
 		
 		do {
-			System.out.print("¼ö ? ");
+			System.out.print("ìˆ˜ ? ");
 			n=sc.nextInt();
 		} while(n<1||n>1000);
 		
@@ -17,7 +17,7 @@ public class Quiz101_Hap {
 		for(int i=1; i<=n; i++) {
 			s+=i;
 		}
-		System.out.println("1~"+n+"±îÁö ÇÕ : " + s);
+		System.out.println("1~"+n+"ê¹Œì§€ í•© : " + s);
 		
 		sc.close();
 	}

@@ -1,16 +1,16 @@
-package d200129;
+ï»¿package d200129;
 
 import java.util.Scanner;
 /*
- * ÃÊ¸¦ ÀÔ·Â ¹Ş¾Æ ½Ã, ºĞ, ÃÊ·Î º¯È¯ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä.
- * [Ã³¸®Á¶°Ç]
- * - ÃÊÀÇ ÀÔ·ÂÀº Scanner Å¬·¡½ºÀÇ nextInt() ¸Ş¼­µå¸¦ ÀÌ¿ëÇÑ´Ù.
+ * ì´ˆë¥¼ ì…ë ¥ ë°›ì•„ ì‹œ, ë¶„, ì´ˆë¡œ ë³€í™˜í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì„¸ìš”.
+ * [ì²˜ë¦¬ì¡°ê±´]
+ * - ì´ˆì˜ ì…ë ¥ì€ Scanner í´ë˜ìŠ¤ì˜ nextInt() ë©”ì„œë“œë¥¼ ì´ìš©í•œë‹¤.
  * */
 public class OperQuiz2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int hour, minute, second, inputSecond;
-		System.out.print("ÃÊ¸¦ ÀÔ·ÂÇÏ¼¼¿ä?");
+		System.out.print("ì´ˆë¥¼ ì…ë ¥í•˜ì„¸ìš”?");
 		inputSecond = sc.nextInt();
 		
 		hour = inputSecond/(3600);
@@ -18,7 +18,7 @@ public class OperQuiz2 {
 //		minute = (inputSecond-hour*3600)/60;
 		second = inputSecond%60;
 		
-		System.out.printf("%dÃÊ´Â %d½Ã°£ %dºĞ %dÃÊ ÀÔ´Ï´Ù.\n",inputSecond, hour, minute, second);
+		System.out.printf("%dì´ˆëŠ” %dì‹œê°„ %dë¶„ %dì´ˆ ì…ë‹ˆë‹¤.\n",inputSecond, hour, minute, second);
 		sc.close();		
 	}
 }

@@ -1,4 +1,4 @@
-package d200213;
+ï»¿package d200213;
 
 public class Ex4 {
 	public static void main(String[] args) {
@@ -19,12 +19,12 @@ public class Ex4 {
 class Test4 {
 	public static double pow(int x, int y) {
 		if (y >= 0) {
-			// 0ÀÌ»óÀÌ¸é¼­ ¾ç¼öÀÎ °æ¿ì
+			// 0ì´ìƒì´ë©´ì„œ ì–‘ìˆ˜ì¸ ê²½ìš°
 			return y == 0 ? 1 : x * pow(x, y - 1);
 		} else {
-			// À½¼öÀÎ °æ¿ì
-			// 2^-1= 1/2·Î Ç¥ÇöÇÒ ¼ö ÀÖ´Ù.
-			// but Çüº¯È¯¿¡ À¯ÀÇÇÏ¿© ¼ö½Ä ÀÛ¼ºÇÏ±â
+			// ìŒìˆ˜ì¸ ê²½ìš°
+			// 2^-1= 1/2ë¡œ í‘œí˜„í•  ìˆ˜ ìˆë‹¤.
+			// but í˜•ë³€í™˜ì— ìœ ì˜í•˜ì—¬ ìˆ˜ì‹ ì‘ì„±í•˜ê¸°
 			return (1.0 / x) * pow(x, y + 1);
 		}
 	}
@@ -33,14 +33,14 @@ class Test4 {
 		return b == 0 ? a : gcd(b, a % b);
 	}
 
-	// ´Ü ¾ç¼ö¸¸ °¡´ÉÇÏ´Ù
-	// TODO: ¼Õµğ¹ö±ë
+	// ë‹¨ ì–‘ìˆ˜ë§Œ ê°€ëŠ¥í•˜ë‹¤
+	// TODO: ì†ë””ë²„ê¹…
 	public static String binary(int n) {
 //		return n < 2 ? ""+n : binary(n / 2) + (n % 2);
 		return n < 2 ? Integer.toString(n) : binary(n / 2) + (n % 2);
 	}
 
-	// ÇÇº¸³ªÄ¡¼ö¿­
+	// í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´
 	public static int fibo(int n) {
 		return n < 2 ? n : fibo(n - 1) + fibo(n - 2);
 	}

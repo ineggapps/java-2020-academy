@@ -1,67 +1,67 @@
-package d200129;
+ï»¿package d200129;
 
 import java.util.Scanner;
-/* ±İ¾×À» ÀÔ·Â ¹Ş¾Æ, ÀÔ·Â ¹ŞÀº ±İ¾×À» 50000¿ø ±Ç¿¡¼­ 1¿ø±Ç ±îÁöÀÇ È­Æó¸Å¼ö·Î °è»êÇÏ´Â ÇÁ·Î±×·¥À» ¿¬»êÀÚ¸¦ ÀÌ¿ëÇÏ¿© ÀÛ¼ºÇÏ½Ã¿À.
- * [Ã³¸®Á¶°Ç]
- * ±İ¾×ÀÇ ÀÔ·ÂÀº Scanner Å¬·¡½ºÀÇ nextInt() ¸Ş¼­µå¸¦ ÀÌ¿ëÇÑ´Ù.
- * ±İ¾×ÀÌ 70000¿øÀÎ °æ¿ì È­ÆóÀÇ ¸Å¼ö´Â 50000¿ø ±Ç 1¸Å, 10000¿ø ±Ç 2¸ÅÃ³·³ Å« ´ÜÀ§ ±İ¾×ºÎÅÍ °è»êÇÏ°í ³ª¸ÓÁö¸¦ ´ÙÀ½ ´ÜÀ§ È­Æó¿¡¼­ °è»êÇÑ´Ù.
+/* ê¸ˆì•¡ì„ ì…ë ¥ ë°›ì•„, ì…ë ¥ ë°›ì€ ê¸ˆì•¡ì„ 50000ì› ê¶Œì—ì„œ 1ì›ê¶Œ ê¹Œì§€ì˜ í™”íë§¤ìˆ˜ë¡œ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì—°ì‚°ìë¥¼ ì´ìš©í•˜ì—¬ ì‘ì„±í•˜ì‹œì˜¤.
+ * [ì²˜ë¦¬ì¡°ê±´]
+ * ê¸ˆì•¡ì˜ ì…ë ¥ì€ Scanner í´ë˜ìŠ¤ì˜ nextInt() ë©”ì„œë“œë¥¼ ì´ìš©í•œë‹¤.
+ * ê¸ˆì•¡ì´ 70000ì›ì¸ ê²½ìš° í™”íì˜ ë§¤ìˆ˜ëŠ” 50000ì› ê¶Œ 1ë§¤, 10000ì› ê¶Œ 2ë§¤ì²˜ëŸ¼ í° ë‹¨ìœ„ ê¸ˆì•¡ë¶€í„° ê³„ì‚°í•˜ê³  ë‚˜ë¨¸ì§€ë¥¼ ë‹¤ìŒ ë‹¨ìœ„ í™”íì—ì„œ ê³„ì‚°í•œë‹¤.
  * */
 public class OperQuiz3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int money, b50000, b10000, b5000, b1000, b500, b100, b50, b10, b5, b1;
-		System.out.print("±İ¾× ? ");
+		System.out.print("ê¸ˆì•¡ ? ");
 		money = sc.nextInt();
 
-		// ¿À¸¸¿ø±Ç
+		// ì˜¤ë§Œì›ê¶Œ
 		b50000 = money / 50000;
 		money = money - (b50000 * 50000);
 
-		// ¸¸¿ø±Ç
+		// ë§Œì›ê¶Œ
 		b10000 = money / 10000;
 		money = money - (b10000 * 10000);
 
-		// ¿ÀÃµ¿ø±Ç
+		// ì˜¤ì²œì›ê¶Œ
 		b5000 = money / 5000;
 		money = money - (b5000 * 5000);
 
-		// Ãµ¿ø±Ç
+		// ì²œì›ê¶Œ
 		b1000 = money / 1000;
 		money = money - (b1000 * 1000);
 
-		// ¿À¹é¿ø±Ç
+		// ì˜¤ë°±ì›ê¶Œ
 		b500 = money / 500;
 		money = money - (b500 * 500);
 
-		// ¹é¿ø±Ç
+		// ë°±ì›ê¶Œ
 		b100 = money / 100;
 		money = money - (b100 * 100);
 
-		// ¿À½Ê¿ø±Ç
+		// ì˜¤ì‹­ì›ê¶Œ
 		b50 = money / 50;
 		money = money - (b50 * 50);
 
-		// ½Ê¿ø±Ç
+		// ì‹­ì›ê¶Œ
 		b10 = money / 10;
 		money = money - (b10 * 10);
 
-		// ¿À¿ø±Ç
+		// ì˜¤ì›ê¶Œ
 		b5 = money / 5;
 		money = money - (b5 * 5);
 
-		// ÀÏ¿ø±Ç
+		// ì¼ì›ê¶Œ
 		b1 = money;
 
-		System.out.printf("¿À¸¸¿ø±Ç: %d\n", b50000);
-		System.out.printf("¸¸¿ø±Ç: %d\n", b10000);
-		System.out.printf("¿ÀÃµ¿ø±Ç: %d\n", b5000);
-		System.out.printf("Ãµ¿ø±Ç: %d\n", b1000);
-		System.out.printf("¿À¹é¿ø±Ç: %d\n", b500);
-		System.out.printf("¹é¿ø±Ç: %d\n", b100);
-		System.out.printf("¿À½Ê¿ø±Ç: %d\n", b50);
-		System.out.printf("½Ê¿ø±Ç: %d\n", b10);
-		System.out.printf("¿À¿ø±Ç: %d\n", b5);
-		System.out.printf("ÀÏ¿ø±Ç: %d\n", b1);
+		System.out.printf("ì˜¤ë§Œì›ê¶Œ: %d\n", b50000);
+		System.out.printf("ë§Œì›ê¶Œ: %d\n", b10000);
+		System.out.printf("ì˜¤ì²œì›ê¶Œ: %d\n", b5000);
+		System.out.printf("ì²œì›ê¶Œ: %d\n", b1000);
+		System.out.printf("ì˜¤ë°±ì›ê¶Œ: %d\n", b500);
+		System.out.printf("ë°±ì›ê¶Œ: %d\n", b100);
+		System.out.printf("ì˜¤ì‹­ì›ê¶Œ: %d\n", b50);
+		System.out.printf("ì‹­ì›ê¶Œ: %d\n", b10);
+		System.out.printf("ì˜¤ì›ê¶Œ: %d\n", b5);
+		System.out.printf("ì¼ì›ê¶Œ: %d\n", b1);
 		
 		sc.close();
 	}

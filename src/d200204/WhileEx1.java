@@ -1,13 +1,13 @@
-package d200204;
+ï»¿package d200204;
 
 public class WhileEx1 {
 	public static void main(String[] args) {
 //		int n=0;
 //		do {
 //			n++;
-//			System.out.println("¾È: "+n);
+//			System.out.println("ì•ˆ: "+n);
 //		}while(n<10);
-//		System.out.println("¹Û: "+n);
+//		System.out.println("ë°–: "+n);
 
 //		int n, s;
 //		n=s=0;
@@ -16,20 +16,20 @@ public class WhileEx1 {
 //			n++;
 //			s+=n;
 //		}while(n<10);
-//		System.out.println("°á°ú: " + s);
+//		System.out.println("ê²°ê³¼: " + s);
 
 		int n = 10;
-		while (n < 10) {//Ã³À½ Á¶°ÇÀ» ¸¸Á·ÇÏÁö ¾ÊÀ¸¸é ÇÑ ¹øµµ ½ÇÇàÇÏÁö ¾Ê´Â´Ù.
+		while (n < 10) {//ì²˜ìŒ ì¡°ê±´ì„ ë§Œì¡±í•˜ì§€ ì•Šìœ¼ë©´ í•œ ë²ˆë„ ì‹¤í–‰í•˜ì§€ ì•ŠëŠ”ë‹¤.
 			n++;
-			System.out.println("while ¾È: " + n);
+			System.out.println("while ì•ˆ: " + n);
 		}
-		System.out.println("while ¹Û: " + n);
+		System.out.println("while ë°–: " + n);
 
 		n = 10;
-		do {//Á¶°ÇÀ» ¹Ø¿¡¼­ ºñ±³ÇÏ¹Ç·Î Àû¾îµµ ÇÑ ¹øÀº ½ÇÇàÇÑ´Ù.
+		do {//ì¡°ê±´ì„ ë°‘ì—ì„œ ë¹„êµí•˜ë¯€ë¡œ ì ì–´ë„ í•œ ë²ˆì€ ì‹¤í–‰í•œë‹¤.
 			n++;
-			System.out.println("do~while ¾È: " + n);
+			System.out.println("do~while ì•ˆ: " + n);
 		} while (n < 10);
-		System.out.println("do~while ¹Û: " + n);
+		System.out.println("do~while ë°–: " + n);
 	}
 }

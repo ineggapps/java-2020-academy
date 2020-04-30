@@ -1,7 +1,7 @@
-public class Ex006_EvenHap {
+ï»¿public class Ex006_EvenHap {
 	public static void main(String[] args) {
 /*
-		1~100 ±îÁö ¼ö Áß Â¦¼öÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		1~100 ê¹Œì§€ ìˆ˜ ì¤‘ ì§ìˆ˜ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 */	
 		int s, n;
 		s=0;
@@ -9,7 +9,7 @@ public class Ex006_EvenHap {
 			s+=n;
 		}
 		
-		System.out.println("°á°ú : "+s); // 2550
+		System.out.println("ê²°ê³¼ : "+s); // 2550
 		// System.out.println(n); // 102
 	}
 }

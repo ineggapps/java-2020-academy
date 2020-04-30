@@ -1,32 +1,32 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class IfQuiz1 {
-	//if¹®À» ÀÌ¿ëÇÏ¿© µÎ ¼öÀÇ Â÷¸¦ ±¸ÇÏµÇ °á±£°ªÀº ¾ç¼ö°¡ µÇµµ·Ï ÇÏ´Â ÇÁ·Î±×·¥
+	//ifë¬¸ì„ ì´ìš©í•˜ì—¬ ë‘ ìˆ˜ì˜ ì°¨ë¥¼ êµ¬í•˜ë˜ ê²°ê´ê°’ì€ ì–‘ìˆ˜ê°€ ë˜ë„ë¡ í•˜ëŠ” í”„ë¡œê·¸ëž¨
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num1, num2, result;
 
-		System.out.print("Ã¹ ¹øÂ° ¼ö ÀÔ·Â: ");
+		System.out.print("ì²« ë²ˆì§¸ ìˆ˜ ìž…ë ¥: ");
 		num1 = sc.nextInt();
-		System.out.print("µÎ ¹øÂ° ¼ö ÀÔ·Â: ");
+		System.out.print("ë‘ ë²ˆì§¸ ìˆ˜ ìž…ë ¥: ");
 		num2 = sc.nextInt();
 
-//		ÇØ°á¹æ¹ý #1
+//		í•´ê²°ë°©ë²• #1
 //		if (num1 > num2) {
 //			result = num1 - num2;
 //		} else {
 //			result = num2 - num1;
 //		}
 
-//		ÇØ°á¹æ¹ý #2
+//		í•´ê²°ë°©ë²• #2
 		result = num1 - num2;
 		if (result < 0) {
 			result = -result;
 		}
 
-		System.out.println("µÎ ¼öÀÇ Â÷ÀÌ: " + result);
+		System.out.println("ë‘ ìˆ˜ì˜ ì°¨ì´: " + result);
 
 		sc.close();
 	}

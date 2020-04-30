@@ -1,22 +1,22 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
 public class IfQuiz7 {
-	// ÀÌ¸§°ú ¼¼ °ú¸ñ Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÇÕ°İ ¿©ºÎ¸¦ ÆÇ´ÜÇÏ´Â ÇÁ·Î±×·¥
-	// ¼¼ °ú¸ñ Á¡¼ö°¡ ¸ğµÎ 40Á¡ ÀÌ»óÀÌ°í Æò±ÕÀÌ 60Á¡ ÀÌ»óÀÌ¸é ÇÕ°İ
-	// Æò±ÕÀÌ 60Á¡ ÀÌ»óÀÌÁö¸¸ ÇÑ °ú¸ñÀÌ¶óµµ 40Á¡ ¹Ì¸¸ÀÌ¸é °ú¶ô
-	// ±×·¸Áö ¾ÊÀ¸¸é ºÒÇÕ°İ
+	// ì´ë¦„ê³¼ ì„¸ ê³¼ëª© ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ í•©ê²© ì—¬ë¶€ë¥¼ íŒë‹¨í•˜ëŠ” í”„ë¡œê·¸ë¨
+	// ì„¸ ê³¼ëª© ì ìˆ˜ê°€ ëª¨ë‘ 40ì  ì´ìƒì´ê³  í‰ê· ì´ 60ì  ì´ìƒì´ë©´ í•©ê²©
+	// í‰ê· ì´ 60ì  ì´ìƒì´ì§€ë§Œ í•œ ê³¼ëª©ì´ë¼ë„ 40ì  ë¯¸ë§Œì´ë©´ ê³¼ë½
+	// ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ ë¶ˆí•©ê²©
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String name;
 		int sub1, sub2, sub3;
 		double avg;
 
-		System.out.print("ÀÌ¸§ ÀÔ·Â: ");
+		System.out.print("ì´ë¦„ ì…ë ¥: ");
 		name = sc.next();
 
-		System.out.print("¼¼ °ú¸ñ Á¡¼ö ÀÔ·Â: ");
+		System.out.print("ì„¸ ê³¼ëª© ì ìˆ˜ ì…ë ¥: ");
 		sub1 = sc.nextInt();
 		sub2 = sc.nextInt();
 		sub3 = sc.nextInt();
@@ -24,23 +24,23 @@ public class IfQuiz7 {
 
 //		if (avg > 60) {
 //			if (sub1 > 40 && sub2 > 40 && sub3 > 40) {
-//				System.out.printf("%s´ÔÀº ÇÕ°İÀÔ´Ï´Ù.\n", name);
+//				System.out.printf("%së‹˜ì€ í•©ê²©ì…ë‹ˆë‹¤.\n", name);
 //			} else {
-//				System.out.printf("%s´ÔÀº °ú¶ôÀÔ´Ï´Ù.\n", name);
+//				System.out.printf("%së‹˜ì€ ê³¼ë½ì…ë‹ˆë‹¤.\n", name);
 //			}
 //		} else {
-//			System.out.printf("%s´ÔÀº ºÒÇÕ°İÀÔ´Ï´Ù.\n", name);
+//			System.out.printf("%së‹˜ì€ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.\n", name);
 //		}
 
 		if (sub1 > 40 && sub2 > 40 && sub3 > 40 && avg>=60) {
-				System.out.printf("%s´ÔÀº ÇÕ°İÀÔ´Ï´Ù.",name);
+				System.out.printf("%së‹˜ì€ í•©ê²©ì…ë‹ˆë‹¤.",name);
 		}
 		else if(avg<60) {
-			System.out.printf("%s´ÔÀº ºÒÇÕ°İÀÔ´Ï´Ù.",name);			
+			System.out.printf("%së‹˜ì€ ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.",name);			
 		}
 		else {
-			//else¿¡ °É¸®´Â Á¶°Ç: (sub1 < 40 && sub2 < 40 && sub3 < 40) && avg>=60
-			System.out.printf("%s´ÔÀº °ú¶ôÀÔ´Ï´Ù.\n",name);
+			//elseì— ê±¸ë¦¬ëŠ” ì¡°ê±´: (sub1 < 40 && sub2 < 40 && sub3 < 40) && avg>=60
+			System.out.printf("%së‹˜ì€ ê³¼ë½ì…ë‹ˆë‹¤.\n",name);
 		}
 
 		sc.close();

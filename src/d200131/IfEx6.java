@@ -1,27 +1,27 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class IfEx6 {
 	public static void main(String[] args) {
-		// ÇÑ ¹®ÀÚ¸¦ ÀÔ·Â¹Þ¾Æ¼­ ´ë¹®ÀÚ, ¼Ò¹®ÀÚ, ±âÅ¸¹®ÀÚÀÎÁö ÆÇº°ÇÏ±â
-		// else ¾øÀÌ ÀÛ¼º
+		// í•œ ë¬¸ìžë¥¼ ìž…ë ¥ë°›ì•„ì„œ ëŒ€ë¬¸ìž, ì†Œë¬¸ìž, ê¸°íƒ€ë¬¸ìžì¸ì§€ íŒë³„í•˜ê¸°
+		// else ì—†ì´ ìž‘ì„±
 		Scanner sc = new Scanner(System.in);
 		char c;
 
-		System.out.print("ÇÑ ¹®ÀÚ ÀÔ·Â: ");
+		System.out.print("í•œ ë¬¸ìž ìž…ë ¥: ");
 		c = sc.next().charAt(0);
 
 		if (c >= 'A' && c <= 'Z') {
-			System.out.println("ÀÔ·Â ¹®ÀÚ´Â ´ë¹®ÀÚ");
+			System.out.println("ìž…ë ¥ ë¬¸ìžëŠ” ëŒ€ë¬¸ìž");
 		}
 		
 		if (c >= 'a' && c <= 'z') {
-			System.out.println("ÀÔ·Â ¹®ÀÚ´Â ¼Ò¹®ÀÚ");
+			System.out.println("ìž…ë ¥ ë¬¸ìžëŠ” ì†Œë¬¸ìž");
 		}
 		
 		if (!(c >= 'A' && c <= 'Z') && !(c >= 'a' && c <= 'z')) {
-			System.out.println("ÀÔ·Â ¹®ÀÚ´Â ±âÅ¸ ¹®ÀÚ");
+			System.out.println("ìž…ë ¥ ë¬¸ìžëŠ” ê¸°íƒ€ ë¬¸ìž");
 		}
 
 		sc.close();

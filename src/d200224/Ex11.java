@@ -1,4 +1,4 @@
-package d200224;
+ï»¿package d200224;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,83 +7,83 @@ import java.util.ListIterator;
 
 public class Ex11 {
 	public static void main(String[] args) {
-		// ArrayList: List ÀÎÅÍÆäÀÌ½ºÀÇ ±¸Çö Å¬·¡½º
-		// Collection Áß¿¡¼­ ¹è¿­°ú °¡Àå À¯»çÇÏ´Ù.
-		// ¸Ş¸ğ¸®°¡ Çã¿ëÇÒ ¶§±îÁö ¹«Á¦ÇÑÀ¸·Î µ¥ÀÌÅÍÀÇ »ğÀÔÀÌ °¡´ÉÇÏ´Ù.
+		// ArrayList: List ì¸í„°í˜ì´ìŠ¤ì˜ êµ¬í˜„ í´ë˜ìŠ¤
+		// Collection ì¤‘ì—ì„œ ë°°ì—´ê³¼ ê°€ì¥ ìœ ì‚¬í•˜ë‹¤.
+		// ë©”ëª¨ë¦¬ê°€ í—ˆìš©í•  ë•Œê¹Œì§€ ë¬´ì œí•œìœ¼ë¡œ ë°ì´í„°ì˜ ì‚½ì…ì´ ê°€ëŠ¥í•˜ë‹¤.
 		String s;
-		List<String> list = new ArrayList<>(); // ¾÷Ä³½ºÆÃ
-		list.add("¼­¿ï");
-		list.add("ºÎ»ê");
-		list.add("´ë±¸");
-		list.add("ÀÎÃµ");
-		list.add("±¤ÁÖ");
-		list.add("´ëÀü");
+		List<String> list = new ArrayList<>(); // ì—…ìºìŠ¤íŒ…
+		list.add("ì„œìš¸");
+		list.add("ë¶€ì‚°");
+		list.add("ëŒ€êµ¬");
+		list.add("ì¸ì²œ");
+		list.add("ê´‘ì£¼");
+		list.add("ëŒ€ì „");
 
-		System.out.println("°³¼ö: " + list.size());
-		// Ã³À½
+		System.out.println("ê°œìˆ˜: " + list.size());
+		// ì²˜ìŒ
 		s = list.get(0);
-		System.out.println("Ã³À½: " + s);
-		// µÎ ¹øÂ°
+		System.out.println("ì²˜ìŒ: " + s);
+		// ë‘ ë²ˆì§¸
 		s = list.get(1);
-		System.out.println("µÎ ¹øÂ°: " + s);
-		// ¸¶Áö¸·
+		System.out.println("ë‘ ë²ˆì§¸: " + s);
+		// ë§ˆì§€ë§‰
 		s = list.get(list.size() - 1);
-		System.out.println("¸¶Áö¸·: " + s);
+		System.out.println("ë§ˆì§€ë§‰: " + s);
 
-		// Ã³À½¿¡ ÇÑ±¹À» Ãß°¡ (»ğÀÔ)
-		list.add(0, "ÇÑ±¹");
+		// ì²˜ìŒì— í•œêµ­ì„ ì¶”ê°€ (ì‚½ì…)
+		list.add(0, "í•œêµ­");
 		s = list.get(0);
 		System.out.println(list);
 
-		// 0¹øÂ° ÀÎµ¦½º º¯°æ
-		list.set(0, "´ëÇÑ¹Î±¹");
+		// 0ë²ˆì§¸ ì¸ë±ìŠ¤ ë³€ê²½
+		list.set(0, "ëŒ€í•œë¯¼êµ­");
 		s = list.get(0);
 		System.out.println(list);
 
-		// ÀÎÃµ ÀÎµ¦½º¡Ú
-		System.out.println("ÀÎÃµ ÀÎµ¦½º: " + list.indexOf("ÀÎÃµ"));
+		// ì¸ì²œ ì¸ë±ìŠ¤â˜…
+		System.out.println("ì¸ì²œ ì¸ë±ìŠ¤: " + list.indexOf("ì¸ì²œ"));
 
-		// ¼¼Á¾ ÀÎµ¦½º -1 (¾øÀ¸´Ï±î)
-		System.out.println("¼¼Á¾ ÀÎµ¦½º: " + list.indexOf("¼¼Á¾"));
+		// ì„¸ì¢… ì¸ë±ìŠ¤ -1 (ì—†ìœ¼ë‹ˆê¹Œ)
+		System.out.println("ì„¸ì¢… ì¸ë±ìŠ¤: " + list.indexOf("ì„¸ì¢…"));
 
-		// ºÎ»ê Á¸Àç ¿©ºÎ
-		System.out.println("ºÎ»ê Á¸Àç ¿©ºÎ(boolean): " + list.contains("ºÎ»ê"));
+		// ë¶€ì‚° ì¡´ì¬ ì—¬ë¶€
+		System.out.println("ë¶€ì‚° ì¡´ì¬ ì—¬ë¶€(boolean): " + list.contains("ë¶€ì‚°"));
 
-		// ´ëÇÑ¹Î±¹ Áö¿ì±â
+		// ëŒ€í•œë¯¼êµ­ ì§€ìš°ê¸°
 		list.remove(0);
-//		list.remove("´ëÇÑ¹Î±¹"); //¶Ç´Â ÀÌ·¸°Ô Áö¿ì±âµµ °¡´ÉÇÏ´Ù. (ÈçÇÏÁö´Â ¾ÊÀ½)
+//		list.remove("ëŒ€í•œë¯¼êµ­"); //ë˜ëŠ” ì´ë ‡ê²Œ ì§€ìš°ê¸°ë„ ê°€ëŠ¥í•˜ë‹¤. (í”í•˜ì§€ëŠ” ì•ŠìŒ)
 		System.out.println(list);
 
-		System.out.println("ÀüÃ¼1");
+		System.out.println("ì „ì²´1");
 		for (int i = 0; i < list.size(); i++) {
 			System.out.print(list.get(i) + "\t");
 		}
 		System.out.println();
 		
-		System.out.println("ÀüÃ¼2");
+		System.out.println("ì „ì²´2");
 		for (String i : list) {
 			System.out.print(i + "\t");
 		}
 		System.out.println();
 
-		System.out.println("ÀüÃ¼3");// ¡Ú (¹İº¹ÀÚ »ç¿ë)
+		System.out.println("ì „ì²´3");// â˜… (ë°˜ë³µì ì‚¬ìš©)
 		Iterator<String> it = list.iterator();
 		while (it.hasNext()) {
-			String str = it.next();//Ã¹ ¹øÂ° µ¥ÀÌÅÍ ²¨³»°í ´ÙÀ½ Æ÷ÀÎÅÍ·Î ÇâÇÑ´Ù.
+			String str = it.next();//ì²« ë²ˆì§¸ ë°ì´í„° êº¼ë‚´ê³  ë‹¤ìŒ í¬ì¸í„°ë¡œ í–¥í•œë‹¤.
 			System.out.print(str + "\t");
 		}
 		System.out.println();
 
-		// ¿ª¼ø
-		System.out.println("¿ª¼ø-1");
+		// ì—­ìˆœ
+		System.out.println("ì—­ìˆœ-1");
 		for (int i = list.size() - 1; i >= 0; i--) {
 			System.out.print(list.get(i) + "\t");
 		}
 		System.out.println();
 
-		System.out.println("¿ª¼ø-2");
-		ListIterator<String> it2 = list.listIterator(list.size());//¿ªÀ¸·Î °¡Á®¿Ã ¼ö ÀÖ´Â ¹æ¹ıÀ» Á¦°øÇÑ´Ù. (Ä¿¼­¸¦ list.size() ÂÊ±îÁö ÁáÀ¸´Ï±î ¿ª¼øÀ¸·Î °¥ ¼ö ÀÖ´Â °ÍÀÓ!)
-		//previos ¸Ş¼­µå¸¦ Á¦°øÇÏ¿© ¿ª¼øÀ¸·Î Ä¿¼­¸¦ ÀÌµ¿ÇÒ ¼ö ÀÖÀ½.
+		System.out.println("ì—­ìˆœ-2");
+		ListIterator<String> it2 = list.listIterator(list.size());//ì—­ìœ¼ë¡œ ê°€ì ¸ì˜¬ ìˆ˜ ìˆëŠ” ë°©ë²•ì„ ì œê³µí•œë‹¤. (ì»¤ì„œë¥¼ list.size() ìª½ê¹Œì§€ ì¤¬ìœ¼ë‹ˆê¹Œ ì—­ìˆœìœ¼ë¡œ ê°ˆ ìˆ˜ ìˆëŠ” ê²ƒì„!)
+		//previos ë©”ì„œë“œë¥¼ ì œê³µí•˜ì—¬ ì—­ìˆœìœ¼ë¡œ ì»¤ì„œë¥¼ ì´ë™í•  ìˆ˜ ìˆìŒ.
 		while (it2.hasPrevious()) {
 			String str = it2.previous();
 			System.out.print(str + "\t");

@@ -1,4 +1,4 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class ForQuiz2 {
 		Scanner sc = new Scanner(System.in);
 		int dan, n;
 		for (;;) {
-			System.out.print("´Ü ? ");
+			System.out.print("ë‹¨ ? ");
 			dan = sc.nextInt();
 			if(dan>=1 && dan<=9) {
 				break;

@@ -1,4 +1,4 @@
-package d200206;
+ï»¿package d200206;
 
 import java.util.Scanner;
 
@@ -9,47 +9,47 @@ public class ForQuizHard1 {
 
 		while (true) {
 			do {
-				System.out.print("1.°¡À§ 2.¹ÙÀ§ 3.º¸ 4.°ÔÀÓ Á¾·á > ");
+				System.out.print("1.ê°€ìœ„ 2.ë°”ìœ„ 3.ë³´ 4.ê²Œì„ ì¢…ë£Œ > ");
 				user = sc.nextInt();
 			} while (user < 1 || user > 4);
 			if (user == 4) {
 				break;
 			}
 			com = (int) (Math.random() * 3) + 1;
-			// user¿Í comÀÇ ´ä¾È ÀÛ¼ºÇÏ±â
-			System.out.println("´ç½Å: " + (user == 1 ? "°¡À§" : (user == 2 ? "¹ÙÀ§" : "º¸")));
-			System.out.println("ÄÄÇ»ÅÍ: " + (com == 1 ? "°¡À§" : (com == 2 ? "¹ÙÀ§" : "º¸")));
-//			System.out.print("´ç½Å: " );
+			// userì™€ comì˜ ë‹µì•ˆ ì‘ì„±í•˜ê¸°
+			System.out.println("ë‹¹ì‹ : " + (user == 1 ? "ê°€ìœ„" : (user == 2 ? "ë°”ìœ„" : "ë³´")));
+			System.out.println("ì»´í“¨í„°: " + (com == 1 ? "ê°€ìœ„" : (com == 2 ? "ë°”ìœ„" : "ë³´")));
+//			System.out.print("ë‹¹ì‹ : " );
 //			if(user==1) {
-//				System.out.println("°¡À§");
+//				System.out.println("ê°€ìœ„");
 //			} else if(user==2) {
-//				System.out.println("¹ÙÀ§");
+//				System.out.println("ë°”ìœ„");
 //			}else {
-//				System.out.println("º¸");
+//				System.out.println("ë³´");
 //			}
-//			System.out.print("ÄÄÇ»ÅÍ: " );
+//			System.out.print("ì»´í“¨í„°: " );
 //			if(com==1) {
-//				System.out.println("°¡À§");
+//				System.out.println("ê°€ìœ„");
 //			} else if(com==2) {
-//				System.out.println("¹ÙÀ§");
+//				System.out.println("ë°”ìœ„");
 //			}else {
-//				System.out.println("º¸");
+//				System.out.println("ë³´");
 //			}
 
-			// user¿Í comÀÌ¶û ºñ±³ÇÏ¿© ´©°¡ ÀÌ°å´ÂÁö Ãâ·ÂÇÏ±â
+			// userì™€ comì´ë‘ ë¹„êµí•˜ì—¬ ëˆ„ê°€ ì´ê²¼ëŠ”ì§€ ì¶œë ¥í•˜ê¸°
 			if (user == com) {
-				System.out.println("ºñ°å½À´Ï´Ù.");
+				System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤.");
 			} else if ((user == 1 && com == 3) || (user == 2 && com == 1) || (user == 3 && com == 2)) {
-				System.out.println("´ç½ÅÀÌ ÀÌ°å½À´Ï´Ù.");
-			} else {// user-com==2 È¤Àº -1
-				System.out.println("´ç½ÅÀÌ Á³½À´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì´ ì´ê²¼ìŠµë‹ˆë‹¤.");
+			} else {// user-com==2 í˜¹ì€ -1
+				System.out.println("ë‹¹ì‹ ì´ ì¡ŒìŠµë‹ˆë‹¤.");
 			}
 //			if(user==com) {
-//				System.out.println("ºñ°å½À´Ï´Ù.");
+//				System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤.");
 //			}else if(user-com==1 || user-com==-2) {
-//				System.out.println("´ç½ÅÀÌ ÀÌ°å½À´Ï´Ù.");
-//			}else {//user-com==2 È¤Àº -1
-//				System.out.println("´ç½ÅÀÌ Á³½À´Ï´Ù.");
+//				System.out.println("ë‹¹ì‹ ì´ ì´ê²¼ìŠµë‹ˆë‹¤.");
+//			}else {//user-com==2 í˜¹ì€ -1
+//				System.out.println("ë‹¹ì‹ ì´ ì¡ŒìŠµë‹ˆë‹¤.");
 //			}
 		}
 

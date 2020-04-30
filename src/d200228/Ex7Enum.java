@@ -1,26 +1,26 @@
-package d200228;
+ï»¿package d200228;
 
 public class Ex7Enum {
 	public static void main(String[] args) {
 		System.out.println(City.SEOUL);
-		//toString()ÀÌ ÀçÁ¤ÀÇµÇ¾î ÀÖÁö ¾ÊÀ¸¸é SEOULÀÌ Ãâ·ÂµÈ´Ù.
-		System.out.println("¼­¿ï ÀÎ±¸: "+ City.SEOUL);
-		System.out.println("\nÀüÃ¼ ¸®½ºÆ®...");
+		//toString()ì´ ì¬ì •ì˜ë˜ì–´ ìˆì§€ ì•Šìœ¼ë©´ SEOULì´ ì¶œë ¥ëœë‹¤.
+		System.out.println("ì„œìš¸ ì¸êµ¬: "+ City.SEOUL);
+		System.out.println("\nì „ì²´ ë¦¬ìŠ¤íŠ¸...");
 		for(City c: City.values()) {
-			//³ª¸ÓÁö´Â Å¬·¡½ºÃ³·³ º¯¼ö¸¦ ¼±¾ğÇÏ°í getter¿Í °°Àº ¸Ş¼­µå¸¦ ¼±¾ğÇÏ¿© È°¿ëÇÒ ¼ö ÀÖ°Ú±¸³ª!
+			//ë‚˜ë¨¸ì§€ëŠ” í´ë˜ìŠ¤ì²˜ëŸ¼ ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ê³  getterì™€ ê°™ì€ ë©”ì„œë“œë¥¼ ì„ ì–¸í•˜ì—¬ í™œìš©í•  ìˆ˜ ìˆê² êµ¬ë‚˜!
 			System.out.println(c.getName()+": "+c.getCount());
 		}
 	}
 }
 
 enum City {
-	// »ó¼ö¿¡ °ª ÇÒ´ç: »ı¼ºÀÚ¸¦ ÀÛ¼ºÇØ¾ß ¿À·ù°¡ ³ªÁö ¾ÊÀ½.
-	SEOUL("¼­¿ï", 1000), BUSAN("ºÎ»ê", 350), DAEGU("´ë±¸", 250);
+	// ìƒìˆ˜ì— ê°’ í• ë‹¹: ìƒì„±ìë¥¼ ì‘ì„±í•´ì•¼ ì˜¤ë¥˜ê°€ ë‚˜ì§€ ì•ŠìŒ.
+	SEOUL("ì„œìš¸", 1000), BUSAN("ë¶€ì‚°", 350), DAEGU("ëŒ€êµ¬", 250);
 
 	private String name;
 	private int count;
 
-	// »ı¼ºÀÚ´Â private¸¸ °¡´É(private »ı·«ÇØµµ privateÀ¸·Î ¼±¾ğµÈ´Ù)
+	// ìƒì„±ìëŠ” privateë§Œ ê°€ëŠ¥(private ìƒëµí•´ë„ privateìœ¼ë¡œ ì„ ì–¸ëœë‹¤)
 	private City(String name, int count) {
 		this.name = name;
 		this.count = count;
@@ -36,7 +36,7 @@ enum City {
 
 	@Override
 	public String toString() {
-		return this.name + "ÀÎ±¸´Â " + count + "¸¸ ¸íÀÔ´Ï´Ù.";
+		return this.name + "ì¸êµ¬ëŠ” " + count + "ë§Œ ëª…ì…ë‹ˆë‹¤.";
 	}
 
 }

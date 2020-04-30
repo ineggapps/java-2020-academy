@@ -1,4 +1,4 @@
-package bookEx;
+ï»¿package bookEx;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,19 +8,19 @@ public class RentalImpl implements Rental {
 
 	@Override
 	public void insertRental(RentalVO vo) {
-		// µµ¼­ ´ë¿©
+		// ë„ì„œ ëŒ€ì—¬
 		list.add(vo);
 	}
 
 	@Override
 	public List<RentalVO> listAllRental() {
-		// ÀüÃ¼ ´ë¿© µµ¼­(´ë¿© ¹× ¹İ³³ Æ÷ÇÔ)
+		// ì „ì²´ ëŒ€ì—¬ ë„ì„œ(ëŒ€ì—¬ ë° ë°˜ë‚© í¬í•¨)
 		return list;
 	}
 
 	@Override
 	public List<RentalVO> listRental() {
-		// ´ë¿©ÁßÀÎ ÀüÃ¼ µµ¼­
+		// ëŒ€ì—¬ì¤‘ì¸ ì „ì²´ ë„ì„œ
 		List<RentalVO> rlist = new ArrayList<RentalVO>();
 		
 		for(RentalVO vo : list) {
@@ -33,7 +33,7 @@ public class RentalImpl implements Rental {
 
 	@Override
 	public List<RentalVO> listUserRental(String id) {
-		// À¯Àú°¡ ´ë¿©ÁßÀÎ µµ¼­
+		// ìœ ì €ê°€ ëŒ€ì—¬ì¤‘ì¸ ë„ì„œ
 		List<RentalVO> rlist = new ArrayList<RentalVO>();
 		
 		for(RentalVO vo : list) {
@@ -46,7 +46,7 @@ public class RentalImpl implements Rental {
 
 	@Override
 	public List<RentalVO> listUserAllRental(String id) {
-		// À¯Àú°¡ ´ë¿©ÇÑ ÀüÃ¼ ¸ñ·Ï
+		// ìœ ì €ê°€ ëŒ€ì—¬í•œ ì „ì²´ ëª©ë¡
 		List<RentalVO> rlist = new ArrayList<RentalVO>();
 		
 		for(RentalVO vo : list) {
@@ -59,7 +59,7 @@ public class RentalImpl implements Rental {
 
 	@Override
 	public RentalVO readRental(String code) {
-		// ´ë¿©ÁßÀÎ µµ¼­ ¹İÈ¯
+		// ëŒ€ì—¬ì¤‘ì¸ ë„ì„œ ë°˜í™˜
 		for(RentalVO vo : list) {
 			if(vo.getCode().equals(code) && vo.getReturnDate()==null) {
 				return vo;

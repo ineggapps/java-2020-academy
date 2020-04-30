@@ -1,4 +1,4 @@
-package d200224;
+ï»¿package d200224;
 
 public class Ex1 {
 	public static void main(String[] args) {
@@ -8,8 +8,8 @@ public class Ex1 {
 		t[1] = new Integer(20);
 		t[2] = new String("Korea");
 
-//		Arrays.sort(t); ·±Å¸ÀÓ ¿À·ù
-//		¹è¿­¿¡ ¿©·¯ Å¸ÀÔµéÀÌ È¥ÀçÇÏ°í ÀÖÀ¸¹Ç·Î Ä³½ºÆÃÀ» ÇÒ ¶§ ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
+//		Arrays.sort(t); ëŸ°íƒ€ì„ ì˜¤ë¥˜
+//		ë°°ì—´ì— ì—¬ëŸ¬ íƒ€ì…ë“¤ì´ í˜¼ì¬í•˜ê³  ìˆìœ¼ë¯€ë¡œ ìºìŠ¤íŒ…ì„ í•  ë•Œ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
 //		//Exception in thread "main" java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
 
 		for (Object o : t) {
@@ -20,7 +20,7 @@ public class Ex1 {
 				System.out.println(s + ":" + s.length());
 			} else if (o instanceof Integer) {
 				Integer s = (Integer) o;
-				System.out.println("Á¤¼ö: " + s);
+				System.out.println("ì •ìˆ˜: " + s);
 			}
 //			System.out.println(o);
 		}

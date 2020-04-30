@@ -1,7 +1,7 @@
-public class Ex101_dowhile {
+ï»¿public class Ex101_dowhile {
 	public static void main(String[] args) {
 /*
-		1~10 ±îÁö ¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~10 ê¹Œì§€ ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */
 		int n;
 		

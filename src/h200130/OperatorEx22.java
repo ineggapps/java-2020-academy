@@ -1,57 +1,57 @@
-package h200130;
+ï»¿package h200130;
 
 public class OperatorEx22 {
 	public static void main(String[] args) {
-		float f = 0.1f; // float ½Ç¼öÇü º¯¼ö¿¡ floatÇü ½Ç¼ý°ªÀÎ 0.1À» ´ëÀÔÇÑ´Ù.
-		double d = 0.1;// double ½Ç¼öÇü º¯¼ö¿¡ doubleÇü ½Ç¼ý°ªÀÎ 0.1À» ´ëÀÔÇÑ´Ù.
-		double d2 = (double) f;// float½Ç¼öÇü º¯¼ö¸¦ doubleÇüÀ¸·Î °­Á¦ Çüº¯È¯ÇÏ¿© d2¿¡ ´ëÀÔÇÑ´Ù.
+		float f = 0.1f; // float ì‹¤ìˆ˜í˜• ë³€ìˆ˜ì— floatí˜• ì‹¤ìˆ«ê°’ì¸ 0.1ì„ ëŒ€ìž…í•œë‹¤.
+		double d = 0.1;// double ì‹¤ìˆ˜í˜• ë³€ìˆ˜ì— doubleí˜• ì‹¤ìˆ«ê°’ì¸ 0.1ì„ ëŒ€ìž…í•œë‹¤.
+		double d2 = (double) f;// floatì‹¤ìˆ˜í˜• ë³€ìˆ˜ë¥¼ doubleí˜•ìœ¼ë¡œ ê°•ì œ í˜•ë³€í™˜í•˜ì—¬ d2ì— ëŒ€ìž…í•œë‹¤.
 
 		System.out.printf("10.0==10.0f	%b%n", 10.0 == 10.0f);//true
 		/*
-			floatÇü ½Ç¼ö == doubleÇü ½Ç¼ö´Â °°À»±î? Ç×»ó ÂüÀº ¾Æ´Ï´Ù.
-			10.0ÀÇ °æ¿ì¿¡´Â ¿ÀÂ÷°¡ ¾øÀÌ ÀúÀåÇÒ ¼ö ÀÖ´Â °ªÀÌ±â ¶§¹®¿¡ (°¡¼öºÎ 1´ÙÀ½ ¸ðµÎ 0) °°´Ù°í ÆÇº°ÇÏÁö¸¸,
-			‹š¿¡ µû¶ó¼­´Â °ÅÁþÀÌ ³ª¿Ã ¼öµµ ÀÖ´Ù (´ÙÀ½ ±¸¹® ÂüÁ¶)
+			floatí˜• ì‹¤ìˆ˜ == doubleí˜• ì‹¤ìˆ˜ëŠ” ê°™ì„ê¹Œ? í•­ìƒ ì°¸ì€ ì•„ë‹ˆë‹¤.
+			10.0ì˜ ê²½ìš°ì—ëŠ” ì˜¤ì°¨ê°€ ì—†ì´ ì €ìž¥í•  ìˆ˜ ìžˆëŠ” ê°’ì´ê¸° ë•Œë¬¸ì— (ê°€ìˆ˜ë¶€ 1ë‹¤ìŒ ëª¨ë‘ 0) ê°™ë‹¤ê³  íŒë³„í•˜ì§€ë§Œ,
+			Â‹Âšì— ë”°ë¼ì„œëŠ” ê±°ì§“ì´ ë‚˜ì˜¬ ìˆ˜ë„ ìžˆë‹¤ (ë‹¤ìŒ êµ¬ë¬¸ ì°¸ì¡°)
 		 * */
 		System.out.printf("0.1==0.1f	%b%n", 0.1 == 0.1f);//false
 		/* 
-			0.1f == 0.1ÀÇ °æ¿ì¿¡´Â float°ú doubleÀÇ Á¤¹Ðµµ°¡ ´Ù¸£¹Ç·Î °¡¼öºÎ¿¡ °¢±â ´Ù¸¥ °ªÀÌ ÀúÀåµÈ´Ù.
+			0.1f == 0.1ì˜ ê²½ìš°ì—ëŠ” floatê³¼ doubleì˜ ì •ë°€ë„ê°€ ë‹¤ë¥´ë¯€ë¡œ ê°€ìˆ˜ë¶€ì— ê°ê¸° ë‹¤ë¥¸ ê°’ì´ ì €ìž¥ëœë‹¤.
 			0.1f => 0.10000000149011612
 			0.1d =>0.10000000000000000
-			µû¶ó¼­ false°ªÀ» ¹ÝÈ¯ÇÏ°Ô µÈ´Ù.
+			ë”°ë¼ì„œ falseê°’ì„ ë°˜í™˜í•˜ê²Œ ëœë‹¤.
 		 * */
 		/*
-		 %19.17f (ÃÑ 19ÀÚ¸®¿¡¼­ ¼Ò¼ýÁ¡Àº 17Â° ÀÚ¸®±îÁö¸¸ ³ªÅ¸³»µÇ ¼Ò¼ýÁ¡ 18¹øÂ° ÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²ÇÏ¿© ³ªÅ¸³½´Ù) 
+		 %19.17f (ì´ 19ìžë¦¬ì—ì„œ ì†Œìˆ«ì ì€ 17ì§¸ ìžë¦¬ê¹Œì§€ë§Œ ë‚˜íƒ€ë‚´ë˜ ì†Œìˆ«ì  18ë²ˆì§¸ ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼í•˜ì—¬ ë‚˜íƒ€ë‚¸ë‹¤) 
 		 */
-		System.out.printf("f=%19.17f%n", f );//f °ª¿¡ ´ëÀÔµÈ 0.1f°ªÀÎ 0.10000000149011612 °ªÀÌ Çü½Ä¿¡ ¸ÂÃß¾î ¹ÝÈ¯µÈ´Ù.
-		System.out.printf("d=%19.17f%n", d );//d °ª¿¡ ´ëÀÔµÈ 0.1d°ªÀÎ  =>0.10000000000000000 °ªÀÌ Çü½Ä¿¡ ¸ÂÃß¾î ¹ÝÈ¯µÈ´Ù.
-		System.out.printf("d2=%19.17f%n", d2 );//d2´Â f°ªÀÌ double Çü½Ä¿¡ ¸ÂÃß¾î ÀúÀåµÈ °ªÀÎ 0.10000000149011612d°¡ ¹ÝÈ¯µÈ´Ù.
+		System.out.printf("f=%19.17f%n", f );//f ê°’ì— ëŒ€ìž…ëœ 0.1fê°’ì¸ 0.10000000149011612 ê°’ì´ í˜•ì‹ì— ë§žì¶”ì–´ ë°˜í™˜ëœë‹¤.
+		System.out.printf("d=%19.17f%n", d );//d ê°’ì— ëŒ€ìž…ëœ 0.1dê°’ì¸  =>0.10000000000000000 ê°’ì´ í˜•ì‹ì— ë§žì¶”ì–´ ë°˜í™˜ëœë‹¤.
+		System.out.printf("d2=%19.17f%n", d2 );//d2ëŠ” fê°’ì´ double í˜•ì‹ì— ë§žì¶”ì–´ ì €ìž¥ëœ ê°’ì¸ 0.10000000149011612dê°€ ë°˜í™˜ëœë‹¤.
 		System.out.printf("d==f		%b%n", d == f);//false
 		/*
-		 d==fÀÇ ¿¬»êÀº ¾ÕÀÇ ±¸¹®ÀÎ 0.1==0.1fÀÇ ¿¬»ê°ú µ¿ÀÏÇÏ´Ù. 
-		 µû¶ó¼­ false¸¦ ¹ÝÈ¯ÇÑ´Ù.
+		 d==fì˜ ì—°ì‚°ì€ ì•žì˜ êµ¬ë¬¸ì¸ 0.1==0.1fì˜ ì—°ì‚°ê³¼ ë™ì¼í•˜ë‹¤. 
+		 ë”°ë¼ì„œ falseë¥¼ ë°˜í™˜í•œë‹¤.
 		 * */
 		System.out.printf("d==d2	%b%n", d == d2);
 		/*
-		 * ¡ÚtrueÀÏ °Í °°Áö¸¸ false°ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-		 d2´Â floatÇüÅÂÀÇ º¯¼öÀÎ fÀÇ °ªÀÌ °­Á¦·Î doubleÇüÅÂ·Î º¯È¯µÇ¾î ÀúÀåµÈ °ªÀÌ´Ù.
-		 floatÇüÅÂÀÇ º¯¼öÀÇ °ªÀÎ f°¡ double ÇüÅÂ·Î º¯È¯µÇ¾î ÀúÀåµÇ´Â °úÁ¤À» Àü°³ÇÏ¸é ´ÙÀ½°ú °°´Ù.
+		 * â˜…trueì¼ ê²ƒ ê°™ì§€ë§Œ falseê°’ì„ ë°˜í™˜í•œë‹¤.
+		 d2ëŠ” floatí˜•íƒœì˜ ë³€ìˆ˜ì¸ fì˜ ê°’ì´ ê°•ì œë¡œ doubleí˜•íƒœë¡œ ë³€í™˜ë˜ì–´ ì €ìž¥ëœ ê°’ì´ë‹¤.
+		 floatí˜•íƒœì˜ ë³€ìˆ˜ì˜ ê°’ì¸ fê°€ double í˜•íƒœë¡œ ë³€í™˜ë˜ì–´ ì €ìž¥ë˜ëŠ” ê³¼ì •ì„ ì „ê°œí•˜ë©´ ë‹¤ìŒê³¼ ê°™ë‹¤.
 		 f =0.10000000149011612f;
 		 d2= (double)0.10000000149011612; 
-		 ±×·¯³ª dÀÇ °ªÀº 0.10000000000000000ÀÌ¹Ç·Î °ªÀÌ ÀÏÄ¡ÇÏÁö ¾Ê´Â´Ù.
+		 ê·¸ëŸ¬ë‚˜ dì˜ ê°’ì€ 0.10000000000000000ì´ë¯€ë¡œ ê°’ì´ ì¼ì¹˜í•˜ì§€ ì•ŠëŠ”ë‹¤.
 		 */
 		System.out.printf("d2==f		%b%n", d2 == f);
 		/*
-		¡ÚfalseÀÏ °Í °°Áö¸¸ true°ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-		¾Õ¿¡¼­ d2´Â floatÇüÅÂÀÇ º¯¼öÀÎ fÀÇ °ªÀÌ °­Á¦·Î doubleÇüÅÂ·Î º¯È¯µÇ¾î ÀúÀåµÇ¾ú´Ù.
-		°¡¼öºÎÀÇ ±æÀÌ°¡ ´õ ±æ »Ó Á¤¹ÐµµÀÇ Ç¥ÇöÀº µ¿ÀÏÇÏ´Ù. µû¶ó¼­ d2==fÀÇ °ªÀº true¸¦ ¹ÝÈ¯ÇÑ´Ù.
+		â˜…falseì¼ ê²ƒ ê°™ì§€ë§Œ trueê°’ì„ ë°˜í™˜í•œë‹¤.
+		ì•žì—ì„œ d2ëŠ” floatí˜•íƒœì˜ ë³€ìˆ˜ì¸ fì˜ ê°’ì´ ê°•ì œë¡œ doubleí˜•íƒœë¡œ ë³€í™˜ë˜ì–´ ì €ìž¥ë˜ì—ˆë‹¤.
+		ê°€ìˆ˜ë¶€ì˜ ê¸¸ì´ê°€ ë” ê¸¸ ë¿ ì •ë°€ë„ì˜ í‘œí˜„ì€ ë™ì¼í•˜ë‹¤. ë”°ë¼ì„œ d2==fì˜ ê°’ì€ trueë¥¼ ë°˜í™˜í•œë‹¤.
 		 * */
 		System.out.printf("(float)d==f	%b%n", (float) d == f);
 		/*
-		 	d => 0.10000000000000000 ÀÌ¾ú´Ù.
-		 	ÇÏÁö¸¸ doubleÇüÀÌ¾ú´Âµ¥ °­Á¦·Î Çüº¯È¯À» ÇÏ¸é floatÇü½Ä¿¡ ¸ÂÃß¾î¾ß ÇÑ´Ù.
-			(float)0.1d¸¦ ¼öÇàÇÏ¸é  0.10000000149011612·Î º¯È¯µÈ´Ù.
-			µû¶ó¼­ d==(float)0.1d==0.10000000149011612ÀÌ´Ù.
-			f ¶ÇÇÑ 0.10000000149011612¸¦ ÀÇ¹ÌÇÏ¹Ç·Î d==f´Â true¸¦ ¹ÝÈ¯ÇÑ´Ù.
+		 	d => 0.10000000000000000 ì´ì—ˆë‹¤.
+		 	í•˜ì§€ë§Œ doubleí˜•ì´ì—ˆëŠ”ë° ê°•ì œë¡œ í˜•ë³€í™˜ì„ í•˜ë©´ floatí˜•ì‹ì— ë§žì¶”ì–´ì•¼ í•œë‹¤.
+			(float)0.1dë¥¼ ìˆ˜í–‰í•˜ë©´  0.10000000149011612ë¡œ ë³€í™˜ëœë‹¤.
+			ë”°ë¼ì„œ d==(float)0.1d==0.10000000149011612ì´ë‹¤.
+			f ë˜í•œ 0.10000000149011612ë¥¼ ì˜ë¯¸í•˜ë¯€ë¡œ d==fëŠ” trueë¥¼ ë°˜í™˜í•œë‹¤.
 		 */
 		System.out.printf("%19.17f%n",(float)0.1d);
 	}

@@ -1,20 +1,20 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class IfQuiz2 {
-	//if¹®À» ÀÌ¿ëÇÏ¿© À±³âÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥
+	//ifë¬¸ì„ ì´ìš©í•˜ì—¬ ìœ¤ë…„ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		int year;
-		System.out.print("¿¬µµ ÀÔ·Â: ");
+		System.out.print("ì—°ë„ ì…ë ¥: ");
 		year = sc.nextInt();
 		
 		if(year%4==0 && year%10!=0 || year%400==0) {
-			System.out.println(year+"³âµµ´Â À±³âÀÔ´Ï´Ù.");
+			System.out.println(year+"ë…„ë„ëŠ” ìœ¤ë…„ì…ë‹ˆë‹¤.");
 		}else {
-			System.out.println(year+"³âµµ´Â Æò³âÀÔ´Ï´Ù.");			
+			System.out.println(year+"ë…„ë„ëŠ” í‰ë…„ì…ë‹ˆë‹¤.");			
 		}
 		
 		sc.close();

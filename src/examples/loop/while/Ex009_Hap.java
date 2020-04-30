@@ -1,16 +1,16 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex009_Hap {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 1ºÎÅÍ ÀÔ·Â ¹ŞÀº ¼ö±îÁöÀÇ ÇÕ
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 1ë¶€í„° ì…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ì˜ í•©
 */
 		Scanner sc=new Scanner(System.in);
 		
 		int num;
 		int s, n;
 		
-		System.out.print("Á¤¼ö ? ");
+		System.out.print("ì •ìˆ˜ ? ");
 		num=sc.nextInt();
 		
 		s=n=0;
@@ -18,7 +18,7 @@ public class Ex009_Hap {
 			n++;
 			s+=n;
 		}
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 		
 		sc.close();
 	}

@@ -1,4 +1,4 @@
-package d200226;
+ï»¿package d200226;
 
 import java.io.FileInputStream;
 import java.util.Iterator;
@@ -6,13 +6,13 @@ import java.util.Properties;
 
 public class Ex7Load {
 	public static void main(String[] args) {
-		// Hashtable Å¬·¡½º¸¦ »ó¼Ó ¹ŞÀ½
-		// Å°¿Í °ªÀÌ ¹®ÀÚ¿­¸¸ °¡´ÉÇÏ´Ù.
-		// ÆÄÀÏ ÀúÀå ¹× ºÒ·¯¿À±â°¡ °£´ÜÇØ¼­ È¯°æ¼³Á¤ µî¿¡¼­ ¸¹ÀÌ »ç¿ëµÈ´Ù.
+		// Hashtable í´ë˜ìŠ¤ë¥¼ ìƒì† ë°›ìŒ
+		// í‚¤ì™€ ê°’ì´ ë¬¸ìì—´ë§Œ ê°€ëŠ¥í•˜ë‹¤.
+		// íŒŒì¼ ì €ì¥ ë° ë¶ˆëŸ¬ì˜¤ê¸°ê°€ ê°„ë‹¨í•´ì„œ í™˜ê²½ì„¤ì • ë“±ì—ì„œ ë§ì´ ì‚¬ìš©ëœë‹¤.
 		Properties p = new Properties();
-		// Properties´Â Á¦³×¸¯ÀÌ ¾ø´Ù
-		// Properties ¿ª½Ã put() ¸Ş¼­µå¸¦ »ç¿ëÇÒ ¼ö ÀÖÀ¸³ª ±ÇÀåÇÏÁö ¾Ê´Â´Ù.
-		// Å°¿Í °ªÀ» ÀúÀåÇÑ´Ù.
+		// PropertiesëŠ” ì œë„¤ë¦­ì´ ì—†ë‹¤
+		// Properties ì—­ì‹œ put() ë©”ì„œë“œë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆìœ¼ë‚˜ ê¶Œì¥í•˜ì§€ ì•ŠëŠ”ë‹¤.
+		// í‚¤ì™€ ê°’ì„ ì €ì¥í•œë‹¤.
 
 		String pathname = "subject.properties";
 		try (FileInputStream fis = new FileInputStream(pathname)) {
@@ -22,11 +22,11 @@ public class Ex7Load {
 		}
 
 		p.list(System.out);
-		String s = p.getProperty("ÀÚ¹Ù");
-		System.out.println("ÀÚ¹Ù: " + s);
+		String s = p.getProperty("ìë°”");
+		System.out.println("ìë°”: " + s);
 		System.out.println();
 
-		System.out.println("ÀüÃ¼ ¼øÈ¸...");
+		System.out.println("ì „ì²´ ìˆœíšŒ...");
 		Iterator<Object> it = p.keySet().iterator();
 		while (it.hasNext()) {
 			String k = (String) it.next();

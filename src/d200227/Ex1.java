@@ -1,22 +1,22 @@
-package d200227;
+ï»¿package d200227;
 
 import java.util.Arrays;
 import java.util.Collections;
 
 public class Ex1 {
 	public static void main(String[] args) {
-		//Shuffle ¿¹Á¦
+		//Shuffle ì˜ˆì œ
 		
 		String[] ss = new String[] { "java", "css", "html", "javascript", "jsp" };
 		System.out.println(Arrays.toString(ss));
 
-		// String[] => List<String>: Arrays.asList(¹è¿­);
-		Collections.shuffle(Arrays.asList(ss));// ¹è¿­À» list·Î º¯È¯ÇÏ¿© ¼¯±â
+		// String[] => List<String>: Arrays.asList(ë°°ì—´);
+		Collections.shuffle(Arrays.asList(ss));// ë°°ì—´ì„ listë¡œ ë³€í™˜í•˜ì—¬ ì„ê¸°
 		System.out.println(Arrays.toString(ss));
 
 		Integer[] ii = { 10, 20, 30, 40, 50 };
 		System.out.println(Arrays.toString(ii));
-		Collections.shuffle(Arrays.asList(ii));//int[] ¾È µÈ´Ù. °´Ã¼°¡ ¾Æ´Ï´Ï±î.
+		Collections.shuffle(Arrays.asList(ii));//int[] ì•ˆ ëœë‹¤. ê°ì²´ê°€ ì•„ë‹ˆë‹ˆê¹Œ.
 		System.out.println(Arrays.toString(ii));
 		
 		

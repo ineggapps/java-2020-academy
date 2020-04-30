@@ -1,16 +1,16 @@
-package d200204;
+ï»¿package d200204;
 
 public class WhileQuizBasic2 {
-	//1-2+3-4+...+9-10 (if°¡ ¾ø¾îµµ ÀÛ¼ºÀÌ °¡´ÉÇÏ´Ù)
+	//1-2+3-4+...+9-10 (ifê°€ ì—†ì–´ë„ ì‘ì„±ì´ ê°€ëŠ¥í•˜ë‹¤)
 	public static void main(String[] args) {
 		int n=0,s=0;
 		while(n<10) {
-			//¹İº¹¹®¿¡ nÁõ°¨À» 1¹ø¸¸ ÇÏ¶ó´Â ¹ıÀº ¾øÁö.
+			//ë°˜ë³µë¬¸ì— nì¦ê°ì„ 1ë²ˆë§Œ í•˜ë¼ëŠ” ë²•ì€ ì—†ì§€.
 			n++;
 			s+=n;
 			n++;
 			s-=n;
 		}
-		System.out.println("ÇÕ: "+s);
+		System.out.println("í•©: "+s);
 	}
 }

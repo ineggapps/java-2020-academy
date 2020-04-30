@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -7,36 +7,36 @@ public class Ex5 {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
 
-		list.add("¼­¿ï");
-		list.add("ºÎ»ê");
-		list.add("´ë±¸");
-		list.add("ÀÎÃµ");
-		list.add("±¤ÁÖ");
-		list.add("´ëÀü");
-		list.add("¿ï»ê");
-		list.add("¼¼Á¾");
+		list.add("ì„œìš¸");
+		list.add("ë¶€ì‚°");
+		list.add("ëŒ€êµ¬");
+		list.add("ì¸ì²œ");
+		list.add("ê´‘ì£¼");
+		list.add("ëŒ€ì „");
+		list.add("ìš¸ì‚°");
+		list.add("ì„¸ì¢…");
 
 		System.out.println(list);
 
 		int idx;
-		// ¼øÂ÷ °Ë»ö
-		idx = list.indexOf("ºÎ»ê");
-		System.out.println("ºÎ»ê À§Ä¡: " + idx);
+		// ìˆœì°¨ ê²€ìƒ‰
+		idx = list.indexOf("ë¶€ì‚°");
+		System.out.println("ë¶€ì‚° ìœ„ì¹˜: " + idx);
 
-		// Å©±â ¼øÀ¸·Î Á¤·Ä: Comparable ÀÎÅÍÆäÀÌ½º°¡ ±¸ÇöµÈ Å¬·¡½º °¡´É
+		// í¬ê¸° ìˆœìœ¼ë¡œ ì •ë ¬: Comparable ì¸í„°í˜ì´ìŠ¤ê°€ êµ¬í˜„ëœ í´ë˜ìŠ¤ ê°€ëŠ¥
 		Collections.sort(list);
-		System.out.println("Á¤·Ä ÈÄ: " + list);
+		System.out.println("ì •ë ¬ í›„: " + list);
 
-		// ÀÌºĞ °Ë»ö Á¤·ÄµÇ¾î ÀÖ¾î¾ß °¡´ÉÇÏ´Ù. ¾øÀ¸¸é -1À» ¹İÈ¯ÇÑ´Ù.
-		idx = Collections.binarySearch(list, "¼­¿ï");
-		System.out.println("¼­¿ï À§Ä¡: " + idx);
+		// ì´ë¶„ ê²€ìƒ‰ ì •ë ¬ë˜ì–´ ìˆì–´ì•¼ ê°€ëŠ¥í•˜ë‹¤. ì—†ìœ¼ë©´ -1ì„ ë°˜í™˜í•œë‹¤.
+		idx = Collections.binarySearch(list, "ì„œìš¸");
+		System.out.println("ì„œìš¸ ìœ„ì¹˜: " + idx);
 
-		// ¿ª¼ø Á¤·Ä
+		// ì—­ìˆœ ì •ë ¬
 		Collections.sort(list, Collections.reverseOrder());
-		System.out.println("¿ª¼ø ÈÄ: " + list);
+		System.out.println("ì—­ìˆœ í›„: " + list);
 
-		// ÀÌºĞ °Ë»öÀÌ ¼øÂ÷°Ë»öº¸´Ù ¹«Á¶°Ç ºü¸£Áø ¾Ê´Ù.
-		// µ¥ÀÌÅÍ °Ç¼ö°¡ ¸î ½Ê ¸¸ °ÇÀÌ¸é ÀÌºĞ °Ë»öÀÌ ´õ ºü¸£´Ù.
-		// µ¥ÀÌÅÍ °Ç¼ö°¡ ¸î ¹é °ÇÀÌ¸é ¼øÂ÷°Ë»öÀÌ ´õ ºü¸£´Ù.
+		// ì´ë¶„ ê²€ìƒ‰ì´ ìˆœì°¨ê²€ìƒ‰ë³´ë‹¤ ë¬´ì¡°ê±´ ë¹ ë¥´ì§„ ì•Šë‹¤.
+		// ë°ì´í„° ê±´ìˆ˜ê°€ ëª‡ ì‹­ ë§Œ ê±´ì´ë©´ ì´ë¶„ ê²€ìƒ‰ì´ ë” ë¹ ë¥´ë‹¤.
+		// ë°ì´í„° ê±´ìˆ˜ê°€ ëª‡ ë°± ê±´ì´ë©´ ìˆœì°¨ê²€ìƒ‰ì´ ë” ë¹ ë¥´ë‹¤.
 	}
 }

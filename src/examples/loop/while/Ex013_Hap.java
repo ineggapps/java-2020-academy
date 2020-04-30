@@ -1,6 +1,6 @@
-public class Ex013_Hap {
+ï»¿public class Ex013_Hap {
 	public static void main(String[] args) {
-		// 1+(1+2)+(1+2+3)+...+(1+2+3+...+10) ¿¬»ê °á°ú
+		// 1+(1+2)+(1+2+3)+...+(1+2+3+...+10) ì—°ì‚° ê²°ê³¼
 		int n, s, ss;
 		
 		n=0;
@@ -10,6 +10,6 @@ public class Ex013_Hap {
 			s+=n;
 			ss+=s;
 		}
-		System.out.println("°á°ú : "+ss); // 220
+		System.out.println("ê²°ê³¼ : "+ss); // 220
 	}
 }

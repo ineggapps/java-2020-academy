@@ -1,4 +1,4 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex6 {
 	public static void main(String[] args) {
@@ -21,13 +21,13 @@ class Demo6 {
 class Test6 extends Demo6 {
 	int x = 100;
 
-	@Override // ½ÇÇà ½Ã±îÁö »ı¸íÁÖ±â¸¦ ³ªÅ¸³¾ ¼ö ÀÖÀ½.
+	@Override // ì‹¤í–‰ ì‹œê¹Œì§€ ìƒëª…ì£¼ê¸°ë¥¼ ë‚˜íƒ€ë‚¼ ìˆ˜ ìˆìŒ.
 	public void print() {// 2)
 		System.out.println(a + ":" + x);
 	}
 
 	public void fun() {
-		print(); // 2) ÁÖ¼®ÀÌ ÀÖ´Â print() ¸Ş¼­µå¸¦ È£ÃâÇÑ´Ù.
+		print(); // 2) ì£¼ì„ì´ ìˆëŠ” print() ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤.
 		super.print();
 	}
 }

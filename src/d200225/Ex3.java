@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -9,27 +9,27 @@ public class Ex3 {
 		List<String> list1 = new ArrayList<String>();
 		List<String> list2 = new LinkedList<String>();
 
-		// ArrayList¿Í LinkedListÀ» addÇÒ °æ¿ì, Ã³¸®¼Óµµ°¡ ºü¸£´Ù.
-		/// LinkedList°¡ ArrayListº¸´Ù Ã³¸® ¼Óµµ°¡ ºü¸£´Ù.
-		// ¿Ö³ÄÇÏ¸é LinkedList´Â µ¥ÀÌÅÍÀÇ Ãß°¡ ¹× »èÁ¦ ½Ã, ArrayListÃ³·³ ºÒÇÊ¿äÇÑ º¹»ç°¡ ÀÏ¾î³ªÁö ¾Ê±â ¶§¹®ÀÌ´Ù.
+		// ArrayListì™€ LinkedListì„ addí•  ê²½ìš°, ì²˜ë¦¬ì†ë„ê°€ ë¹ ë¥´ë‹¤.
+		/// LinkedListê°€ ArrayListë³´ë‹¤ ì²˜ë¦¬ ì†ë„ê°€ ë¹ ë¥´ë‹¤.
+		// ì™œëƒí•˜ë©´ LinkedListëŠ” ë°ì´í„°ì˜ ì¶”ê°€ ë° ì‚­ì œ ì‹œ, ArrayListì²˜ëŸ¼ ë¶ˆí•„ìš”í•œ ë³µì‚¬ê°€ ì¼ì–´ë‚˜ì§€ ì•Šê¸° ë•Œë¬¸ì´ë‹¤.
 
 		long s, e;
 
 		s = System.nanoTime();
 		for (int i = 0; i < 10000; i++) {
-			list1.add("Å×½ºÆ® " + i);
+			list1.add("í…ŒìŠ¤íŠ¸ " + i);
 		}
 
 		e = System.nanoTime();
-		System.out.println("ArrayList °³¼ö: " + list1.size() + "," + (e - s) + "nano");
+		System.out.println("ArrayList ê°œìˆ˜: " + list1.size() + "," + (e - s) + "nano");
 
 		s = System.nanoTime();
 		for (int i = 0; i < 10000; i++) {
-			list2.add("Å×½ºÆ® " + i);
+			list2.add("í…ŒìŠ¤íŠ¸ " + i);
 		}
 
 		e = System.nanoTime();
-		System.out.println("LinkedList °³¼ö: " + list1.size() + "," + (e - s) + "nano");
+		System.out.println("LinkedList ê°œìˆ˜: " + list1.size() + "," + (e - s) + "nano");
 
 	}
 }

@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 public class Ex14 {
 	public static void main(String[] args) {
@@ -9,13 +9,13 @@ public class Ex14 {
 		System.out.println(a);
 
 		
-		System.out.println(Math.sqrt(2));//·çÆ®2
-		System.out.println(Math.floor(12.77));//¼Ò¼öÁ¡ ÀÌÇÏ Àı»è (¸¹ÀÌ ¾¸)
-		System.out.println(Math.floor(-12.77));//¼Ò¼öÁ¡ ÀÌÇÏ Àı»è (¸¹ÀÌ ¾¸)
-		System.out.println(Math.ceil(12.10));//¼Ò¼öÁ¡ ÀÌÇÏ ¿Ã¸²
-		System.out.println(Math.ceil(-12.10));//¼Ò¼öÁ¡ ÀÌÇÏ ¿Ã¸²
-		System.out.println(Math.rint(12.10));//ÀÌ ¼öº¸´Ù °¡±î¿î Á¤¼ö
-		System.out.println(Math.rint(-12.10));//ÀÌ ¼öº¸´Ù °¡±î¿î Á¤¼ö
+		System.out.println(Math.sqrt(2));//ë£¨íŠ¸2
+		System.out.println(Math.floor(12.77));//ì†Œìˆ˜ì  ì´í•˜ ì ˆì‚­ (ë§ì´ ì”€)
+		System.out.println(Math.floor(-12.77));//ì†Œìˆ˜ì  ì´í•˜ ì ˆì‚­ (ë§ì´ ì”€)
+		System.out.println(Math.ceil(12.10));//ì†Œìˆ˜ì  ì´í•˜ ì˜¬ë¦¼
+		System.out.println(Math.ceil(-12.10));//ì†Œìˆ˜ì  ì´í•˜ ì˜¬ë¦¼
+		System.out.println(Math.rint(12.10));//ì´ ìˆ˜ë³´ë‹¤ ê°€ê¹Œìš´ ì •ìˆ˜
+		System.out.println(Math.rint(-12.10));//ì´ ìˆ˜ë³´ë‹¤ ê°€ê¹Œìš´ ì •ìˆ˜
 		
 		System.out.println(Math.pow(2, 10));
 		System.out.println(Math.random());

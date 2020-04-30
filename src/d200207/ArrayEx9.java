@@ -1,17 +1,17 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Arrays;
 
 public class ArrayEx9 {
 	public static void main(String[] args) {
-		//·Î¶Ç´Â 1¿¡¼­ 45±îÁöÀÇ ¼ıÀÚ¸¦ 5°³¸¦ ¹ß»ı½ÃÅ²´Ù.
+		//ë¡œë˜ëŠ” 1ì—ì„œ 45ê¹Œì§€ì˜ ìˆ«ìë¥¼ 5ê°œë¥¼ ë°œìƒì‹œí‚¨ë‹¤.
 		//(int)(Math.random()*45)+1
-		//¹è¿­ Á¤·ÄÇÏ±â
+		//ë°°ì—´ ì •ë ¬í•˜ê¸°
 		int []num = new int[6];
 		for(int i=0;i<num.length;i++) {
 			num[i]=(int)(Math.random()*45)+1;
 		}
-		////////////////////Á¤·ÄÇÏ´Â ¸Ş¼­µå
+		////////////////////ì •ë ¬í•˜ëŠ” ë©”ì„œë“œ
 		Arrays.sort(num);
 		for(int a:num) {
 			System.out.println(a);

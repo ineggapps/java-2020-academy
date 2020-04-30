@@ -1,11 +1,11 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForEx4 {
 	public static void main(String[] args) {
 		int c;
-		System.out.println("±¸±¸´Ü");
+		System.out.println("êµ¬êµ¬ë‹¨");
 		for(int a=2;a<=9;a++) {
-			for(int b=1;b<=9;b++) {//2~9´Ü ÃÑ 8°³ÀÇ (8) ¼ýÀÚ¸¦ X 1~9±îÁö (9) = 72¹ø ¹Ýº¹
+			for(int b=1;b<=9;b++) {//2~9ë‹¨ ì´ 8ê°œì˜ (8) ìˆ«ìžë¥¼ X 1~9ê¹Œì§€ (9) = 72ë²ˆ ë°˜ë³µ
 				c=a*b;
 				System.out.printf("%d*%d=%2d\t",a,b,c);
 			}

@@ -1,38 +1,38 @@
-package d200228;
+ï»¿package d200228;
 
 public class Ex1StaticNestedClass {
 	public static void main(String[] args) {
-		// static ÁßÃ¸ Å¬·¡½º ½Ç½À
-		// User1ÀÇ °´Ã¼¸¦ »ý¼ºÇÒ ÇÊ¿ä ¾øÀÌ ¹Ù·Î User1 ¾È¿¡ ÀÖ´Â ÁßÃ¸ Å¬·¡½ºÀÎ Test1Å¬·¡½ºÀÇ °´Ã¼¸¦ »ý¼ºÇÏ¿´´Ù.
-		// Áï ¿ÜºÎ¿¡¼­ ÁßÃ¸ Å¬·¡½ºÀÇ °´Ã¼¸¦ »ý¼ºÇÏ´Â µ¥ ¾Æ¹«·± ÁöÀåÀÌ ¾ø´Ù.
+		// static ì¤‘ì²© í´ëž˜ìŠ¤ ì‹¤ìŠµ
+		// User1ì˜ ê°ì²´ë¥¼ ìƒì„±í•  í•„ìš” ì—†ì´ ë°”ë¡œ User1 ì•ˆì— ìžˆëŠ” ì¤‘ì²© í´ëž˜ìŠ¤ì¸ Test1í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼ ìƒì„±í•˜ì˜€ë‹¤.
+		// ì¦‰ ì™¸ë¶€ì—ì„œ ì¤‘ì²© í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼ ìƒì„±í•˜ëŠ” ë° ì•„ë¬´ëŸ° ì§€ìž¥ì´ ì—†ë‹¤.
 		User1.Test1 tt = new User1.Test1();
 		tt.write();
-		tt.sub(); // Test1Àº User1Å¬·¡½º ³»ºÎ¿¡ ÀÖÁö¸¸ Test1Å¬·¡½º ³» ¸Þ¼­µå¿¡¼­ User1ÀÇ °´Ã¼¸¦ »ý¼ºÇÒ ¼ö ÀÖ´Ù.
+		tt.sub(); // Test1ì€ User1í´ëž˜ìŠ¤ ë‚´ë¶€ì— ìžˆì§€ë§Œ Test1í´ëž˜ìŠ¤ ë‚´ ë©”ì„œë“œì—ì„œ User1ì˜ ê°ì²´ë¥¼ ìƒì„±í•  ìˆ˜ ìžˆë‹¤.
 	}
 }
 
 class User1 {
-	int a = 10;// °´Ã¼°¡ »ý¼ºµÇ±â Àü±îÁö(new ~)´Â ¸Þ¸ð¸®¿¡ ÇÒ´çµÇÁö ¾Ê´Â´Ù´Â Á¡À» ±â¾ïÇÏÀÚ.
+	int a = 10;// ê°ì²´ê°€ ìƒì„±ë˜ê¸° ì „ê¹Œì§€(new ~)ëŠ” ë©”ëª¨ë¦¬ì— í• ë‹¹ë˜ì§€ ì•ŠëŠ”ë‹¤ëŠ” ì ì„ ê¸°ì–µí•˜ìž.
 	static int b = 20;
 
-	/* private */ static class Test1 {// private Á¢±ÙÁ¦ÇÑÀÚ¸¦ ¼³Á¤ÇÏ¸é User1Å¬·¡½º ³»ºÎ¿¡¼­¸¸ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
-		//Áï, private Á¢±ÙÁ¦ÇÑÀÚ¸¦ ¼³Á¤ÇÏ¸é Ex1Å¬·¡½º µîÀÇ ¿ÜºÎ Å¬·¡½º¿¡¼­´Â Àý´ë Test1Å¬·¡½º¿¡ Á¢±ÙÀÌ ºÒ°¡´ÉÇÏ´Ù.
-		// NestedClass(ÁßÃ¸ Å¬·¡½º)
-		// ÁßÃ¸ Å¬·¡½º´Â Å¬·¡½º ¾È¿¡ ¶Ç ÀÛ¼ºÇÏ´Â °ÍÀÌ¶ó°í »ý°¢ÇÏ¸é µË´Ï´Ù.
-		// static classÀÎ Test1Àº User1Å¬·¡½ºÀÇ °´Ã¼°¡ »ý¼ºµÇÁö ¾Ê¾Æµµ Test1ÀÇ °´Ã¼¸¦ ´Üµ¶À¸·Î »ý¼ºÇÒ ¼ö ÀÖÀ½.
+	/* private */ static class Test1 {// private ì ‘ê·¼ì œí•œìžë¥¼ ì„¤ì •í•˜ë©´ User1í´ëž˜ìŠ¤ ë‚´ë¶€ì—ì„œë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
+		//ì¦‰, private ì ‘ê·¼ì œí•œìžë¥¼ ì„¤ì •í•˜ë©´ Ex1í´ëž˜ìŠ¤ ë“±ì˜ ì™¸ë¶€ í´ëž˜ìŠ¤ì—ì„œëŠ” ì ˆëŒ€ Test1í´ëž˜ìŠ¤ì— ì ‘ê·¼ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤.
+		// NestedClass(ì¤‘ì²© í´ëž˜ìŠ¤)
+		// ì¤‘ì²© í´ëž˜ìŠ¤ëŠ” í´ëž˜ìŠ¤ ì•ˆì— ë˜ ìž‘ì„±í•˜ëŠ” ê²ƒì´ë¼ê³  ìƒê°í•˜ë©´ ë©ë‹ˆë‹¤.
+		// static classì¸ Test1ì€ User1í´ëž˜ìŠ¤ì˜ ê°ì²´ê°€ ìƒì„±ë˜ì§€ ì•Šì•„ë„ Test1ì˜ ê°ì²´ë¥¼ ë‹¨ë…ìœ¼ë¡œ ìƒì„±í•  ìˆ˜ ìžˆìŒ.
 		int x = 100;
 
 		public void write() {
 			System.out.println(x);
-//			System.out.println(a);//ÄÄÆÄÀÏ ¿À·ù: User1ÀÇ °´Ã¼¸¦ »ý¼ºÇÑ ÈÄ¿¡ È£ÃâÇÒ ¼ö ÀÖ´Ù.
-//			print(); ÄÄÆÄÀÏ¿À·ù: User1ÀÇ °´Ã¼¸¦ »ý¼ºÇÑ ÈÄ¿¡ È£ÃâÇÒ ¼ö ÀÖ´Ù.
+//			System.out.println(a);//ì»´íŒŒì¼ ì˜¤ë¥˜: User1ì˜ ê°ì²´ë¥¼ ìƒì„±í•œ í›„ì— í˜¸ì¶œí•  ìˆ˜ ìžˆë‹¤.
+//			print(); ì»´íŒŒì¼ì˜¤ë¥˜: User1ì˜ ê°ì²´ë¥¼ ìƒì„±í•œ í›„ì— í˜¸ì¶œí•  ìˆ˜ ìžˆë‹¤.
 			System.out.println(b);
 		}
 
-		public void sub() {// ³»ºÎÅ¬·¡½º
+		public void sub() {// ë‚´ë¶€í´ëž˜ìŠ¤
 			User1 uu = new User1();
-			System.out.println(uu.a);// °´Ã¼°¡ »ý¼ºµÇ¾úÀ¸¹Ç·Î User1 uu´Â aº¯¼ö¸¦ °¡Áú ¼ö ÀÖÀ½.
-			uu.print(); // °¡´É: uu´Â User1ÀÇ °´Ã¼ÀÇ ÁÖ¼Ú°ªÀ» ´ã°í ÀÖ´Ù. µû¶ó¼­ uu°¡ °¡¸®Å°´Â °÷Àº °´Ã¼ÀÌ´Ù.
+			System.out.println(uu.a);// ê°ì²´ê°€ ìƒì„±ë˜ì—ˆìœ¼ë¯€ë¡œ User1 uuëŠ” aë³€ìˆ˜ë¥¼ ê°€ì§ˆ ìˆ˜ ìžˆìŒ.
+			uu.print(); // ê°€ëŠ¥: uuëŠ” User1ì˜ ê°ì²´ì˜ ì£¼ì†Ÿê°’ì„ ë‹´ê³  ìžˆë‹¤. ë”°ë¼ì„œ uuê°€ ê°€ë¦¬í‚¤ëŠ” ê³³ì€ ê°ì²´ì´ë‹¤.
 		}
 	}
 
@@ -41,11 +41,11 @@ class User1 {
 	}
 
 	public static void fun() {
-//		System.out.println(a);// ÄÄÆÄÀÏ¿À·ù: ¿Ö³ÄÇÏ¸é ÇÊµåÀÇ aº¯¼ö´Â ÀÎ½ºÅÏ½º(°´Ã¼¸¦ »ý¼ºÇÑ ÈÄ »ç¿ëÇÒ ¼ö ÀÖ´Â) º¯¼öÀÌ´Ù.
-		// staticÀº ¸Þ¸ð¸®ÇÒ´çÀÌ ½ºÅÃ ¿µ¿ªÀÌÁö¸¸ °´Ã¼´Â Èü ¿µ¿ª¿¡ ÀúÀåÀÌ µÇ±â ‹š¹®¿¡ ÀúÀå°ø°£ÀÌ ´Þ¶ó¼­
-		// a °´Ã¼º¯¼ö¸¦ staticÀÌ È°¿ëÇÒ ¼ö ¾ø´Ù°í »ý°¢ÇÏ¸é µË´Ï´Ù.
-		// (±×¸®°í a°´Ã¼´Â ¾ðÁ¦ »ý¼ºµÉÁö staticÀÌ ¾Ë ¼ö ¾øÀ½. »ý¼ºµÈ ÁÙµµ ¸ð¸§)
-		// ´Ù¸¸, °´Ã¼´Â staticÀÇ º¯¼ö¸¦ È°¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù. (°´Ã¼ »ý¼º ÀÌÀü¿¡ Å¬·¡½º¸¦ ·ÎµåÇÏ°í static¿µ¿ªÀ» ¹Ì¸® ºÒ·¯¿Ã Å×´Ï±î!)
+//		System.out.println(a);// ì»´íŒŒì¼ì˜¤ë¥˜: ì™œëƒí•˜ë©´ í•„ë“œì˜ aë³€ìˆ˜ëŠ” ì¸ìŠ¤í„´ìŠ¤(ê°ì²´ë¥¼ ìƒì„±í•œ í›„ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ”) ë³€ìˆ˜ì´ë‹¤.
+		// staticì€ ë©”ëª¨ë¦¬í• ë‹¹ì´ ìŠ¤íƒ ì˜ì—­ì´ì§€ë§Œ ê°ì²´ëŠ” íž™ ì˜ì—­ì— ì €ìž¥ì´ ë˜ê¸° Â‹Âšë¬¸ì— ì €ìž¥ê³µê°„ì´ ë‹¬ë¼ì„œ
+		// a ê°ì²´ë³€ìˆ˜ë¥¼ staticì´ í™œìš©í•  ìˆ˜ ì—†ë‹¤ê³  ìƒê°í•˜ë©´ ë©ë‹ˆë‹¤.
+		// (ê·¸ë¦¬ê³  aê°ì²´ëŠ” ì–¸ì œ ìƒì„±ë ì§€ staticì´ ì•Œ ìˆ˜ ì—†ìŒ. ìƒì„±ëœ ì¤„ë„ ëª¨ë¦„)
+		// ë‹¤ë§Œ, ê°ì²´ëŠ” staticì˜ ë³€ìˆ˜ë¥¼ í™œìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. (ê°ì²´ ìƒì„± ì´ì „ì— í´ëž˜ìŠ¤ë¥¼ ë¡œë“œí•˜ê³  staticì˜ì—­ì„ ë¯¸ë¦¬ ë¶ˆëŸ¬ì˜¬ í…Œë‹ˆê¹Œ!)
 		System.out.println(b);
 	}
 }

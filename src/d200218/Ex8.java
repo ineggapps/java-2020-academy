@@ -1,22 +1,22 @@
-package d200218;
+ï»¿package d200218;
 
 import java.util.Arrays;
 import java.util.Collections;
 
 public class Ex8 {
 	public static void main(String[] args) {
-		String[] ss= {"ÀÚ¹Ù","CSS","HTML","½ºÇÁ¸µ","AI"};
+		String[] ss= {"ìë°”","CSS","HTML","ìŠ¤í”„ë§","AI"};
 
-		Arrays.sort(ss);//¿À¸§Â÷¼ø Á¤·Ä
-		System.out.println("¿À¸§Â÷¼ø");
+		Arrays.sort(ss);//ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+		System.out.println("ì˜¤ë¦„ì°¨ìˆœ");
 		print(ss);
-		Arrays.sort(ss,Collections.reverseOrder());//³»¸²Â÷¼ø Á¤·Ä
-		System.out.println("³»¸²Â÷¼ø");
+		Arrays.sort(ss,Collections.reverseOrder());//ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬
+		System.out.println("ë‚´ë¦¼ì°¨ìˆœ");
 		print(ss);
 		
 		int [] nn = {10,5,80,70};
-//		String s = nn.toString();//[I@ÇØ½Ã°ª16Áø¼ö Ãâ·Â
-		String s =Arrays.toString(nn);//[¹è¿­ÀÇ ³»¿ë¹°] Ãâ·Â
+//		String s = nn.toString();//[I@í•´ì‹œê°’16ì§„ìˆ˜ ì¶œë ¥
+		String s =Arrays.toString(nn);//[ë°°ì—´ì˜ ë‚´ìš©ë¬¼] ì¶œë ¥
 		System.out.println(s);
 	}	
 	

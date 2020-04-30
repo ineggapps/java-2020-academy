@@ -1,4 +1,4 @@
-package d200218;
+ï»¿package d200218;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -26,16 +26,16 @@ public class Ex5 {
 	public static void main(String[] args) {
 		try {
 			Date date = new Date();
-			SimpleDateFormat sdf = new SimpleDateFormat("yyyyÒ´ MMêÅ ddìí HH:mm:ss");
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´ MMæœˆ ddæ—¥ HH:mm:ss");
 			String s = sdf.format(date);
 			System.out.println(s);
 
 			sdf = new SimpleDateFormat("yyyy-MM-dd");
-			s = "2000-10-10";// SimpleDateFormatÀÇ yyyy-MM-dd¿ÍÀÇ ¼­½ÄÀ» ¸ÂÃç¾ß ÇÑ´Ù.
+			s = "2000-10-10";// SimpleDateFormatì˜ yyyy-MM-ddì™€ì˜ ì„œì‹ì„ ë§ì¶°ì•¼ í•œë‹¤.
 			Date date2 = sdf.parse(s);
 			System.out.println(date2);
 
-			//³¯Â¥ °è»êÇÏ±â
+			//ë‚ ì§œ ê³„ì‚°í•˜ê¸°
 			long endDay = diffOfday("2020-02-18", "2020-07-06");
 			System.out.println(endDay);
 

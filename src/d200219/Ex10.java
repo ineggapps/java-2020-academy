@@ -1,13 +1,13 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex10 {
 	public static void main(String[] args) {
-		Object ob1 = new String("¼­¿ï"); // ¾÷ Ä³½ºÆÃ
-		Object ob2 = new String("¼­¿ï"); // ¾÷ Ä³½ºÆÃ
+		Object ob1 = new String("ì„œìš¸"); // ì—… ìºìŠ¤íŒ…
+		Object ob2 = new String("ì„œìš¸"); // ì—… ìºìŠ¤íŒ…
 		
-//		System.out.println("±æÀÌ: "+ ob1.length());//ÄÄÆÄÀÏ ¿À·ù
-		System.out.println("±æÀÌ: "+ ((String)ob1).length());//´Ù¿îÄ³½ºÆÃ
+//		System.out.println("ê¸¸ì´: "+ ob1.length());//ì»´íŒŒì¼ ì˜¤ë¥˜
+		System.out.println("ê¸¸ì´: "+ ((String)ob1).length());//ë‹¤ìš´ìºìŠ¤íŒ…
 		
-		System.out.println(ob1.equals(ob2));//¡á¡áÁÖÀÇ¡á¡á ¿À¹ö¶óÀÌµùµÈ ¸Ş¼­µå¸¦ È£ÃâÇÑ´Ù.
+		System.out.println(ob1.equals(ob2));//â– â– ì£¼ì˜â– â–  ì˜¤ë²„ë¼ì´ë”©ëœ ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤.
 	}
 }

@@ -1,11 +1,11 @@
-package d200217;
+ï»¿package d200217;
 
 import java.util.Random;
 import java.util.Scanner;
 
 public class RandomGame {
 	public static void main(String[] args) {
-		// ½º¹« °í°³ 1~100±îÁö ÇÏ³ªÀÇ ³­¼ö¸¦ ¹ß»ı½ÃÄÑ 20¹ø ¾È¿¡ ¸ÂÃß´Â °ÔÀÓ
+		// ìŠ¤ë¬´ ê³ ê°œ 1~100ê¹Œì§€ í•˜ë‚˜ì˜ ë‚œìˆ˜ë¥¼ ë°œìƒì‹œì¼œ 20ë²ˆ ì•ˆì— ë§ì¶”ëŠ” ê²Œì„
 		Game g = new Game();
 		g.play();
 	}
@@ -30,23 +30,23 @@ class Game {
 			input = sc.nextInt();
 
 			if (input < 1 || input > 100) {
-				System.out.println("ERR: ÀÔ·Â °¡´ÉÇÑ ¼ö´Â 1ºÎÅÍ 100±îÁöÀÇ ¼öÀÔ´Ï´Ù.");
+				System.out.println("ERR: ì…ë ¥ ê°€ëŠ¥í•œ ìˆ˜ëŠ” 1ë¶€í„° 100ê¹Œì§€ì˜ ìˆ˜ì…ë‹ˆë‹¤.");
 				continue;
 			}
-			life--;// ±âÈ¸ Â÷°¨
+			life--;// ê¸°íšŒ ì°¨ê°
 
-			// ¼ıÀÚ ÆÇº°
+			// ìˆ«ì íŒë³„
 			if (input > number) {
-				System.out.printf("%dº¸´Ù´Â ÀÛ½À´Ï´Ù.(%d¹ø ³²À½)%n", input, life);
+				System.out.printf("%dë³´ë‹¤ëŠ” ì‘ìŠµë‹ˆë‹¤.(%dë²ˆ ë‚¨ìŒ)%n", input, life);
 			} else if (input < number) {
-				System.out.printf("%dº¸´Ù´Â Å®´Ï´Ù.(%d¹ø ³²À½)%n ", input, life);
+				System.out.printf("%dë³´ë‹¤ëŠ” í½ë‹ˆë‹¤.(%dë²ˆ ë‚¨ìŒ)%n ", input, life);
 			} else {
-				System.out.printf("%d¹ø ¸¸¿¡ ¼º°øÇß½À´Ï´Ù!%n", CHANCE - life);
+				System.out.printf("%dë²ˆ ë§Œì— ì„±ê³µí–ˆìŠµë‹ˆë‹¤!%n", CHANCE - life);
 				sc.close();
 				return;
 			}
 		} while (life > 0 );
-		System.out.println("20¹ø ¾È¿¡ ¸ÂÈ÷Áö ¸øÇß½À´Ï´Ù. Á¤´äÀº " + number);
+		System.out.println("20ë²ˆ ì•ˆì— ë§íˆì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ì •ë‹µì€ " + number);
 		sc.close();
 	}
 

@@ -1,4 +1,4 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex3Advanced {
 
@@ -15,7 +15,7 @@ class Parent {
 class Child extends Parent {
 	int x=10;
 	public Child(int x){
-		super(3303);//½´ÆÛÅ¬·¡½º¿¡ ¸Å°³º¯¼ö°¡ ¾ø´Â »ı¼ºÀÚ°¡ ¾øÀ¸¸é ¸í½ÃÀûÀ¸·Î ¼±¾ğÀÌ ÇÊ¿äÇÏ´Ù.
+		super(3303);//ìŠˆí¼í´ë˜ìŠ¤ì— ë§¤ê°œë³€ìˆ˜ê°€ ì—†ëŠ” ìƒì„±ìê°€ ì—†ìœ¼ë©´ ëª…ì‹œì ìœ¼ë¡œ ì„ ì–¸ì´ í•„ìš”í•˜ë‹¤.
 		this.x=x;
 	}
 }

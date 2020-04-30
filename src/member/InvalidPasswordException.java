@@ -1,4 +1,4 @@
-package member;
+ï»¿package member;
 
 public class InvalidPasswordException extends Exception{
 
@@ -6,7 +6,7 @@ public class InvalidPasswordException extends Exception{
 
 	@Override
 	public String getMessage() {
-		return "¿Ã¹Ù¸£Áö ¾ÊÀº ºñ¹Ğ¹øÈ£ÀÔ´Ï´Ù.";
+		return "ì˜¬ë°”ë¥´ì§€ ì•Šì€ ë¹„ë°€ë²ˆí˜¸ì…ë‹ˆë‹¤.";
 	}
 
 }

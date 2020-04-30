@@ -1,12 +1,12 @@
-package d200131;
+ï»¿package d200131;
 
 public class IfEx1 {
 	public static void main(String[] args) {
-		// Á¤¼ö¿¡ ´ëÇÑ Àı´ñ°ª ±¸ÇÏ±â
+		// ì •ìˆ˜ì— ëŒ€í•œ ì ˆëŒ“ê°’ êµ¬í•˜ê¸°
 		int n;
 		n = -10;
 		if (n < 0)
 			n = -n;
-		System.out.println("Àı´ñ°ª: " + n);
+		System.out.println("ì ˆëŒ“ê°’: " + n);
 	}
 }

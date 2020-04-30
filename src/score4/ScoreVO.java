@@ -1,4 +1,4 @@
-package score4;
+﻿package score4;
 
 public class ScoreVO {
 	private String name;

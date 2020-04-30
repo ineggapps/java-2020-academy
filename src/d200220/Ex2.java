@@ -1,8 +1,8 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex2 {
 	public static void main(String[] args) {
-//		SingletonEx1 ob = new SingletonEx1(); //ÄÄÆÄÀÏ ¿À·ù, »ı¼ºÀÚ°¡ privateÀÌ´Ù.
+//		SingletonEx1 ob = new SingletonEx1(); //ì»´íŒŒì¼ ì˜¤ë¥˜, ìƒì„±ìê°€ privateì´ë‹¤.
 		SingletonEx1 ob = SingletonEx1.getInstance();
 		SingletonEx1 ob2 = SingletonEx1.getInstance();
 		System.out.println(ob.hashCode());
@@ -12,15 +12,15 @@ public class Ex2 {
 	}
 }
 
-class SingletonEx1 {//°´Ã¼¸¦ 1°³¸¸ »ı¼ºÇÏ´Â µğÀÚÀÎ ÆĞÅÏ (ex: DB¿¬µ¿)
-	//1) »ı¼ºÀÚ¿Í ÀÎ½ºÅÏ½º º¯¼ö¸¦ privateÀ¸·Î ¼±¾ğÇÑ´Ù
-	//ÀÎ½ºÅÏ½º º¯¼ö¿¡¼­´Â ÇØ´ç Å¬·¡½ºÀÇ °´Ã¼ ÁÖ¼Ú°ªÀ» ´ã°Å³ª nullÀ» ´ã°í ÀÖÀ» °ÍÀÓ.
+class SingletonEx1 {//ê°ì²´ë¥¼ 1ê°œë§Œ ìƒì„±í•˜ëŠ” ë””ìì¸ íŒ¨í„´ (ex: DBì—°ë™)
+	//1) ìƒì„±ìì™€ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ë¥¼ privateìœ¼ë¡œ ì„ ì–¸í•œë‹¤
+	//ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì—ì„œëŠ” í•´ë‹¹ í´ë˜ìŠ¤ì˜ ê°ì²´ ì£¼ì†Ÿê°’ì„ ë‹´ê±°ë‚˜ nullì„ ë‹´ê³  ìˆì„ ê²ƒì„.
 	private static SingletonEx1 instance = null;
 	private SingletonEx1() {
 	}
 
-	//2) Å¬·¡½º ¸Ş¼­µå·Î ÇØ´ç Å¬·¡½ºÀÇ °´Ã¼¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå¸¦ ¸¸µé¾î¾ß ÇÑ´Ù.
-	//but, ¸ÖÆ¼ ¾²·¹µå È¯°æ¿¡¼­´Â ¹®Á¦°¡ »ı±æ ¼ö ÀÖ´Ù.
+	//2) í´ë˜ìŠ¤ ë©”ì„œë“œë¡œ í•´ë‹¹ í´ë˜ìŠ¤ì˜ ê°ì²´ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œë¥¼ ë§Œë“¤ì–´ì•¼ í•œë‹¤.
+	//but, ë©€í‹° ì“°ë ˆë“œ í™˜ê²½ì—ì„œëŠ” ë¬¸ì œê°€ ìƒê¸¸ ìˆ˜ ìˆë‹¤.
 	public static SingletonEx1 getInstance() {
 		if (instance == null) {
 			instance = new SingletonEx1();
@@ -29,6 +29,6 @@ class SingletonEx1 {//°´Ã¼¸¦ 1°³¸¸ »ı¼ºÇÏ´Â µğÀÚÀÎ ÆĞÅÏ (ex: DB¿¬µ¿)
 	}
 	
 	public void print() {
-		System.out.println("Singleton ÆĞÅÏ ¿¹Á¦");
+		System.out.println("Singleton íŒ¨í„´ ì˜ˆì œ");
 	}
 }

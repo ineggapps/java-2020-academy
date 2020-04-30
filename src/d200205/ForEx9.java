@@ -1,9 +1,9 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForEx9 {
 	public static void main(String[] args) {
-		// ´ÙÀÌ¾Æ¸óµå ¸¸µé±â
-		// (for¹® 6°³)
+		// ë‹¤ì´ì•„ëª¬ë“œ ë§Œë“¤ê¸°
+		// (forë¬¸ 6ê°œ)
 		/*
 		 * aaaa* aaa*** aa***** a*******
 		 *********
@@ -20,7 +20,7 @@ public class ForEx9 {
 			System.out.println();
 		}
 
-		// * °¹¼ö °¨¼Ò
+		// * ê°¯ìˆ˜ ê°ì†Œ
 		for (int i = 4; i >= 1; i--) {
 			for (int j = 1; j <= 5 - i; j++) {
 				System.out.print("a");
@@ -32,15 +32,15 @@ public class ForEx9 {
 		}
 
 		System.out.println("================");
-		// for¹® 2¹øÀ» ÀÌ¿ëÇÏ¿© À§ÀÇ °á°ú ¸¸µé±â
+		// forë¬¸ 2ë²ˆì„ ì´ìš©í•˜ì—¬ ìœ„ì˜ ê²°ê³¼ ë§Œë“¤ê¸°
 		int s = 5;
-		int n = s / 2;// nº¯¼ö¸¦ ÀÌ¿ëÇÏ¿© Ãâ·ÂÇÏ´Â ¹®ÀÚÀÇ °³¼ö¸¦ Á¶Á¤ÇÑ´Ù.
+		int n = s / 2;// në³€ìˆ˜ë¥¼ ì´ìš©í•˜ì—¬ ì¶œë ¥í•˜ëŠ” ë¬¸ìžì˜ ê°œìˆ˜ë¥¼ ì¡°ì •í•œë‹¤.
 		for (int i = 0; i < s; i++) {
 			for (int j = 0; j < s - n; j++) {
-				System.out.print(j >= n ? "*" : "a");// j>=nÀÇ ¹üÀ§¿¡¼­¸¸ *À» ±×¸®°í ±×·¸Áö ¾ÊÀ¸¸é °ø¹é
+				System.out.print(j >= n ? "*" : "a");// j>=nì˜ ë²”ìœ„ì—ì„œë§Œ *ì„ ê·¸ë¦¬ê³  ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ ê³µë°±
 			}
-			n = i < (s / 2) ? n - 1 : n + 1;// ÇöÀç Ãâ·Â ÁÙ ¼ö°¡ ¹ÝÀý¿¡ ¹ÌÄ¡Áö ¸øÇÏ¸é n-1À» ÇÏ°í, ¹ÝÀýºÎÅÍ´Â n+1À» ½Ç½ÃÇÑ´Ù
-			//j<s-n <<< ¿¡¼­ --nÀº +nÀÌ µÇ´Â ¿ø¸®¸¦ »ý°¢ÇÏ¸é µÈ´Ù.
+			n = i < (s / 2) ? n - 1 : n + 1;// í˜„ìž¬ ì¶œë ¥ ì¤„ ìˆ˜ê°€ ë°˜ì ˆì— ë¯¸ì¹˜ì§€ ëª»í•˜ë©´ n-1ì„ í•˜ê³ , ë°˜ì ˆë¶€í„°ëŠ” n+1ì„ ì‹¤ì‹œí•œë‹¤
+			//j<s-n <<< ì—ì„œ --nì€ +nì´ ë˜ëŠ” ì›ë¦¬ë¥¼ ìƒê°í•˜ë©´ ëœë‹¤.
 			System.out.println();
 		}
 

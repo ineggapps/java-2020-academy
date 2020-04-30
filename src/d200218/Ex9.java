@@ -1,4 +1,4 @@
-package d200218;
+ï»¿package d200218;
 
 import java.util.Arrays;
 
@@ -7,18 +7,18 @@ public class Ex9 {
 		int[] aa = { 10, 20, 30, 40, 50 };
 		int[] bb = Arrays.copyOf(aa, aa.length);
 //		int[] cc = Arrays.copyOf(aa, aa.length-1);
-//		int[] dd = Arrays.copyOf(aa, aa.length+10);//aaÀÇ ¹è¿­ÀÇ ±æÀÌÀÎ 5°³¸¦ º¹»çÇÏ°í ³ª¸ÓÁö´Â 0À¸·Î ÃÊ±âÈ­
-		System.out.println(aa==bb);//³»¿ëÀ» º¹»çÇÑ °ÍÀÌÁö Àı´ë °°Àº °´Ã¼°¡ ¾Æ´Ï´Ù. (==°°Àº ÁÖ¼Ú°ªÀ» Áö´ÏÁö ¾Ê´Â´Ù)
+//		int[] dd = Arrays.copyOf(aa, aa.length+10);//aaì˜ ë°°ì—´ì˜ ê¸¸ì´ì¸ 5ê°œë¥¼ ë³µì‚¬í•˜ê³  ë‚˜ë¨¸ì§€ëŠ” 0ìœ¼ë¡œ ì´ˆê¸°í™”
+		System.out.println(aa==bb);//ë‚´ìš©ì„ ë³µì‚¬í•œ ê²ƒì´ì§€ ì ˆëŒ€ ê°™ì€ ê°ì²´ê°€ ì•„ë‹ˆë‹¤. (==ê°™ì€ ì£¼ì†Ÿê°’ì„ ì§€ë‹ˆì§€ ì•ŠëŠ”ë‹¤)
 		System.out.println(Arrays.toString(bb));
 //		System.out.println(Arrays.toString(cc));
 //		System.out.println(Arrays.toString(dd));
 		
-		int[] cc= Arrays.copyOfRange(aa, 1, 4); //¹è¿­ÀÇ º¹»çÇÒ ÀÏºÎ ¹üÀ§¸¦ ÁöÁ¤ÇÒ ¼öµµ ÀÖÀ½.
-		//´ë»ó, from, to-1ÀÎµ¦½º±îÁö º¹»ç 
+		int[] cc= Arrays.copyOfRange(aa, 1, 4); //ë°°ì—´ì˜ ë³µì‚¬í•  ì¼ë¶€ ë²”ìœ„ë¥¼ ì§€ì •í•  ìˆ˜ë„ ìˆìŒ.
+		//ëŒ€ìƒ, from, to-1ì¸ë±ìŠ¤ê¹Œì§€ ë³µì‚¬ 
 		System.out.println(Arrays.toString(cc));
 		
 		int[] dd = new int[aa.length];
-		System.arraycopy(aa, 0, dd, 0, aa.length);//ÀÌ ¸Ş¼­µå°¡ ¿¬»êÀÌ Á» ´õ ºü¸£´Ù.
+		System.arraycopy(aa, 0, dd, 0, aa.length);//ì´ ë©”ì„œë“œê°€ ì—°ì‚°ì´ ì¢€ ë” ë¹ ë¥´ë‹¤.
 		System.out.println(Arrays.toString(dd));
 	}
 }

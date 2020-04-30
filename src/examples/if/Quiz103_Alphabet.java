@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz103_Alphabet {
 	public static void main(String[] args) {
 /*
-		¿µ¹®ÀÚ¸¦ ÀÔ·Â ¹Þ¾Æ ÀÔ·Â ¹ÞÀº ¹®ÀÚ°¡ ¼Ò¹®ÀÚÀÌ¸é ´ë¹®ÀÚ·Î,
-		´ë¹®ÀÚÀÌ¸é ¼Ò¹®ÀÚ·Î º¯È¯ÇÏ´Â ÇÁ·Î±×·¥
+		ì˜ë¬¸ìžë¥¼ ìž…ë ¥ ë°›ì•„ ìž…ë ¥ ë°›ì€ ë¬¸ìžê°€ ì†Œë¬¸ìžì´ë©´ ëŒ€ë¬¸ìžë¡œ,
+		ëŒ€ë¬¸ìžì´ë©´ ì†Œë¬¸ìžë¡œ ë³€í™˜í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */
 		Scanner sc=new Scanner(System.in);
 		char ch, result;
 		
-		System.out.print("¹®ÀÚ ? ");
+		System.out.print("ë¬¸ìž ? ");
 		ch=sc.next().charAt(0);
 		
 		if(ch>='A' && ch<='Z') {

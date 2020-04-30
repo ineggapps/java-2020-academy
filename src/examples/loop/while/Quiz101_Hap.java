@@ -1,14 +1,14 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz101_Hap {
 	public static void main(String[] args) {
 /*		
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 1ºÎÅÍ ÀÔ·Â ¹ŞÀº ¼ö±îÁöÀÇ ÇÕ, Â¦¼ö ÇÕ, È¦¼ö ÇÕ
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 1ë¶€í„° ì…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ì˜ í•©, ì§ìˆ˜ í•©, í™€ìˆ˜ í•©
 */
 		Scanner sc=new Scanner(System.in);
 
 		int input;
-		System.out.print("¼ö ? ");
+		System.out.print("ìˆ˜ ? ");
 		input = sc.nextInt();
 
 		int n, s, o, e;
@@ -22,9 +22,9 @@ public class Quiz101_Hap {
 				o+=n;
 		}
 
-		System.out.println("1~"+input+" ±îÁö ÇÕ = " + s);
-		System.out.println("1~"+input+" ±îÁö Â¦¼ö ÇÕ = " + e);
-		System.out.println("1~"+input+" ±îÁö È¦¼ö ÇÕ = " + o);
+		System.out.println("1~"+input+" ê¹Œì§€ í•© = " + s);
+		System.out.println("1~"+input+" ê¹Œì§€ ì§ìˆ˜ í•© = " + e);
+		System.out.println("1~"+input+" ê¹Œì§€ í™€ìˆ˜ í•© = " + o);
 		
 		sc.close();
 	}

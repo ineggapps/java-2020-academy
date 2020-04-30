@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 import java.util.Calendar;
 import java.util.Scanner;
@@ -8,13 +8,13 @@ public class Ex10 {
 		Scanner sc = new Scanner(System.in);
 		String str;
 
-		System.out.print("³¯Â¥ [yyyy-mm-dd] ? ");
+		System.out.print("ë‚ ì§œ [yyyy-mm-dd] ? ");
 //		str = sc.next();
 		str="2020-02-19";
 
-		// ¿¹¿ÜÃ³¸® ´ë½Å (¾ÆÁ÷ ¿¹¿ÜÃ³¸® Áøµµ ³ª°¡Áö ¾Ê¾ÒÀ½)
+		// ì˜ˆì™¸ì²˜ë¦¬ ëŒ€ì‹  (ì•„ì§ ì˜ˆì™¸ì²˜ë¦¬ ì§„ë„ ë‚˜ê°€ì§€ ì•Šì•˜ìŒ)
 		if (str.length() != 10 || str.split("-").length != 3) {
-			System.out.println("³¯Â¥ ÀÔ·Â Çü½Ä ¿À·ù");
+			System.out.println("ë‚ ì§œ ì…ë ¥ í˜•ì‹ ì˜¤ë¥˜");
 			sc.close();
 			return;
 		}
@@ -27,21 +27,21 @@ public class Ex10 {
 		
 		Calendar cal = Calendar.getInstance();
 		cal.set(y, m - 1, d);
-		System.out.printf("³¯Â¥: %tF\n", cal);
+		System.out.printf("ë‚ ì§œ: %tF\n", cal);
 
-		Calendar sday = (Calendar) cal.clone();// °´Ã¼¸¦ º¹Á¦ÇÑ´Ù.
-		//º¹Á¦ÇÏ¿´À¸¹Ç·Î ³»¿ë°ªÀº °°À¸³ª ÀüÇô ´Ù¸¥ °´Ã¼¶ó°í º¸¾Æ¾ß ÇÑ´Ù. (¿Ö³ÄÇÏ¸é ÁÖ¼Ú°ªÀÌ ´Ù¸¥ °÷¿¡ ¶Ç ´Ù½Ã ¹èÁ¤ÀÌ µÈ °ÍÀÌ±â ¶§¹®¿¡)
+		Calendar sday = (Calendar) cal.clone();// ê°ì²´ë¥¼ ë³µì œí•œë‹¤.
+		//ë³µì œí•˜ì˜€ìœ¼ë¯€ë¡œ ë‚´ìš©ê°’ì€ ê°™ìœ¼ë‚˜ ì „í˜€ ë‹¤ë¥¸ ê°ì²´ë¼ê³  ë³´ì•„ì•¼ í•œë‹¤. (ì™œëƒí•˜ë©´ ì£¼ì†Ÿê°’ì´ ë‹¤ë¥¸ ê³³ì— ë˜ ë‹¤ì‹œ ë°°ì •ì´ ëœ ê²ƒì´ê¸° ë•Œë¬¸ì—)
 		//Calendar sday = Calendar.getInstance();
-		//sday.set(y,m-1,d); ÀÌ 2°³ÀÇ ÁÙÀ» ½ÇÇàÇÑ °Í°ú ºñ½ÁÇÑ È¿°ú.
-		// 2020³â 2¿ù 20ÀÏÀ» ÀÔ·ÂÇÏ¸é sday´Â 2¿ù 16ÀÏÀ» °¡¸®Å°°í eday´Â 2¿ù 22ÀÏÀ» °¡¸®ÄÑ¾ß ÇÑ´Ù.
+		//sday.set(y,m-1,d); ì´ 2ê°œì˜ ì¤„ì„ ì‹¤í–‰í•œ ê²ƒê³¼ ë¹„ìŠ·í•œ íš¨ê³¼.
+		// 2020ë…„ 2ì›” 20ì¼ì„ ì…ë ¥í•˜ë©´ sdayëŠ” 2ì›” 16ì¼ì„ ê°€ë¦¬í‚¤ê³  edayëŠ” 2ì›” 22ì¼ì„ ê°€ë¦¬ì¼œì•¼ í•œë‹¤.
 		w=cal.get(Calendar.DAY_OF_WEEK);
 		n=w-1;
 		sday.add(Calendar.DATE, -n);
-		System.out.printf("ÁÖ ½ÃÀÛ: %tF\n", sday);
+		System.out.printf("ì£¼ ì‹œì‘: %tF\n", sday);
 
-		Calendar eday = (Calendar) cal.clone();// °´Ã¼¸¦ º¹Á¦ÇÑ´Ù.
+		Calendar eday = (Calendar) cal.clone();// ê°ì²´ë¥¼ ë³µì œí•œë‹¤.
 		eday.add(Calendar.DATE,  7-w);//or -n+6
-		System.out.printf("ÁÖ ¸¶Áö¸·: %tF\n", eday);
+		System.out.printf("ì£¼ ë§ˆì§€ë§‰: %tF\n", eday);
 
 		sc.close();
 	}

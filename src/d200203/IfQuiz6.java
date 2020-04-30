@@ -1,4 +1,4 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
@@ -8,16 +8,16 @@ public class IfQuiz6 {
 		int num1, num2,result;
 		char op;
 		
-		System.out.print("µÎ ¼ö ÀÔ·Â: ");
+		System.out.print("ë‘ ìˆ˜ ì…ë ¥: ");
 		num1=sc.nextInt();
 		num2=sc.nextInt();
-		System.out.print("¿¬»êÀÚ [+,-, *, /] ÀÔ·Â: ");
+		System.out.print("ì—°ì‚°ì [+,-, *, /] ì…ë ¥: ");
 		op=sc.next().charAt(0);
 		
 		if(op!='+' && op!='-' && op!='*' && op!='/') {
-			System.out.println("¿¬»êÀÚ ÀÔ·Â ¿À·ùÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì‚°ì ì…ë ¥ ì˜¤ë¥˜ì…ë‹ˆë‹¤.");
 		}else {
-			//¿¬»êÀÚ ÀÔ·Â ¿À·ù°¡ ¹ß»ıÇÏÁö ¾ÊÀ¸¸é
+			//ì—°ì‚°ì ì…ë ¥ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì§€ ì•Šìœ¼ë©´
 			if(op=='+') {
 				result = num1+num2;
 			}

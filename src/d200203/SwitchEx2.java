@@ -1,16 +1,16 @@
-package d200203;
+ï»¿package d200203;
 
 public class SwitchEx2 {
 	public static void main(String[] args) {
 		int a = 13;
-		// a%3À¸·Î ¿¬»êÇÑ °ªÀº 0,1,2°¡ ³ª¿Ã ¼ö ÀÖ´Ù.
+		// a%3ìœ¼ë¡œ ì—°ì‚°í•œ ê°’ì€ 0,1,2ê°€ ë‚˜ì˜¬ ìˆ˜ ìˆë‹¤.
 		switch (a % 3) {
 		case 0:
-			System.out.println(a + "´Â 3ÀÇ ¹è¼öÀÔ´Ï´Ù.");
+			System.out.println(a + "ëŠ” 3ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤.");
 			break;
 		case 1:
 		case 2:
-			System.out.println(a + "´Â 3ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println(a + "ëŠ” 3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 			break;
 		}
 	}

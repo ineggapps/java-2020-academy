@@ -1,41 +1,41 @@
-package d200212;
+ï»¿package d200212;
 
 public class Ex5 {
-	//JVMÀÌ ºÒ·¯¾ßÇÏ¹Ç·Î Á¢±ÙÁ¦ÇÑÀÚ´Â publicÀ¸·Î ¿¹¾à¾î¸¦ ºÙ¾î¾ß ÇÑ´Ù.
+	//JVMì´ ë¶ˆëŸ¬ì•¼í•˜ë¯€ë¡œ ì ‘ê·¼ì œí•œìžëŠ” publicìœ¼ë¡œ ì˜ˆì•½ì–´ë¥¼ ë¶™ì–´ì•¼ í•œë‹¤.
 	public static void main(String[] args) {
 		Test5.write();
-		//JAVA´Â staticÅ°¿öµå°¡ ÀÖ¾î¾ß(Å¬·¡½º ¸Þ¼­µå) ¹Ù·Î ºÒ·¯¿Í¼­ ½ÇÇàÇÒ ¼ö ÀÖ´Ù.
+		//JAVAëŠ” staticí‚¤ì›Œë“œê°€ ìžˆì–´ì•¼(í´ëž˜ìŠ¤ ë©”ì„œë“œ) ë°”ë¡œ ë¶ˆëŸ¬ì™€ì„œ ì‹¤í–‰í•  ìˆ˜ ìžˆë‹¤.
 		Test5 tt = new Test5();
 		tt.print();
 	}
 }
 
 class Test5 {
-	// ÀÎ½ºÅÏ½ºº¯¼ö: °´Ã¼¸¦ »ý¼ºÇØ¾ß »ç¿ëÇÒ ¼ö ÀÖÀ½, °´Ã¼ »ý¼º ¼ö¸¸Å­ ¸Þ¸ð¸®¿¡ ÇÒ´çµÈ´Ù.
-	// ÀÎ½ºÅÏ½º º¯¼ö¿Í ¸Þ¼­µå´Â °´Ã¼·Î Á¢±Ù(°´Ã¼¸¦ ÂüÁ¶ÇÏ´Â º¯¼ö·Î Á¢±Ù)ÇØ¾ß ÇÑ´Ù.
+	// ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜: ê°ì²´ë¥¼ ìƒì„±í•´ì•¼ ì‚¬ìš©í•  ìˆ˜ ìžˆìŒ, ê°ì²´ ìƒì„± ìˆ˜ë§Œí¼ ë©”ëª¨ë¦¬ì— í• ë‹¹ëœë‹¤.
+	// ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì™€ ë©”ì„œë“œëŠ” ê°ì²´ë¡œ ì ‘ê·¼(ê°ì²´ë¥¼ ì°¸ì¡°í•˜ëŠ” ë³€ìˆ˜ë¡œ ì ‘ê·¼)í•´ì•¼ í•œë‹¤.
 	int a = 10;
 	int b = 20;
-	// Å¬·¡½º º¯¼ö: °´Ã¼ »ý¼º°ú °ü°è¾øÀÌ ¹Ù·Î »ç¿ëÇÒ ¼ö ÀÖÀ½
-	// ÇÁ·Î±×·¥ ½ÇÇà ½Ã °´Ã¼ »ý¼º °³¼ö¿Í °ü°è¾øÀÌ ´Ü ÇÑ ¹ø¸¸ ¸Þ¸ð¸®¿¡ ÇÒ´çµÈ´Ù.
-	// Å¬·¡½º¸íÀ¸·Î Á¢±ÙÇÑ´Ù.
+	// í´ëž˜ìŠ¤ ë³€ìˆ˜: ê°ì²´ ìƒì„±ê³¼ ê´€ê³„ì—†ì´ ë°”ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŒ
+	// í”„ë¡œê·¸ëž¨ ì‹¤í–‰ ì‹œ ê°ì²´ ìƒì„± ê°œìˆ˜ì™€ ê´€ê³„ì—†ì´ ë‹¨ í•œ ë²ˆë§Œ ë©”ëª¨ë¦¬ì— í• ë‹¹ëœë‹¤.
+	// í´ëž˜ìŠ¤ëª…ìœ¼ë¡œ ì ‘ê·¼í•œë‹¤.
 	static int c = 30;
 
-	// ÀÎ½ºÅÏ½º ¸Þ¼­µå: °´Ã¼n¸¦ »ý¼ºÇØ¾ß È£ÃâÇÒ ¼ö ÀÖÀ½
+	// ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ: ê°ì²´në¥¼ ìƒì„±í•´ì•¼ í˜¸ì¶œí•  ìˆ˜ ìžˆìŒ
 	public void print() {
-		int n = 5;//Áö¿ªº¯¼ö: ÇÑ ¹øµµ ÇÒ´çÇÏÁö ¾Ê°í ÇØ´ç ¸Þ¼­µå¸¦ ½ÇÇàÇÒ ¶§¿¡¸¸ ¸Þ¸ð¸®¸¦ "½ºÅÃ" ¿µ¿ª¿¡ ÇÒ´çÇÑ´Ù.
+		int n = 5;//ì§€ì—­ë³€ìˆ˜: í•œ ë²ˆë„ í• ë‹¹í•˜ì§€ ì•Šê³  í•´ë‹¹ ë©”ì„œë“œë¥¼ ì‹¤í–‰í•  ë•Œì—ë§Œ ë©”ëª¨ë¦¬ë¥¼ "ìŠ¤íƒ" ì˜ì—­ì— í• ë‹¹í•œë‹¤.
 		System.out.println(a + ":" + b + ":" + c);
-		//¸Þ¼­µå ½ÇÇàÀ» ¸¶Ä£ ÀÌÈÄ¿¡´Â »ç¶óÁø´Ù.
+		//ë©”ì„œë“œ ì‹¤í–‰ì„ ë§ˆì¹œ ì´í›„ì—ëŠ” ì‚¬ë¼ì§„ë‹¤.
 	}
 
-	// Å¬·¡½º ¸Þ¼­µå: °´Ã¼ »ý¼º°ú °ü°è ¾øÀÌ ¹Ù·Î »ç¿ëÇÒ ¼ö ÀÖÀ½
-	//Å¬·¡½ºÀÌ¸§À¸·Î È£ÃâÇÑ´Ù.
+	// í´ëž˜ìŠ¤ ë©”ì„œë“œ: ê°ì²´ ìƒì„±ê³¼ ê´€ê³„ ì—†ì´ ë°”ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŒ
+	//í´ëž˜ìŠ¤ì´ë¦„ìœ¼ë¡œ í˜¸ì¶œí•œë‹¤.
 	public static void write() {
-//		System.out.println(a+":"+b+":"+c);//ÄÄÆÄÀÏ ¿À·ù ¹ß»ý Cannot make a static reference to the non-static field variables.
-		//Å¬·¡½º¸Þ¼­µå¿¡¼­´Â ÀÎ½ºÅÏ½º º¯¼ö¸¦ °´Ã¼ »ý¼º ¾øÀÌ È£ÃâÇÒ ¼ö ¾ø´Ù.
+//		System.out.println(a+":"+b+":"+c);//ì»´íŒŒì¼ ì˜¤ë¥˜ ë°œìƒ Cannot make a static reference to the non-static field variables.
+		//í´ëž˜ìŠ¤ë©”ì„œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ë¥¼ ê°ì²´ ìƒì„± ì—†ì´ í˜¸ì¶œí•  ìˆ˜ ì—†ë‹¤.
 		System.out.println(c);
 		
-		//ÀÚ½ÅÀÇ Å¬·¡½º¿¡¼­ ÀÚ½ÅÀÇ °´Ã¼¸¦ »ý¼ºÇÏ¿© ÂüÁ¶ÇÒ ¼ö ÀÖ´Ù.
-		//½ÉÁö¾î Å¬·¡½º ¸Þ¼­µå¿¡¼­µµ °´Ã¼¸¦ »ý¼ºÇÏ¿© ÀÎ½ºÅÏ½º º¯¼ö¸¦ ÂüÁ¶ÇÒ ¼ö ÀÖ´Ù.
+		//ìžì‹ ì˜ í´ëž˜ìŠ¤ì—ì„œ ìžì‹ ì˜ ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ ì°¸ì¡°í•  ìˆ˜ ìžˆë‹¤.
+		//ì‹¬ì§€ì–´ í´ëž˜ìŠ¤ ë©”ì„œë“œì—ì„œë„ ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ë¥¼ ì°¸ì¡°í•  ìˆ˜ ìžˆë‹¤.
 		Test5 tt = new Test5();
 		System.out.println(tt.a + ":" + tt.b);
 	}

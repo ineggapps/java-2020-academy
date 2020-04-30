@@ -1,4 +1,4 @@
-package score4;
+ï»¿package score4;
 
 import java.util.InputMismatchException;
 import java.util.Iterator;
@@ -10,47 +10,47 @@ import java.util.TreeMap;
 public class ScoreImpl implements Score {
 	private Scanner sc = new Scanner(System.in);
 
-	// HashMap: µ¿½Ã¼º Áö¿øÇÏÁö ¾ÊÀ½
+	// HashMap: ë™ì‹œì„± ì§€ì›í•˜ì§€ ì•ŠìŒ
 //	private Map<String, ScoreVO> map = new HashMap<>();
 
-	// Hashtable:µ¿½Ã¼º Áö¿ø(¸ÖÆ¼ ¾²·¹µå¿¡¼­ ¾ÈÀüÇÏ´Ù). ¼Óµµ°¡ ´À¸®´Ù.
+	// Hashtable:ë™ì‹œì„± ì§€ì›(ë©€í‹° ì“°ë ˆë“œì—ì„œ ì•ˆì „í•˜ë‹¤). ì†ë„ê°€ ëŠë¦¬ë‹¤.
 //	private Map<String, ScoreVO> map = new Hashtable<>();
 
-	// TreeMap: Å°·Î Á¤·Ä. ´Ü, Å°¸¦ ³ªÅ¸³»´Â Å¬·¡½º´Â Comparable ÀÎÅÍÆäÀÌ½º·Î ±¸ÇöÀÌ µÇ¾î ÀÖ¾î¾ß ÇÑ´Ù.
-	// µ¿½Ã¼ºÀ» Áö¿øÇÏÁö ¾Ê´Â´Ù.
+	// TreeMap: í‚¤ë¡œ ì •ë ¬. ë‹¨, í‚¤ë¥¼ ë‚˜íƒ€ë‚´ëŠ” í´ë˜ìŠ¤ëŠ” Comparable ì¸í„°í˜ì´ìŠ¤ë¡œ êµ¬í˜„ì´ ë˜ì–´ ìˆì–´ì•¼ í•œë‹¤.
+	// ë™ì‹œì„±ì„ ì§€ì›í•˜ì§€ ì•ŠëŠ”ë‹¤.
 	private Map<String, ScoreVO> map = new TreeMap<>();
 
 	@Override
 	public void input() {
-		System.out.println("\nÀÔ·Â");
+		System.out.println("\nì…ë ¥");
 
 		String hak;
-		System.out.print("ÇĞ¹ø ? ");
+		System.out.print("í•™ë²ˆ ? ");
 		hak = sc.next();
 
 		if (map.containsKey(hak)) {
-			System.out.println("µî·ÏµÈ ÇĞ¹øÀÔ´Ï´Ù.");
+			System.out.println("ë“±ë¡ëœ í•™ë²ˆì…ë‹ˆë‹¤.");
 		}
 
 		try {
 			ScoreVO vo = new ScoreVO();
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.next());
 
-			System.out.print("±¹¾î ? ");
+			System.out.print("êµ­ì–´ ? ");
 			vo.setKor(sc.nextInt());
 
-			System.out.print("¿µ¾î ? ");
+			System.out.print("ì˜ì–´ ? ");
 			vo.setEng(sc.nextInt());
 
-			System.out.print("¼öÇĞ ? ");
+			System.out.print("ìˆ˜í•™ ? ");
 			vo.setMat(sc.nextInt());
 
-			// map¿¡ ÀúÀåÇÏ±â
+			// mapì— ì €ì¥í•˜ê¸°
 			map.put(hak, vo);
-			System.out.println("µî·Ï ¿Ï·á");
+			System.out.println("ë“±ë¡ ì™„ë£Œ");
 		} catch (InputMismatchException e) {
-			System.out.println("Á¡¼ö´Â ¼ıÀÚ¸¸ ÀÔ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ëŠ” ìˆ«ìë§Œ ì…ë ¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			sc.nextLine();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -59,10 +59,10 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void print() {
-		System.out.println("\nÃâ·Â");
-		System.out.println("ÀÎ¿ø ¼ö: " + map.size());
+		System.out.println("\nì¶œë ¥");
+		System.out.println("ì¸ì› ìˆ˜: " + map.size());
 		// 1) Iterator<String> it = map.keySet().iterator();
-		// 2) 1)°ú °°Àº ÀÇ¹Ì
+		// 2) 1)ê³¼ ê°™ì€ ì˜ë¯¸
 		Set<String> set = map.keySet();
 		Iterator<String> it = set.iterator();
 
@@ -76,35 +76,35 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void update() {
-		System.out.println("\n¼öÁ¤");
+		System.out.println("\nìˆ˜ì •");
 
 		String hak;
-		System.out.print("¼öÁ¤ÇÒ ÇĞ¹ø? ");
+		System.out.print("ìˆ˜ì •í•  í•™ë²ˆ? ");
 		hak = sc.next();
 
 		ScoreVO vo = map.get(hak);
 
 		if (vo == null) {
-			System.out.println("ÇĞ¹øÀÌ Á¸ÀçÇÏÁö ¾Ê¾Æ ¼öÁ¤ÇÒ ¼ö ¾ø½À´Ï´Ù.\n");
+			System.out.println("í•™ë²ˆì´ ì¡´ì¬í•˜ì§€ ì•Šì•„ ìˆ˜ì •í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n");
 			return;
 		}
 
 		try {
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.next());
 
-			System.out.print("±¹¾î ? ");
+			System.out.print("êµ­ì–´ ? ");
 			vo.setKor(sc.nextInt());
 
-			System.out.print("¿µ¾î ? ");
+			System.out.print("ì˜ì–´ ? ");
 			vo.setEng(sc.nextInt());
 
-			System.out.print("¼öÇĞ ? ");
+			System.out.print("ìˆ˜í•™ ? ");
 			vo.setMat(sc.nextInt());
 
-			System.out.println("¼öÁ¤ ¿Ï·á!");
+			System.out.println("ìˆ˜ì • ì™„ë£Œ!");
 		} catch (InputMismatchException e) {
-			System.out.println("Á¡¼ö´Â ¼ıÀÚ¸¸ ÀÔ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ëŠ” ìˆ«ìë§Œ ì…ë ¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			sc.nextLine();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -113,31 +113,31 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void delete() {
-		System.out.println("\n»èÁ¦");
+		System.out.println("\nì‚­ì œ");
 
 		String hak;
-		System.out.print("»èÁ¦ÇÒ ÇĞ¹ø?");
+		System.out.print("ì‚­ì œí•  í•™ë²ˆ?");
 		hak = sc.next();
 
 		ScoreVO vo = map.remove(hak);
 		if (vo == null) {
-			System.out.println("µî·ÏµÈ ÀÚ·á°¡ ¾Æ´Õ´Ï´Ù.\n");
+			System.out.println("ë“±ë¡ëœ ìë£Œê°€ ì•„ë‹™ë‹ˆë‹¤.\n");
 			return;
 		}
-		System.out.println(vo.getName() + "´ÔÀÇ ÀÚ·á »èÁ¦ ¿Ï·á.\n");
+		System.out.println(vo.getName() + "ë‹˜ì˜ ìë£Œ ì‚­ì œ ì™„ë£Œ.\n");
 	}
 
 	@Override
 	public void findByHak() {
-		System.out.println("\nÇĞ¹øÀ¸·Î °Ë»ö");
+		System.out.println("\ní•™ë²ˆìœ¼ë¡œ ê²€ìƒ‰");
 
 		String hak;
-		System.out.print("°Ë»öÇÒ ÇĞ¹ø?");
+		System.out.print("ê²€ìƒ‰í•  í•™ë²ˆ?");
 		hak = sc.next();
 
 		ScoreVO vo = map.get(hak);
 		if (vo == null) {
-			System.out.println("ÇØ´ç ÇĞ¹øÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("í•´ë‹¹ í•™ë²ˆì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			return;
 		}
 
@@ -146,17 +146,17 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void findByName() {
-		System.out.println("\nÀÌ¸§À¸·Î °Ë»ö");
+		System.out.println("\nì´ë¦„ìœ¼ë¡œ ê²€ìƒ‰");
 
 		String name;
-		System.out.println("°Ë»öÇÒ ÀÌ¸§?");
+		System.out.println("ê²€ìƒ‰í•  ì´ë¦„?");
 		name = sc.next();
 
 		Iterator<String> it = map.keySet().iterator();
 		while (it.hasNext()) {
 			String hak = it.next();
 			ScoreVO vo = map.get(hak);
-			if (vo.getName().indexOf(name) >= 0) {// Å°¿öµå°¡ ÀÌ¸§¿¡ Æ÷ÇÔµÇ¾î ÀÖÀ¸¸é
+			if (vo.getName().indexOf(name) >= 0) {// í‚¤ì›Œë“œê°€ ì´ë¦„ì— í¬í•¨ë˜ì–´ ìˆìœ¼ë©´
 				System.out.println(vo);
 			}
 		}

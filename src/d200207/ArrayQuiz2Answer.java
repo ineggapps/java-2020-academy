@@ -1,4 +1,4 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Scanner;
 
@@ -9,16 +9,16 @@ public class ArrayQuiz2Answer {
 		int max, min, tot;
 
 		tot = max = min = 0;
-		// ÀÔ·Â ¹× ÀüÃ¼ Á¡¼öÀÇ ÇÕ
+		// ì…ë ¥ ë° ì „ì²´ ì ìˆ˜ì˜ í•©
 		for (int i = 0; i < 5; i++) {
 			do {
-				System.out.print((i + 1) + "¹øÂ° Á¡¼ö: ");
+				System.out.print((i + 1) + "ë²ˆì§¸ ì ìˆ˜: ");
 				score[i] = sc.nextInt();
 			} while (score[i] < 0 || score[i] > 10);
 			tot += score[i];
 		}
 
-		// ÃÖ´ñ°ª, ÃÖ¼Ú°ª, ÃëµæÁ¡¼ö ±¸ÇÏ±â
+		// ìµœëŒ“ê°’, ìµœì†Ÿê°’, ì·¨ë“ì ìˆ˜ êµ¬í•˜ê¸°
 		max = min = score[0];
 		for (int i = 1; i < score.length; i++) {
 			if (max < score[i]) {
@@ -28,11 +28,11 @@ public class ArrayQuiz2Answer {
 			}
 		}
 		
-		System.out.print("Á¡¼ö ¸®½ºÆ®: ");
+		System.out.print("ì ìˆ˜ ë¦¬ìŠ¤íŠ¸: ");
 		for(int s:score) {
 			System.out.print(s+"\t");
 		}
-		System.out.printf("\nÃëµæÁ¡¼ö: %d",tot-max-min);
+		System.out.printf("\nì·¨ë“ì ìˆ˜: %d",tot-max-min);
 		sc.close();
 	}
 }

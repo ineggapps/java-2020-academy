@@ -1,10 +1,10 @@
-public class Ex001_while {
+ï»¿public class Ex001_while {
 	public static void main(String[] args) {
 /*
-		1~10 ±îÁö Á¤¼ö¸¦ Ãâ·Â
+		1~10 ê¹Œì§€ ì •ìˆ˜ë¥¼ ì¶œë ¥
 */ 
 		int n;
-		n=0; // ÃÊ±âÈ­°¡ ÇÊ¿ä
+		n=0; // ì´ˆê¸°í™”ê°€ í•„ìš”
 		while(n<10) {
 			n++;
 			System.out.print(n+"  ");
@@ -13,7 +13,7 @@ public class Ex001_while {
 		// System.out.println(n); // 10
 		
 /*		
-		int n=0; // º¯¼ö ¼±¾ðµÂ µ¿½Ã¿¡ ÃÊ±âÈ­
+		int n=0; // ë³€ìˆ˜ ì„ ì–¸ë  ë™ì‹œì— ì´ˆê¸°í™”
 		while(n++<10) {
 			System.out.print(n+"  ");
 		}

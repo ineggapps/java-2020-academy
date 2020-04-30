@@ -1,8 +1,8 @@
-package d200210;
+ï»¿package d200210;
 
 public class BubbleSortEx2 {
 	public static void main(String[] args) {
-		// ÀÌ¹Ì Á¤·ÄÀÌ ¸¹ÀÌ µÇ¾î ÀÖ´Â °æ¿ì·Î ÃÊ±ê°ªÀ» ¼³Á¤ÇØ µÎ¾úÀ½. (°³¼±µÈ ¹öºí Á¤·Ä·Î´Â 3È¸Àü Á¤µµ¿¡¼­ Á¤·ÄÀÌ ³¡³²)
+		// ì´ë¯¸ ì •ë ¬ì´ ë§ì´ ë˜ì–´ ìˆëŠ” ê²½ìš°ë¡œ ì´ˆê¹ƒê°’ì„ ì„¤ì •í•´ ë‘ì—ˆìŒ. (ê°œì„ ëœ ë²„ë¸” ì •ë ¬ë¡œëŠ” 3íšŒì „ ì •ë„ì—ì„œ ì •ë ¬ì´ ëë‚¨)
 		int[] num = new int[] { 20, 30, 40, 25, 45, 50, 55, 60, 65 };
 		boolean flag;
 		int pass, temp;
@@ -13,12 +13,12 @@ public class BubbleSortEx2 {
 		}
 		System.out.println();
 
-		// °³¼±µÈ ¹öºí Á¤·Ä
+		// ê°œì„ ëœ ë²„ë¸” ì •ë ¬
 		pass = 1;
 		do {
 			flag=false;
 			for (int i = 0; i < num.length - pass; i++) {
-				// ´ë¼Ò ºñ±³ÇÏ¿© Á¤·Ä ½Ç½Ã
+				// ëŒ€ì†Œ ë¹„êµí•˜ì—¬ ì •ë ¬ ì‹¤ì‹œ
 				if (num[i] > num[i + 1]) {
 					System.out.printf("%d > %d\n",num[i],num[i+1]);
 					temp = num[i];
@@ -27,7 +27,7 @@ public class BubbleSortEx2 {
 					flag = true;
 				}
 			}
-			System.out.print(pass+"È¸Àü: ");
+			System.out.print(pass+"íšŒì „: ");
 			for (int n : num) {
 				System.out.print(n + " ");
 			}

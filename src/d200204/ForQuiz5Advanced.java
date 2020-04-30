@@ -1,21 +1,21 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class ForQuiz5Advanced {
 	public static void main(String[] args) {
-		// 10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹ŞÀº Á¤¼ö Áß °¡Àå Å« °ªÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+		// 10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì€ ì •ìˆ˜ ì¤‘ ê°€ì¥ í° ê°’ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 		int max = Integer.MIN_VALUE, n;
-		System.out.println("(ÃÖ´ñ°ª ±¸ÇÏ±â) 10°³ÀÇ Á¤¼ö ÀÔ·Â");
+		System.out.println("(ìµœëŒ“ê°’ êµ¬í•˜ê¸°) 10ê°œì˜ ì •ìˆ˜ ì…ë ¥");
 		for (int i = 1; i <= 10; i++) {
 			n = sc.nextInt();
-			// Ã¹ ¹øÂ° ¹øÁöÀÇ °ªÀ» ÃÖ´ñ°ªÀ» ¼¼ÆÃÇØ³õ°í ºñ±³ÇÏ±â
+			// ì²« ë²ˆì§¸ ë²ˆì§€ì˜ ê°’ì„ ìµœëŒ“ê°’ì„ ì„¸íŒ…í•´ë†“ê³  ë¹„êµí•˜ê¸°
 			if (max < n) {
 				max = n;
 			}
 		}
-		System.out.println("ÃÖ´ñ°ª: " + max);
+		System.out.println("ìµœëŒ“ê°’: " + max);
 		sc.close();
 	}
 }

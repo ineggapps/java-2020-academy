@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 
 import java.util.Iterator;
 import java.util.Vector;
@@ -6,54 +6,54 @@ import java.util.Vector;
 public class Ex4 {
 	public static void main(String[] args) {
 //		List<String> list = new Vector<String>();
-		// Listº¸´Ù VectorÀÇ ¸Ş¼­µå°¡ ´õ ¸¹´Ù.
+		// Listë³´ë‹¤ Vectorì˜ ë©”ì„œë“œê°€ ë” ë§ë‹¤.
 
-		// ArrayList µ¿±âÈ­¸¦ Áö¿øÇÏÁö ¾ÊÀ½
-		// Vector:µ¿±âÈ­¸¦ Áö¿øÇÔ (¸ÖÆ¼¾²·¹µå È¯°æ¿¡¼­ ¾ÈÀüÇÏ´Ù)
+		// ArrayList ë™ê¸°í™”ë¥¼ ì§€ì›í•˜ì§€ ì•ŠìŒ
+		// Vector:ë™ê¸°í™”ë¥¼ ì§€ì›í•¨ (ë©€í‹°ì“°ë ˆë“œ í™˜ê²½ì—ì„œ ì•ˆì „í•˜ë‹¤)
 		Vector<String> list = new Vector<String>();
-		// VectorÀÇ ÃÊ±â ¿ë·® È®ÀÎÇÏ±â
-		System.out.println("ÃÊ±â ¿ë·®:" + list.capacity());
+		// Vectorì˜ ì´ˆê¸° ìš©ëŸ‰ í™•ì¸í•˜ê¸°
+		System.out.println("ì´ˆê¸° ìš©ëŸ‰:" + list.capacity());
 
 		for (int i = 1; i <= 21; i++) {
 			list.add("a" + i);
 		}
 
-		// ¿ë·®ÀÌ ºÎÁ·ÇÏ¸é 10°³¾¿ ´Ã¾î³­´Ù
-		// ¾Æ´Ñµ¥.. 10, 20, 40, 80, 160°³¾¿ ´Ã¾î³ª´Âµ¥..
-		System.out.println("°³¼ö: " + list.size());
-		System.out.println("¿ë·®:" + list.capacity());
+		// ìš©ëŸ‰ì´ ë¶€ì¡±í•˜ë©´ 10ê°œì”© ëŠ˜ì–´ë‚œë‹¤
+		// ì•„ë‹Œë°.. 10, 20, 40, 80, 160ê°œì”© ëŠ˜ì–´ë‚˜ëŠ”ë°..
+		System.out.println("ê°œìˆ˜: " + list.size());
+		System.out.println("ìš©ëŸ‰:" + list.capacity());
 
 		list.add(0, "Korea");
 		System.out.println(list);
 
-		// Ã³À½ÀÎ µ¥ÀÌÅÍ ÃßÃâ
-		System.out.println("Ã³À½: " + list.get(0));
-		System.out.println("Ã³À½: " + list.firstElement());
+		// ì²˜ìŒì¸ ë°ì´í„° ì¶”ì¶œ
+		System.out.println("ì²˜ìŒ: " + list.get(0));
+		System.out.println("ì²˜ìŒ: " + list.firstElement());
 
-		// ¸¶Áö¸· µ¥ÀÌÅÍ ÃßÃâ
-		System.out.println("¸¶Áö¸·: " + list.get(list.size() - 1));
-		System.out.println("¸¶Áö¸·: " + list.lastElement());
+		// ë§ˆì§€ë§‰ ë°ì´í„° ì¶”ì¶œ
+		System.out.println("ë§ˆì§€ë§‰: " + list.get(list.size() - 1));
+		System.out.println("ë§ˆì§€ë§‰: " + list.lastElement());
 
-		list.set(0, "´ëÇÑ¹Î±¹");
+		list.set(0, "ëŒ€í•œë¯¼êµ­");
 		System.out.println(list);
 
-		// ÀüÃ¼ °¡Á®¿À±â
-		// Çâ»óµÈ for¹®Àå ÀÌ¿ëÇÏ±â
-		System.out.println("ÀüÃ¼-1");
+		// ì „ì²´ ê°€ì ¸ì˜¤ê¸°
+		// í–¥ìƒëœ forë¬¸ì¥ ì´ìš©í•˜ê¸°
+		System.out.println("ì „ì²´-1");
 		for (String s : list) {
 			System.out.print(s + " ");
 		}
 		System.out.println();
 
-		// ¹İº¹¹® for°ú get()À» ÀÌ¿ëÇØ¼­ °¡Á®¿À±â
-		System.out.println("ÀüÃ¼-2");
+		// ë°˜ë³µë¬¸ forê³¼ get()ì„ ì´ìš©í•´ì„œ ê°€ì ¸ì˜¤ê¸°
+		System.out.println("ì „ì²´-2");
 		for (int i = 0; i < list.size(); i++) {
 			System.out.print(list.get(i) + " ");
 		}
 		System.out.println();
 
-		// Iterator ÀÌ¿ëÇØ¼­ °¡Á®¿À±â
-		System.out.println("ÀüÃ¼-3");
+		// Iterator ì´ìš©í•´ì„œ ê°€ì ¸ì˜¤ê¸°
+		System.out.println("ì „ì²´-3");
 		Iterator<String> it = list.iterator();
 		while (it.hasNext()) {
 			String s = it.next();
@@ -61,25 +61,25 @@ public class Ex4 {
 		}
 		System.out.println();
 
-		// ¿ª¼øÀ¸·Î °¡Á®¿À±â
-		System.out.println("¿ª¼ø");
+		// ì—­ìˆœìœ¼ë¡œ ê°€ì ¸ì˜¤ê¸°
+		System.out.println("ì—­ìˆœ");
 		for (int i = list.size() - 1; i >= 0; i--) {
 			System.out.print(list.get(i) + " ");
 		}
 		System.out.println();
 
-		// À§Ä¡±¸ÇÏ±â
+		// ìœ„ì¹˜êµ¬í•˜ê¸°
 		list.remove(3);
 		list.remove("a7");
 
-		// ÀüÃ¼ »èÁ¦
+		// ì „ì²´ ì‚­ì œ
 		list.clear();
 
-		System.out.println("°³¼ö: " + list.size());
-		System.out.println("¿ë·®: " + list.capacity());
+		System.out.println("ê°œìˆ˜: " + list.size());
+		System.out.println("ìš©ëŸ‰: " + list.capacity());
 
-		// ¿ë·®À» °³¼ö·Î Á¶Á¤
+		// ìš©ëŸ‰ì„ ê°œìˆ˜ë¡œ ì¡°ì •
 		list.trimToSize();
-		System.out.println("¿ë·®: " + list.capacity());
+		System.out.println("ìš©ëŸ‰: " + list.capacity());
 	}
 }

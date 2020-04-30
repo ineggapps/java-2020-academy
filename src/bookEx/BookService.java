@@ -1,4 +1,4 @@
-package bookEx;
+ï»¿package bookEx;
 
 import java.util.List;
 import java.util.Scanner;
@@ -12,19 +12,19 @@ public class BookService {
 	}
 	
 	public void insertBook() {
-		System.out.println("\nµµ¼­ µî·Ï...");
+		System.out.println("\në„ì„œ ë“±ë¡...");
 		
 		String code, subject;
 		
-		System.out.print("µµ¼­ÄÚµå ? ");
+		System.out.print("ë„ì„œì½”ë“œ ? ");
 		code = sc.next();
 		
 		if(book.readBook(code)!=null) {
-			System.out.println("µî·ÏµÈ ÄÚµå ÀÔ´Ï´Ù.\n");
+			System.out.println("ë“±ë¡ëœ ì½”ë“œ ì…ë‹ˆë‹¤.\n");
 			return;
 		}
 		
-		System.out.print("µµ¼­¸í ? ");
+		System.out.print("ë„ì„œëª… ? ");
 		subject = sc.next();
 		
 		BookVO vo = new BookVO();
@@ -32,26 +32,26 @@ public class BookService {
 		vo.setSubject(subject);
 		
 		book.insertBook(vo);
-		System.out.println("µµ¼­°¡ µî·Ï µÇ¾ú½À´Ï´Ù.\n");
+		System.out.println("ë„ì„œê°€ ë“±ë¡ ë˜ì—ˆìŠµë‹ˆë‹¤.\n");
 	}
 	
 	public void updateBook() {
-		System.out.println("\nµµ¼­ ¼öÁ¤...");
+		System.out.println("\në„ì„œ ìˆ˜ì •...");
 	}
 	
 	public void deleteBook() {
-		System.out.println("\nµµ¼­ »èÁ¦...");
+		System.out.println("\në„ì„œ ì‚­ì œ...");
 	}
 	
 	public void findBySubject() {
-		System.out.println("\nµµ¼­¸í °Ë»ö...");
+		System.out.println("\në„ì„œëª… ê²€ìƒ‰...");
 		String subject;
 		
-		System.out.print("°Ë»öÇÒ µµ¼­¸í ? ");
+		System.out.print("ê²€ìƒ‰í•  ë„ì„œëª… ? ");
 		subject = sc.next();
 		
 		List<BookVO> slist = book.listBook(subject);
-		System.out.println("ÄÚµå\tµµ¼­¸í");
+		System.out.println("ì½”ë“œ\të„ì„œëª…");
 		
 		for(BookVO vo : slist) {
 			System.out.print(vo.getCode()+"\t");

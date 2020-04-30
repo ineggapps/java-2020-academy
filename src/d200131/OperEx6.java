@@ -1,20 +1,20 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class OperEx6 {
 	public static void main(String[] args) {
-		// Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ Â¦¼öÀÎÁö È¦¼öÀÎÁö¸¦ ÆÇº°
+		// ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€ë¥¼ íŒë³„
 		Scanner sc = new Scanner(System.in);
 		int a;
 		String s;
 
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥: ");
 		a = sc.nextInt();
 
-		s = a % 2 == 0 ? "Â¦¼ö" : "È¦¼ö";
-		s = (a & 1) == 0 ? "Â¦¼ö" : "È¦¼ö";
-		System.out.println(a + "Àº " + s + "ÀÔ´Ï´Ù.");
+		s = a % 2 == 0 ? "ì§ìˆ˜" : "í™€ìˆ˜";
+		s = (a & 1) == 0 ? "ì§ìˆ˜" : "í™€ìˆ˜";
+		System.out.println(a + "ì€ " + s + "ì…ë‹ˆë‹¤.");
 
 		sc.close();
 	}

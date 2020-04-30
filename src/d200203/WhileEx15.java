@@ -1,28 +1,28 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
 public class WhileEx15 {
 	public static void main(String[] args) {
-		//Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 1ºÎÅÍ ÀÔ·Â ¹ŞÀº ¼ö±îÁö ÇÕ ±¸ÇÏ±â
-		//¼±¾ğ
+		//ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 1ë¶€í„° ì…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ í•© êµ¬í•˜ê¸°
+		//ì„ ì–¸
 		Scanner sc = new Scanner(System.in);
 		int num;
 		int n=0,s=0;
 		
-		//ÀÔ·Â
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		//ì…ë ¥
+		System.out.print("ì •ìˆ˜ ì…ë ¥: ");
 		num = sc.nextInt();
 		
-		//¿¬»ê
+		//ì—°ì‚°
 		while(n<num) {
 			n++;
 			System.out.printf("%d+%d=%d%n",s,n,s+n);
 			s+=n;
 		}
 		
-		//°á°ú
-		System.out.printf("1¿¡¼­ %d±îÁöÀÇ ÇÕÀº %dÀÔ´Ï´Ù.",num,s);
+		//ê²°ê³¼
+		System.out.printf("1ì—ì„œ %dê¹Œì§€ì˜ í•©ì€ %dì…ë‹ˆë‹¤.",num,s);
 		sc.close();
 	}
 }

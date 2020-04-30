@@ -1,27 +1,27 @@
-package d200210;
+ï»¿package d200210;
 
 import java.util.Scanner;
 
 public class ArrayQuiz8 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int size;// ÇÑ ¶óÀÎ(°¡·Î, ¼¼·Î)´ç ¸î ¹øÀÇ ¼ıÀÚ¸¦ Ã¤¿ö³Ö´ÂÁö
+		int size;// í•œ ë¼ì¸(ê°€ë¡œ, ì„¸ë¡œ)ë‹¹ ëª‡ ë²ˆì˜ ìˆ«ìë¥¼ ì±„ì›Œë„£ëŠ”ì§€
 		do {
-			System.out.print("È¦¼ö ? ");
+			System.out.print("í™€ìˆ˜ ? ");
 			size = sc.nextInt();
 		} while ((size & 1) == 0);
-		// 1~25±îÁöÀÇ ¼ö ¸¶¹æÁø ±×¸®±â
+		// 1~25ê¹Œì§€ì˜ ìˆ˜ ë§ˆë°©ì§„ ê·¸ë¦¬ê¸°
 		int[][] a = new int[size][size];
 		int cnt = 1;
 
-		int row = 0;// ¼¼·Î ÁÂÇ¥
-		int col = a.length / 2;// °¡·Î ÁÂÇ¥
-		// ¿¬»ê
+		int row = 0;// ì„¸ë¡œ ì¢Œí‘œ
+		int col = a.length / 2;// ê°€ë¡œ ì¢Œí‘œ
+		// ì—°ì‚°
 		for (int i = 0; i < size * size; i++) {
-			// Ãâ·Â
+			// ì¶œë ¥
 			a[row][col] = cnt++;
 
-			// ÁÂÇ¥ ÀÌµ¿
+			// ì¢Œí‘œ ì´ë™
 			if (row - 1 < 0) {
 				row = a.length - 1;
 			} else {
@@ -33,14 +33,14 @@ public class ArrayQuiz8 {
 				col++;
 			}
 
-			// Á¶ÀıµÈ ÁÂÇ¥¿¡ °ªÀÌ ÀÖ´ÂÁö ÆÇ´ÜÇÏ±â (°ªÀÌ ÀÖÀ¸¸é ¼¼·Î ÇÑ Ä­ ³»¸®±â)
+			// ì¡°ì ˆëœ ì¢Œí‘œì— ê°’ì´ ìˆëŠ”ì§€ íŒë‹¨í•˜ê¸° (ê°’ì´ ìˆìœ¼ë©´ ì„¸ë¡œ í•œ ì¹¸ ë‚´ë¦¬ê¸°)
 			if (a[row][col] > 0) {
-				// °ª º¸Á¤ÇÏ±â
+				// ê°’ ë³´ì •í•˜ê¸°
 				row += 2;
 				col--;
 			}
 
-			// À§Ä¡°¡ À¯È¿ÇÏÁö ¾ÊÀº ¹üÀ§ÀÇ ¿µ¿ªÀÌ¶ó¸é º¸Á¤ÇÏ±â
+			// ìœ„ì¹˜ê°€ ìœ íš¨í•˜ì§€ ì•Šì€ ë²”ìœ„ì˜ ì˜ì—­ì´ë¼ë©´ ë³´ì •í•˜ê¸°
 			if (row >= a.length) {
 				row = row - a.length;
 			}
@@ -50,7 +50,7 @@ public class ArrayQuiz8 {
 
 		}
 
-		// Ãâ·Â
+		// ì¶œë ¥
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.printf("%3d\t", a[i][j]);

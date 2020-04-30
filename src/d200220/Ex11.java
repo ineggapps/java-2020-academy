@@ -1,13 +1,13 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex11 {
 	public static void main(String[] args) {
-//		Demo11 ob = new Demo11();//ÄÄÆÄÀÏ ¿À·ù
-		Demo11 ob = new Demo11() {//ÄÄÆÄÀÏ ½Ã Ex11$1.class·Î ÆÄÀÏÀÌ ¸¸µé¾îÁø °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
-			//ÀÍ¸íÀÇ ±¸Çö °´Ã¼
+//		Demo11 ob = new Demo11();//ì»´íŒŒì¼ ì˜¤ë¥˜
+		Demo11 ob = new Demo11() {//ì»´íŒŒì¼ ì‹œ Ex11$1.classë¡œ íŒŒì¼ì´ ë§Œë“¤ì–´ì§„ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìˆë‹¤.
+			//ìµëª…ì˜ êµ¬í˜„ ê°ì²´
 			@Override
 			public void print() {
-				System.out.println("¿ì¿Í...");
+				System.out.println("ìš°ì™€...");
 			}
 		};
 		ob.print();

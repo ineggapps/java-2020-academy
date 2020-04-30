@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -9,31 +9,31 @@ public class Ex16 {
 		User16 user = new User16();
 
 		try {
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			user.setName(sc.next());
-			System.out.print("³ªÀÌ ? ");
+			System.out.print("ë‚˜ì´ ? ");
 			user.setAge(sc.nextInt());
 			System.out.println(user.getName() + ":" + user.getAge());
 		} catch (InputMismatchException e) {
-			System.out.println("¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”.");
 		} catch (AgeValidException e) {
 			System.out.println(e.getMessage());
-		} catch (Exception e) {// InputMismatchException°ú AgeValidException ÀÌ¿ÜÀÇ ¿¹¿Ü°¡ ¹ß»ıÇÑ °æ¿ì
-			System.out.println("ÀÔ·Â ¿À·ù");
+		} catch (Exception e) {// InputMismatchExceptionê³¼ AgeValidException ì´ì™¸ì˜ ì˜ˆì™¸ê°€ ë°œìƒí•œ ê²½ìš°
+			System.out.println("ì…ë ¥ ì˜¤ë¥˜");
 		} finally {
 			sc.close();
 		}
 
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 	}
 }
 
-//»ç¿ëÀÚ Á¤ÀÇ ¿¹¿Ü Å¬·¡½º ÀÛ¼º
+//ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ í´ë˜ìŠ¤ ì‘ì„±
 class AgeValidException extends Exception {
 	private static final long serialVersionUID = 1L;
 
-	// serialVersionUID: ExceptionÀ» ½Å¿øÀ» ±¸º° (±âÀÔÇÏÁö ¾ÊÀ¸¸é ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î ºÙ¿© ÁÜ)
-	// ºĞ»êÈ¯°æ °°Àº ³×Æ®¿öÅ© È¯°æ¿¡¼­µµ ¾²ÀÌ´Â °³³äÀÌ¹Ç·Î °¡º±°Ô »ı°¢.
+	// serialVersionUID: Exceptionì„ ì‹ ì›ì„ êµ¬ë³„ (ê¸°ì…í•˜ì§€ ì•Šìœ¼ë©´ ì»´íŒŒì¼ëŸ¬ê°€ ìë™ìœ¼ë¡œ ë¶™ì—¬ ì¤Œ)
+	// ë¶„ì‚°í™˜ê²½ ê°™ì€ ë„¤íŠ¸ì›Œí¬ í™˜ê²½ì—ì„œë„ ì“°ì´ëŠ” ê°œë…ì´ë¯€ë¡œ ê°€ë³ê²Œ ìƒê°.
 	public AgeValidException() {
 		this("AgeValidException");
 	}
@@ -61,7 +61,7 @@ class User16 {
 
 	public void setAge(int age) throws AgeValidException {
 		if (age < 0) {
-			throw new AgeValidException("³ªÀÌ´Â 0º¸´Ù Å©°Å³ª °°¾Æ¾ßÇÕ´Ï´Ù.");
+			throw new AgeValidException("ë‚˜ì´ëŠ” 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼í•©ë‹ˆë‹¤.");
 		}
 		this.age = age;
 

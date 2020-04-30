@@ -1,4 +1,4 @@
-package d200214;
+ï»¿package d200214;
 
 import java.util.Arrays;
 
@@ -11,14 +11,14 @@ public class Ex8 {
 	}
 	
 	public static void main(String[] args) {
-		String[] ss= {"¼­¿ï","ºÎ»ê","´ë±¸","±¤ÁÖ","´ëÀü"};
+		String[] ss= {"ì„œìš¸","ë¶€ì‚°","ëŒ€êµ¬","ê´‘ì£¼","ëŒ€ì „"};
 
-		System.out.print("sort Àü: ");
+		System.out.print("sort ì „: ");
 		print(ss);
 		
 		Arrays.sort(ss);
 		
-		System.out.print("sort ÈÄ: ");
+		System.out.print("sort í›„: ");
 		print(ss);
 	}
 }

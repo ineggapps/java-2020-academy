@@ -1,7 +1,7 @@
-public class Ex016_Multiple {
+ï»¿public class Ex016_Multiple {
 	public static void main(String[] args) {
 /*
-		1~100±îÁö ¼öÁß 3 ¶Ç´Â 5ÀÇ ¹è¼ö¸¦ Á¦¿ÜÇÑ ¼ö¸¦ ÇÑ ÁÙ¿¡ 5°³¾¿ Ãâ·Â
+		1~100ê¹Œì§€ ìˆ˜ì¤‘ 3 ë˜ëŠ” 5ì˜ ë°°ìˆ˜ë¥¼ ì œì™¸í•œ ìˆ˜ë¥¼ í•œ ì¤„ì— 5ê°œì”© ì¶œë ¥
 */
 		int n, cnt;
 		

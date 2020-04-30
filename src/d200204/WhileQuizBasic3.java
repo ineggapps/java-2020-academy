@@ -1,7 +1,7 @@
-package d200204;
+ï»¿package d200204;
 
 public class WhileQuizBasic3 {
-	//A~Z±îÁöÀÇ ¿µ¹®ÀÚ¸¦ ÇÑ ÁÙ¿¡ 5°³¾¿ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ±â
+	//A~Zê¹Œì§€ì˜ ì˜ë¬¸ìë¥¼ í•œ ì¤„ì— 5ê°œì”© ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ê¸°
 	public static void main(String[] args) {
 		char a = 'A', cnt = 0;
 		while (a <= 'Z') {

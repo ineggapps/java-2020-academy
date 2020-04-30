@@ -1,12 +1,12 @@
-public class Ex002_switch {
+ï»¿public class Ex002_switch {
 	public static void main(String[] args) {
 /*
-		13ÀÌ 3ÀÇ ¹è¼öÀÎÁö È®ÀÎÇÏ´Â ÇÁ·Î±×·¥
+		13ì´ 3ì˜ ë°°ìˆ˜ì¸ì§€ í™•ì¸í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int n=13;
 		switch(n%3) {
-		case 0: System.out.println(n+" : 3ÀÇ ¹è¼ö"); break;
-		case 1: case 2: System.out.println(n+" : 3ÀÇ ¹è¼ö°¡ ¾Æ´Ô"); break;
+		case 0: System.out.println(n+" : 3ì˜ ë°°ìˆ˜"); break;
+		case 1: case 2: System.out.println(n+" : 3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹˜"); break;
 		}
 	}
 }

@@ -1,20 +1,20 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz102_Leap {
 	public static void main(String[] args) {
 /*
-		³âµµ¸¦ ÀÔ·Â ¹Ş¾Æ Æò³âÀÎÁö À±³âÀÌÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		ë…„ë„ë¥¼ ì…ë ¥ ë°›ì•„ í‰ë…„ì¸ì§€ ìœ¤ë…„ì´ì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc=new Scanner(System.in);
 		int y;
 		
-		System.out.print("³âµµ ? ");
+		System.out.print("ë…„ë„ ? ");
 		y=sc.nextInt();
 		
 		if(y%4==0 && y%100!=0 || y%400==0) {
-			System.out.println(y + "³âµµ´Â À±³âÀÔ´Ï´Ù.");
+			System.out.println(y + "ë…„ë„ëŠ” ìœ¤ë…„ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println(y + "³âµµ´Â Æò³âÀÔ´Ï´Ù.");
+			System.out.println(y + "ë…„ë„ëŠ” í‰ë…„ì…ë‹ˆë‹¤.");
 		}
 		
 		sc.close();

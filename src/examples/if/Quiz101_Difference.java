@@ -1,19 +1,19 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz101_Difference {
 	public static void main(String[] args) {
 /*
-		µÎÁ¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ Å«¼ö¿¡¼­ ÀûÀº¼ö¿ÍÀÇ Â÷ÀÌ¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		ë‘ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ í°ìˆ˜ì—ì„œ ì ì€ìˆ˜ì™€ì˜ ì°¨ì´ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 
-		d=n1-n2¸¦ ÇÑÈÄ d¸¦ Àı´ë°ªÀ» °è»êÇØµµ °¡´É
+		d=n1-n2ë¥¼ í•œí›„ dë¥¼ ì ˆëŒ€ê°’ì„ ê³„ì‚°í•´ë„ ê°€ëŠ¥
 */
 		Scanner sc=new Scanner(System.in);
 		int n1, n2, d;
 		
-		System.out.print("Ã¹¹øÂ°¼ö ? ");
+		System.out.print("ì²«ë²ˆì§¸ìˆ˜ ? ");
 		n1=sc.nextInt();
 		
-		System.out.print("µÎ¹øÂ°¼ö ? ");
+		System.out.print("ë‘ë²ˆì§¸ìˆ˜ ? ");
 		n2=sc.nextInt();
 		
 		if(n1>n2) {
@@ -22,7 +22,7 @@ public class Quiz101_Difference {
 			d=n2-n1;
 		}
 		
-		System.out.println("µÎ¼öÀÇ Â÷ÀÌ : " + d);
+		System.out.println("ë‘ìˆ˜ì˜ ì°¨ì´ : " + d);
 		
 		sc.close();
 	}

@@ -1,20 +1,20 @@
-package d200129;
+ï»¿package d200129;
 
 public class OperEx1 {
 	public static void main(String[] args) {
 		short a=10, b=5,c;
 //		c=a+b;//Type mismatch: cannot convert int to short
-		//°á°ú´Â intÇüÀ¸·Î ¹İÈ¯µÈ´Ù. int´Â short¿¡ ´ëÀÔÇÒ ¼ö ¾øÀ¸¹Ç·Î ÄÄÆÄÀÏ ¿À·ù°¡ ¹ß»ıÇÑ´Ù
+		//ê²°ê³¼ëŠ” intí˜•ìœ¼ë¡œ ë°˜í™˜ëœë‹¤. intëŠ” shortì— ëŒ€ì…í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ ì»´íŒŒì¼ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤
 		c=(short)(a+b);
 		System.out.println(c);
 		
 //		int x,y;
-//		x=y+'A';//(y¸¦ ÃÊ±âÈ­ÇÏÁö ¾ÊÀ» °æ¿ì) The local variable y may not been initialized
-//		y°¡ ÃÊ±âÈ­µÇÁö ¾ÊÀº »óÅÂ¿¡¼­´Â ¿¬»êÀ» ½ÃÀÛÇÒ ¼ö ¾ø´Ù. ±×·¯¹Ç·Î ÄÄÆÄÀÏ ¿À·ù°¡ ¹ß»ıÇÑ´Ù
+//		x=y+'A';//(yë¥¼ ì´ˆê¸°í™”í•˜ì§€ ì•Šì„ ê²½ìš°) The local variable y may not been initialized
+//		yê°€ ì´ˆê¸°í™”ë˜ì§€ ì•Šì€ ìƒíƒœì—ì„œëŠ” ì—°ì‚°ì„ ì‹œì‘í•  ìˆ˜ ì—†ë‹¤. ê·¸ëŸ¬ë¯€ë¡œ ì»´íŒŒì¼ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤
 		
 		int x,y;
 		y=10;
 		x=y+'A';	
-		System.out.println(x);//75¶ó´Â °á±£°ªÀÌ Ãâ·ÂµÈ´Ù.
+		System.out.println(x);//75ë¼ëŠ” ê²°ê´ê°’ì´ ì¶œë ¥ëœë‹¤.
 	}
 }

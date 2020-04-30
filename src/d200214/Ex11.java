@@ -1,4 +1,4 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex11 {
 	public static final int RANGE=99000;
@@ -12,8 +12,8 @@ public class Ex11 {
 		
 		long end=System.currentTimeMillis();
 		
-		System.out.println("¹®ÀÚ¿­ ±æÀÌ:"+sb.length());
-		System.out.println("½ÇÇà½Ã°£:"+(end-start)+"ms");
+		System.out.println("ë¬¸ìì—´ ê¸¸ì´:"+sb.length());
+		System.out.println("ì‹¤í–‰ì‹œê°„:"+(end-start)+"ms");
 	}
 	
 	public static void stringBuilderTime() {
@@ -26,8 +26,8 @@ public class Ex11 {
 		
 		long end=System.currentTimeMillis();
 		
-		System.out.println("¹®ÀÚ¿­ ±æÀÌ:"+sb.length());
-		System.out.println("½ÇÇà½Ã°£:"+(end-start)+"ms");
+		System.out.println("ë¬¸ìì—´ ê¸¸ì´:"+sb.length());
+		System.out.println("ì‹¤í–‰ì‹œê°„:"+(end-start)+"ms");
 	}
 	
 	public static void stringTime() {
@@ -37,25 +37,25 @@ public class Ex11 {
 			s+="a";
 		}
 		long end = System.currentTimeMillis();
-		System.out.println("¹®ÀÚ¿­ ±æÀÌ:"+s.length());
-		System.out.println("½ÇÇà½Ã°£:"+(end-start)+"ms");
+		System.out.println("ë¬¸ìì—´ ê¸¸ì´:"+s.length());
+		System.out.println("ì‹¤í–‰ì‹œê°„:"+(end-start)+"ms");
 	}
 	
 	public static void main(String[] args) {
-		//¿¬»ê ¼öÇà ½Ã StringBuilder·Î º¯È¯ÇÏ¿© ¹®ÀÚ¿­À» ´õÇÏ¸é ¼º´ÉÀÌ ¶³¾îÁø´Ù.
-//		String s ="¼­¿ï";
-//		s+="ºÎ»ê";
-//		s+="´ë±¸";
-//		s+="ÀÎÃµ";
-//		s+="±¤ÁÖ";
+		//ì—°ì‚° ìˆ˜í–‰ ì‹œ StringBuilderë¡œ ë³€í™˜í•˜ì—¬ ë¬¸ìì—´ì„ ë”í•˜ë©´ ì„±ëŠ¥ì´ ë–¨ì–´ì§„ë‹¤.
+//		String s ="ì„œìš¸";
+//		s+="ë¶€ì‚°";
+//		s+="ëŒ€êµ¬";
+//		s+="ì¸ì²œ";
+//		s+="ê´‘ì£¼";
 //		System.out.println(s);
 		
-		//StringBuilder, StringBuffer´Â »ç¿ëÇØ¾ß ÇÒ °æ¿ì¿Í ±×·¸Áö ¾ÊÀº °æ¿ì·Î ³ª´¶´Ù.
-		//StringBuilder¿Í StringBufferÀÇ ±Ã±ØÀûÀÎ Â÷ÀÌ´Â µ¿½Ã¼ºÀÇ Áö¿øÀ¯¹«ÀÌ´Ù.
-		//µ¿½Ã¼ºÀ» Áö¿øÇÏ¸é ¼Óµµ´Â ´À·ÁÁöÁö¸¸ Á¤È®¼ºÀº ³ô¾ÆÁø´Ù.
-		//µ¿½Ã¼ºÀ» Áö¿øÇÏ´Â Å¬·¡½º´Â StringBufferÀÌ´Ù.
-		//¹İ¸é, StringBuilder´Â µ¿½Ã¼ºÀ» Áö¿øÇÏÁö ¾ÊÀ¸¹Ç·Î ´ÜÀÏ½º·¹µå È¯°æ¿¡¼­ »ç¿ëÇÒ ¶§ À¯¸®ÇÏ´Ù. 
-		//(StringBuilder´Â ¼Óµµ°¡ Á» ´õ ºü¸£´Ù)
+		//StringBuilder, StringBufferëŠ” ì‚¬ìš©í•´ì•¼ í•  ê²½ìš°ì™€ ê·¸ë ‡ì§€ ì•Šì€ ê²½ìš°ë¡œ ë‚˜ë‰œë‹¤.
+		//StringBuilderì™€ StringBufferì˜ ê¶ê·¹ì ì¸ ì°¨ì´ëŠ” ë™ì‹œì„±ì˜ ì§€ì›ìœ ë¬´ì´ë‹¤.
+		//ë™ì‹œì„±ì„ ì§€ì›í•˜ë©´ ì†ë„ëŠ” ëŠë ¤ì§€ì§€ë§Œ ì •í™•ì„±ì€ ë†’ì•„ì§„ë‹¤.
+		//ë™ì‹œì„±ì„ ì§€ì›í•˜ëŠ” í´ë˜ìŠ¤ëŠ” StringBufferì´ë‹¤.
+		//ë°˜ë©´, StringBuilderëŠ” ë™ì‹œì„±ì„ ì§€ì›í•˜ì§€ ì•Šìœ¼ë¯€ë¡œ ë‹¨ì¼ìŠ¤ë ˆë“œ í™˜ê²½ì—ì„œ ì‚¬ìš©í•  ë•Œ ìœ ë¦¬í•˜ë‹¤. 
+		//(StringBuilderëŠ” ì†ë„ê°€ ì¢€ ë” ë¹ ë¥´ë‹¤)
 		
 		stringBufferTime();
 		stringBuilderTime();

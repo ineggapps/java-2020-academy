@@ -1,24 +1,24 @@
-package d200207;
+ï»¿package d200207;
 
 public class ArrayEx6 {
 	public static void main(String[] args) {
 		/*
-		 * 4380¿øÀ» 500¿ø, 100¿ø, 50¿ø, 10¿øÂ¥¸®·Î ÁöºÒÇÏ±â À§ÇØ¼­ ÇÊ¿äÇÑ µ¿ÀüÀÇ °³¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥. ¹è¿­À» ÀÌ¿ëÇÏ±â
+		 * 4380ì›ì„ 500ì›, 100ì›, 50ì›, 10ì›ì§œë¦¬ë¡œ ì§€ë¶ˆí•˜ê¸° ìœ„í•´ì„œ í•„ìš”í•œ ë™ì „ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨. ë°°ì—´ì„ ì´ìš©í•˜ê¸°
 		 */
 		int m = 4380;
 		int[] u = new int[] { 500, 100, 50, 10 };
 		int tmp;
-		System.out.printf("±İ¾×: %d\n",m);
-		//ÀÛ¼ºÇÑ ´ä¾È
+		System.out.printf("ê¸ˆì•¡: %d\n",m);
+		//ì‘ì„±í•œ ë‹µì•ˆ
 //		for (int i = 0; i < u.length; i++) {
 //			tmp = m/u[i];
-//			System.out.printf("%d¿ø: %dÀå\n",u[i],tmp);
-//			m-=u[i]*tmp; //====ÀÌ°ÍÀº °ğ ³ª¸ÓÁö¿¬»ê°ú µ¿ÀÏÇÔ.
+//			System.out.printf("%dì›: %dì¥\n",u[i],tmp);
+//			m-=u[i]*tmp; //====ì´ê²ƒì€ ê³§ ë‚˜ë¨¸ì§€ì—°ì‚°ê³¼ ë™ì¼í•¨.
 //		}
 		int x;
 		for(int n:u) {
 			x= m/n;
-			System.out.printf("%d¿ø: %dÀå\n",n,x);
+			System.out.printf("%dì›: %dì¥\n",n,x);
 			m%=n;
 		}
 	}

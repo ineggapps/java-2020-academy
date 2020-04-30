@@ -1,16 +1,16 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayCopyEx1 {
 	public static void main(String[] args) {
 		int[] a = new int[] { 10, 20, 30 };
 		int[] b = new int[a.length];
-		int[] c = a; // c¿Í a´Â °°Àº ¹è¿­À» ÂüÁ¶ÇÏ°í ÀÖ´Ù´Â ¶æ.
+		int[] c = a; // cì™€ aëŠ” ê°™ì€ ë°°ì—´ì„ ì°¸ì¡°í•˜ê³  ìˆë‹¤ëŠ” ëœ».
 
-		System.out.println(a==c);//true °°Àº ¹è¿­À» ÂüÁ¶ÇÏ°í ÀÖÀ¸´Ï±î ÁÖ¼Ú°ªÀÌ °°´Ù.
-		System.out.println(a==b);//false ¼­·Î ´Ù¸¥ ¹è¿­À» ÂüÁ¶ÇÏ¹Ç·Î ÁÖ¼Ú°ªÀÌ ´Ù¸£´Ù.
+		System.out.println(a==c);//true ê°™ì€ ë°°ì—´ì„ ì°¸ì¡°í•˜ê³  ìˆìœ¼ë‹ˆê¹Œ ì£¼ì†Ÿê°’ì´ ê°™ë‹¤.
+		System.out.println(a==b);//false ì„œë¡œ ë‹¤ë¥¸ ë°°ì—´ì„ ì°¸ì¡°í•˜ë¯€ë¡œ ì£¼ì†Ÿê°’ì´ ë‹¤ë¥´ë‹¤.
 
-		//¹è¿­
-		//arraycopy(¿øº»¹è¿­,½ÃÀÛÁÖ¼Ò,»çº»¹è¿­,½ÃÀÛÁÖ¼Ò,º¹»çÇÒ ±æÀÌ);
+		//ë°°ì—´
+		//arraycopy(ì›ë³¸ë°°ì—´,ì‹œì‘ì£¼ì†Œ,ì‚¬ë³¸ë°°ì—´,ì‹œì‘ì£¼ì†Œ,ë³µì‚¬í•  ê¸¸ì´);
 		System.arraycopy(a, 0, b, 0, a.length);
 
 		for (int n: b) {

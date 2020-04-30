@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 import java.util.Scanner;
 
@@ -8,18 +8,18 @@ public class Ex15 {
 		User15 user = new User15();
 
 		try {
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			user.setName(sc.next());
-			System.out.print("³ªÀÌ ? ");
+			System.out.print("ë‚˜ì´ ? ");
 			user.setAge(sc.nextInt());
 			System.out.println(user.getName() + ":" + user.getAge());
 		} catch (Exception e) {
-			System.out.println("ÀÔ·Â ¿À·ù");
+			System.out.println("ì…ë ¥ ì˜¤ë¥˜");
 		} finally {
 			sc.close();
 		}
 
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 	}
 }
 
@@ -41,7 +41,7 @@ class User15 {
 
 	public void setAge(int age) throws Exception {
 		if (age < 0) {
-			throw new Exception("³ªÀÌ´Â 0º¸´Ù Å©°Å³ª °°¾Æ¾ßÇÕ´Ï´Ù.");
+			throw new Exception("ë‚˜ì´ëŠ” 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼í•©ë‹ˆë‹¤.");
 		}
 		this.age = age;
 

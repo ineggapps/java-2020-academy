@@ -1,14 +1,14 @@
-package d200217;
+ï»¿package d200217;
 
 import java.math.BigDecimal;
 
 public class Ex4 {
 	public static void main(String[] args) {
-		BigDecimal a = new BigDecimal("1234512341523123123"); //½Ç¼ö Ã³¸®±îÁö °¡´É
+		BigDecimal a = new BigDecimal("1234512341523123123"); //ì‹¤ìˆ˜ ì²˜ë¦¬ê¹Œì§€ ê°€ëŠ¥
 		
 		System.out.println(a.toString());
 		
-		BigDecimal b = a.movePointLeft(3);//¼Ò¼ıÁ¡ ¿ŞÂÊÀ¸·Î 3Ä­ ÀÌµ¿
+		BigDecimal b = a.movePointLeft(3);//ì†Œìˆ«ì  ì™¼ìª½ìœ¼ë¡œ 3ì¹¸ ì´ë™
 		System.out.println(b);
 		
 		BigDecimal c = a.divide(b);
@@ -17,7 +17,7 @@ public class Ex4 {
 		c = a.divide(b, BigDecimal.ROUND_DOWN);
 		System.out.println(c);
 		
-		c = a.divide(b,5, BigDecimal.ROUND_DOWN);//5´Â À¯È¿ÀÚ¸´¼ö¸¦ 5°³·Î ÇÏ°Ú´Ù´Â ÀÇ¹Ì
+		c = a.divide(b,5, BigDecimal.ROUND_DOWN);//5ëŠ” ìœ íš¨ìë¦¿ìˆ˜ë¥¼ 5ê°œë¡œ í•˜ê² ë‹¤ëŠ” ì˜ë¯¸
 		System.out.println(c);
 	}
 }

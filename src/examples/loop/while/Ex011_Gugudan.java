@@ -1,16 +1,16 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex011_Gugudan {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö(´Ü)¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼öÀÇ ±¸±¸´ÜÀ» Ãâ·Â
+		ì •ìˆ˜(ë‹¨)ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ì˜ êµ¬êµ¬ë‹¨ì„ ì¶œë ¥
 */
 		Scanner sc=new Scanner(System.in);
 		
 		int dan;
 		int s, n;
 		
-		System.out.print("´Ü ? ");
+		System.out.print("ë‹¨ ? ");
 		dan=sc.nextInt();
 		
 		n=0;

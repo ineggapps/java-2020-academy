@@ -1,14 +1,14 @@
-package d200130;
+ï»¿package d200130;
 
 import java.util.Scanner;
 
 public class OperQuiz2 {
 	public static void main(String[] args) {
-		//¹İÁö¸§À» ÀÔ·Â ¹Ş¾Æ ¿ø ³ĞÀÌ¿Í µÑ·¹¸¦ °è»êÇÏ½Ã¿À.
+		//ë°˜ì§€ë¦„ì„ ì…ë ¥ ë°›ì•„ ì› ë„“ì´ì™€ ë‘˜ë ˆë¥¼ ê³„ì‚°í•˜ì‹œì˜¤.
 		Scanner sc = new Scanner(System.in);
 		int r;
-		System.out.print("¿øÀÇ ¹İÁö¸§Àº ? ");
+		System.out.print("ì›ì˜ ë°˜ì§€ë¦„ì€ ? ");
 		r = sc.nextInt();
-		System.out.printf("¿øÀÇ ³ĞÀÌ´Â %.2fÀÌ°í µÑ·¹´Â %.2fÀÔ´Ï´Ù.", r*r*3.14, r*2*3.14);
+		System.out.printf("ì›ì˜ ë„“ì´ëŠ” %.2fì´ê³  ë‘˜ë ˆëŠ” %.2fì…ë‹ˆë‹¤.", r*r*3.14, r*2*3.14);
 	}
 }

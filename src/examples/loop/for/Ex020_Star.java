@@ -1,4 +1,4 @@
-public class Ex020_Star {
+﻿public class Ex020_Star {
 	public static void main(String[] args) {
 /*
     *

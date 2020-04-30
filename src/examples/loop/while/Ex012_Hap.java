@@ -1,7 +1,7 @@
-public class Ex012_Hap {
+ï»¿public class Ex012_Hap {
 	public static void main(String[] args) {
 /*
-		1~100±îÁöÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏµÇ ¼ö°¡ 10ÀÇ ¹è¼ö°¡ µÉ ¶§¸¶´Ù ÇÕÀ» Ãâ·Â
+		1~100ê¹Œì§€ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ë˜ ìˆ˜ê°€ 10ì˜ ë°°ìˆ˜ê°€ ë  ë•Œë§ˆë‹¤ í•©ì„ ì¶œë ¥
 */
 		int s, n;
 		
@@ -10,7 +10,7 @@ public class Ex012_Hap {
 			n++;
 			s+=n;
 			if(n%10==0)
-				System.out.println("1~"+n+"±îÁö ÇÕ : " + s);
+				System.out.println("1~"+n+"ê¹Œì§€ í•© : " + s);
 		}
 	}
 }

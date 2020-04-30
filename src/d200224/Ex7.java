@@ -1,4 +1,4 @@
-package d200224;
+ï»¿package d200224;
 
 public class Ex7 {
 	public static void main(String[] args) {
@@ -17,11 +17,11 @@ public class Ex7 {
 class User7<T> {
 	private T[] data;
 
-	@SuppressWarnings("unchecked")//°æ°í ¹«½ÃÇÏ°Ú´Ù´Â ¼±¾ğ
+	@SuppressWarnings("unchecked")//ê²½ê³  ë¬´ì‹œí•˜ê² ë‹¤ëŠ” ì„ ì–¸
 	public User7() {
-		data = (T[]) new Object[10];// °­Á¦·Î ¹è¿­À» »ı¼º (±ÇÀåÇÏÁö ¾ÊÀ½)
-		// ObjectÇü ¹è¿­·Î ¼±¾ğÇÑ µÚ Ä³½ºÆÃÀ» ÇØÁÖ¸é °­Á¦·Î ¹è¿­À» »ı¼ºÇÒ ¼ö ÀÖ´Ù.
-		// ÇÏÁö¸¸ new T[3]; Ã³·³ ¼±¾ğÀÌ ºÒ°¡´ÉÇÑ ÀÌÀ¯´Â ¾ÆÁ÷ TypeÀÌ Á¤ÇØÁöÁö ¾Ê¾Ò±â ¶§¹®ÀÌ´Ù.
+		data = (T[]) new Object[10];// ê°•ì œë¡œ ë°°ì—´ì„ ìƒì„± (ê¶Œì¥í•˜ì§€ ì•ŠìŒ)
+		// Objectí˜• ë°°ì—´ë¡œ ì„ ì–¸í•œ ë’¤ ìºìŠ¤íŒ…ì„ í•´ì£¼ë©´ ê°•ì œë¡œ ë°°ì—´ì„ ìƒì„±í•  ìˆ˜ ìˆë‹¤.
+		// í•˜ì§€ë§Œ new T[3]; ì²˜ëŸ¼ ì„ ì–¸ì´ ë¶ˆê°€ëŠ¥í•œ ì´ìœ ëŠ” ì•„ì§ Typeì´ ì •í•´ì§€ì§€ ì•Šì•˜ê¸° ë•Œë¬¸ì´ë‹¤.
 	}
 
 	public void set(T[] data) {

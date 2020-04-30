@@ -1,41 +1,41 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz104_Grade {
 	public static void main(String[] args) {
 /*
-		Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÆòÁ¡À» ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ í‰ì ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc=new Scanner(System.in);
 
 		int input;
-		System.out.print("Á¡¼ö ? ");
+		System.out.print("ì ìˆ˜ ? ");
 		input=sc.nextInt();
 		if(input>=95 && input<=100)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 4.5");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 4.5");
 		else if(input>=90)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 4.0");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 4.0");
 		else if(input>=85)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 3.5");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 3.5");
 		else if(input>=80)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 3.0");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 3.0");
 		else if(input>=75)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 2.5");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 2.5");
 		else if(input>=70)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 2.0");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 2.0");
 		else if(input>=65)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 1.5");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 1.5");
 		else if(input>=60)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 1.0");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 1.0");
 		else if(input>=0)
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : 0.0");
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : 0.0");
 		else
-			System.out.println("Á¡¼ö ÀÔ·Â ¿À·ù ÀÔ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ ì…ë ¥ ì˜¤ë¥˜ ì…ë‹ˆë‹¤.");
 		
 /*		
 		int input;
 		double result;
 		
-		System.out.print("Á¡¼ö ? ");
+		System.out.print("ì ìˆ˜ ? ");
 		input=sc.nextInt();
 		if(input>=0 && input<=100) {
 			if(input>=95)
@@ -57,9 +57,9 @@ public class Quiz104_Grade {
 			else
 				result = 0;
 				
-			System.out.println("Á¡¼ö : " + input + ", ÆòÁ¡ : " + result);
+			System.out.println("ì ìˆ˜ : " + input + ", í‰ì  : " + result);
 		} else {
-			System.out.println("Á¡¼ö ÀÔ·Â ¿À·ù ÀÔ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ ì…ë ¥ ì˜¤ë¥˜ ì…ë‹ˆë‹¤.");
 		}
 */
 

@@ -1,4 +1,4 @@
-package d200226;
+ï»¿package d200226;
 
 public class Ex3StackHandMade {
 	public static void main(String[] args) {
@@ -16,13 +16,13 @@ public class Ex3StackHandMade {
 	}
 }
 
-//¹è¿­À» ÀÌ¿ëÇÑ ½ºÅÃ ¸¸µé±â(LIFO)
+//ë°°ì—´ì„ ì´ìš©í•œ ìŠ¤íƒ ë§Œë“¤ê¸°(LIFO)
 interface MyStack<E> {
-	public E pop();// top µ¥ÀÌÅÍ °¡Á®¿À°í »èÁ¦ÇÏ±â
+	public E pop();// top ë°ì´í„° ê°€ì ¸ì˜¤ê³  ì‚­ì œí•˜ê¸°
 
-	public E peek();// top µ¥ÀÌÅÍ ¹İÈ¯ÇÑ ÈÄ »èÁ¦ÇÏÁö ¾ÊÀ½.
+	public E peek();// top ë°ì´í„° ë°˜í™˜í•œ í›„ ì‚­ì œí•˜ì§€ ì•ŠìŒ.
 
-	public void push(E data);// µ¥ÀÌÅÍ »ğÀÔ
+	public void push(E data);// ë°ì´í„° ì‚½ì…
 
 	public boolean isEmpty();
 }
@@ -30,7 +30,7 @@ interface MyStack<E> {
 class MyStackImpl<E> implements MyStack<E> {
 
 	private E[] elementData;
-	private int top;// ÇöÀç ÀÎµ¦½º
+	private int top;// í˜„ì¬ ì¸ë±ìŠ¤
 
 	@SuppressWarnings("unchecked")
 	public MyStackImpl(int size) {

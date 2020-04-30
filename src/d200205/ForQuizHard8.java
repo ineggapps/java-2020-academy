@@ -1,10 +1,10 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForQuizHard8 {
 	/*
-	 * ÇÇÅ¸°í¶ó½ºÀÇ Á¤¸®´Â Á÷°¢»ï°¢Çü¿¡¼­ Á÷°¢À» ³¤ µÎ º¯ÀÇ ±æÀÌ¸¦ a,b¶ó°í ÇÏ°í ºøº¯ÀÇ ±æÀÌ¸¦ c¶ó°í ÇÏ¸é a^2+b^2=c^2ÀÇ ¼ö½ÄÀÌ
-	 * ¼º¸³ÇÑ´Ù. °¢ º¯ÀÇ ±æÀÌ°¡ 10º¸´Ù ÀÛ°Å³ª °°Àº »ï°¢Çü ÁÖ¿¨¼­ ÇÇÅ¸°í¶ó½ºÀÇ Á¤¸®°¡ ¼º¸³ÇÏ´Â Á÷°¢»ï°¢ÇüÀÇ °³¼ö ¹× ÀÌ ¶§ÀÇ a,b,cÀÇ °ªÀ»
-	 * Ãâ·ÂÇÏ¸é? ¿©±â¼­ °¢ º¯ÀÇ ±æÀÌ¶ó°í ÇÏ´Â °ÍÀº ÀÚ¿¬¼ö¸¦ ÀÇ¹ÌÇÑ´Ù. µû¶ó¼­ 0< º¯ÀÇ ±æÀÌ<=10 ÀÌ µÈ´Ù.
+	 * í”¼íƒ€ê³ ë¼ìŠ¤ì˜ ì •ë¦¬ëŠ” ì§ê°ì‚¼ê°í˜•ì—ì„œ ì§ê°ì„ ë‚€ ë‘ ë³€ì˜ ê¸¸ì´ë¥¼ a,bë¼ê³  í•˜ê³  ë¹—ë³€ì˜ ê¸¸ì´ë¥¼ cë¼ê³  í•˜ë©´ a^2+b^2=c^2ì˜ ìˆ˜ì‹ì´
+	 * ì„±ë¦½í•œë‹¤. ê° ë³€ì˜ ê¸¸ì´ê°€ 10ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì€ ì‚¼ê°í˜• ì£¼ì—¥ì„œ í”¼íƒ€ê³ ë¼ìŠ¤ì˜ ì •ë¦¬ê°€ ì„±ë¦½í•˜ëŠ” ì§ê°ì‚¼ê°í˜•ì˜ ê°œìˆ˜ ë° ì´ ë•Œì˜ a,b,cì˜ ê°’ì„
+	 * ì¶œë ¥í•˜ë©´? ì—¬ê¸°ì„œ ê° ë³€ì˜ ê¸¸ì´ë¼ê³  í•˜ëŠ” ê²ƒì€ ìžì—°ìˆ˜ë¥¼ ì˜ë¯¸í•œë‹¤. ë”°ë¼ì„œ 0< ë³€ì˜ ê¸¸ì´<=10 ì´ ëœë‹¤.
 	 */
 	public static void main(String[] args) {
 		int start = 1;
@@ -21,6 +21,6 @@ public class ForQuizHard8 {
 				}
 			}
 		}
-		System.out.println("ÀüÃ¼ °³¼ö: "+cnt);
+		System.out.println("ì „ì²´ ê°œìˆ˜: "+cnt);
 	}
 }

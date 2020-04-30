@@ -1,29 +1,29 @@
-package d200228;
+ï»¿package d200228;
 
 import java.lang.reflect.Method;
 
 public class Ex14InvokeMethodWithClassClass {
 	public static void main(String[] args) {
-		String className = "d200228.User14";// ÆĞÅ°Áö¸í.Å¬·¡½º¸í <<<< Á¤È®ÇÏ°Ô ÁöÄÑ¾ß ÇÔ
+		String className = "d200228.User14";// íŒ¨í‚¤ì§€ëª….í´ë˜ìŠ¤ëª… <<<< ì •í™•í•˜ê²Œ ì§€ì¼œì•¼ í•¨
 		try {
 			Class<?> cls = Class.forName(className);
 			Object ob = cls.newInstance();
-			// ¸Ş¼­µå Á¤ÀÇ
+			// ë©”ì„œë“œ ì •ì˜
 			Method m1 = cls.getDeclaredMethod("hap", new Class[] { Integer.class, Integer.class });
 			Method m2 = cls.getDeclaredMethod("sub", new Class[] { int.class, int.class });
 			Method m3 = cls.getDeclaredMethod("write", new Class[] { String.class, int.class });
 			Method m4 = cls.getDeclaredMethod("print");
 			
-			// ¸Ş¼­µå È£Ãâ (±âÁ¸ ¹æ¹ı°ú ´Ù¸£´Ù) <= ÇÁ·¹ÀÓ¿öÅ©¿¡¼­ È£ÃâÇÒ ¶§ »ç¿ëÇÏ´Â ¹æ¹ıÀÌ´Ù.
+			// ë©”ì„œë“œ í˜¸ì¶œ (ê¸°ì¡´ ë°©ë²•ê³¼ ë‹¤ë¥´ë‹¤) <= í”„ë ˆì„ì›Œí¬ì—ì„œ í˜¸ì¶œí•  ë•Œ ì‚¬ìš©í•˜ëŠ” ë°©ë²•ì´ë‹¤.
 			Object o1 = m1.invoke(ob, new Object[] { 20, 10 });
-			//invoke: (»ç¶÷µé¿¡°Ô ¾î¶² °¨Á¤¡¤Çàµ¿À» ÃË¹ßÇÏ±â À§ÇØ ´©±¸ÀÇ ÀÌ¸§À») ºÎ¸£´Ù
-			//¸Ş¼­µå¸¦ ÇØ´ç °´Ã¼¿¡¼­ È£ÃâÇÑ´Ù.
-			m3.invoke(ob, "ÇÕ", o1);
+			//invoke: (ì‚¬ëŒë“¤ì—ê²Œ ì–´ë–¤ ê°ì •Â·í–‰ë™ì„ ì´‰ë°œí•˜ê¸° ìœ„í•´ ëˆ„êµ¬ì˜ ì´ë¦„ì„) ë¶€ë¥´ë‹¤
+			//ë©”ì„œë“œë¥¼ í•´ë‹¹ ê°ì²´ì—ì„œ í˜¸ì¶œí•œë‹¤.
+			m3.invoke(ob, "í•©", o1);
 			Object o2 = m2.invoke(ob, new Object[] { 20, 10 });
-			m3.invoke(ob, "Â÷", o2);
+			m3.invoke(ob, "ì°¨", o2);
 			m4.invoke(ob);
 
-			//³ªÁß¿¡ ½ºÇÁ¸µÇÁ·¹ÀÓ¿öÅ©³ª ¼­ºí¸´ µî¿¡¼­ °´Ã¼¸¦ »ı¼ºÇÏ°Å³ª ¸Ş¼­µå¸¦ »ı¼ºÇÏ´Â ¹æ½ÄÀº À§¿Í °°ÀÌ ÁøÇàµÈ´Ù.
+			//ë‚˜ì¤‘ì— ìŠ¤í”„ë§í”„ë ˆì„ì›Œí¬ë‚˜ ì„œë¸”ë¦¿ ë“±ì—ì„œ ê°ì²´ë¥¼ ìƒì„±í•˜ê±°ë‚˜ ë©”ì„œë“œë¥¼ ìƒì„±í•˜ëŠ” ë°©ì‹ì€ ìœ„ì™€ ê°™ì´ ì§„í–‰ëœë‹¤.
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

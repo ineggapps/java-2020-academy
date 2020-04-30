@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz105_Pay {
 	public static void main(String[] args) {
 /*
-		±Ù¹«½Ã°£À» ÀÔ·Â ¹Ş¾Æ ±Ş¿©¸¦ °è»êÇÏ´Â ÇÁ·Î±×·¥
+		ê·¼ë¬´ì‹œê°„ì„ ì…ë ¥ ë°›ì•„ ê¸‰ì—¬ë¥¼ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc = new Scanner(System.in);
 
 		int pay, hours, rate = 10000;
 
-		System.out.print("±Ù¹«½Ã°£ ? ");
+		System.out.print("ê·¼ë¬´ì‹œê°„ ? ");
 		hours = sc.nextInt();
 
 		if (hours > 8) {
@@ -17,7 +17,7 @@ public class Quiz105_Pay {
 		} else {
 			pay = hours * rate;
 		}
-		System.out.printf("±Ş¿© : %,d¿ø", pay);
+		System.out.printf("ê¸‰ì—¬ : %,dì›", pay);
 
 		sc.close();
 	}

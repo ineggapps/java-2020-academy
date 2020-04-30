@@ -1,7 +1,7 @@
-public class Ex004_Hap {
+ï»¿public class Ex004_Hap {
 	public static void main(String[] args) {
 /*
-		1~100 ±îÁö Á¤¼öÀÇ ÇÕÀ» °è»êÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~100 ê¹Œì§€ ì •ìˆ˜ì˜ í•©ì„ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int s, n;
 		s=0;
@@ -10,7 +10,7 @@ public class Ex004_Hap {
 			n++;
 			s+=n;
 		}
-		System.out.println("°á°ú : "+s); // 5050
+		System.out.println("ê²°ê³¼ : "+s); // 5050
 		
 /*		
 		int s, n;
@@ -18,7 +18,7 @@ public class Ex004_Hap {
 		while(n++<100) {
 			s+=n;
 		}
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 */		
 
 /*		
@@ -27,7 +27,7 @@ public class Ex004_Hap {
 		while(++n<=100) {
 			s+=n;
 		}
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 */		
 	}
 }

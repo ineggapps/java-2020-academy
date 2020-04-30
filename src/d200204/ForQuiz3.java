@@ -1,13 +1,13 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class ForQuiz3 {
 	public static void main(String[] args) {
-		//10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº Á¤¼ö Áß, Â¦¼ö °³¼ö¿Í È¦¼ö °³¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		//10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì •ìˆ˜ ì¤‘, ì§ìˆ˜ ê°œìˆ˜ì™€ í™€ìˆ˜ ê°œìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 		Scanner sc = new Scanner(System.in);
 		int n, odd=0, even=0;
-		System.out.println("10°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä...");
+		System.out.println("10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”...");
 		for(int i=1;i<=10;i++) {
 			n =  sc.nextInt();
 			if((n&1)==0) {
@@ -16,13 +16,13 @@ public class ForQuiz3 {
 				odd++;
 			}
 		}
-		System.out.printf("È¦¼öÀÇ °³¼ö: %d%n",odd);
-		System.out.printf("Â¦¼öÀÇ °³¼ö: %d%n",even);
+		System.out.printf("í™€ìˆ˜ì˜ ê°œìˆ˜: %d%n",odd);
+		System.out.printf("ì§ìˆ˜ì˜ ê°œìˆ˜: %d%n",even);
 		
 //		for(int i=1;i<=10;i++) {
 //			System.out.println("d");
-//			i=10; // ½ÇÇàÈ½¼ö ÇÑ ¹ø
-//			for¹® ¾È¿¡¼­ ¹İº¹¹®¿¡ »ç¿ëµÈ º¯¼ö¸¦ º¯°æÇÏ¸é ¹İº¹ È½¼ö°¡ ¹Ù²ï´Ù.
+//			i=10; // ì‹¤í–‰íšŸìˆ˜ í•œ ë²ˆ
+//			forë¬¸ ì•ˆì—ì„œ ë°˜ë³µë¬¸ì— ì‚¬ìš©ëœ ë³€ìˆ˜ë¥¼ ë³€ê²½í•˜ë©´ ë°˜ë³µ íšŸìˆ˜ê°€ ë°”ë€ë‹¤.
 //		}
 		sc.close();
 	}

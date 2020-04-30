@@ -1,14 +1,14 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz106_BinaryConversion {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 2Áø¼ö·Î º¯È¯ÇÏ´Â ÇÁ·Î±×·¥
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 2ì§„ìˆ˜ë¡œ ë³€í™˜í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc=new Scanner(System.in);
 
 		int num;
-		System.out.print("Á¤¼ö ? ");
+		System.out.print("ì •ìˆ˜ ? ");
 		num = sc.nextInt();
 		
 		System.out.printf("%1$d(%1$#X) => ", num);

@@ -1,19 +1,19 @@
-public class Ex017_InfiniteLoop {
+ï»¿public class Ex017_InfiniteLoop {
 	public static void main(String[] args) {
 /*
-		1~10±îÁöÀÇ Á¤¼öÀÇ ÇÕÀ» Ãâ·Â : ¹«ÇÑ ·çÇÁ(infinite loop), break »ç¿ë
+		1~10ê¹Œì§€ì˜ ì •ìˆ˜ì˜ í•©ì„ ì¶œë ¥ : ë¬´í•œ ë£¨í”„(infinite loop), break ì‚¬ìš©
 */
 		int n, s;
 		
 		n=0;
 		s=0;
-		while(true) { // ¹«ÇÑ loop
+		while(true) { // ë¬´í•œ loop
 			n++;
 			s+=n;
 			if(n==10) {
-				break; // while ¹®À» ºüÁ®³ª°¨
+				break; // while ë¬¸ì„ ë¹ ì ¸ë‚˜ê°
 			}
 		}
-		System.out.println("°á°ú : "+s); // 55
+		System.out.println("ê²°ê³¼ : "+s); // 55
 	}
 }

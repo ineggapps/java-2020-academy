@@ -1,9 +1,9 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayQuiz5 {
 	public static void main(String[] args) {
 		/*
-		 * 5Çà 5¿­ÀÇ ¹è¿­¿¡ 1~25±îÁöÀÇ ¼ö¸¦ ½ÇÇà°á°úÃ³·³ ´ë°¢¼± ¸ğ¾çÀ¸·Î Ã¤¿ö Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		 * 5í–‰ 5ì—´ì˜ ë°°ì—´ì— 1~25ê¹Œì§€ì˜ ìˆ˜ë¥¼ ì‹¤í–‰ê²°ê³¼ì²˜ëŸ¼ ëŒ€ê°ì„  ëª¨ì–‘ìœ¼ë¡œ ì±„ì›Œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 		 */
 
 		int a[][] = new int[5][5];
@@ -11,8 +11,8 @@ public class ArrayQuiz5 {
 		int diag = 0;
 		int cnt = 1;
 
-		// ¿¬»ê
-		for (int i = 0; i < a[0].length; i++) {// ¿­ÀÇ ¹üÀ§¸¦ ÁöÁ¤
+		// ì—°ì‚°
+		for (int i = 0; i < a[0].length; i++) {// ì—´ì˜ ë²”ìœ„ë¥¼ ì§€ì •
 			if (i < a[0].length) {
 				diag++;
 			} else {
@@ -33,10 +33,10 @@ public class ArrayQuiz5 {
 			for (int j = i; j < a.length; j++) {
 //				System.out.printf("%d %d\n", j, a.length - j);
 				a[j][start--] = cnt++;
-				// °¨¼Ò for¹®
+				// ê°ì†Œ forë¬¸
 			}
 		}
-		// Ãâ·Â
+		// ì¶œë ¥
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.printf("%3d\t", a[i][j]);

@@ -1,19 +1,19 @@
-package d200129;
+ï»¿package d200129;
 
 import java.util.Scanner;
 /*
- * µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ »çÄ¢ ¿¬»êÀ» ¼öÇàÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À
- * [Ã³¸® Á¶°Ç]
- * - Á¤¼öÀÇ ÀÔ·ÂÀº Scanner Å¬·¡½ºÀÇ nextInt() ¸Ş¼­µå¸¦ ÀÌ¿ëÇÑ´Ù.
- * - ³ª´°¼ÀÀÇ °á°ú´Â Á¤¼ö·Î Ã³¸®ÇÑ´Ù.
- * - Ãâ·ÂÀº System.out.printf() ¸Ş¼­µå¸¦ ÀÌ¿ëÇÑ´Ù.
+ * ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì‚¬ì¹™ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤
+ * [ì²˜ë¦¬ ì¡°ê±´]
+ * - ì •ìˆ˜ì˜ ì…ë ¥ì€ Scanner í´ë˜ìŠ¤ì˜ nextInt() ë©”ì„œë“œë¥¼ ì´ìš©í•œë‹¤.
+ * - ë‚˜ëˆ—ì…ˆì˜ ê²°ê³¼ëŠ” ì •ìˆ˜ë¡œ ì²˜ë¦¬í•œë‹¤.
+ * - ì¶œë ¥ì€ System.out.printf() ë©”ì„œë“œë¥¼ ì´ìš©í•œë‹¤.
  * */
 public class OperQuiz1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a,b;
 		
-		System.out.print("µÎ Á¤¼ö ? ");
+		System.out.print("ë‘ ì •ìˆ˜ ? ");
 		a=sc.nextInt();
 		b=sc.nextInt();
 		

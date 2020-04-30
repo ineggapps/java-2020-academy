@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -6,45 +6,45 @@ import java.util.List;
 
 public class Ex7 {
 	public static void main(String[] args) {
-		// Ex6 ArrayListSort¸¦ ´Ù¸¥ ¹æ¹ıÀ¸·Î Á¤·Ä
-		// ÀÌ ¹æ¹ıÀº ±â¾ïÇÏ±â.
+		// Ex6 ArrayListSortë¥¼ ë‹¤ë¥¸ ë°©ë²•ìœ¼ë¡œ ì •ë ¬
+		// ì´ ë°©ë²•ì€ ê¸°ì–µí•˜ê¸°.
 		List<UserDTO> list = new ArrayList<UserDTO>();
-		list.add(new UserDTO("µµµµµµ", "010", 25));
-		list.add(new UserDTO("ÈÄÈÄÈÄ", "011", 20));
-		list.add(new UserDTO("°¡°¡°¡", "012", 22));
-		list.add(new UserDTO("¸¶¸¶¸¶", "013", 25));
-		list.add(new UserDTO("¸¶°¡°¡", "014", 23));
+		list.add(new UserDTO("ë„ë„ë„", "010", 25));
+		list.add(new UserDTO("í›„í›„í›„", "011", 20));
+		list.add(new UserDTO("ê°€ê°€ê°€", "012", 22));
+		list.add(new UserDTO("ë§ˆë§ˆë§ˆ", "013", 25));
+		list.add(new UserDTO("ë§ˆê°€ê°€", "014", 23));
 
-		print("Á¤·Ä Àü", list);// staticÀÌ¹Ç·Î ¹Ù·Î ºÎ¸¦ ¼ö ÀÖÀ½.
+		print("ì •ë ¬ ì „", list);// staticì´ë¯€ë¡œ ë°”ë¡œ ë¶€ë¥¼ ìˆ˜ ìˆìŒ.
 
-		// Å©±â¼ø Á¤·Ä
-		// ÀÌ¸§À¸·Î Á¤·Ä
-		// Comparator ÀÎÅÍÆäÀÌ½º ±¸Çö: Á¤·Ä ±âÁØ ¼³Á¤
+		// í¬ê¸°ìˆœ ì •ë ¬
+		// ì´ë¦„ìœ¼ë¡œ ì •ë ¬
+		// Comparator ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„: ì •ë ¬ ê¸°ì¤€ ì„¤ì •
 		Comparator<UserDTO> comp = new Comparator<UserDTO>() {
 
 			@Override
 			public int compare(UserDTO o1, UserDTO o2) {
-				return o1.getName().compareTo(o2.getName());// ¿À¸§Â÷¼ø
-//				return -o1.getName().compareTo(o2.getName());//³»¸²Â÷¼ø
-				// name Ç×¸ñÀº StringÀÌ´Ï±î ÀÚÃ¼ ¸Ş¼­µåÀÎ compareTo ÀÌ¿ëÇÏ¿© ºñ±³
+				return o1.getName().compareTo(o2.getName());// ì˜¤ë¦„ì°¨ìˆœ
+//				return -o1.getName().compareTo(o2.getName());//ë‚´ë¦¼ì°¨ìˆœ
+				// name í•­ëª©ì€ Stringì´ë‹ˆê¹Œ ìì²´ ë©”ì„œë“œì¸ compareTo ì´ìš©í•˜ì—¬ ë¹„êµ
 			}
 		};
 
 		Collections.sort(list, comp);
-		print("ÀÌ¸§ Á¤·Ä ÈÄ", list);
+		print("ì´ë¦„ ì •ë ¬ í›„", list);
 
-		// ³ªÀÌ Á¤·Ä
+		// ë‚˜ì´ ì •ë ¬
 		Comparator<UserDTO> comp2 = new Comparator<UserDTO>() {
 
 			@Override
 			public int compare(UserDTO o1, UserDTO o2) {
-				return o1.getAge() - o2.getAge();// ¿À¸§Â÷¼ø
-//				return -(o1.getAge()-o2.getAge());//³»¸²Â÷¼ø
+				return o1.getAge() - o2.getAge();// ì˜¤ë¦„ì°¨ìˆœ
+//				return -(o1.getAge()-o2.getAge());//ë‚´ë¦¼ì°¨ìˆœ
 			}
 		};
 
 		Collections.sort(list, comp2);
-		print("³ªÀÌ Á¤·Ä ÈÄ", list);
+		print("ë‚˜ì´ ì •ë ¬ í›„", list);
 
 	}
 

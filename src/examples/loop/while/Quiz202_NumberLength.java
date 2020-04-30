@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz202_NumberLength {
 	public static void main(String[] args) {
 /*		
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼öÀÇ ±æÀÌ ±¸ÇÏ±â
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ì˜ ê¸¸ì´ êµ¬í•˜ê¸°
 */		
 		Scanner sc = new Scanner(System.in);
 
 		int num, len, temp;
 
-		System.out.print("¼ö ? ");
+		System.out.print("ìˆ˜ ? ");
 		num = sc.nextInt();
 
 		len = 1;
@@ -22,7 +22,7 @@ public class Quiz202_NumberLength {
 				len++;
 		}
 
-		System.out.println(num+"Àº "+len+"ÀÚ¸® Á¤¼ö");
+		System.out.println(num+"ì€ "+len+"ìë¦¬ ì •ìˆ˜");
 		
 		sc.close();
 	}

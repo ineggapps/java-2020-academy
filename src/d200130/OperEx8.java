@@ -1,4 +1,4 @@
-package d200130;
+ï»¿package d200130;
 
 public class OperEx8 {
 	public static void main(String[] args) {
@@ -6,12 +6,12 @@ public class OperEx8 {
 		a=1658;
 		b=1234;
 		
-		//¾ÏÈ£È­¸¦ À§ÇÑ ±âº»ÀûÀÎ ¿¬»êÀº XORÀÌ´Ù.
+		//ì•”í˜¸í™”ë¥¼ ìœ„í•œ ê¸°ë³¸ì ì¸ ì—°ì‚°ì€ XORì´ë‹¤.
 		
-		a=a^b;//¾ÏÈ£È­¿¡ ÀÀ¿ëµÉ ¼ö ÀÖ´Ù.
+		a=a^b;//ì•”í˜¸í™”ì— ì‘ìš©ë  ìˆ˜ ìˆë‹¤.
 		System.out.println(a);// 680
 		
-		a=a^b;//º¹È£È­¿¡ ÀÀ¿ëµÉ ¼ö ÀÖ´Ù.
+		a=a^b;//ë³µí˜¸í™”ì— ì‘ìš©ë  ìˆ˜ ìˆë‹¤.
 		System.out.println(a);// 1658
 	}
 }

@@ -1,12 +1,12 @@
-public class Ex013_Gugudan {
+ï»¿public class Ex013_Gugudan {
 	public static void main(String[] args) {
 /*
-		 2~9´Ü±îÁöÀÇ ±¸±¸´ÜÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		 2~9ë‹¨ê¹Œì§€ì˜ êµ¬êµ¬ë‹¨ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */	
 		int c;
 		
 		for(int a=2; a<=9; a++) {
-			System.out.println(">> "+ a + "´Ü <<");
+			System.out.println(">> "+ a + "ë‹¨ <<");
 			for(int b=1; b<=9; b++) {
 				c=a*b;
 				System.out.printf("%d * %d = %d\n", a, b, c);

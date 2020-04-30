@@ -1,22 +1,22 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForTest10 {
 public static void main(String[] args) {
 	int count=0;
 	int s=2000000000;
 	
-		/* ¡Ú ÀÚ·áÇü ÂüÁ¶
-		 * ´ëÀÔÇÒ ¶§ 20¾ï µÚ¿¡´Â Àß·Á³ª°£´Ù.
-		 * (ÀÚ·áÇü ÂüÁ¶)
+		/* â˜… ìžë£Œí˜• ì°¸ì¡°
+		 * ëŒ€ìž…í•  ë•Œ 20ì–µ ë’¤ì—ëŠ” ìž˜ë ¤ë‚˜ê°„ë‹¤.
+		 * (ìžë£Œí˜• ì°¸ì¡°)
 		 * float a=2000000000; 
 		 * float b=2000000000+50; 
 		 * System.out.println(a==b); 
-		 * 20¾ï50Àº floatÇü¿¡ ´ëÀÔÇÏ¸é 20¾ïÀÌ´Ù. 
-		 * Á¤¹Ðµµ°¡ ³·±â ¶§¹®¿¡...
+		 * 20ì–µ50ì€ floatí˜•ì— ëŒ€ìž…í•˜ë©´ 20ì–µì´ë‹¤. 
+		 * ì •ë°€ë„ê°€ ë‚®ê¸° ë•Œë¬¸ì—...
 		 */ 
 	
-	/*CAUTION: floatÇü ÀÚÃ¼°¡ Á¤¹Ðµµ Ç¥ÇöÀÌ ³·±â ¶§¹®¿¡ ¹Ýº¹¹®¿¡ »ç¿ëÇÏ¸é ÀÇµµÇÑ °á°ú°¡ ³ª¿ÀÁö ¾ÊÀ» ¼ö ÀÖÀ½.*/
-	//µÇµµ·ÏÀÌ¸é floatÇüÀÇ »ç¿ëÀ» Áö¾çÇÑ´Ù.
+	/*CAUTION: floatí˜• ìžì²´ê°€ ì •ë°€ë„ í‘œí˜„ì´ ë‚®ê¸° ë•Œë¬¸ì— ë°˜ë³µë¬¸ì— ì‚¬ìš©í•˜ë©´ ì˜ë„í•œ ê²°ê³¼ê°€ ë‚˜ì˜¤ì§€ ì•Šì„ ìˆ˜ ìžˆìŒ.*/
+	//ë˜ë„ë¡ì´ë©´ floatí˜•ì˜ ì‚¬ìš©ì„ ì§€ì–‘í•œë‹¤.
 	for(float f=s;f<s+50;f++) {
 		count++;
 	}

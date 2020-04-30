@@ -1,9 +1,9 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz102_Calculator {
 	public static void main(String[] args) {
 /*
-		µÎ¼ö ¹× ¿¬»êÀÚ¸¦ ÀÔ·Â ¹Ş¾Æ »çÄ¢ ¿¬»êÀ» ÇÏ´Â ÇÁ·Î±×·¥
+		ë‘ìˆ˜ ë° ì—°ì‚°ìë¥¼ ì…ë ¥ ë°›ì•„ ì‚¬ì¹™ ì—°ì‚°ì„ í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc = new Scanner(System.in);
 
@@ -11,11 +11,11 @@ public class Quiz102_Calculator {
 		char c;
 		String result;
 
-		System.out.print("µÎ¼ö ? ");
+		System.out.print("ë‘ìˆ˜ ? ");
 		a = sc.nextInt();
 		b = sc.nextInt();
 
-		System.out.print("¿¬»êÀÚ[+, -, *, /] ? ");
+		System.out.print("ì—°ì‚°ì[+, -, *, /] ? ");
 		c = sc.next().charAt(0);
 
 		switch (c) {
@@ -23,7 +23,7 @@ public class Quiz102_Calculator {
 		case '-': result = a+"-"+b+"="+(a-b); break;
 		case '*': result = a+"*"+b+"="+(a*b); break;
 		case '/': result = a+"/"+b+"="+(a/b); break;
-		default: result="¿¬»êÀÚ ÀÔ·Â ¿À·ù..."; break;
+		default: result="ì—°ì‚°ì ì…ë ¥ ì˜¤ë¥˜..."; break;
 		}
 		
 		System.out.println(result);

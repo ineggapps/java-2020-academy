@@ -1,4 +1,4 @@
-package d200213;
+ï»¿package d200213;
 
 public class Ex3 {
 	public static void main(String[] args) {
@@ -13,41 +13,41 @@ public class Ex3 {
 
 class Test3 {
 	public void print(int n) {
-		// stackÀ» È°¿ë
+		// stackì„ í™œìš©
 		/*
-		 * ¾Æ·¡ÀÇ ³»¿ëÀÌ ½ºÅÃ °ø°£¿¡ ´ã±ä ¸Þ¼­µå¶ó¸é...
-		 * 5. print(1) È£Ãâ => 6. 1 Ãâ·Â
-		 * 4. print(2) È£Ãâ => 7. 2 Ãâ·Â
-		 * 3. print(3) È£Ãâ => 8. 3 Ãâ·Â
-		 * 2. print(4) È£Ãâ => 9. 4 Ãâ·Â
-		 * 1. print(5) È£Ãâ => 10. 5 Ãâ·Â
+		 * ì•„ëž˜ì˜ ë‚´ìš©ì´ ìŠ¤íƒ ê³µê°„ì— ë‹´ê¸´ ë©”ì„œë“œë¼ë©´...
+		 * 5. print(1) í˜¸ì¶œ => 6. 1 ì¶œë ¥
+		 * 4. print(2) í˜¸ì¶œ => 7. 2 ì¶œë ¥
+		 * 3. print(3) í˜¸ì¶œ => 8. 3 ì¶œë ¥
+		 * 2. print(4) í˜¸ì¶œ => 9. 4 ì¶œë ¥
+		 * 1. print(5) í˜¸ì¶œ => 10. 5 ì¶œë ¥
 		 * 
-		 * ´Ü, ²÷ÀÓ¾øÀÌ È£ÃâµÇ¸é java.lang.StackOverflowError°¡ ¹ß»ýÇÑ´Ù.
+		 * ë‹¨, ëŠìž„ì—†ì´ í˜¸ì¶œë˜ë©´ java.lang.StackOverflowErrorê°€ ë°œìƒí•œë‹¤.
 		 */
 		if (n > 1) {
-			print(n - 1);// Àç±ÍÈ£Ãâ
+			print(n - 1);// ìž¬ê·€í˜¸ì¶œ
 		}
 		System.out.println(n);
 	}
 
 	public int sum(int n) {
 		/*
-		 * Àç±ÍÈ£ÃâÀÇ ¿¹
-		 *												¢¸¢¸¢¸ ¿¬»ê ¹æÇâ
-		 * sum(5) È£Ãâ ½Ã => 5+sum(4) È£Ãâ
-		 * sum(4) È£Ãâ ½Ã => 5+4+sum(3) È£Ãâ
-		 * sum(3) È£Ãâ ½Ã => 5+4+3+sum(2) È£Ãâ
-		 * sum(2) È£Ãâ ½Ã => 5+4+3+2+sum(1) È£Ãâ
-		 * sum(1) È£Ãâ ½Ã => 5+4+3+2+1 °á±£°ª ¹ÝÈ¯
+		 * ìž¬ê·€í˜¸ì¶œì˜ ì˜ˆ
+		 *												â—€â—€â—€ ì—°ì‚° ë°©í–¥
+		 * sum(5) í˜¸ì¶œ ì‹œ => 5+sum(4) í˜¸ì¶œ
+		 * sum(4) í˜¸ì¶œ ì‹œ => 5+4+sum(3) í˜¸ì¶œ
+		 * sum(3) í˜¸ì¶œ ì‹œ => 5+4+3+sum(2) í˜¸ì¶œ
+		 * sum(2) í˜¸ì¶œ ì‹œ => 5+4+3+2+sum(1) í˜¸ì¶œ
+		 * sum(1) í˜¸ì¶œ ì‹œ => 5+4+3+2+1 ê²°ê´ê°’ ë°˜í™˜
 		 * */
 		return n > 1 ? n + sum(n - 1) : n;
 	}
 
-	// Quiz. ´Ü, y´Â 0ÀÌ»ó
-	// xÀÇ y½Â °è»êÇÏ±â
+	// Quiz. ë‹¨, yëŠ” 0ì´ìƒ
+	// xì˜ yìŠ¹ ê³„ì‚°í•˜ê¸°
 	public int pow(int x, int y) {
-		// ex: 2ÀÇ 3½ÂÀÌ¸é pow(2,3)=8ÀÌ ¹ÝÈ¯µÇ¾î¾ß ÇÑ´Ù.
-		return y > 0 ? x * pow(x, y - 1) : 1;//¸ðµç ¼öÀÇ 0½ÂÀ» »ý°¢ÇÏ¸é ¹üÀ§´Â 0ÀÏ ¶§ 1À» ¹ÝÈ¯ÇØÁÖ¾î¾ß ÇÑ´Ù´Â °ÍÀ» °¨¾ÈÇØ¾ß ÇÑ´Ù.
+		// ex: 2ì˜ 3ìŠ¹ì´ë©´ pow(2,3)=8ì´ ë°˜í™˜ë˜ì–´ì•¼ í•œë‹¤.
+		return y > 0 ? x * pow(x, y - 1) : 1;//ëª¨ë“  ìˆ˜ì˜ 0ìŠ¹ì„ ìƒê°í•˜ë©´ ë²”ìœ„ëŠ” 0ì¼ ë•Œ 1ì„ ë°˜í™˜í•´ì£¼ì–´ì•¼ í•œë‹¤ëŠ” ê²ƒì„ ê°ì•ˆí•´ì•¼ í•œë‹¤.
 	}
 	
 	public int factorial(int n) {

@@ -1,13 +1,13 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForQuiz9 {
 	public static void main(String[] args) {
-		// 1~10±îÁöÀÇ ÇÕ, 11~20±îÁöÀÇ ÇÕ, ..., 91~100±îÁöÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â.
+		// 1~10ê¹Œì§€ì˜ í•©, 11~20ê¹Œì§€ì˜ í•©, ..., 91~100ê¹Œì§€ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°.
 		int s = 0;
 		for (int n = 1; n <= 100; n++) {
 			s += n;
 			if (n % 10 == 0) {
-				System.out.printf("%d~%d±îÁöÀÇ ÇÕ: %d\n", n - 9, n, s);
+				System.out.printf("%d~%dê¹Œì§€ì˜ í•©: %d\n", n - 9, n, s);
 				s = 0;
 			}
 		}

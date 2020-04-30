@@ -1,4 +1,4 @@
-package d200219.join;
+ï»¿package d200219.join;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class App {
 
 		while (true) {
 			do {
-				System.out.print("1.°¡ÀÔ 2.Ãâ·Â 3.¾ÆÀÌµð°Ë»ö 4.Á¾·á > ");
+				System.out.print("1.ê°€ìž… 2.ì¶œë ¥ 3.ì•„ì´ë””ê²€ìƒ‰ 4.ì¢…ë£Œ > ");
 				ch = sc.nextInt();
 			} while (ch < 1 || ch > 4);
 	

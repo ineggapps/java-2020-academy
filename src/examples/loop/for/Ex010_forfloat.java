@@ -1,9 +1,9 @@
-
+ï»¿
 public class Ex010_forfloat {
 	public static void main(String[] args) {
 /*
-     for ¹®¿¡ float Çü Áõ°¨º¯¼ö¸¦ »ç¿ëÇÑ ¿¹
-     for ¹®¿¡¼­´Â Àı´ë floatÀ» Áõ°¨º¯¼ö·Î »ç¿ëÇÏÁö ¾Ê´Â´Ù.
+     for ë¬¸ì— float í˜• ì¦ê°ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•œ ì˜ˆ
+     for ë¬¸ì—ì„œëŠ” ì ˆëŒ€ floatì„ ì¦ê°ë³€ìˆ˜ë¡œ ì‚¬ìš©í•˜ì§€ ì•ŠëŠ”ë‹¤.
  */
 		int start = 2000000000;
 		int count = 0;
@@ -11,29 +11,29 @@ public class Ex010_forfloat {
 			count++;
 		}
 
-		// ¾Æ·¡ÀÇ °á°ú´Â ¸î ÀÏ±î ? 50?
+		// ì•„ë˜ì˜ ê²°ê³¼ëŠ” ëª‡ ì¼ê¹Œ ? 50?
 		System.out.println(count); // 0
 		
 /*
-    - ºÎÁ¤È®ÇÑ ºÎµ¿¼Ò¼öÁ¡ ¿¬»êÀÇ °á°ú
+    - ë¶€ì •í™•í•œ ë¶€ë™ì†Œìˆ˜ì  ì—°ì‚°ì˜ ê²°ê³¼
        double total = 0;
        total += 4.7;
        total += .4;
        System.out.println(total); // 5.1000000000000005
       	     
-	 - int ÇüÀÇ 2,000,000,000°ú 2,000,000,050Àº ºĞ¸í ´Ù¸¥ °ªÀÌÁö¸¸ ÀÌ °ªÀ» float ÇüÀ¸·Î º¯È¯ÇÏ¸é µÑÀº °°Àº °ªÀÌ µÈ´Ù.
+	 - int í˜•ì˜ 2,000,000,000ê³¼ 2,000,000,050ì€ ë¶„ëª… ë‹¤ë¥¸ ê°’ì´ì§€ë§Œ ì´ ê°’ì„ float í˜•ìœ¼ë¡œ ë³€í™˜í•˜ë©´ ë‘˜ì€ ê°™ì€ ê°’ì´ ëœë‹¤.
 	   int value1 = 2_000_000_000;
 	   int value2 = 2_000_000_050;
 
 	   float fValue1 = 2_000_000_000;
 	   float fValue2 = 2_000_000_050;
 
-	   // int ÇüÀÇ value1°ú value2´Â ´Ù¸¥ °ªÀÌ´Ù.
-	   System.out.println("int Çü " + value1 + "Àº "+ value2 +"¿Í " + (value1 == value2 ? "°°´Ù" : "´Ù¸£´Ù"));
+	   // int í˜•ì˜ value1ê³¼ value2ëŠ” ë‹¤ë¥¸ ê°’ì´ë‹¤.
+	   System.out.println("int í˜• " + value1 + "ì€ "+ value2 +"ì™€ " + (value1 == value2 ? "ê°™ë‹¤" : "ë‹¤ë¥´ë‹¤"));
 
-	   // float ÇüÀÇ fValue1°ú fValue2´Â °°Àº °ªÀÌ´Ù.
-	   System.out.println("float Çü " + fValue1 + "Àº "+ fValue2 +"¿Í " + (fValue1 == fValue2 ? "°°´Ù" : "´Ù¸£´Ù"));
-	   // µÎ °ª ¸ğµÎ float¿¡¼­´Â 2.0E9     
+	   // float í˜•ì˜ fValue1ê³¼ fValue2ëŠ” ê°™ì€ ê°’ì´ë‹¤.
+	   System.out.println("float í˜• " + fValue1 + "ì€ "+ fValue2 +"ì™€ " + (fValue1 == fValue2 ? "ê°™ë‹¤" : "ë‹¤ë¥´ë‹¤"));
+	   // ë‘ ê°’ ëª¨ë‘ floatì—ì„œëŠ” 2.0E9     
 */		
 	}
 }

@@ -1,7 +1,7 @@
-public class Ex009_InfiniteLoop {
+ï»¿public class Ex009_InfiniteLoop {
 	public static void main(String[] args) {
 /*
-		1~10±îÁöÀÇ Á¤¼öÀÇ ÇÕÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥(¹«ÇÑ ·çÇÁ, infinite loop)
+		1~10ê¹Œì§€ì˜ ì •ìˆ˜ì˜ í•©ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨(ë¬´í•œ ë£¨í”„, infinite loop)
 */	
 		int s=0, n=0;
 		for(; ;) {
@@ -10,7 +10,7 @@ public class Ex009_InfiniteLoop {
 			if(n>=10)
 				break;
 		}
-		System.out.println("ÇÕ : "+s);
+		System.out.println("í•© : "+s);
 
 /*		
 		int s=0;
@@ -19,7 +19,7 @@ public class Ex009_InfiniteLoop {
 			if(n>=10)
 				break;
 		}
-		System.out.println("ÇÕ:"+s);
+		System.out.println("í•©:"+s);
 */		
 	}
 }

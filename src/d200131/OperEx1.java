@@ -1,9 +1,9 @@
-package d200131;
+ï»¿package d200131;
 
 public class OperEx1 {
 	/*
-	 * a+=b; //byte, short, char ¿¡¼­ Çü º¯È¯ÀÌ ÀÏ¾î³ªÁö ¾Ê´Â´Ù´Â ÀåÁ¡ÀÌ ÀÖ´Ù. (¡ñ¿¬»ê ¼Óµµ°¡ ºü¸§)
-	 * a=a+b; // byte, short, char¿¡¼­ int ÇüÀ¸·Î º¯È¯ÀÌ ÀÏ¾î³­ µÚ¿¡ ¿¬»êÀ» ¼öÇàÇÑ´Ù.
+	 * a+=b; //byte, short, char ì—ì„œ í˜• ë³€í™˜ì´ ì¼ì–´ë‚˜ì§€ ì•ŠëŠ”ë‹¤ëŠ” ìž¥ì ì´ ìžˆë‹¤. (âˆµì—°ì‚° ì†ë„ê°€ ë¹ ë¦„)
+	 * a=a+b; // byte, short, charì—ì„œ int í˜•ìœ¼ë¡œ ë³€í™˜ì´ ì¼ì–´ë‚œ ë’¤ì— ì—°ì‚°ì„ ìˆ˜í–‰í•œë‹¤.
 	 * 
 	 * a-=b;
 	 * a=a-b;
@@ -14,9 +14,9 @@ public class OperEx1 {
 		a = 10;
 		b = 5;
 		a = (short) (a + b);
-//		a=a+b;//int·Î Çü º¯È¯ÀÌ ÀÏ¾î³ª¹Ç·Î ¿À·ù°¡ ¹ß»ýÇÑ´Ù
+//		a=a+b;//intë¡œ í˜• ë³€í™˜ì´ ì¼ì–´ë‚˜ë¯€ë¡œ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤
 		System.out.println(a);
-		a += b;// ¹èÁ¤¿¬»êÀÚ¿¡¼­´Â Çü º¯È¯ÀÌ ÀÏ¾î³ªÁö ¾ÊÀ¸¹Ç·Î ¿¬»ê ¼Óµµ°¡ ´õ ºü¸£´Ù.
+		a += b;// ë°°ì •ì—°ì‚°ìžì—ì„œëŠ” í˜• ë³€í™˜ì´ ì¼ì–´ë‚˜ì§€ ì•Šìœ¼ë¯€ë¡œ ì—°ì‚° ì†ë„ê°€ ë” ë¹ ë¥´ë‹¤.
 		System.out.println(a);
 
 		char c = 'A';
@@ -25,8 +25,8 @@ public class OperEx1 {
 
 		float f = 3.5f;
 		char ch = 'A';
-		ch+=f; //floatÇü°úÀÇ ¹èÁ¤¿¬»êÀ» ¼öÇàÇÏ¿´¾îµµ Çüº¯È¯ÀÌ ÀÏ¾î³ªÁö ¾Ê´Â´Ù.
-		//65+3.5=68.5¶ó´Â ¿¬»êÀÌ ³ª¿ÀÁö¸¸ ÄÄÆÄÀÏ·¯¿¡¼­ º°µµ·Î ¼Ò¼ýÁ¡À» Àý»èÇÏ¿© 68ÀÇ °á±£°ªÀÎ D°¡ Ãâ·ÂµÇµµ·Ï ÇÑ´Ù.
+		ch+=f; //floatí˜•ê³¼ì˜ ë°°ì •ì—°ì‚°ì„ ìˆ˜í–‰í•˜ì˜€ì–´ë„ í˜•ë³€í™˜ì´ ì¼ì–´ë‚˜ì§€ ì•ŠëŠ”ë‹¤.
+		//65+3.5=68.5ë¼ëŠ” ì—°ì‚°ì´ ë‚˜ì˜¤ì§€ë§Œ ì»´íŒŒì¼ëŸ¬ì—ì„œ ë³„ë„ë¡œ ì†Œìˆ«ì ì„ ì ˆì‚­í•˜ì—¬ 68ì˜ ê²°ê´ê°’ì¸ Dê°€ ì¶œë ¥ë˜ë„ë¡ í•œë‹¤.
 		System.out.println(ch);
 		f=3.5f;
 		ch='A';

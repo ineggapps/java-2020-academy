@@ -1,4 +1,4 @@
-package user;
+ï»¿package user;
 
 public class User {
 	private UserVO[] list;
@@ -22,7 +22,7 @@ public class User {
 
 	public int append(UserVO vo) {
 		if (count >= list.length) {
-			// ¹è¿­ÀÌ ´Ù Â÷¸é Å©±â¸¦ 10 ´õ ´Ã¸°´Ù.
+			// ë°°ì—´ì´ ë‹¤ ì°¨ë©´ í¬ê¸°ë¥¼ 10 ë” ëŠ˜ë¦°ë‹¤.
 			allocation(list.length + 10);
 		}
 		list[count++] = vo;
@@ -33,7 +33,7 @@ public class User {
 		return list;
 	}
 
-	//ÇØ´ç ÀÎµ¦½ºÀÇ UserVO °´Ã¼¸¦ ¹İÈ¯ÇÑ´Ù.
+	//í•´ë‹¹ ì¸ë±ìŠ¤ì˜ UserVO ê°ì²´ë¥¼ ë°˜í™˜í•œë‹¤.
 	public UserVO getDataList(int idx) {
 		if (idx >= count || idx < 0) {
 			return null;

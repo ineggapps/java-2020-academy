@@ -1,15 +1,15 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex7 {
 	public static void main(String[] args) {
 		User7 ob = new User7();
-		Demo7 dd = ob; //¾÷Ä³½ºÆÃ
+		Demo7 dd = ob; //ì—…ìºìŠ¤íŒ…
 		dd.print();
 		
 		System.out.println();
-		Test7 tt= new User7();//¾÷Ä³½ºÆÃ
+		Test7 tt= new User7();//ì—…ìºìŠ¤íŒ…
 		tt.write();
-		((Demo7)tt).print(); //User7Å¬·¡½º°¡ Demo7 ÀÎÅÍÆäÀÌ·Î ±¸ÇöµÇ¾î ÀÖÀ¸¹Ç·Î
+		((Demo7)tt).print(); //User7í´ë˜ìŠ¤ê°€ Demo7 ì¸í„°í˜ì´ë¡œ êµ¬í˜„ë˜ì–´ ìˆìœ¼ë¯€ë¡œ
 	}
 }
 
@@ -21,7 +21,7 @@ interface Test7{
 	public void write();
 }
 
-//µÎ °³ ÀÌ»óÀÇ ÀÎÅÍÆäÀÌ½º ±¸ÇöÀÌ °¡´ÉÇÏ´Ù
+//ë‘ ê°œ ì´ìƒì˜ ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„ì´ ê°€ëŠ¥í•˜ë‹¤
 class User7 implements Demo7, Test7{
 
 	@Override

@@ -1,4 +1,4 @@
-package d200224;
+ï»¿package d200224;
 
 public class Ex5 {
 	public static void main(String[] args) {
@@ -12,13 +12,13 @@ public class Ex5 {
 		long b = ob2.get();
 		System.out.println(b);
 
-//		User5<String> ob3 = new User5<>(); // ÄÄÆÄÀÏ¿À·ù: User5ÀÇ T´Â NumberÀ» »ó¼Ó¹ŞÀº Å¬·¡½º¿©¾ß¸¸ ÇÑ´Ù.
+//		User5<String> ob3 = new User5<>(); // ì»´íŒŒì¼ì˜¤ë¥˜: User5ì˜ TëŠ” Numberì„ ìƒì†ë°›ì€ í´ë˜ìŠ¤ì—¬ì•¼ë§Œ í•œë‹¤.
 	
 	}
 }
 
 class User5<T extends Number> {
-	// T´Â Number¸¦ »ó¼Ó¹ŞÀº Å¬·¡½º¿¡ ÇÑÁ¤µÈ´Ù.
+	// TëŠ” Numberë¥¼ ìƒì†ë°›ì€ í´ë˜ìŠ¤ì— í•œì •ëœë‹¤.
 	private T t;
 
 	public void set(T t) {

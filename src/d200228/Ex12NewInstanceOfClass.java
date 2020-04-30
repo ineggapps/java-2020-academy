@@ -1,17 +1,17 @@
-package d200228;
+ï»¿package d200228;
 
 public class Ex12NewInstanceOfClass {
 	public static void main(String[] args) {
-		String clsName = "d200228.User12";// ÆĞÅ°Áö¸í.Å¬·¡½º¸í ÀÏÄ¡½ÃÄÑ¾ß ÇÔ! <<< °¢ÀÚ ÆĞÅ°Áö¸í°ú Å¬·¡½º¸í¿¡ ¸Â°Ô ÀÛ¼ºÇÑ ÈÄ ½ÇÇà
+		String clsName = "d200228.User12";// íŒ¨í‚¤ì§€ëª….í´ë˜ìŠ¤ëª… ì¼ì¹˜ì‹œì¼œì•¼ í•¨! <<< ê°ì íŒ¨í‚¤ì§€ëª…ê³¼ í´ë˜ìŠ¤ëª…ì— ë§ê²Œ ì‘ì„±í•œ í›„ ì‹¤í–‰
 		try {
 			Class<?> cls = Class.forName(clsName);
-			// °´Ã¼ »ı¼º ¶Ç ´Ù¸¥ ¹æ¹ı (new ¾²Áö ¾Ê°í)
+			// ê°ì²´ ìƒì„± ë˜ ë‹¤ë¥¸ ë°©ë²• (new ì“°ì§€ ì•Šê³ )
 			Object oo = cls.newInstance();
 
-			// ´Ù¿î Ä³½ºÆÃÇÏ¿© »ç¿ëÇÏ±â
+			// ë‹¤ìš´ ìºìŠ¤íŒ…í•˜ì—¬ ì‚¬ìš©í•˜ê¸°
 			User12 uu = (User12) oo;
 			int s = uu.add(10, 5);
-			uu.print("ÇÕ", s);
+			uu.print("í•©", s);
 
 		} catch (Exception e) {
 			e.printStackTrace();

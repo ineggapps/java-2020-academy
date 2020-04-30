@@ -1,4 +1,4 @@
-package d200227;
+ï»¿package d200227;
 
 import java.util.Scanner;
 
@@ -9,8 +9,8 @@ public class Ex8 {
 		String name;
 		int kor, eng;
 
-		System.out.println("ÀÌ¸§, ±¹¾î, ¿µ¾î[,·Î ±¸ºĞÇØ¼­ ÀÔ·Â] : ");
-		sc = new Scanner(sc.next()).useDelimiter("\\s*,\\s*"); // \\s: °ø¹é *: ¸ğµç ¹®ÀÚ
+		System.out.println("ì´ë¦„, êµ­ì–´, ì˜ì–´[,ë¡œ êµ¬ë¶„í•´ì„œ ì…ë ¥] : ");
+		sc = new Scanner(sc.next()).useDelimiter("\\s*,\\s*"); // \\s: ê³µë°± *: ëª¨ë“  ë¬¸ì
 		//aa,10,20
 		name = sc.next();
 		kor = sc.nextInt();

@@ -1,4 +1,4 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
@@ -11,22 +11,22 @@ public class IfQuiz8 {
 		String stuNum, name;
 		char grade;
 
-		System.out.print("ÇĞ¹ø? ");
-		// 00ÇĞ¹øÀ» ¹ŞÀ» ¼ö ÀÖ´Ù. cf)¿ìÆí¹øÈ£, ÀüÈ­¹øÈ£, °èÁÂ¹øÈ£, ½Å¿ëÄ«µå¹øÈ£ ´Â ¹®ÀÚ¿­·Î ÀÔ·Â¹Ş´Â °ÍÀ» ÀüÁ¦·Î ÇÑ´Ù.
+		System.out.print("í•™ë²ˆ? ");
+		// 00í•™ë²ˆì„ ë°›ì„ ìˆ˜ ìˆë‹¤. cf)ìš°í¸ë²ˆí˜¸, ì „í™”ë²ˆí˜¸, ê³„ì¢Œë²ˆí˜¸, ì‹ ìš©ì¹´ë“œë²ˆí˜¸ ëŠ” ë¬¸ìì—´ë¡œ ì…ë ¥ë°›ëŠ” ê²ƒì„ ì „ì œë¡œ í•œë‹¤.
 		stuNum = sc.next();
-		System.out.print("ÀÌ¸§? ");
+		System.out.print("ì´ë¦„? ");
 		name = sc.next();
-		System.out.print("Áß°£°í»ç Á¡¼ö? ");
+		System.out.print("ì¤‘ê°„ê³ ì‚¬ ì ìˆ˜? ");
 		midScore = sc.nextInt();
-		System.out.print("±â¸»°í»ç Á¡¼ö? ");
+		System.out.print("ê¸°ë§ê³ ì‚¬ ì ìˆ˜? ");
 		finalScore = sc.nextInt();
-		System.out.print("°á¼® È½¼ö? ");
+		System.out.print("ê²°ì„ íšŸìˆ˜? ");
 		ab = sc.nextInt();
-		System.out.print("·¹Æ÷Æ® Á¡¼ö? ");
+		System.out.print("ë ˆí¬íŠ¸ ì ìˆ˜? ");
 		reportScore = sc.nextInt();
 
 
-		// Ãâ¼®Á¡¼ö °è»ê
+		// ì¶œì„ì ìˆ˜ ê³„ì‚°
 		if (ab >= 6) {
 			atResult = 0;
 		} else if (ab >= 4) {
@@ -64,7 +64,7 @@ public class IfQuiz8 {
 			grade = 'F';
 		}
 
-		System.out.println("ÇĞ¹ø\tÀÌ¸§\tÁß°£°í»ç\t±â¸»°í»ç\tÃâ¼®Á¡¼ö\t·¹Æ÷Æ®\t\tÇÕ»êÁ¡¼ö\tÇĞÁ¡");
+		System.out.println("í•™ë²ˆ\tì´ë¦„\tì¤‘ê°„ê³ ì‚¬\tê¸°ë§ê³ ì‚¬\tì¶œì„ì ìˆ˜\të ˆí¬íŠ¸\t\tí•©ì‚°ì ìˆ˜\tí•™ì ");
 		System.out.format("%s\t%s\t%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%c", 
 				stuNum, name, midResult, finalResult, atResult,reportResult, total, grade);
 

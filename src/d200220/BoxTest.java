@@ -1,4 +1,4 @@
-package d200220;
+ï»¿package d200220;
 
 public class BoxTest {
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class BoxTest {
 		
 		BoxGeneric<Item> bb = new BoxGeneric<Item>();
 		bb.setItem(new Item("H"));
-//		bb.setItem(new String("a")); ÀÌ·± °Ç ¾È µÈ´Ü ¸»ÀÌÁö!
+//		bb.setItem(new String("a")); ì´ëŸ° ê±´ ì•ˆ ëœë‹¨ ë§ì´ì§€!
 	}
 }
 

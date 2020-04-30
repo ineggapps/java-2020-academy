@@ -1,22 +1,22 @@
-package r200203;
+ï»¿package r200203;
 
 import java.util.Scanner;
 
 public class FlowEx25 {
 	public static void main(String[] args) {
 		int num=0,sum=0;
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. (¿¹:12345)> ");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”. (ì˜ˆ:12345)> ");
 		
 		Scanner sc = new Scanner(System.in);
 		num= sc.nextInt();
 		
 		while(num!=0) {
-			//numÀ» 10À¸·Î ³ª´« ³ª¸ÓÁö¸¦ sum¿¡ ´õÇÑ´Ù
+			//numì„ 10ìœ¼ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ë¥¼ sumì— ë”í•œë‹¤
 			sum+=num%10;
 			System.out.printf("sum=%3d num=%d%n",sum,num);
 			num/=10;
 		}
-		System.out.println("°¢ ÀÚ¸´¼öÀÇ ÇÕ: "+sum);
+		System.out.println("ê° ìë¦¿ìˆ˜ì˜ í•©: "+sum);
 		sc.close();
 	}
 }

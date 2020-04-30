@@ -1,52 +1,52 @@
-package d200211;
+ï»¿package d200211;
 
-//ÆÄÀÏ¸í°ú °°Àº Å¬·¡½º¸¸ public ¼±¾ğÀÌ °¡´ÉÇÏ´Ù
+//íŒŒì¼ëª…ê³¼ ê°™ì€ í´ë˜ìŠ¤ë§Œ public ì„ ì–¸ì´ ê°€ëŠ¥í•˜ë‹¤
 public class Ex1 {
 	public static void main(String[] args) {
-		//ÂüÁ¶º¯¼ö(Reference Type Variables)
-		Rectangle r;//¼±¾ğ¸¸
-		r = new Rectangle();//»ı¼ºÀÚ¸¦ ÀÌ¿ëÇÏ¿© ¸Ş¸ğ¸®¿¡ ÇÒ´çÇÑ´Ù. »ı¼ºÀÚ ¡æ ¸Ş¸ğ¸® ÇÒ´ç°ú ÃÊ±âÈ­ ÀÛ¾÷À» ´ã´çÇÑ´Ù.
+		//ì°¸ì¡°ë³€ìˆ˜(Reference Type Variables)
+		Rectangle r;//ì„ ì–¸ë§Œ
+		r = new Rectangle();//ìƒì„±ìë¥¼ ì´ìš©í•˜ì—¬ ë©”ëª¨ë¦¬ì— í• ë‹¹í•œë‹¤. ìƒì„±ì â†’ ë©”ëª¨ë¦¬ í• ë‹¹ê³¼ ì´ˆê¸°í™” ì‘ì—…ì„ ë‹´ë‹¹í•œë‹¤.
 		r.width=57; r.height=128;
 		int a,b;
 		a=r.area();
 		b=r.length();
-		System.out.println("³ĞÀÌ: " + a );
-		System.out.println("µÑ·¹: " + b );
+		System.out.println("ë„“ì´: " + a );
+		System.out.println("ë‘˜ë ˆ: " + b );
 	}
 }
-//Á¢±ÙÁ¦ÇÑÀÚ privateÀº ÀÚ½Äµµ »ó¼Ó¹ŞÀ» ¼ö ¾ø´Ù.
+//ì ‘ê·¼ì œí•œì privateì€ ìì‹ë„ ìƒì†ë°›ì„ ìˆ˜ ì—†ë‹¤.
 //class TestParent{
 //	private int a;
 //	public int b;
 //}
 //class TestChild extends TestParent{
 //	void test() {
-//		System.out.println(a); //a »ç¿ë ºÒ°¡ (not visible)
+//		System.out.println(a); //a ì‚¬ìš© ë¶ˆê°€ (not visible)
 //	}
 //}
 /*
-- »ç°¢Çü
-	- ÇÊµå
-		- °¡·Î
-		- ¼¼·Î
-	- ¸Ş¼­µå
-		- ³ĞÀÌ
-		- µÑ·¹
+- ì‚¬ê°í˜•
+	- í•„ë“œ
+		- ê°€ë¡œ
+		- ì„¸ë¡œ
+	- ë©”ì„œë“œ
+		- ë„“ì´
+		- ë‘˜ë ˆ
  */
 class Rectangle {
-	// ÇÊµå(ÀÎ½ºÅÏ½º º¯¼ö)
+	// í•„ë“œ(ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜)
 	int width;
 	int height;
 
-	// ¸Ş¼­µå(ÀÎ½ºÅÏ½º ÇàÀ§)
-	// ³ĞÀÌ ¸Ş¼­µå
+	// ë©”ì„œë“œ(ì¸ìŠ¤í„´ìŠ¤ í–‰ìœ„)
+	// ë„“ì´ ë©”ì„œë“œ
 	public int area() {
 		int result;
 		result = width * height;
 		return result;
 	}
 
-	// µÑ·¹ ¸Ş¼­µå
+	// ë‘˜ë ˆ ë©”ì„œë“œ
 	public int length() {
 		int result;
 		result = (width + height) * 2;
@@ -54,7 +54,7 @@ class Rectangle {
 	}
 }
 /*
- * 1. Ãß»óÈ­(°´Ã¼ ¸ğµ¨¸µ)
- * 2. ÄÚµù 
- * 3. °´Ã¼ »ı¼ºÇÏ¿© ÀÌ¿ë
+ * 1. ì¶”ìƒí™”(ê°ì²´ ëª¨ë¸ë§)
+ * 2. ì½”ë”© 
+ * 3. ê°ì²´ ìƒì„±í•˜ì—¬ ì´ìš©
  */

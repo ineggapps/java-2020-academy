@@ -1,4 +1,4 @@
-package member;
+ï»¿package member;
 
 import java.util.Scanner;
 
@@ -10,29 +10,29 @@ public class App {
 		try {
 			while (true) {
 				do {
-					System.out.print("1.ÀÔ·Â 2.Ãâ·Â 3.¼öÁ¤ 4.Å»Åğ 5.ÀÌ¸ŞÀÏ°Ë»ö 6.ÀÌ¸§°Ë»ö 7.Á¾·á > ");
+					System.out.print("1.ì…ë ¥ 2.ì¶œë ¥ 3.ìˆ˜ì • 4.íƒˆí‡´ 5.ì´ë©”ì¼ê²€ìƒ‰ 6.ì´ë¦„ê²€ìƒ‰ 7.ì¢…ë£Œ > ");
 					ch = sc.nextInt();
 				} while (ch < 1 || ch > 7);
 				if (ch == 7) {
 					break;
 				}
 				switch (ch) {
-				case 1:// ÀÔ·Â
+				case 1:// ì…ë ¥
 					mb.input();
 					break;
-				case 2:// Ãâ·Â
+				case 2:// ì¶œë ¥
 					mb.print();
 					break;
-				case 3:// ¼öÁ¤
+				case 3:// ìˆ˜ì •
 					mb.update();
 					break;
-				case 4:// Å»Åğ
+				case 4:// íƒˆí‡´
 					mb.delete();
 					break;
-				case 5:// ÀÌ¸ŞÀÏ°Ë»ö
+				case 5:// ì´ë©”ì¼ê²€ìƒ‰
 					mb.findByEmail();
 					break;
-				case 6:// ÀÌ¸§°Ë»ö
+				case 6:// ì´ë¦„ê²€ìƒ‰
 					mb.findByName();
 					break;
 				}

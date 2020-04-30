@@ -1,7 +1,7 @@
-public class Ex007_Hap {
+ï»¿public class Ex007_Hap {
 	public static void main(String[] args) {
 /*
-		1~10 ±îÁö ÇÕÀ» °è»êÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~10 ê¹Œì§€ í•©ì„ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int a=0, s=0;
 		while(a++ <= 9) {

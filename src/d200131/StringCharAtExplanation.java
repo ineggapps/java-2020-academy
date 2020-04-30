@@ -1,19 +1,19 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class StringCharAtExplanation {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­?");
+		System.out.print("ë¬¸ìì—´?");
 		String s = sc.next();
 		char ch;
 		
-		//s°¡ "korea"ÀÎ °æ¿ì
-		ch = s.charAt(0);//korea Áß k¸¦ ÃßÃâ (0¹øÂ°)
+		//sê°€ "korea"ì¸ ê²½ìš°
+		ch = s.charAt(0);//korea ì¤‘ kë¥¼ ì¶”ì¶œ (0ë²ˆì§¸)
 		System.out.println(ch);
 
-		ch = s.charAt(2);//korea Áß rÀ» ÃßÃâ (2¹øÂ°)
+		ch = s.charAt(2);//korea ì¤‘ rì„ ì¶”ì¶œ (2ë²ˆì§¸)
 		System.out.println(ch);
 		
 		sc.close();

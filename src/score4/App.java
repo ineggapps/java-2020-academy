@@ -1,4 +1,4 @@
-package score4;
+ï»¿package score4;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class App {
 		try {
 			while (true) {
 				do {
-					System.out.print("1.ÀÔ·Â 2.¼öÁ¤ 3.»èÁ¦ 4.Ãâ·Â 5.ÇĞ¹ø°Ë»ö 6.ÀÌ¸§°Ë»ö 7.Á¾·á > ");
+					System.out.print("1.ì…ë ¥ 2.ìˆ˜ì • 3.ì‚­ì œ 4.ì¶œë ¥ 5.í•™ë²ˆê²€ìƒ‰ 6.ì´ë¦„ê²€ìƒ‰ 7.ì¢…ë£Œ > ");
 					ch = sc.nextInt();
 				} while (ch < 1 || ch > 7);
 				if (ch == 7) {
@@ -20,22 +20,22 @@ public class App {
 				}
 
 				switch (ch) {
-				case 1:// ÀÔ·Â
+				case 1:// ì…ë ¥
 					ss.input();
 					break;
-				case 2:// ¼öÁ¤
+				case 2:// ìˆ˜ì •
 					ss.update();
 					break;
-				case 3:// »èÁ¦
+				case 3:// ì‚­ì œ
 					ss.delete();
 					break;
-				case 4:// Ãâ·Â
+				case 4:// ì¶œë ¥
 					ss.print();
 					break;
-				case 5:// ÇĞ¹ø °Ë»ö
+				case 5:// í•™ë²ˆ ê²€ìƒ‰
 					ss.findByHak();
 					break;
-				case 6:// ÀÌ¸§ °Ë»ö
+				case 6:// ì´ë¦„ ê²€ìƒ‰
 					ss.findByName();
 					break;
 				}

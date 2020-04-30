@@ -1,34 +1,34 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class WhileQuizHard3B {
-	// µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº Á¤¼öÀÇ ÃÖ´ë°ø¾à¼ö ¹× ÃÖ¼Ò°ø¹è¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥
-	// while¹®À» ÀÌ¿ëÇÏ¿© ÀÛ¼º
+	// ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì •ìˆ˜ì˜ ìµœëŒ€ê³µì•½ìˆ˜ ë° ìµœì†Œê³µë°°ìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
+	// whileë¬¸ì„ ì´ìš©í•˜ì—¬ ì‘ì„±
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num1, num2,tmp;
-		int a,b; //¿¬»ê¿¡ ÇÊ¿äÇÑ ÀÓ½Ãº¯¼ö
+		int a,b; //ì—°ì‚°ì— í•„ìš”í•œ ì„ì‹œë³€ìˆ˜
  		int gcd=0,lcm=0;
 
-		// ÀÔ·Â
-		System.out.print("µÎ ¼ö ? ");
+		// ì…ë ¥
+		System.out.print("ë‘ ìˆ˜ ? ");
 		num1 = sc.nextInt();//32
 		num2 = sc.nextInt();//72
 //		num1=1071;
 //		num2=1029;
 		
-		//¿¬»ê ÆíÀÇ¸¦ À§ÇØ ¿À¸§Â÷¼ø Á¤·Ä
-		//´ë¼Ò ÆÇº° (num1<num2)·Î Á¤·Ä
+		//ì—°ì‚° í¸ì˜ë¥¼ ìœ„í•´ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+		//ëŒ€ì†Œ íŒë³„ (num1<num2)ë¡œ ì •ë ¬
 		if(num1>num2) {
 			tmp = num1;
 			num1=num2;
 			num2=tmp;
 		}
 		
-		//ÃÖ´ë°ø¾à¼ö ¿¬»ê
+		//ìµœëŒ€ê³µì•½ìˆ˜ ì—°ì‚°
 		/*
-			¹æ¹ı2: µÎ Á¤¼ö a,b¿¡ ´ëÇØ¼­ a>bÀÏ °æ¿ì a=a-b¸¦, a<bÀÇ °æ¿ì b=b-a¸¦ a==b°¡ µÉ ¶§±îÁö ¹İº¹ÇÏ¸é ±× ¼ö°¡ ÃÖ´ë°ø¾à¼ö°¡ µÈ´Ù.
+			ë°©ë²•2: ë‘ ì •ìˆ˜ a,bì— ëŒ€í•´ì„œ a>bì¼ ê²½ìš° a=a-bë¥¼, a<bì˜ ê²½ìš° b=b-aë¥¼ a==bê°€ ë  ë•Œê¹Œì§€ ë°˜ë³µí•˜ë©´ ê·¸ ìˆ˜ê°€ ìµœëŒ€ê³µì•½ìˆ˜ê°€ ëœë‹¤.
 		*/
 		a=num2;//1071
 		b=num1;//1029
@@ -43,9 +43,9 @@ public class WhileQuizHard3B {
 		}
 		gcd=a;
 		lcm=(num1*num2)/gcd;
-		//Ãâ·Â
-		System.out.printf("GCD(ÃÖ´ë°ø¾à¼ö): %d%n", gcd);
-		System.out.printf("LCM(ÃÖ¼Ò°ø¹è¼ö): %d%n", lcm);
+		//ì¶œë ¥
+		System.out.printf("GCD(ìµœëŒ€ê³µì•½ìˆ˜): %d%n", gcd);
+		System.out.printf("LCM(ìµœì†Œê³µë°°ìˆ˜): %d%n", lcm);
 
 		sc.close();
 

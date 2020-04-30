@@ -1,16 +1,16 @@
-package d200205;
+ï»¿package d200205;
 
 public class RandomEx {
 	public static void main(String[] args) {
 		int n;
 		for(int i=1;i<=100;i++) {
 			/* 
-			 * Math.random()Àº 0ºÎÅÍ 1¹Ì¸¸ÀÇ ½Ç¼ö¸¦ ¹ß»ý½ÃÅ´.
-			 * ¹üÀ§´Â 0¿¡¼­ 0.999999999999999999¡¦±îÁöÀÌ´Ù.
-			 * 0 			<= Math.random() 		< 1 »çÀÌÀÇ ³­¼ö ¹ß»ý
-			 * 0*100 <= Math.random()*100 < 100 »çÀÌÀÇ ³­¼ö ¹ß»ý
+			 * Math.random()ì€ 0ë¶€í„° 1ë¯¸ë§Œì˜ ì‹¤ìˆ˜ë¥¼ ë°œìƒì‹œí‚´.
+			 * ë²”ìœ„ëŠ” 0ì—ì„œ 0.999999999999999999â€¦ê¹Œì§€ì´ë‹¤.
+			 * 0 			<= Math.random() 		< 1 ì‚¬ì´ì˜ ë‚œìˆ˜ ë°œìƒ
+			 * 0*100 <= Math.random()*100 < 100 ì‚¬ì´ì˜ ë‚œìˆ˜ ë°œìƒ
 			 * 0+1    <= Math.random()*100+1 < 100+1
-			 ¡Å 1         <= Math.random()*100+1 < 101
+			 âˆ´ 1         <= Math.random()*100+1 < 101
 			*/
 			n = (int)(Math.random()*100)+1;
 			System.out.printf("%5d\t",n);

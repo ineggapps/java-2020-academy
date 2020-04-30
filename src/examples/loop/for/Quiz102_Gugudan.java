@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz102_Gugudan {
 	public static void main(String[] args) {
 /*		
-		´ÜÀ» ÀÔ·Â ¹Ş¾Æ ÀÔ·Â¹ŞÀº ´ÜÀÇ ±¸±¸´ÜÀ» Ãâ·Â
+		ë‹¨ì„ ì…ë ¥ ë°›ì•„ ì…ë ¥ë°›ì€ ë‹¨ì˜ êµ¬êµ¬ë‹¨ì„ ì¶œë ¥
 */		
 		Scanner sc=new Scanner(System.in);
 		int n;
 		
 		do {
-			System.out.print("´Ü ? ");
+			System.out.print("ë‹¨ ? ");
 			n=sc.nextInt();
 		} while(n<1||n>9);
 		

@@ -1,9 +1,9 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz107_Pass {
 	public static void main(String[] args) {
 /*
-		ÀÌ¸§°ú ¼¼°ú¸ñ Á¡¼ö¸¦ ÀÔ·Â ¹Þ¾Æ Çù°Ý ¿©ºÎ¸¦ ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		ì´ë¦„ê³¼ ì„¸ê³¼ëª© ì ìˆ˜ë¥¼ ìž…ë ¥ ë°›ì•„ í˜‘ê²© ì—¬ë¶€ë¥¼ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */
 		Scanner sc = new Scanner(System.in);
 
@@ -12,10 +12,10 @@ public class Quiz107_Pass {
 		int tot, ave;
 		String result;
 		
-		System.out.print("ÀÌ¸§ ? ");
+		System.out.print("ì´ë¦„ ? ");
 		name = sc.next();
 		
-		System.out.print("¼¼°ú¸ñ Á¡¼ö ? ");
+		System.out.print("ì„¸ê³¼ëª© ì ìˆ˜ ? ");
 		com=sc.nextInt();
 		excel=sc.nextInt();
 		word=sc.nextInt();
@@ -24,14 +24,14 @@ public class Quiz107_Pass {
 		ave = tot / 3;
 
 		if(com>=40 && excel>=40 && word>=40 && ave>=60) {
-			result = "ÇÕ°Ý";
+			result = "í•©ê²©";
 		}else if(ave<60) {
-			result = "ºÒÇÕ°Ý";
+			result = "ë¶ˆí•©ê²©";
 		}else {
-			result = "°ú¶ô";
+			result = "ê³¼ë½";
 		}
 		
-		System.out.println(name+"´ÔÀº " + result+" ÀÔ´Ï´Ù.");
+		System.out.println(name+"ë‹˜ì€ " + result+" ìž…ë‹ˆë‹¤.");
 		
 		sc.close();
 	}

@@ -1,23 +1,23 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class IfEx4 {
 	public static void main(String[] args) {
-		// Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼ö°¡ È¦¼öÀÎÁö ¾Æ´ÑÁö ÆÇº°
+		// ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ê°€ í™€ìˆ˜ì¸ì§€ ì•„ë‹Œì§€ íŒë³„
 		Scanner sc = new Scanner(System.in);
 		int n;
 		String s;
 
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥: ");
 		n = sc.nextInt();
 
 		/*
-		 * s=n%2==1?"È¦¼ö":"Â¦¼ö"; //if¹®À» ÀÌ¿ëÇÏÁö ¾Ê¾Æµµ »ïÇ×¿¬»êÀ¸·Î ÇÑ ÁÙ¸¸À¸·Îµµ Ç¥ÇöÇÒ ¼ö ÀÖ´Ù.
+		 * s=n%2==1?"í™€ìˆ˜":"ì§ìˆ˜"; //ifë¬¸ì„ ì´ìš©í•˜ì§€ ì•Šì•„ë„ ì‚¼í•­ì—°ì‚°ìœ¼ë¡œ í•œ ì¤„ë§Œìœ¼ë¡œë„ í‘œí˜„í•  ìˆ˜ ìˆë‹¤.
 		 */
-		s = "Â¦¼ö";
+		s = "ì§ìˆ˜";
 		if (n % 2 == 1) {
-			s = "È¦¼ö";
+			s = "í™€ìˆ˜";
 		}
 
 		System.out.println(n + ": " + s);

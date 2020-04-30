@@ -1,11 +1,11 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForEx2 {
 	public static void main(String[] args) {
-		//´ÙÁßfor¹® ¿¹Á¦
+		//ë‹¤ì¤‘forë¬¸ ì˜ˆì œ
 		for(int i=1;i<=3;i++) {
 			System.out.println("i:"+i);
-			for(int j=1;j<=i;j++) {//i°¡ ÀÏ ¶§ 1¹ø, 2ÀÏ ¶§ 2¹ø, 3ÀÏ ¶§ 3¹ø => ÃÑ 6¹ø ½ÇÇà
+			for(int j=1;j<=i;j++) {//iê°€ ì¼ ë•Œ 1ë²ˆ, 2ì¼ ë•Œ 2ë²ˆ, 3ì¼ ë•Œ 3ë²ˆ => ì´ 6ë²ˆ ì‹¤í–‰
 				System.out.println("i:"+i+", j:"+j);
 			}
 			System.out.println("----------------------");

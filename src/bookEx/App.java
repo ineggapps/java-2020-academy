@@ -1,4 +1,4 @@
-package bookEx;
+ï»¿package bookEx;
 
 public class App {
 	public static void main(String[] args) {
@@ -6,9 +6,9 @@ public class App {
 		MemberVO loginMember = null;
 		int ch;
 		
-		System.out.println("** µµ¼­°ü **"); 
+		System.out.println("** ë„ì„œê´€ **"); 
 		while(true) {
-			System.out.println("\n[¸ŞÀÎ ¸Ş´º]");
+			System.out.println("\n[ë©”ì¸ ë©”ë‰´]");
 			
 			loginMember = lib.loginMember();
 			if(loginMember == null) {

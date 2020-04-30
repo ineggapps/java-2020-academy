@@ -1,7 +1,7 @@
-public class Quiz201_Hap {
+ï»¿public class Quiz201_Hap {
 	public static void main(String[] args) {
 /*		
-		1-2+3-4... ¿¡¼­ ¿¬»ê°á°ú°¡ 100ÀÌ»óÀÌ µÇ´Â ÃÖ¼ÒÀÇ ¼ö¿Í ÇÕ
+		1-2+3-4... ì—ì„œ ì—°ì‚°ê²°ê³¼ê°€ 100ì´ìƒì´ ë˜ëŠ” ìµœì†Œì˜ ìˆ˜ì™€ í•©
 */
 		int s, n;
 		

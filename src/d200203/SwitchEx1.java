@@ -1,10 +1,10 @@
-package d200203;
+ï»¿package d200203;
 
 public class SwitchEx1 {
 	public static void main(String[] args) {
 		int a=3;
-		switch(a) {//switch( ___ ) º¯¼ö, ¿¬»ê½Ä ¸ğµÎ ¿Ã ¼ö ÀÖ´Ù.
-			//case ¸®ÅÍ·²: ±¸¹® ÀÛ¼º
+		switch(a) {//switch( ___ ) ë³€ìˆ˜, ì—°ì‚°ì‹ ëª¨ë‘ ì˜¬ ìˆ˜ ìˆë‹¤.
+			//case ë¦¬í„°ëŸ´: êµ¬ë¬¸ ì‘ì„±
 			case 3: System.out.print("*");
 			case 2: System.out.print("#");
 			case 1: System.out.print("$");

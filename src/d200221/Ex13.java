@@ -1,19 +1,19 @@
-package d200221;
+ï»¿package d200221;
 
 public class Ex13 {
-	// unchecked Exception °ü·ÃµÈ ¿¹Á¦
+	// unchecked Exception ê´€ë ¨ëœ ì˜ˆì œ
 	public static void main(String[] args) {
 //		User13 uu = new User13();
-//		uu.setValue(-1);// setValue ¸Ş¼­µå¸¦ È£ÃâÇÑ µÚ RuntimeException ¿¹¿Ü°¡ ¹ß»ıÇÑ´Ù.
-//		//ÇÏÁö¸¸ ¿¹¿ÜÃ³¸®¸¦ ÇÏÁö ¾Ê¾Æ¼­ ÇÁ·Î±×·¥ÀÌ °­Á¦·Î Á¾·áµÈ´Ù.
+//		uu.setValue(-1);// setValue ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œ ë’¤ RuntimeException ì˜ˆì™¸ê°€ ë°œìƒí•œë‹¤.
+//		//í•˜ì§€ë§Œ ì˜ˆì™¸ì²˜ë¦¬ë¥¼ í•˜ì§€ ì•Šì•„ì„œ í”„ë¡œê·¸ë¨ì´ ê°•ì œë¡œ ì¢…ë£Œëœë‹¤.
 //		int n = uu.getValue();
 //		System.out.println(n);
 //		System.out.println("end....");
 //	}
 		User13 uu = new User13();
 		try {
-			uu.setValue(-1);// setValue ¸Ş¼­µå¸¦ È£ÃâÇÑ µÚ RuntimeException ¿¹¿Ü°¡ ¹ß»ıÇÑ´Ù.
-			// ÇÏÁö¸¸ ¿¹¿ÜÃ³¸®¸¦ ÇÏÁö ¾Ê¾Æ¼­ ÇÁ·Î±×·¥ÀÌ °­Á¦·Î Á¾·áµÈ´Ù.
+			uu.setValue(-1);// setValue ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œ ë’¤ RuntimeException ì˜ˆì™¸ê°€ ë°œìƒí•œë‹¤.
+			// í•˜ì§€ë§Œ ì˜ˆì™¸ì²˜ë¦¬ë¥¼ í•˜ì§€ ì•Šì•„ì„œ í”„ë¡œê·¸ë¨ì´ ê°•ì œë¡œ ì¢…ë£Œëœë‹¤.
 			int n = uu.getValue();
 			System.out.println(n);
 		} catch (Exception e) {
@@ -32,9 +32,9 @@ class User13 {
 
 	public void setValue(int value) {
 		if (value < 0) {
-			// unchecked Exception Á¾·ùÀÎ RuntimeExceptionÀº ¸Ş¼­µå¿¡ throws¸¦ ¹İµå½Ã ¸í½ÃÇÒ ÇÊ¿ä°¡ ¾ø´Ù.
-			// µû¶ó¼­ ¹İµå½Ã ÀÌ ¸Ş¼­µå¸¦ ºÎ¸¥ ¸Ş¼­µå¿¡¼­µµ try-catch ±¸¹®À» »ç¿ëÇÒ ÇÊ¿ä°¡ ¾ø´Ù.
-			throw new RuntimeException("0 ÀÌ»ó¸¸ °¡´ÉÇÕ´Ï´Ù. ");
+			// unchecked Exception ì¢…ë¥˜ì¸ RuntimeExceptionì€ ë©”ì„œë“œì— throwsë¥¼ ë°˜ë“œì‹œ ëª…ì‹œí•  í•„ìš”ê°€ ì—†ë‹¤.
+			// ë”°ë¼ì„œ ë°˜ë“œì‹œ ì´ ë©”ì„œë“œë¥¼ ë¶€ë¥¸ ë©”ì„œë“œì—ì„œë„ try-catch êµ¬ë¬¸ì„ ì‚¬ìš©í•  í•„ìš”ê°€ ì—†ë‹¤.
+			throw new RuntimeException("0 ì´ìƒë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤. ");
 		}
 		this.value = value;
 	}

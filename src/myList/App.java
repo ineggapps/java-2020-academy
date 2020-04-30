@@ -1,25 +1,25 @@
-package myList;
+ï»¿package myList;
 
 public class App {
 	public static void main(String[] args) {
 		MyList<String> list = new MyArrayList<String>();
-		list.add("¼­¿ï");
-		list.add("´ëÀü");
-		list.add("´ë±¸");
-		list.add("ºÎ»ê");
-		list.add("Á¦ÁÖ");
-		list.add(1,"ÀÎÃµ");
+		list.add("ì„œìš¸");
+		list.add("ëŒ€ì „");
+		list.add("ëŒ€êµ¬");
+		list.add("ë¶€ì‚°");
+		list.add("ì œì£¼");
+		list.add(1,"ì¸ì²œ");
 
 		list.remove(list.size()-1);
 		
-		System.out.println("ÀÏ¹İ ¹İº¹¹®");
+		System.out.println("ì¼ë°˜ ë°˜ë³µë¬¸");
 		for(int i=0;i<list.size();i++) {
 			String s = list.get(i);
 			System.out.print(s+" ");
 		}
 		System.out.println();
 
-		System.out.println("IteratorÀ» ÀÌ¿ëÇÏ¿© ¼øÈ¸ÇÏ±â");
+		System.out.println("Iteratorì„ ì´ìš©í•˜ì—¬ ìˆœíšŒí•˜ê¸°");
 		MyIterator<String> it = list.iterator();
 		while(it.hasNext()) {
 			String s = it.next();

@@ -1,8 +1,8 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForTest2 {
 	public static void main(String[] args) {
-		//10¿¡¼­ 1±îÁö Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼º
+		//10ì—ì„œ 1ê¹Œì§€ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ ìž‘ì„±
 		for(int i=10;i>=1;i--) {
 			System.out.printf("%d\t",i);
 		}

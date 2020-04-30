@@ -1,7 +1,7 @@
-public class Quiz109_Fibonacci {
+ï»¿public class Quiz109_Fibonacci {
 	public static void main(String[] args) {
 /*		
-		ÇÇº¸³ªÄ¡¼ö¿­ 1+1+2+3+5+8+13+21 ÇÕ
+		í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´ 1+1+2+3+5+8+13+21 í•©
 */
 		int a=1, b=1, c;
         int s=2;
@@ -14,6 +14,6 @@ public class Quiz109_Fibonacci {
             b=c;
             n++;
         }
-        System.out.println("°á°ú : "+s); // 54
+        System.out.println("ê²°ê³¼ : "+s); // 54
 	}
 }

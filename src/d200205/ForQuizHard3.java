@@ -1,8 +1,8 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForQuizHard3 {
 	public static void main(String[] args) {
-		//a+b+c=25¸¦ ¸¸Á·ÇÏ´Â ÇÑ ÀÚ¸® ÀÚ¿¬¼ö a,b,c¸¦ ¸ğµÎ ±¸ÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â.
+		//a+b+c=25ë¥¼ ë§Œì¡±í•˜ëŠ” í•œ ìë¦¬ ìì—°ìˆ˜ a,b,cë¥¼ ëª¨ë‘ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°.
 		int start =1;
 		int end=9;
 		for(int a=start;a<=end;a++) {

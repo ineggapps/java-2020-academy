@@ -1,4 +1,4 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex9 {
 	public static void print(String[] ss) {
@@ -12,13 +12,13 @@ public class Ex9 {
 		int pass;
 		boolean flag;
 		String temp;
-		// compareTo¸¦ ÀÌ¿ëÇÑ ¹öºíÁ¤·Ä ¿¹Á¦
+		// compareToë¥¼ ì´ìš©í•œ ë²„ë¸”ì •ë ¬ ì˜ˆì œ
 		pass = 1;
 		do {
 			flag = false;
 			for (int i = 0; i < ss.length - pass; i++) {
-//				if(ss[i].compareTo(ss[i+1])>0) {//¿À¸§Â÷¼ø
-				if (ss[i].compareTo(ss[i + 1]) < 0) {// ³»¸²Â÷¼ø (ºñ±³ÇÏ¿© À½¼ö°¡ ³ª¿Â °æ¿ì ³»¸²)
+//				if(ss[i].compareTo(ss[i+1])>0) {//ì˜¤ë¦„ì°¨ìˆœ
+				if (ss[i].compareTo(ss[i + 1]) < 0) {// ë‚´ë¦¼ì°¨ìˆœ (ë¹„êµí•˜ì—¬ ìŒìˆ˜ê°€ ë‚˜ì˜¨ ê²½ìš° ë‚´ë¦¼)
 					temp = ss[i];
 					ss[i] = ss[i + 1];
 					ss[i + 1] = temp;
@@ -30,14 +30,14 @@ public class Ex9 {
 	}
 
 	public static void main(String[] args) {
-		String[] ss = { "¼­¿ï", "ºÎ»ê", "´ë±¸", "±¤ÁÖ", "´ëÀü" };
+		String[] ss = { "ì„œìš¸", "ë¶€ì‚°", "ëŒ€êµ¬", "ê´‘ì£¼", "ëŒ€ì „" };
 
-		System.out.print("sort Àü: ");
+		System.out.print("sort ì „: ");
 		print(ss);
 
 		sort(ss);
 
-		System.out.print("sort ÈÄ: ");
+		System.out.print("sort í›„: ");
 		print(ss);
 	}
 }

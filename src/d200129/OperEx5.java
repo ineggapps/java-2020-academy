@@ -1,10 +1,10 @@
-package d200129;
+ï»¿package d200129;
 
 public class OperEx5 {
 	public static void main(String[] args) {
 		char a, b;
 		a = 65;// a='A';
-		// b=a+10; // ÄÄÆÄÀÏ ¿À·ù; char+char => int+int => int °á±£°ª ÇüÅÂ°¡ intÇüÀÎ °ÍÀ» charÇü º¯¼ö¿¡ ´ëÀÔÇÒ ¼ö ¾ø´Ù.
+		// b=a+10; // ì»´íŒŒì¼ ì˜¤ë¥˜; char+char => int+int => int ê²°ê´ê°’ í˜•íƒœê°€ intí˜•ì¸ ê²ƒì„ charí˜• ë³€ìˆ˜ì— ëŒ€ì…í•  ìˆ˜ ì—†ë‹¤.
 		b=(char)(a+10);
 		System.out.println(b);
 	}

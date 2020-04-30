@@ -1,4 +1,4 @@
-package d200131;
+ï»¿package d200131;
 
 public class OperEx3 {
 	public static void main(String[] args) {
@@ -8,22 +8,22 @@ public class OperEx3 {
 		long d;
 
 		a = 10;
-		c = a;// ÀÚµ¿À¸·Î ÄÄÆÄÀÏ·¯°¡ aº¯¼öÀÇ short Å¸ÀÔÀ» intÇüÀ¸·Î º¯È¯À» ½ÃµµÇÑ´Ù.
-//		b=a;//ÄÄÆÄÀÏ ¿À·ù / cannot convert from byte to short Å« °ÍÀ» ÀÛÀº °Í¿¡ ´ëÀÔÇÒ ¼ö ¾ø´Ù
-		b = (byte) a;// °­Á¦·Î ÇüÀ» º¯È¯ÇÑ´Ù
-		System.out.println(b);// 10 (¿À¹öÇÃ·Î°¡ ÀÏ¾î³ªÁö ¾ÊÀ½)
+		c = a;// ìžë™ìœ¼ë¡œ ì»´íŒŒì¼ëŸ¬ê°€ aë³€ìˆ˜ì˜ short íƒ€ìž…ì„ intí˜•ìœ¼ë¡œ ë³€í™˜ì„ ì‹œë„í•œë‹¤.
+//		b=a;//ì»´íŒŒì¼ ì˜¤ë¥˜ / cannot convert from byte to short í° ê²ƒì„ ìž‘ì€ ê²ƒì— ëŒ€ìž…í•  ìˆ˜ ì—†ë‹¤
+		b = (byte) a;// ê°•ì œë¡œ í˜•ì„ ë³€í™˜í•œë‹¤
+		System.out.println(b);// 10 (ì˜¤ë²„í”Œë¡œê°€ ì¼ì–´ë‚˜ì§€ ì•ŠìŒ)
 
 		a = 200;
 		b = (byte) a;
-		System.out.println(b);// 200Àº byteÇü¿¡¼­ Ç¥ÇöÇÒ ¼ö ¾ø´Ù -128~127±îÁö¸¸ Ç¥ÇöÀÌ °¡´ÉÇÏ´Ù. µû¶ó¼­ ¿À¹öÇÃ·Î°¡ ¹ß»ýÇÏ¿© ÀüÇô ´Ù¸¥ °ªÀÎ -56ÀÌ Ãâ·ÂµÈ´Ù.
+		System.out.println(b);// 200ì€ byteí˜•ì—ì„œ í‘œí˜„í•  ìˆ˜ ì—†ë‹¤ -128~127ê¹Œì§€ë§Œ í‘œí˜„ì´ ê°€ëŠ¥í•˜ë‹¤. ë”°ë¼ì„œ ì˜¤ë²„í”Œë¡œê°€ ë°œìƒí•˜ì—¬ ì „í˜€ ë‹¤ë¥¸ ê°’ì¸ -56ì´ ì¶œë ¥ëœë‹¤.
 		
-		c='A'+10;//char+int => int + int ÇüÀ¸·Î º¯È¯ÇÏ¿© ¿¬»êÀ» ¼öÇàÇÑ´Ù. ('A'=65)
+		c='A'+10;//char+int => int + int í˜•ìœ¼ë¡œ ë³€í™˜í•˜ì—¬ ì—°ì‚°ì„ ìˆ˜í–‰í•œë‹¤. ('A'=65)
 		System.out.println(c);
 	
 		c=1_000_000;
-		d=c*c;//int * int => intÇüÀ¸·Î ³ª¿À´Âµ¥, ÀÌ°ÍÀ» longÇü º¯¼öÀÎd¿¡ ´ëÀÔÇÑ °ÍÀÌ¹Ç·Î ÃÖÁ¾ÀûÀ¸·Î´Â d¿¡ ´ëÀÔµÇ¸é¼­ longÇüÀ¸·Î Ä³½ºÆÃÀÌ µÇ¾ú´Ù
-		System.out.println(d);//ÇÏÁö¸¸ °öÇÏ¸é¼­ ¿¬»êÀÇ °á°ú°¡ intÇüÀÇ ¹üÀ§¸¦ ÃÊ°úÇÏ¿´À¸¹Ç·Î Àß¸²Çö»óÀÌ ¹ß»ýÇÏ¿´°í ¹ß»ýÇÑ µÚ¿¡ longÇü º¯¼ö¿¡ ´ëÀÔµÇ¾ú´Ù.
-		d=(long)c*c;// Ä³½ºÆÃµÈ long * int => long * long => longÇüÀÇ °á±£°ªÀÌ ³ª¿Â´Ù.
-		System.out.println(d);//°ö¼À ¿¬»êÀ» ÇÏ±â Àü¿¡ longÇüÀ¸·Î ÀÌ¹Ì º¯È¯À» ½ÃµµÇÏ¿´À¸¹Ç·Î ¿øÇÏ´Â °á±£°ªÀÌ Ãâ·ÂÀÌ µÈ´Ù.		
+		d=c*c;//int * int => intí˜•ìœ¼ë¡œ ë‚˜ì˜¤ëŠ”ë°, ì´ê²ƒì„ longí˜• ë³€ìˆ˜ì¸dì— ëŒ€ìž…í•œ ê²ƒì´ë¯€ë¡œ ìµœì¢…ì ìœ¼ë¡œëŠ” dì— ëŒ€ìž…ë˜ë©´ì„œ longí˜•ìœ¼ë¡œ ìºìŠ¤íŒ…ì´ ë˜ì—ˆë‹¤
+		System.out.println(d);//í•˜ì§€ë§Œ ê³±í•˜ë©´ì„œ ì—°ì‚°ì˜ ê²°ê³¼ê°€ intí˜•ì˜ ë²”ìœ„ë¥¼ ì´ˆê³¼í•˜ì˜€ìœ¼ë¯€ë¡œ ìž˜ë¦¼í˜„ìƒì´ ë°œìƒí•˜ì˜€ê³  ë°œìƒí•œ ë’¤ì— longí˜• ë³€ìˆ˜ì— ëŒ€ìž…ë˜ì—ˆë‹¤.
+		d=(long)c*c;// ìºìŠ¤íŒ…ëœ long * int => long * long => longí˜•ì˜ ê²°ê´ê°’ì´ ë‚˜ì˜¨ë‹¤.
+		System.out.println(d);//ê³±ì…ˆ ì—°ì‚°ì„ í•˜ê¸° ì „ì— longí˜•ìœ¼ë¡œ ì´ë¯¸ ë³€í™˜ì„ ì‹œë„í•˜ì˜€ìœ¼ë¯€ë¡œ ì›í•˜ëŠ” ê²°ê´ê°’ì´ ì¶œë ¥ì´ ëœë‹¤.		
 	}
 }

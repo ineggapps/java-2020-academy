@@ -1,14 +1,14 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz209_Sosu {
 	public static void main(String[] args) {
 /*		
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº Á¤¼ö°¡ ¼Ò¼öÀÎÁö¸¦ ÆÇº°
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì •ìˆ˜ê°€ ì†Œìˆ˜ì¸ì§€ë¥¼ íŒë³„
 */		
 		Scanner sc=new Scanner(System.in);
 
 		int num;
-		System.out.print("Á¤¼ö ? ");
+		System.out.print("ì •ìˆ˜ ? ");
 		num = sc.nextInt();
 
 		int n = 2;
@@ -22,9 +22,9 @@ public class Quiz209_Sosu {
 		}
 
 		if(b && num != 1) {
-			System.out.println(num + " : ¼Ò¼ö");
+			System.out.println(num + " : ì†Œìˆ˜");
 		} else { 
-			System.out.println(num + " : ¼Ò¼ö°¡ ¾Æ´Ô");
+			System.out.println(num + " : ì†Œìˆ˜ê°€ ì•„ë‹˜");
 		}
 		
 /*		
@@ -35,9 +35,9 @@ public class Quiz209_Sosu {
 				break;
 		}
 		if(n != num || num == 1) {
-			System.out.println(num + " : ¼Ò¼ö°¡ ¾Æ´Ô");
+			System.out.println(num + " : ì†Œìˆ˜ê°€ ì•„ë‹˜");
 		} else {
-			System.out.println(num + " : ¼Ò¼ö");
+			System.out.println(num + " : ì†Œìˆ˜");
 		}
 */
 

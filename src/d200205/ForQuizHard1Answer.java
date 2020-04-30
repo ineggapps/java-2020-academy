@@ -1,4 +1,4 @@
-package d200205;
+ï»¿package d200205;
 
 import java.util.Scanner;
 
@@ -6,21 +6,21 @@ public class ForQuizHard1Answer {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n;
-		// diff: ¹İº¹ÇÏ¸é¼­ ±¸ÇÏ´Â ÀÚ¿¬¼ö 7°úÀÇ °Å¸®(¾ç¼ö)
-		// min: ¹İº¹ÇÏ¸é¼­ ±¸ÇØÁø 7°úÀÇ °Å¸®ÀÇ ÃÖ¼Ú°ª
-		// result: ¹İº¹ÇÏ¸é¼­ ±¸ÇØÁø 7°úÀÇ °Å¸®ÀÇ ÃÖ¼Ú°ªÀ» ¸¸µå´Â Á¤¼ö
+		// diff: ë°˜ë³µí•˜ë©´ì„œ êµ¬í•˜ëŠ” ìì—°ìˆ˜ 7ê³¼ì˜ ê±°ë¦¬(ì–‘ìˆ˜)
+		// min: ë°˜ë³µí•˜ë©´ì„œ êµ¬í•´ì§„ 7ê³¼ì˜ ê±°ë¦¬ì˜ ìµœì†Ÿê°’
+		// result: ë°˜ë³µí•˜ë©´ì„œ êµ¬í•´ì§„ 7ê³¼ì˜ ê±°ë¦¬ì˜ ìµœì†Ÿê°’ì„ ë§Œë“œëŠ” ì •ìˆ˜
 		int diff, min = 0, result = 0;
-		System.out.println("5°³ÀÇ Á¤¼ö ÀÔ·Â ");
+		System.out.println("5ê°œì˜ ì •ìˆ˜ ì…ë ¥ ");
 		for (int i = 0; i < 5; i++) {
 			n = sc.nextInt();
-			// ¾ÖÃÊ¿¡ ÀÔ·Â¹ŞÀ» ¶§ À½¼ö°¡ µÇÁö ¾Êµµ·Ï ¹ŞÀ» ¼öµµ ÀÖ±¸³ª.
+			// ì• ì´ˆì— ì…ë ¥ë°›ì„ ë•Œ ìŒìˆ˜ê°€ ë˜ì§€ ì•Šë„ë¡ ë°›ì„ ìˆ˜ë„ ìˆêµ¬ë‚˜.
 			diff = n > 7 ? n - 7 : 7 - n;
-			if (i == 0 || min > diff) {// ¸Ç Ã³À½ÀÔ·Â ¹ŞÀº °æ¿ì
+			if (i == 0 || min > diff) {// ë§¨ ì²˜ìŒì…ë ¥ ë°›ì€ ê²½ìš°
 				min = diff;
 				result = n;
 			}
 		}
-		System.out.println("°¡Àå °¡±î¿î ¼ö: " + result);
+		System.out.println("ê°€ì¥ ê°€ê¹Œìš´ ìˆ˜: " + result);
 		sc.close();
 	}
 }

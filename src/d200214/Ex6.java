@@ -1,33 +1,33 @@
-package d200214;
+ï»¿package d200214;
 
 import java.util.Scanner;
 
 public class Ex6 {
 	public static void main(String[] args) {
-		// ¼ö½ÄÀ» ¹®ÀÚ¿­·Î ÀÔ·Â ¹Ş¾Æ ¿¬»êÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼º
-		// ¿¬»êÀº +, -, *, /¸¸ °¡´É
-		// ´Ü, ¼ıÀÚ¿¡´Â ºÎÈ£°¡ ¾ø°í split ¸Ş¼­µå´Â »ç¿ëÇÏÁö ¾Ê´Â´Ù.
-		// Áß°£¿¡ °ø¹éÀÌ ÀÔ·Â°¡´ÉÇÏ¸ç, °ø¹éÀÌ ÀÔ·ÂµÇ¾úÀ» °æ¿ì Á¦°Å ÈÄ¿¡ ¿¬»êÀ» ¼öÇàÇÑ´Ù.
-		// ¹®ÀÚ¿­¿¡¼­ °ø¹éÀ» ÀÔ·Â ¹Ş±â À§ÇØ¼­´Â nextLine()¸¦ »ç¿ëÇØ¾ß ÇÔ.
-		// ¼±¾ğ
+		// ìˆ˜ì‹ì„ ë¬¸ìì—´ë¡œ ì…ë ¥ ë°›ì•„ ì—°ì‚°í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±
+		// ì—°ì‚°ì€ +, -, *, /ë§Œ ê°€ëŠ¥
+		// ë‹¨, ìˆ«ìì—ëŠ” ë¶€í˜¸ê°€ ì—†ê³  split ë©”ì„œë“œëŠ” ì‚¬ìš©í•˜ì§€ ì•ŠëŠ”ë‹¤.
+		// ì¤‘ê°„ì— ê³µë°±ì´ ì…ë ¥ê°€ëŠ¥í•˜ë©°, ê³µë°±ì´ ì…ë ¥ë˜ì—ˆì„ ê²½ìš° ì œê±° í›„ì— ì—°ì‚°ì„ ìˆ˜í–‰í•œë‹¤.
+		// ë¬¸ìì—´ì—ì„œ ê³µë°±ì„ ì…ë ¥ ë°›ê¸° ìœ„í•´ì„œëŠ” nextLine()ë¥¼ ì‚¬ìš©í•´ì•¼ í•¨.
+		// ì„ ì–¸
 		Scanner sc = new Scanner(System.in);
 		String s;
 		int position = 0;
-		// ÀÔ·Â
-		System.out.print("¼ö½Ä(¿¹: 5+3) > ");
+		// ì…ë ¥
+		System.out.print("ìˆ˜ì‹(ì˜ˆ: 5+3) > ");
 		s = sc.nextLine();
 
-		// Ã³¸®
+		// ì²˜ë¦¬
 		s = s.replaceAll("\\s", "");
 		System.out.println(s);
 		for (String op : new String[] { "+", "-", "*", "/" }) {
 			if (s.indexOf(op) > 0) {
 				position = s.indexOf(op);
-//				¿¹) 123+52
-//				System.out.println(position);//¿¬»êÀÚ°¡ ÀÖ´Â À§Ä¡ÀÇ index (3)
-//				System.out.println(s.charAt(position));//¿¬»êÀÚ°¡ ³ª¿Â´Ù (+)
-//				System.out.println(s.substring(0, position));//¿¬»êÀÚ ¾Õ Ç× (123)
-//				System.out.println(s.substring(position + 1));//¿¬»êÀÚ µÚ Ç× (52)
+//				ì˜ˆ) 123+52
+//				System.out.println(position);//ì—°ì‚°ìê°€ ìˆëŠ” ìœ„ì¹˜ì˜ index (3)
+//				System.out.println(s.charAt(position));//ì—°ì‚°ìê°€ ë‚˜ì˜¨ë‹¤ (+)
+//				System.out.println(s.substring(0, position));//ì—°ì‚°ì ì• í•­ (123)
+//				System.out.println(s.substring(position + 1));//ì—°ì‚°ì ë’¤ í•­ (52)
 				int n1, n2;
 				n1 = Integer.parseInt(s.substring(0, position));
 				n2 = Integer.parseInt(s.substring(position + 1));

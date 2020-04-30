@@ -1,13 +1,13 @@
-package d200130;
+ï»¿package d200130;
 
 public class OperEx7 {
-	//formatter ±ÝÁö
+	//formatter ê¸ˆì§€
 	public static void main(String[] args) {
 		int a, b, c;
 		a = 12;
 		b = 6;
 
-		c = a & b;// °¢ ÀÚ¸´¼ý°ªÀÌ 1°ú 1ÀÎ °æ¿ì¸¸ 1ÀÌ´Ù.
+		c = a & b;// ê° ìžë¦¿ìˆ«ê°’ì´ 1ê³¼ 1ì¸ ê²½ìš°ë§Œ 1ì´ë‹¤.
 		/*
 		 	0000 1100
 		 &	0000 0110
@@ -16,10 +16,10 @@ public class OperEx7 {
 		 * */
 		System.out.println("a & b = "+c);
 
-		c= ~a; //a(32bit)¸¦ ¹ÝÀüÇÑ ¼ýÀã°ª(2ÀÇ º¸¼ö=> À½¼öÀÇ Àý´ëÄ¡·Î º¯È¯ÇÏ¸é -13ÀÌ ³ª¿Â´Ù.)
+		c= ~a; //a(32bit)ë¥¼ ë°˜ì „í•œ ìˆ«ìž£ê°’(2ì˜ ë³´ìˆ˜=> ìŒìˆ˜ì˜ ì ˆëŒ€ì¹˜ë¡œ ë³€í™˜í•˜ë©´ -13ì´ ë‚˜ì˜¨ë‹¤.)
 		System.out.println("~a = " + c);
 		
-		c = a | b;// °¢ ÀÚ¸´¼ý°ª Áß ÇÏ³ª¶óµµ 1ÀÌ¸é 1ÀÌ´Ù.
+		c = a | b;// ê° ìžë¦¿ìˆ«ê°’ ì¤‘ í•˜ë‚˜ë¼ë„ 1ì´ë©´ 1ì´ë‹¤.
 		/*
 		 	0000 1100
 		 |	0000 0110
@@ -28,7 +28,7 @@ public class OperEx7 {
 		 * */
 		System.out.println("a | b ="+c);
 
-		c = a ^ b;// °¢ ÀÚ¸´¼ý°ªÀÌ ¼­·Î °°À¸¸é 0 ´Ù¸£¸é 1ÀÌ´Ù.
+		c = a ^ b;// ê° ìžë¦¿ìˆ«ê°’ì´ ì„œë¡œ ê°™ìœ¼ë©´ 0 ë‹¤ë¥´ë©´ 1ì´ë‹¤.
 		/*
 		 	0000 1100
 		 ^	0000 0110

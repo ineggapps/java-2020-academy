@@ -1,29 +1,29 @@
-package d200217;
+ï»¿package d200217;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-//³ªÁß¿¡ ¿¹¿ÜÃ³¸®¸¦ Ãß°¡ÇÏ¸é ´õ ³ªÀº Å¬·¡½º·Î º¯È¯ÇÒ ¼ö ÀÖÀ½.
+//ë‚˜ì¤‘ì— ì˜ˆì™¸ì²˜ë¦¬ë¥¼ ì¶”ê°€í•˜ë©´ ë” ë‚˜ì€ í´ë˜ìŠ¤ë¡œ ë³€í™˜í•  ìˆ˜ ìˆìŒ.
 public class DateUtil {
 	/**
-	 * StringÇü ³¯Â¥¸¦ DateÇüÀ¸·Î º¯È¯
-	 * @param strDate º¯È¯ÇÒ ³¯Â¥
-	 * @return º¯È¯µÈ DateÇü
+	 * Stringí˜• ë‚ ì§œë¥¼ Dateí˜•ìœ¼ë¡œ ë³€í™˜
+	 * @param strDate ë³€í™˜í•  ë‚ ì§œ
+	 * @return ë³€í™˜ëœ Dateí˜•
 	 */
 	public Date toDate(String strDate) {
 		Date date = null;
 		try {
 			strDate.replaceAll("(\\-|\\.|/)", "");
 			if(strDate.length()!=8) {
-				//TODO: ¿¹¿Ü ´øÁø´Ù.
+				//TODO: ì˜ˆì™¸ ë˜ì§„ë‹¤.
 				return null;
 			}
-			//¸ğµç ³¯Â¥Çü½ÄÀÌ º¯È¯µÇ¾úÀ¸¹Ç·Î Çü½ÄÀº ´ÙÀ½°ú °°ÀÌ ÀÔ·ÂÇÑ´Ù yyyyMMdd
+			//ëª¨ë“  ë‚ ì§œí˜•ì‹ì´ ë³€í™˜ë˜ì—ˆìœ¼ë¯€ë¡œ í˜•ì‹ì€ ë‹¤ìŒê³¼ ê°™ì´ ì…ë ¥í•œë‹¤ yyyyMMdd
 			SimpleDateFormat f = new SimpleDateFormat("yyyyMMdd");
 			date = f.parse(strDate);
 		} catch (Exception e) {
-			// TODO: ¿¹¿Ü ´øÁø´Ù
-			System.out.println("¿¹¿Ü ¹ß»ı");
+			// TODO: ì˜ˆì™¸ ë˜ì§„ë‹¤
+			System.out.println("ì˜ˆì™¸ ë°œìƒ");
 			e.printStackTrace();
 		}
 		return date;

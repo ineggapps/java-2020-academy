@@ -1,14 +1,14 @@
-package d200221;
+ï»¿package d200221;
 
 import java.util.Scanner;
 
 public class Ex17 {
 	public static void main(String[] args) {
 		int n;
-		//JDK7 ÀÌ»ó ¹öÀüºÎÅÍ »ç¿ë °¡´ÉÇÑ ¹®¹ı.
-//		try(¸®¼Ò½º °´Ã¼) ¾ğ±ŞÇÏ¸é ÀÚµ¿À¸·Î ¸®¼Ò½º°¡ close(sc.close())µÊ.
+		//JDK7 ì´ìƒ ë²„ì „ë¶€í„° ì‚¬ìš© ê°€ëŠ¥í•œ ë¬¸ë²•.
+//		try(ë¦¬ì†ŒìŠ¤ ê°ì²´) ì–¸ê¸‰í•˜ë©´ ìë™ìœ¼ë¡œ ë¦¬ì†ŒìŠ¤ê°€ close(sc.close())ë¨.
 		try (Scanner sc = new Scanner(System.in)) {
-			System.out.println("³ªÀÌ ? ");
+			System.out.println("ë‚˜ì´ ? ");
 			n = sc.nextInt();
 			System.out.println(n);
 		} catch (Exception e) {

@@ -1,4 +1,4 @@
-package member;
+﻿package member;
 
 public interface Member {
 	public void input();

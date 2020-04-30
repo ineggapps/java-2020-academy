@@ -1,9 +1,9 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex8 {
 	public static void main(String[] args) {
-//		Demo8 d = new Demo8();//ÄÄÆÄÀÏ ¿À·ù. Ãß»óÅ¬·¡½º´Â ±¸ÇöÀÌ ´Ù µÇ¾î ÀÖ´Ù°í ÇÏ´õ¶óµµ °´Ã¼ »ı¼ºÀÌ ºÒ°¡´ÉÇÏ´Ù.
-		Test8 ob = new User8();// ¾÷Ä³½ºÆÃ
+//		Demo8 d = new Demo8();//ì»´íŒŒì¼ ì˜¤ë¥˜. ì¶”ìƒí´ë˜ìŠ¤ëŠ” êµ¬í˜„ì´ ë‹¤ ë˜ì–´ ìˆë‹¤ê³  í•˜ë”ë¼ë„ ê°ì²´ ìƒì„±ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤.
+		Test8 ob = new User8();// ì—…ìºìŠ¤íŒ…
 		ob.print();
 	}
 }

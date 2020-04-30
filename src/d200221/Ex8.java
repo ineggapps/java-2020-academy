@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -13,31 +13,31 @@ public class Ex8 {
 class User8 {
 	private Scanner sc = new Scanner(System.in);
 
-	// throws Exception: ¸Þ¼­µå¸¦ È£ÃâÇÑ °÷¿¡¼­ Exception checked ¿¹¿Ü¸¦ catchÇÏ¿©¾ß ÇÑ´Ù°í ¸í½ÃÇÑ °Í.
-	// cf) RuntimeException class¸¸ unchecked exceptionÀÌ´Ù.
-	//throws ¿¹¾à¾î¸¸ ºÙÀÏ ¼öµµ ÀÖÁö¸¸, Åë»óÀûÀ¸·Î´Â ¸Þ¼­µå ¾È¿¡¼­ throw new ±¸¹®°ú °°ÀÌ ½ÇÇàÇÑ´Ù.
-	//throws: Æ¯Á¤ ¿¹¿ÜÀÇ »óÈ²ÀÌ ¹ß»ýÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ¸í½Ã 
-	//throw: Æ¯Á¤ ¿¹¿ÜÀÇ »óÈ²ÀÌ ¹ß»ýÇØ¾ß ÇÒ ¶§ throw new ~·Î ¸Þ¼­µå ³»ºÎ¿¡¼­ ±¸¹®À» ±â¼úÇÒ ½Ã È£ÃâÇÑ ¸Þ¼­µåÂÊÀ¸·Î ¿¹¿ÜÀÇ »óÈ²ÀÌ Àü´ÞµÊ.
-	//Exceptionµµ Å¬·¡½ºÀÌ¹Ç·Î »õ·Î¿î ¿¹¿ÜÀÇ °´Ã¼¸¦ »ý¼º(new)ÇÏ¿© È£ÃâÇÑ ¸Þ¼­µåÂÊÀ¸·Î ³Ñ°ÜÁÖ¾î¾ß ÇÑ´Ù.
+	// throws Exception: ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œ ê³³ì—ì„œ Exception checked ì˜ˆì™¸ë¥¼ catchí•˜ì—¬ì•¼ í•œë‹¤ê³  ëª…ì‹œí•œ ê²ƒ.
+	// cf) RuntimeException classë§Œ unchecked exceptionì´ë‹¤.
+	//throws ì˜ˆì•½ì–´ë§Œ ë¶™ì¼ ìˆ˜ë„ ìžˆì§€ë§Œ, í†µìƒì ìœ¼ë¡œëŠ” ë©”ì„œë“œ ì•ˆì—ì„œ throw new êµ¬ë¬¸ê³¼ ê°™ì´ ì‹¤í–‰í•œë‹¤.
+	//throws: íŠ¹ì • ì˜ˆì™¸ì˜ ìƒí™©ì´ ë°œìƒí•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ëª…ì‹œ 
+	//throw: íŠ¹ì • ì˜ˆì™¸ì˜ ìƒí™©ì´ ë°œìƒí•´ì•¼ í•  ë•Œ throw new ~ë¡œ ë©”ì„œë“œ ë‚´ë¶€ì—ì„œ êµ¬ë¬¸ì„ ê¸°ìˆ í•  ì‹œ í˜¸ì¶œí•œ ë©”ì„œë“œìª½ìœ¼ë¡œ ì˜ˆì™¸ì˜ ìƒí™©ì´ ì „ë‹¬ë¨.
+	//Exceptionë„ í´ëž˜ìŠ¤ì´ë¯€ë¡œ ìƒˆë¡œìš´ ì˜ˆì™¸ì˜ ê°ì²´ë¥¼ ìƒì„±(new)í•˜ì—¬ í˜¸ì¶œí•œ ë©”ì„œë“œìª½ìœ¼ë¡œ ë„˜ê²¨ì£¼ì–´ì•¼ í•œë‹¤.
 	private int inputScore() throws Exception {
 		int result = 0;
-		// ¾Æ¹«µ¥¼­³ª try{}catch{}ºí·ÏÀ» ¾²¸é ¿ÀÈ÷·Á ´õ ÀÌ»óÇÏ°Ô ½ÇÇàÀÌ µÉ ¼öµµ ÀÖ´Ù.
-		// Á¡¼ö ÀÔ·Â¿¡¼­ ¿À·ù°¡ ¹ß»ýÇÏ¸é ÀüÈ­¹øÈ£°¡ Á¡¼ö¿¡¼­ ¿Ã¹Ù¸£°Ô ÀÔ·ÂµÇÁö ¾ÊÀº ¹®ÀÚ°¡ ÀÔ·ÂµÇ¾î ÇÁ·Î±×·¥ÀÌ Á¾·áµÈ´Ù.
-		// inputScore¸¦ ºÎ¸¥ ¸Þ¼­µåÀÎ input¸Þ¼­µå¿¡°Ô ¿À·ù°¡ ¹ß»ýÇß´Ù°í ¾Ë·ÁÁÖÁö ¾Ê°í ÀÚÃ¼ÀûÀ¸·Î ½ÇÇàÇØ ¹ö·È´Ù.
-		// ±×·¡¼­ ±¹¾î¿Í ¿µ¾îÁ¡¼ö¿¡´Â °è¼Ó ¹®ÀÚ¿­°ªÀ» ´ëÀÔÀ» ½ÃµµÇÏ·Á´Ù°¡ ¿À·ù°¡ ¿¬´Þ¾Æ ¹ß»ýÇÏ°í ¿¹¿ÜÃ³¸®°¡ ½ÇÇàµÈ´Ù.
-		// input¸Þ¼­µå´Â ¿À·ù°¡ ³­ »ç½ÇÀ» ¾ËÁö ¸øÇÑ Ã¤ ¹®ÀÚ¿­°ª ÀÔ·ÂÀ» tel = sc.next()±¸¹®¿¡¼­ ÃÖÁ¾ÀûÀ¸·Î ½ÇÇàÇÑ´Ù.
-		// °á·ÐÀûÀ¸·Î StringÀÇ °ªÀ» ¹Þ´Â tel = sc.next();±¸¹®¿¡¼­ ¹®ÀÚ¿­ÀÌ ÀÔ·ÂµÈ µÚ¿¡ ÇÁ·Î±×·¥ÀÌ Á¾·áµÈ´Ù.
+		// ì•„ë¬´ë°ì„œë‚˜ try{}catch{}ë¸”ë¡ì„ ì“°ë©´ ì˜¤ížˆë ¤ ë” ì´ìƒí•˜ê²Œ ì‹¤í–‰ì´ ë  ìˆ˜ë„ ìžˆë‹¤.
+		// ì ìˆ˜ ìž…ë ¥ì—ì„œ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ë©´ ì „í™”ë²ˆí˜¸ê°€ ì ìˆ˜ì—ì„œ ì˜¬ë°”ë¥´ê²Œ ìž…ë ¥ë˜ì§€ ì•Šì€ ë¬¸ìžê°€ ìž…ë ¥ë˜ì–´ í”„ë¡œê·¸ëž¨ì´ ì¢…ë£Œëœë‹¤.
+		// inputScoreë¥¼ ë¶€ë¥¸ ë©”ì„œë“œì¸ inputë©”ì„œë“œì—ê²Œ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆë‹¤ê³  ì•Œë ¤ì£¼ì§€ ì•Šê³  ìžì²´ì ìœ¼ë¡œ ì‹¤í–‰í•´ ë²„ë ¸ë‹¤.
+		// ê·¸ëž˜ì„œ êµ­ì–´ì™€ ì˜ì–´ì ìˆ˜ì—ëŠ” ê³„ì† ë¬¸ìžì—´ê°’ì„ ëŒ€ìž…ì„ ì‹œë„í•˜ë ¤ë‹¤ê°€ ì˜¤ë¥˜ê°€ ì—°ë‹¬ì•„ ë°œìƒí•˜ê³  ì˜ˆì™¸ì²˜ë¦¬ê°€ ì‹¤í–‰ëœë‹¤.
+		// inputë©”ì„œë“œëŠ” ì˜¤ë¥˜ê°€ ë‚œ ì‚¬ì‹¤ì„ ì•Œì§€ ëª»í•œ ì±„ ë¬¸ìžì—´ê°’ ìž…ë ¥ì„ tel = sc.next()êµ¬ë¬¸ì—ì„œ ìµœì¢…ì ìœ¼ë¡œ ì‹¤í–‰í•œë‹¤.
+		// ê²°ë¡ ì ìœ¼ë¡œ Stringì˜ ê°’ì„ ë°›ëŠ” tel = sc.next();êµ¬ë¬¸ì—ì„œ ë¬¸ìžì—´ì´ ìž…ë ¥ëœ ë’¤ì— í”„ë¡œê·¸ëž¨ì´ ì¢…ë£Œëœë‹¤.
 		try {
 			result = sc.nextInt();
 			if (result < 0 || result > 100) {
-				//¿¹¿Ü ´øÁü. ½ÇÇàÀ» ÁßÁöÇÏ°í È£Ãâ ÇÔ¼ö ÂÊ¿¡¼­ ¿¹¿Ü¸¦ ¹ß»ý½ÃÅ´.
-				throw new Exception("Á¡¼ö´Â 0~100 »çÀÌ¸¸ °¡´ÉÇÕ´Ï´Ù.");
+				//ì˜ˆì™¸ ë˜ì§. ì‹¤í–‰ì„ ì¤‘ì§€í•˜ê³  í˜¸ì¶œ í•¨ìˆ˜ ìª½ì—ì„œ ì˜ˆì™¸ë¥¼ ë°œìƒì‹œí‚´.
+				throw new Exception("ì ìˆ˜ëŠ” 0~100 ì‚¬ì´ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			}
 		} catch (InputMismatchException e) {
-//			System.out.println("¼ýÀÚ¸¸ ÀÔ·Â °¡´ÉÇÕ´Ï´Ù.");
-			sc.nextLine();// ¹®Á¦°¡ ÀÖ´Â µ¥ÀÌÅÍ¸¦ ÀÐ¾î¼­ ¹ö¸²
-			// ¿¹¿Ü¸¦ ¸í½ÃÀûÀ¸·Î ¹ß»ý½ÃÅ²´Ù.
-			throw new Exception("¼ýÀÚ¸¸ ÀÔ·Â °¡´ÉÇÕ´Ï´Ù");
+//			System.out.println("ìˆ«ìžë§Œ ìž…ë ¥ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
+			sc.nextLine();// ë¬¸ì œê°€ ìžˆëŠ” ë°ì´í„°ë¥¼ ì½ì–´ì„œ ë²„ë¦¼
+			// ì˜ˆì™¸ë¥¼ ëª…ì‹œì ìœ¼ë¡œ ë°œìƒì‹œí‚¨ë‹¤.
+			throw new Exception("ìˆ«ìžë§Œ ìž…ë ¥ ê°€ëŠ¥í•©ë‹ˆë‹¤");
 		}
 		return result;
 	}
@@ -47,16 +47,16 @@ class User8 {
 		int kor, eng;
 
 		try {
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			name = sc.next();
 
-			System.out.print("±¹¾î ? ");
+			System.out.print("êµ­ì–´ ? ");
 			kor = inputScore();
 
-			System.out.print("¿µ¾î ? ");
+			System.out.print("ì˜ì–´ ? ");
 			eng = inputScore();
 
-			System.out.print("ÀüÈ­¹øÈ£ ? ");
+			System.out.print("ì „í™”ë²ˆí˜¸ ? ");
 			tel = sc.next();
 
 			System.out.println(name + ":" + kor + ":" + eng + ":" + tel);

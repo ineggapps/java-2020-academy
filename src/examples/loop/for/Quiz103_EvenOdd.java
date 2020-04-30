@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz103_EvenOdd {
 	public static void main(String[] args) {
 /*		
-		10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹ŞÀº ÀÔ·Â ¹ŞÀº ¼ö¿¡ Â¦¼ö¿Í È¦¼ö °³¼ö
+		10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì€ ì…ë ¥ ë°›ì€ ìˆ˜ì— ì§ìˆ˜ì™€ í™€ìˆ˜ ê°œìˆ˜
 */		
 		Scanner sc=new Scanner(System.in);
 		int input, even, odd;
 		
 		even=odd=0;
-		System.out.println("10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä...");
+		System.out.println("10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”...");
 		for(int i=0; i<10; i++) {
 			input=sc.nextInt();
 			
@@ -19,8 +19,8 @@ public class Quiz103_EvenOdd {
 				odd++;
 			
 		}
-		System.out.println("È¦¼öÀÇ °³¼ö : " + odd);
-		System.out.println("Â¦¼öÀÇ °³¼ö : " + even);
+		System.out.println("í™€ìˆ˜ì˜ ê°œìˆ˜ : " + odd);
+		System.out.println("ì§ìˆ˜ì˜ ê°œìˆ˜ : " + even);
 		
 		sc.close();
 	}

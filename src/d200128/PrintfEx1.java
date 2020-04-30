@@ -1,4 +1,4 @@
-package d200128;
+ï»¿package d200128;
 
 public class PrintfEx1 {
 
@@ -8,9 +8,9 @@ public class PrintfEx1 {
 		b = 25;
 		c = a + b;
 
-		System.out.println("ÇÕ:" + c);
+		System.out.println("í•©:" + c);
 		System.out.println(a + "+" + b + "=" + c);
-		//º¹ÀâÇÑ ¼­½ÄÀ» ÀÏÁ¤ÇÑ Æ²¿¡ ¸ÂÃß¾î Ãâ·ÂÇÏ°Ô ÇØÁÖ´Â  printf ¸Ş¼­µå
+		//ë³µì¡í•œ ì„œì‹ì„ ì¼ì •í•œ í‹€ì— ë§ì¶”ì–´ ì¶œë ¥í•˜ê²Œ í•´ì£¼ëŠ”  printf ë©”ì„œë“œ
 		System.out.printf("%d + %d = %d\n",a,b,c);
 		System.out.format("%d + %d = %d\n",a,b,c);
 		System.out.println("========================");

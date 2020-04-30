@@ -1,4 +1,4 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
@@ -7,18 +7,18 @@ public class OperEx5 {
 //		int a = 10, b = 5;
 //		int c;
 //		c = a > b ? a : b;
-//		System.out.println("Å« °ª: " + c);
+//		System.out.println("í° ê°’: " + c);
 
-		// Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ Àı´ñ°ª ±¸ÇÏ±â
+		// ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì ˆëŒ“ê°’ êµ¬í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 		int a, b;
 
-		System.out.print("Á¤¼ö? ");
+		System.out.print("ì •ìˆ˜? ");
 		a = sc.nextInt();
 
-		// Àı´ñ°ª ±¸ÇÏ±â
+		// ì ˆëŒ“ê°’ êµ¬í•˜ê¸°
 		b = a > 0 ? a : -a;
-		System.out.println(a + "ÀÇ Àı´ñ°ªÀº " + b);
+		System.out.println(a + "ì˜ ì ˆëŒ“ê°’ì€ " + b);
 
 		sc.close();
 	}

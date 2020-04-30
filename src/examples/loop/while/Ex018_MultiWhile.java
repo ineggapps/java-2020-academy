@@ -1,13 +1,13 @@
-public class Ex018_MultiWhile {
+ï»¿public class Ex018_MultiWhile {
 	public static void main(String[] args) {
 /*
-		2~9´Ü ±îÁö ±¸±¸´Ü Ãâ·Â 
+		2~9ë‹¨ ê¹Œì§€ êµ¬êµ¬ë‹¨ ì¶œë ¥ 
 */
 		int dan, n;
 		
 		dan = 2;
 		while(dan<=9) {
-			System.out.println("*** "+dan+"´Ü ***");
+			System.out.println("*** "+dan+"ë‹¨ ***");
 			n=0;
 			while(n<9) {
 				n++;

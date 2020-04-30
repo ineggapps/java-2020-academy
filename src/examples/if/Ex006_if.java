@@ -1,24 +1,24 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex006_if {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 2 ¶Ç´Â 3ÀÇ ¹è¼öÀÎÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 2 ë˜ëŠ” 3ì˜ ë°°ìˆ˜ì¸ì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc=new Scanner(System.in);
 		
 		int input;
-		System.out.print("¼ö ? ");
+		System.out.print("ìˆ˜ ? ");
 		input = sc.nextInt();
 
 		if(input%2==0 && input%3==0) {
-			System.out.println(input + " : 2¿Í 3ÀÇ ¹è¼ö");
+			System.out.println(input + " : 2ì™€ 3ì˜ ë°°ìˆ˜");
 		} else if(input%2==0){
-			System.out.println(input + " : 2ÀÇ ¹è¼ö");
+			System.out.println(input + " : 2ì˜ ë°°ìˆ˜");
 		} else if(input%3==0){
-			System.out.println(input + " : 3ÀÇ ¹è¼ö");
+			System.out.println(input + " : 3ì˜ ë°°ìˆ˜");
 		} else {
-			System.out.println(input + " : 2 ¶Ç´Â 3ÀÇ ¹è¼ö°¡ ¾Æ´Ï´Ù.");
+			System.out.println(input + " : 2 ë˜ëŠ” 3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹ˆë‹¤.");
 		}		
 		sc.close();
 	}

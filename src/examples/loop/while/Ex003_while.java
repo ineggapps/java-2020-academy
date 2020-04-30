@@ -1,7 +1,7 @@
-public class Ex003_while {
+ï»¿public class Ex003_while {
 	public static void main(String[] args) {
 /*
-		1~10 ±îÁö ¼öÁß È¦¼ö¸¦ Ãâ·Â
+		1~10 ê¹Œì§€ ìˆ˜ì¤‘ í™€ìˆ˜ë¥¼ ì¶œë ¥
 */ 
 		int n=1;
 		while(n<=10) {

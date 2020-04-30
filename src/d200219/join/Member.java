@@ -1,4 +1,4 @@
-package d200219.join;
+ï»¿package d200219.join;
 
 public class Member {
 	private MemberVO[] list;
@@ -25,7 +25,7 @@ public class Member {
 		return count;
 	}
 
-	public MemberVO get(String id) { // id °Ë»ö ½Ã ¸¸Á·ÇÏ´Â MemberVO°´Ã¼ ¹İÈ¯
+	public MemberVO get(String id) { // id ê²€ìƒ‰ ì‹œ ë§Œì¡±í•˜ëŠ” MemberVOê°ì²´ ë°˜í™˜
 		for (int i = 0; i < count; i++) {
 			if (list[i].getId().equals(id)) {
 				return list[i];

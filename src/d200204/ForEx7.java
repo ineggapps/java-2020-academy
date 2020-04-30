@@ -1,13 +1,13 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForEx7 {
 	public static void main(String[] args) {
-		// A~ZÃâ·Â
+		// A~Zì¶œë ¥
 //		for(char a='A';a<='Z';a++) {
 //			System.out.printf("%c\t",a);
 //		}
 
-		// A~ZÃâ·Â (´Ü, ÇÑ ÁÙ¿¡ 5°³¾¿)
+		// A~Zì¶œë ¥ (ë‹¨, í•œ ì¤„ì— 5ê°œì”©)
 		int cnt = 0;
 		for (char a = 'A'; a <= 'Z'; a++) {
 			System.out.printf("%c\t", a);

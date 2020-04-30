@@ -1,7 +1,7 @@
-public class Ex003_for {
+ï»¿public class Ex003_for {
 	public static void main(String[] args) {
 /*
-		1~10 ±îÁö ¼öÁß Â¦¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~10 ê¹Œì§€ ìˆ˜ì¤‘ ì§ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */	
 		int n;
 		for(n=2; n<=10; n+=2) {

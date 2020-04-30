@@ -1,8 +1,8 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayQuiz2 {
 	public static void main(String[] args) {
-		// 5Çà 5¿­ÀÇ ¹è¿­¿¡ A~Y±îÁö ¿µ¹®ÀÚ¸¦ ´ÙÀ½°ú °°ÀÌ Ãâ·Â
+		// 5í–‰ 5ì—´ì˜ ë°°ì—´ì— A~Yê¹Œì§€ ì˜ë¬¸ìë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ì¶œë ¥
 		/*
 		 E		J		O		Y
 		 D		I		N		X
@@ -18,7 +18,7 @@ public class ArrayQuiz2 {
 			}
 		}
 
-		System.out.println("[½ÇÇà°á°ú]");
+		System.out.println("[ì‹¤í–‰ê²°ê³¼]");
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.printf("%c\t", a[i][j]);

@@ -1,21 +1,21 @@
-package d200228;
+ï»¿package d200228;
 
 public class Ex4AnonymousClass {
-	// ¿À¹ö¶óÀÌµùÀÇ ¿¹
-	// 1. »ó¼Ó¹Ş°í toString() ¸Ş¼­µå¸¦ ÀçÁ¤ÀÇ
-	// 2. ¾Æ·¡ÀÇ ¿¹Á¦¿Í °°ÀÌ ÀÍ¸íÀÇ Å¬·¡½º¸¦ ±¸ÇöÇÑ´Ù.
+	// ì˜¤ë²„ë¼ì´ë”©ì˜ ì˜ˆ
+	// 1. ìƒì†ë°›ê³  toString() ë©”ì„œë“œë¥¼ ì¬ì •ì˜
+	// 2. ì•„ë˜ì˜ ì˜ˆì œì™€ ê°™ì´ ìµëª…ì˜ í´ë˜ìŠ¤ë¥¼ êµ¬í˜„í•œë‹¤.
 	public static void main(String[] args) {
 		Object ob0 = new Object();
 		System.out.println(ob0.toString());
 		Object ob1 = new Object() {
-			// ¾Æ¹«°Íµµ ÀçÁ¤ÀÇÇÏÁö ¾Ê¾ÒÀ½
+			// ì•„ë¬´ê²ƒë„ ì¬ì •ì˜í•˜ì§€ ì•Šì•˜ìŒ
 		};
 		System.out.println(ob1.toString());
 		Object ob2 = new Object() {
-			// Å¬·¡½ºÀÇ ÀÏºÎ ¸Ş¼­µå¸¦ ¿À¹ö¶óÀÌµùÀ» ÇÒ ¼ö ÀÖÀ½.
+			// í´ë˜ìŠ¤ì˜ ì¼ë¶€ ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”©ì„ í•  ìˆ˜ ìˆìŒ.
 			@Override
 			public String toString() {
-				return "¹æ°¡¹æ°¡.";
+				return "ë°©ê°€ë°©ê°€.";
 			}
 		};
 		System.out.println(ob2.toString());

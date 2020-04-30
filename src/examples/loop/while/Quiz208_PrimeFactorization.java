@@ -1,9 +1,9 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz208_PrimeFactorization {
 	public static void main(String[] args) {
 /*		
-	 	2ÀÌ»óÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ¼ÒÀÎ¼ö ºĞÇØÇÏ¿© Ãâ·Â ÇÏ´Â ÇÁ·Î±×·¥
+	 	2ì´ìƒì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì†Œì¸ìˆ˜ ë¶„í•´í•˜ì—¬ ì¶œë ¥ í•˜ëŠ” í”„ë¡œê·¸ë¨
 */	 	
 		Scanner sc = new Scanner(System.in);
 
@@ -11,7 +11,7 @@ public class Quiz208_PrimeFactorization {
 		int p, n;
 		
 		do {
-			System.out.print("Á¤¼ö ? ");
+			System.out.print("ì •ìˆ˜ ? ");
 			num=sc.nextInt();
 		} while(num<2);
 		

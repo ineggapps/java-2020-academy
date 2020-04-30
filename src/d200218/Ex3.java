@@ -1,4 +1,4 @@
-package d200218;
+ï»¿package d200218;
 
 import java.text.DecimalFormat;
 
@@ -8,14 +8,14 @@ public class Ex3 {
 		String s;
 
 		s = df.format(123456.123);
-		System.out.println(s);//123,456 Ãâ·ÂµÊ
+		System.out.println(s);//123,456 ì¶œë ¥ë¨
 		
 	
-		//#, 0 µî º¯È¯ ¹®ÀÚ¿¡ °üÇÑ »çÇ×Àº API¸¦ ÂüÁ¶.
-//		DecimalFormat df2 = new DecimalFormat("#,##0.#");//¼Ò¼ýÁ¡ÀÌ 1ÀÚ¸® but Á¤¼ö=>Á¤¼ö Ãâ·Â
-		DecimalFormat df2 = new DecimalFormat("#,##0.0");//¼Ò¼ýÁ¡ÀÌ 1ÀÚ¸®. Á¤¼ö¿©µµ n.0 Ãâ·Â
-//		s=df2.format(123456.173);//¼­½Ä¿¡ ¸ÂÃß¾î ¼Ò¼ýÁ¡ n+1¹øÂ° ÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²µÊ
-		s=df2.format(123456);//¼­½Ä¿¡ ¸ÂÃß¾î ¼Ò¼ýÁ¡ n+1¹øÂ° ÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²µÊ
+		//#, 0 ë“± ë³€í™˜ ë¬¸ìžì— ê´€í•œ ì‚¬í•­ì€ APIë¥¼ ì°¸ì¡°.
+//		DecimalFormat df2 = new DecimalFormat("#,##0.#");//ì†Œìˆ«ì ì´ 1ìžë¦¬ but ì •ìˆ˜=>ì •ìˆ˜ ì¶œë ¥
+		DecimalFormat df2 = new DecimalFormat("#,##0.0");//ì†Œìˆ«ì ì´ 1ìžë¦¬. ì •ìˆ˜ì—¬ë„ n.0 ì¶œë ¥
+//		s=df2.format(123456.173);//ì„œì‹ì— ë§žì¶”ì–´ ì†Œìˆ«ì  n+1ë²ˆì§¸ ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼ë¨
+		s=df2.format(123456);//ì„œì‹ì— ë§žì¶”ì–´ ì†Œìˆ«ì  n+1ë²ˆì§¸ ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼ë¨
 		System.out.println(s);
 	}
 }

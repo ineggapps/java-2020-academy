@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 import java.util.Scanner;
 
@@ -10,20 +10,20 @@ public class Ex6 {
 
 		try {
 
-			System.out.println("ÀÌ¸§ ÀÔ·Â[Á¾·á:¹®ÀåÀ» ÀÔ·ÂÇÏÁö ¾Ê°í ¿£ÅÍ¸¦ ´©¸£¼¼¿ä]...");
+			System.out.println("ì´ë¦„ ì…ë ¥[ì¢…ë£Œ:ë¬¸ì¥ì„ ì…ë ¥í•˜ì§€ ì•Šê³  ì—”í„°ë¥¼ ëˆ„ë¥´ì„¸ìš”]...");
 			String s;
 			while ((s = sc.nextLine()).length() != 0) {
 				names[idx++] = s;
-				System.out.print("ÀÌ¸§ ÀÔ·Â: ");// ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é ½ÇÇàÇÏÁö ¾ÊÀ½
+				System.out.print("ì´ë¦„ ì…ë ¥: ");// ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ ì‹¤í–‰í•˜ì§€ ì•ŠìŒ
 			}
-			System.out.println("------------------------");//¿¹¿Ü°¡ ¹ß»ıÇÏ¸é ±¸¹®À» ½ÇÇàÇÏÁö ¾Ê°í Áö³ªÄ£´Ù.
+			System.out.println("------------------------");//ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ êµ¬ë¬¸ì„ ì‹¤í–‰í•˜ì§€ ì•Šê³  ì§€ë‚˜ì¹œë‹¤.
 		} catch (ArrayIndexOutOfBoundsException e) {
-			// ArrayIndexOutOfBoundsException : unchecked ¿¹¿Ü
-			// ¹è¿­ÀÇ Ã·ÀÚ°¡ ¹üÀ§¸¦ ¹ş¾î³ª¸é ¹ß»ıÇÏ´Â ¿¹¿Ü
-			System.out.println("ÀÔ·ÂÀ» ÃÊ°úÇß½À´Ï´Ù.");
+			// ArrayIndexOutOfBoundsException : unchecked ì˜ˆì™¸
+			// ë°°ì—´ì˜ ì²¨ìê°€ ë²”ìœ„ë¥¼ ë²—ì–´ë‚˜ë©´ ë°œìƒí•˜ëŠ” ì˜ˆì™¸
+			System.out.println("ì…ë ¥ì„ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤.");
 		} finally {
-			// try{} finally{}Ã³·³ catch°¡ ¾ø¾îµµ °¡´ÉÇÏ´Ù.
-			System.out.println("¿¹¿Ü¿Í °ü°è¾øÀÌ ½ÇÇàµË´Ï´Ù.");
+			// try{} finally{}ì²˜ëŸ¼ catchê°€ ì—†ì–´ë„ ê°€ëŠ¥í•˜ë‹¤.
+			System.out.println("ì˜ˆì™¸ì™€ ê´€ê³„ì—†ì´ ì‹¤í–‰ë©ë‹ˆë‹¤.");
 			sc.close();
 		}
 
@@ -34,9 +34,9 @@ public class Ex6 {
 		System.out.println("End...");
 
 		try {
-			System.out.println("try±¸¹®");
+			System.out.println("tryêµ¬ë¬¸");
 		} finally {
-			System.out.println("finally±¸¹® (catch¾øÀ½)");
+			System.out.println("finallyêµ¬ë¬¸ (catchì—†ìŒ)");
 		}
 	}
 }

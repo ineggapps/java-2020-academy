@@ -1,4 +1,4 @@
-package d200128;
+ï»¿package d200128;
 
 public class PrintEx2 {
 
@@ -7,11 +7,11 @@ public class PrintEx2 {
 		System.out.print("A\tB\tC\n");//\t: tab
 		System.out.println("X\tY\nZ");//\t: tab
 		/*
-		 +¿¬»êÀÚÀÇ ±â´É, ¿ì¼±¼øÀ§ (JAVA¸¸ °¡´É)
-		 1. ¼öÄ¡ÀÇ ¿¬»ê (µ¡¼À)
-		 2. °áÇÕ (¹®ÀÚ¿­)
+		 +ì—°ì‚°ìì˜ ê¸°ëŠ¥, ìš°ì„ ìˆœìœ„ (JAVAë§Œ ê°€ëŠ¥)
+		 1. ìˆ˜ì¹˜ì˜ ì—°ì‚° (ë§ì…ˆ)
+		 2. ê²°í•© (ë¬¸ìì—´)
 		 
-		 ÁÂº¯¿¡¼­ ¿ìº¯À¸·Î °¡¸é¼­ ¿¬»êÀ» ½ÃÀÛÇÑ´Ù.
+		 ì¢Œë³€ì—ì„œ ìš°ë³€ìœ¼ë¡œ ê°€ë©´ì„œ ì—°ì‚°ì„ ì‹œì‘í•œë‹¤.
 		 * */
 		System.out.println(10+5+"Korea");
 		System.out.println("Korea"+10+5);

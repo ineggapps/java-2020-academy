@@ -1,13 +1,13 @@
-package d200203;
+ï»¿package d200203;
 
 public class WhileEx11 {
 	public static void main(String[] args) {
 		int n = 0, s = 0;
-		// 1~100±îÁöÀÇ Â¦¼öÀÇ ÇÕÀ» ±¸ÇÏ±â
+		// 1~100ê¹Œì§€ì˜ ì§ìˆ˜ì˜ í•©ì„ êµ¬í•˜ê¸°
 		while (n < 100) {
 			n += 2;
 			s += n;
 		}
-		System.out.println("Â¦¼öÀÇ ÇÕ: " + s);
+		System.out.println("ì§ìˆ˜ì˜ í•©: " + s);
 	}
 }

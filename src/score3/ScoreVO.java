@@ -1,9 +1,9 @@
-package score3;
+ï»¿package score3;
 
 public class ScoreVO {
 	private String hak;
 	private String name;
-	private int kor;// IntegerÇüÀ¸·Î ÇÒ´çÇÏ¸é nullÀ» ÃÊ±ê°ªÀ¸·Î °®´Â´Ù.
+	private int kor;// Integerí˜•ìœ¼ë¡œ í• ë‹¹í•˜ë©´ nullì„ ì´ˆê¹ƒê°’ìœ¼ë¡œ ê°–ëŠ”ë‹¤.
 	private int eng;
 	private int mat;
 	private int tot;

@@ -1,32 +1,32 @@
-package d200128;
+ï»¿package d200128;
 
 public class TypeEx {
 	public static void main(String[] args) {
-		int a; // a º¯¼ö¸¦ Á¤¼öÇüÀ¸·Î ¼±¾ğ, a´Â ÃÊ±âÈ­°¡ µÇ¾îÀÖÁö ¾ÊÀº »óÅÂ
-//		System.out.println(a);//a°¡ ÃÊ±âÈ­°¡ µÇ¾î ÀÖÁö ¾ÊÀ¸¸é Ãâ·ÂÇÒ ¼ö ¾ø´Ù.
-		a = 30;// 10Áø¼ö ÀÔ·Â
+		int a; // a ë³€ìˆ˜ë¥¼ ì •ìˆ˜í˜•ìœ¼ë¡œ ì„ ì–¸, aëŠ” ì´ˆê¸°í™”ê°€ ë˜ì–´ìˆì§€ ì•Šì€ ìƒíƒœ
+//		System.out.println(a);//aê°€ ì´ˆê¸°í™”ê°€ ë˜ì–´ ìˆì§€ ì•Šìœ¼ë©´ ì¶œë ¥í•  ìˆ˜ ì—†ë‹¤.
+		a = 30;// 10ì§„ìˆ˜ ì…ë ¥
 		System.out.println(a);// 30
 
-		a = 030;// 8Áø¼ö ÀÔ·Â
+		a = 030;// 8ì§„ìˆ˜ ì…ë ¥
 		System.out.println(a);// 24
 
-		a = 0x30;// 16Áø¼ö ÀÔ·Â
+		a = 0x30;// 16ì§„ìˆ˜ ì…ë ¥
 		System.out.println(a);// 48
 
-		a = 0b101;// 2Áø¼ö ÀÔ·Â
+		a = 0b101;// 2ì§„ìˆ˜ ì…ë ¥
 		System.out.println(a);// 5
 		
 //		Error case
-//		#1. a=080;//the literal 080 of type int is out of range. 8Áø¼ö¿¡´Â 8ÀÌ ¾ø´Ù.
-//		#2. a= 2200000000;//¸¶Âù°¡Áö·Î int ¹üÀ§¸¦ ÃÊ°úÇÏ¿© ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
+//		#1. a=080;//the literal 080 of type int is out of range. 8ì§„ìˆ˜ì—ëŠ” 8ì´ ì—†ë‹¤.
+//		#2. a= 2200000000;//ë§ˆì°¬ê°€ì§€ë¡œ int ë²”ìœ„ë¥¼ ì´ˆê³¼í•˜ì—¬ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
 		
 		long b;
-//		b=2200000000;//ÄÄÆÄÀÏ ¿À·ù, intÇü literalÀº(int »ó¼ö) 22¾ïÀ» Ç¥ÇöÇÒ ¼ö ¾ø´Ù.
-		b=2200000000L;//longÇü literal(longÇü »ó¼ö)À» ¼±¾ğÇÔ.
+//		b=2200000000;//ì»´íŒŒì¼ ì˜¤ë¥˜, intí˜• literalì€(int ìƒìˆ˜) 22ì–µì„ í‘œí˜„í•  ìˆ˜ ì—†ë‹¤.
+		b=2200000000L;//longí˜• literal(longí˜• ìƒìˆ˜)ì„ ì„ ì–¸í•¨.
 		System.out.println(b);
 		
-//		a=10L;//Type mismatch: cannot convert from long to int (LongÇü »ó¼ö¸¦ intÇü º¯¼ö¿¡ ´ëÀÔÇÒ ¼ö ¾ø´Ù)
-//		a=2_0_1;//==201 (¾ğ´õ¹Ù¸¦ »©°í »ı°¢ÇÏ¸é µÈ´Ù)
+//		a=10L;//Type mismatch: cannot convert from long to int (Longí˜• ìƒìˆ˜ë¥¼ intí˜• ë³€ìˆ˜ì— ëŒ€ì…í•  ìˆ˜ ì—†ë‹¤)
+//		a=2_0_1;//==201 (ì–¸ë”ë°”ë¥¼ ë¹¼ê³  ìƒê°í•˜ë©´ ëœë‹¤)
 		
 	}
 }

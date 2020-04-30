@@ -1,12 +1,12 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Scanner;
 
 public class ArrayEx2 {
 	public static void main(String[] args) {
 		/*
-		 5¸íÀÇ ÀÌ¸§°ú Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ
-		 ÀÌ¸§ Á¡¼ö ÆíÂ÷(Á¡¼ö-Æò±Õ)À» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏÀÚ.
+		 5ëª…ì˜ ì´ë¦„ê³¼ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„
+		 ì´ë¦„ ì ìˆ˜ í¸ì°¨(ì ìˆ˜-í‰ê· )ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì.
 		*/
 		
 		Scanner sc = new Scanner(System.in);
@@ -16,21 +16,21 @@ public class ArrayEx2 {
 		
 		tot=0;
 		for(int i=0;i<name.length;i++) {
-			System.out.print((i+1)+" ¹øÂ° ÀÌ¸§: ");
+			System.out.print((i+1)+" ë²ˆì§¸ ì´ë¦„: ");
 			name[i]= sc.next();
-			System.out.print("\tÁ¡¼ö: ");
+			System.out.print("\tì ìˆ˜: ");
 			score[i]= sc.nextInt();
 			
-			tot+=score[i];//ÀÔ·Â ¹ŞÀº Á¡¼öÀÇ ÇÕ ±¸ÇÏ±â
+			tot+=score[i];//ì…ë ¥ ë°›ì€ ì ìˆ˜ì˜ í•© êµ¬í•˜ê¸°
 		}
-		//Æò±Õ °è»ê
+		//í‰ê·  ê³„ì‚°
 		ave=tot/name.length;
 		
-		//Ãâ·Â
-		System.out.println("ÀÌ¸§\t\tÁ¡¼ö\t\tÆíÂ÷("+ ave +")");
+		//ì¶œë ¥
+		System.out.println("ì´ë¦„\t\tì ìˆ˜\t\tí¸ì°¨("+ ave +")");
 		for(int i=0;i<name.length;i++) {
-			//ÀÌ°÷¿¡¼­´Â Çâ»óµÈ for¹®À» »ç¿ëÇÒ ¼ö ¾ø´Ù.
-			//°¢°¢ ÀÚ·áÇüÀÌ ´Ù¸¥ º¯¼ö¸¦ ¿©·¯ °³ È°¿ëÇÏ°í ÀÖ±â ¶§¹®ÀÌ´Ù.
+			//ì´ê³³ì—ì„œëŠ” í–¥ìƒëœ forë¬¸ì„ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
+			//ê°ê° ìë£Œí˜•ì´ ë‹¤ë¥¸ ë³€ìˆ˜ë¥¼ ì—¬ëŸ¬ ê°œ í™œìš©í•˜ê³  ìˆê¸° ë•Œë¬¸ì´ë‹¤.
 			System.out.printf("%s\t\t%d\t\t%d\n",name[i],score[i],score[i]-ave);
 		}
 		sc.close();

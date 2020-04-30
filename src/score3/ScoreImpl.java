@@ -1,4 +1,4 @@
-package score3;
+ï»¿package score3;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,35 +13,35 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void input() {
-		System.out.println("\nµ¥ÀÌÅÍ ÀÔ·Â...");
+		System.out.println("\në°ì´í„° ì…ë ¥...");
 		try {
 			ScoreVO vo = new ScoreVO();
-			System.out.print("ÇĞ¹ø ? ");
+			System.out.print("í•™ë²ˆ ? ");
 			vo.setHak(sc.next());
-			// ÀÌ¹Ì µî·ÏµÈ ÇĞ¹øÀÌ ÀÖ´ÂÁö °Ë»öÇÑ´Ù.
+			// ì´ë¯¸ ë“±ë¡ëœ í•™ë²ˆì´ ìˆëŠ”ì§€ ê²€ìƒ‰í•œë‹¤.
 			if (readScore(vo.getHak()) != null) {
-				System.out.println("µî·ÏµÈ ÇĞ¹øÀÔ´Ï´Ù.");
+				System.out.println("ë“±ë¡ëœ í•™ë²ˆì…ë‹ˆë‹¤.");
 				return;
 			}
 
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.next());
 
-			System.out.print("±¹¾î ? ");
+			System.out.print("êµ­ì–´ ? ");
 			vo.setKor(sc.nextInt());
 
-			System.out.print("¿µ¾î ? ");
+			System.out.print("ì˜ì–´ ? ");
 			vo.setEng(sc.nextInt());
 
-			System.out.print("¼öÇĞ ? ");
+			System.out.print("ìˆ˜í•™ ? ");
 			vo.setMat(sc.nextInt());
 
-			// ArrayList¿¡ ÀúÀå
+			// ArrayListì— ì €ì¥
 			list.add(vo);
 
-			System.out.println("µî·Ï ¿Ï·á...\n");
+			System.out.println("ë“±ë¡ ì™„ë£Œ...\n");
 		} catch (InputMismatchException e) {
-			System.out.println("Á¡¼ö´Â ¼ıÀÚ¸¸ ÀÔ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ëŠ” ìˆ«ìë§Œ ì…ë ¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			sc.next();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -50,11 +50,11 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void print() {
-		System.out.println("\nµ¥ÀÌÅÍ Ãâ·Â...");
+		System.out.println("\në°ì´í„° ì¶œë ¥...");
 
-		// ÇĞ¹ø¼ø Á¤·Ä
+		// í•™ë²ˆìˆœ ì •ë ¬
 		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
-			// Á¤·ÄÀ» À§ÇÑ Àç·á ¸¸µé±â
+			// ì •ë ¬ì„ ìœ„í•œ ì¬ë£Œ ë§Œë“¤ê¸°
 			@Override
 			public int compare(ScoreVO o1, ScoreVO o2) {
 				// TODO Auto-generated method stub
@@ -76,16 +76,16 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void findByHak() {
-		System.out.println("\nÇĞ¹ø °Ë»ö...");
+		System.out.println("\ní•™ë²ˆ ê²€ìƒ‰...");
 		String hak;
 		int tot;
-		System.out.println("°Ë»öÇÒ ÇĞ¹ø? ");
+		System.out.println("ê²€ìƒ‰í•  í•™ë²ˆ? ");
 		hak = sc.next();
-		System.out.println("ÇĞ¹ø °Ë»ö °á°ú");
+		System.out.println("í•™ë²ˆ ê²€ìƒ‰ ê²°ê³¼");
 		ScoreVO vo = readScore(hak);
 
 		if (vo == null) {
-			System.out.println("µî·ÏµÈ ÇĞ¹øÀÌ ¾Æ´Õ´Ï´Ù");
+			System.out.println("ë“±ë¡ëœ í•™ë²ˆì´ ì•„ë‹™ë‹ˆë‹¤");
 			return;
 		}
 
@@ -100,13 +100,13 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void findByName() {
-		System.out.println("\nÀÌ¸§ °Ë»ö...");
+		System.out.println("\nì´ë¦„ ê²€ìƒ‰...");
 		String name;
 
-		System.out.print("°Ë»öÇÒ ÀÌ¸§? ");
+		System.out.print("ê²€ìƒ‰í•  ì´ë¦„? ");
 		name = sc.next();
 
-		System.out.println(name + "´Ô °Ë»ö °á°ú");
+		System.out.println(name + "ë‹˜ ê²€ìƒ‰ ê²°ê³¼");
 		for (ScoreVO vo : list) {
 			if (vo.getName().startsWith(name)) {
 				int tot = vo.getKor() + vo.getEng() + vo.getMat();
@@ -122,33 +122,33 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void update() {
-		System.out.println("\nµ¥ÀÌÅÍ ¼öÁ¤...");
+		System.out.println("\në°ì´í„° ìˆ˜ì •...");
 		String hak;
-		System.out.print("¼öÁ¤ÇÒ ÇĞ¹ø ? ");
+		System.out.print("ìˆ˜ì •í•  í•™ë²ˆ ? ");
 		hak = sc.next();
 
 		ScoreVO vo = readScore(hak);
 		if (vo == null) {
-			System.out.println("µî·ÏµÈ ÇĞ¹øÀÌ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ë“±ë¡ëœ í•™ë²ˆì´ ì•„ë‹™ë‹ˆë‹¤.");
 			return;
 		}
 
 		try {
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.next());
 
-			System.out.print("±¹¾î ? ");
+			System.out.print("êµ­ì–´ ? ");
 			vo.setKor(sc.nextInt());
 
-			System.out.print("¿µ¾î ? ");
+			System.out.print("ì˜ì–´ ? ");
 			vo.setEng(sc.nextInt());
 
-			System.out.print("¼öÇĞ ? ");
+			System.out.print("ìˆ˜í•™ ? ");
 			vo.setMat(sc.nextInt());
 
-			System.out.println("µ¥ÀÌÅÍ ¼öÁ¤ ¿Ï·á\n");
+			System.out.println("ë°ì´í„° ìˆ˜ì • ì™„ë£Œ\n");
 		} catch (InputMismatchException e) {
-			System.out.println("Á¡¼ö´Â ¼ıÀÚ¸¸ ÀÔ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ëŠ” ìˆ«ìë§Œ ì…ë ¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			sc.next();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -157,22 +157,22 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void remove() {
-		System.out.println("\nµ¥ÀÌÅÍ »èÁ¦...");
+		System.out.println("\në°ì´í„° ì‚­ì œ...");
 		String hak;
-		System.out.print("»èÁ¦ÇÒ ÇĞ¹ø ? ");
+		System.out.print("ì‚­ì œí•  í•™ë²ˆ ? ");
 		hak = sc.next();
 
 		ScoreVO vo = readScore(hak);
 		if (vo == null) {
-			System.out.println("µî·ÏµÈ ÇĞ¹øÀÌ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ë“±ë¡ëœ í•™ë²ˆì´ ì•„ë‹™ë‹ˆë‹¤.");
 			return;
 		}
 
 		list.remove(vo);
-		System.out.println("µ¥ÀÌÅÍ »èÁ¦ ¿Ï·á...\n");
+		System.out.println("ë°ì´í„° ì‚­ì œ ì™„ë£Œ...\n");
 	}
 
-	// µî·ÏµÈ ÇĞ¹øÀ» ±âÁØÀ¸·Î °Ë»öÇÏ¿© ScoreVO°´Ã¼¸¦ Ã£´Â´Ù.
+	// ë“±ë¡ëœ í•™ë²ˆì„ ê¸°ì¤€ìœ¼ë¡œ ê²€ìƒ‰í•˜ì—¬ ScoreVOê°ì²´ë¥¼ ì°¾ëŠ”ë‹¤.
 	private ScoreVO readScore(String hak) {
 		ScoreVO vo = null;
 		for (ScoreVO v : list) {
@@ -185,7 +185,7 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void toDescPrint() {
-		System.out.println("\nµ¥ÀÌÅÍ Ãâ·Â(ÃÑÁ¡ ³»¸²Â÷¼ø)");
+		System.out.println("\në°ì´í„° ì¶œë ¥(ì´ì  ë‚´ë¦¼ì°¨ìˆœ)");
 
 		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
 			@Override

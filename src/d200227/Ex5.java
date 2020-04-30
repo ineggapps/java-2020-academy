@@ -1,9 +1,9 @@
-package d200227;
+ï»¿package d200227;
 import java.util.Scanner;
 
 public class Ex5 {
 	public static void main(String[] args) {
-		//Scanner ´õ ¾Ë¾Æº¸±â
+		//Scanner ë” ì•Œì•„ë³´ê¸°
 		Scanner sc = new Scanner(System.in);
 		String name;
 		int age;
@@ -11,21 +11,21 @@ public class Ex5 {
 		String birth;
 		
 		try {
-			System.out.print("ÀÌ¸§ ? ");
-			name = sc.nextLine();//\n±îÁö ÀĞ¾î¼­ \nÀ» ¹ö¸®°í ±× ÀÌÀü ¹®ÀÚ¿­À» ¹İÈ¯ÇÑ´Ù. 
-			//±×·¸±â ¶§¹®¿¡ nextLine()¸Ş¼­µå´Â °ø¹é±îÁöµµ Çã¿ëÇÑ´Ù.
+			System.out.print("ì´ë¦„ ? ");
+			name = sc.nextLine();//\nê¹Œì§€ ì½ì–´ì„œ \nì„ ë²„ë¦¬ê³  ê·¸ ì´ì „ ë¬¸ìì—´ì„ ë°˜í™˜í•œë‹¤. 
+			//ê·¸ë ‡ê¸° ë•Œë¬¸ì— nextLine()ë©”ì„œë“œëŠ” ê³µë°±ê¹Œì§€ë„ í—ˆìš©í•œë‹¤.
 
-			System.out.print("³ªÀÌ ? ");
+			System.out.print("ë‚˜ì´ ? ");
 			age = sc.nextInt();
-			sc.nextLine();//nextInt()¸Ş¼­µå¿¡¼­ ÀĞÁö ¾ÊÀº \n ÀĞ¾î¼­ ¹ö¸®±â À§ÇØ È£ÃâÇÑ´Ù.
-			//next() ¶Ç´Â nextInt()´Â ±âº»ÀûÀ¸·Î ´Ü¶ô ¹®ÀÚ°¡ °ø¹é(¿£ÅÍ Æ÷ÇÔ)
-			//À¸·Î °ø¹é(¿£ÅÍ) Àü±îÁö ÀĞ¾î¼­ ¹İÈ¯ÇÑ´Ù.
+			sc.nextLine();//nextInt()ë©”ì„œë“œì—ì„œ ì½ì§€ ì•Šì€ \n ì½ì–´ì„œ ë²„ë¦¬ê¸° ìœ„í•´ í˜¸ì¶œí•œë‹¤.
+			//next() ë˜ëŠ” nextInt()ëŠ” ê¸°ë³¸ì ìœ¼ë¡œ ë‹¨ë½ ë¬¸ìê°€ ê³µë°±(ì—”í„° í¬í•¨)
+			//ìœ¼ë¡œ ê³µë°±(ì—”í„°) ì „ê¹Œì§€ ì½ì–´ì„œ ë°˜í™˜í•œë‹¤.
 			
 
-			System.out.print("ÀüÈ­¹øÈ£ ? ");
+			System.out.print("ì „í™”ë²ˆí˜¸ ? ");
 			tel = sc.nextLine();
 			
-			System.out.print("»ıÀÏ ? ");
+			System.out.print("ìƒì¼ ? ");
 			birth = sc.nextLine();
 			
 			System.out.println(name+":"+age+":"+tel+":"+birth);

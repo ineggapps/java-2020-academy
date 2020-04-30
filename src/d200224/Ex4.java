@@ -1,13 +1,13 @@
-package d200224;
+ï»¿package d200224;
 
 public class Ex4 {
 	public static void main(String[] args) {
 		User4<String, Integer> ob = new User4<>();
 		ob.set("seoul", 1000);
-//		ob.set(1000,"dfslkdfjds");//ÄÄÆÄÀÏ ¿À·ù (¼±¾ğÇÑ ÆÄ¶ó¹ÌÅÍÀÇ ÀÚ·áÇü¿¡ ¸ÂÃç¼­ Àü´ŞÇØ¾ß ÇÑ´Ù)
+//		ob.set(1000,"dfslkdfjds");//ì»´íŒŒì¼ ì˜¤ë¥˜ (ì„ ì–¸í•œ íŒŒë¼ë¯¸í„°ì˜ ìë£Œí˜•ì— ë§ì¶°ì„œ ì „ë‹¬í•´ì•¼ í•œë‹¤)
 		ob.print();
 
-		String s = ob.getT();// Ä³½ºÆÃÇÏÁö ¾ÊÀ½ (¾ÖÃÊ¿¡ ÀÌ·± ¹İº¹ÀûÀÎ ÀÛ¾÷ ÁÙÀÌ·Á°í ¸¸µç °³³äÀÌ Á¦³×¸¯ÀÎµ¥...)
+		String s = ob.getT();// ìºìŠ¤íŒ…í•˜ì§€ ì•ŠìŒ (ì• ì´ˆì— ì´ëŸ° ë°˜ë³µì ì¸ ì‘ì—… ì¤„ì´ë ¤ê³  ë§Œë“  ê°œë…ì´ ì œë„¤ë¦­ì¸ë°...)
 		System.out.println(s);
 	}
 }

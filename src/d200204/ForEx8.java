@@ -1,15 +1,15 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForEx8 {
 	public static void main(String[] args) {
-		//1~100±îÁöÀÇ ¼ö Áß 3ÀÇ ¹è¼öÀÌ°Å³ª 5ÀÇ ¹è¼ö¸¦ ÇÑ ÁÙ¿¡ 5°³¾¿ Ãâ·ÂÇÏ°í
-		//¸¶Áö¸·¿¡ ÇÕ°ú Æò±ÕÀ» Ãâ·Â
+		//1~100ê¹Œì§€ì˜ ìˆ˜ ì¤‘ 3ì˜ ë°°ìˆ˜ì´ê±°ë‚˜ 5ì˜ ë°°ìˆ˜ë¥¼ í•œ ì¤„ì— 5ê°œì”© ì¶œë ¥í•˜ê³ 
+		//ë§ˆì§€ë§‰ì— í•©ê³¼ í‰ê· ì„ ì¶œë ¥
 		int sum,avg,cnt;
 		sum=avg=cnt=0;
 		/*
-		#1. ºÎµîÈ£ <, <=, >, >= ÀÇ Áß¿ä¼º (°á°ú°¡ ÃµÁöÂ÷ÀÌ!), 
-		#2. ÃÊ±ê°ª ÁöÁ¤µµ Áß¿äÇÏ´Ù.
-		#3. ºí·ÏÈ­½ÃÅ°±â if, while, for() ¼±¾ð ÈÄ Áß°ýÈ£ {} ²À ¾²°í µé¿©¾²±â ÇÏ±â
+		#1. ë¶€ë“±í˜¸ <, <=, >, >= ì˜ ì¤‘ìš”ì„± (ê²°ê³¼ê°€ ì²œì§€ì°¨ì´!), 
+		#2. ì´ˆê¹ƒê°’ ì§€ì •ë„ ì¤‘ìš”í•˜ë‹¤.
+		#3. ë¸”ë¡í™”ì‹œí‚¤ê¸° if, while, for() ì„ ì–¸ í›„ ì¤‘ê´„í˜¸ {} ê¼­ ì“°ê³  ë“¤ì—¬ì“°ê¸° í•˜ê¸°
 		 **/
 		for(int n=1;n<=100;n++) {
 			if(n%3==0 || n%5==0) {
@@ -24,15 +24,15 @@ public class ForEx8 {
 			System.out.println();
 		}
 		avg=sum/cnt;
-		System.out.printf("ÇÕ: %d\nÆò±Õ: %d",sum,avg);
+		System.out.printf("í•©: %d\ní‰ê· : %d",sum,avg);
 		
-		//º¸³Ê½º ½ºÅ×ÀÌÁö
-		//3ÀÇ ¹è¼ö
+		//ë³´ë„ˆìŠ¤ ìŠ¤í…Œì´ì§€
+		//3ì˜ ë°°ìˆ˜
 		System.out.println();
 		for(int n=3;n<=100;n+=3) {
 			System.out.print(n+" ");
 		}
-		//5ÀÇ ¹è¼ö
+		//5ì˜ ë°°ìˆ˜
 		System.out.println();
 		for(int n=5;n<=100;n+=5) {
 			System.out.print(n+" ");

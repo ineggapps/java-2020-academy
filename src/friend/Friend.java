@@ -1,4 +1,4 @@
-package friend;
+﻿package friend;
 
 public interface Friend {
 	public void input();

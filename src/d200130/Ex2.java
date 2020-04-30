@@ -1,4 +1,4 @@
-package d200130;
+ï»¿package d200130;
 
 import java.util.Scanner;
 
@@ -6,12 +6,12 @@ public class Ex2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String s;
-		System.out.println("±¹¾îÁ¡¼ö?");
+		System.out.println("êµ­ì–´ì ìˆ˜?");
 		s=sc.nextLine();
 		int num = Integer.parseInt(s);
-		//s´Â ¹®ÀÚ¿­ÀÎ StringÇüÀ¸·Î ¹İÈ¯À» ¹Ş¾ÒÀ¸¹Ç·Î Á¤¼ö·Î º¯È¯ÇÏ´Â ÀÛ¾÷ÀÌ ÇÊ¿äÇÏ´Ù.
-		//ÀÌ¶§ ¹®ÀÚ¿­ÀÇ ¼ıÀã°ªÀ» Á¤¼öÇüÅÂ·Î º¯È¯ÇÏ´Â °ÍÀ» Integer.parseInt()¸Ş¼­µå¸¦ ÀÌ¿ëÇÏ¿© ÀÛ¾÷À» ¼öÇàÇÑ´Ù.
-		//String s¿Í °ü·ÃµÈ ¸í·ÉÁÙÀ» Áö¿ì°í int num = sc.nextInt();·Î ±¸¼ºÇØµµ µÈ´Ù. 
+		//sëŠ” ë¬¸ìì—´ì¸ Stringí˜•ìœ¼ë¡œ ë°˜í™˜ì„ ë°›ì•˜ìœ¼ë¯€ë¡œ ì •ìˆ˜ë¡œ ë³€í™˜í•˜ëŠ” ì‘ì—…ì´ í•„ìš”í•˜ë‹¤.
+		//ì´ë•Œ ë¬¸ìì—´ì˜ ìˆ«ì£ê°’ì„ ì •ìˆ˜í˜•íƒœë¡œ ë³€í™˜í•˜ëŠ” ê²ƒì„ Integer.parseInt()ë©”ì„œë“œë¥¼ ì´ìš©í•˜ì—¬ ì‘ì—…ì„ ìˆ˜í–‰í•œë‹¤.
+		//String sì™€ ê´€ë ¨ëœ ëª…ë ¹ì¤„ì„ ì§€ìš°ê³  int num = sc.nextInt();ë¡œ êµ¬ì„±í•´ë„ ëœë‹¤. 
 		System.out.println(num);
 		sc.close();
 	}

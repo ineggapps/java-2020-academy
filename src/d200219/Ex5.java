@@ -1,16 +1,16 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex5 {
 	public static void main(String[] args) {
 		Rect rr = new Rect(10,5);
 		rr.rectArea();
 		rr.rectLen();
-		rr.write("»ç°¢Çü");
+		rr.write("ì‚¬ê°í˜•");
 		Circle c = new Circle();
 		c.set(44);
 		c.circleArea();
 		c.circleLen();
-		c.write("¿ø");
+		c.write("ì›");
 	}
 }
 
@@ -19,7 +19,7 @@ class Shape {
 	protected double len;
 
 	public void write(String title) {
-		System.out.println(title + " ³ĞÀÌ: " + area + ", µÑ·¹: " + len);
+		System.out.println(title + " ë„“ì´: " + area + ", ë‘˜ë ˆ: " + len);
 	}
 }
 

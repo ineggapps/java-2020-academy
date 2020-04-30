@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,15 +10,15 @@ public class Ex5 {
 		int a, b, c;
 
 		try {
-			System.out.print("Ã¹ ¹øÂ° ¼ö > ");
+			System.out.print("ì²« ë²ˆì§¸ ìˆ˜ > ");
 			a = Integer.parseInt(br.readLine());
-			System.out.print("µÎ ¹øÂ° ¼ö > ");
+			System.out.print("ë‘ ë²ˆì§¸ ìˆ˜ > ");
 			b = Integer.parseInt(br.readLine());
 			c = a / b;
 			System.out.println(a + "/" + b + "=" + c);
 		} catch (Exception e) {
-			//¸ðµç ¿¹¿Ü¸¦ Àâ´Â catch¹®¸¸ ÀÛ¼ºÇÏ¸é Æí¸®ÇÏÁö¸¸, ¿Ö ¹®Á¦°¡ ¹ß»ýÇß´ÂÁö Á¤È®ÇÏ°Ô´Â ¸ð¸¦ ¼ö ÀÖ´Ù.
-			//±×¸®°í ¹®Á¦°¡ ¹ß»ýÇÑ À¯Çüº° Ã³¸®¸¦ ÇÏ±â¿¡´Â ´Ù¼Ò °ï¶õÇÒ ¼ö ÀÖÀ½.
+			//ëª¨ë“  ì˜ˆì™¸ë¥¼ ìž¡ëŠ” catchë¬¸ë§Œ ìž‘ì„±í•˜ë©´ íŽ¸ë¦¬í•˜ì§€ë§Œ, ì™œ ë¬¸ì œê°€ ë°œìƒí–ˆëŠ”ì§€ ì •í™•í•˜ê²ŒëŠ” ëª¨ë¥¼ ìˆ˜ ìžˆë‹¤.
+			//ê·¸ë¦¬ê³  ë¬¸ì œê°€ ë°œìƒí•œ ìœ í˜•ë³„ ì²˜ë¦¬ë¥¼ í•˜ê¸°ì—ëŠ” ë‹¤ì†Œ ê³¤ëž€í•  ìˆ˜ ìžˆìŒ.
 			System.out.println(e.toString());
 		}	
 

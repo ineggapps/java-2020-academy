@@ -1,6 +1,6 @@
-public class Ex015_Pyramid {
+ï»¿public class Ex015_Pyramid {
 	public static void main(String[] args) {
-		// ¼ıÀÚ ÇÇ¶ó¹Ìµå
+		// ìˆ«ì í”¼ë¼ë¯¸ë“œ
 /*		
 		for(int i=1; i<=10; i++) {
 			for(int j=i; j<=i+9; j++) {

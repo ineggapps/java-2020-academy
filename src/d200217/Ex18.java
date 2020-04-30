@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -16,16 +16,16 @@ public class Ex18 {
 			input = sc.nextInt();
 
 			if (com > input) {
-				System.out.println("Å©´Ù.");
+				System.out.println("í¬ë‹¤.");
 			} else if (com < input) {
-				System.out.println("ÀÛ´Ù.");
+				System.out.println("ì‘ë‹¤.");
 			}
 			cnt++;
-		} while (input != com && cnt < 20);//Á¶°Ç¹®¿¡ input!=comÀ» °É¾úÀ¸´Ï...
+		} while (input != com && cnt < 20);//ì¡°ê±´ë¬¸ì— input!=comì„ ê±¸ì—ˆìœ¼ë‹ˆ...
 		if(input==com) {
-			System.out.println(cnt+"¹ø ¸¸¿¡ ¸ÂÇû½À´Ï´Ù.");
+			System.out.println(cnt+"ë²ˆ ë§Œì— ë§í˜”ìŠµë‹ˆë‹¤.");
 		}else {
-			System.out.println("°ÔÀÓ ¿À¹ö ~ ´ä: "+cnt);
+			System.out.println("ê²Œì„ ì˜¤ë²„ ~ ë‹µ: "+cnt);
 		}
 
 		sc.close();

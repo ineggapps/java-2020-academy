@@ -1,19 +1,19 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForEx5 {
 	public static void main(String[] args) {
 //		int n;
-//		for (n = 10; n <= 1; n++) {// Á¶°ÇÀ» ¸¸Á·ÇÏÁö ¾ÊÀ¸¸é ´Ü ÇÑ ¹øµµ ½ÇÇàÇÏÁö ¾Ê´Â´Ù.
-//			System.out.println("¾È: " + n);
+//		for (n = 10; n <= 1; n++) {// ì¡°ê±´ì„ ë§Œì¡±í•˜ì§€ ì•Šìœ¼ë©´ ë‹¨ í•œ ë²ˆë„ ì‹¤í–‰í•˜ì§€ ì•ŠëŠ”ë‹¤.
+//			System.out.println("ì•ˆ: " + n);
 //		}
-//		System.out.println("¹Û: " + n);
+//		System.out.println("ë°–: " + n);
 
 		int n;
 		for (n = 10; n >= 1; n--) {
-			System.out.println("¾È: " + n);//10 9 ... 2 1
+			System.out.println("ì•ˆ: " + n);//10 9 ... 2 1
 		}
-		//Áõ°¨½Ä¿¡¼­ n--ÀÌ ½ÇÇàµÇ°í Á¶°Ç½Ä¿¡¼­ false°¡ µÇ¾î ¹İº¹¹®À» Á¾·áÇÑ´Ù.
-		//¹İº¹¹®ÀÌ Á¾·áµÈ »óÅÂ¿¡¼­ nÀÇ °ªÀº 0ÀÌ´Ù.
-		System.out.println("¹Û: " + n);//0
+		//ì¦ê°ì‹ì—ì„œ n--ì´ ì‹¤í–‰ë˜ê³  ì¡°ê±´ì‹ì—ì„œ falseê°€ ë˜ì–´ ë°˜ë³µë¬¸ì„ ì¢…ë£Œí•œë‹¤.
+		//ë°˜ë³µë¬¸ì´ ì¢…ë£Œëœ ìƒíƒœì—ì„œ nì˜ ê°’ì€ 0ì´ë‹¤.
+		System.out.println("ë°–: " + n);//0
 	}
 }

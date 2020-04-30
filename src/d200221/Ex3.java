@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,34 +6,34 @@ import java.io.InputStreamReader;
 
 public class Ex3 {
 	public static void main(String[] args) {
-		// BufferedReader < ²À Å°º¸µå·Î¸¸ ÀÔ·ÂÀ»¹Ş´Â °ÍÀº ¾Æ´Ï´Ù.
-		// ´Ù¸¥ ¼ö´ÜÀ¸·Î ÀÔ·Â¹Ş´Â´Ù°í ÇÒÁö¶óµµ ¾îÂ·µç ÀÔ·Â ½Ã¿¡´Â ¾î¶°ÇÑ ¿¹¿Ü »óÈ²ÀÌ ¹ß»ıÇÒ ¹®Á¦¸¦ °¡Áö°í ÀÖ´Ù.
-		// ex) Ã¤ÆÃÀ¸·Î Àü¼Û ¹ŞÀº ÅØ½ºÆ® µ¥ÀÌÅÍ => µµÁß¿¡ ÀÎÅÍ³İ ¿¬°áÀÌ ²÷¾îÁö´Â ¿¹¿Ü »óÈ²ÀÌ ¹ß»ı
-		// ±×·¸±â ¶§¹®¿¡ BufferedReaderÀÇ readLineÀº IOException¿¡ ´ëÇÑ ¿¹¿ÜÃ³¸®¸¦ ¿ä±¸ÇÑ´Ù.
+		// BufferedReader < ê¼­ í‚¤ë³´ë“œë¡œë§Œ ì…ë ¥ì„ë°›ëŠ” ê²ƒì€ ì•„ë‹ˆë‹¤.
+		// ë‹¤ë¥¸ ìˆ˜ë‹¨ìœ¼ë¡œ ì…ë ¥ë°›ëŠ”ë‹¤ê³  í• ì§€ë¼ë„ ì–´ì¨Œë“  ì…ë ¥ ì‹œì—ëŠ” ì–´ë– í•œ ì˜ˆì™¸ ìƒí™©ì´ ë°œìƒí•  ë¬¸ì œë¥¼ ê°€ì§€ê³  ìˆë‹¤.
+		// ex) ì±„íŒ…ìœ¼ë¡œ ì „ì†¡ ë°›ì€ í…ìŠ¤íŠ¸ ë°ì´í„° => ë„ì¤‘ì— ì¸í„°ë„· ì—°ê²°ì´ ëŠì–´ì§€ëŠ” ì˜ˆì™¸ ìƒí™©ì´ ë°œìƒ
+		// ê·¸ë ‡ê¸° ë•Œë¬¸ì— BufferedReaderì˜ readLineì€ IOExceptionì— ëŒ€í•œ ì˜ˆì™¸ì²˜ë¦¬ë¥¼ ìš”êµ¬í•œë‹¤.
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		String s;
 		int a, b, c;
 
 		try {
-			// br.readLine()¿¡¼­ checked exceptionÀÌ ¹ß»ıÇÏ¹Ç·Î ¹İµå½Ã ¿¹¿ÜÃ³¸®°¡ ÇÊ¿äÇÏ´Ù.
-			// IOException ¿¹¿ÜÃ³¸®¸¦ ÇÑ´Ù.
-			System.out.print("Ã¹ ¹øÂ° ¼ö ? ");
+			// br.readLine()ì—ì„œ checked exceptionì´ ë°œìƒí•˜ë¯€ë¡œ ë°˜ë“œì‹œ ì˜ˆì™¸ì²˜ë¦¬ê°€ í•„ìš”í•˜ë‹¤.
+			// IOException ì˜ˆì™¸ì²˜ë¦¬ë¥¼ í•œë‹¤.
+			System.out.print("ì²« ë²ˆì§¸ ìˆ˜ ? ");
 			s = br.readLine();
 			a = Integer.parseInt(s);
 
-			System.out.print("µÎ ¹øÂ° ¼ö ? ");
+			System.out.print("ë‘ ë²ˆì§¸ ìˆ˜ ? ");
 			s = br.readLine();
 			b = Integer.parseInt(s);
 
 			c = a / b;
 			System.out.println(a + "/" + b + "=" + c);
 		} catch (IOException e) {
-			// IOException: ÀÔÃâ·Â¿¡ ¹®Á¦°¡ ¹ß»ıÇÒ ¶§ ¹ß»ıÇÏ´Â ¿¹¿Ü
-			// checked exceptionÀ¸·Î ¹İµå½Ã ¿¹¿Ü Ã³¸®¸¦ ÇØ¾ß ÇÑ´Ù.
-			// checked exceptionÀº ¸Ş¼­µå¸¦ Á¤ÀÇÇÒ ¶§ throwsÇÑ ¿¹¿ÜÀÌ´Ù.
-			// ¿¹¿Ü Ã³¸®¸¦ ÇÏÁö ¾ÊÀ¸¸é ÄÄÆÄÀÏ ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
-			// ´Ü, checked exceptionÀÌ ¹ß»ıÇÒ ¸¸ÇÑ(throwsµÈ) ÄÚµå°¡ ¾øÀ¸¸é try-catch ºí·Ï¿¡ ¿À·ù°¡ ³­´Ù.
+			// IOException: ì…ì¶œë ¥ì— ë¬¸ì œê°€ ë°œìƒí•  ë•Œ ë°œìƒí•˜ëŠ” ì˜ˆì™¸
+			// checked exceptionìœ¼ë¡œ ë°˜ë“œì‹œ ì˜ˆì™¸ ì²˜ë¦¬ë¥¼ í•´ì•¼ í•œë‹¤.
+			// checked exceptionì€ ë©”ì„œë“œë¥¼ ì •ì˜í•  ë•Œ throwsí•œ ì˜ˆì™¸ì´ë‹¤.
+			// ì˜ˆì™¸ ì²˜ë¦¬ë¥¼ í•˜ì§€ ì•Šìœ¼ë©´ ì»´íŒŒì¼ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
+			// ë‹¨, checked exceptionì´ ë°œìƒí•  ë§Œí•œ(throwsëœ) ì½”ë“œê°€ ì—†ìœ¼ë©´ try-catch ë¸”ë¡ì— ì˜¤ë¥˜ê°€ ë‚œë‹¤.
 			e.printStackTrace();
 		}
 		System.out.println("end~");

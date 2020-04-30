@@ -1,4 +1,4 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex10 {
 	public static void main(String[] args) {
@@ -9,8 +9,8 @@ public class Ex10 {
 	}
 }
 
-//JDK 8 ÀÌ»ó¿¡¼­¸¸ Áö¿øÇÑ´Ù.
-//static ¸Ş¼­µå, default ¸Ş¼­µå »ç¿ë °¡´É
+//JDK 8 ì´ìƒì—ì„œë§Œ ì§€ì›í•œë‹¤.
+//static ë©”ì„œë“œ, default ë©”ì„œë“œ ì‚¬ìš© ê°€ëŠ¥
 interface Demo10 {
 	public void write();
 
@@ -22,8 +22,8 @@ interface Demo10 {
 		return s;
 	}
 
-	// default¸Ş¼­µå
-	// default¸Ş¼­µå¿¡¼­´Â ±¸Çö °¡´É. Áï default ¸Ş¼­µå°¡ ¾Æ´Ï¸é ±¸Çö ºÒ°¡´ÉÇÏ´Ù.
+	// defaultë©”ì„œë“œ
+	// defaultë©”ì„œë“œì—ì„œëŠ” êµ¬í˜„ ê°€ëŠ¥. ì¦‰ default ë©”ì„œë“œê°€ ì•„ë‹ˆë©´ êµ¬í˜„ ë¶ˆê°€ëŠ¥í•˜ë‹¤.
 	public default int max(int m, int n) {
 		return m > n ? m : n;
 	}
@@ -34,13 +34,13 @@ interface Demo102{
 		return m;
 	}
 }
-//Â÷ÀÌÁ¡: interface´Â ´ÙÁß»ó¼ÓÀÌ °¡´ÉÇÏ°í Ãß»óÅ¬·¡½º´Â Å¬·¡½º·Î º¸´Ï±î ´ÙÁß »ó¼ÓÀÌ ºÒ°¡´ÉÇÏ´Ù!
+//ì°¨ì´ì : interfaceëŠ” ë‹¤ì¤‘ìƒì†ì´ ê°€ëŠ¥í•˜ê³  ì¶”ìƒí´ë˜ìŠ¤ëŠ” í´ë˜ìŠ¤ë¡œ ë³´ë‹ˆê¹Œ ë‹¤ì¤‘ ìƒì†ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤!
 
 
 class Test10 implements Demo10, Demo102 {
 
-	//¾ÆÇÏ~ ¿À¹ö¶óÀÌµùÀ» ÇÒ ¶§ ¸Ş¼­µå°¡ °ãÄ¡¸é Å¬·¡½º¸í.superÀ» ¾²´Â±¸³ª!
-	//ÀÌ°ÍÀÌ ¹Ù·Î ´ÙÁß»ó¼Ó?
+	//ì•„í•˜~ ì˜¤ë²„ë¼ì´ë”©ì„ í•  ë•Œ ë©”ì„œë“œê°€ ê²¹ì¹˜ë©´ í´ë˜ìŠ¤ëª….superì„ ì“°ëŠ”êµ¬ë‚˜!
+	//ì´ê²ƒì´ ë°”ë¡œ ë‹¤ì¤‘ìƒì†?
 	@Override
 	public int max(int m, int n) {
 		return Demo10.super.max(m, n);
@@ -48,7 +48,7 @@ class Test10 implements Demo10, Demo102 {
 
 	@Override
 	public void write() {
-		System.out.println("¤·¤·¤·");
+		System.out.println("ã…‡ã…‡ã…‡");
 	}
 
 }

@@ -1,9 +1,9 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArgEx {
 	public static void main(String[] args) {
-		System.out.println("¸í·ÉÇü ÀÎ¼ö °³¼ö: "+args.length);
-		System.out.println("¸í·ÉÇà ÀÎ¼ö °ª...");
+		System.out.println("ëª…ë ¹í˜• ì¸ìˆ˜ ê°œìˆ˜: "+args.length);
+		System.out.println("ëª…ë ¹í–‰ ì¸ìˆ˜ ê°’...");
 		for(String s: args) {
 			System.out.println(s);
 		}

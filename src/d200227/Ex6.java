@@ -1,4 +1,4 @@
-package d200227;
+ï»¿package d200227;
 
 import java.util.Scanner;
 
@@ -7,8 +7,8 @@ public class Ex6 {
 		Scanner sc = new Scanner(System.in);
 		try {
 			int a, b, c;
-			System.out.print("¼¼ ¼ö ? ");
-			a = sc.nextInt();// ±âº» ´Ü¶ô ¹®ÀÚ´Â °ø¹é(¿£ÅÍ Æ÷ÇÔ)
+			System.out.print("ì„¸ ìˆ˜ ? ");
+			a = sc.nextInt();// ê¸°ë³¸ ë‹¨ë½ ë¬¸ìëŠ” ê³µë°±(ì—”í„° í¬í•¨)
 			b = sc.nextInt();
 			c = sc.nextInt();
 			System.out.printf("%d:%d:%d%n", a, b, c);

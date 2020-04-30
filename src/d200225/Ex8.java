@@ -1,28 +1,28 @@
-package d200225;
+ï»¿package d200225;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Ex8 {
 	public static void main(String[] args) {
-		// Set: Áßº¹ Çã¿ë ¾È ÇÔ. ¼ø¼­°¡ ¾øÀ½.(HashSet)
+		// Set: ì¤‘ë³µ í—ˆìš© ì•ˆ í•¨. ìˆœì„œê°€ ì—†ìŒ.(HashSet)
 		Set<String> set = new HashSet<String>();
 
-		set.add("¼­¿ï");
-		set.add("ºÎ»ê");
-		set.add("´ë±¸");
-		set.add("ÀÎÃµ");
-		set.add("±¤ÁÖ");
-		set.add("´ëÀü");
-		set.add("¿ï»ê");
-		set.add("¼¼Á¾");
-		set.add("¼­¿ï");//ÀÌÀü ¼­¿ïÀ» µ¤¾î¾´´Ù.
-//		list.add¸¦ ¼¹À¸¸é ¼­¿ïÀÌ 2°³°¡ µî·ÏµÇ¾î ÀÖÀ»°ÍÀÌ´Ù
+		set.add("ì„œìš¸");
+		set.add("ë¶€ì‚°");
+		set.add("ëŒ€êµ¬");
+		set.add("ì¸ì²œ");
+		set.add("ê´‘ì£¼");
+		set.add("ëŒ€ì „");
+		set.add("ìš¸ì‚°");
+		set.add("ì„¸ì¢…");
+		set.add("ì„œìš¸");//ì´ì „ ì„œìš¸ì„ ë®ì–´ì“´ë‹¤.
+//		list.addë¥¼ ì„°ìœ¼ë©´ ì„œìš¸ì´ 2ê°œê°€ ë“±ë¡ë˜ì–´ ìˆì„ê²ƒì´ë‹¤
 		
 		System.out.println(set);
-		//setÀº ¼ø¼­¿¡ °ü°è¾øÀÌ Ãâ·ÂµÈ´Ù.
-		//HashSet ÀÚÃ¼°¡ Hash¿ø¸®·Î µ¿ÀÛÇÏ´Â °Å´Ï±î ±×·¸°ÚÁö!
+		//setì€ ìˆœì„œì— ê´€ê³„ì—†ì´ ì¶œë ¥ëœë‹¤.
+		//HashSet ìì²´ê°€ Hashì›ë¦¬ë¡œ ë™ì‘í•˜ëŠ” ê±°ë‹ˆê¹Œ ê·¸ë ‡ê² ì§€!
 		
-		//ÀüÃ¼ Ãâ·Â, Çâ»óµÈ for¹®
+		//ì „ì²´ ì¶œë ¥, í–¥ìƒëœ forë¬¸
 		for(String s: set) {
 			System.out.println(s+" ");
 		}

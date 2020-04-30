@@ -1,16 +1,16 @@
-package d200226;
+ï»¿package d200226;
 
 import java.util.PriorityQueue;
 
 public class Ex6 {
 	public static void main(String[] args) {
 		PriorityQueue<UserVO> q = new PriorityQueue<UserVO>();
-		// ¡ÚComparableÀÎÅÍÆäÀÌ½º°¡ ±¸ÇöµÇ¾î ÀÖÁö ¾ÊÀ¸¸é ·±Å¸ÀÓ ¿À·ù°¡ ¹ß»ıÇÑ´Ù. cannot be cast to
+		// â˜…Comparableì¸í„°í˜ì´ìŠ¤ê°€ êµ¬í˜„ë˜ì–´ ìˆì§€ ì•Šìœ¼ë©´ ëŸ°íƒ€ì„ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤. cannot be cast to
 		// java.lang.Comparable
-		q.offer(new UserVO("ÀüÇÑ±æ", 25));
-		q.offer(new UserVO("ÀÌ¼±Àç", 20));
-		q.offer(new UserVO("°­¹Î¼º", 23));
-		q.offer(new UserVO("ÀÌµ¿±â", 24));
+		q.offer(new UserVO("ì „í•œê¸¸", 25));
+		q.offer(new UserVO("ì´ì„ ì¬", 20));
+		q.offer(new UserVO("ê°•ë¯¼ì„±", 23));
+		q.offer(new UserVO("ì´ë™ê¸°", 24));
 
 		while (q.peek() != null) {
 			UserVO vo = q.poll();

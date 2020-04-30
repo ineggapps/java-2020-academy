@@ -1,30 +1,30 @@
-package d200226;
+ï»¿package d200226;
 import java.util.Stack;
 
 public class Ex2 {
 	public static void main(String[] args) {
-		// STACK Å¬·¡½º ÀÌ¿ë LIFO ±¸Á¶
-		// Stack: VectorÀÇ ÇÏÀ§ Å¬·¡½º
+		// STACK í´ë˜ìŠ¤ ì´ìš© LIFO êµ¬ì¡°
+		// Stack: Vectorì˜ í•˜ìœ„ í´ë˜ìŠ¤
 		Stack<String> st = new Stack<String>();
 
-		// ½ºÅÃ¿¡ µ¥ÀÌÅÍ Ãß°¡ (addµµ °¡´ÉÇÏÁö¸¸ Stack¿¡¼­´Â push¸Ş¼­µå·Î »ğÀÔÇÒ °ÍÀ» ±ÇÀå)
-		st.push("°ËÁ¤");
-		st.push("³ë¶û");
-		st.push("³ì»ö");
-		st.push("Ã»»ö");
-		st.push("»¡°£»ö");
-		// ½ºÅÃ¿¡¼­ µ¥ÀÌÅÍ »Ì±â
-		//pop: top¿ä¼Ò ¹İÈ¯ ÈÄ Áö¿ò
-		//peek: top ¿ä¼Ò ¹İÈ¯ ÈÄ »èÁ¦ÇÏÁö ¾ÊÀ½.
+		// ìŠ¤íƒì— ë°ì´í„° ì¶”ê°€ (addë„ ê°€ëŠ¥í•˜ì§€ë§Œ Stackì—ì„œëŠ” pushë©”ì„œë“œë¡œ ì‚½ì…í•  ê²ƒì„ ê¶Œì¥)
+		st.push("ê²€ì •");
+		st.push("ë…¸ë‘");
+		st.push("ë…¹ìƒ‰");
+		st.push("ì²­ìƒ‰");
+		st.push("ë¹¨ê°„ìƒ‰");
+		// ìŠ¤íƒì—ì„œ ë°ì´í„° ë½‘ê¸°
+		//pop: topìš”ì†Œ ë°˜í™˜ í›„ ì§€ì›€
+		//peek: top ìš”ì†Œ ë°˜í™˜ í›„ ì‚­ì œí•˜ì§€ ì•ŠìŒ.
 		while (!st.empty()) {
-			String s = st.pop();//½ºÅÃ top ¿ä¼Ò¸¦ ¹İÈ¯ÇÑ ÈÄ »èÁ¦ÇÑ´Ù.
-			System.out.print(s + " ");//¿ª¼øÀ¸·Î ³ª¿ÀÁö?
+			String s = st.pop();//ìŠ¤íƒ top ìš”ì†Œë¥¼ ë°˜í™˜í•œ í›„ ì‚­ì œí•œë‹¤.
+			System.out.print(s + " ");//ì—­ìˆœìœ¼ë¡œ ë‚˜ì˜¤ì§€?
 		}
 		System.out.println();
 		st.push("hello");
 		st.push("world");
 		System.out.println(st.peek());
-		System.out.println(st.peek());//»èÁ¦°¡ µÇÁö ¾ÊÀ¸´Ï±î ´ç¿¬È÷ ¶È°°Àº °ªÀÌ ³ª¿Ã Å×Áö.
+		System.out.println(st.peek());//ì‚­ì œê°€ ë˜ì§€ ì•Šìœ¼ë‹ˆê¹Œ ë‹¹ì—°íˆ ë˜‘ê°™ì€ ê°’ì´ ë‚˜ì˜¬ í…Œì§€.
 		System.out.println(st.size());
 		
 	}

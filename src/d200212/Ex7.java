@@ -1,16 +1,16 @@
-package d200212;
+ï»¿package d200212;
 
 public class Ex7 {
 	public static void main(String[] args) {
-		String s1="¼­¿ï";
-		String s2="¼­¿ï";
-		String s3=new String("¼­¿ï");
+		String s1="ì„œìš¸";
+		String s2="ì„œìš¸";
+		String s3=new String("ì„œìš¸");
 		
 		System.out.println(s1+":"+s2+":"+s3);
 		
-		// A == B : ¿©±â¼­ ==Àº °´Ã¼ÀÌ¸é ÁÖ¼Ú°ªÀ» ºñ±³ÇÑ´Ù.
-		System.out.println(s1==s2); // true ÁÖ¼Ú°ªÀÌ °°À¸´Ï±î true°¡ ³ª¿Ô´Ù.
-		System.out.println(s1==s3); // false  ÁÖ¼Ú°ªÀÌ ´Ş¶ó¼­ false°¡ ³ª¿Ô´Ù.
-		System.out.println(s1.equals(s3)); // true ÁÖ¼Ú°ªÀ» ºñ±³ÇÏÁö ¾Ê°í ¹®ÀÚ¿­ÀÇ °ªÀ» ºñ±³ÇßÀ¸¹Ç·Î true°¡ ³ª¿Ô´Ù.
+		// A == B : ì—¬ê¸°ì„œ ==ì€ ê°ì²´ì´ë©´ ì£¼ì†Ÿê°’ì„ ë¹„êµí•œë‹¤.
+		System.out.println(s1==s2); // true ì£¼ì†Ÿê°’ì´ ê°™ìœ¼ë‹ˆê¹Œ trueê°€ ë‚˜ì™”ë‹¤.
+		System.out.println(s1==s3); // false  ì£¼ì†Ÿê°’ì´ ë‹¬ë¼ì„œ falseê°€ ë‚˜ì™”ë‹¤.
+		System.out.println(s1.equals(s3)); // true ì£¼ì†Ÿê°’ì„ ë¹„êµí•˜ì§€ ì•Šê³  ë¬¸ìì—´ì˜ ê°’ì„ ë¹„êµí–ˆìœ¼ë¯€ë¡œ trueê°€ ë‚˜ì™”ë‹¤.
 	}
 }

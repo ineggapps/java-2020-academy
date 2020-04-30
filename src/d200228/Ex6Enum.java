@@ -1,9 +1,9 @@
-package d200228;
+ï»¿package d200228;
 
 public class Ex6Enum {
 	public static void main(String[] args) {
 		Test6 t = new Test6();
-//		if(t.getColor()==1) {} µûÀ§ÀÇ ¼ıÀÚ ºñ±³´Â ºÒ°¡´ÉÇÏ´Ù.
+//		if(t.getColor()==1) {} ë”°ìœ„ì˜ ìˆ«ì ë¹„êµëŠ” ë¶ˆê°€ëŠ¥í•˜ë‹¤.
 		Color color = t.getColor();
 		System.out.println(t);
 		switch (color) {
@@ -18,14 +18,14 @@ public class Ex6Enum {
 			break;
 		}
 		for (Color c : Color.values()) {
-			// Çâ»óµÈ for¹®À¸·Î Color ¿­°ÅÇü º¯¼öµéÀ» ¸ğµÎ ¼øÈ¸ÇÒ ¼öÀÖÀ½.
-			System.out.println(c + "ÀÇ ¼­¼ö(±â¼ö): " + c.ordinal());
+			// í–¥ìƒëœ forë¬¸ìœ¼ë¡œ Color ì—´ê±°í˜• ë³€ìˆ˜ë“¤ì„ ëª¨ë‘ ìˆœíšŒí•  ìˆ˜ìˆìŒ.
+			System.out.println(c + "ì˜ ì„œìˆ˜(ê¸°ìˆ˜): " + c.ordinal());
 		}
 
 	}
 }
 
-//¿­°ÅÇü º¯¼ö ¼±¾ğ
+//ì—´ê±°í˜• ë³€ìˆ˜ ì„ ì–¸
 enum Color {
 	RED, GREEN, BLUE, BLACK, VIOLET, LIME, ORANGE
 }

@@ -1,33 +1,33 @@
-package r200203;
+ï»¿package r200203;
 
 import java.util.Scanner;
 
 public class FlowEx7 {
 	public static void main(String[] args) {
-		System.out.print("°¡À§(1), ¹ÙÀ§(2), º¸(3) Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä.> ");
+		System.out.print("ê°€ìœ„(1), ë°”ìœ„(2), ë³´(3) ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.> ");
 		
 		Scanner sc = new Scanner(System.in);
 		int user = sc.nextInt();
 		int com = (int) (Math.random()*3)+1;
 		
-		System.out.println("´ç½ÅÀº " + user +"ÀÔ´Ï´Ù.");
-		System.out.println("ÄÄÇ»ÅÍ´Â " + com+"ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì€ " + user +"ì…ë‹ˆë‹¤.");
+		System.out.println("ì»´í“¨í„°ëŠ” " + com+"ì…ë‹ˆë‹¤.");
 		
 		switch(user-com) {
 		case 2: case -1:
-			//°¡À§(1)-¹ÙÀ§(2)=-1
-			//¹ÙÀ§(2)-º¸(3)=-1
-			//º¸(3)-°¡À§(1)=2
-			System.out.println("´ç½ÅÀÌ Á³½À´Ï´Ù.");
+			//ê°€ìœ„(1)-ë°”ìœ„(2)=-1
+			//ë°”ìœ„(2)-ë³´(3)=-1
+			//ë³´(3)-ê°€ìœ„(1)=2
+			System.out.println("ë‹¹ì‹ ì´ ì¡ŒìŠµë‹ˆë‹¤.");
 			break;
 		case 1: case -2:
-			//°¡À§(1)-º¸(3)=-2
-			//¹ÙÀ§(2)-°¡À§(1)=1
-			//º¸(3)-¹ÙÀ§(2)=1
-			System.out.println("´ç½ÅÀÌ ÀÌ°å½À´Ï´Ù.");
+			//ê°€ìœ„(1)-ë³´(3)=-2
+			//ë°”ìœ„(2)-ê°€ìœ„(1)=1
+			//ë³´(3)-ë°”ìœ„(2)=1
+			System.out.println("ë‹¹ì‹ ì´ ì´ê²¼ìŠµë‹ˆë‹¤.");
 			break;
 		case 0:
-			System.out.println("¹«½ÂºÎ.");
+			System.out.println("ë¬´ìŠ¹ë¶€.");
 			break;
 		}
 		sc.close();

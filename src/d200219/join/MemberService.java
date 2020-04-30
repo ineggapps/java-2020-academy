@@ -1,4 +1,4 @@
-package d200219.join;
+ï»¿package d200219.join;
 
 import java.util.Scanner;
 
@@ -7,45 +7,45 @@ public class MemberService extends Member {
 	private MemberResult mr = new MemberResult(this);
 
 	public void input() {
-		System.out.println("\nµ¥ÀÌÅÍ ÀÔ·Â... ");
+		System.out.println("\në°ì´í„° ì…ë ¥... ");
 
-		System.out.print("¾ÆÀÌµğ: ");
+		System.out.print("ì•„ì´ë””: ");
 		MemberVO vo = new MemberVO();
 		vo.setId(sc.next());
 
-		System.out.print("ºñ¹Ğ¹øÈ£: ");
+		System.out.print("ë¹„ë°€ë²ˆí˜¸: ");
 		vo.setPwd(sc.next());
 
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		vo.setName(sc.next());
 
-		System.out.print("»ı³â¿ùÀÏ: ");
+		System.out.print("ìƒë…„ì›”ì¼: ");
 		vo.setBirth(sc.next());
 
 		int result = append(vo);
 		if (result == -1) {
-			System.out.println("Á¤¿ø ÃÊ°ú");
+			System.out.println("ì •ì› ì´ˆê³¼");
 		} else {
-			System.out.println("µî·Ï ¿Ï·á");
+			System.out.println("ë“±ë¡ ì™„ë£Œ");
 		}
 
 	}
 
 	public void print() {
-		System.out.println("\nµ¥ÀÌÅÍ Ãâ·Â...");
+		System.out.println("\në°ì´í„° ì¶œë ¥...");
 		mr.write();
 	}
 
 	public void findById() {
-		System.out.println("\n¾ÆÀÌµğ °Ë»ö...");
+		System.out.println("\nì•„ì´ë”” ê²€ìƒ‰...");
 
 		String id;
-		System.out.print("°Ë»öÇÒ ¾ÆÀÌµğ: ");
+		System.out.print("ê²€ìƒ‰í•  ì•„ì´ë””: ");
 		id = sc.next();
 
 		MemberVO vo = get(id);
 		if (vo == null) {
-			System.out.println("µî·ÏµÈ ¾ÆÀÌµğ°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ë“±ë¡ëœ ì•„ì´ë””ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 		} else {
 			System.out.println(vo);
 		}

@@ -1,4 +1,4 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
@@ -7,11 +7,11 @@ public class IfQuiz4Advanced {
 		Scanner sc = new Scanner(System.in);
 		int a;
 
-		System.out.print("Á¡¼ö? ");
+		System.out.print("ì ìˆ˜? ");
 		a = sc.nextInt();
 
-		// °¡Àå ¹Ù±ù if¹®¿¡¼­ 0~100Á¡ÀÌ ¾Æ´Ñ °æ¿ì ÀÔ·Â ¿À·ù¶ó´Â ¸Þ½ÃÁö¸¦ Ãâ·ÂÇÏµµ·Ï ÇÏ¿´´Ù.
-		// µû¶ó¼­ ¾ÈÂÊ¿¡¼­ Á¡¼öº°·Î Â÷µîÇÏ¿© ÇÐÁ¡À» Ãâ·ÂÇÏ´Â ±¸¹®¿¡¼­´Â º¹ÀâÇÑ Á¶°Ç½ÄÀ» ÀÛ¼ºÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
+		// ê°€ìž¥ ë°”ê¹¥ ifë¬¸ì—ì„œ 0~100ì ì´ ì•„ë‹Œ ê²½ìš° ìž…ë ¥ ì˜¤ë¥˜ë¼ëŠ” ë©”ì‹œì§€ë¥¼ ì¶œë ¥í•˜ë„ë¡ í•˜ì˜€ë‹¤.
+		// ë”°ë¼ì„œ ì•ˆìª½ì—ì„œ ì ìˆ˜ë³„ë¡œ ì°¨ë“±í•˜ì—¬ í•™ì ì„ ì¶œë ¥í•˜ëŠ” êµ¬ë¬¸ì—ì„œëŠ” ë³µìž¡í•œ ì¡°ê±´ì‹ì„ ìž‘ì„±í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
 		if (a > 0 && a <= 100) {
 			if (a >= 95) {
 				System.out.println(a + ": 4.5");
@@ -33,7 +33,7 @@ public class IfQuiz4Advanced {
 				System.out.println(a + ": 0.0");
 			}
 		} else {
-			System.out.println("ÀÔ·Â ¿À·ù");
+			System.out.println("ìž…ë ¥ ì˜¤ë¥˜");
 		}
 
 		sc.close();

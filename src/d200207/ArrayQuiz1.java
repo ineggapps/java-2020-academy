@@ -1,30 +1,30 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Scanner;
 
 public class ArrayQuiz1 {
 	public static void main(String[] args) {
-		//¾ç·ÂÀ» ±âÁØÀ¸·Î °è»êÇÒ °æ¿ìÀÓ.
+		//ì–‘ë ¥ì„ ê¸°ì¤€ìœ¼ë¡œ ê³„ì‚°í•  ê²½ìš°ìž„.
 		Scanner sc = new Scanner(System.in);
 		int y;
-		String band[] = { "¿ø¼þÀÌ", "´ß", "°³", "µÅÁö", "Áã", "¼Ò", "¹ü", "Åä³¢", "¿ë", "¹ì", "¸»", "¾ç" };
+		String band[] = { "ì›ìˆ­ì´", "ë‹­", "ê°œ", "ë¼ì§€", "ì¥", "ì†Œ", "ë²”", "í† ë¼", "ìš©", "ë±€", "ë§", "ì–‘" };
 
 		/*
-		 * ¿¬µµ¸¦ ÀÔ·Â¹Þ¾Æ ÀÔ·Â ¹ÞÀº ¿¬µµÀÇ ¶ì¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÑ´Ù.
-		 * ¶ì´Â Áã, ¼Ò, ¹ü, Åä³¢, ¿ë, ¹ì, ¸», ¾ç, ¿ø¼þÀÌ, ´ß, °³, µÅÁö ¼øÀ¸·Î ÁøÇàµÈ´Ù. 
-		 * 2016³âÀº ¿ø¼þÀÌ¶ìÀÌ´Ù. (2016%12==0)
-		 * ½ÃÀÛÇÏ´Â ¶ìÀÇ ¼ø¼­¿Í´Â Á¶±Ý ´Ù¸£°Ô
-		 * ³ª´©¾î ¶³¾îÁö´Â °ÍÀÌ 0ÀÏ ¶§ÀÇ ¶ìºÎÅÍ ½ÃÀÛÇÏ¸é µÈ´Ù.
-		 * µû¶ó¼­ ¹è¿­ÀÇ ÃÊ±ê°ªÀº "¿ø¼þÀÌ"ºÎÅÍ ½ÃÀÛÇÏ¸é µÈ´Ù.
+		 * ì—°ë„ë¥¼ ìž…ë ¥ë°›ì•„ ìž…ë ¥ ë°›ì€ ì—°ë„ì˜ ë ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•œë‹¤.
+		 * ë ëŠ” ì¥, ì†Œ, ë²”, í† ë¼, ìš©, ë±€, ë§, ì–‘, ì›ìˆ­ì´, ë‹­, ê°œ, ë¼ì§€ ìˆœìœ¼ë¡œ ì§„í–‰ëœë‹¤. 
+		 * 2016ë…„ì€ ì›ìˆ­ì´ë ì´ë‹¤. (2016%12==0)
+		 * ì‹œìž‘í•˜ëŠ” ë ì˜ ìˆœì„œì™€ëŠ” ì¡°ê¸ˆ ë‹¤ë¥´ê²Œ
+		 * ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ê²ƒì´ 0ì¼ ë•Œì˜ ë ë¶€í„° ì‹œìž‘í•˜ë©´ ëœë‹¤.
+		 * ë”°ë¼ì„œ ë°°ì—´ì˜ ì´ˆê¹ƒê°’ì€ "ì›ìˆ­ì´"ë¶€í„° ì‹œìž‘í•˜ë©´ ëœë‹¤.
 		 */
 
-		// ÀÔ·Â
+		// ìž…ë ¥
 		do {
-			System.out.print("¿¬µµ ? ");
+			System.out.print("ì—°ë„ ? ");
 			y = sc.nextInt();
 		} while (y < 1900);
 
-		System.out.printf("%d³âµµ´Â %s¶ìÀÇ ÇØÀÔ´Ï´Ù.", y, band[y % band.length]);
+		System.out.printf("%dë…„ë„ëŠ” %së ì˜ í•´ìž…ë‹ˆë‹¤.", y, band[y % band.length]);
 
 		sc.close();
 	}

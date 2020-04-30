@@ -1,14 +1,14 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex15 {
 	public static void main(String[] args) {
-		System.out.println("µğÆúÆ® Ä³¸¯ÅÍ¼Â: " + System.getProperty("file.encoding"));// MS949 ÀÎÄÚµù ¹æ½Ä È¯°æ¿¡¼­´Â MS949¶ó°í
-																				// Ãâ·ÂµÊ(¡Öeuc-kr)
+		System.out.println("ë””í´íŠ¸ ìºë¦­í„°ì…‹: " + System.getProperty("file.encoding"));// MS949 ì¸ì½”ë”© ë°©ì‹ í™˜ê²½ì—ì„œëŠ” MS949ë¼ê³ 
+																				// ì¶œë ¥ë¨(â‰’euc-kr)
 		try {
 			byte[] b;
-			String s = "´ëÇÑ¹Î±¹"; // µğÆúÆ® Ä³¸¯ÅÍ¼ÂÀÎ MS949·Î ÀúÀåµÈ´Ù.
+			String s = "ëŒ€í•œë¯¼êµ­"; // ë””í´íŠ¸ ìºë¦­í„°ì…‹ì¸ MS949ë¡œ ì €ì¥ëœë‹¤.
 			b = s.getBytes();
-			System.out.println("±æÀÌ: " + b.length);
+			System.out.println("ê¸¸ì´: " + b.length);
 			for (byte a : b) {
 				System.out.print(a + " ");
 			}
@@ -16,7 +16,7 @@ public class Ex15 {
 			System.out.println("===================");
 
 			b = s.getBytes("utf-8");
-			System.out.println("utf-8ÀÇ ±æÀÌ: " + b.length);
+			System.out.println("utf-8ì˜ ê¸¸ì´: " + b.length);
 			for (byte a : b) {
 				System.out.print(a + " ");
 			}

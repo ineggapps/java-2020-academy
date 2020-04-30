@@ -1,4 +1,4 @@
-package score4;
+﻿package score4;
 
 public interface Score {
 	public void input();

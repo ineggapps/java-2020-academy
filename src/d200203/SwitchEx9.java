@@ -1,21 +1,21 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
 public class SwitchEx9 {
 	/*
-	 * µÎ ¿¬»êÀÚ¸¦ ÀÔ·Â ¹Ş¾Æ »çÄ¢¿¬»ê
+	 * ë‘ ì—°ì‚°ìë¥¼ ì…ë ¥ ë°›ì•„ ì‚¬ì¹™ì—°ì‚°
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n1, n2;
 		String oper;
 
-		System.out.print("µÎ ¼ö ÀÔ·Â: ");
+		System.out.print("ë‘ ìˆ˜ ì…ë ¥: ");
 		n1 = sc.nextInt();
 		n2 = sc.nextInt();
 
-		System.out.print("¿¬»êÀÚ ÀÔ·Â[+-*/]: ");
+		System.out.print("ì—°ì‚°ì ì…ë ¥[+-*/]: ");
 		oper = sc.next();
 
 		switch (oper) {
@@ -32,7 +32,7 @@ public class SwitchEx9 {
 			System.out.printf("%d %s %d = %.2f\n", n1, oper, n2, (double)n1 / n2);
 			break;
 		default:
-			System.out.println("°è»ê ½ÇÆĞ: ¿Ã¹Ù¸£Áö ¾ÊÀº ¿¬»êÀÚ");
+			System.out.println("ê³„ì‚° ì‹¤íŒ¨: ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì—°ì‚°ì");
 			break;
 		}
 

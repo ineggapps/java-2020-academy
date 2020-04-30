@@ -1,8 +1,8 @@
-package score1;
+ï»¿package score1;
 
-// °³¼±ÀÌ ÇÊ¿äÇÑ Å¬·¡½º (ÁÁÀº ¹æ¹ýÀº ¾Æ´Ï°í, °´Ã¼ÁöÇâÀû ÇÁ·Î±×·¡¹ÖÀ» ÀÍÈ÷±â À§ÇØ ¹è¿î ³»¿ë¸¸À» ¹ÙÅÁÀ¸·Î ÇÁ·Î±×·¥ ÄÚµå¸¦ ÀÛ¼ºÇÔ)
+// ê°œì„ ì´ í•„ìš”í•œ í´ëž˜ìŠ¤ (ì¢‹ì€ ë°©ë²•ì€ ì•„ë‹ˆê³ , ê°ì²´ì§€í–¥ì  í”„ë¡œê·¸ëž˜ë°ì„ ìµížˆê¸° ìœ„í•´ ë°°ìš´ ë‚´ìš©ë§Œì„ ë°”íƒ•ìœ¼ë¡œ í”„ë¡œê·¸ëž¨ ì½”ë“œë¥¼ ìž‘ì„±í•¨)
 public class ScoreVO {
-	//Value Object : °ªÀ» °¡Áö°í ÀÖ´Â Å¬·¡½º
+	//Value Object : ê°’ì„ ê°€ì§€ê³  ìžˆëŠ” í´ëž˜ìŠ¤
 	String hak;
 	String name;
 	int[] score = new int[3];

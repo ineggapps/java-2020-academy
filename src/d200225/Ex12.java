@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -6,9 +6,9 @@ public class Ex12 {
 	public static void main(String[] args) {
 		Set<TestVO> set = new TreeSet<TestVO>();
 
-		set.add(new TestVO("³Ê³Ê³Ê", 10));
-		set.add(new TestVO("ÇÏÇÏÇÏ", 28));
-		set.add(new TestVO("´õ´õ´õ", 23));
+		set.add(new TestVO("ë„ˆë„ˆë„ˆ", 10));
+		set.add(new TestVO("í•˜í•˜í•˜", 28));
+		set.add(new TestVO("ë”ë”ë”", 23));
 
 		for (TestVO vo : set) {
 			System.out.println(vo);
@@ -17,7 +17,7 @@ public class Ex12 {
 	}
 }
 
-//Comparable ±¸Çö
+//Comparable êµ¬í˜„
 class TestVO implements Comparable<TestVO> {
 
 	private String name;

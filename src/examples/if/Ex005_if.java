@@ -1,22 +1,22 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex005_if {
 	public static void main(String[] args) {
 /*
-		ÇÑ¹®ÀÚ¸¦ ÀÔ·Â ¹Þ¾Æ ´ë¼Ò¹®ÀÚÀÎÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		í•œë¬¸ìžë¥¼ ìž…ë ¥ ë°›ì•„ ëŒ€ì†Œë¬¸ìžì¸ì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */
 		Scanner sc=new Scanner(System.in);
 		
 		char ch;
-		System.out.print("ÇÑ¹®ÀÚ ? ");
+		System.out.print("í•œë¬¸ìž ? ");
 		ch=sc.next().charAt(0);
 		
 		if(ch>='A' && ch <='Z') {
-			System.out.println(ch+" : ´ë¹®ÀÚ");
+			System.out.println(ch+" : ëŒ€ë¬¸ìž");
 		} else if(ch>='a' && ch <='z') {
-			System.out.println(ch+" : ¼Ò¹®ÀÚ");
+			System.out.println(ch+" : ì†Œë¬¸ìž");
 		} else {
-			System.out.println(ch+" : ±âÅ¸¹®ÀÚ");
+			System.out.println(ch+" : ê¸°íƒ€ë¬¸ìž");
 		}
 		
 		sc.close();

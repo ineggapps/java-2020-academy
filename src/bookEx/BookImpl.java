@@ -1,4 +1,4 @@
-package bookEx;
+ï»¿package bookEx;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,16 +7,16 @@ public class BookImpl implements Book{
 	private List<BookVO> list = new ArrayList<>();
 	
 	public BookImpl() {
-		list.add(new BookVO("101", "¿À¶óÅ¬"));
-		list.add(new BookVO("102", "Àç¹ÌÀÖ´Â¿À¶óÅ¬"));
-		list.add(new BookVO("201", "ÀÚ¹Ù¿Í³îÀÚ"));
-		list.add(new BookVO("202", "ÀÚ¹ÙÁ¤º¹"));
+		list.add(new BookVO("101", "ì˜¤ë¼í´"));
+		list.add(new BookVO("102", "ì¬ë¯¸ìˆëŠ”ì˜¤ë¼í´"));
+		list.add(new BookVO("201", "ìë°”ì™€ë†€ì"));
+		list.add(new BookVO("202", "ìë°”ì •ë³µ"));
 		list.add(new BookVO("301", "HTML"));
 	}
 	
 	@Override
 	public void insertBook(BookVO vo) {
-		// µµ¼­ µî·Ï
+		// ë„ì„œ ë“±ë¡
 		list.add(vo);
 	}
 
@@ -27,7 +27,7 @@ public class BookImpl implements Book{
 	
 	@Override
 	public List<BookVO> listBook(String subject) {
-		// µµ¼­¸í °Ë»ö
+		// ë„ì„œëª… ê²€ìƒ‰
 		List<BookVO> slist = new ArrayList<BookVO>();
 		
 		for(BookVO vo : list) {
@@ -41,7 +41,7 @@ public class BookImpl implements Book{
 
 	@Override
 	public BookVO readBook(String code) {
-		// µµ¼­ ÄÚµå °Ë»ö
+		// ë„ì„œ ì½”ë“œ ê²€ìƒ‰
 		for(BookVO vo : list) {
 			if(vo.getCode().equals(code)) {
 				return vo;
@@ -53,13 +53,13 @@ public class BookImpl implements Book{
 
 	@Override
 	public void updateBook(BookVO vo) {
-		// µµ¼­ ¼öÁ¤
+		// ë„ì„œ ìˆ˜ì •
 		
 	}
 
 	@Override
 	public void deleteBook(BookVO vo) {
-		// µµ¼­ »èÁ¦
+		// ë„ì„œ ì‚­ì œ
 		
 	}
 }

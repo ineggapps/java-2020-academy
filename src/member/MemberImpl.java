@@ -1,4 +1,4 @@
-package member;
+ï»¿package member;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -8,39 +8,39 @@ import java.util.Scanner;
 public class MemberImpl implements Member {
 
 	private Scanner sc = new Scanner(System.in);
-	// Å°: ÀÌ¸ŞÀÏ, °ª: memberVO °´Ã¼
+	// í‚¤: ì´ë©”ì¼, ê°’: memberVO ê°ì²´
 	private Map<String, MemberVO> map = new HashMap<>();
 
 	public MemberImpl() {
-		map.put("jsj@gmail.com", new MemberVO("Á¤½ÂÁ¦", "1234", "01012341234", "19921002"));
-		map.put("lsj@gmail.com", new MemberVO("ÀÌ¼±Àç", "4321", "01012341235", "19771112"));
-		map.put("jhg@gmail.com", new MemberVO("ÀüÇÑ±æ", "1111", "01012341236", "19701002"));
-		map.put("mdg@gmail.com", new MemberVO("¹®µ¿±Õ", "2222", "01012341237", "19820208"));
+		map.put("jsj@gmail.com", new MemberVO("ì •ìŠ¹ì œ", "1234", "01012341234", "19921002"));
+		map.put("lsj@gmail.com", new MemberVO("ì´ì„ ì¬", "4321", "01012341235", "19771112"));
+		map.put("jhg@gmail.com", new MemberVO("ì „í•œê¸¸", "1111", "01012341236", "19701002"));
+		map.put("mdg@gmail.com", new MemberVO("ë¬¸ë™ê· ", "2222", "01012341237", "19820208"));
 	}
 
 	@Override
 	public void input() {
-		System.out.println("\nÈ¸¿ø°¡ÀÔ");
-		// ÀÌ¸ŞÀÏ(Å°), ÆĞ½º¿öµå, ÀÌ¸§, ÀüÈ­¹øÈ£, »ı³â¿ùÀÏ
-		// ÀÌ¸ŞÀÏ Áßº¹Ã¼Å©
+		System.out.println("\níšŒì›ê°€ì…");
+		// ì´ë©”ì¼(í‚¤), íŒ¨ìŠ¤ì›Œë“œ, ì´ë¦„, ì „í™”ë²ˆí˜¸, ìƒë…„ì›”ì¼
+		// ì´ë©”ì¼ ì¤‘ë³µì²´í¬
 		String email;
-		System.out.print("ÀÌ¸ŞÀÏ ? ");
+		System.out.print("ì´ë©”ì¼ ? ");
 		email = sc.next();
 
 		if (map.containsKey(email)) {
-			System.out.println("µî·ÏµÈ ÀÌ¸ŞÀÏÀÔ´Ï´Ù.");
+			System.out.println("ë“±ë¡ëœ ì´ë©”ì¼ì…ë‹ˆë‹¤.");
 			return;
 		}
 
 		try {
 			MemberVO vo = new MemberVO();
-			System.out.print("ºñ¹Ğ¹øÈ£ ? ");
+			System.out.print("ë¹„ë°€ë²ˆí˜¸ ? ");
 			vo.setPwd(sc.next());
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.next());
-			System.out.print("ÀüÈ­¹øÈ£? ");
+			System.out.print("ì „í™”ë²ˆí˜¸? ");
 			vo.setTel(sc.next());
-			System.out.print("»ı³â¿ùÀÏ ? ");
+			System.out.print("ìƒë…„ì›”ì¼ ? ");
 			vo.setBirth(sc.next());
 
 			map.put(email, vo);
@@ -52,9 +52,9 @@ public class MemberImpl implements Member {
 
 	@Override
 	public void print() {
-		System.out.println("\nÈ¸¿ø ¸®½ºÆ®");
-		System.out.println("È¸¿ø ¼ö: " + map.size());
-		// ÀÌ¸ŞÀÏ, ÀÌ¸§, ÀüÈ­¹øÈ£, »ı³â¿ùÀÏ(+³ªÀÌ*)
+		System.out.println("\níšŒì› ë¦¬ìŠ¤íŠ¸");
+		System.out.println("íšŒì› ìˆ˜: " + map.size());
+		// ì´ë©”ì¼, ì´ë¦„, ì „í™”ë²ˆí˜¸, ìƒë…„ì›”ì¼(+ë‚˜ì´*)
 		Iterator<String> it = map.keySet().iterator();
 		while (it.hasNext()) {
 			String email = it.next();
@@ -87,21 +87,21 @@ public class MemberImpl implements Member {
 		String email;
 		String pwd;
 		
-		System.out.print("ÀÌ¸ŞÀÏ ÀÔ·Â ? ");
+		System.out.print("ì´ë©”ì¼ ì…ë ¥ ? ");
 		email = sc.next();
 		vo = map.get(email);
 
 		if (vo == null) {
-			// Á¸ÀçÇÏÁö ¾Ê´Â °æ¿ì
-//				System.out.println("°¡ÀÔµÇÁö ¾ÊÀº ÀÌ¸ŞÀÏÀÔ´Ï´Ù.");
+			// ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ê²½ìš°
+//				System.out.println("ê°€ì…ë˜ì§€ ì•Šì€ ì´ë©”ì¼ì…ë‹ˆë‹¤.");
 			throw new NotFoundException();
 		}
 
-		System.out.print("¾ÏÈ£ ÀÔ·Â ? ");
+		System.out.print("ì•”í˜¸ ì…ë ¥ ? ");
 		pwd = sc.next();
 
 		if (!vo.getPwd().equals(pwd)) {
-			// ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾ÊÀ¸¸é ¿¹¿Ü ´øÁö±â
+			// ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•Šìœ¼ë©´ ì˜ˆì™¸ ë˜ì§€ê¸°
 			throw new InvalidPasswordException();
 		}
 
@@ -111,10 +111,10 @@ public class MemberImpl implements Member {
 
 	@Override
 	public void update() {
-		System.out.println("\n¼öÁ¤");
-		// ÀÌ¸ŞÀÏ ÀÔ·Â
-		// µ¥ÀÌÅÍ °Ë»ö=>Á¸ÀçÇÏ¸é pwdÀÔ·Â => ÀÏÄ¡ÇÏ¸é ¼öÁ¤ °¡´É
-		// µ¥ÀÌÅÍ°¡ ¾ø°Å³ª ÆĞ½º¿öµå°¡ ÀÏÄ¡ÇÏÁö ¾ÊÀ¸¸é ¿À·ù ¸Ş½ÃÁö ÈÄ ¸ŞÀÎ ¸Ş´º·Î
+		System.out.println("\nìˆ˜ì •");
+		// ì´ë©”ì¼ ì…ë ¥
+		// ë°ì´í„° ê²€ìƒ‰=>ì¡´ì¬í•˜ë©´ pwdì…ë ¥ => ì¼ì¹˜í•˜ë©´ ìˆ˜ì • ê°€ëŠ¥
+		// ë°ì´í„°ê°€ ì—†ê±°ë‚˜ íŒ¨ìŠ¤ì›Œë“œê°€ ì¼ì¹˜í•˜ì§€ ì•Šìœ¼ë©´ ì˜¤ë¥˜ ë©”ì‹œì§€ í›„ ë©”ì¸ ë©”ë‰´ë¡œ
 		MemberVO vo;
 		String email;
 
@@ -126,18 +126,18 @@ public class MemberImpl implements Member {
 			email = info.getEmail();
 			vo = info.getVo();
 
-			// ¼öÁ¤ ÀÛ¾÷
-			System.out.println("===¼öÁ¤ ÀÛ¾÷À» ½ÃÀÛÇÕ´Ï´Ù===");
-			System.out.print("ºñ¹Ğ¹øÈ£ ? ");
+			// ìˆ˜ì • ì‘ì—…
+			System.out.println("===ìˆ˜ì • ì‘ì—…ì„ ì‹œì‘í•©ë‹ˆë‹¤===");
+			System.out.print("ë¹„ë°€ë²ˆí˜¸ ? ");
 			vo.setPwd(sc.next());
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.next());
-			System.out.print("ÀüÈ­¹øÈ£? ");
+			System.out.print("ì „í™”ë²ˆí˜¸? ");
 			vo.setTel(sc.next());
-			System.out.print("»ı³â¿ùÀÏ ? ");
+			System.out.print("ìƒë…„ì›”ì¼ ? ");
 			vo.setBirth(sc.next());
 
-			System.out.println(vo.getName() + "´ÔÀÇ Á¤º¸ ¼öÁ¤ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+			System.out.println(vo.getName() + "ë‹˜ì˜ ì •ë³´ ìˆ˜ì •ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		} catch (NotFoundException e) {
 			System.out.println(e.getMessage());
 		} catch (InvalidPasswordException e) {
@@ -150,10 +150,10 @@ public class MemberImpl implements Member {
 
 	@Override
 	public void delete() {
-		System.out.println("\nÈ¸¿ø Å»Åğ");
-		// ÀÌ¸ŞÀÏ ÀÔ·Â
-		// µ¥ÀÌÅÍ °Ë»ö > Á¸ÀçÇÏ¸é ÆĞ½º¿öµå ÀÔ·Â > ÀÏÄ¡ÇÏ¸é »èÁ¦
-		// µ¥ÀÌÅÍ°¡ ¾ø°Å³ª ÆĞ½º¿öµå°¡ ÀÏÄ¡ÇÏÁö ¾ÊÀ¸¸é ¿À·ù ¸Ş½ÃÁö ÈÄ ¸ŞÀÎ ¸Ş´º·Î
+		System.out.println("\níšŒì› íƒˆí‡´");
+		// ì´ë©”ì¼ ì…ë ¥
+		// ë°ì´í„° ê²€ìƒ‰ > ì¡´ì¬í•˜ë©´ íŒ¨ìŠ¤ì›Œë“œ ì…ë ¥ > ì¼ì¹˜í•˜ë©´ ì‚­ì œ
+		// ë°ì´í„°ê°€ ì—†ê±°ë‚˜ íŒ¨ìŠ¤ì›Œë“œê°€ ì¼ì¹˜í•˜ì§€ ì•Šìœ¼ë©´ ì˜¤ë¥˜ ë©”ì‹œì§€ í›„ ë©”ì¸ ë©”ë‰´ë¡œ
 		String email;
 		MemberVO vo;
 		try {
@@ -165,13 +165,13 @@ public class MemberImpl implements Member {
 			vo = info.getVo();
 
 			char confirm;
-			System.out.print("Á¤¸» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î? (y/n)");
+			System.out.print("ì •ë§ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y/n)");
 			confirm = sc.next().charAt(0);
 			if (confirm == 'y' || confirm == 'Y') {
 				map.remove(email);
-				System.out.println(email + "ÀÇ Á¤º¸°¡ »èÁ¦µÇ¾ú½À´Ï´Ù.");
+				System.out.println(email + "ì˜ ì •ë³´ê°€ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
 			} else {
-				System.out.println("Ãë¼ÒµÇ¾ú½À´Ï´Ù.");
+				System.out.println("ì·¨ì†Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 			}
 
 		} catch (NotFoundException e) {
@@ -186,32 +186,32 @@ public class MemberImpl implements Member {
 
 	@Override
 	public void findByEmail() {
-		System.out.println("\nÀÌ¸ŞÀÏ·Î °Ë»ö");
+		System.out.println("\nì´ë©”ì¼ë¡œ ê²€ìƒ‰");
 		String email;
-		System.out.print("°Ë»öÇÒ ÀÌ¸ŞÀÏ ? ");
+		System.out.print("ê²€ìƒ‰í•  ì´ë©”ì¼ ? ");
 		email = sc.next();
 
 		MemberVO vo = map.get(email);
 		if (vo == null) {
-			System.out.println("µî·ÏµÇÁö ¾ÊÀº È¸¿øÀÔ´Ï´Ù.");
+			System.out.println("ë“±ë¡ë˜ì§€ ì•Šì€ íšŒì›ì…ë‹ˆë‹¤.");
 			return;
 		}
 
-		System.out.println(email + " Á¤º¸ Á¶È¸ °á°ú...");
+		System.out.println(email + " ì •ë³´ ì¡°íšŒ ê²°ê³¼...");
 		System.out.println(vo.toStringExceptPwd());
 		System.out.println();
 	}
 
 	@Override
 	public void findByName() {
-		System.out.println("\nÀÌ¸§À¸·Î °Ë»ö");
+		System.out.println("\nì´ë¦„ìœ¼ë¡œ ê²€ìƒ‰");
 
 		String name;
-		System.out.print("°Ë»öÇÒ ÀÌ¸§?");
+		System.out.print("ê²€ìƒ‰í•  ì´ë¦„?");
 		name = sc.next();
 
 		boolean exist = false;
-		// µ¿¸íÀÌÀÎµµ ÀÖÀ½À» °¨¾ÈÇÏ¿© ÀÌ¸§À» °Ë»öÇÑ´Ù.
+		// ë™ëª…ì´ì¸ë„ ìˆìŒì„ ê°ì•ˆí•˜ì—¬ ì´ë¦„ì„ ê²€ìƒ‰í•œë‹¤.
 		Iterator<String> it = map.keySet().iterator();
 		while (it.hasNext()) {
 			String email = it.next();
@@ -223,7 +223,7 @@ public class MemberImpl implements Member {
 		}
 
 		if (!exist) {
-			System.out.println(name + "´Ô °Ë»ö °á°ú°¡ ¾ø½À´Ï´Ù...");
+			System.out.println(name + "ë‹˜ ê²€ìƒ‰ ê²°ê³¼ê°€ ì—†ìŠµë‹ˆë‹¤...");
 		}
 		System.out.println();
 	}

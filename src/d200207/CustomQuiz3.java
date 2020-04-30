@@ -1,39 +1,39 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Scanner;
 
 public class CustomQuiz3 {
 	public static void main(String[] args) {
-		// È¦Â¦ °ÔÀÓ
+		// í™€ì§ ê²Œì„
 		Scanner sc = new Scanner(System.in);
 		int com;
 		int user;
-		// 1. È¦ 2. Â¦ 3. Á¾·á
+		// 1. í™€ 2. ì§ 3. ì¢…ë£Œ
 		while (true) {
-			System.out.println("Áö±İ ÄÄÇ»ÅÍ°¡ »ı°¢ÇÏ´Â ¼ıÀÚ´Â È¦¼öÀÏ±î¿ä, Â¦¼öÀÏ±î¿ä?");
-			System.out.print("1.È¦, 2.Â¦, 3.Á¾·á > ");
+			System.out.println("ì§€ê¸ˆ ì»´í“¨í„°ê°€ ìƒê°í•˜ëŠ” ìˆ«ìëŠ” í™€ìˆ˜ì¼ê¹Œìš”, ì§ìˆ˜ì¼ê¹Œìš”?");
+			System.out.print("1.í™€, 2.ì§, 3.ì¢…ë£Œ > ");
 			user = sc.nextInt();
 
-			// ÀÔ·Â°ª °ËÁõ
+			// ì…ë ¥ê°’ ê²€ì¦
 			if (user < 1 && user > 3) {
 				continue;
 			} else if (user == 3) {
 				break;
 			}
 
-			// Ãâ·Â
+			// ì¶œë ¥
 			com = (int) (Math.random() * 100) + 1;
-			System.out.println("ÄÄÇ»ÅÍ: " + com);
-			System.out.println("»ç¿ëÀÚ: " + (user == 1 ? "È¦¼ö" : "Â¦¼ö"));
+			System.out.println("ì»´í“¨í„°: " + com);
+			System.out.println("ì‚¬ìš©ì: " + (user == 1 ? "í™€ìˆ˜" : "ì§ìˆ˜"));
 			if (com % 2 == user % 2) {
-				System.out.println("¸ÂÇû½À´Ï´Ù.");
+				System.out.println("ë§í˜”ìŠµë‹ˆë‹¤.");
 			} else {
-				System.out.println("Æ²·È½À´Ï´Ù.");
+				System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤.");
 				break;
 			}
 		}
 
-		System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+		System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 		sc.close();
 	}
 }

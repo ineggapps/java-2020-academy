@@ -1,4 +1,4 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
@@ -7,19 +7,19 @@ public class IfEx9 {
 		Scanner sc = new Scanner(System.in);
 		int n;
 
-		System.out.print("Á¡¼ö ? ");
+		System.out.print("ì ìˆ˜ ? ");
 		n = sc.nextInt();
 
 		if (n >= 90) {
-			System.out.println(n + ": ¼ö");
-		} else if (n >= 80) { // if(n>=80 && n<90)ÀÌ¶ó´Â ÀÇ¹Ì¿Í °°´Ù. ÇÏÁö¸¸ ÀÌ¹Ì À§ÀÇ  if¹®¿¡¼­ Á¶°ÇÀÌ Àß·È±â ¶§¹®¿¡ "&& n<90"±îÁö ¼±¾ðÇÒ ÇÊ¿ä°¡ ¾øÀ½.
-			System.out.println(n + ": ¿ì");
+			System.out.println(n + ": ìˆ˜");
+		} else if (n >= 80) { // if(n>=80 && n<90)ì´ë¼ëŠ” ì˜ë¯¸ì™€ ê°™ë‹¤. í•˜ì§€ë§Œ ì´ë¯¸ ìœ„ì˜  ifë¬¸ì—ì„œ ì¡°ê±´ì´ ìž˜ë ¸ê¸° ë•Œë¬¸ì— "&& n<90"ê¹Œì§€ ì„ ì–¸í•  í•„ìš”ê°€ ì—†ìŒ.
+			System.out.println(n + ": ìš°");
 		} else if (n >= 70) {
-			System.out.println(n + ": ¹Ì");
+			System.out.println(n + ": ë¯¸");
 		} else if (n >= 60) {
-			System.out.println(n + ": ¾ç");
+			System.out.println(n + ": ì–‘");
 		} else {
-			System.out.println(n + ": °¡");
+			System.out.println(n + ": ê°€");
 		}
 
 		sc.close();

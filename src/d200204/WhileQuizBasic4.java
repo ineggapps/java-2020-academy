@@ -1,8 +1,8 @@
-package d200204;
+ï»¿package d200204;
 
 public class WhileQuizBasic4 {
 	public static void main(String[] args) {
-		//1~100±îÁöÀÇ ¼ö Áß 3 ¶Ç´Â 5ÀÇ ¹è¼öÀÇ ÇÕ°ú Æò±ÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+		//1~100ê¹Œì§€ì˜ ìˆ˜ ì¤‘ 3 ë˜ëŠ” 5ì˜ ë°°ìˆ˜ì˜ í•©ê³¼ í‰ê· ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 		int n=0,cnt=0,sum=0,avg=0;
 		while(n<100) {
 			n++;
@@ -12,7 +12,7 @@ public class WhileQuizBasic4 {
 			}
 		}
 		avg=sum/cnt;
-		System.out.println("ÇÕ: "+sum);
-		System.out.println("Æò±Õ: "+avg);
+		System.out.println("í•©: "+sum);
+		System.out.println("í‰ê· : "+avg);
 	}
 }

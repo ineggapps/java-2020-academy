@@ -1,4 +1,4 @@
-package bookEx;
+ï»¿package bookEx;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -27,7 +27,7 @@ public class Library {
 		
 		try {
 			do {
-				System.out.print("1.·Î±×ÀÎ 2.È¸¿ø°¡ÀÔ 3.Á¾·á => ");
+				System.out.print("1.ë¡œê·¸ì¸ 2.íšŒì›ê°€ìž… 3.ì¢…ë£Œ => ");
 				ch = sc.nextInt();
 			} while(ch<1||ch>3);
 			
@@ -49,11 +49,11 @@ public class Library {
 		if(lm==null || ! lm.getId().equals("admin"))
 			return;
 		
-		System.out.println(lm.getName()+"´Ô...");
+		System.out.println(lm.getName()+"ë‹˜...");
 		
 		try {
 			do {
-				System.out.print("1.µµ¼­°ü¸® 2.È¸¿ø°ü¸® 3.·Î±×¾Æ¿ô =>");
+				System.out.print("1.ë„ì„œê´€ë¦¬ 2.íšŒì›ê´€ë¦¬ 3.ë¡œê·¸ì•„ì›ƒ =>");
 				ch = sc.nextInt();
 			} while(ch<1||ch>3);
 			
@@ -73,10 +73,10 @@ public class Library {
 		MemberVO lm = loginMember();
 		if(lm==null) return;
 		
-		System.out.println(lm.getName()+"´Ô...");
+		System.out.println(lm.getName()+"ë‹˜...");
 		try {
 			do {
-				System.out.print("1.µµ¼­´ë¿© 2.µµ¼­¹Ý³³ 3.µµ¼­°Ë»ö 4.·Î±×¾Æ¿ô => ");
+				System.out.print("1.ë„ì„œëŒ€ì—¬ 2.ë„ì„œë°˜ë‚© 3.ë„ì„œê²€ìƒ‰ 4.ë¡œê·¸ì•„ì›ƒ => ");
 				ch = sc.nextInt();
 			} while(ch<1||ch>4);
 			
@@ -100,9 +100,9 @@ public class Library {
 		
 		while(true) {
 			try {
-				System.out.println("\nµµ¼­ °ü¸®...");
+				System.out.println("\në„ì„œ ê´€ë¦¬...");
 				do {
-					System.out.print("1.µµ¼­µî·Ï 2.µµ¼­¼öÁ¤ 3.¸®½ºÆ® 4.´ë¿©¸®½ºÆ® 5.¸ÞÀÎ => ");
+					System.out.print("1.ë„ì„œë“±ë¡ 2.ë„ì„œìˆ˜ì • 3.ë¦¬ìŠ¤íŠ¸ 4.ëŒ€ì—¬ë¦¬ìŠ¤íŠ¸ 5.ë©”ì¸ => ");
 					ch = sc.nextInt();
 				} while(ch<1||ch>5);
 				
@@ -132,9 +132,9 @@ public class Library {
 		
 		while(true) {
 			try {
-				System.out.println("\nÈ¸¿ø °ü¸®...");
+				System.out.println("\níšŒì› ê´€ë¦¬...");
 				do {
-					System.out.print("1.È¸¿ø¸®½ºÆ® 2.¾ÆÀÌµð°Ë»ö 3.ÀÌ¸§°Ë»ö 4.¸ÞÀÎ => ");
+					System.out.print("1.íšŒì›ë¦¬ìŠ¤íŠ¸ 2.ì•„ì´ë””ê²€ìƒ‰ 3.ì´ë¦„ê²€ìƒ‰ 4.ë©”ì¸ => ");
 					ch = sc.nextInt();
 				} while(ch<1||ch>4);
 				

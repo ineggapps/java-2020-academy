@@ -1,35 +1,35 @@
-package d200203;
+ï»¿package d200203;
 import java.util.Scanner;
 
 public class SwitchEx8 {
 	/*
-	 * Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ¼ö,¿ì,¹Ì,¾ç,°¡ ±¸ÇÏ±â.
+	 * ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ìˆ˜,ìš°,ë¯¸,ì–‘,ê°€ êµ¬í•˜ê¸°.
 	 * 
-	 * (´Ü, ÀÔ·Â ¹ŞÀº Á¡¼ö¿¡´Â ¿À·ù°¡ ¾ø´Ù)
+	 * (ë‹¨, ì…ë ¥ ë°›ì€ ì ìˆ˜ì—ëŠ” ì˜¤ë¥˜ê°€ ì—†ë‹¤)
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int s;
 		char grade;
-		System.out.print("Á¡¼ö ÀÔ·Â(1~100): ");
+		System.out.print("ì ìˆ˜ ì…ë ¥(1~100): ");
 		s = sc.nextInt();
 
-		switch (s / 10) {// ¡Ø°ü°è¿¬»êÀÚ´Â ÀÌ ÀÚ¸®¿¡ ¿Ã ¼ö ¾ø´Ù.
+		switch (s / 10) {// â€»ê´€ê³„ì—°ì‚°ìëŠ” ì´ ìë¦¬ì— ì˜¬ ìˆ˜ ì—†ë‹¤.
 		case 10:
 		case 9:
-			grade = '¼ö';
+			grade = 'ìˆ˜';
 			break;
 		case 8:
-			grade = '¿ì';
+			grade = 'ìš°';
 			break;
 		case 7:
-			grade = '¹Ì';
+			grade = 'ë¯¸';
 			break;
 		case 6:
-			grade = '¾ç';
+			grade = 'ì–‘';
 			break;
 		default:
-			grade = '°¡';
+			grade = 'ê°€';
 			break;
 		}
 

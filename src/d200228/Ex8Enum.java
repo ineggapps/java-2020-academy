@@ -1,7 +1,7 @@
-package d200228;
+ï»¿package d200228;
 
-//¿­°ÅÇüÀº ¸¸µé ÀÏÀº °ÅÀÇ ¾øÀ¸³ª JAVA¿¡¼­ Á¦°øÇÏ´Â Å¬·¡½º¿¡¼­ ¿­°ÅÇüÀ» »ç¿ëÇÒ ¼ö ÀÖÀ¸¹Ç·Î
-//°¡º±°Ô ½Ç½ÀÇÏ¸é¼­ ¾î¶»°Ô ¾²´ÂÁö Á¤µµ¸¸ ÀÍÈ÷°í SKIP~
+//ì—´ê±°í˜•ì€ ë§Œë“¤ ì¼ì€ ê±°ì˜ ì—†ìœ¼ë‚˜ JAVAì—ì„œ ì œê³µí•˜ëŠ” í´ë˜ìŠ¤ì—ì„œ ì—´ê±°í˜•ì„ ì‚¬ìš©í•  ìˆ˜ ìˆìœ¼ë¯€ë¡œ
+//ê°€ë³ê²Œ ì‹¤ìŠµí•˜ë©´ì„œ ì–´ë–»ê²Œ ì“°ëŠ”ì§€ ì •ë„ë§Œ ìµíˆê³  SKIP~
 public class Ex8Enum {
 	public static void main(String[] args) {
 		double a = Operation.PLUS.eval(10,5);
@@ -17,12 +17,12 @@ public class Ex8Enum {
 	}
 }
 
-//enum¿¡ Ãß»ó ¸Ş¼­µå¸¦ ¼±¾ğÇÒ ¼ö ÀÖ´Ù.
+//enumì— ì¶”ìƒ ë©”ì„œë“œë¥¼ ì„ ì–¸í•  ìˆ˜ ìˆë‹¤.
 enum Operation{
 	PLUS{double eval(double x, double y){return x+y;}},
 	MINUS{double eval(double x, double y){return x-y;}},
 	TIMES{double eval(double x, double y){return x*y;}},
 	DIVIDE{double eval(double x, double y){return x/y;}};
-	//¡é Ãß»ó¸Ş¼­µå
+	//â†“ ì¶”ìƒë©”ì„œë“œ
 	abstract double eval(double x, double y);
 }

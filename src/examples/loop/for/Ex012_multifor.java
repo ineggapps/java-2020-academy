@@ -1,7 +1,7 @@
-public class Ex012_multifor {
+ï»¿public class Ex012_multifor {
 	public static void main(String[] args) {
 /*
-		´ÙÁß for¹® ¿¹Á¦ ÇÁ·Î±×·¥
+		ë‹¤ì¤‘ forë¬¸ ì˜ˆì œ í”„ë¡œê·¸ëž¨
 */	
 		for(int i=1; i<=3; i++) {
 			System.out.println("i:"+i);

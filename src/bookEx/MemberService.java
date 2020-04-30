@@ -1,4 +1,4 @@
-package bookEx;
+ï»¿package bookEx;
 
 import java.util.Scanner;
 
@@ -16,20 +16,20 @@ public class MemberService {
 	}
 	
 	public void login() {
-		System.out.println("È¸¿ø ·Î±×ÀÎ...\n");
+		System.out.println("íšŒì› ë¡œê·¸ì¸...\n");
 		
 		String id, pwd;
 		
-		System.out.print("¾ÆÀÌµğ ? ");
+		System.out.print("ì•„ì´ë”” ? ");
 		id = sc.next();
 		
-		System.out.print("ÆĞ½º¿öµå ? ");
+		System.out.print("íŒ¨ìŠ¤ì›Œë“œ ? ");
 		pwd = sc.next();
 		
 		if(id.equals("admin") && pwd.equals("1234")) {
 			MemberVO vo = new MemberVO();
 			vo.setId("admin");
-			vo.setName("°ü¸®ÀÚ");
+			vo.setName("ê´€ë¦¬ì");
 			vo.setPwd("1234");
 			loginMember = vo;
 			return;
@@ -41,37 +41,37 @@ public class MemberService {
 			return;
 		}
 		
-		System.out.println("¾ÆÀÌµğ ¶Ç´Â ÆĞ½º¿öµå°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.\n");
+		System.out.println("ì•„ì´ë”” ë˜ëŠ” íŒ¨ìŠ¤ì›Œë“œê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
 	}
 	
 	public void logout() {
 		loginMember = null;
 		
-		System.out.println("·Î±× ¾Æ¿ô µÇ¾ú½À´Ï´Ù.\n");
+		System.out.println("ë¡œê·¸ ì•„ì›ƒ ë˜ì—ˆìŠµë‹ˆë‹¤.\n");
 	}
 	
 	public void join() {
-		System.out.println("\nÈ¸¿ø °¡ÀÔ...");
+		System.out.println("\níšŒì› ê°€ì…...");
 		
 		try {
 			MemberVO vo = new MemberVO();
-			System.out.print("¾ÆÀÌµğ ? ");
+			System.out.print("ì•„ì´ë”” ? ");
 			vo.setId(sc.next());
 			
 			if(memberInfo.readMember(vo.getId())!=null) {
-				System.out.println("µî·ÏµÈ ¾ÆÀÌµğ ÀÔ´Ï´Ù.\n");
+				System.out.println("ë“±ë¡ëœ ì•„ì´ë”” ì…ë‹ˆë‹¤.\n");
 				return;
 			}
 			
-			System.out.print("ÆĞ½º¿öµå ? ");
+			System.out.print("íŒ¨ìŠ¤ì›Œë“œ ? ");
 			vo.setPwd(sc.next());
 			
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.next());
 			
 			memberInfo.insertMember(vo);
 			
-			System.out.println("È¸¿ø °¡ÀÔÀÌ Á¤»óÀûÀ¸·Î Ã³¸® µÇ¾ú½À´Ï´Ù.\n");
+			System.out.println("íšŒì› ê°€ì…ì´ ì •ìƒì ìœ¼ë¡œ ì²˜ë¦¬ ë˜ì—ˆìŠµë‹ˆë‹¤.\n");
 			
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -1,14 +1,14 @@
-package d200207;
+ï»¿package d200207;
 
 public class ArrayEx7 {
 	public static void main(String[] args) {
-		// 1~10±îÁö ³­¼ö¸¦ ÇÑ ÁÙ¿¡ 10°³¾¿ Ãâ·ÂÇÏ°í ¸¶Áö¸·¿¡ °¢ ¼ıÀÚÀÇ ¹ß»ı È½¼ö¸¦ Ãâ·ÂÇÏ±â.
+		// 1~10ê¹Œì§€ ë‚œìˆ˜ë¥¼ í•œ ì¤„ì— 10ê°œì”© ì¶œë ¥í•˜ê³  ë§ˆì§€ë§‰ì— ê° ìˆ«ìì˜ ë°œìƒ íšŸìˆ˜ë¥¼ ì¶œë ¥í•˜ê¸°.
 		// (int)(Math.random()*10)+1;
 
 		int[] count = new int[10];
 		int num;
 
-		System.out.println("¹ß»ıµÈ ³­¼ö...");
+		System.out.println("ë°œìƒëœ ë‚œìˆ˜...");
 		for (int i = 1; i <= 100; i++) {
 			num = (int) (Math.random() * 10) + 1;
 			count[num-1]++;
@@ -17,10 +17,10 @@ public class ArrayEx7 {
 				System.out.println();
 			}
 		}
-		System.out.println("\n¼ıÀÚº° ¹ß»ı È½¼ö");
-		System.out.println("¼ö\t È½¼ö");
+		System.out.println("\nìˆ«ìë³„ ë°œìƒ íšŸìˆ˜");
+		System.out.println("ìˆ˜\t íšŸìˆ˜");
 		for(int i=0;i<count.length;i++) {
-			System.out.printf("%d\t%dÈ¸\n",i+1,count[i]);
+			System.out.printf("%d\t%díšŒ\n",i+1,count[i]);
 		}
 	}
 }

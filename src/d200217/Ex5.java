@@ -1,40 +1,40 @@
-package d200217;
+ï»¿package d200217;
 
 import java.util.Calendar;
 
 public class Ex5 {
 	public static void main(String[] args) {
-		// Calendar: Ãß»óÅ¬·¡½º(¹Ì¿Ï¼º Å¬·¡½º)ÀÓ¿¡ À¯ÀÇÇÏÀÚ!
-		// ±×·¡¼­ °´Ã¼¸¦ »ı¼ºÇÒ ¼ö ¾øÀ¸³ª °´Ã¼¸¦ »ı¼ºÇÏ±â À§ÇØ¼­ Calendar.getInstance()¶ó´Â ÁØºñµÈ ¸Ş¼­µå°¡ ÀÖÀ½.
-//		Calendar c = new Calendar(); ÄÄÆÄÀÏ ¿À·ù
-		// °´Ã¼¸¦ »ı¼ºÇÒ ¼ö ¾øÀ¸¹Ç·Î new Calendar() µûÀ§ÀÇ ¼±¾ğÀº ºÒ°¡´ÉÇÏ´Ù
+		// Calendar: ì¶”ìƒí´ë˜ìŠ¤(ë¯¸ì™„ì„± í´ë˜ìŠ¤)ì„ì— ìœ ì˜í•˜ì!
+		// ê·¸ë˜ì„œ ê°ì²´ë¥¼ ìƒì„±í•  ìˆ˜ ì—†ìœ¼ë‚˜ ê°ì²´ë¥¼ ìƒì„±í•˜ê¸° ìœ„í•´ì„œ Calendar.getInstance()ë¼ëŠ” ì¤€ë¹„ëœ ë©”ì„œë“œê°€ ìˆìŒ.
+//		Calendar c = new Calendar(); ì»´íŒŒì¼ ì˜¤ë¥˜
+		// ê°ì²´ë¥¼ ìƒì„±í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ new Calendar() ë”°ìœ„ì˜ ì„ ì–¸ì€ ë¶ˆê°€ëŠ¥í•˜ë‹¤
 
-		// °´Ã¼ »ı¼º ¹æ¹ı
-		// ÇöÀç ÄÄÇ»ÅÍ ½Ã½ºÅÛ ±âÁØÀ¸·Î ³¯Â¥, ½Ã°£À» »ı¼ºÇÑ´Ù.
+		// ê°ì²´ ìƒì„± ë°©ë²•
+		// í˜„ì¬ ì»´í“¨í„° ì‹œìŠ¤í…œ ê¸°ì¤€ìœ¼ë¡œ ë‚ ì§œ, ì‹œê°„ì„ ìƒì„±í•œë‹¤.
 		// 1) Calendar cal = Calendar.getInstance();
 		// 2) Calendar cal = new GregorianCalendar();
 		// 3) GregorianCalendar cal = new GregorianCalendar();
-		// GregorianCalendar : Calendar Å¬·¡½ºÀÇ ÇÏÀ§ Å¬·¡½º
+		// GregorianCalendar : Calendar í´ë˜ìŠ¤ì˜ í•˜ìœ„ í´ë˜ìŠ¤
 
 		Calendar cal = Calendar.getInstance();
-		// Ãß»óÅ¬·¡½º´Â ¾÷Ä³½ºÆÃÇÏ¿© »ç¿ëÇÒ ¼ö ÀÖ´Ù. (!!)
+		// ì¶”ìƒí´ë˜ìŠ¤ëŠ” ì—…ìºìŠ¤íŒ…í•˜ì—¬ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤. (!!)
 		Father f = new Son();
-		f.greet(); // ¾÷Ä³½ºÆÃ ¿¹Á¦
+		f.greet(); // ì—…ìºìŠ¤íŒ… ì˜ˆì œ
 
 //		String s = String.format("%tF %tA %tT", cal, cal, cal);
 		String s = String.format("%1$tF %1$tA %1$tT", cal);
-		// $¼ıÀÚ´Â %¹Ù·Î µÚ¿¡ ¿Â´Ù´Â °Íµµ ±â¾ï.
+		// $ìˆ«ìëŠ” %ë°”ë¡œ ë’¤ì— ì˜¨ë‹¤ëŠ” ê²ƒë„ ê¸°ì–µ.
 		System.out.println(s);
 
 		int y = cal.get(Calendar.YEAR);
-		int m = cal.get(Calendar.MONTH) + 1;// ¿ùÀº ÀÎµ¦½º °³³äÀ¸·Î 0~11±îÁö·Î ¹İÈ¯ÇØ ÁØ´Ù.
+		int m = cal.get(Calendar.MONTH) + 1;// ì›”ì€ ì¸ë±ìŠ¤ ê°œë…ìœ¼ë¡œ 0~11ê¹Œì§€ë¡œ ë°˜í™˜í•´ ì¤€ë‹¤.
 		int d = cal.get(Calendar.DATE);
-		int w = cal.get(Calendar.DAY_OF_WEEK);// ÀÏ¿äÀÏÀº 1, Åä¿äÀÏÀº 7·Î ¹İÈ¯ÇÑ´Ù.
-		String[] ww = { "ÀÏ", "¿ù", "È­", "¼ö", "¸ñ", "±İ", "Åä" };
-		System.out.printf("%d³â %d¿ù %dÀÏ %s¿äÀÏ", y, m, d, ww[w - 1]);// ÀÏ¿äÀÏ °ªÀÌ 1ÀÎµ¥ ¹è¿­ÀÇ ÀÎµ¦½º´Â 0ÀÌ´Ï±î w-1 ¼ö½ÄÀ¸·Î °è»êÇÑ´Ù.
+		int w = cal.get(Calendar.DAY_OF_WEEK);// ì¼ìš”ì¼ì€ 1, í† ìš”ì¼ì€ 7ë¡œ ë°˜í™˜í•œë‹¤.
+		String[] ww = { "ì¼", "ì›”", "í™”", "ìˆ˜", "ëª©", "ê¸ˆ", "í† " };
+		System.out.printf("%dë…„ %dì›” %dì¼ %sìš”ì¼", y, m, d, ww[w - 1]);// ì¼ìš”ì¼ ê°’ì´ 1ì¸ë° ë°°ì—´ì˜ ì¸ë±ìŠ¤ëŠ” 0ì´ë‹ˆê¹Œ w-1 ìˆ˜ì‹ìœ¼ë¡œ ê³„ì‚°í•œë‹¤.
 
 		int days = cal.getActualMaximum(Calendar.DATE);
-		System.out.println("ÀÌ¹ø ´ŞÀº " + days + "ÀÏ±îÁö ÀÖ½À´Ï´Ù.");
+		System.out.println("ì´ë²ˆ ë‹¬ì€ " + days + "ì¼ê¹Œì§€ ìˆìŠµë‹ˆë‹¤.");
 	}
 }
 

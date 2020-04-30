@@ -1,28 +1,28 @@
-package d200129;
+ï»¿package d200129;
 
 import java.util.Scanner;
-/* ±İ¾×À» ÀÔ·Â ¹Ş¾Æ, ÀÔ·Â ¹ŞÀº ±İ¾×À» 50000¿ø ±Ç¿¡¼­ 1¿ø±Ç ±îÁöÀÇ È­Æó¸Å¼ö·Î °è»êÇÏ´Â ÇÁ·Î±×·¥À» ¿¬»êÀÚ¸¦ ÀÌ¿ëÇÏ¿© ÀÛ¼ºÇÏ½Ã¿À.
- * [Ã³¸®Á¶°Ç]
- * ±İ¾×ÀÇ ÀÔ·ÂÀº Scanner Å¬·¡½ºÀÇ nextInt() ¸Ş¼­µå¸¦ ÀÌ¿ëÇÑ´Ù.
- * ±İ¾×ÀÌ 70000¿øÀÎ °æ¿ì È­ÆóÀÇ ¸Å¼ö´Â 50000¿ø ±Ç 1¸Å, 10000¿ø ±Ç 2¸ÅÃ³·³ Å« ´ÜÀ§ ±İ¾×ºÎÅÍ °è»êÇÏ°í ³ª¸ÓÁö¸¦ ´ÙÀ½ ´ÜÀ§ È­Æó¿¡¼­ °è»êÇÑ´Ù.
+/* ê¸ˆì•¡ì„ ì…ë ¥ ë°›ì•„, ì…ë ¥ ë°›ì€ ê¸ˆì•¡ì„ 50000ì› ê¶Œì—ì„œ 1ì›ê¶Œ ê¹Œì§€ì˜ í™”íë§¤ìˆ˜ë¡œ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì—°ì‚°ìë¥¼ ì´ìš©í•˜ì—¬ ì‘ì„±í•˜ì‹œì˜¤.
+ * [ì²˜ë¦¬ì¡°ê±´]
+ * ê¸ˆì•¡ì˜ ì…ë ¥ì€ Scanner í´ë˜ìŠ¤ì˜ nextInt() ë©”ì„œë“œë¥¼ ì´ìš©í•œë‹¤.
+ * ê¸ˆì•¡ì´ 70000ì›ì¸ ê²½ìš° í™”íì˜ ë§¤ìˆ˜ëŠ” 50000ì› ê¶Œ 1ë§¤, 10000ì› ê¶Œ 2ë§¤ì²˜ëŸ¼ í° ë‹¨ìœ„ ê¸ˆì•¡ë¶€í„° ê³„ì‚°í•˜ê³  ë‚˜ë¨¸ì§€ë¥¼ ë‹¤ìŒ ë‹¨ìœ„ í™”íì—ì„œ ê³„ì‚°í•œë‹¤.
  * */
 public class OperQuiz3WithoutVariables {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int money;
-		System.out.print("±İ¾× ? ");
+		System.out.print("ê¸ˆì•¡ ? ");
 		money = sc.nextInt();
 
-		System.out.printf("¿À¸¸¿ø±Ç: %d\n", (money/50000));
-		System.out.printf("¸¸¿ø±Ç: %d\n",  (money%50000)/10000);
-		System.out.printf("¿ÀÃµ¿ø±Ç: %d\n", (money%10000)/5000 );
-		System.out.printf("Ãµ¿ø±Ç: %d\n", (money%5000)/1000);
-		System.out.printf("¿À¹é¿ø±Ç: %d\n", (money%1000)/500);
-		System.out.printf("¹é¿ø±Ç: %d\n", (money%500)/100);
-		System.out.printf("¿À½Ê¿ø±Ç: %d\n", (money%100)/50);
-		System.out.printf("½Ê¿ø±Ç: %d\n", (money%50)/10);
-		System.out.printf("¿À¿ø±Ç: %d\n", (money%10)/5);
-		System.out.printf("ÀÏ¿ø±Ç: %d\n", money%5);
+		System.out.printf("ì˜¤ë§Œì›ê¶Œ: %d\n", (money/50000));
+		System.out.printf("ë§Œì›ê¶Œ: %d\n",  (money%50000)/10000);
+		System.out.printf("ì˜¤ì²œì›ê¶Œ: %d\n", (money%10000)/5000 );
+		System.out.printf("ì²œì›ê¶Œ: %d\n", (money%5000)/1000);
+		System.out.printf("ì˜¤ë°±ì›ê¶Œ: %d\n", (money%1000)/500);
+		System.out.printf("ë°±ì›ê¶Œ: %d\n", (money%500)/100);
+		System.out.printf("ì˜¤ì‹­ì›ê¶Œ: %d\n", (money%100)/50);
+		System.out.printf("ì‹­ì›ê¶Œ: %d\n", (money%50)/10);
+		System.out.printf("ì˜¤ì›ê¶Œ: %d\n", (money%10)/5);
+		System.out.printf("ì¼ì›ê¶Œ: %d\n", money%5);
 		
 		sc.close();
 	}

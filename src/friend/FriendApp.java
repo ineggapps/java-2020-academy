@@ -1,4 +1,4 @@
-package friend;
+ï»¿package friend;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class FriendApp {
 		try {
 			while (true) {
 				do {
-					System.out.print("1.µî·Ï 2.Ãâ·Â 3.ÀÌ¸§°Ë»ö 4.¼öÁ¤ 5.»èÁ¦ 6.Á¾·á > ");
+					System.out.print("1.ë“±ë¡ 2.ì¶œë ¥ 3.ì´ë¦„ê²€ìƒ‰ 4.ìˆ˜ì • 5.ì‚­ì œ 6.ì¢…ë£Œ > ");
 					ch = sc.nextInt();
 				} while (ch < 1 || ch > 6);
 
@@ -20,26 +20,26 @@ public class FriendApp {
 				}
 
 				switch (ch) {
-				case 1:// µî·Ï
+				case 1:// ë“±ë¡
 					fr.input();
 					break;
-				case 2:// Ãâ·Â
+				case 2:// ì¶œë ¥
 					fr.print();
 					break;
-				case 3:// ÀÌ¸§°Ë»ö
+				case 3:// ì´ë¦„ê²€ìƒ‰
 					fr.findByName();
 					break;
-				case 4:// ¼öÁ¤
+				case 4:// ìˆ˜ì •
 					fr.update();
 					break;
-				case 5:// »èÁ¦
+				case 5:// ì‚­ì œ
 					fr.delete();
 					break;
 
 				}
 			}
 		} finally {
-			System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			sc.close();
 		}
 	}

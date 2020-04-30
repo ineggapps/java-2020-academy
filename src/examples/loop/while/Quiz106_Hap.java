@@ -1,16 +1,16 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz106_Hap {
 	public static void main(String[] args) {
 /*		
-		µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼öÁß ÀûÀº ¼ö¿¡¼­ Å« ¼ö±îÁöÀÇ ÇÕ
+		ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ì¤‘ ì ì€ ìˆ˜ì—ì„œ í° ìˆ˜ê¹Œì§€ì˜ í•©
 */
 		Scanner sc = new Scanner(System.in);
 
 		int num1, num2, temp;
 		int n, s;
 		
-		System.out.print("µÎ¼ö ? ");
+		System.out.print("ë‘ìˆ˜ ? ");
 		num1 = sc.nextInt();
 		num2 = sc.nextInt();
 
@@ -26,7 +26,7 @@ public class Quiz106_Hap {
 			s+=n;
 			n++;
 		}
-		System.out.printf("%d ~ %d ±îÁöÀÇ ÇÕ = %d\n" , num1, num2, s);
+		System.out.printf("%d ~ %d ê¹Œì§€ì˜ í•© = %d\n" , num1, num2, s);
 		
 		sc.close();
 	}

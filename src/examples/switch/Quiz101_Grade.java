@@ -1,26 +1,26 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz101_Grade {
 	public static void main(String[] args) {
 /*
-		Á¡¼ö¸¦ ÀÔ·Â¹Ş¾Æ ¼ö,¿ì,¹Ì,¾ç,°¡¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		ì ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ ìˆ˜,ìš°,ë¯¸,ì–‘,ê°€ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
         Scanner sc=new Scanner(System.in);
         int s;
         char grade;
 
-		System.out.print("Á¡¼ö ? ");
+		System.out.print("ì ìˆ˜ ? ");
 		s = sc.nextInt();
 
 		switch (s/10) {
-		case 10:case 9: grade='¼ö';break;
-		case 8: grade='¿ì';break;
-		case 7: grade='¹Ì';break;
-		case 6: grade='¾ç';break;
-		default: grade='°¡';break;
+		case 10:case 9: grade='ìˆ˜';break;
+		case 8: grade='ìš°';break;
+		case 7: grade='ë¯¸';break;
+		case 6: grade='ì–‘';break;
+		default: grade='ê°€';break;
 		}
 		
-		System.out.println("Á¡¼ö:"+s+", ÆÇÁ¤:"+grade);
+		System.out.println("ì ìˆ˜:"+s+", íŒì •:"+grade);
 		
 		sc.close();
 	}

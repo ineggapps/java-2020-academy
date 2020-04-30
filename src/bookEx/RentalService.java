@@ -1,4 +1,4 @@
-package bookEx;
+ï»¿package bookEx;
 
 import java.util.Calendar;
 import java.util.Scanner;
@@ -13,27 +13,27 @@ public class RentalService {
 	}
 	
 	public void bookRental(MemberVO loginMember) {
-		System.out.println("µµ¼­ ´ë¿©...\n");
+		System.out.println("ë„ì„œ ëŒ€ì—¬...\n");
 		
 		String code, rentalDate;
 		char ch;
 		
 		try {
-			System.out.print("´ë¿©ÇÒ µµ¼­ ÄÚµå ? ");
+			System.out.print("ëŒ€ì—¬í•  ë„ì„œ ì½”ë“œ ? ");
 			code = sc.next();
 			RentalVO rvo = rental.readRental(code);
 			if(rvo!=null) {
-				System.out.println("µµ¼­°¡ ´ë¿© ÁßÀÔ´Ï´Ù.\n");
+				System.out.println("ë„ì„œê°€ ëŒ€ì—¬ ì¤‘ì…ë‹ˆë‹¤.\n");
 				return;
 			}
 			
 			BookVO bvo = book.readBook(code);
 			if(bvo == null) {
-				System.out.println("µî·ÏµÈ µµ¼­°¡ ¾Æ´Õ´Ï´Ù.\n");
+				System.out.println("ë“±ë¡ëœ ë„ì„œê°€ ì•„ë‹™ë‹ˆë‹¤.\n");
 				return;
 			}
 			
-			System.out.print(bvo.getSubject()+" µµ¼­¸¦ ´ë¿© ÇÏ½Ã°Ú½À´Ï±î[Y/N] ? ");
+			System.out.print(bvo.getSubject()+" ë„ì„œë¥¼ ëŒ€ì—¬ í•˜ì‹œê² ìŠµë‹ˆê¹Œ[Y/N] ? ");
 			ch = sc.next().charAt(0);
 			
 			if(ch != 'Y' && ch != 'y') {
@@ -49,31 +49,31 @@ public class RentalService {
 			
 			rental.insertRental(vo);
 			
-			System.out.println("´ë¿©°¡ ¿Ï·á µÇ¾ú½À´Ï´Ù.\n");
+			System.out.println("ëŒ€ì—¬ê°€ ì™„ë£Œ ë˜ì—ˆìŠµë‹ˆë‹¤.\n");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public void bookReturn(MemberVO loginMember) {
-		System.out.println("µµ¼­ ¹İ³³...\n");
+		System.out.println("ë„ì„œ ë°˜ë‚©...\n");
 		
 		String code, returnDate;
 		
 		try {
-			System.out.print("¹İ³³ÇÒ µµ¼­ ÄÚµå ? ");
+			System.out.print("ë°˜ë‚©í•  ë„ì„œ ì½”ë“œ ? ");
 			code = sc.next();
 			
 			RentalVO vo = rental.readRental(code);
 			if(vo == null || ! vo.getId().equals(loginMember.getId()) || vo.getReturnDate() != null) {
-				System.out.println("´ë¿© ÄÚµå°¡ ¾Æ´Õ´Ï´Ù.\n");
+				System.out.println("ëŒ€ì—¬ ì½”ë“œê°€ ì•„ë‹™ë‹ˆë‹¤.\n");
 				return;
 			}
 			
 			returnDate = String.format("%tF", Calendar.getInstance());
 			vo.setReturnDate(returnDate);
 			
-			System.out.println("¹İ³³ÀÌ ¿Ï·á µÇ¾ú½À´Ï´Ù.\n");
+			System.out.println("ë°˜ë‚©ì´ ì™„ë£Œ ë˜ì—ˆìŠµë‹ˆë‹¤.\n");
 			
 		} catch (Exception e) {
 			e.printStackTrace();

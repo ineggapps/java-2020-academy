@@ -1,28 +1,28 @@
-package d200225;
+ï»¿package d200225;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Ex9 {
 	public static void main(String[] args) {
-		//Set: Áßº¹ Çã¿ëÇÏÁö ¾ÊÀ½. ¼ø¼­ ¾øÀ½
-		//LinkedHashSet: ¼ø¼­¸¦ À¯ÁöÇÑ´Ù.
+		//Set: ì¤‘ë³µ í—ˆìš©í•˜ì§€ ì•ŠìŒ. ìˆœì„œ ì—†ìŒ
+		//LinkedHashSet: ìˆœì„œë¥¼ ìœ ì§€í•œë‹¤.
 		
 		Set<String> set =new LinkedHashSet<String>();
 		
-		set.add("¼­¿ï");
-		set.add("ºÎ»ê");
-		set.add("´ë±¸");
-		set.add("ÀÎÃµ");
-		set.add("±¤ÁÖ");
-		set.add("´ëÀü");
-		set.add("¿ï»ê");
-		set.add("¼¼Á¾");
-		set.add("¼­¿ï");//¹«½ÃµÈ´Ù
+		set.add("ì„œìš¸");
+		set.add("ë¶€ì‚°");
+		set.add("ëŒ€êµ¬");
+		set.add("ì¸ì²œ");
+		set.add("ê´‘ì£¼");
+		set.add("ëŒ€ì „");
+		set.add("ìš¸ì‚°");
+		set.add("ì„¸ì¢…");
+		set.add("ì„œìš¸");//ë¬´ì‹œëœë‹¤
 		
-		//ÀÔ·ÂÇÑ ¼ø¼­ ±×´ë·Î À¯ÁöÇÑ´Ù.
+		//ì…ë ¥í•œ ìˆœì„œ ê·¸ëŒ€ë¡œ ìœ ì§€í•œë‹¤.
 		System.out.println(set);
 		
-		//ÀüÃ¼ Ãâ·Â. Çâ»óµÈ for¹®
+		//ì „ì²´ ì¶œë ¥. í–¥ìƒëœ forë¬¸
 		for(String s: set) {
 			System.out.print(s + " ");
 		}

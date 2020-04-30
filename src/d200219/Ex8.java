@@ -1,22 +1,22 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex8 {
 	public static void main(String[] args) {
 		Test8 tt = new Test8();
 		Demo8 dd = tt;
-		//»óÀ§ Å¬·¡½º °´Ã¼°¡ ÇÏÀ§ Å¬·¡½º °´Ã¼¸¦ °¡¸®Å´
-		//¾÷ Ä³½ºÆÃ(up casting). ¾ðÁ¦³ª °¡´ÉÇÏ´Ù.
+		//ìƒìœ„ í´ëž˜ìŠ¤ ê°ì²´ê°€ í•˜ìœ„ í´ëž˜ìŠ¤ ê°ì²´ë¥¼ ê°€ë¦¬í‚´
+		//ì—… ìºìŠ¤íŒ…(up casting). ì–¸ì œë‚˜ ê°€ëŠ¥í•˜ë‹¤.
 		System.out.println(tt.b + ":" + tt.c);//200:300
 		System.out.println(dd.b);//20
 		System.out.println(((Test8)dd).b);//200
-		dd.print();//¡Ú°á±£°ªÀÌ ÀÇ¿Ü³×  //10:200:300
-		//¾î¶² ¸Þ¼­µå¸¦ ½ÇÇàÇÒÁö´Â ½ÇÇà ½ÃÁ¡¿¡ °áÁ¤ÇÑ´Ù (µ¿Àû ¹ÙÀÎµù)
-		//»óÀ§ Å¬·¡½ºÀÇ ¸Þ¼­µå¸¦ ÇÏÀ§ Å¬·¡½º¿¡¼­ ÀçÁ¤ÀÇÇÏ¸é »óÀ§ Å¬·¡½ºÀÇ ¸Þ¼­µå´Â ¼û´Â´Ù.
-		//¿ÜºÎ¿¡¼­´Â ÀÌ¹Ì ¿À¹ö¶óÀÌµùµÈ Demo8ÀÇ print()¸Þ¼­µå¸¦ ºÒ·¯¿Ã ¼ö ¾ø´Ù. (¾÷ Ä³½ºÆÃÀ» ÇÏ¿©µµ °á°ú´Â ¶È°°´Ù)
-		//»óÀ§ Å¬·¡½ºÀÇ °´Ã¼°¡ ÇÏÀ§ Å¬·¡½ºÀÇ °´Ã¼¸¦ °¡¸®Å°°í ÀÖÀ¸¹Ç·Î
-		//¸Þ¼­µå¿¡¼­´Â ¿À¹ö¶óÀÌµùµÈ ÇÏÀ§ Å¬·¡½ºÀÇ ¸Þ¼­µå°¡ È£ÃâµÈ´Ù.
-		//Áï, ¸Þ¼­µå°¡ ¿À¹ö¶óÀÌµùµÈ °æ¿ì ¿ÜºÎ¿¡¼­´Â »óÀ§ Å¬·¡½ºÀÇ ¸Þ¼­µå¸¦ Àý´ë·Î ºÎ¸¦ ¼ö ¾øÀ½.
-		//³»ºÎ¿¡¼­¸¸ super.¸Þ¼­µå¸í()À¸·Î È£ÃâÀÌ °¡´ÉÇÏ´Ù.
+		dd.print();//â˜…ê²°ê´ê°’ì´ ì˜ì™¸ë„¤  //10:200:300
+		//ì–´ë–¤ ë©”ì„œë“œë¥¼ ì‹¤í–‰í• ì§€ëŠ” ì‹¤í–‰ ì‹œì ì— ê²°ì •í•œë‹¤ (ë™ì  ë°”ì¸ë”©)
+		//ìƒìœ„ í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œë¥¼ í•˜ìœ„ í´ëž˜ìŠ¤ì—ì„œ ìž¬ì •ì˜í•˜ë©´ ìƒìœ„ í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œëŠ” ìˆ¨ëŠ”ë‹¤.
+		//ì™¸ë¶€ì—ì„œëŠ” ì´ë¯¸ ì˜¤ë²„ë¼ì´ë”©ëœ Demo8ì˜ print()ë©”ì„œë“œë¥¼ ë¶ˆëŸ¬ì˜¬ ìˆ˜ ì—†ë‹¤. (ì—… ìºìŠ¤íŒ…ì„ í•˜ì—¬ë„ ê²°ê³¼ëŠ” ë˜‘ê°™ë‹¤)
+		//ìƒìœ„ í´ëž˜ìŠ¤ì˜ ê°ì²´ê°€ í•˜ìœ„ í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼ ê°€ë¦¬í‚¤ê³  ìžˆìœ¼ë¯€ë¡œ
+		//ë©”ì„œë“œì—ì„œëŠ” ì˜¤ë²„ë¼ì´ë”©ëœ í•˜ìœ„ í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œê°€ í˜¸ì¶œëœë‹¤.
+		//ì¦‰, ë©”ì„œë“œê°€ ì˜¤ë²„ë¼ì´ë”©ëœ ê²½ìš° ì™¸ë¶€ì—ì„œëŠ” ìƒìœ„ í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œë¥¼ ì ˆëŒ€ë¡œ ë¶€ë¥¼ ìˆ˜ ì—†ìŒ.
+		//ë‚´ë¶€ì—ì„œë§Œ super.ë©”ì„œë“œëª…()ìœ¼ë¡œ í˜¸ì¶œì´ ê°€ëŠ¥í•˜ë‹¤.
 		System.out.println();
 //		System.out.println(dd.c);
 //		tt.sub();

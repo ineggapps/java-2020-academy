@@ -1,4 +1,4 @@
-package d200224;
+ï»¿package d200224;
 
 public class Ex6 {
 	public static void main(String[] args) {
@@ -8,8 +8,8 @@ public class Ex6 {
 	}
 }
 
-class User6 { // Á¦³×¸¯ Å¬·¡½º°¡ ¾Æ´Ï¹Ç·Î Å¬·¡½º µÚ¿¡ <T> µîÀ» ¸í½ÃÇÏÁö ¾ÊÀ½.
-	// Á¦³×¸¯ ¸Ş¼­µå
+class User6 { // ì œë„¤ë¦­ í´ë˜ìŠ¤ê°€ ì•„ë‹ˆë¯€ë¡œ í´ë˜ìŠ¤ ë’¤ì— <T> ë“±ì„ ëª…ì‹œí•˜ì§€ ì•ŠìŒ.
+	// ì œë„¤ë¦­ ë©”ì„œë“œ
 	public <U> void print(U u) {
 		System.out.println(u.getClass().getName());
 		System.out.println(u);

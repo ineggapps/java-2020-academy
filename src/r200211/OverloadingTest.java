@@ -1,23 +1,23 @@
-package r200211;
+ï»¿package r200211;
 
 public class OverloadingTest {
 	public static void main(String[] args) {
 		MyMath3 mm = new MyMath3();
-		System.out.println("mm.add(3, 3) °á°ú:  "+ mm.add(3,3));
-		System.out.println("mm.add(3, 3) °á°ú:  "+ mm.add(3L,3));
-		System.out.println("mm.add(3, 3) °á°ú:  "+ mm.add(3,3L));
-		System.out.println("mm.add(3, 3) °á°ú:  "+ mm.add(3L,3L));
+		System.out.println("mm.add(3, 3) ê²°ê³¼:  "+ mm.add(3,3));
+		System.out.println("mm.add(3, 3) ê²°ê³¼:  "+ mm.add(3L,3));
+		System.out.println("mm.add(3, 3) ê²°ê³¼:  "+ mm.add(3,3L));
+		System.out.println("mm.add(3, 3) ê²°ê³¼:  "+ mm.add(3L,3L));
 		int[] a = {100, 200, 300};
-		System.out.println("mm.add(3, 3) °á°ú:  "+ mm.add(a));
+		System.out.println("mm.add(3, 3) ê²°ê³¼:  "+ mm.add(a));
 	}
 }
 
 /*
- 	¿À¹ö·ÎµùÀÇ Á¶°Ç
- 	1. ¸Ş¼­µåÀÇ ÀÌ¸§ÀÌ °°¾Æ¾ß ÇÑ´Ù.
- 	2. ¸Å°³º¯¼öÀÇ °³¼ö ¶Ç´Â Å¸ÀÔÀÌ ´Ş¶ó¾ß ÇÑ´Ù.
+ 	ì˜¤ë²„ë¡œë”©ì˜ ì¡°ê±´
+ 	1. ë©”ì„œë“œì˜ ì´ë¦„ì´ ê°™ì•„ì•¼ í•œë‹¤.
+ 	2. ë§¤ê°œë³€ìˆ˜ì˜ ê°œìˆ˜ ë˜ëŠ” íƒ€ì…ì´ ë‹¬ë¼ì•¼ í•œë‹¤.
  	
- 	¡Ú´Ü, ¹İÈ¯ Å¸ÀÔÀº ¿À¹ö·ÎµùÀ» ±¸ÇöÇÏ´Â µ¥ ¾Æ¹«·± ¿µÇâÀ» ÁÖÁö ¸øÇÑ´Ù´Â °Í¿¡ ÁÖÀÇÇÒ °Í!
+ 	â˜…ë‹¨, ë°˜í™˜ íƒ€ì…ì€ ì˜¤ë²„ë¡œë”©ì„ êµ¬í˜„í•˜ëŠ” ë° ì•„ë¬´ëŸ° ì˜í–¥ì„ ì£¼ì§€ ëª»í•œë‹¤ëŠ” ê²ƒì— ì£¼ì˜í•  ê²ƒ!
  */
 
 class MyMath3 {

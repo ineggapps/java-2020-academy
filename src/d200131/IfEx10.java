@@ -1,4 +1,4 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
@@ -7,17 +7,17 @@ public class IfEx10 {
 		Scanner sc = new Scanner(System.in);
 		char ch;
 		
-		System.out.print("¹®ÀÚ ÀÔ·Â: ");
+		System.out.print("ë¬¸ìž ìž…ë ¥: ");
 		ch=sc.next().charAt(0);
 		
 		if(ch>='A'&&ch<='Z') {
-			System.out.println(ch+": ´ë¹®ÀÚ");
+			System.out.println(ch+": ëŒ€ë¬¸ìž");
 		}
 		else if(ch>='a'&&ch<='z') {
-			System.out.println(ch+": ¼Ò¹®ÀÚ");
+			System.out.println(ch+": ì†Œë¬¸ìž");
 		}
 		else {
-			System.out.println(ch+": ±âÅ¸ ¹®ÀÚ");
+			System.out.println(ch+": ê¸°íƒ€ ë¬¸ìž");
 		}
 		
 		sc.close();

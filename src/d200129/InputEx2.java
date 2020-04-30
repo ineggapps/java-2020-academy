@@ -1,4 +1,4 @@
-package d200129;
+ï»¿package d200129;
 
 //Ctrl+Shift+o: auto import
 import java.util.Scanner;
@@ -10,12 +10,12 @@ public class InputEx2 {
 		String name, tel;
 		int age;
 
-		System.out.print("ÀÌ¸§? ");
-		name = sc.nextLine(); // Áß°£¿¡¿¡ °ø¹éÀ» Çã¿ëÇÑ´Ù
-		System.out.print("³ªÀÌ? ");
+		System.out.print("ì´ë¦„? ");
+		name = sc.nextLine(); // ì¤‘ê°„ì—ì— ê³µë°±ì„ í—ˆìš©í•œë‹¤
+		System.out.print("ë‚˜ì´? ");
 		age = sc.nextInt();
-		sc.nextLine();// ÀÌ¹Ì À­ÁÙ¿¡¼­ nextInt()¿¡¼­ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¸é¼­ ¿£ÅÍ°ª±îÁö ÀÔ·Â¹Ş¾ÒÀ¸¹Ç·Î ÀÌ¸¦ ÀÎ½ÄÇÏ¿© ÀÔ·ÂÀ» Á¾·áÇÑ´Ù.
-		System.out.print("ÀüÈ­¹øÈ£? ");
+		sc.nextLine();// ì´ë¯¸ ìœ—ì¤„ì—ì„œ nextInt()ì—ì„œ ìˆ«ìë¥¼ ì…ë ¥í•˜ë©´ì„œ ì—”í„°ê°’ê¹Œì§€ ì…ë ¥ë°›ì•˜ìœ¼ë¯€ë¡œ ì´ë¥¼ ì¸ì‹í•˜ì—¬ ì…ë ¥ì„ ì¢…ë£Œí•œë‹¤.
+		System.out.print("ì „í™”ë²ˆí˜¸? ");
 		tel = sc.nextLine();
 
 		System.out.format("\nname:%s, age:%d, tel:%s", name, age, tel);

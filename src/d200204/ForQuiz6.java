@@ -1,20 +1,20 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class ForQuiz6 {
 	public static void main(String[] args) {
-		// 10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹ŞÀº Á¤¼ö Áß °¡Àå ÀÛÀº °ªÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+		// 10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì€ ì •ìˆ˜ ì¤‘ ê°€ì¥ ì‘ì€ ê°’ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 		int min =Integer.MAX_VALUE, n;
-		System.out.println("(ÃÖ¼Ú°ª ±¸ÇÏ±â) 10°³ÀÇ Á¤¼ö ÀÔ·Â");
+		System.out.println("(ìµœì†Ÿê°’ êµ¬í•˜ê¸°) 10ê°œì˜ ì •ìˆ˜ ì…ë ¥");
 		for (int i = 1; i <= 10; i++) {
 			n = sc.nextInt();
 			if (min> n) {
 				min= n;
 			}
 		}
-		System.out.println("ÃÖ¼Ú°ª: "+ min);
+		System.out.println("ìµœì†Ÿê°’: "+ min);
 		sc.close();
 	}
 }

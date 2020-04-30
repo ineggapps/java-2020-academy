@@ -1,7 +1,7 @@
-package d200221;
+ï»¿package d200221;
 
 public class Ex11 {
-	public static void main(String[] args) throws Exception{//main¿¡ throws¸¦ ÇÒ °æ¿ì JVM¿¡°Ô ¿À·ù°¡ ¹ß»ıÇÒ ¼ö ÀÖ´Ù°í ¶°³Ñ±ä´Ù. (ºñ±ÇÀå)
+	public static void main(String[] args) throws Exception{//mainì— throwsë¥¼ í•  ê²½ìš° JVMì—ê²Œ ì˜¤ë¥˜ê°€ ë°œìƒí•  ìˆ˜ ìˆë‹¤ê³  ë– ë„˜ê¸´ë‹¤. (ë¹„ê¶Œì¥)
 		User11 ob = new User11();
 		ob.setValue(-3);
 		int n = ob.getValue();
@@ -10,13 +10,13 @@ public class Ex11 {
 	}
 }
 
-//Àß¸ø ÀÛ¼ºµÈ °æ¿ì
+//ì˜ëª» ì‘ì„±ëœ ê²½ìš°
 class User11 {
 	private int value;
 
-	public void setValue(int value) throws Exception {// ¸Ş¼­µå¸¦ È£ÃâÇÏ´Â °÷¿¡¼­ ¿¹¿Ü¸¦ catchÇÏµµ·Ï ¼³Á¤
+	public void setValue(int value) throws Exception {// ë©”ì„œë“œë¥¼ í˜¸ì¶œí•˜ëŠ” ê³³ì—ì„œ ì˜ˆì™¸ë¥¼ catchí•˜ë„ë¡ ì„¤ì •
 		if (value < 0) {
-			throw new Exception("0º¸´Ù ÀÛÀİ¾Æ!");// °­Á¦·Î checked ¿¹¿Ü¸¦ ¹ß»ı(Exception ¿¹¿Ü ¹ß»ı)
+			throw new Exception("0ë³´ë‹¤ ì‘ì–ì•„!");// ê°•ì œë¡œ checked ì˜ˆì™¸ë¥¼ ë°œìƒ(Exception ì˜ˆì™¸ ë°œìƒ)
 		}
 		this.value = value;
 	}

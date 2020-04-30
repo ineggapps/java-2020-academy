@@ -1,33 +1,33 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class WhileQuizBasic1 {
 	/*
-	 * Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 1ºÎÅÍ ÀÔ·Â ¹ŞÀº ¼ö±îÁöÀÇ ÇÕ, Â¦¼öÀÇ ÇÕ, È¦¼öÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
-	 * While¹®À» ÀÌ¿ëÇÏ¿© ÀÛ¼º.
+	 * ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 1ë¶€í„° ì…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ì˜ í•©, ì§ìˆ˜ì˜ í•©, í™€ìˆ˜ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
+	 * Whileë¬¸ì„ ì´ìš©í•˜ì—¬ ì‘ì„±.
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num;
 		int n = 0, odd = 0, even = 0, sum = 0;
-		System.out.print("¼ö ? ");
+		System.out.print("ìˆ˜ ? ");
 		num = sc.nextInt();
 		while (n < num) {
 			n++;
 			sum += n;
 //			if (n % 2 == 0) {
 			if ((n & 1) == 0) {
-				//Â¦¼ö µ¡¼À
+				//ì§ìˆ˜ ë§ì…ˆ
 				even += n;
 			} else {
-				// È¦¼ö µ¡¼À
+				// í™€ìˆ˜ ë§ì…ˆ
 				odd += n;
 			}
 		}
-		System.out.printf("1~%d±îÁöÀÇ ÇÕ = %d\n", num, sum);
-		System.out.printf("1~%d±îÁö Â¦¼öÀÇ ÇÕ = %d\n", num, even);
-		System.out.printf("1~%d±îÁö È¦¼öÀÇ ÇÕ = %d\n", num, odd);
+		System.out.printf("1~%dê¹Œì§€ì˜ í•© = %d\n", num, sum);
+		System.out.printf("1~%dê¹Œì§€ ì§ìˆ˜ì˜ í•© = %d\n", num, even);
+		System.out.printf("1~%dê¹Œì§€ í™€ìˆ˜ì˜ í•© = %d\n", num, odd);
 		sc.close();
 	}
 }

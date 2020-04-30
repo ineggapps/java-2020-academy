@@ -1,13 +1,13 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex1 {
 	public static void main(String[] args) { 
 		Demo1 d = new Demo1();
 		System.out.println(d.b);
-		//d.print(); //¿À·ù. ÇÏÀ§ Å¬·¡½ºÀÇ ¸Ş¼­µå, ÇÊµå´Â Á¢±ÙÇÒ ¼ö ¾ø´Ù. (¾î¶»°Ô º¸¸é ´ç¿¬ÇÑ ÀÌ¾ß±â)
+		//d.print(); //ì˜¤ë¥˜. í•˜ìœ„ í´ë˜ìŠ¤ì˜ ë©”ì„œë“œ, í•„ë“œëŠ” ì ‘ê·¼í•  ìˆ˜ ì—†ë‹¤. (ì–´ë–»ê²Œ ë³´ë©´ ë‹¹ì—°í•œ ì´ì•¼ê¸°)
 		Test1 t = new Test1();
 		t.write();
-		//t.a; //ÄÄÆÄÀÏ ¿À·ù super classÀÇ º¯¼ö°¡ privateÀÌ¹Ç·Î »ó¼ÓÀÌ µÇÁö ¾Ê¾Æ¼­ Á¶È¸ÇÒ ¼ö ¾øÀ½.
+		//t.a; //ì»´íŒŒì¼ ì˜¤ë¥˜ super classì˜ ë³€ìˆ˜ê°€ privateì´ë¯€ë¡œ ìƒì†ì´ ë˜ì§€ ì•Šì•„ì„œ ì¡°íšŒí•  ìˆ˜ ì—†ìŒ.
 		System.out.println(t.b+":"+t.c);
 		t.print();
 	}
@@ -28,7 +28,7 @@ class Test1 extends Demo1{
 	
 	public void print() {
 		System.out.println(x+":"+b+":"+c);
-//		System.out.println(a);//ÄÄÆÄÀÏ ¿À·ù super classÀÇ privateÀº »ó¼Ó¹ŞÀ» ¼ö ¾øÀ½
+//		System.out.println(a);//ì»´íŒŒì¼ ì˜¤ë¥˜ super classì˜ privateì€ ìƒì†ë°›ì„ ìˆ˜ ì—†ìŒ
 	}
 
 }

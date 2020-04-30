@@ -1,10 +1,10 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForQuiz10 {
 	public static void main(String[] args) {
 		for(int i=1;i<=100;i++) {
 			if(i%12==0) {
-				//4¿Í 6ÀÇ ÃÖ¼Ò°ø¹è¼ö´Â 12ÀÌ´Ù.
+				//4ì™€ 6ì˜ ìµœì†Œê³µë°°ìˆ˜ëŠ” 12ì´ë‹¤.
 				System.out.printf("%d\t",i);
 			}
 		}

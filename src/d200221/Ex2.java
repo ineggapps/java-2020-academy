@@ -1,11 +1,11 @@
-package d200221;
+ï»¿package d200221;
 
 import java.util.Scanner;
 
-//¿¹¿Ü »óÈ² ½Ã³ª¸®¿À
-//1. Á¤¼ö°¡ ¾Æ´Ñ ¹®ÀÚ³ª ¼Ò¼ıÁ¡À» ÀÔ·Â
-//2. b¿¡ 0À» ÀÔ·Â (0À¸·Î ³ª´®)
-//3. intÇü ¹üÀ§¸¦ ÃÊ°úÇÏ´Â 21¾ï ÀÌÈÄÀÇ °ªÀ» ÀÔ·Â
+//ì˜ˆì™¸ ìƒí™© ì‹œë‚˜ë¦¬ì˜¤
+//1. ì •ìˆ˜ê°€ ì•„ë‹Œ ë¬¸ìë‚˜ ì†Œìˆ«ì ì„ ì…ë ¥
+//2. bì— 0ì„ ì…ë ¥ (0ìœ¼ë¡œ ë‚˜ëˆ”)
+//3. intí˜• ë²”ìœ„ë¥¼ ì´ˆê³¼í•˜ëŠ” 21ì–µ ì´í›„ì˜ ê°’ì„ ì…ë ¥
 
 public class Ex2 {
 	public static void main(String[] args) {
@@ -13,16 +13,16 @@ public class Ex2 {
 		int a, b, c;
 
 		try {
-			System.out.print("µÎ Á¤¼ö ÀÔ·Â > ");
+			System.out.print("ë‘ ì •ìˆ˜ ì…ë ¥ > ");
 			a = sc.nextInt();
 			b = sc.nextInt();
 			c = a / b;
 			System.out.println(a + "/" + b + "=" + c);
 		} catch (Exception e) {
-			System.out.println("ÀÔ·Â »çÇ×ÀÌ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.");
+			System.out.println("ì…ë ¥ ì‚¬í•­ì´ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 
-		System.out.println("¿¬»êÀÌ Á¾·áµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ì—°ì‚°ì´ ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		sc.close();
 	}
 }

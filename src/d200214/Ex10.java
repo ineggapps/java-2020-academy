@@ -1,21 +1,21 @@
-package d200214;
+ï»¿package d200214;
 
 import java.util.Scanner;
 
 public class Ex10 {
 	public static void main(String[] args) {
-		// ÀÌ¸§À» ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ÀÌ¸§ Áß ±è¾¾ÀÇ ÀÎ¿ø¼ö±¸ÇÏ±â
-		// ´Ü, ÀÔ·Â ¹ŞÀº ÀÌ¸§ÀÌ endÀÌ¸é ÇÁ·Î±×·¥À» Á¾·á
+		// ì´ë¦„ì„ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì´ë¦„ ì¤‘ ê¹€ì”¨ì˜ ì¸ì›ìˆ˜êµ¬í•˜ê¸°
+		// ë‹¨, ì…ë ¥ ë°›ì€ ì´ë¦„ì´ endì´ë©´ í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œ
 		Scanner sc = new Scanner(System.in);
 		String name;
 		int cnt = 0;
 		do {
-			System.out.print("ÀÌ¸§? ");
+			System.out.print("ì´ë¦„? ");
 			name = sc.next();
-//			name.indexOf("±è")==0 À¸·Î ÇÏ°Å³ª...
-			cnt = name.startsWith("±è")? cnt + 1 : cnt;
+//			name.indexOf("ê¹€")==0 ìœ¼ë¡œ í•˜ê±°ë‚˜...
+			cnt = name.startsWith("ê¹€")? cnt + 1 : cnt;
 		} while (!name.equals("end"));
-		System.out.printf("±è¾¾: %d¸í", cnt);
+		System.out.printf("ê¹€ì”¨: %dëª…", cnt);
 		sc.close();
 	}
 

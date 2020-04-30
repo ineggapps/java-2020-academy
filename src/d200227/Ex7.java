@@ -1,4 +1,4 @@
-package d200227;
+ï»¿package d200227;
 
 import java.util.Scanner;
 
@@ -7,9 +7,9 @@ public class Ex7 {
 		Scanner sc = new Scanner(System.in);
 		String a, b, c;
 
-		System.out.println("¹®ÀÚ¿­ 3°³ ÀÔ·Â...");
+		System.out.println("ë¬¸ìì—´ 3ê°œ ì…ë ¥...");
 
-		a = sc.next();//±âº» ±¸ºĞÀÚ °ø¹é(¿£ÅÍ Æ÷ÇÔ)
+		a = sc.next();//ê¸°ë³¸ êµ¬ë¶„ì ê³µë°±(ì—”í„° í¬í•¨)
 		b = sc.next();
 		c = sc.next();
 

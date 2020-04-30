@@ -1,4 +1,4 @@
-package d200203;
+ï»¿package d200203;
 
 public class SwitchEx6 {
 	public static void main(String[] args) {
@@ -13,8 +13,8 @@ public class SwitchEx6 {
 		case 1:
 			System.out.println("A");
 			break;
-		default://defaultÀÇ À§Ä¡´Â ¾îµğ ÀÖµçÁö ¹«¹æÇÏ³ª ³í¸®Àû Èå¸§À¸·Î ¹Ì·ç¾î º¼ ¶§ °¡Àå ¸¶Áö¸·¿¡ ¹èÄ¡ÇÏ´Â °ÍÀÌ ÄÚµå¸¦ »ìÆìº¸±â¿¡ ÁÁ´Ù.
-			System.out.println("ÀÔ·Â ¿À·ù");
+		default://defaultì˜ ìœ„ì¹˜ëŠ” ì–´ë”” ìˆë“ ì§€ ë¬´ë°©í•˜ë‚˜ ë…¼ë¦¬ì  íë¦„ìœ¼ë¡œ ë¯¸ë£¨ì–´ ë³¼ ë•Œ ê°€ì¥ ë§ˆì§€ë§‰ì— ë°°ì¹˜í•˜ëŠ” ê²ƒì´ ì½”ë“œë¥¼ ì‚´í´ë³´ê¸°ì— ì¢‹ë‹¤.
+			System.out.println("ì…ë ¥ ì˜¤ë¥˜");
 			break;
 		}
 	}

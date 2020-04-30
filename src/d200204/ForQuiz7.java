@@ -1,4 +1,4 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
@@ -7,32 +7,32 @@ public class ForQuiz7 {
 		Scanner sc = new Scanner(System.in);
 		int num1, num2, tmp;
 		int sum = 0, avg = 0, cnt = 0;
-		// ÀÔ·Â
-		System.out.print("µÎ Á¤¼ö ? ");
+		// ì…ë ¥
+		System.out.print("ë‘ ì •ìˆ˜ ? ");
 		num1 = sc.nextInt();
 		num2 = sc.nextInt();
 
-		System.out.printf("%d %d°¡ ÀÔ·Â%n",num1,num2);
-		// Á¤·Ä num1<num2 °¡ µÇµµ·Ï
+		System.out.printf("%d %dê°€ ì…ë ¥%n",num1,num2);
+		// ì •ë ¬ num1<num2 ê°€ ë˜ë„ë¡
 		if (num1 > num2) {
 			tmp = num1;
 			num1 = num2;
 			num2 = tmp;
 		}
-		System.out.printf("%d %d°¡ Á¤·Ä%n",num1,num2);
+		System.out.printf("%d %dê°€ ì •ë ¬%n",num1,num2);
 
-		// ¿¬»ê
-		//ÀÔ·Â ¹ŞÀº µÎ Á¤¼ö »çÀÌÀÇ ¼ö¿Í µÎ Á¤¼ö¸¦ Æ÷ÇÔÇØ¾ß ÇÔ. µû¶ó¼­ Á¶°Ç½ÄÀÇ ºÎµîÈ£´Â <°¡ ¾Æ´Ï¶ó <=°¡ µÇ¾î¾ß ÇÔ.
+		// ì—°ì‚°
+		//ì…ë ¥ ë°›ì€ ë‘ ì •ìˆ˜ ì‚¬ì´ì˜ ìˆ˜ì™€ ë‘ ì •ìˆ˜ë¥¼ í¬í•¨í•´ì•¼ í•¨. ë”°ë¼ì„œ ì¡°ê±´ì‹ì˜ ë¶€ë“±í˜¸ëŠ” <ê°€ ì•„ë‹ˆë¼ <=ê°€ ë˜ì–´ì•¼ í•¨.
 		for (int i = num1; i <= num2; i++) {
-			//3ÀÇ ¹è¼öÀÌ°Å³ª 5ÀÇ ¹è¼öÀÎ ¼öµéÀÇ ÇÕ°ú Æò±Õ¸¸ ±¸ÇÏ±â
+			//3ì˜ ë°°ìˆ˜ì´ê±°ë‚˜ 5ì˜ ë°°ìˆ˜ì¸ ìˆ˜ë“¤ì˜ í•©ê³¼ í‰ê· ë§Œ êµ¬í•˜ê¸°
 			if(i%3==0 || i%5==0) {				
 				sum += i;
 				cnt++;
 			}
 		}
 		avg = sum / cnt;
-		System.out.println("ÇÕ: " + sum);
-		System.out.println("Æò±Õ: " + avg);
+		System.out.println("í•©: " + sum);
+		System.out.println("í‰ê· : " + avg);
 		sc.close();
 	}
 }

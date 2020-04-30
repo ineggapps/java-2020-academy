@@ -1,29 +1,29 @@
-package d200212;
+ï»¿package d200212;
 
 public class Ex3 {
 	public static void main(String[] args) {
 		int[] arr = { 1, 3, 5, 7, 9 };
 		Test3 t = new Test3();
-		t.sub(arr);//¸Å°³º¯¼ö°¡ ¹è¿­ÀÌ¸é ½ÇÀÎ¼öµµ ¹è¿­ÀÌ¾î¾ß ÇÑ´Ù.
-		//¹è¿­Àº ÂüÁ¶ÀÚ·áÇüÀÌ¹Ç·Î ÆÄ¶ó¹ÌÅÍ¿¡´Â ¹è¿­°´Ã¼ÀÇ ÁÖ¼Ú°ªÀÌ ³Ñ¾î°£´Ù.
-		System.out.println(arr[2]);//100À» Ãâ·ÂÇÑ´Ù.
-		//ÀÚ¹ÙÀÇ ±âº»ÀûÀÎ ÆÄ¶ó¹ÌÅÍ Àü´Þ ¹æ½ÄÀº call by valueÀÌ´Ù.
-		//±âº»ÀÚ·áÇüÀº °ª ÀÚÃ¼¸¦ ³Ñ°ÜÁÖ¹Ç·Î °¡ÀÎ¼ö¿¡¼­ °¡°øµÈ ³»¿ë°ªÀº º¸Á¸µÇÁö ¾Ê´Â´Ù.
+		t.sub(arr);//ë§¤ê°œë³€ìˆ˜ê°€ ë°°ì—´ì´ë©´ ì‹¤ì¸ìˆ˜ë„ ë°°ì—´ì´ì–´ì•¼ í•œë‹¤.
+		//ë°°ì—´ì€ ì°¸ì¡°ìžë£Œí˜•ì´ë¯€ë¡œ íŒŒë¼ë¯¸í„°ì—ëŠ” ë°°ì—´ê°ì²´ì˜ ì£¼ì†Ÿê°’ì´ ë„˜ì–´ê°„ë‹¤.
+		System.out.println(arr[2]);//100ì„ ì¶œë ¥í•œë‹¤.
+		//ìžë°”ì˜ ê¸°ë³¸ì ì¸ íŒŒë¼ë¯¸í„° ì „ë‹¬ ë°©ì‹ì€ call by valueì´ë‹¤.
+		//ê¸°ë³¸ìžë£Œí˜•ì€ ê°’ ìžì²´ë¥¼ ë„˜ê²¨ì£¼ë¯€ë¡œ ê°€ì¸ìˆ˜ì—ì„œ ê°€ê³µëœ ë‚´ìš©ê°’ì€ ë³´ì¡´ë˜ì§€ ì•ŠëŠ”ë‹¤.
 		int n = 0;
 		t.sub2(n);
-		System.out.println(n);// 0°á±£°ªÀÌ Ãâ·ÂµÈ´Ù
+		System.out.println(n);// 0ê²°ê´ê°’ì´ ì¶œë ¥ëœë‹¤
 		
 		int[] aa = {1,3,5,7,9};
 		t.sub3(aa);
 		System.out.println(aa[2]);
 		
 		/*
-		 Call by value vs reference Â÷ÀÌ
+		 Call by value vs reference ì°¨ì´
 		 
 		 Call by value:
-		 Çü½Ä¸Å°³º¯¼ö(¸Þ¼­µåÂÊ)¿Í ½Ç¸Å°³º¯¼ö(³Ñ±â°íÀÚ ÇÏ´Â ½ÇÁ¦ °ª)´Â ±â¾ï°ø°£À» °øÀ¯ÇÏÁö ¾Ê´Â´Ù.
+		 í˜•ì‹ë§¤ê°œë³€ìˆ˜(ë©”ì„œë“œìª½)ì™€ ì‹¤ë§¤ê°œë³€ìˆ˜(ë„˜ê¸°ê³ ìž í•˜ëŠ” ì‹¤ì œ ê°’)ëŠ” ê¸°ì–µê³µê°„ì„ ê³µìœ í•˜ì§€ ì•ŠëŠ”ë‹¤.
 		 Call by reference:
-		 Çü½Ä ¸Å°³º¯¼ö¿Í ½Ç ¸Å°³ º¯¼ö°¡ ±â¾ï°ø°£À» °øÀ¯ÇÒ ¼ö ÀÖÀ½.
+		 í˜•ì‹ ë§¤ê°œë³€ìˆ˜ì™€ ì‹¤ ë§¤ê°œ ë³€ìˆ˜ê°€ ê¸°ì–µê³µê°„ì„ ê³µìœ í•  ìˆ˜ ìžˆìŒ.
 		 * */
 	}
 }

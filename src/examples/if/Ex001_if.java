@@ -1,7 +1,7 @@
-public class Ex001_if {
+ï»¿public class Ex001_if {
 	public static void main(String[] args) {
 /*
-		-10¿¡ ´ëÇÑ Àı´ë°ªÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		-10ì— ëŒ€í•œ ì ˆëŒ€ê°’ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		int n;
 		n=-10;
@@ -9,6 +9,6 @@ public class Ex001_if {
 		if(n<0)
 			n = -n;
 		
-		System.out.println("Àı´ë°ª : " + n);
+		System.out.println("ì ˆëŒ€ê°’ : " + n);
 	}
 }

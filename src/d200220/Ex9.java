@@ -1,4 +1,4 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex9 {
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ interface BDemo9 {
 	public void print();
 }
 
-//ÀÎÅÍÆäÀÌ½º´Â ´ÙÀº ÀÎÅÍÆäÀÌ½º¸¦ 2°³ ÀÌ»ó »ó¼Ó¹ŞÀ» ¼ö ÀÖÀ½. (interface³¢¸®´Â extends¸¦ ÀÌ¿ëÇÏ¿©)
+//ì¸í„°í˜ì´ìŠ¤ëŠ” ë‹¤ì€ ì¸í„°í˜ì´ìŠ¤ë¥¼ 2ê°œ ì´ìƒ ìƒì†ë°›ì„ ìˆ˜ ìˆìŒ. (interfaceë¼ë¦¬ëŠ” extendsë¥¼ ì´ìš©í•˜ì—¬)
 interface Demo9 extends ADemo9, BDemo9{
 	public void sub();
 }

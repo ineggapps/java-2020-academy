@@ -1,4 +1,4 @@
-package myList;
+ï»¿package myList;
 
 import java.util.Arrays;
 
@@ -17,18 +17,18 @@ public class MyArrayList<E> implements MyList<E> {
 	@SuppressWarnings("unchecked")
 	private void capacityAllocation(int capacity) {
 		E[] temp = (E[]) new Object[capacity];
-		// ±âº» ¹è¿­¿¡ µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏ¸é ±âÁ¸ ¹è¿­ÀÇ ³»¿ëÀ» temp¹è¿­¿¡ º¹»çÇÑ´Ù.
+		// ê¸°ë³¸ ë°°ì—´ì— ë°ì´í„°ê°€ ì¡´ì¬í•˜ë©´ ê¸°ì¡´ ë°°ì—´ì˜ ë‚´ìš©ì„ tempë°°ì—´ì— ë³µì‚¬í•œë‹¤.
 		if (elementData != null && size > 0) {
 			System.arraycopy(elementData, 0, temp, 0, size);
 		}
-		// temp¹è¿­À» elementData¿¡ ´ëÀÔÇÑ´Ù.
+		// tempë°°ì—´ì„ elementDataì— ëŒ€ì…í•œë‹¤.
 		elementData = temp;
 	}
 
 	@Override
 	public void add(E element) {
-		if (size >= elementData.length) {// Ãß°¡ÇÒ °ø°£ÀÌ ¾øÀ¸¸é
-			// ¹è¿­ÀÇ °ø°£À» 2¹è¾¿ ´Ã¸°´Ù.
+		if (size >= elementData.length) {// ì¶”ê°€í•  ê³µê°„ì´ ì—†ìœ¼ë©´
+			// ë°°ì—´ì˜ ê³µê°„ì„ 2ë°°ì”© ëŠ˜ë¦°ë‹¤.
 			capacityAllocation(elementData.length * 2);
 		}
 		elementData[size++] = element;
@@ -42,7 +42,7 @@ public class MyArrayList<E> implements MyList<E> {
 		if (size >= elementData.length) {
 			capacityAllocation(elementData.length * 2);
 		}
-		// °ªÀ» »ğÀÔÇÏ±â À§ÇØ¼­ °ªÀ» µÚ·Î ÇÑ Ä­ ´ç°Ü ÀúÀå
+		// ê°’ì„ ì‚½ì…í•˜ê¸° ìœ„í•´ì„œ ê°’ì„ ë’¤ë¡œ í•œ ì¹¸ ë‹¹ê²¨ ì €ì¥
 		for (int i = size - 1; i >= index; i--) {
 			elementData[i + 1] = elementData[i];
 		}
@@ -80,11 +80,11 @@ public class MyArrayList<E> implements MyList<E> {
 			throw new ArrayIndexOutOfBoundsException(index);
 		}
 		E removed = elementData[index];
-		// Ä­ ´ç°Ü¼­ ÀúÀåÇÏ±â
+		// ì¹¸ ë‹¹ê²¨ì„œ ì €ì¥í•˜ê¸°
 		for (int i = index + 1; i < size; i++) {
 			elementData[i - 1] = elementData[i];
 		}
-		// ¸Ç µÚ Ä­ Á¦°ÅÇÏ±â
+		// ë§¨ ë’¤ ì¹¸ ì œê±°í•˜ê¸°
 		size--;
 		elementData[size] = null;
 		return removed;
@@ -137,16 +137,16 @@ public class MyArrayList<E> implements MyList<E> {
 		@Override
 		public E next() {
 			if (nextIndex >= size()) {
-//				throw new ArrayIndexOutOfBoundsException();//¿¹¿Ü ´øÁö±â
+//				throw new ArrayIndexOutOfBoundsException();//ì˜ˆì™¸ ë˜ì§€ê¸°
 				return null;
 			}
 			return elementData[nextIndex++];
 		}
 
 		@Override
-		public void remove() {// ÇöÀç À§Ä¡¿¡ ÀÖ´Â µ¥ÀÌÅÍ¸¦ Áö¿î´Ù.
-			// MyArrayListÀÇ remove¸Ş¼­µå¶û MyIteratorImplÀÇ remove¸Ş¼­µå¶û ÀÌ¸§ÀÌ °ãÄ¡´Ï±î!
-			// ¸í½ÃÀûÀ¸·Î Ç¥ÇöÀ» ÇØÁà¾ß ÇÑ´Ù.
+		public void remove() {// í˜„ì¬ ìœ„ì¹˜ì— ìˆëŠ” ë°ì´í„°ë¥¼ ì§€ìš´ë‹¤.
+			// MyArrayListì˜ removeë©”ì„œë“œë‘ MyIteratorImplì˜ removeë©”ì„œë“œë‘ ì´ë¦„ì´ ê²¹ì¹˜ë‹ˆê¹Œ!
+			// ëª…ì‹œì ìœ¼ë¡œ í‘œí˜„ì„ í•´ì¤˜ì•¼ í•œë‹¤.
 			MyArrayList.this.remove(nextIndex--);
 		}
 

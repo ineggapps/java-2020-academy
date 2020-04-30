@@ -1,16 +1,16 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex010_OddHap {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 1ºÎÅÍ ÀÔ·Â ¹ŞÀº ¼ö±îÁöÀÇ È¦¼ö ÇÕ
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 1ë¶€í„° ì…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ì˜ í™€ìˆ˜ í•©
 */
 		Scanner sc=new Scanner(System.in);
 		
 		int num;
 		int s, n;
 		
-		System.out.print("Á¤¼ö ? ");
+		System.out.print("ì •ìˆ˜ ? ");
 		num=sc.nextInt();
 		
 		s=0;
@@ -19,7 +19,7 @@ public class Ex010_OddHap {
 			s+=n;
 			n+=2;
 		}
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 		
 		sc.close();
 	}

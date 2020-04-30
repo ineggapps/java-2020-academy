@@ -1,4 +1,4 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForTest7 {
 	public static void main(String[] args) {
@@ -6,6 +6,6 @@ public class ForTest7 {
 		for(int i=1;i<=100;i+=2){
 			s+=i;
 		}
-		System.out.println("°á°ú: " + s);
+		System.out.println("ê²°ê³¼: " + s);
 	}
 }

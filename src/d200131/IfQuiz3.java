@@ -1,15 +1,15 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class IfQuiz3 {
-	//¿µ´ë¹®ÀÚ ÀÔ·Â¹ÞÀ¸¸é ¼Ò¹®ÀÚ·Î, ¿µ¼Ò¹®ÀÚ´Â ´ë¹®ÀÚ·Î º¯È¯ÇÏ´Â ÇÁ·Î±×·¥ Ãâ·Â
-	//´Ü, ±âÅ¸ ¹®ÀÚ´Â ±×´ë·Î Ãâ·ÂÇÑ´Ù.
+	//ì˜ëŒ€ë¬¸ìž ìž…ë ¥ë°›ìœ¼ë©´ ì†Œë¬¸ìžë¡œ, ì˜ì†Œë¬¸ìžëŠ” ëŒ€ë¬¸ìžë¡œ ë³€í™˜í•˜ëŠ” í”„ë¡œê·¸ëž¨ ì¶œë ¥
+	//ë‹¨, ê¸°íƒ€ ë¬¸ìžëŠ” ê·¸ëŒ€ë¡œ ì¶œë ¥í•œë‹¤.
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		char ch, r;
 
-		System.out.print("ÇÑ ¹®ÀÚ ÀÔ·Â: ");
+		System.out.print("í•œ ë¬¸ìž ìž…ë ¥: ");
 		ch = sc.next().charAt(0);
 
 		if (ch >= 'A' && ch <= 'Z') {

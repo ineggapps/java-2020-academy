@@ -1,10 +1,10 @@
-package score2;
+ï»¿package score2;
 
 public class ScoreVO {
-//	ÇÑ ÁÙ¿¡ ÇÑ ÇÊµå¸¸ ¼±¾ğÇÏ´Â °ÍÀÌ ¿øÄ¢ÀÓ.
+//	í•œ ì¤„ì— í•œ í•„ë“œë§Œ ì„ ì–¸í•˜ëŠ” ê²ƒì´ ì›ì¹™ì„.
 	private String hak;
 	private String name;
-//	private int kor, eng, mat; << ÇÑ ÁÙ ¼±¾ğ ±ÇÀåÇÏÁö ¾ÊÀ½
+//	private int kor, eng, mat; << í•œ ì¤„ ì„ ì–¸ ê¶Œì¥í•˜ì§€ ì•ŠìŒ
 	private int kor;
 	private int eng;
 	private int mat;

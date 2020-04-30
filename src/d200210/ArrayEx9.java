@@ -1,20 +1,20 @@
-package d200210;
+ï»¿package d200210;
 
 import java.util.Scanner;
 
 public class ArrayEx9 {
 	public static void main(String[] args) {
-		// 5¸íÀÇ ÀÌ¸§°ú ±¹¾î, ¿©¾û, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÃÑÁ¡, Æò±Õ ¹× ¼®Â÷¸¦ Ã³¸®ÇÏ´Â ¼ºÀû Ã³¸® ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+		// 5ëª…ì˜ ì´ë¦„ê³¼ êµ­ì–´, ì—¬ì—‰, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì´ì , í‰ê·  ë° ì„ì°¨ë¥¼ ì²˜ë¦¬í•˜ëŠ” ì„±ì  ì²˜ë¦¬ í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
-		int num = 5;//5¸í
+		int num = 5;//5ëª…
 		String[] name = new String[num];
-		String[] subjects = new String[] {"±¹¾î","¿µ¾î","¼öÇĞ"};
-		int[][] scores = new int[num][3];//5¸íÀÇ ±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö ÀÔ·Â
+		String[] subjects = new String[] {"êµ­ì–´","ì˜ì–´","ìˆ˜í•™"};
+		int[][] scores = new int[num][3];//5ëª…ì˜ êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ ì…ë ¥
 		int[] tot=new int[num];
-		int[] rank = new int[num];//·©Å·
-		//ÀÔ·Â
+		int[] rank = new int[num];//ë­í‚¹
+		//ì…ë ¥
 		for(int i=0;i<num;i++) {
-			System.out.printf("%d¹øÂ° ÀÌ¸§ > ",i+1);
+			System.out.printf("%dë²ˆì§¸ ì´ë¦„ > ",i+1);
 			name[i] = sc.next();
 			int sum=0, avg;
 			for(int j=0;j<3;j++) {				
@@ -28,11 +28,11 @@ public class ArrayEx9 {
 //		name= new String[]{"a","b","c","d","e"};
 //		scores = new int[][]{{80,70,90},{70,70,70},{60,70,80},{75,90,65},{60,80,50}};
 //		tot = new int[] {240,210,210,230,190};
-		//¼øÀ§ ÃÊ±âÈ­
+		//ìˆœìœ„ ì´ˆê¸°í™”
 		for(int i=0;i<rank.length;i++) {
 			rank[i]=1;
 		}
-		//¼®Â÷ ¸Å±â±â
+		//ì„ì°¨ ë§¤ê¸°ê¸°
 		for(int i=0;i<rank.length-1;i++) {
 			for(int j=i+1;j<rank.length;j++) {
 				if(tot[i]>tot[j]) {
@@ -44,8 +44,8 @@ public class ArrayEx9 {
 			}
 			System.out.println();
 		}
-		//Ãâ·Â
-		System.out.println("ÀÌ¸§\t\t±¹¾î\t\t¿µ¾î\t\t¼öÇĞ\t\tÃÑÁ¡\t\tÆò±Õ\t\t¼®Â÷");
+		//ì¶œë ¥
+		System.out.println("ì´ë¦„\t\têµ­ì–´\t\tì˜ì–´\t\tìˆ˜í•™\t\tì´ì \t\tí‰ê· \t\tì„ì°¨");
 		System.out.println("==================================");
 		for(int i=0;i<num;i++) {
 			System.out.printf("%s\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\n",

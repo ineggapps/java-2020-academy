@@ -1,17 +1,17 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForEx2 {
 	public static void main(String[] args) {
 		int n;
-		//¼ıÀÚ¸¦ ÁöÁ¤ÇÏ¿© ¹üÀ§¸¦ ÁöÁ¤ÇÏ´Â ¹İº¹¹®Àº whileº¸´Ù´Â for¹®ÀÌ ´õ ½±´Ù.
+		//ìˆ«ìë¥¼ ì§€ì •í•˜ì—¬ ë²”ìœ„ë¥¼ ì§€ì •í•˜ëŠ” ë°˜ë³µë¬¸ì€ whileë³´ë‹¤ëŠ” forë¬¸ì´ ë” ì‰½ë‹¤.
 //		for (n = 1; n < 10; n+=2) {
-//			System.out.println("¾È: " + n);//1 3 5 7 9
+//			System.out.println("ì•ˆ: " + n);//1 3 5 7 9
 //		}
-//		System.out.println("¹Û: " + n);//11
+//		System.out.println("ë°–: " + n);//11
 		
 		for(n=2;n<=10;n+=2) {
-			System.out.println("Â¦¼ö: "+n);
+			System.out.println("ì§ìˆ˜: "+n);
 		}
-		System.out.println("Á¾·áµÆÀ» ¶§ÀÇ n°ª: "+n);
+		System.out.println("ì¢…ë£Œëì„ ë•Œì˜ nê°’: "+n);
 	}
 }

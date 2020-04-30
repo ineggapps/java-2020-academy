@@ -1,12 +1,12 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForEx3 {
 	public static void main(String[] args) {
-		//for¿¡¼­ º¯¼ö ¼±¾ğ °¡´ÉÇÏ´Ù
+		//forì—ì„œ ë³€ìˆ˜ ì„ ì–¸ ê°€ëŠ¥í•˜ë‹¤
 		for(int n=1;n<=5;n++) {
-			System.out.println("¾È: "+n);
+			System.out.println("ì•ˆ: "+n);
 		}
-		//¿À·ù ¹ß»ı. for¹®¿¡¼­ ¼±¾ğµÇ°í for¹®¿¡¼­¸¸ »ç¿ëµÇ´Â nÀÇ °ªÀ» for¹®ÀÇ ¹Û¿¡¼­ ÁöÁ¤ÇÒ ¼ö ¾ø´Ù.
-//		System.out.println("¹Û:" + n );
+		//ì˜¤ë¥˜ ë°œìƒ. forë¬¸ì—ì„œ ì„ ì–¸ë˜ê³  forë¬¸ì—ì„œë§Œ ì‚¬ìš©ë˜ëŠ” nì˜ ê°’ì„ forë¬¸ì˜ ë°–ì—ì„œ ì§€ì •í•  ìˆ˜ ì—†ë‹¤.
+//		System.out.println("ë°–:" + n );
 	}
 }

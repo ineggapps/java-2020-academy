@@ -1,25 +1,25 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class OperEx9 {
 	/*
-	 * Á¤¼ö¸¦ ÀÔ·Â ¹Þ¾Æ ¾ç¼öÀÎÁö À½¼öÀÎÁö ¿µÀÎÁö¸¦ ÆÇº° Á¤¼ö?10 10: ¾ç¼ö
+	 * ì •ìˆ˜ë¥¼ ìž…ë ¥ ë°›ì•„ ì–‘ìˆ˜ì¸ì§€ ìŒìˆ˜ì¸ì§€ ì˜ì¸ì§€ë¥¼ íŒë³„ ì •ìˆ˜?10 10: ì–‘ìˆ˜
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num;
 
 		String result;
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ ìž…ë ¥: ");
 		num = sc.nextInt();
 
 		/*
-		 * °æ¿ìÀÇ ¼ö 1. 0ÀÏ ¶§ 2. ¾ç¼öÀÏ ¶§ 3. À½¼öÀÏ ¶§
+		 * ê²½ìš°ì˜ ìˆ˜ 1. 0ì¼ ë•Œ 2. ì–‘ìˆ˜ì¼ ë•Œ 3. ìŒìˆ˜ì¼ ë•Œ
 		 */
-//		result = num==0? "0": num>0?"¾ç¼ö":"À½¼ö";
-		result = num > 0 ? "¾ç¼ö" : num < 0 ? "À½¼ö" : "0";
-		System.out.printf("%d´Â %sÀÔ´Ï´Ù.", num, result);
+//		result = num==0? "0": num>0?"ì–‘ìˆ˜":"ìŒìˆ˜";
+		result = num > 0 ? "ì–‘ìˆ˜" : num < 0 ? "ìŒìˆ˜" : "0";
+		System.out.printf("%dëŠ” %sìž…ë‹ˆë‹¤.", num, result);
 		sc.close();
 	}
 }

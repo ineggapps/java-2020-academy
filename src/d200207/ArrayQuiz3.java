@@ -1,38 +1,38 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayQuiz3 {
 	public static void main(String[] args) {
-		//·Î¶ÇÀÇ ±¸¸Å °³¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ±¸¸Å °³¼ö¸¸Å­ÀÇ ·Î¶Ç¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ¸¸µé±â
+		//ë¡œë˜ì˜ êµ¬ë§¤ ê°œìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ êµ¬ë§¤ ê°œìˆ˜ë§Œí¼ì˜ ë¡œë˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ ë§Œë“¤ê¸°
 		Scanner sc = new Scanner(System.in);
 		int num[] = new int[6];
 		int amount;
 
-		// ÀÔ·Â
+		// ì…ë ¥
 		do {
-			System.out.print("±¸¸Å °³¼ö[1~5] ? ");
+			System.out.print("êµ¬ë§¤ ê°œìˆ˜[1~5] ? ");
 			amount = sc.nextInt();
 		} while (amount < 1 || amount > 5);
 
 		for (int i = 0; i < amount; i++) {
 
-			// ·£´ıÇÏ°Ô ¼¯±â
+			// ëœë¤í•˜ê²Œ ì„ê¸°
 			for (int j = 0; j < num.length; j++) {
 				num[j] = (int) (Math.random() * 45) + 1;
 				for(int k=0;k<j;k++) {
 					if(num[j]==num[k]) {
-						j--;//È½¼ö Â÷°¨ÇÏ°í ´Ù½Ã ÃßÃâÀ» ½ÇÇàÇÔ
+						j--;//íšŸìˆ˜ ì°¨ê°í•˜ê³  ë‹¤ì‹œ ì¶”ì¶œì„ ì‹¤í–‰í•¨
 						break;
 					}
 				}
 			}
-			// Á¤·ÄÇÏ±â
+			// ì •ë ¬í•˜ê¸°
 			Arrays.sort(num);
 
-			// Ãâ·ÂÇÏ±â
-			System.out.printf("%d¹øÂ°: ", i + 1);
+			// ì¶œë ¥í•˜ê¸°
+			System.out.printf("%dë²ˆì§¸: ", i + 1);
 			for (int j = 0; j < num.length; j++) {
 				System.out.printf("%d\t\t", num[j]);
 			}

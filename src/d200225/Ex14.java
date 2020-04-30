@@ -1,36 +1,36 @@
-package d200225;
+ï»¿package d200225;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
 public class Ex14 {
 	public static void main(String[] args) {
-		// Map: Å°->°ª ±¸Á¶
-		// Å°´Â Áßº¹À» Çã¿ëÇÏÁö ¾Ê°í ¼ø¼­°¡ ¾ø´Ù
-		// HashMap:µ¿±âÈ­¸¦ Áö¿øÇÏÁö ¾Ê´Â´Ù.
+		// Map: í‚¤->ê°’ êµ¬ì¡°
+		// í‚¤ëŠ” ì¤‘ë³µì„ í—ˆìš©í•˜ì§€ ì•Šê³  ìˆœì„œê°€ ì—†ë‹¤
+		// HashMap:ë™ê¸°í™”ë¥¼ ì§€ì›í•˜ì§€ ì•ŠëŠ”ë‹¤.
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
-		// map¿¡ °ª ÀúÀåÇÏ±â
-		map.put("¼­¿ï", 1000);
-		map.put("ºÎ»ê", 350);
-		map.put("´ë±¸", 250);
-		map.put("ÀÎÃµ", 300);
-		map.put("±¤ÁÖ", 150);
-		map.put("´ëÀü", 150);
-		map.put("¿ï»ê", 110);
-		map.put("¼¼Á¾", 20);
-		map.put("¼­¿ï", 990);// Å° °ªÀÌ °°À¸¸é ±âÁ¸ °ªÀ» µ¤¾î ¾º¿î´Ù.
+		// mapì— ê°’ ì €ì¥í•˜ê¸°
+		map.put("ì„œìš¸", 1000);
+		map.put("ë¶€ì‚°", 350);
+		map.put("ëŒ€êµ¬", 250);
+		map.put("ì¸ì²œ", 300);
+		map.put("ê´‘ì£¼", 150);
+		map.put("ëŒ€ì „", 150);
+		map.put("ìš¸ì‚°", 110);
+		map.put("ì„¸ì¢…", 20);
+		map.put("ì„œìš¸", 990);// í‚¤ ê°’ì´ ê°™ìœ¼ë©´ ê¸°ì¡´ ê°’ì„ ë®ì–´ ì”Œìš´ë‹¤.
 		System.out.println(map);
-		// {¿ï»ê=110, ´ëÀü=150, ¼­¿ï=990, ¼¼Á¾=20, ºÎ»ê=350, ´ë±¸=250, ÀÎÃµ=300, ±¤ÁÖ=150}
+		// {ìš¸ì‚°=110, ëŒ€ì „=150, ì„œìš¸=990, ì„¸ì¢…=20, ë¶€ì‚°=350, ëŒ€êµ¬=250, ì¸ì²œ=300, ê´‘ì£¼=150}
 
-		// map¿¡¼­ Å°ÀÇ °ª °¡Á®¿À±â
-		int a = map.get("¼­¿ï");
+		// mapì—ì„œ í‚¤ì˜ ê°’ ê°€ì ¸ì˜¤ê¸°
+		int a = map.get("ì„œìš¸");
 		System.out.println(a);
 
-		// Ã³À½ºÎÅÍ ³¡±îÁö ¼øÈ¸ÇÏ´Â ¹æ¹ı
-		// Map¿¡´Â Iterator(¹İº¹ÀÚ)°¡ ¾øÀ¸¸ç Çâ»óµÈ for¹®µµ »ç¿ëÇÒ ¼ö ¾ø´Ù.
-		// Set<String> set = map.keySet();´Â Å°¿¡¼­
-		// Set °´Ã¼¸¦ ¹İÈ¯ÇÏ¹Ç·Î Å°ÀÇ Set°´Ã¼¸¦ ÀÌ¿ëÇÏ¿© Ã³À½ºÎÅÍ ³¡±îÁö ¼øÈ¸ÇÑ´Ù.
+		// ì²˜ìŒë¶€í„° ëê¹Œì§€ ìˆœíšŒí•˜ëŠ” ë°©ë²•
+		// Mapì—ëŠ” Iterator(ë°˜ë³µì)ê°€ ì—†ìœ¼ë©° í–¥ìƒëœ forë¬¸ë„ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
+		// Set<String> set = map.keySet();ëŠ” í‚¤ì—ì„œ
+		// Set ê°ì²´ë¥¼ ë°˜í™˜í•˜ë¯€ë¡œ í‚¤ì˜ Setê°ì²´ë¥¼ ì´ìš©í•˜ì—¬ ì²˜ìŒë¶€í„° ëê¹Œì§€ ìˆœíšŒí•œë‹¤.
 
 		Iterator<String> it = map.keySet().iterator();
 		while (it.hasNext()) {
@@ -39,12 +39,12 @@ public class Ex14 {
 			System.out.println(key + "=>" + value);
 		}
 		
-		//MapÀÌ Áß¿äÇÏ´Ù. »ç¿ë¹ı ¾Ï±â ¡è
+		//Mapì´ ì¤‘ìš”í•˜ë‹¤. ì‚¬ìš©ë²• ì•”ê¸° â†‘
 		
-		System.out.println("Å°·Î ¼­¿ïÀÌ Á¸ÀçÇÏ´ÂÁö? "+map.containsKey("¼­¿ï"));
-		System.out.println("Å°·Î °æ±â°¡ Á¸ÀçÇÏ´ÂÁö? "+map.containsKey("°æ±â"));
-		System.out.println("ÀüÃ¼ °³¼ö "+map.size());
-		map.remove("¼¼Á¾");
+		System.out.println("í‚¤ë¡œ ì„œìš¸ì´ ì¡´ì¬í•˜ëŠ”ì§€? "+map.containsKey("ì„œìš¸"));
+		System.out.println("í‚¤ë¡œ ê²½ê¸°ê°€ ì¡´ì¬í•˜ëŠ”ì§€? "+map.containsKey("ê²½ê¸°"));
+		System.out.println("ì „ì²´ ê°œìˆ˜ "+map.size());
+		map.remove("ì„¸ì¢…");
 		System.out.println(map);
 	}
 }

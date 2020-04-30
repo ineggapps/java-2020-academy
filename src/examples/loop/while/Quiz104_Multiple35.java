@@ -1,7 +1,7 @@
-public class Quiz104_Multiple35 {
+ï»¿public class Quiz104_Multiple35 {
 	public static void main(String[] args) {
 /*		
-		1~100±îÁö ¼öÁß 3 ¶Ç´Â 5ÀÇ ¹è¼ö ÇÕ°ú Æò±Õ
+		1~100ê¹Œì§€ ìˆ˜ì¤‘ 3 ë˜ëŠ” 5ì˜ ë°°ìˆ˜ í•©ê³¼ í‰ê· 
 */
 		int n, s, cnt;
 		
@@ -15,7 +15,7 @@ public class Quiz104_Multiple35 {
 			}
 		}
 		
-		System.out.println("ÇÕ : "+s);
-		System.out.println("Æò±Õ : "+(s/cnt));
+		System.out.println("í•© : "+s);
+		System.out.println("í‰ê·  : "+(s/cnt));
 	}
 }

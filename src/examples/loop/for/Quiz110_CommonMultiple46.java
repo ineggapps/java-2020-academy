@@ -1,7 +1,7 @@
-public class Quiz110_CommonMultiple46 {
+ï»¿public class Quiz110_CommonMultiple46 {
 	public static void main(String[] args) {
 /*		
-		1~100±îÁö ¼öÁß 4¿Í 6ÀÇ °ø¹è¼ö Ãâ·Â
+		1~100ê¹Œì§€ ìˆ˜ì¤‘ 4ì™€ 6ì˜ ê³µë°°ìˆ˜ ì¶œë ¥
 */
 		for(int i=1; i<=100; i++) {
 			if(i%4==0 && i%6==0) {

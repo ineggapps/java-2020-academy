@@ -1,13 +1,13 @@
-package d200129;
+ï»¿package d200129;
 
 public class OperEx4 {
 	public static void main(String[] args) {
 		int a = 10, b = 4;
 		double c;
 		c = a / b;
-		System.out.println(c);// °á±£°ª: 2.0
+		System.out.println(c);// ê²°ê´ê°’: 2.0
 
-		c = (double) a / b;// º¯¼ö a¸¦ °­Á¦·Î doubleÇüÀ¸·Î º¯È¯ÇÏ¿´´Ù. (°­Á¦ casting)
-		System.out.println(c);// °á±£°ª: 2.5
+		c = (double) a / b;// ë³€ìˆ˜ aë¥¼ ê°•ì œë¡œ doubleí˜•ìœ¼ë¡œ ë³€í™˜í•˜ì˜€ë‹¤. (ê°•ì œ casting)
+		System.out.println(c);// ê²°ê´ê°’: 2.5
 	}
 }

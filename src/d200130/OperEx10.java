@@ -1,4 +1,4 @@
-package d200130;
+ï»¿package d200130;
 
 public class OperEx10 {
 	public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class OperEx10 {
 		System.out.println(d);
 
 		System.out.println(a + "," + b + "," + c);
-		//¿¬»êÀÚÀÇ ¿ì¼±¼øÀ§¿¡¼­ ºñÆ®´ÜÀ§ ¿¬»ê¿¡¼­µµ ³í¸®°ö(&)ÀÌ ¿ì¼±¼øÀ§°¡ ´õ ³ô´Ù.
+		//ì—°ì‚°ìì˜ ìš°ì„ ìˆœìœ„ì—ì„œ ë¹„íŠ¸ë‹¨ìœ„ ì—°ì‚°ì—ì„œë„ ë…¼ë¦¬ê³±(&)ì´ ìš°ì„ ìˆœìœ„ê°€ ë” ë†’ë‹¤.
 		//a=					0000 1010
 		//b=					0100 1000
 		//c=					1100 1100		

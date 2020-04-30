@@ -1,4 +1,4 @@
-package d200205;
+ï»¿package d200205;
 
 import java.util.Scanner;
 
@@ -10,23 +10,23 @@ public class HapEx {
 		int start, offset;
 		while (true) {
 			do {
-				System.out.print("1. ÇÕ, 2.È¦¼öÀÇ ÇÕ, 3.Â¦¼öÀÇ ÇÕ, 4.Á¾·á => ");
+				System.out.print("1. í•©, 2.í™€ìˆ˜ì˜ í•©, 3.ì§ìˆ˜ì˜ í•©, 4.ì¢…ë£Œ => ");
 				ch = sc.nextInt();
 			} while (ch < 1 || ch > 4);
 			if (ch == 4) {
 				break;
 			}
 
-			System.out.print("¿øÇÏ´Â ¼ö: ");
+			System.out.print("ì›í•˜ëŠ” ìˆ˜: ");
 			num = sc.nextInt();
 
-			// º¯¼ö ÃÊ±âÈ­
+			// ë³€ìˆ˜ ì´ˆê¸°í™”
 			switch (ch) {
-			case 1:// ÀÚ¿¬¼öÀÇ ÇÕ
+			case 1:// ìì—°ìˆ˜ì˜ í•©
 				start = 1;offset = 1;break;
-			case 2:// È¦¼öÀÇ ÇÕ
+			case 2:// í™€ìˆ˜ì˜ í•©
 				start = 1;offset = 2;break;
-			default:// Â¦¼öÀÇ ÇÕ
+			default:// ì§ìˆ˜ì˜ í•©
 				start = 2;offset = 2;break;
 			}
 
@@ -35,7 +35,7 @@ public class HapEx {
 				s += i;
 			}
 
-			System.out.println("°á°ú: " + s);
+			System.out.println("ê²°ê³¼: " + s);
 		}
 		sc.close();
 	}

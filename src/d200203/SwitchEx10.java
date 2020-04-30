@@ -1,4 +1,4 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
@@ -7,10 +7,10 @@ public class SwitchEx10 {
 		Scanner sc = new Scanner(System.in);
 		int y,m,d=0;
 		
-		System.out.print("¿¬µµ ÀÔ·Â: ");
+		System.out.print("ì—°ë„ ì…ë ¥: ");
 		y = sc.nextInt();
 		
-		System.out.print("¿ù ÀÔ·Â: ");
+		System.out.print("ì›” ì…ë ¥: ");
 		m = sc.nextInt();
 		
 		switch(m) {
@@ -23,20 +23,20 @@ public class SwitchEx10 {
 		case 2:
 			d=28;
 			if(y%4==0 && y%100!=0 || y%400==0) {
-				//À±³â °è»ê
-				//¿¬µµ°¡ 4ÀÇ ¹è¼öÀÌ°í 100ÀÇ ¹è¼ö°¡ ¾Æ´Ï°Å³ª 400ÀÇ ¹è¼ö¿©¾ß ÇÔ.
+				//ìœ¤ë…„ ê³„ì‚°
+				//ì—°ë„ê°€ 4ì˜ ë°°ìˆ˜ì´ê³  100ì˜ ë°°ìˆ˜ê°€ ì•„ë‹ˆê±°ë‚˜ 400ì˜ ë°°ìˆ˜ì—¬ì•¼ í•¨.
 				d++;
 			}
 			break;
 //		default:
-//			//º¯¼ö ¼±¾ğ ½Ã d¸¦ ÃÊ±âÈ­ÇÏÁö ¾ÊÀº °æ¿ì
+//			//ë³€ìˆ˜ ì„ ì–¸ ì‹œ dë¥¼ ì´ˆê¸°í™”í•˜ì§€ ì•Šì€ ê²½ìš°
 //			d=0;
 //			break;
 		}
 		if(d!=0) {
-			System.out.printf("%d³â %d¿ùÀº %dÀÏ±îÁö ÀÖ½À´Ï´Ù.\n",y,m,d);
+			System.out.printf("%dë…„ %dì›”ì€ %dì¼ê¹Œì§€ ìˆìŠµë‹ˆë‹¤.\n",y,m,d);
 		}else {			
-			System.out.println("ÀÔ·Â ¿À·ù...");
+			System.out.println("ì…ë ¥ ì˜¤ë¥˜...");
 		}
 		sc.close();
 	}

@@ -1,4 +1,4 @@
-package friend;
+ï»¿package friend;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -15,79 +15,79 @@ public class FriendImpl implements Friend {
 	Scanner sc = new Scanner(System.in);
 
 	public FriendImpl() {
-		// ´õ¹Ì µ¥ÀÌÅÍ
-		list.add(new FriendVO("»ç¿µ¼­", "01000000001", "°æ±âµµ ÀÇÁ¤ºÎ½Ã", "19991008"));
-		list.add(new FriendVO("¼Ò»ó¿ë", "01000000002", "°æ±âµµ Æ÷Ãµ½Ã", "19891008"));
-		list.add(new FriendVO("ÇÑ¸íÀ±", "01000000003", "°æ±âµµ ¾çÁÖ½Ã", "19791008"));
-		list.add(new FriendVO("Ã¤¼º¹Ì", "01000000004", "¼­¿ïÆ¯º°½Ã ¸¶Æ÷±¸", "19691008"));
-		list.add(new FriendVO("ÃÖ¿øÃ¶", "01000000005", "¼­¿ïÆ¯º°½Ã °­³²±¸", "19591008"));
-		list.add(new FriendVO("Á¤½ÂÁ¦", "01000000006", "¼­¿ïÆ¯º°½Ã °­µ¿±¸", "19790708"));
-		list.add(new FriendVO("ÃÖ¿øÃ¶", "01000000007", "¼­¿ïÆ¯º°½Ã °­ºÏ±¸", "19591008"));
-		list.add(new FriendVO("ÀÓÁ¤Çõ", "01000000008", "°æ±âµµ ¾çÆò±º", "19591008"));
-		list.add(new FriendVO("ÀÌÁß¹Î", "01000000009", "°­¿øµµ ¿µ¿ù±º", "19591008"));
-		list.add(new FriendVO("ÀÌÇÊ½Â", "01000000010", "°­¿øµµ ÃáÃµ½Ã", "19591008"));
-		list.add(new FriendVO("±èÃÊ¾Æ", "01000000011", "°æ±âµµ ¼ö¿ø½Ã", "19591008"));
+		// ë”ë¯¸ ë°ì´í„°
+		list.add(new FriendVO("ì‚¬ì˜ì„œ", "01000000001", "ê²½ê¸°ë„ ì˜ì •ë¶€ì‹œ", "19991008"));
+		list.add(new FriendVO("ì†Œìƒìš©", "01000000002", "ê²½ê¸°ë„ í¬ì²œì‹œ", "19891008"));
+		list.add(new FriendVO("í•œëª…ìœ¤", "01000000003", "ê²½ê¸°ë„ ì–‘ì£¼ì‹œ", "19791008"));
+		list.add(new FriendVO("ì±„ì„±ë¯¸", "01000000004", "ì„œìš¸íŠ¹ë³„ì‹œ ë§ˆí¬êµ¬", "19691008"));
+		list.add(new FriendVO("ìµœì›ì² ", "01000000005", "ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬", "19591008"));
+		list.add(new FriendVO("ì •ìŠ¹ì œ", "01000000006", "ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë™êµ¬", "19790708"));
+		list.add(new FriendVO("ìµœì›ì² ", "01000000007", "ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë¶êµ¬", "19591008"));
+		list.add(new FriendVO("ì„ì •í˜", "01000000008", "ê²½ê¸°ë„ ì–‘í‰êµ°", "19591008"));
+		list.add(new FriendVO("ì´ì¤‘ë¯¼", "01000000009", "ê°•ì›ë„ ì˜ì›”êµ°", "19591008"));
+		list.add(new FriendVO("ì´í•„ìŠ¹", "01000000010", "ê°•ì›ë„ ì¶˜ì²œì‹œ", "19591008"));
+		list.add(new FriendVO("ê¹€ì´ˆì•„", "01000000011", "ê²½ê¸°ë„ ìˆ˜ì›ì‹œ", "19591008"));
 	}
 
 	@Override
 	public void input() {
-		System.out.println("\nÄ£±¸ µî·Ï");
+		System.out.println("\nì¹œêµ¬ ë“±ë¡");
 
-		// µ¿ÀÏÇÑ ÀÌ¸§°ú µ¿ÀÏÇÑ ÀüÈ­¹øÈ£°¡ ÀÖÀ¸¸é µî·Ï ºÒ°¡´É
+		// ë™ì¼í•œ ì´ë¦„ê³¼ ë™ì¼í•œ ì „í™”ë²ˆí˜¸ê°€ ìˆìœ¼ë©´ ë“±ë¡ ë¶ˆê°€ëŠ¥
 		FriendVO vo = inputProcess();
 		list.add(vo);
 	}
 
 	public FriendVO inputProcess() {
 		FriendVO vo = new FriendVO();
-		System.out.print("ÀÌ¸§ ? ");
+		System.out.print("ì´ë¦„ ? ");
 		vo.setName(sc.nextLine());
 		return inputProcess(vo, false);
 	}
 
 	public FriendVO inputProcess(FriendVO vo, boolean isUpdate) {
-		// ÀÌ¹Ì ÇØ´ç ÀüÈ­¹øÈ£°¡ µî·ÏÀÌ µÇ¾îÀÖ³ª?
+		// ì´ë¯¸ í•´ë‹¹ ì „í™”ë²ˆí˜¸ê°€ ë“±ë¡ì´ ë˜ì–´ìˆë‚˜?
 		boolean valid = false;
 		String tel;
 		if (isUpdate) {
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			vo.setName(sc.nextLine());
 		}
 		do {
-			System.out.print("ÀüÈ­¹øÈ£ ? ");
+			System.out.print("ì „í™”ë²ˆí˜¸ ? ");
 			tel = sc.nextLine().replaceAll("-", "");
 			valid = isCheckDuplicate(vo.getName(), tel);
 			if (valid) {
 				vo.setTel(tel);
 			} else {
-				System.out.println("ÀÌ¹Ì µî·ÏµÈ ÀüÈ­¹øÈ£ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.");
+				System.out.println("ì´ë¯¸ ë“±ë¡ëœ ì „í™”ë²ˆí˜¸ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.");
 			}
-		} while (!valid);// À¯È¿ÇÏÁö ¾ÊÀ¸¸é °è¼Ó ´Ù½Ã ÀÔ·Â ¹ŞÀ½
-		System.out.print("ÁÖ¼Ò ? ");
+		} while (!valid);// ìœ íš¨í•˜ì§€ ì•Šìœ¼ë©´ ê³„ì† ë‹¤ì‹œ ì…ë ¥ ë°›ìŒ
+		System.out.print("ì£¼ì†Œ ? ");
 		vo.setCity(sc.nextLine());
-		System.out.print("»ı³â¿ùÀÏ ? ");
+		System.out.print("ìƒë…„ì›”ì¼ ? ");
 		vo.setBirth(sc.nextLine().replaceAll("(\\-|\\.|/)", ""));
 		return vo;
 	}
 
 	@Override
 	public void print() {
-		System.out.println("\nÄ£±¸ ¸ñ·Ï...");
-		// ÀÌ¸§, ÀüÈ­¹øÈ£, ÁÖ¼Ò, »ı³â¿ùÀÏ, ³ªÀÌ(¸Ş¼­µå ¸¸µé¾î¼­)
+		System.out.println("\nì¹œêµ¬ ëª©ë¡...");
+		// ì´ë¦„, ì „í™”ë²ˆí˜¸, ì£¼ì†Œ, ìƒë…„ì›”ì¼, ë‚˜ì´(ë©”ì„œë“œ ë§Œë“¤ì–´ì„œ)
 		int limit = 10;
 		int maxPage = (list.size() / limit) + 1;
 		for (int i = 0; i < list.size(); i++) {
 			FriendVO vo = list.get(i);
 			System.out.print((i + 1) + ": ");
 			System.out.print(vo);
-			System.out.print(", ¸¸ " + toAge(vo.getBirth()) + "¼¼");
+			System.out.print(", ë§Œ " + toAge(vo.getBirth()) + "ì„¸");
 			System.out.println();
 			if ((i + 1) % limit == 0) {
 				System.out.printf("Next(%d/%d) > ", (i / limit) + 2, maxPage);
 				sc.nextLine();
 			}
 		}
-		// ÇÑ È­¸é¿¡ 10°³¾¿
+		// í•œ í™”ë©´ì— 10ê°œì”©
 	}
 
 	public void print(List<FriendVO> list) {
@@ -98,10 +98,10 @@ public class FriendImpl implements Friend {
 
 	@Override
 	public void findByName() {
-		System.out.println("\nÀÌ¸§ °Ë»ö...");
-		// ¾ÕºÎºĞ°ú ÀÏÄ¡ÇØµµ °Ë»ö (È«±æµ¿ÀÇ 'È«'ÀÚ¸¸ ÀÔ·ÂÇØµµ °Ë»öÀÌ µÇµµ·Ï)
+		System.out.println("\nì´ë¦„ ê²€ìƒ‰...");
+		// ì•ë¶€ë¶„ê³¼ ì¼ì¹˜í•´ë„ ê²€ìƒ‰ (í™ê¸¸ë™ì˜ 'í™'ìë§Œ ì…ë ¥í•´ë„ ê²€ìƒ‰ì´ ë˜ë„ë¡)
 		String name;
-		System.out.print("ÀÌ¸§ ? ");
+		System.out.print("ì´ë¦„ ? ");
 		name = sc.nextLine();
 		List<FriendVO> target = new ArrayList<>();
 		for (FriendVO vo : list) {
@@ -110,7 +110,7 @@ public class FriendImpl implements Friend {
 			}
 		}
 		if (target.size() == 0) {
-			System.out.println(name + ": °Ë»ö °á°ú ¾øÀ½...");
+			System.out.println(name + ": ê²€ìƒ‰ ê²°ê³¼ ì—†ìŒ...");
 			return;
 		}
 		print(target);
@@ -118,43 +118,43 @@ public class FriendImpl implements Friend {
 
 	@Override
 	public void update() {
-		System.out.println("\nÁ¤º¸ ¼öÁ¤...");
-		// ¼öÁ¤ ÀÛ¾÷
-		// ÀÌ¸§, ÀüÈ­¹øÈ£, ÁÖ¼Ò, »ı³â¿ùÀÏ ¸ğµÎ ¼öÁ¤
-		// ÀÌ¸§°ú ÀüÈ­¹øÈ£°¡ ÀÚ½ÅÀÌ ¾Æ´Ñ ´Ù¸¥ »ç¶÷°ú ÀÏÄ¡ÇÏ¸é ¼öÁ¤ ºÒ°¡´É
+		System.out.println("\nì •ë³´ ìˆ˜ì •...");
+		// ìˆ˜ì • ì‘ì—…
+		// ì´ë¦„, ì „í™”ë²ˆí˜¸, ì£¼ì†Œ, ìƒë…„ì›”ì¼ ëª¨ë‘ ìˆ˜ì •
+		// ì´ë¦„ê³¼ ì „í™”ë²ˆí˜¸ê°€ ìì‹ ì´ ì•„ë‹Œ ë‹¤ë¥¸ ì‚¬ëŒê³¼ ì¼ì¹˜í•˜ë©´ ìˆ˜ì • ë¶ˆê°€ëŠ¥
 		Map<String, String> map = getNameAndTel();
-		// ¼öÁ¤ ÀÛ¾÷
+		// ìˆ˜ì • ì‘ì—…
 		FriendVO vo = readFriend(map.get(KEY_NAME), map.get(KEY_TEL));
-		// µî·ÏµÈ ÀÚ·á°¡ ÀÖ´ÂÁö?
+		// ë“±ë¡ëœ ìë£Œê°€ ìˆëŠ”ì§€?
 		if (vo == null) {
-			System.out.println("Á¶°Ç¿¡ ¸¸Á·ÇÏ´Â °ªÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("ì¡°ê±´ì— ë§Œì¡±í•˜ëŠ” ê°’ì´ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		System.out.println("Á¤º¸ ¼öÁ¤¿¡ ÇÊ¿äÇÑ °ªÀ» ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+		System.out.println("ì •ë³´ ìˆ˜ì •ì— í•„ìš”í•œ ê°’ì„ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 		inputProcess(vo,true);
 	}
 
 	@Override
 	public void delete() {
-		System.out.println("\nÄ£±¸ »èÁ¦...");
-		// ÀÌ¸§°ú ÀüÈ­¹øÈ£°¡ µ¿ÀÏÇÑ µ¥ÀÌÅÍ »èÁ¦
+		System.out.println("\nì¹œêµ¬ ì‚­ì œ...");
+		// ì´ë¦„ê³¼ ì „í™”ë²ˆí˜¸ê°€ ë™ì¼í•œ ë°ì´í„° ì‚­ì œ
 		Map<String, String> map = getNameAndTel();
 		FriendVO vo = readFriend(map.get(KEY_NAME), map.get(KEY_TEL));
 		if (vo == null) {
-			System.out.println("»èÁ¦ ½ÇÆĞ: ÀÏÄ¡ÇÏ´Â Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì‚­ì œ ì‹¤íŒ¨: ì¼ì¹˜í•˜ëŠ” ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		System.out.println("»èÁ¦¸¦ ¿Ï·áÇÏ¿´½À´Ï´Ù.");
-		System.out.println("»èÁ¦ÇÑ Ä®·³: " + vo);
+		System.out.println("ì‚­ì œë¥¼ ì™„ë£Œí•˜ì˜€ìŠµë‹ˆë‹¤.");
+		System.out.println("ì‚­ì œí•œ ì¹¼ëŸ¼: " + vo);
 		list.remove(vo);
 	}
 
 	public Map<String, String> getNameAndTel() {
 		String name;
 		String tel;
-		System.out.print("ÀÌ¸§ ? ");
+		System.out.print("ì´ë¦„ ? ");
 		name = sc.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£ ?");
+		System.out.print("ì „í™”ë²ˆí˜¸ ?");
 		tel = sc.nextLine();
 
 		Map<String, String> map = new HashMap<String, String>();
@@ -164,7 +164,7 @@ public class FriendImpl implements Friend {
 	}
 
 	private FriendVO readFriend(String name, String tel) {
-		// ÀÌ¸§°ú ÀüÈ­¹øÈ£°¡ µ¿ÀÏÇÑ Ä£±¸¸¦ °Ë»ö
+		// ì´ë¦„ê³¼ ì „í™”ë²ˆí˜¸ê°€ ë™ì¼í•œ ì¹œêµ¬ë¥¼ ê²€ìƒ‰
 		for (FriendVO vo : list) {
 			if (vo.getName().startsWith(name) && vo.getTel().equals(tel)) {
 				return vo;
@@ -179,7 +179,7 @@ public class FriendImpl implements Friend {
 				return false;
 			}
 		}
-		return true;/// Áßº¹µÇÁö ¾ÊÀ¸¸é true¸¦ ¹İÈ¯ÇÑ´Ù.
+		return true;/// ì¤‘ë³µë˜ì§€ ì•Šìœ¼ë©´ trueë¥¼ ë°˜í™˜í•œë‹¤.
 	}
 
 	public boolean isCheckDate(String birth) {
@@ -215,7 +215,7 @@ public class FriendImpl implements Friend {
 		int age = 0;
 
 		if (!isCheckDate(birth)) {
-			throw new RuntimeException("³¯Â¥ Çü½Ä ¿À·ù...");
+			throw new RuntimeException("ë‚ ì§œ í˜•ì‹ ì˜¤ë¥˜...");
 		}
 
 		birth = birth.replaceAll("(\\-|\\.|/)", "");
@@ -233,7 +233,7 @@ public class FriendImpl implements Friend {
 				age--;
 			}
 		} catch (Exception e) {
-			throw new RuntimeException("³¯Â¥ Çü½Ä ¿À·ù...");
+			throw new RuntimeException("ë‚ ì§œ í˜•ì‹ ì˜¤ë¥˜...");
 		}
 
 		return age;

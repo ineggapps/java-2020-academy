@@ -1,18 +1,18 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz107_Multiple35 {
 	public static void main(String[] args) {
 /*
-		 µÎ °³ÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼öÁß 
-		 ÀûÀº¼ö¿¡¼­ Å«¼ö »çÀÌ(µÎ Á¤¼ö¸¦ Æ÷ÇÔ)ÀÇ 
-		 3ÀÇ ¹è¼öÀÌ°Å³ª 5ÀÇ ¹è¼öÀÎ ¼öµéÀÇ ÇÕ°ú Æò±ÕÀ» Ãâ·Â
+		 ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ì¤‘ 
+		 ì ì€ìˆ˜ì—ì„œ í°ìˆ˜ ì‚¬ì´(ë‘ ì •ìˆ˜ë¥¼ í¬í•¨)ì˜ 
+		 3ì˜ ë°°ìˆ˜ì´ê±°ë‚˜ 5ì˜ ë°°ìˆ˜ì¸ ìˆ˜ë“¤ì˜ í•©ê³¼ í‰ê· ì„ ì¶œë ¥
 */
 		
 		Scanner sc = new Scanner(System.in);
 		int n1, n2, temp;
 		int s, cnt;
 		
-		System.out.print("µÎÁ¤¼ö ? ");
+		System.out.print("ë‘ì •ìˆ˜ ? ");
 		n1=sc.nextInt();
 		n2=sc.nextInt();
 		
@@ -28,8 +28,8 @@ public class Quiz107_Multiple35 {
 			}
 		}
 		
-		System.out.println("ÇÕ:"+s);
-		System.out.println("Æò±Õ:"+(s/cnt));		
+		System.out.println("í•©:"+s);
+		System.out.println("í‰ê· :"+(s/cnt));		
 		sc.close();
 	}
 }

@@ -1,16 +1,16 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz207_NumberTrun {
 	public static void main(String[] args) {
 /*		
-		¾çÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº Á¤¼ö¸¦ µÚÁı¾î Ãâ·Â
+		ì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì •ìˆ˜ë¥¼ ë’¤ì§‘ì–´ ì¶œë ¥
 */		
 		Scanner sc = new Scanner(System.in);
 
 		int num1, num2, temp;
 
 		do {
-			System.out.print("¼ö ? ");
+			System.out.print("ìˆ˜ ? ");
 			num1 = sc.nextInt();
 		} while(num1<0);
 
@@ -22,8 +22,8 @@ public class Quiz207_NumberTrun {
 			temp/=10;
 		}
 
-		System.out.println("¿ø·¡ÀÇ ¼ö : " + num1);
-		System.out.println("µÚÁıÀº ¼ö : " + num2);
+		System.out.println("ì›ë˜ì˜ ìˆ˜ : " + num1);
+		System.out.println("ë’¤ì§‘ì€ ìˆ˜ : " + num2);
 		
 		sc.close();
 	}

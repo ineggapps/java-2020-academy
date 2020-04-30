@@ -1,18 +1,18 @@
-package d200129;
+ï»¿package d200129;
 
 public class OperEx3 {
 	public static void main(String[] args) {
 		int a = 10, b = 7, c;
 		c = a + b;
-		System.out.format("ÇÕ: %d%n", c);
+		System.out.format("í•©: %d%n", c);
 		c = a - b;
-		System.out.format("Â÷: %d%n", c);
+		System.out.format("ì°¨: %d%n", c);
 		c = a * b;
-		System.out.format("°ö: %d%n", c);
+		System.out.format("ê³±: %d%n", c);
 		c = a / b;
-		System.out.format("¸ò: %d%n", c);
+		System.out.format("ëª«: %d%n", c);
 		c = a % b;
-		System.out.format("³ª¸ÓÁö: %d%n", c);
+		System.out.format("ë‚˜ë¨¸ì§€: %d%n", c);
 
 		double x, y, z;
 		x = 10.5;

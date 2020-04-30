@@ -1,29 +1,29 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex5 {
 	public static void main(String[] args) {
-//		Demo5 ob = new Demo5(); //ÀÎÅÍÆäÀÌ½º´Â °´Ã¼»ı¼º ºÒ°¡´É
+//		Demo5 ob = new Demo5(); //ì¸í„°í˜ì´ìŠ¤ëŠ” ê°ì²´ìƒì„± ë¶ˆê°€ëŠ¥
 		
-		Demo5 ob = new Test5();//¾÷Ä³½ºÆÃ (°¡´É)
+		Demo5 ob = new Test5();//ì—…ìºìŠ¤íŒ… (ê°€ëŠ¥)
 		ob.print();
 		
-//		ob.sub();//È£Ãâ ºÒ°¡´É, ÄÄÆÄÀÏ ¿À·ù
-		((Test5)ob).sub();//´Ù¿î Ä³½ºÆÃ
+//		ob.sub();//í˜¸ì¶œ ë¶ˆê°€ëŠ¥, ì»´íŒŒì¼ ì˜¤ë¥˜
+		((Test5)ob).sub();//ë‹¤ìš´ ìºìŠ¤íŒ…
 	}
 }
 
-//¼±¾ğ¸¸ ÀÖ°í Á¤ÀÇ°¡ ¾ø´Â Ãß»óÅ¬·¡½ºÀÇ ÀÏÁ¾
+//ì„ ì–¸ë§Œ ìˆê³  ì •ì˜ê°€ ì—†ëŠ” ì¶”ìƒí´ë˜ìŠ¤ì˜ ì¼ì¢…
 interface Demo5 {
-	public static final double PI = 3.141592;// ÀÛ¼ºÀº ÀÌ·¸°Ô ÇÒ °ÍÀ» ±ÇÀå...
-	public int A = 10;// static final ¾ø¾îµµ static final·Î ¼±¾ğµÈ °Í °°Àº È¿°ú
+	public static final double PI = 3.141592;// ì‘ì„±ì€ ì´ë ‡ê²Œ í•  ê²ƒì„ ê¶Œì¥...
+	public int A = 10;// static final ì—†ì–´ë„ static finalë¡œ ì„ ì–¸ëœ ê²ƒ ê°™ì€ íš¨ê³¼
 
-	// JDK8¹öÀü ÀÌÀü¿¡¼­´Â ¸Ş¼Òµå ½Ã±×´ÏÃ³ ¼±¾ğ±îÁö¸¸ °¡´ÉÇÏ´Ù(³»¿ë ±â¼ú ºÒ°¡)
+	// JDK8ë²„ì „ ì´ì „ì—ì„œëŠ” ë©”ì†Œë“œ ì‹œê·¸ë‹ˆì²˜ ì„ ì–¸ê¹Œì§€ë§Œ ê°€ëŠ¥í•˜ë‹¤(ë‚´ìš© ê¸°ìˆ  ë¶ˆê°€)
 	public abstract void print();
 
-	void fun();// publicÀÌ ¾ø¾îµµ public,
-	// abstract°¡ ¾ø¾îµµ abstractÅ°¿öµå¸¦ ÁöÁ¤ÇÑ °ÍÀÌ³ª ¸¶Âù°¡ÁöÀÌ´Ù.
+	void fun();// publicì´ ì—†ì–´ë„ public,
+	// abstractê°€ ì—†ì–´ë„ abstractí‚¤ì›Œë“œë¥¼ ì§€ì •í•œ ê²ƒì´ë‚˜ ë§ˆì°¬ê°€ì§€ì´ë‹¤.
 
-	// JDK8¹öÀüºÎÅÍ´Â default ¸Ş¼­µå¿Í static ¸Ş¼­µå¸¦ ¸¸µé ¼ö ÀÖ´Ù.
+	// JDK8ë²„ì „ë¶€í„°ëŠ” default ë©”ì„œë“œì™€ static ë©”ì„œë“œë¥¼ ë§Œë“¤ ìˆ˜ ìˆë‹¤.
 }
 
 class Test5 implements Demo5 {

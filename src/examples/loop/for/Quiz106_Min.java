@@ -1,13 +1,13 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz106_Min {
 	public static void main(String[] args) {
 /*		
-		10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹ŞÀº ÀÔ·Â ¹ŞÀº ¼öÁß °¡Àå ÀÛÀº¼ö
+		10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì€ ì…ë ¥ ë°›ì€ ìˆ˜ì¤‘ ê°€ì¥ ì‘ì€ìˆ˜
 */		
 		Scanner sc=new Scanner(System.in);
 		int n, min=0;
-		System.out.println("10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä...");
+		System.out.println("10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”...");
 		for(int i=0; i<10; i++) {
 			n=sc.nextInt();
 			
@@ -17,14 +17,14 @@ public class Quiz106_Min {
 				min=n;
 			}
 		}
-		System.out.println("ÃÖ¼Ò°ª : " + min);
+		System.out.println("ìµœì†Œê°’ : " + min);
 		sc.close();
 
 /*		
 		Scanner sc=new Scanner(System.in);
 		int n, min=Integer.MAX_VALUE;
 		
-		System.out.println("10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä...");
+		System.out.println("10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”...");
 		for(int i=0; i<10; i++) {
 			n=sc.nextInt();
 			
@@ -32,7 +32,7 @@ public class Quiz106_Min {
 				min=n;
 			}
 		}
-		System.out.println("ÃÖ¼Ò°ª : " + min);
+		System.out.println("ìµœì†Œê°’ : " + min);
 		sc.close();
 */		
 	}

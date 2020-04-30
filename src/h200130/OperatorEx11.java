@@ -1,43 +1,43 @@
-package h200130;
+ï»¿package h200130;
 
 public class OperatorEx11 {
 	/*
-	ÀÚ¹ÙÀÇÁ¤¼® p102 ¿¹Á¦ 3-11.
-	¼±Á¤ ÀÌÀ¯: charÀÇ ¿¬»ê ÀÌÇØÇÏ±â
+	ìžë°”ì˜ì •ì„ p102 ì˜ˆì œ 3-11.
+	ì„ ì • ì´ìœ : charì˜ ì—°ì‚° ì´í•´í•˜ê¸°
 	 * */
 	public static void main(String[] args) {
-		char a = 'a'; // charÀÇ ¹®Àã°ªÀÎ 'a'´Â 97ÀÌ´Ù.
-		char d = 'd'; // charÀÇ ¹®Àã°ªÀÎ 'd'´Â 97+3=100ÀÌ´Ù.
-		char zero = '0'; // charÀÇ ¹®Àã°ªÀÎ '0'´Â int·Î Ç¥ÇöÇÏ¸é 48ÀÌ´Ù.
-		char two = '2'; // charÀÇ ¹®Àã°ªÀÎ  '2'´Â int·Î Ç¥ÇöÇÏ¸é 50ÀÌ´Ù.
+		char a = 'a'; // charì˜ ë¬¸ìž£ê°’ì¸ 'a'ëŠ” 97ì´ë‹¤.
+		char d = 'd'; // charì˜ ë¬¸ìž£ê°’ì¸ 'd'ëŠ” 97+3=100ì´ë‹¤.
+		char zero = '0'; // charì˜ ë¬¸ìž£ê°’ì¸ '0'ëŠ” intë¡œ í‘œí˜„í•˜ë©´ 48ì´ë‹¤.
+		char two = '2'; // charì˜ ë¬¸ìž£ê°’ì¸  '2'ëŠ” intë¡œ í‘œí˜„í•˜ë©´ 50ì´ë‹¤.
 		
 		System.out.printf("'%c' - '%c' = %d%n",d,a,d-a);
-		//%c´Â charÇü ¹®Àã°ªÀ» Ãâ·ÂÇÏ¹Ç·Î ¼øÂ÷ÀûÀ¸·Î 'd'¿Í 'a'ÀÇ °ªÀ» Ãâ·ÂÇÑ´Ù.
+		//%cëŠ” charí˜• ë¬¸ìž£ê°’ì„ ì¶œë ¥í•˜ë¯€ë¡œ ìˆœì°¨ì ìœ¼ë¡œ 'd'ì™€ 'a'ì˜ ê°’ì„ ì¶œë ¥í•œë‹¤.
 		/*
-		%d´Â Á¤¼ý°ªÀ» ³ªÅ¸³½´Ù.
-		ÀÌ¶§ a¿Í dÀÇ º¯¼ö´Â char ÇüÅÂ·Î Á¤ÀÇµÇ¾úÁö¸¸ d-a¿Í °°ÀÌ ¿¬»ê ½Ã¿¡´Â intÇüÀ¸·Î º¯È¯ÀÌ µÇ¾î ¿¬»êÀÌ ¼öÇàµÈ´Ù.
-		'd'ÀÇ °ªÀº 100À» ÀÇ¹ÌÇÏ°í 'a'ÀÇ °ªÀº 97À» ÀÇ¹ÌÇÏ¹Ç·Î 100-97ÀÇ ¿¬»êÀ» ¼öÇàÇÑ °ªÀÎ 3ÀÌ Ãâ·ÂµÈ´Ù.
+		%dëŠ” ì •ìˆ«ê°’ì„ ë‚˜íƒ€ë‚¸ë‹¤.
+		ì´ë•Œ aì™€ dì˜ ë³€ìˆ˜ëŠ” char í˜•íƒœë¡œ ì •ì˜ë˜ì—ˆì§€ë§Œ d-aì™€ ê°™ì´ ì—°ì‚° ì‹œì—ëŠ” intí˜•ìœ¼ë¡œ ë³€í™˜ì´ ë˜ì–´ ì—°ì‚°ì´ ìˆ˜í–‰ëœë‹¤.
+		'd'ì˜ ê°’ì€ 100ì„ ì˜ë¯¸í•˜ê³  'a'ì˜ ê°’ì€ 97ì„ ì˜ë¯¸í•˜ë¯€ë¡œ 100-97ì˜ ì—°ì‚°ì„ ìˆ˜í–‰í•œ ê°’ì¸ 3ì´ ì¶œë ¥ëœë‹¤.
 		 */
 		System.out.printf("'%c' - '%c' = %d%n",two,zero,two-zero);
-		//%c´Â charÇü ¹®Àã°ªÀ» ³ªÅ¸³»¹Ç·Î ¼øÂ÷ÀûÀ¸·Î '2'¿Í '0'ÀÇ ¹®ÀÚ¸¦ Ãâ·ÂÇÑ´Ù.
+		//%cëŠ” charí˜• ë¬¸ìž£ê°’ì„ ë‚˜íƒ€ë‚´ë¯€ë¡œ ìˆœì°¨ì ìœ¼ë¡œ '2'ì™€ '0'ì˜ ë¬¸ìžë¥¼ ì¶œë ¥í•œë‹¤.
 		/*
-		 %d´Â Á¤¼ý°ªÀ» ³ªÅ¸³»°í °á±£°ªÀº 2°¡ ³ª¿Â´Ù.
-		 °Ñº¸±â¿¡´Â 2-0=2·Î ³ªÅ¸³ª´Â °Í °°Áö¸¸, zero¿Í two´Â ¹®ÀÚÇüÀÎ char·Î Á¤ÀÇµÇ¾î ÀÖ´Ù.
-		 µû¶ó¼­ ¿©±â¿¡ µé¾î°¡´Â '0'°ú '2'ÀÇ °ªÀº °¢°¢ intÇüÀ¸·Î ³ªÅ¸³»¸é 48°ú 50À» ÀÇ¹ÌÇÑ´Ù.
-		 ±×·¯¹Ç·Î '2'-'0'ÀÇ ¿¬»êÀ» ¼öÇàÇÏ¸é int·Î º¯È¯µÇ¾î 50-48ÀÌ µÈ´Ù.
-		 50-48ÀÇ °á°úÀÎ 2°¡ Ãâ·ÂµÈ´Ù.
+		 %dëŠ” ì •ìˆ«ê°’ì„ ë‚˜íƒ€ë‚´ê³  ê²°ê´ê°’ì€ 2ê°€ ë‚˜ì˜¨ë‹¤.
+		 ê²‰ë³´ê¸°ì—ëŠ” 2-0=2ë¡œ ë‚˜íƒ€ë‚˜ëŠ” ê²ƒ ê°™ì§€ë§Œ, zeroì™€ twoëŠ” ë¬¸ìží˜•ì¸ charë¡œ ì •ì˜ë˜ì–´ ìžˆë‹¤.
+		 ë”°ë¼ì„œ ì—¬ê¸°ì— ë“¤ì–´ê°€ëŠ” '0'ê³¼ '2'ì˜ ê°’ì€ ê°ê° intí˜•ìœ¼ë¡œ ë‚˜íƒ€ë‚´ë©´ 48ê³¼ 50ì„ ì˜ë¯¸í•œë‹¤.
+		 ê·¸ëŸ¬ë¯€ë¡œ '2'-'0'ì˜ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ë©´ intë¡œ ë³€í™˜ë˜ì–´ 50-48ì´ ëœë‹¤.
+		 50-48ì˜ ê²°ê³¼ì¸ 2ê°€ ì¶œë ¥ëœë‹¤.
 		 */
 		System.out.printf("'%c'=%d%n",a,(int)a);
-		//%c´Â charÀÇ ¹®Àã°ª°ú ´ëÀÀÇÏ¹Ç·Î a º¯¼öÀÇ °ªÀÎ 'a'°¡ Ãâ·ÂµÈ´Ù.
-		//%d´Â intÀÇ Á¤¼ý°ª°ú ´ëÀÀÇÏ¹Ç·Î (int)a°¡ Ãâ·ÂµÇ´Âµ¥, a´Â intÇüÀ¸·Î º¯È¯ÇÏ¸é 97ÀÌ µÈ´Ù.
+		//%cëŠ” charì˜ ë¬¸ìž£ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ a ë³€ìˆ˜ì˜ ê°’ì¸ 'a'ê°€ ì¶œë ¥ëœë‹¤.
+		//%dëŠ” intì˜ ì •ìˆ«ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ (int)aê°€ ì¶œë ¥ë˜ëŠ”ë°, aëŠ” intí˜•ìœ¼ë¡œ ë³€í™˜í•˜ë©´ 97ì´ ëœë‹¤.
 		System.out.printf("'%c'=%d%n",d,(int)d);
-		//%c´Â charÀÇ ¹®Àã°ª°ú ´ëÀÀÇÏ¹Ç·Î d º¯¼öÀÇ °ªÀÎ 'd'°¡ Ãâ·ÂµÈ´Ù.
-		//%d´Â intÀÇ Á¤¼ý°ª°ú ´ëÀÀÇÏ¹Ç·Î (int)d°¡ Ãâ·ÂµÇ´Âµ¥, d´Â intÇüÀ¸·Î º¯È¯ÇÏ¸é 100ÀÌ µÈ´Ù.
+		//%cëŠ” charì˜ ë¬¸ìž£ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ d ë³€ìˆ˜ì˜ ê°’ì¸ 'd'ê°€ ì¶œë ¥ëœë‹¤.
+		//%dëŠ” intì˜ ì •ìˆ«ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ (int)dê°€ ì¶œë ¥ë˜ëŠ”ë°, dëŠ” intí˜•ìœ¼ë¡œ ë³€í™˜í•˜ë©´ 100ì´ ëœë‹¤.
 		System.out.printf("'%c'=%d%n",zero,(int)zero);
-		//%c´Â charÀÇ ¹®Àã°ª°ú ´ëÀÀÇÏ¹Ç·Î zero º¯¼öÀÇ °ªÀÎ '0'ÀÌ Ãâ·ÂµÈ´Ù.
-		//%d´Â intÀÇ Á¤¼ý°ª°ú ´ëÀÀÇÏ¹Ç·Î (int)zero°¡ Ãâ·ÂµÇ´Âµ¥, zero´Â intÇüÀ¸·Î º¯È¯ÇÏ¸é 48ÀÌ µÈ´Ù.
+		//%cëŠ” charì˜ ë¬¸ìž£ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ zero ë³€ìˆ˜ì˜ ê°’ì¸ '0'ì´ ì¶œë ¥ëœë‹¤.
+		//%dëŠ” intì˜ ì •ìˆ«ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ (int)zeroê°€ ì¶œë ¥ë˜ëŠ”ë°, zeroëŠ” intí˜•ìœ¼ë¡œ ë³€í™˜í•˜ë©´ 48ì´ ëœë‹¤.
 		System.out.printf("'%c'=%d%n",two,(int)two);
-		//%c´Â charÀÇ ¹®Àã°ª°ú ´ëÀÀÇÏ¹Ç·Î two º¯¼öÀÇ °ªÀÎ '2'ÀÌ Ãâ·ÂµÈ´Ù.
-		//%d´Â intÀÇ Á¤¼ý°ª°ú ´ëÀÀÇÏ¹Ç·Î (int)two°¡ Ãâ·ÂµÇ´Âµ¥, two´Â intÇüÀ¸·Î º¯È¯ÇÏ¸é 50ÀÌ µÈ´Ù.
+		//%cëŠ” charì˜ ë¬¸ìž£ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ two ë³€ìˆ˜ì˜ ê°’ì¸ '2'ì´ ì¶œë ¥ëœë‹¤.
+		//%dëŠ” intì˜ ì •ìˆ«ê°’ê³¼ ëŒ€ì‘í•˜ë¯€ë¡œ (int)twoê°€ ì¶œë ¥ë˜ëŠ”ë°, twoëŠ” intí˜•ìœ¼ë¡œ ë³€í™˜í•˜ë©´ 50ì´ ëœë‹¤.
 	}
 }

@@ -1,29 +1,29 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class WhileQuizHard3A {
-	// µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº Á¤¼öÀÇ ÃÖ´ë°ø¾à¼ö ¹× ÃÖ¼Ò°ø¹è¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥
-	// while¹®À» ÀÌ¿ëÇÏ¿© ÀÛ¼º
+	// ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì •ìˆ˜ì˜ ìµœëŒ€ê³µì•½ìˆ˜ ë° ìµœì†Œê³µë°°ìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
+	// whileë¬¸ì„ ì´ìš©í•˜ì—¬ ì‘ì„±
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num1, num2,tmp;
-		int r1, r2=1; //³ª¸ÓÁö °Ë»ç
+		int r1, r2=1; //ë‚˜ë¨¸ì§€ ê²€ì‚¬
  		int gcd=0,lcm=0;
 
-		// ÀÔ·Â
-		System.out.print("µÎ ¼ö ? ");
+		// ì…ë ¥
+		System.out.print("ë‘ ìˆ˜ ? ");
 		num1 = sc.nextInt();//32
 		num2 = sc.nextInt();//72
 		
-		//´ë¼Ò ÆÇº° (num1<num2)·Î Á¤·Ä
+		//ëŒ€ì†Œ íŒë³„ (num1<num2)ë¡œ ì •ë ¬
 		if(num1>num2) {
 			tmp = num1;
 			num1=num2;
 			num2=tmp;
 		}
 		
-		//ÃÖ´ë°ø¾à¼ö ¿¬»ê
+		//ìµœëŒ€ê³µì•½ìˆ˜ ì—°ì‚°
 //		r1=num1%num2;
 //		r2=num2%r1;
 //		while(r2!=0) {
@@ -34,9 +34,9 @@ public class WhileQuizHard3A {
 //		gcd=r1;
 //		lcm=num1*num2/gcd;
 		
-		//Ãâ·Â
-		System.out.printf("GCD(ÃÖ´ë°ø¾à¼ö): %d%n", gcd);
-		System.out.printf("LCM(ÃÖ¼Ò°ø¹è¼ö): %d%n", lcm);
+		//ì¶œë ¥
+		System.out.printf("GCD(ìµœëŒ€ê³µì•½ìˆ˜): %d%n", gcd);
+		System.out.printf("LCM(ìµœì†Œê³µë°°ìˆ˜): %d%n", lcm);
 
 		sc.close();
 

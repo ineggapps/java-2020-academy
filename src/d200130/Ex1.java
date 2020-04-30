@@ -1,14 +1,14 @@
-package d200130;
+ï»¿package d200130;
 
 public class Ex1 {
 	public static void main(String[] args) {
 		/*
-			ÀÚ¹ÙÀÇ Á¤¼®¿¡ µîÀåÇÏ´Â ±¸¹®
+			ìë°”ì˜ ì •ì„ì— ë“±ì¥í•˜ëŠ” êµ¬ë¬¸
 		*/
 		int a = 34;
 		String s;
 		s = Integer.toBinaryString(a);
-		//IntegerÅ¬·¡½º¸¦ ÀÌ¿ëÇÏ¿© 10Áø¼ö¸¦ 2Áø¼ö·Î º¯È¯ÇÒ ¼ö ÀÖ´Ù.
+		//Integerí´ë˜ìŠ¤ë¥¼ ì´ìš©í•˜ì—¬ 10ì§„ìˆ˜ë¥¼ 2ì§„ìˆ˜ë¡œ ë³€í™˜í•  ìˆ˜ ìˆë‹¤.
 		//Returns a string representation of the integer argument as an unsigned integer in base 2. 
 		System.out.println(s);
 	}

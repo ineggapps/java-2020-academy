@@ -1,4 +1,4 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
@@ -8,13 +8,13 @@ public class IfEx7 {
 		int n;
 		String s;
 
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥: ");
 		n = sc.nextInt();
 
 		if (n % 2 == 0) {
-			s = "Â¦¼ö";
+			s = "ì§ìˆ˜";
 		} else {
-			s = "È¦¼ö";
+			s = "í™€ìˆ˜";
 		}
 
 		System.out.println(n + ": " + s);

@@ -1,20 +1,20 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayCopyEx2 {
 	public static void main(String[] args) {
 		String[] s1 = { "Java", "Oracle", "web" };
 		String[] s2 = new String[s1.length + 3];
-		//¹è¿­¿¡¼­ °´Ã¼´Â null·Î ÃÊ±âÈ­°¡ µÈ´Ù.
+		//ë°°ì—´ì—ì„œ ê°ì²´ëŠ” nullë¡œ ì´ˆê¸°í™”ê°€ ëœë‹¤.
 		
 		System.arraycopy(s1, 0, s2, 1, s1.length-1);
 		
-		System.out.println("s1 ¹è¿­...");
+		System.out.println("s1 ë°°ì—´...");
 		for(String s:s1) {
 			System.out.print(s+" ");
 		}
 		System.out.println();
 		
-		System.out.println("s2 ¹è¿­...");
+		System.out.println("s2 ë°°ì—´...");
 		for(String s:s2) {
 			System.out.print(s+" ");
 		}

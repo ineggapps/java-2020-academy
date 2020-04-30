@@ -1,4 +1,4 @@
-package com.test;
+ï»¿package com.test;
 
 import java.util.Random;
 
@@ -13,6 +13,6 @@ public class Demo {
 	
 	public int random(int n) {
 		Random rnd = new Random();
-		return rnd.nextInt(n)+1;//1~n »çÀÌ ÇÏ³ªÀÇ ³­¼ö
+		return rnd.nextInt(n)+1;//1~n ì‚¬ì´ í•˜ë‚˜ì˜ ë‚œìˆ˜
 	}
 }

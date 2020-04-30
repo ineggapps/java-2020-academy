@@ -1,27 +1,27 @@
-package d200129;
+ï»¿package d200129;
 
 import java.util.Scanner;
 /*
- * ÁÖÇà°Å¸®¿Í ½Ã¼ÓÀ» ÀÔ·Â ¹Þ¾Æ ÁÖÇà½Ã°£À» °è»êÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À
- * [Ã³¸®Á¶°Ç]
- * - ÁÖÇà °Å¸®¿Í ½Ã¼ÓÀÇ ÀÔ·ÂÀº Scanner Å¬·¡½ºÀÇ nextInt() ¸Þ¼­µå¸¦ ÀÌ¿ëÇÑ´Ù.
- * - ÁÖÇà °Å¸®ÀÇ ´ÜÀ§´Â kmÀÌ¸ç, ½Ã¼ÓÀº km/hÀÌ´Ù.
- * - ÁÖÇà½Ã°£Àº ½Ã, ºÐ, ÃÊ, ´ÜÀ§·Î Ãâ·ÂÇÏ¸ç ÃÊ´Â ¼Ò¼öÁ¡ ¼Â Â° ÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²ÇÏ¿© ¼Ò¼ö µÑ Â° ÀÚ±îÁö Ãâ·ÂÇÑ´Ù.
+ * ì£¼í–‰ê±°ë¦¬ì™€ ì‹œì†ì„ ìž…ë ¥ ë°›ì•„ ì£¼í–‰ì‹œê°„ì„ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤
+ * [ì²˜ë¦¬ì¡°ê±´]
+ * - ì£¼í–‰ ê±°ë¦¬ì™€ ì‹œì†ì˜ ìž…ë ¥ì€ Scanner í´ëž˜ìŠ¤ì˜ nextInt() ë©”ì„œë“œë¥¼ ì´ìš©í•œë‹¤.
+ * - ì£¼í–‰ ê±°ë¦¬ì˜ ë‹¨ìœ„ëŠ” kmì´ë©°, ì‹œì†ì€ km/hì´ë‹¤.
+ * - ì£¼í–‰ì‹œê°„ì€ ì‹œ, ë¶„, ì´ˆ, ë‹¨ìœ„ë¡œ ì¶œë ¥í•˜ë©° ì´ˆëŠ” ì†Œìˆ˜ì  ì…‹ ì§¸ ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼í•˜ì—¬ ì†Œìˆ˜ ë‘˜ ì§¸ ìžê¹Œì§€ ì¶œë ¥í•œë‹¤.
  * */
 public class OperQuiz5 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int distance, velocity;
 		double time;
-		System.out.print("ÁÖÇà °Å¸®(km) ? ");
+		System.out.print("ì£¼í–‰ ê±°ë¦¬(km) ? ");
 		distance = sc.nextInt();
-		System.out.print("½Ã¼Ó(km/h) ? ");
+		System.out.print("ì‹œì†(km/h) ? ");
 		velocity = sc.nextInt();
 
-		// °è»ê ºÎºÐ (°Å¸®/¼Óµµ=½Ã°£)
+		// ê³„ì‚° ë¶€ë¶„ (ê±°ë¦¬/ì†ë„=ì‹œê°„)
 		time = (double) distance / velocity * 3600;
 
-		System.out.printf("%d km => %d½Ã°£ %dºÐ %.2fÃÊ ¼Ò¿ä", distance, (int) time / 3600, (int) (time / 60) % 60, time % 60);
+		System.out.printf("%d km => %dì‹œê°„ %dë¶„ %.2fì´ˆ ì†Œìš”", distance, (int) time / 3600, (int) (time / 60) % 60, time % 60);
 		sc.close();
 	}
 }

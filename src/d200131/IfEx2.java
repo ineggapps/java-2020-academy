@@ -1,19 +1,19 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class IfEx2 {
 	public static void main(String[] args) {
-		// Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼ö°¡ È¦¼öÀÎÁö ÆÇº°
+		// ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ê°€ í™€ìˆ˜ì¸ì§€ íŒë³„
 		Scanner sc = new Scanner(System.in);
 		int n;
 
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥: ");
 		n = sc.nextInt();
 
 //		if (n % 2 == 1) {
 		if ((int)(n & 1) == 1) {
-			System.out.println(n + "Àº È¦¼öÀÔ´Ï´Ù.");
+			System.out.println(n + "ì€ í™€ìˆ˜ì…ë‹ˆë‹¤.");
 		}
 
 		sc.close();

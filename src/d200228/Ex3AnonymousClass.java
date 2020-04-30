@@ -1,4 +1,4 @@
-package d200228;
+ï»¿package d200228;
 
 public class Ex3AnonymousClass {
 	public static void main(String[] args) {
@@ -13,13 +13,13 @@ interface User3 {
 }
 
 class Test3 {
-	//ÀÎÅÍÆäÀÌ½º ±¸Çö
-	//ComparatorÃ³·³ ÁïÈïÀûÀ¸·Î ±×¶§ ±×¶§ ¸Ş¼­µå ±¸ÇöÀ» ´Ş¸®ÇÏ°íÀÚ ÇÒ ¶§ »ç¿ë
+	//ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„
+	//Comparatorì²˜ëŸ¼ ì¦‰í¥ì ìœ¼ë¡œ ê·¸ë•Œ ê·¸ë•Œ ë©”ì„œë“œ êµ¬í˜„ì„ ë‹¬ë¦¬í•˜ê³ ì í•  ë•Œ ì‚¬ìš©
 	public void fun() {
 		User3 uu = new User3() {
 			@Override
 			public void print() {
-				System.out.println("¹æ°¡ ¹æ°¡...");
+				System.out.println("ë°©ê°€ ë°©ê°€...");
 			}
 		};
 		uu.print();
@@ -29,7 +29,7 @@ class Test3 {
 		User3 uu = new User3() {
 			@Override
 			public void print() {
-				System.out.println("¤¾¤¾¤¾.");
+				System.out.println("ã…ã…ã….");
 			}
 		};
 		uu.print();

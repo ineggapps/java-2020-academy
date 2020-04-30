@@ -1,4 +1,4 @@
-package d200218;
+ï»¿package d200218;
 
 import java.text.NumberFormat;
 
@@ -15,24 +15,24 @@ public class Ex2 {
 			Number n2 = nf.parse(s2);
 			Number n3 = nf.parse(s3);
 
-			//NumberÅ¬·¡½º¸¦ ÀÌ¿ëÇÏ¿© ¹Ù·Î ÄÜ¼ÖÃ¢¿¡ Ãâ·ÂÇÒ ¼ö ÀÖÀ½
+			//Numberí´ë˜ìŠ¤ë¥¼ ì´ìš©í•˜ì—¬ ë°”ë¡œ ì½˜ì†”ì°½ì— ì¶œë ¥í•  ìˆ˜ ìˆìŒ
 			System.out.println(n1 + ":" + n2 + ":" + n3);
 
-			//¼Ò¼öÁ¡ ¹ö¸²
-			nf.setParseIntegerOnly(true);//¼Ò¼öÁ¡ ¹ö¸²
+			//ì†Œìˆ˜ì  ë²„ë¦¼
+			nf.setParseIntegerOnly(true);//ì†Œìˆ˜ì  ë²„ë¦¼
 			n2 = nf.parse(s2);
 			System.out.println(n2);
 			
-			//¹éºĞÀ² Ãâ·ÂÇÏ±âµµ °¡´É
+			//ë°±ë¶„ìœ¨ ì¶œë ¥í•˜ê¸°ë„ ê°€ëŠ¥
 			double d= 0.125;
 			NumberFormat nf2 = NumberFormat.getPercentInstance();
 			String s = nf2.format(d);
-			System.out.println(s); //12% Ãâ·ÂµÊ
+			System.out.println(s); //12% ì¶œë ¥ë¨
 			
 			
 			
 		} catch (Exception e) {
-			System.out.println("¿¹¿Ü ¹ß»ı" + e.getMessage());
+			System.out.println("ì˜ˆì™¸ ë°œìƒ" + e.getMessage());
 		}
 	}
 }

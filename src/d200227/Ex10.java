@@ -1,4 +1,4 @@
-package d200227;
+ï»¿package d200227;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -8,14 +8,14 @@ public class Ex10 {
 		Scanner sc = new Scanner(System.in);
 		int n;
 		try {
-			//try catch¹® ¾È¿¡ ÀÖÀ¸¸é ¹«ÇÑ·çÇÁ¸¦ µ¹Áö ¾Ê°í ¹Ù·Î while ¹İº¹¹® ¹ÛÀ¸·Î ºüÁ®³ª°¨.
+			//try catchë¬¸ ì•ˆì— ìˆìœ¼ë©´ ë¬´í•œë£¨í”„ë¥¼ ëŒì§€ ì•Šê³  ë°”ë¡œ while ë°˜ë³µë¬¸ ë°–ìœ¼ë¡œ ë¹ ì ¸ë‚˜ê°.
 			while (true) {
-				System.out.print("¼ö : ");
+				System.out.print("ìˆ˜ : ");
 				n = sc.nextInt();
 				System.out.println(n);
 			}
 		} catch (InputMismatchException e) {
-			System.out.println("¼ıÀÚ¸¸ ÀÔ·Â °¡´É");
+			System.out.println("ìˆ«ìë§Œ ì…ë ¥ ê°€ëŠ¥");
 		} finally {
 			sc.close();
 		}

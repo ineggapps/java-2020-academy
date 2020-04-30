@@ -1,4 +1,4 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
@@ -6,30 +6,30 @@ public class SwitchEx4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String s;
-		System.out.print("¿µ¾î·Î ¿äÀÏ(mon, tue, wed, thu, fri, sat, sun) ÀÔ·Â: ");
+		System.out.print("ì˜ì–´ë¡œ ìš”ì¼(mon, tue, wed, thu, fri, sat, sun) ì…ë ¥: ");
 		s = sc.next();
-		// s´Â 7.0ºÎÅÍ °¡´ÉÇÕ´Ï´Ù.
+		// sëŠ” 7.0ë¶€í„° ê°€ëŠ¥í•©ë‹ˆë‹¤.
 		switch (s) {
 		case "mon":
-			System.out.println("¿ù¿äÀÏ");
+			System.out.println("ì›”ìš”ì¼");
 			break;
 		case "tue":
-			System.out.println("È­¿äÀÏ");
+			System.out.println("í™”ìš”ì¼");
 			break;
 		case "wed":
-			System.out.println("¼ö¿äÀÏ");
+			System.out.println("ìˆ˜ìš”ì¼");
 			break;
 		case "thu":
-			System.out.println("¸ñ¿äÀÏ");
+			System.out.println("ëª©ìš”ì¼");
 			break;
 		case "fri":
-			System.out.println("±İ¿äÀÏ");
+			System.out.println("ê¸ˆìš”ì¼");
 			break;
 		case "sat":
-			System.out.println("Åä¿äÀÏ");
+			System.out.println("í† ìš”ì¼");
 			break;
 		case "sun":
-			System.out.println("ÀÏ¿äÀÏ");
+			System.out.println("ì¼ìš”ì¼");
 			break;
 		}
 		sc.close();

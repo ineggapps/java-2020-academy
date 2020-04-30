@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -6,23 +6,23 @@ import java.util.List;
 public class Ex6 {
 	public static void main(String[] args) {
 		List<UserVO> list = new ArrayList<UserVO>();
-		list.add(new UserVO("µµµµµµ", "010", 26));
-		list.add(new UserVO("ÈÄÈÄÈÄ", "011", 20));
-		list.add(new UserVO("°¡°¡°¡", "012", 22));
-		list.add(new UserVO("¸¶¸¶¸¶", "013", 25));
-		list.add(new UserVO("¸¶°¡°¡", "014", 23));
+		list.add(new UserVO("ë„ë„ë„", "010", 26));
+		list.add(new UserVO("í›„í›„í›„", "011", 20));
+		list.add(new UserVO("ê°€ê°€ê°€", "012", 22));
+		list.add(new UserVO("ë§ˆë§ˆë§ˆ", "013", 25));
+		list.add(new UserVO("ë§ˆê°€ê°€", "014", 23));
 
-		print("Á¤·Ä Àü", list);
+		print("ì •ë ¬ ì „", list);
 
-		// Á¤·Ä
-		// Å©±â ¼øÀ¸·Î Á¤·Ä: Comparable ÀÎÅÍÆäÀÌ½º°¡ ±¸ÇöµÈ Å¬·¡½º¸¸ °¡´É
-		// Collection.sort(list); //ÄÄ¿À·ù - Comparable ÀÎÅÍÆäÀÌ½º°¡ ±¸ÇöµÇ¾î ÀÖÁö ¾Ê±â ¶§¹®ÀÌ´Ù.
-		// (ÀÌÇØ¿ë ¼³¸í)
-		// UserVO´Â ÀÌ¸§, ÀüÈ­¹øÈ£, ³ªÀÌ¸¦ ´ã°í ÀÖ´Âµ¥ ¹«¾ùÀ» ±âÁØÀ¸·Î Á¤·ÄÇÒÁö ¾Ë·ÁÁÖ±â
-		// compareTo(UserVO o) ¸Ş¼­µå¸¦ ¿À¹ö¶óÀÌµùÇÑ ÈÄ CollectionsÀÇ sort¸Ş¼­µå¸¦ È£ÃâÇÑ´Ù.
+		// ì •ë ¬
+		// í¬ê¸° ìˆœìœ¼ë¡œ ì •ë ¬: Comparable ì¸í„°í˜ì´ìŠ¤ê°€ êµ¬í˜„ëœ í´ë˜ìŠ¤ë§Œ ê°€ëŠ¥
+		// Collection.sort(list); //ì»´ì˜¤ë¥˜ - Comparable ì¸í„°í˜ì´ìŠ¤ê°€ êµ¬í˜„ë˜ì–´ ìˆì§€ ì•Šê¸° ë•Œë¬¸ì´ë‹¤.
+		// (ì´í•´ìš© ì„¤ëª…)
+		// UserVOëŠ” ì´ë¦„, ì „í™”ë²ˆí˜¸, ë‚˜ì´ë¥¼ ë‹´ê³  ìˆëŠ”ë° ë¬´ì—‡ì„ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬í• ì§€ ì•Œë ¤ì£¼ê¸°
+		// compareTo(UserVO o) ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”©í•œ í›„ Collectionsì˜ sortë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤.
 		Collections.sort(list);
 
-		print("Á¤·Ä ÈÄ", list);
+		print("ì •ë ¬ í›„", list);
 	}
 
 	public static void print(String title, List<UserVO> list) {
@@ -34,7 +34,7 @@ public class Ex6 {
 }
 
 class UserVO implements Comparable<UserVO> {
-	// Comparable(ºñ±³ÇÒ ¸¸ÇÑ) ÀÎÅÍÆäÀÌ½º°¡ ±¸ÇöµÈ Å¬·¡½º °¡´É
+	// Comparable(ë¹„êµí•  ë§Œí•œ) ì¸í„°í˜ì´ìŠ¤ê°€ êµ¬í˜„ëœ í´ë˜ìŠ¤ ê°€ëŠ¥
 	private String name;
 	private String tel;
 	private int age;
@@ -73,17 +73,17 @@ class UserVO implements Comparable<UserVO> {
 		this.age = age;
 	}
 
-	// comparableTo: Comparable¸Ş¼­µå·Î Á¤·Ä ±âÁØÀ» ¼³Á¤ÇÑ´Ù
-	// String Å¬·¡½ºÀÇ compareTo - »çÀü ½ÄÀ¸·Î ºñ±³
-	// È¥µ¿ À¯ÀÇ
+	// comparableTo: Comparableë©”ì„œë“œë¡œ ì •ë ¬ ê¸°ì¤€ì„ ì„¤ì •í•œë‹¤
+	// String í´ë˜ìŠ¤ì˜ compareTo - ì‚¬ì „ ì‹ìœ¼ë¡œ ë¹„êµ
+	// í˜¼ë™ ìœ ì˜
 
 	@Override
 	public int compareTo(UserVO o) {
-//		 StringÅ¬·¡½ºÀÇ compareTo(): ¹®ÀÚ¿­À» »çÀü ½ÄÀ¸·Î ºñ±³
-//		 return name.compareTo(o.getName());//ÀÌ¸§ ¿À¸§Â÷¼ø ºñ±³
-//		 return -name.compareTo(o.getName());//ÀÌ¸§ ³»¸²Â÷¼ø ºñ±³
-		return age - o.getAge();// ³ªÀÌ ¿À¸§Â÷¼ø
-//		 return -(age-(o.getAge())); //³ªÀÌ ³»¸²Â÷
+//		 Stringí´ë˜ìŠ¤ì˜ compareTo(): ë¬¸ìì—´ì„ ì‚¬ì „ ì‹ìœ¼ë¡œ ë¹„êµ
+//		 return name.compareTo(o.getName());//ì´ë¦„ ì˜¤ë¦„ì°¨ìˆœ ë¹„êµ
+//		 return -name.compareTo(o.getName());//ì´ë¦„ ë‚´ë¦¼ì°¨ìˆœ ë¹„êµ
+		return age - o.getAge();// ë‚˜ì´ ì˜¤ë¦„ì°¨ìˆœ
+//		 return -(age-(o.getAge())); //ë‚˜ì´ ë‚´ë¦¼ì°¨
 	}
 
 	@Override

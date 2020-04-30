@@ -1,20 +1,20 @@
-package d200211;
+ï»¿package d200211;
 
 public class Ex5 {
 	public static void main(String[] args) {
-		//°´Ã¼ ¹è¿­
-//		int[] arr = new int[5]; ±âº»ÀÚ·áÇü°ú ¹è¿­ ¼±¾ð ºñ±³
+		//ê°ì²´ ë°°ì—´
+//		int[] arr = new int[5]; ê¸°ë³¸ìžë£Œí˜•ê³¼ ë°°ì—´ ì„ ì–¸ ë¹„êµ
 		Test5[] tt = new Test5[5];
-		//¡Ú ¹è¿­ÀÇ »ý¼º ¼±¾ð ¡Á °´Ã¼ÀÇ »ý¼º ¼±¾ð
-		//Tes5 t0, t1, t2, t3, t4; 5°³ÀÇ ÂüÁ¶º¯¼ö¸¦ ¼±¾ðÇÑ °Í°ú À¯»çÇÏ´Ù. 
-		//°´Ã¼¸¦ ¾ÆÁ÷ »ý¼ºÇÏÁö ¾ÊÀº »óÅÂÀÌ¸ç ¹è¿­ÀÇ °ø°£¸¸ ÇÒ´çµÈ »óÅÂÀÌ´Ù.
-		//±×·±µ¥ ¹è¿­Àº °ø°£À» ÇÒ´çÇÒ ¶§ ±âº»°ªÀ¸·Î ÂüÁ¶ÀÚ·áÇüÀº null·Î ÃÊ±âÈ­ÇÑ´Ù.
-		//µû¶ó¼­ ¾Æ·¡¿¡¼­ °´Ã¼¸¦ º°µµ·Î »ý¼ºÇÏ¿© ¹è¿­ÀÇ ÀÎµ¦½º¿¡ ÇÒ´çÇÏÁö ¾Ê´Â´Ù¸é ÂüÁ¶ÇÒ ¼ö ¾øÀ¸¸ç,
-		//»ý¼ºÇÏÁö ¾Ê°í ÂüÁ¶ÇÑ´Ù¸é NullPointerExceptionÀÌ ¹ß»ýÇÑ´Ù.
+		//â˜… ë°°ì—´ì˜ ìƒì„± ì„ ì–¸ â‰  ê°ì²´ì˜ ìƒì„± ì„ ì–¸
+		//Tes5 t0, t1, t2, t3, t4; 5ê°œì˜ ì°¸ì¡°ë³€ìˆ˜ë¥¼ ì„ ì–¸í•œ ê²ƒê³¼ ìœ ì‚¬í•˜ë‹¤. 
+		//ê°ì²´ë¥¼ ì•„ì§ ìƒì„±í•˜ì§€ ì•Šì€ ìƒíƒœì´ë©° ë°°ì—´ì˜ ê³µê°„ë§Œ í• ë‹¹ëœ ìƒíƒœì´ë‹¤.
+		//ê·¸ëŸ°ë° ë°°ì—´ì€ ê³µê°„ì„ í• ë‹¹í•  ë•Œ ê¸°ë³¸ê°’ìœ¼ë¡œ ì°¸ì¡°ìžë£Œí˜•ì€ nullë¡œ ì´ˆê¸°í™”í•œë‹¤.
+		//ë”°ë¼ì„œ ì•„ëž˜ì—ì„œ ê°ì²´ë¥¼ ë³„ë„ë¡œ ìƒì„±í•˜ì—¬ ë°°ì—´ì˜ ì¸ë±ìŠ¤ì— í• ë‹¹í•˜ì§€ ì•ŠëŠ”ë‹¤ë©´ ì°¸ì¡°í•  ìˆ˜ ì—†ìœ¼ë©°,
+		//ìƒì„±í•˜ì§€ ì•Šê³  ì°¸ì¡°í•œë‹¤ë©´ NullPointerExceptionì´ ë°œìƒí•œë‹¤.
 		for(int i=0;i<tt.length;i++) {
-			tt[i]= new Test5();//»ý¼ºÀÚ¸¦ ºÒ·¯¾ß °´Ã¼°¡ »ý¼ºµÈ´Ù.
+			tt[i]= new Test5();//ìƒì„±ìžë¥¼ ë¶ˆëŸ¬ì•¼ ê°ì²´ê°€ ìƒì„±ëœë‹¤.
 		}
-		//»ý¼ºÀÚ¸¦ È£ÃâÇÏÁö ¾ÊÀ¸¸é NullPointerExceptionÀÌ ¹ß»ýÇÑ´Ù.
+		//ìƒì„±ìžë¥¼ í˜¸ì¶œí•˜ì§€ ì•Šìœ¼ë©´ NullPointerExceptionì´ ë°œìƒí•œë‹¤.
 		tt[0].b=200;
 		tt[0].print();//10:200
 		tt[2].print();//10:5

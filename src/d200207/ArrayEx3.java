@@ -1,24 +1,24 @@
-package d200207;
+ï»¿package d200207;
 
 public class ArrayEx3 {
 	public static void main(String[] args) {
-		int[] a = new int[3];// ±æÀÌ°¡ 3ÀÎ Á¤¼ö ¹è¿­
+		int[] a = new int[3];// ê¸¸ì´ê°€ 3ì¸ ì •ìˆ˜ ë°°ì—´
 		a[0] = 10;
 		a[1] = 20;
 		a[2] = 30;
-		System.out.println("==¹è¿­ ³»¿ë==");
+		System.out.println("==ë°°ì—´ ë‚´ìš©==");
 		for (int n : a) {
 			System.out.println(n + " ");// 10 20 30
 		}
 		/*
-		 * ¹è¿­ÀÇ º¯°æ
-			¹è¿­ÀÇ Å©±â¸¦ º¯°æÇÏ¸é ÀÌÀü ¹è¿­Àº À§Ä¡¸¦ ÂüÁ¶ÇÒ ¼ö ¾ø±â ‹š¹®¿¡
-			Garbage CollectorÀÇ ´ë»óÀÌ µÇ¸ç,
-			»õ·Î¿î ¹è¿­À» ¸¸µê.
+		 * ë°°ì—´ì˜ ë³€ê²½
+			ë°°ì—´ì˜ í¬ê¸°ë¥¼ ë³€ê²½í•˜ë©´ ì´ì „ ë°°ì—´ì€ ìœ„ì¹˜ë¥¼ ì°¸ì¡°í•  ìˆ˜ ì—†ê¸° Â‹Âšë¬¸ì—
+			Garbage Collectorì˜ ëŒ€ìƒì´ ë˜ë©°,
+			ìƒˆë¡œìš´ ë°°ì—´ì„ ë§Œë“¦.
 		 * */
 		a = new int[5];
 		a[3]=40;a[4]=50;
-		System.out.println("==¹è¿­ÀÇ Å©±â º¯°æ ÈÄ==");
+		System.out.println("==ë°°ì—´ì˜ í¬ê¸° ë³€ê²½ í›„==");
 		for (int n : a) {
 			System.out.println(n + " ");//0 0 0 40 50
 		}

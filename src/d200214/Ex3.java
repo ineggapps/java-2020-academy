@@ -1,4 +1,4 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex3 {
 	public static void main(String[] args) {
@@ -6,16 +6,16 @@ public class Ex3 {
 		String s2 = s1;
 
 		System.out.println(s1 == s2);// true
-		s1 += "korea";// String¿¡¼­ÀÇ +´Â ¹®ÀÚ¿­À» °áÇÕÇÏ´Â °ÍÀÌ´Ù.
-		// ÇÏÁö¸¸ StringÀº ºÒº¯ÀÇ ¿øÄ¢(ÀĞ±â Àü¿ë)ÀÌ¹Ç·Î ¹®ÀÚ¿­À» °áÇÕÇÏ¿© »õ·Î¿î ±â¾ïÀå¼Ò¿¡ ÀúÀåÇÏ°í
-		// »õ·ÎÀÌ ÀúÀåµÈ °÷ÀÇ ÁÖ¼Ú°ªÀ» s1¿¡ ´ëÀÔÇÏ°Ô µÈ´Ù.
+		s1 += "korea";// Stringì—ì„œì˜ +ëŠ” ë¬¸ìì—´ì„ ê²°í•©í•˜ëŠ” ê²ƒì´ë‹¤.
+		// í•˜ì§€ë§Œ Stringì€ ë¶ˆë³€ì˜ ì›ì¹™(ì½ê¸° ì „ìš©)ì´ë¯€ë¡œ ë¬¸ìì—´ì„ ê²°í•©í•˜ì—¬ ìƒˆë¡œìš´ ê¸°ì–µì¥ì†Œì— ì €ì¥í•˜ê³ 
+		// ìƒˆë¡œì´ ì €ì¥ëœ ê³³ì˜ ì£¼ì†Ÿê°’ì„ s1ì— ëŒ€ì…í•˜ê²Œ ëœë‹¤.
 		System.out.println(s1 == s2);// false
 		System.out.println(s1);
 		System.out.println(s2);
 
 		Ex3 ob = new Ex3();
-//		String s= ob;//String°ú Ex3Àº ÀÚ·áÇüÀÌ ¿ÏÀü ´Ù¸£´Ù.
-		String s = "seoul" + ob;//"¹®ÀÚ¿­"+"ÆĞÅ°Áö¸í.Å¬·¡½º¸í@ÇØ½Ã16Áø¼ö"
+//		String s= ob;//Stringê³¼ Ex3ì€ ìë£Œí˜•ì´ ì™„ì „ ë‹¤ë¥´ë‹¤.
+		String s = "seoul" + ob;//"ë¬¸ìì—´"+"íŒ¨í‚¤ì§€ëª….í´ë˜ìŠ¤ëª…@í•´ì‹œ16ì§„ìˆ˜"
 		System.out.println(s);
 	}
 }

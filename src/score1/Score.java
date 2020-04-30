@@ -1,4 +1,4 @@
-package score1;
+ï»¿package score1;
 
 public class Score {
 	public int getTot(int[] s) {
@@ -10,13 +10,13 @@ public class Score {
 	}
 
 	public int getAve(int[] s) {
-		// À½~~~ Áßº¹ ÄÚµåÀÇ Á¦°Å
+		// ìŒ~~~ ì¤‘ë³µ ì½”ë“œì˜ ì œê±°
 		return getTot(s) / s.length;
 	}
 
 	public double getGrade(int s) {
 		double result = 0;
-		if (s >= 95) {// if(s>=95 && s<=100) ¿¡¼­ Á¡¼ö°¡ ¿À·ù°¡ ¾ø´Ù°í °¡Á¤ÇÏ¿´À¸¹Ç·Î s<=100ÀÇ Á¶°Ç½ÄÀº ÀÛ¼ºÇÏÁö ¾Ê´Â´Ù
+		if (s >= 95) {// if(s>=95 && s<=100) ì—ì„œ ì ìˆ˜ê°€ ì˜¤ë¥˜ê°€ ì—†ë‹¤ê³  ê°€ì •í•˜ì˜€ìœ¼ë¯€ë¡œ s<=100ì˜ ì¡°ê±´ì‹ì€ ì‘ì„±í•˜ì§€ ì•ŠëŠ”ë‹¤
 			result = 4.5;
 		} else if (s >= 90) {
 			result = 4.0;

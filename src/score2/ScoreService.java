@@ -1,4 +1,4 @@
-package score2;
+ï»¿package score2;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -6,38 +6,38 @@ import java.util.regex.Pattern;
 
 public class ScoreService {
 	private Scanner sc = new Scanner(System.in);
-	private Score score = new ScoreImpl();// ¾÷Ä³½ºÆÃ
+	private Score score = new ScoreImpl();// ì—…ìºìŠ¤íŒ…
 
 	public void input() {
-		System.out.println("\nÀÔ·Â...");
+		System.out.println("\nì…ë ¥...");
 
 		try {
 			String s;
 			int n;
 			ScoreVO vo = new ScoreVO();
-			System.out.print("ÇĞ¹ø ? ");
+			System.out.print("í•™ë²ˆ ? ");
 			vo.setHak(sc.next());
-			System.out.print("ÀÌ¸§ ? ");
+			System.out.print("ì´ë¦„ ? ");
 			s = inputName();
 			vo.setName(s);
-			System.out.print("±¹¾î ? ");
+			System.out.print("êµ­ì–´ ? ");
 			n = inputScore();
 			vo.setKor(n);
-			System.out.print("¿µ¾î ? ");
+			System.out.print("ì˜ì–´ ? ");
 			n = inputScore();
 			vo.setEng(n);
-			System.out.print("¼öÇĞ ? ");
+			System.out.print("ìˆ˜í•™ ? ");
 			n = inputScore();
 			vo.setMat(n);
 
 			if (score.append(vo) > 0) {
-				System.out.println("Ãß°¡ ¼º°ø");
+				System.out.println("ì¶”ê°€ ì„±ê³µ");
 			} else {
-				System.out.println("Á¤¿ø ÃÊ°ú·Î Ãß°¡ ½ÇÆĞ");
+				System.out.println("ì •ì› ì´ˆê³¼ë¡œ ì¶”ê°€ ì‹¤íŒ¨");
 			}
 
 		} catch (InputMismatchException e) {
-			System.out.println("Á¡¼ö´Â ¼ıÀÚ¸¸ ÀÔÀåÀÌ °¡´ÉÇÕ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ëŠ” ìˆ«ìë§Œ ì…ì¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 		} catch (ScoreValidException e) {
 			System.out.println(e.getMessage());
 		} catch (KoreanValidException e) {
@@ -49,7 +49,7 @@ public class ScoreService {
 	}
 
 	public void print() {
-		System.out.println("\nÃâ·Â...");
+		System.out.println("\nì¶œë ¥...");
 
 		for (int i = 0; i < score.getCount(); i++) {
 			ScoreVO vo = score.getListData()[i];
@@ -61,13 +61,13 @@ public class ScoreService {
 
 	private String inputName() throws KoreanValidException {
 		String s = null;
-		String regex = "^[°¡-ÆR]+$";
-		// ^½ÃÀÛ, $³¡, +(1°³ ÀÌ»ó)
-		// [°¡-ÆR]: \uac00-\ud7a3 (Á¤±ÔÇ¥Çö½Ä)
+		String regex = "^[ê°€-?]+$";
+		// ^ì‹œì‘, $ë, +(1ê°œ ì´ìƒ)
+		// [ê°€-?]: \uac00-\ud7a3 (ì •ê·œí‘œí˜„ì‹)
 		s = sc.next();
 		if (!Pattern.matches(regex, s)) {
-			// Á¤±ÔÇ¥Çö½ÄÀÇ Á¶°Ç¿¡ ¸¸Á·ÇÒ °æ¿ì
-			throw new KoreanValidException("ÀÌ¸§Àº ÇÑ±Û¸¸ ÀÔ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.");
+			// ì •ê·œí‘œí˜„ì‹ì˜ ì¡°ê±´ì— ë§Œì¡±í•  ê²½ìš°
+			throw new KoreanValidException("ì´ë¦„ì€ í•œê¸€ë§Œ ì…ë ¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 		}
 		return s;
 	}
@@ -77,11 +77,11 @@ public class ScoreService {
 		try {
 			s = sc.nextInt();
 			if (s < 0 || s > 100) {
-				throw new ScoreValidException("Á¡¼ö´Â 0~100Á¡¸¸ °¡´ÉÇÕ´Ï´Ù.");
+				throw new ScoreValidException("ì ìˆ˜ëŠ” 0~100ì ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 			}
 		} catch (InputMismatchException e) {
-			sc.nextLine();// ÀÔ·Â¹ŞÀº °ªÀ» ¹ö¸²
-			throw e;// ¿¹¿Ü¸¦ ´Ù½Ã ´øÁü.
+			sc.nextLine();// ì…ë ¥ë°›ì€ ê°’ì„ ë²„ë¦¼
+			throw e;// ì˜ˆì™¸ë¥¼ ë‹¤ì‹œ ë˜ì§.
 		}
 		return s;
 	}

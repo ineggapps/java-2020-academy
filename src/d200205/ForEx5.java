@@ -1,8 +1,8 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForEx5 {
 	public static void main(String[] args) {
-		// for¹®À» while¹®À¸·Î º¯È¯ÇÏ¿© ÀÛ¼ºÇÏ±â ¿¹Á¦
+		// forë¬¸ì„ whileë¬¸ìœ¼ë¡œ ë³€í™˜í•˜ì—¬ ì‘ì„±í•˜ê¸° ì˜ˆì œ
 		for (int i = 1; i <= 10; i++) {
 			for (int j = i; j <= i + 9; j++) {
 				System.out.printf("%3d\t", j);

@@ -1,4 +1,4 @@
-package d200228;
+ï»¿package d200228;
 
 import java.util.Enumeration;
 import java.util.Properties;
@@ -6,26 +6,26 @@ import java.util.Properties;
 public class Ex9System {
 	public static void main(String[] args) {
 		String s;
-		// getProperty ÀÇ Å°°ªÀº ´ë¼Ò¹®ÀÚ ±¸ºĞÇÔ.
+		// getProperty ì˜ í‚¤ê°’ì€ ëŒ€ì†Œë¬¸ì êµ¬ë¶„í•¨.
 		s = System.getProperty("os.name");
 		System.out.println("OS: " + s);
 		s = System.getProperty("java.version");
-		System.out.println("ÀÚ¹Ù ¹öÀü: " + s);
-		s = System.getProperty("user.dir");// ¡Ú ±â¾ïÇÏ°í ÀÖ¾î¾ß ÇÔ.
-		System.out.println("ÇöÀç ÀÛ¾÷ °æ·Î: " + s);
+		System.out.println("ìë°” ë²„ì „: " + s);
+		s = System.getProperty("user.dir");// â˜… ê¸°ì–µí•˜ê³  ìˆì–´ì•¼ í•¨.
+		System.out.println("í˜„ì¬ ì‘ì—… ê²½ë¡œ: " + s);
 
 		System.out.println("===========================");
-		// getProperty¿¡ ÀÔ·ÂÇÏ´Â Key°ª°ú Key¿¡ ´ëÀÀÇÏ´Â °ª(Value)À» ¸ğµÎ Ãâ·ÂÇÏ´Â ¹æ¹ı
-		// ¹İº¹ÀÚÀÇ Á¾·ù: Iterator, ListIterator(¾ÕµÚ ¾ç¹æÇâ ÀÌµ¿ÀÌ °¡´ÉÇÔ), Enumeration
+		// getPropertyì— ì…ë ¥í•˜ëŠ” Keyê°’ê³¼ Keyì— ëŒ€ì‘í•˜ëŠ” ê°’(Value)ì„ ëª¨ë‘ ì¶œë ¥í•˜ëŠ” ë°©ë²•
+		// ë°˜ë³µìì˜ ì¢…ë¥˜: Iterator, ListIterator(ì•ë’¤ ì–‘ë°©í–¥ ì´ë™ì´ ê°€ëŠ¥í•¨), Enumeration
 		Properties p = System.getProperties();
 		Enumeration<?> e = p.propertyNames();
-		while (e.hasMoreElements()) {// Iterator¶û ¸Ş¼­µå¸íÀÌ ´Ù¸£Áö ¿ø¸®´Â ºñ½ÁÇÏ´Ù°í »ı°¢ÇÏÀÚ
+		while (e.hasMoreElements()) {// Iteratorë‘ ë©”ì„œë“œëª…ì´ ë‹¤ë¥´ì§€ ì›ë¦¬ëŠ” ë¹„ìŠ·í•˜ë‹¤ê³  ìƒê°í•˜ì
 			String k = (String) e.nextElement();
 			String v = p.getProperty(k);
 			System.out.println(k + " ==> " + v);
 		}
-		// ÇÁ·Î±×·¥ °­Á¦ Á¾·á
-		System.out.println("ÇÁ·Î±×·¥ °­Á¦ Á¾·á");
+		// í”„ë¡œê·¸ë¨ ê°•ì œ ì¢…ë£Œ
+		System.out.println("í”„ë¡œê·¸ë¨ ê°•ì œ ì¢…ë£Œ");
 		System.exit(0);
 
 	}

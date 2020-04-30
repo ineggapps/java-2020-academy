@@ -1,4 +1,4 @@
-package score2;
+ï»¿package score2;
 
 public class ScoreImpl implements Score {
 	private int count;
@@ -26,7 +26,7 @@ public class ScoreImpl implements Score {
 	@Override
 	public ScoreVO get(String hak) {
 		for (int i = 0; i < count; i++) {
-			//ÇÐ¹ø °Ë»ö
+			//í•™ë²ˆ ê²€ìƒ‰
 			if (list[i].getHak().equals(hak)) {
 				return list[i];
 			}

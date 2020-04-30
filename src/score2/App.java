@@ -1,4 +1,4 @@
-package score2;
+ï»¿package score2;
 
 import java.util.Scanner;
 
@@ -10,17 +10,17 @@ public class App {
 		try {
 			while (true) {
 				do {
-					System.out.print("1.ÀÔ·Â 2. Ãâ·Â 3.Á¾·á > ");
+					System.out.print("1.ìž…ë ¥ 2. ì¶œë ¥ 3.ì¢…ë£Œ > ");
 					ch = sc.nextInt();
 				} while (ch < 1 || ch > 3);
 				if (ch == 3) {
 					break;
 				}
 				switch (ch) {
-				case 1:// ÀÔ·Â
+				case 1:// ìž…ë ¥
 					ss.input();
 					break;
-				case 2:// Ãâ·Â
+				case 2:// ì¶œë ¥
 					ss.print();
 					break;
 				}

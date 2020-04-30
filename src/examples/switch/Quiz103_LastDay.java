@@ -1,16 +1,16 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz103_LastDay {
 	public static void main(String[] args) {
 /*
-		ÀÔ·ÂÇÑ ³â, ¿ù¿¡ ´ëÇÑ ¸¶Áö¸· ³¯Â¥¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		ì…ë ¥í•œ ë…„, ì›”ì— ëŒ€í•œ ë§ˆì§€ë§‰ ë‚ ì§œë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc = new Scanner(System.in);
 
 		int y, m, d;
-		System.out.print("³âµµ ? ");
+		System.out.print("ë…„ë„ ? ");
 		y=sc.nextInt();
-		System.out.print("¿ù ? ");
+		System.out.print("ì›” ? ");
 		m=sc.nextInt();
 		
 		switch (m) {
@@ -26,9 +26,9 @@ public class Quiz103_LastDay {
 		}
 		
 		if(d!=0) {
-			System.out.println(y+"³â "+m+"¿ùÀº " + d+"ÀÏ±îÁö ÀÖ½À´Ï´Ù.");
+			System.out.println(y+"ë…„ "+m+"ì›”ì€ " + d+"ì¼ê¹Œì§€ ìˆìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("ÀÔ·Â ¿À·ù...");
+			System.out.println("ì…ë ¥ ì˜¤ë¥˜...");
 		}
 		
 		sc.close();

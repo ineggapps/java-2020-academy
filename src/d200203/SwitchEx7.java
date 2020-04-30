@@ -1,14 +1,14 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
 public class SwitchEx7 {
 	public static void main(String[] args) {
-		// ÇÑ ¹®ÀÚ¸¦ ÀÔ·Â ¹Þ¾Æ ¼ýÀÚÀÎÁö ¾Æ´ÑÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		// í•œ ë¬¸ìžë¥¼ ìž…ë ¥ ë°›ì•„ ìˆ«ìžì¸ì§€ ì•„ë‹Œì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ëž¨
 		Scanner sc = new Scanner(System.in);
 		char c;
 
-		System.out.print("¹®ÀÚ ÀÔ·Â: ");
+		System.out.print("ë¬¸ìž ìž…ë ¥: ");
 		c = sc.next().charAt(0);
 
 		switch (c) {
@@ -22,19 +22,19 @@ public class SwitchEx7 {
 		case '7':
 		case '8':
 		case '9':
-			System.out.println(c + ": ¼ýÀÚ");
+			System.out.println(c + ": ìˆ«ìž");
 			break;
 		default:
-			System.out.println(c + ": ¼ýÀÚ°¡ ¾Æ´Ô");
+			System.out.println(c + ": ìˆ«ìžê°€ ì•„ë‹˜");
 			break;
 
 		}
 		
-		//ÇÏÁö¸¸ switch¹®À» if¹®À¸·Îµµ Ç¥ÇöÇÒ ¼ö ÀÖÀ½ (´õ °£ÆíÇÏ°í È¿À²Àû)
+		//í•˜ì§€ë§Œ switchë¬¸ì„ ifë¬¸ìœ¼ë¡œë„ í‘œí˜„í•  ìˆ˜ ìžˆìŒ (ë” ê°„íŽ¸í•˜ê³  íš¨ìœ¨ì )
 //		if(c>='0' && c<='9') {
-//			System.out.println(c + ": ¼ýÀÚ");
+//			System.out.println(c + ": ìˆ«ìž");
 //		}else {			
-//			System.out.println(c + ": ¼ýÀÚ°¡ ¾Æ´Ô");
+//			System.out.println(c + ": ìˆ«ìžê°€ ì•„ë‹˜");
 //		}
 		
 		sc.close();

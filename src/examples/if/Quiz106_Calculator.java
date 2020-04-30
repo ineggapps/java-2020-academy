@@ -1,20 +1,20 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz106_Calculator {
 	public static void main(String[] args) {
 /*
-		µÎ¼ö ¹× ¿¬»êÀÚ¸¦ ÀÔ·Â ¹Ş¾Æ »çÄ¢ ¿¬»êÀ» ÇÏ´Â ÇÁ·Î±×·¥
+		ë‘ìˆ˜ ë° ì—°ì‚°ìë¥¼ ì…ë ¥ ë°›ì•„ ì‚¬ì¹™ ì—°ì‚°ì„ í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc = new Scanner(System.in);
 
 		int a, b;
 		char c;
 		
-		System.out.print("µÎ¼ö ? ");
+		System.out.print("ë‘ìˆ˜ ? ");
 		a=sc.nextInt();
 		b=sc.nextInt();
 		
-		System.out.print("¿¬»êÀÚ[+, -, *, /] ? ");
+		System.out.print("ì—°ì‚°ì[+, -, *, /] ? ");
 		c=sc.next().charAt(0);
 
 		if(c=='+') {
@@ -26,7 +26,7 @@ public class Quiz106_Calculator {
 		}else if(c=='/') {
 			System.out.printf("%d / %d = %d\n", a, b, a/b);
 		}else {
-			System.out.println("¿¬»êÀÚ ÀÔ·Â ¿À·ù ÀÔ´Ï´Ù.");
+			System.out.println("ì—°ì‚°ì ì…ë ¥ ì˜¤ë¥˜ ì…ë‹ˆë‹¤.");
 		}
 		
 		sc.close();

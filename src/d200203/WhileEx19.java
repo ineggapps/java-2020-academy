@@ -1,8 +1,8 @@
-package d200203;
+ï»¿package d200203;
 
 public class WhileEx19 {
 	public static void main(String[] args) {
-		//1~100±îÁöÀÇ ÇÕÀ» Ãâ·ÂÇÏµÇ ¼ö°¡ 10ÀÇ ¹è¼ö°¡ µÉ ¶§¸¶´Ù ÇÕÀ» Ãâ·Â
+		//1~100ê¹Œì§€ì˜ í•©ì„ ì¶œë ¥í•˜ë˜ ìˆ˜ê°€ 10ì˜ ë°°ìˆ˜ê°€ ë  ë•Œë§ˆë‹¤ í•©ì„ ì¶œë ¥
 		//1~10: 55
 		//2~20: 210
 		// ...
@@ -12,7 +12,7 @@ public class WhileEx19 {
 		while(n++<100) {
 			s+=n;
 			if(n%10==0) {
-				System.out.printf("%d~%d±îÁöÀÇ ÇÕ: %d%n",1,n,s);
+				System.out.printf("%d~%dê¹Œì§€ì˜ í•©: %d%n",1,n,s);
 			}
 		}
 	}

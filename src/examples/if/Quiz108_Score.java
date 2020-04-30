@@ -1,9 +1,9 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz108_Score {
 	public static void main(String[] args) {
 /*
-		¼ºÀûÃ³¸® ÇÁ·Î±×·¥
+		ì„±ì ì²˜ë¦¬ í”„ë¡œê·¸ë¨
 */
 		Scanner sc = new Scanner(System.in);
 
@@ -13,22 +13,22 @@ public class Quiz108_Score {
 		int score;
 		char grade;
 		
-		System.out.print("ÇĞ¹ø ? ");
+		System.out.print("í•™ë²ˆ ? ");
 		hakbeon = sc.next();
 		
-		System.out.print("ÀÌ¸§ ? ");
+		System.out.print("ì´ë¦„ ? ");
 		name = sc.next();
 		
-		System.out.print("Áß°£°í»ç Á¡¼ö ? ");
+		System.out.print("ì¤‘ê°„ê³ ì‚¬ ì ìˆ˜ ? ");
 		midterm=sc.nextInt();
 
-		System.out.print("±â¸»°í»ç Á¡¼ö ? ");
+		System.out.print("ê¸°ë§ê³ ì‚¬ ì ìˆ˜ ? ");
 		finals=sc.nextInt();
 
-		System.out.print("°á¼®È½¼ö ? ");
+		System.out.print("ê²°ì„íšŸìˆ˜ ? ");
 		absence=sc.nextInt();
 
-		System.out.print("·¹Æ÷Æ® Á¡¼ö ? ");
+		System.out.print("ë ˆí¬íŠ¸ ì ìˆ˜ ? ");
 		report=sc.nextInt();
 		
 		midtermScore = (int)(midterm * 0.4);
@@ -57,7 +57,7 @@ public class Quiz108_Score {
 		else
 			grade = 'F';
 		
-		System.out.println("\nÇĞ¹ø\tÀÌ¸§\tÁß°£°í»ç\t±â¸»°í»ç\tÃâ¼®Á¡¼ö\t·¹Æ÷Æ®\tÇÕ»êÁ¡¼ö\tÇĞÁ¡");
+		System.out.println("\ní•™ë²ˆ\tì´ë¦„\tì¤‘ê°„ê³ ì‚¬\tê¸°ë§ê³ ì‚¬\tì¶œì„ì ìˆ˜\të ˆí¬íŠ¸\tí•©ì‚°ì ìˆ˜\tí•™ì ");
 		System.out.print(hakbeon+"\t");
 		System.out.print(name+"\t");
 		System.out.print(midtermScore+"\t");

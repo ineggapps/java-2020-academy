@@ -1,24 +1,24 @@
-package d200206;
+ï»¿package d200206;
 
 public class ArraryEx3 {
 	public static void main(String[] args) {
-		//¡ÚÀÚ¹ÙÀÇ ¹è¿­Àº °´Ã¼ÀÌ´Ù!
-		//review: ±âº» ÀÚ·áÇü(primitive type), ÂüÁ¶ ÀÚ·áÇü(reference type) ÀÌ ÀÖ´Ù.
-		//¹è¿­Àº ÂüÁ¶ÀÚ·áÇüÀÌ´Ù. ("¹è¿­", Å¬·¡½º, ÀÎÅÍÆäÀÌ½º, ¡¦)
-		int []score=new int[5];//intÇü º¯¼ö°¡ ¾Æ´Ï¶ó ÂüÁ¶Çü º¯¼öÀÌ´Ù.
-		//new: ¸Þ¸ð¸®¸¦ Àâ´Â ¿¬»êÀÚ
-		//score ¹è¿­ÀÇ ÀÌ¸§Àº ÇØ´ç º¯¼öÀÇ ½ÃÀÛ ÁÖ¼Ò¶ó°í »ý°¢ÇÏ¸é µÈ´Ù.
-		//new int[5]¶ó´Â ¼±¾ðÀº ÄÄÇ»ÅÍ´Â ±â¾ïÀåÄ¡¿¡ ¿¬¼ÓÀûÀÎ °ø°£À» ÇÒ´çÇÏ¿© ¸Þ¸ð¸® ÁÖ¼ÒÀÇ À§Ä¡¸¦ °¡¸®Å°µµ·Ï ÇÑ´Ù.
-		//¿¬¼ÓÀûÀ¸·Î °ø°£À» °¡¸®Å°¹Ç·Î ¸Þ¸ð¸®¿¡¼­ ¹è¿­ÀÇ °¡Àå Ã¹ ÁÖ¼ÒÀÇ À§Ä¡¸¦ score¿¡ ÀÔ·ÂÇÏ¿© ÁØ´Ù.
-		//¡Ø C¾ð¾îÀÇ Æ÷ÀÎÅÍ °³³ä°ú À¯»çÇÏÁö¸¸ JAVA¿¡¼­´Â Æ÷ÀÎÅÍ´Â JVM¸¸ Á¶ÀÛÀÌ °¡´ÉÇÏ´Ù.
-		//¡Ø JAVA¿¡¼­´Â ¸Þ¸ð¸® ÁÖ¼Ò¸¦ »ç¿ëÀÚ°¡ ÀüÇô ÂüÁ¶ÇÒ ¼ö ¾ø±â ‹š¹®¿¡ ¸Þ¸ð¸®¸¦ Á÷Á¢ ÇØÁ¦ÇÒ ÇÊ¿äµµ ¾ø´Ù.
-		//=> Garbage Collector°¡ »ç¿ëÇÏÁö ¾Ê´Â ¸Þ¸ð¸® ÁÖ¼Ò¸¦ ÆÄ¾ÇÇÏ¿© ÀÚµ¿À¸·Î Á¤¸®ÇÑ´Ù.
+		//â˜…ìžë°”ì˜ ë°°ì—´ì€ ê°ì²´ì´ë‹¤!
+		//review: ê¸°ë³¸ ìžë£Œí˜•(primitive type), ì°¸ì¡° ìžë£Œí˜•(reference type) ì´ ìžˆë‹¤.
+		//ë°°ì—´ì€ ì°¸ì¡°ìžë£Œí˜•ì´ë‹¤. ("ë°°ì—´", í´ëž˜ìŠ¤, ì¸í„°íŽ˜ì´ìŠ¤, â€¦)
+		int []score=new int[5];//intí˜• ë³€ìˆ˜ê°€ ì•„ë‹ˆë¼ ì°¸ì¡°í˜• ë³€ìˆ˜ì´ë‹¤.
+		//new: ë©”ëª¨ë¦¬ë¥¼ ìž¡ëŠ” ì—°ì‚°ìž
+		//score ë°°ì—´ì˜ ì´ë¦„ì€ í•´ë‹¹ ë³€ìˆ˜ì˜ ì‹œìž‘ ì£¼ì†Œë¼ê³  ìƒê°í•˜ë©´ ëœë‹¤.
+		//new int[5]ë¼ëŠ” ì„ ì–¸ì€ ì»´í“¨í„°ëŠ” ê¸°ì–µìž¥ì¹˜ì— ì—°ì†ì ì¸ ê³µê°„ì„ í• ë‹¹í•˜ì—¬ ë©”ëª¨ë¦¬ ì£¼ì†Œì˜ ìœ„ì¹˜ë¥¼ ê°€ë¦¬í‚¤ë„ë¡ í•œë‹¤.
+		//ì—°ì†ì ìœ¼ë¡œ ê³µê°„ì„ ê°€ë¦¬í‚¤ë¯€ë¡œ ë©”ëª¨ë¦¬ì—ì„œ ë°°ì—´ì˜ ê°€ìž¥ ì²« ì£¼ì†Œì˜ ìœ„ì¹˜ë¥¼ scoreì— ìž…ë ¥í•˜ì—¬ ì¤€ë‹¤.
+		//â€» Cì–¸ì–´ì˜ í¬ì¸í„° ê°œë…ê³¼ ìœ ì‚¬í•˜ì§€ë§Œ JAVAì—ì„œëŠ” í¬ì¸í„°ëŠ” JVMë§Œ ì¡°ìž‘ì´ ê°€ëŠ¥í•˜ë‹¤.
+		//â€» JAVAì—ì„œëŠ” ë©”ëª¨ë¦¬ ì£¼ì†Œë¥¼ ì‚¬ìš©ìžê°€ ì „í˜€ ì°¸ì¡°í•  ìˆ˜ ì—†ê¸° Â‹Âšë¬¸ì— ë©”ëª¨ë¦¬ë¥¼ ì§ì ‘ í•´ì œí•  í•„ìš”ë„ ì—†ë‹¤.
+		//=> Garbage Collectorê°€ ì‚¬ìš©í•˜ì§€ ì•ŠëŠ” ë©”ëª¨ë¦¬ ì£¼ì†Œë¥¼ íŒŒì•…í•˜ì—¬ ìžë™ìœ¼ë¡œ ì •ë¦¬í•œë‹¤.
 		int tot, ave;
 		
 		
-		//½ºÅÃ, Èü
-//		int a; // ½ºÅÃ ¸Þ¸ð¸® ¿µ¿ª¿¡ ÀúÀåÇÑ´Ù
-//		int b[]; //Èü ¸Þ¸ð¸® ¿µ¿ª¿¡ ÀúÀåÇÑ´Ù.
+		//ìŠ¤íƒ, íž™
+//		int a; // ìŠ¤íƒ ë©”ëª¨ë¦¬ ì˜ì—­ì— ì €ìž¥í•œë‹¤
+//		int b[]; //íž™ ë©”ëª¨ë¦¬ ì˜ì—­ì— ì €ìž¥í•œë‹¤.
 		
 		score[0]=60;
 		score[1]=70;
@@ -26,17 +26,17 @@ public class ArraryEx3 {
 		score[3]=70;
 		score[4]=80;
 		
-//		score = new int[6];//±âÁ¸ÀÇ °ø°£À» È®ÀåÇÒ ¼ö´Â ¾ø°í, new int[6]·Î »õ·Î ¼±¾ðÇÏ°Ô µÇ¸é »õ·Î¿î °ø°£ÀÌ ÇÒ´çµÈ´Ù.
-		//ÀÌÀü¿¡ ÇÒ´ç¹ÞÀº °ø°£Àº JVM¿¡ ÀÇÇØ ¼ö°ÅµÊ.
+//		score = new int[6];//ê¸°ì¡´ì˜ ê³µê°„ì„ í™•ìž¥í•  ìˆ˜ëŠ” ì—†ê³ , new int[6]ë¡œ ìƒˆë¡œ ì„ ì–¸í•˜ê²Œ ë˜ë©´ ìƒˆë¡œìš´ ê³µê°„ì´ í• ë‹¹ëœë‹¤.
+		//ì´ì „ì— í• ë‹¹ë°›ì€ ê³µê°„ì€ JVMì— ì˜í•´ ìˆ˜ê±°ë¨.
 		
-		//[Ã·ÀÚ] << Ã·ÀÚ °ø°£Àº byte, short, char, int¸¸ °¡´É (long ºÒ°¡´É)
+		//[ì²¨ìž] << ì²¨ìž ê³µê°„ì€ byte, short, char, intë§Œ ê°€ëŠ¥ (long ë¶ˆê°€ëŠ¥)
 		tot=0;
 		for(int i=0;i<score.length;i++) {
 			tot+=score[i];
 		}
 		ave=tot/score.length;
 		
-		System.out.printf("ÇÕ°è: %d, Æò±Õ: %d%n",tot,ave);
-		System.out.println(score);//==Hashcode (ÀÏ´ÜÀº ¹è¿­ÀÇ ÁÖ¼Ò¸¦ Ãâ·ÂÇØ ÁØ´Ù°í »ý°¢ÇÏÀÚ)
+		System.out.printf("í•©ê³„: %d, í‰ê· : %d%n",tot,ave);
+		System.out.println(score);//==Hashcode (ì¼ë‹¨ì€ ë°°ì—´ì˜ ì£¼ì†Œë¥¼ ì¶œë ¥í•´ ì¤€ë‹¤ê³  ìƒê°í•˜ìž)
 	}
 }

@@ -1,8 +1,8 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForEx6 {
 	public static void main(String[] args) {
-		//´ÙÁß for¹®À» ÀÌ¿ëÇÏ¿© *¹®ÀÚ·Î »ï°¢Çü ¸¸µé±â
+		//ë‹¤ì¤‘ forë¬¸ì„ ì´ìš©í•˜ì—¬ *ë¬¸ìë¡œ ì‚¼ê°í˜• ë§Œë“¤ê¸°
 		for(int i=1;i<=5;i++) {
 			for(int j=1;j<=i;j++) {
 				System.out.print("*");

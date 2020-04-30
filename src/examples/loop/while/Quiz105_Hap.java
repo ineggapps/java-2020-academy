@@ -1,7 +1,7 @@
-public class Quiz105_Hap {
+ï»¿public class Quiz105_Hap {
 	public static void main(String[] args) {
 /*		
-		1+2+...+n ±îÁöÀÇ ÇÕÀÌ 100À» ³Ñ´Â ÃÖ¼ÒÀÇ n°ú ÇÕÃâ·Â
+		1+2+...+n ê¹Œì§€ì˜ í•©ì´ 100ì„ ë„˜ëŠ” ìµœì†Œì˜ nê³¼ í•©ì¶œë ¥
 */
 		int n=0, s=0;
 		
@@ -10,7 +10,7 @@ public class Quiz105_Hap {
 			s+=n;
 		}
 		
-		System.out.println("ÃÖ¼ÒÀÇ n : " + n);
-		System.out.println("ÇÕ : " + s);
+		System.out.println("ìµœì†Œì˜ n : " + n);
+		System.out.println("í•© : " + s);
 	}
 }

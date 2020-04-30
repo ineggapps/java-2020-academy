@@ -1,15 +1,15 @@
-package r200217;
+﻿package r200217;
 
 
 public class ShallowCopyTest {
 	public static void main(String[] args) {
 		Car c = new Car();
-		c.setName("ȫ�浿");
+		c.setName("홍길동");
 		c.p.setPassword(0303);
 		Car c2;
 		try {
 			c2 = c.clone();
-			c2.setName("��浿");
+			c2.setName("김길동");
 			c2.p.setPassword(1234);
 			System.out.println(c.getName());
 			System.out.println(c2.getName());

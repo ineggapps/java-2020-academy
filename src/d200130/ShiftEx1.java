@@ -1,4 +1,4 @@
-package d200130;
+ï»¿package d200130;
 
 public class ShiftEx1 {
 	public static void main(String[] args) {
@@ -11,11 +11,11 @@ public class ShiftEx1 {
 		System.out.println(b);
 		
 		a= -32;
-		b=a>>3;//a°¡ °¡Áø Á¤º¸¸¦ 8·Î ³ª´« ¸òÀ» ±¸ÇÏ´Â °Í°ú µ¿ÀÏÇÏ´Ù. À½¼öÀÇ °æ¿ì¿¡´Â ºÎÈ£ºñÆ®ÀÎ 1ÀÌ °è¼ÓÇØ¼­ Ã¤¿öÁø´Ù.
+		b=a>>3;//aê°€ ê°€ì§„ ì •ë³´ë¥¼ 8ë¡œ ë‚˜ëˆˆ ëª«ì„ êµ¬í•˜ëŠ” ê²ƒê³¼ ë™ì¼í•˜ë‹¤. ìŒìˆ˜ì˜ ê²½ìš°ì—ëŠ” ë¶€í˜¸ë¹„íŠ¸ì¸ 1ì´ ê³„ì†í•´ì„œ ì±„ì›Œì§„ë‹¤.
 		System.out.println(b);
 		
 		a = -32;
-		b=a>>>3;//a°¡ °¡Áø Á¤º¸¸¦ 8·Î ³ª´« ¸òÀ» ±¸ÇÏ´Â °Í°ú µ¿ÀÏÇÏ´Ù. ÇÏÁö¸¸ À½¼öÀÇ °æ¿ì¿¡´Â 
+		b=a>>>3;//aê°€ ê°€ì§„ ì •ë³´ë¥¼ 8ë¡œ ë‚˜ëˆˆ ëª«ì„ êµ¬í•˜ëŠ” ê²ƒê³¼ ë™ì¼í•˜ë‹¤. í•˜ì§€ë§Œ ìŒìˆ˜ì˜ ê²½ìš°ì—ëŠ” 
 		System.out.println(b);
 	}
 }

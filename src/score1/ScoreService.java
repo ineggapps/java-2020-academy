@@ -1,11 +1,11 @@
-package score1;
+ï»¿package score1;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ScoreService {
 	// field area
-	// instance variables´Â 99% private À¸·Î ¼±¾ğÇÏ´Â °ÍÀÌ ¿øÄ¢ÀÌ´Ù.
+	// instance variablesëŠ” 99% private ìœ¼ë¡œ ì„ ì–¸í•˜ëŠ” ê²ƒì´ ì›ì¹™ì´ë‹¤.
 	private Scanner sc = new Scanner(System.in);
 	private ScoreVO[] list = new ScoreVO[50];
 	private int cnt = 0;
@@ -13,19 +13,19 @@ public class ScoreService {
 
 	public void input() {
 		if (cnt >= 50) {
-			System.out.println("ÀÔ·Â ÃÊ°ú");
+			System.out.println("ì…ë ¥ ì´ˆê³¼");
 			return;
 		}
 
-		System.out.println("µ¥ÀÌÅÍ ÀÔ·Â...");
-		String[] subject = { "±¹¾î ? ", "¿µ¾î ? ", "¼öÇĞ ? " };
-		// º»°İÀûÀÎ ÀÔ·Â °úÁ¤ ½ÃÀÛ
+		System.out.println("ë°ì´í„° ì…ë ¥...");
+		String[] subject = { "êµ­ì–´ ? ", "ì˜ì–´ ? ", "ìˆ˜í•™ ? " };
+		// ë³¸ê²©ì ì¸ ì…ë ¥ ê³¼ì • ì‹œì‘
 		ScoreVO vo = new ScoreVO();
-		// ÀÔ·Â ÀıÂ÷
-		System.out.print("ÇĞ¹ø ? ");
+		// ì…ë ¥ ì ˆì°¨
+		System.out.print("í•™ë²ˆ ? ");
 		vo.hak = sc.next();
 
-		System.out.print("ÀÌ¸§ ? ");
+		System.out.print("ì´ë¦„ ? ");
 		vo.name = sc.next();
 
 		for (int i = 0; i < subject.length; i++) {
@@ -33,15 +33,15 @@ public class ScoreService {
 			vo.score[i] = sc.nextInt();
 		}
 		vo.tot = score.getTot(vo.score);
-		list[cnt++] = vo;// ÀÔ·ÂÇÒ ¶§¸¶´Ù ÀÔ·ÂµÈ ÀÚ·á¸¦ Ä«¿îÆ®ÇÑ´Ù.
+		list[cnt++] = vo;// ì…ë ¥í•  ë•Œë§ˆë‹¤ ì…ë ¥ëœ ìë£Œë¥¼ ì¹´ìš´íŠ¸í•œë‹¤.
 	}
 
 	public void print() {
-		//Ãâ·Â Àü¿¡ ¼®Â÷ °è»êÇÏ±â
-		//ÀÔ·ÂÇÒ ¶§ ¸Å¹ø ¼®Â÷ °è»êÇÏ´Â ´ë½Å Ãâ·ÂÇÏ±â Àü¿¡ ÇÑ ¹ø¸¸ ¼öÇàÇÏ±â À§ÇÔ
+		//ì¶œë ¥ ì „ì— ì„ì°¨ ê³„ì‚°í•˜ê¸°
+		//ì…ë ¥í•  ë•Œ ë§¤ë²ˆ ì„ì°¨ ê³„ì‚°í•˜ëŠ” ëŒ€ì‹  ì¶œë ¥í•˜ê¸° ì „ì— í•œ ë²ˆë§Œ ìˆ˜í–‰í•˜ê¸° ìœ„í•¨
 		setRank(list,cnt);
-		System.out.println("µ¥ÀÌÅÍ Ãâ·Â...");
-		System.out.println("ÇĞ¹ø\tÀÌ¸§\t±¹¾î\t¼öÇĞ\t¿µ¾î\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		System.out.println("ë°ì´í„° ì¶œë ¥...");
+		System.out.println("í•™ë²ˆ\tì´ë¦„\têµ­ì–´\tìˆ˜í•™\tì˜ì–´\tì´ì \tí‰ê· \tì„ì°¨");
 		System.out.println("========================");
 		for (int i = 0; i < cnt; i++) {
 			System.out.printf("%s\t%s\t", list[i].hak, list[i].name);
@@ -63,31 +63,31 @@ public class ScoreService {
 	}
 
 	public void findByName() {
-		// ¼øÂ÷ °Ë»ö ±¸Çö
-		System.out.println("ÀÌ¸§ °Ë»ö");
-		System.out.print("°Ë»öÇÒ ÀÌ¸§ ? ");
+		// ìˆœì°¨ ê²€ìƒ‰ êµ¬í˜„
+		System.out.println("ì´ë¦„ ê²€ìƒ‰");
+		System.out.print("ê²€ìƒ‰í•  ì´ë¦„ ? ");
 		String name = sc.next();
 		for (int i = 0; i < cnt; i++) {
-//			if(name.equals(list[i].name)) {//name°ú ¹®ÀÚ¿­ °ªÀÌ °°À¸¸é
-			if (list[i].name.startsWith(name)) {// ¹®ÀÚ¿­ °ªÀÌ nameÀ¸·Î ½ÃÀÛÇÏ¸é (¾ÕºÎºĞ °Ë»ö)
-				System.out.println("ÇĞ¹ø\tÀÌ¸§\tÃÑÁ¡");
+//			if(name.equals(list[i].name)) {//nameê³¼ ë¬¸ìì—´ ê°’ì´ ê°™ìœ¼ë©´
+			if (list[i].name.startsWith(name)) {// ë¬¸ìì—´ ê°’ì´ nameìœ¼ë¡œ ì‹œì‘í•˜ë©´ (ì•ë¶€ë¶„ ê²€ìƒ‰)
+				System.out.println("í•™ë²ˆ\tì´ë¦„\tì´ì ");
 				System.out.printf("%s\t%s\t%d\n", list[i].hak, list[i].name, list[i].tot);
 				break;
 			} else if (i == cnt - 1) {
-				System.out.println("°Ë»ö °á°ú ¾øÀ½");
+				System.out.println("ê²€ìƒ‰ ê²°ê³¼ ì—†ìŒ");
 			}
 		}
 	}
 
 	public void delete() {
-		System.out.println("µ¥ÀÌÅÍ »èÁ¦...");
-		// ÇĞ¹øÀº Áßº¹µÇÁö ¾Ê°Ô ÀÔ·ÂµÇ¾ú´Ù´Â °¡Á¤ ÇÏ¿¡ »èÁ¦ ±â´ÉÀ» ±¸ÇöÇÑ´Ù.
-		System.out.print("»èÁ¦ÇÒ Ç×¸ñÀÇ ÇĞ¹ø ? ");
+		System.out.println("ë°ì´í„° ì‚­ì œ...");
+		// í•™ë²ˆì€ ì¤‘ë³µë˜ì§€ ì•Šê²Œ ì…ë ¥ë˜ì—ˆë‹¤ëŠ” ê°€ì • í•˜ì— ì‚­ì œ ê¸°ëŠ¥ì„ êµ¬í˜„í•œë‹¤.
+		System.out.print("ì‚­ì œí•  í•­ëª©ì˜ í•™ë²ˆ ? ");
 		String hak = sc.next();
 		boolean b = false;
 		for (int i = 0; i < cnt; i++) {
 			if (hak.equals(list[i].hak)) {
-				// Ã£¾ÒÀ¸¸é ¹è¿­ ´ç±â±â
+				// ì°¾ì•˜ìœ¼ë©´ ë°°ì—´ ë‹¹ê¸°ê¸°
 				for (int j = i; j < cnt; j++) {
 					list[j] = list[j + 1];
 				}
@@ -97,9 +97,9 @@ public class ScoreService {
 			}
 		}
 		if(!b) {
-			System.out.println("µî·ÏµÈ ÀÚ·á°¡ ¾Æ´Õ´Ï´Ù. (ÇĞ¹øÀ» Ã£Áö ¸øÇÑ °æ¿ì)");
+			System.out.println("ë“±ë¡ëœ ìë£Œê°€ ì•„ë‹™ë‹ˆë‹¤. (í•™ë²ˆì„ ì°¾ì§€ ëª»í•œ ê²½ìš°)");
 		}else {
-			System.out.println("»èÁ¦µÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 	}
 	
@@ -114,7 +114,7 @@ public class ScoreService {
 				} else if(list[i].tot > list[j].tot){
 					list[j].rank++;
 				}else {
-					//µ¿Á¡ÀÚÀÏ °æ¿ì Ä«¿îÆ®ÇÏÁö ¾Ê¾Æ¾ß ÇÏ´Ï±î!
+					//ë™ì ìì¼ ê²½ìš° ì¹´ìš´íŠ¸í•˜ì§€ ì•Šì•„ì•¼ í•˜ë‹ˆê¹Œ!
 				}
 			}
 		}

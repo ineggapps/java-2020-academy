@@ -1,24 +1,24 @@
-package d200225;
+ï»¿package d200225;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class Ex10 {
 	public static void main(String[] args) {
-		// Set: Áßº¹À» Çã¿ëÇÏÁö ¾Ê´Â´Ù.
-		// TreeSet:Á¤·ÄÇÑ´Ù. Comparable ±¸Çö Å¬·¡½º¸¸ °¡´ÉÇÏ´Ù.
-		// Á¤·Ä ¼Óµµ°¡ ¸Å¿ì ºü¸£´Ù
+		// Set: ì¤‘ë³µì„ í—ˆìš©í•˜ì§€ ì•ŠëŠ”ë‹¤.
+		// TreeSet:ì •ë ¬í•œë‹¤. Comparable êµ¬í˜„ í´ë˜ìŠ¤ë§Œ ê°€ëŠ¥í•˜ë‹¤.
+		// ì •ë ¬ ì†ë„ê°€ ë§¤ìš° ë¹ ë¥´ë‹¤
 
 		Set<String> set = new TreeSet<String>();
 
-		set.add("¼­¿ï");
-		set.add("ºÎ»ê");
-		set.add("´ë±¸");
-		set.add("ÀÎÃµ");
-		set.add("±¤ÁÖ");
-		set.add("´ëÀü");
-		set.add("¿ï»ê");
-		set.add("¼¼Á¾");
-		set.add("¼­¿ï");// ¹«½ÃµÈ´Ù Áßº¹À» Çã¿ëÇÏÁö ¾ÊÀ¸´Ï±î.
+		set.add("ì„œìš¸");
+		set.add("ë¶€ì‚°");
+		set.add("ëŒ€êµ¬");
+		set.add("ì¸ì²œ");
+		set.add("ê´‘ì£¼");
+		set.add("ëŒ€ì „");
+		set.add("ìš¸ì‚°");
+		set.add("ì„¸ì¢…");
+		set.add("ì„œìš¸");// ë¬´ì‹œëœë‹¤ ì¤‘ë³µì„ í—ˆìš©í•˜ì§€ ì•Šìœ¼ë‹ˆê¹Œ.
 
 		System.out.println(set);
 

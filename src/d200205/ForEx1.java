@@ -1,14 +1,14 @@
-package d200205;
+ï»¿package d200205;
 
 public class ForEx1 {
 	public static void main(String[] args) {
-		//´ÙÁßfor¹® ¿¹Á¦
+		//ë‹¤ì¤‘forë¬¸ ì˜ˆì œ
 		for(int i=1;i<=3;i++) {
-			System.out.println("i:"+i);//3¹ø ½ÇÇà
+			System.out.println("i:"+i);//3ë²ˆ ì‹¤í–‰
 			for(int j=1;j<=2;j++) {
-				System.out.println("i:"+i+", j:"+j);//i°¡ 3¹ø X j°¡ 2¹ø¾¿ = ½ÇÇà ½Ã ÃÑ 6¹ø ½ÇÇàµÊ
+				System.out.println("i:"+i+", j:"+j);//iê°€ 3ë²ˆ X jê°€ 2ë²ˆì”© = ì‹¤í–‰ ì‹œ ì´ 6ë²ˆ ì‹¤í–‰ë¨
 			}
-			System.out.println("----------------------");//3¹ø ½ÇÇà
+			System.out.println("----------------------");//3ë²ˆ ì‹¤í–‰
 		}
 	}
 }

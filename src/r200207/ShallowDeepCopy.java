@@ -1,7 +1,7 @@
-package r200207;
+ï»¿package r200207;
 
 class Circle implements Cloneable {
-	// clone ¸Ş¼­µå¸¦ »ç¿ëÇÏ±â À§ÇØ¼­´Â ¹İµå½Ã Cloneable ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇØ¾ß ÇÑ´Ù.
+	// clone ë©”ì„œë“œë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ì„œëŠ” ë°˜ë“œì‹œ Cloneable ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í•´ì•¼ í•œë‹¤.
 	Point p;
 	double r;
 
@@ -10,28 +10,28 @@ class Circle implements Cloneable {
 		this.r = r;
 	}
 
-	public Circle shallowCopy() {// ¾èÀº º¹»ç
+	public Circle shallowCopy() {// ì–•ì€ ë³µì‚¬
 		Object obj = null;
 		try {
 			/*
-			 * ¾èÀº º¹»ç´Â ¿øº»°ú º¹Á¦º»ÀÌ °°Àº °´Ã¼¸¦ °øÀ¯ÇÑ´Ù. CircleÅ¬·¡½º¿¡¼­ »ç¿ëÇÏ´Â °´Ã¼´Â PointÀÌ´Ù. (°´Ã¼¸¦ »ı¼ºÇÒ ¶§
-			 * Point°´Ã¼±îÁö ¹İÈ¯ ¹ŞÀ½) ¾èÀº º¹»ç¿¡¼­´Â »ç¿ëÇÏ°í ÀÖ´Â Point°´Ã¼¸¦ º°µµ·Î º¹»çÇÏÁö ¾Ê´Â´Ù.
+			 * ì–•ì€ ë³µì‚¬ëŠ” ì›ë³¸ê³¼ ë³µì œë³¸ì´ ê°™ì€ ê°ì²´ë¥¼ ê³µìœ í•œë‹¤. Circleí´ë˜ìŠ¤ì—ì„œ ì‚¬ìš©í•˜ëŠ” ê°ì²´ëŠ” Pointì´ë‹¤. (ê°ì²´ë¥¼ ìƒì„±í•  ë•Œ
+			 * Pointê°ì²´ê¹Œì§€ ë°˜í™˜ ë°›ìŒ) ì–•ì€ ë³µì‚¬ì—ì„œëŠ” ì‚¬ìš©í•˜ê³  ìˆëŠ” Pointê°ì²´ë¥¼ ë³„ë„ë¡œ ë³µì‚¬í•˜ì§€ ì•ŠëŠ”ë‹¤.
 			 */
 			obj = super.clone();
 		} catch (CloneNotSupportedException e) {
-			// º¹»ç ±¸¹®Àº Ç×»ó try-catch±¸¹®À¸·Î °¨½Î¾ß ÇÑ´Ù.
+			// ë³µì‚¬ êµ¬ë¬¸ì€ í•­ìƒ try-catchêµ¬ë¬¸ìœ¼ë¡œ ê°ì‹¸ì•¼ í•œë‹¤.
 		}
 		return (Circle) obj;
 	}
 
-	public Circle deepCopy() {// ±íÀº º¹»ç
+	public Circle deepCopy() {// ê¹Šì€ ë³µì‚¬
 		Object obj = null;
 		try {
 			obj = super.clone();
 		} catch (CloneNotSupportedException e) {
 		}
 		Circle c = (Circle) obj;
-		// ±íÀº º¹»ç¿¡¼­´Â Çüº¯È¯»Ó¸¸ ¾Æ´Ï¶ó ÂüÁ¶ÇÏ´Â °´Ã¼±îÁöµµ »õ·Ó°Ô »ı¼ºÇÑ´Ù.
+		// ê¹Šì€ ë³µì‚¬ì—ì„œëŠ” í˜•ë³€í™˜ë¿ë§Œ ì•„ë‹ˆë¼ ì°¸ì¡°í•˜ëŠ” ê°ì²´ê¹Œì§€ë„ ìƒˆë¡­ê²Œ ìƒì„±í•œë‹¤.
 		c.p = new Point(this.p.x, this.p.y);
 		return c;
 
@@ -52,7 +52,7 @@ class Point implements Cloneable {
 
 	@Override
 //	public Object clone()  {
-	public Point clone()  {//°øº¯ ¹İÈ¯Å¸ÀÔ(covariant return type; ÍìÜ¨  ÇÏ³ª·Î º¯ÇÏ¿© ¹İÈ¯ÇÏ´Â Å¸ÀÔ?)
+	public Point clone()  {//ê³µë³€ ë°˜í™˜íƒ€ì…(covariant return type; å…±è®Š  í•˜ë‚˜ë¡œ ë³€í•˜ì—¬ ë°˜í™˜í•˜ëŠ” íƒ€ì…?)
 		Object obj = null;
 		try {
 			obj = super.clone();
@@ -83,7 +83,7 @@ public class ShallowDeepCopy {
 		c1.p.x = 9;
 		c1.p.y = 9;
 
-		System.out.println("=c1ÀÇ º¯°æ ÈÄ =");
+		System.out.println("=c1ì˜ ë³€ê²½ í›„ =");
 		System.out.println("c1=" + c1);
 		System.out.println("c2=" + c2);
 		System.out.println("c3=" + c3);

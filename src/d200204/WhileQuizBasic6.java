@@ -1,19 +1,19 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class WhileQuizBasic6 {
-	//µÎ Á¤¼ö¸¦ ÀÔ·Â ¹Þ¾Æ ÀÔ·Â ¹ÞÀº ¼ö Áß ÀÛÀº ¼ö¿¡¼­ Å« ¼ö±îÁöÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â.
+	//ë‘ ì •ìˆ˜ë¥¼ ìž…ë ¥ ë°›ì•„ ìž…ë ¥ ë°›ì€ ìˆ˜ ì¤‘ ìž‘ì€ ìˆ˜ì—ì„œ í° ìˆ˜ê¹Œì§€ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ ìž‘ì„±í•˜ê¸°.
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n,num1,num2,tmp,sum=0;
 		
-		System.out.print("µÎ ¼ö? ");
+		System.out.print("ë‘ ìˆ˜? ");
 		num1 = sc.nextInt();
 		num2 = sc.nextInt();
 		
-		//num1°ú num2ÀÇ ´ë¼Ò ÆÇº°
-		//num1ÀÌ num2º¸´Ù ÀÛÀº ¼ö°¡ µÇµµ·Ï Á¤·Ä
+		//num1ê³¼ num2ì˜ ëŒ€ì†Œ íŒë³„
+		//num1ì´ num2ë³´ë‹¤ ìž‘ì€ ìˆ˜ê°€ ë˜ë„ë¡ ì •ë ¬
 		if(num1>num2) {
 			tmp=num1;
 			num1=num2;
@@ -21,11 +21,11 @@ public class WhileQuizBasic6 {
 		}
 		
 		n=num1;
-		while(n<=num2) {//(ºÎµîÈ£ Á¶½ÉÇÏ±â!)
+		while(n<=num2) {//(ë¶€ë“±í˜¸ ì¡°ì‹¬í•˜ê¸°!)
 			sum+= n++;
 		}
 		
-		System.out.printf("%d~%d±îÁöÀÇ ÇÕ = %d",num1,num2,sum);
+		System.out.printf("%d~%dê¹Œì§€ì˜ í•© = %d",num1,num2,sum);
 		
 		sc.close();
 	}

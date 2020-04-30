@@ -1,4 +1,4 @@
-package d200221;
+ï»¿package d200221;
 
 public class Ex9 {
 	public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Ex9 {
 	}
 }
 
-//Àß¸ø ÀÛ¼ºµÈ °æ¿ì
+//ì˜ëª» ì‘ì„±ëœ ê²½ìš°
 class User9 {
 	private int value;
 

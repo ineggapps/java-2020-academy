@@ -1,9 +1,9 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayQuiz4 {
 	public static void main(String[] args) {
 		/*
-		 5Çà 5¿­ÀÇ ¹è¿­¿¡ 1~15±îÁöÀÇ ¼ö¸¦ ½ÇÇà°á°úÃ³·³ ¿ª Á÷°¢»ï°¢Çü ¸ğ¾çÀ¸·Î Ã¤¿ö¼­ Ãâ·Â
+		 5í–‰ 5ì—´ì˜ ë°°ì—´ì— 1~15ê¹Œì§€ì˜ ìˆ˜ë¥¼ ì‹¤í–‰ê²°ê³¼ì²˜ëŸ¼ ì—­ ì§ê°ì‚¼ê°í˜• ëª¨ì–‘ìœ¼ë¡œ ì±„ì›Œì„œ ì¶œë ¥
 		 1		2		3		4		5
 	 			6		7		8		9
  						10		11		12	
@@ -13,13 +13,13 @@ public class ArrayQuiz4 {
 		
 		int a[][] = new int[5][5];
 		int cnt=1;
-		//¿¬»êÇÏ¿© °ªÀ» ´ëÀÔÇÏ±â
+		//ì—°ì‚°í•˜ì—¬ ê°’ì„ ëŒ€ì…í•˜ê¸°
 		for(int i=0;i<a.length;i++) {
 			for(int j=i;j<a[0].length;j++) {
 				a[i][j]=cnt++;
 			}
 		}
-		//Ãâ·ÂÇÏ±â
+		//ì¶œë ¥í•˜ê¸°
 		for(int i=0;i<a.length;i++) {
 			for(int j=0;j<a[0].length;j++) {
 				if(a[i][j]!=0) {					

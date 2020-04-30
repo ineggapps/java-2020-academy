@@ -1,4 +1,4 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex1 {
 	public static void main(String[] args) {
@@ -7,46 +7,46 @@ public class Ex1 {
 }
 
 
-//final class Sam{//finalÅ¬·¡½º´Â ÇÏÀ§ Å¬·¡½º¸¦ °¡Áú ¼ö ¾ø´Ù.
+//final class Sam{//finalí´ëž˜ìŠ¤ëŠ” í•˜ìœ„ í´ëž˜ìŠ¤ë¥¼ ê°€ì§ˆ ìˆ˜ ì—†ë‹¤.
 //	int a;
 //}
 
-//class Ex extends Sam{//ÄÄÆÄÀÏ ¿À·ù}
+//class Ex extends Sam{//ì»´íŒŒì¼ ì˜¤ë¥˜}
 
 class Demo1{
 	int a;
-	public final void print() {//ÇÏÀ§ Å¬·¡½º¿¡¼­ ¸Þ¼­µå¸¦ ¿À¹ö¶óÀÌµùÇÒ ¼ö ¾øÀ½
+	public final void print() {//í•˜ìœ„ í´ëž˜ìŠ¤ì—ì„œ ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”©í•  ìˆ˜ ì—†ìŒ
 		System.out.println(a);
 	}
 }
 
 class Demo1Child extends Demo1{
-	final int x; //(»ý¼ºÀÚ, ÃÊ±âÈ­ºí·Ï¿¡¼­ ÃÊ±âÈ­ÇÏÁö ¾ÊÀ» °æ¿ì) ÄÄÆÄÀÏ ¿À·ù (final º¯¼ö°¡ ÃÊ±âÈ­°¡ µÇÁö ¾Ê¾ÒÀ¸¹Ç·Î)
-	final int y=10;//¹Ýµå½Ã ÇÑ ¹ø ÃÊ±âÈ­°¡ ÀÌ·ç¾îÁ®¾ß ÇÑ´Ù.
-	//ÀÎ½ºÅÏ½º finalº¯¼ö´Â ¼±¾ð ½Ã »ý¼ºÀÚ, ÃÊ±âÈ­ ºí·Ï¿¡¼­ ÃÊ±âÈ­°¡ °¡´ÉÇÏ´Ù.
+	final int x; //(ìƒì„±ìž, ì´ˆê¸°í™”ë¸”ë¡ì—ì„œ ì´ˆê¸°í™”í•˜ì§€ ì•Šì„ ê²½ìš°) ì»´íŒŒì¼ ì˜¤ë¥˜ (final ë³€ìˆ˜ê°€ ì´ˆê¸°í™”ê°€ ë˜ì§€ ì•Šì•˜ìœ¼ë¯€ë¡œ)
+	final int y=10;//ë°˜ë“œì‹œ í•œ ë²ˆ ì´ˆê¸°í™”ê°€ ì´ë£¨ì–´ì ¸ì•¼ í•œë‹¤.
+	//ì¸ìŠ¤í„´ìŠ¤ finalë³€ìˆ˜ëŠ” ì„ ì–¸ ì‹œ ìƒì„±ìž, ì´ˆê¸°í™” ë¸”ë¡ì—ì„œ ì´ˆê¸°í™”ê°€ ê°€ëŠ¥í•˜ë‹¤.
 	
-	static final int A=20;//static »ó¼ö¸¦ ÁöÁ¤ÇÒ ¶§´Â ´ë¹®ÀÚÀÌ¸ç ¼±¾ð°ú µ¿½Ã¿¡ ÁöÁ¤ÇÒ ¼ö ÀÖÀ½
+	static final int A=20;//static ìƒìˆ˜ë¥¼ ì§€ì •í•  ë•ŒëŠ” ëŒ€ë¬¸ìžì´ë©° ì„ ì–¸ê³¼ ë™ì‹œì— ì§€ì •í•  ìˆ˜ ìžˆìŒ
 	static final int B;
 	static {
-		//static final º¯¼ö´Â ¼±¾ð ½Ã È¤Àº static ÃÊ±âÈ­ ºí·Ï¿¡¼­¸¸ °¡´ÉÇÏ´Ù.
-		//static final º¯¼ö´Â »ý¼ºÀÚ¿¡¼­ ÃÊ±âÈ­ ºÒ°¡´É.
+		//static final ë³€ìˆ˜ëŠ” ì„ ì–¸ ì‹œ í˜¹ì€ static ì´ˆê¸°í™” ë¸”ë¡ì—ì„œë§Œ ê°€ëŠ¥í•˜ë‹¤.
+		//static final ë³€ìˆ˜ëŠ” ìƒì„±ìžì—ì„œ ì´ˆê¸°í™” ë¶ˆê°€ëŠ¥.
 		B=10;
 	}
 	
 	Demo1Child(){
-//		B=5;//static»ó¼ö´Â °´Ã¼ »ý¼ºÀÚ¿¡¼­´Â ÃÊ±ê°ª ÁöÁ¤À» ÇÒ ¼ö ¾ø´Ù.
-		x=10;//»ý¼ºÀÚ³ª ÃÊ±âÈ­ ºí·Ï¿¡¼­ ¼±¾ðÇÏ¸é ¿À·ù°¡ ¹ß»ýÇÏÁö ¾Ê´Â´Ù.
-//		x=11;ÇÑ ¹ø »ý¼ºÀÚ ºí·Ï¿¡¼­ ¼±¾ðÇÏ¸é ´õ´Â °ªÀ» ¹Ù²Ü ¼ö ¾ø´Ù.
+//		B=5;//staticìƒìˆ˜ëŠ” ê°ì²´ ìƒì„±ìžì—ì„œëŠ” ì´ˆê¹ƒê°’ ì§€ì •ì„ í•  ìˆ˜ ì—†ë‹¤.
+		x=10;//ìƒì„±ìžë‚˜ ì´ˆê¸°í™” ë¸”ë¡ì—ì„œ ì„ ì–¸í•˜ë©´ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì§€ ì•ŠëŠ”ë‹¤.
+//		x=11;í•œ ë²ˆ ìƒì„±ìž ë¸”ë¡ì—ì„œ ì„ ì–¸í•˜ë©´ ë”ëŠ” ê°’ì„ ë°”ê¿€ ìˆ˜ ì—†ë‹¤.
 	}
 	//	public void print() {//cannot override the final method from Demo1
-//		//ÄÄÆÄÀÏ ¿À·ù°¡ ¹ß»ýÇÑ´Ù.
+//		//ì»´íŒŒì¼ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
 //	}
 	
 	public void write() {
 		final int n;
 		n=10;
-//		n=20;//nÀÇ ·ÎÄÃ »ó¼ö ÁöÁ¤Àº ´Ü ÇÑ ¹ø¸¸ °¡´ÉÇÏ´Ù. (ÄÄÆÄÀÏ ¿À·ù)
-//		x=25;//ÄÄÆÄÀÏ ¿À·ù(»ó¼ö¸¦ ¾î¶»°Ô ¹Ù²ã)
+//		n=20;//nì˜ ë¡œì»¬ ìƒìˆ˜ ì§€ì •ì€ ë‹¨ í•œ ë²ˆë§Œ ê°€ëŠ¥í•˜ë‹¤. (ì»´íŒŒì¼ ì˜¤ë¥˜)
+//		x=25;//ì»´íŒŒì¼ ì˜¤ë¥˜(ìƒìˆ˜ë¥¼ ì–´ë–»ê²Œ ë°”ê¿”)
 		System.out.println(x+":"+y+":"+n);
 	}
 

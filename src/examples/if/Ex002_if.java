@@ -1,23 +1,23 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex002_if {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼ö°¡ È¦¼öÀÎÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ê°€ í™€ìˆ˜ì¸ì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
 		Scanner sc=new Scanner(System.in);
 		int n;
 		
-		System.out.print("Á¤¼ö ? ");
+		System.out.print("ì •ìˆ˜ ? ");
 		n=sc.nextInt();
 		
 		if(n%2==1) {
-			System.out.println(n + " : È¦¼ö");
+			System.out.println(n + " : í™€ìˆ˜");
 		}
 		
 /*
 		if((n&1)==1) {
-			System.out.println(n + " : È¦¼ö");
+			System.out.println(n + " : í™€ìˆ˜");
 		} 
 */		
 		sc.close();

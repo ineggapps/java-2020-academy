@@ -1,4 +1,4 @@
-package d200210;
+ï»¿package d200210;
 
 public class InsertionSortEx {
 	public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class InsertionSortEx {
 				}
 			}
 			
-			System.out.printf("%dÈ¸Àü: ", i);
+			System.out.printf("%díšŒì „: ", i);
 			for (int n : num) {
 				System.out.print(n + " ");
 			}
@@ -38,6 +38,6 @@ public class InsertionSortEx {
 }
 
 /*
- Ãß°¡ ÂüÁ¶
+ ì¶”ê°€ ì°¸ì¡°
  https://cornswrold.tistory.com/17
  */

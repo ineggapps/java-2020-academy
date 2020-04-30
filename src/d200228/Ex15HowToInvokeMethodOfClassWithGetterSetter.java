@@ -1,4 +1,4 @@
-package d200228;
+﻿package d200228;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -20,16 +20,16 @@ public class Ex15HowToInvokeMethodOfClassWithGetterSetter {
 //				System.out.println(setter);
 				Method m = cls.getDeclaredMethod(setter, f.getType());
 				// if("java.lang.String".equals)(+getType())
-				// Ÿ�Ժ�
-				if (f.getName().equals("name")) {// �̸�
-					m.invoke(ob, "ȫ�浿");
+				// 타입비교
+				if (f.getName().equals("name")) {// 이름
+					m.invoke(ob, "홍길동");
 				} else if (f.getName().equals("tel")) {
 					m.invoke(ob, "010");
 				} else if (f.getName().equals("age")) {
 					m.invoke(ob, 20);
 				}
 			}
-			// Getter ȣ��
+			// Getter 호출
 			for (Field f : ff) {
 				String fieldName = f.getName();
 				String first = fieldName.substring(0, 1).toUpperCase();

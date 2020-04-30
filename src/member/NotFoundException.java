@@ -1,10 +1,10 @@
-package member;
+ï»¿package member;
 
 public class NotFoundException extends Exception{
 
 	@Override
 	public String getMessage() {
-		return "Á¤º¸¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù";
+		return "ì •ë³´ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤";
 	}
 	
 }

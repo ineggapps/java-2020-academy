@@ -1,7 +1,7 @@
-public class Quiz102_Hap {
+ï»¿public class Quiz102_Hap {
 	public static void main(String[] args) {
 /*		
-		1-2+3 ... +9-10 ÀÇ ¿¬»ê °á°ú
+		1-2+3 ... +9-10 ì˜ ì—°ì‚° ê²°ê³¼
 */
 		int n = 0, s = 0;
 		while(n < 10) {
@@ -23,6 +23,6 @@ public class Quiz102_Hap {
 		}
 */
 
-		System.out.println("°á°ú : " + s);
+		System.out.println("ê²°ê³¼ : " + s);
 	}
 }

@@ -1,13 +1,13 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz105_Max {
 	public static void main(String[] args) {
 /*		
-		10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹ŞÀº ÀÔ·Â ¹ŞÀº ¼öÁß °¡Àå Å«¼ö
+		10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì€ ì…ë ¥ ë°›ì€ ìˆ˜ì¤‘ ê°€ì¥ í°ìˆ˜
 */		
 		Scanner sc=new Scanner(System.in);
 		int n, max=0;
-		System.out.println("10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä...");
+		System.out.println("10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”...");
 		for(int i=0; i<10; i++) {
 			n=sc.nextInt();
 			
@@ -17,13 +17,13 @@ public class Quiz105_Max {
 				max=n;
 			}
 		}
-		System.out.println("ÃÖ´ë°ª : " + max);
+		System.out.println("ìµœëŒ€ê°’ : " + max);
 		sc.close();
 
 /*
 		Scanner sc=new Scanner(System.in);
 		int n, max;
-		System.out.println("10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä...");
+		System.out.println("10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”...");
 		max=sc.nextInt();
 		for(int i=0; i<9; i++) {
 			n=sc.nextInt();
@@ -32,7 +32,7 @@ public class Quiz105_Max {
 				max=n;
 			}
 		}
-		System.out.println("ÃÖ´ë°ª : " + max);
+		System.out.println("ìµœëŒ€ê°’ : " + max);
 		sc.close();
 */
 
@@ -40,7 +40,7 @@ public class Quiz105_Max {
 		Scanner sc=new Scanner(System.in);
 		int n, max=Integer.MIN_VALUE;
 		
-		System.out.println("10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä...");
+		System.out.println("10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”...");
 		for(int i=0; i<10; i++) {
 			n=sc.nextInt();
 			
@@ -48,7 +48,7 @@ public class Quiz105_Max {
 				max=n;
 			}
 		}
-		System.out.println("ÃÖ´ë°ª : " + max);
+		System.out.println("ìµœëŒ€ê°’ : " + max);
 		sc.close();
 */		
 	}

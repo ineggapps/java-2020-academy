@@ -1,27 +1,27 @@
-package d200203;
+ï»¿package d200203;
 
 import java.util.Scanner;
 
 public class WhileEx17 {
 	public static void main(String[] args) {
-		//Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ 1ºÎÅÍ ÀÔ·Â ¹ŞÀº ¼ö±îÁöÀÇ È¦¼ö¸¦ Ãâ·ÂÇÏ°í È¦¼öÀÇ ÇÕÀ» ±¸ÇÏ±â
-		//´Ü, ÇÑ ÁÙ¿¡ È¦¼ö¸¦ 5°³¾¿ Âï´Â´Ù.
-		//¼±¾ğ
+		//ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ 1ë¶€í„° ì…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ì˜ í™€ìˆ˜ë¥¼ ì¶œë ¥í•˜ê³  í™€ìˆ˜ì˜ í•©ì„ êµ¬í•˜ê¸°
+		//ë‹¨, í•œ ì¤„ì— í™€ìˆ˜ë¥¼ 5ê°œì”© ì°ëŠ”ë‹¤.
+		//ì„ ì–¸
 		Scanner sc = new Scanner(System.in);
 		int num;
 		int n=1,s=0,cnt=0;
 		
-		//ÀÔ·Â
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		//ì…ë ¥
+		System.out.print("ì •ìˆ˜ ì…ë ¥: ");
 		num = sc.nextInt();
 		
 		while(n<=num) {
 			System.out.printf("%d\t",n);
-			//¿¬»ê
+			//ì—°ì‚°
 			s+=n;
 			n+=2;
-			//Áß°£ Ãâ·ÂÀ» À§ÇÑ ÁÙ¹Ù²Ş
-			//ÇÑ ÁÙ¿¡ 5°³¾¿ ÀÔ·Â¹Ş°í ÁÙ¹Ù²ŞÇØÁÖ´Â ÄÚµå
+			//ì¤‘ê°„ ì¶œë ¥ì„ ìœ„í•œ ì¤„ë°”ê¿ˆ
+			//í•œ ì¤„ì— 5ê°œì”© ì…ë ¥ë°›ê³  ì¤„ë°”ê¿ˆí•´ì£¼ëŠ” ì½”ë“œ
 			cnt++;
 			if(cnt%5==0) {
 				System.out.println();
@@ -31,11 +31,11 @@ public class WhileEx17 {
 //				cnt=0;
 //			}
 		}
-		//°á°ú
+		//ê²°ê³¼
 		if(cnt%5!=0) {
 			System.out.println();
 		}
-		System.out.print("È¦¼öÀÇ ÇÕ: "+s);
+		System.out.print("í™€ìˆ˜ì˜ í•©: "+s);
 		sc.close();
 	}
 }

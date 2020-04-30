@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz102_Hexadecimal {
 	public static void main(String[] args) {
 /*
-		Á¤¼ö¸¦ ÀÔ·Â ¹Þ¾Æ 16Áø¼ö·Î º¯È¯ÇÏ´Â ÇÁ·Î±×·¥
+		ì •ìˆ˜ë¥¼ ìž…ë ¥ ë°›ì•„ 16ì§„ìˆ˜ë¡œ ë³€í™˜í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */
 		Scanner sc = new Scanner(System.in);
 
 		int num;
 		
-		System.out.print("Á¤¼ö ? ");
+		System.out.print("ì •ìˆ˜ ? ");
 		num=sc.nextInt();
 		// System.out.printf("%X\n", num);
 		
@@ -28,7 +28,7 @@ public class Quiz102_Hexadecimal {
 				break;
 		}
 		
-		System.out.println("°á°ú : "+s);
+		System.out.println("ê²°ê³¼ : "+s);
 		
 		sc.close();
 	}

@@ -1,31 +1,31 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz205_Money {
 	public static void main(String[] args) {
 /*		
-		±İ¾×À» ÀÔ·Â ¹Ş¾Æ È­Æóº° ¸Å¼ö¸¦ ¹İº¹¹®À» ÀÌ¿ëÇÏ¿© ÀÛ¼º
+		ê¸ˆì•¡ì„ ì…ë ¥ ë°›ì•„ í™”íë³„ ë§¤ìˆ˜ë¥¼ ë°˜ë³µë¬¸ì„ ì´ìš©í•˜ì—¬ ì‘ì„±
 */		
 		Scanner sc=new Scanner(System.in);
 
-        int uint = 50000; // È­Æó´ÜÀ§ : 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1
-        int num = 0; // È­Æó ¸Å¼ö
+        int uint = 50000; // í™”íë‹¨ìœ„ : 50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1
+        int num = 0; // í™”í ë§¤ìˆ˜
         boolean sw = false;
 
         int money;
-		System.out.print("±İ¾× ? ");
+		System.out.print("ê¸ˆì•¡ ? ");
 		money=sc.nextInt();
 		
         while (true) {
             num = money / uint;
-            System.out.println(uint + "¿ø±Ç/°³¼ö : " + num);
+            System.out.println(uint + "ì›ê¶Œ/ê°œìˆ˜ : " + num);
 
             if (uint <= 1) {
                 break;
             }
             
-            money = money - uint * num; // ³ª¸ÓÁö ±İ¾×
+            money = money - uint * num; // ë‚˜ë¨¸ì§€ ê¸ˆì•¡
             
-            if(sw) { // È­ÆóÀÇ ´ÙÀ½ ´ÜÀ§
+            if(sw) { // í™”íì˜ ë‹¤ìŒ ë‹¨ìœ„
                 uint /= 2;
 			} else {
                 uint /= 5; 

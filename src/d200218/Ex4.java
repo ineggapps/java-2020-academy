@@ -1,4 +1,4 @@
-package d200218;
+ï»¿package d200218;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -11,7 +11,7 @@ public class Ex4 {
 		String s;
 
 		df = DateFormat.getDateInstance();//2020. 2. 18
-		df = DateFormat.getDateInstance(DateFormat.LONG, Locale.KOREAN);//2020³â 2¿ù 18ÀÏ(È­)
+		df = DateFormat.getDateInstance(DateFormat.LONG, Locale.KOREAN);//2020ë…„ 2ì›” 18ì¼(í™”)
 		s = df.format(date);
 		
 		System.out.println(s);

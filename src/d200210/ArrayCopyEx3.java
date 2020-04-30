@@ -1,4 +1,4 @@
-package d200210;
+ï»¿package d200210;
 
 import java.util.Arrays;
 
@@ -11,8 +11,8 @@ public class ArrayCopyEx3 {
 		System.out.println(a[1][1] + " vs " + b[1][1]);
 
 		/*
-		 * 2Â÷¿ø ¹è¿­¿¡¼­´Â ÇàÀ» º¹Á¦ÇÒ ½Ã¿¡ °ªÀÌ ¾Æ´Ñ ÁÖ¼Ú°ªÀÌ º¹Á¦µÇ¹Ç·Î À¯ÀÇÇÑ´Ù.
-		 * 2Â÷¿ø ¹è¿­ÀÇ °æ¿ì 3¹ø(¿­)¾¿ 2¹ø(Çà) º¹»çÀÛ¾÷À» ÀÏÀÏÀÌ ¼öÇàÇØÁà¾ß ÇÑ´Ù.
+		 * 2ì°¨ì› ë°°ì—´ì—ì„œëŠ” í–‰ì„ ë³µì œí•  ì‹œì— ê°’ì´ ì•„ë‹Œ ì£¼ì†Ÿê°’ì´ ë³µì œë˜ë¯€ë¡œ ìœ ì˜í•œë‹¤.
+		 * 2ì°¨ì› ë°°ì—´ì˜ ê²½ìš° 3ë²ˆ(ì—´)ì”© 2ë²ˆ(í–‰) ë³µì‚¬ìž‘ì—…ì„ ì¼ì¼ì´ ìˆ˜í–‰í•´ì¤˜ì•¼ í•œë‹¤.
 		 */
 		b[1][1] = 500;
 		System.out.println(a[1][1] + " vs " + b[1][1]);

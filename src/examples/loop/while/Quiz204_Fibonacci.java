@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz204_Fibonacci {
 	public static void main(String[] args) {
 /*		
-		0ºÎÅÍ ÀÔ·Â ¹ŞÀº °³¼ö¸¸Å­ÀÇ ÇÇº¸³ªÄ¡¼ö¿­À» Ãâ·Â
+		0ë¶€í„° ì…ë ¥ ë°›ì€ ê°œìˆ˜ë§Œí¼ì˜ í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´ì„ ì¶œë ¥
 */		
 		Scanner sc=new Scanner(System.in);
         int a, b, c, n;
         int cnt;
         
-        System.out.print("°³¼ö ? ");
+        System.out.print("ê°œìˆ˜ ? ");
         cnt = sc.nextInt();
         
         n=0;   a=0;   b=1;

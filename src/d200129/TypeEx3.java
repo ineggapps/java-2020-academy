@@ -1,17 +1,17 @@
-package d200129;
+ï»¿package d200129;
 
 public class TypeEx3 {
 	public static void main(String[] args) {
 		char a;
 		int b;
 		
-		a='\u0041'; //10Áø¼ö·Î 65ÀÌ´Ù.
+		a='\u0041'; //10ì§„ìˆ˜ë¡œ 65ì´ë‹¤.
 		System.out.println(a);
 		
-		b='\013';// 8Áø¼ö·Î 13ÀÌ´Ù. (10Áø¼ö·Î 11ÀÌ´Ù)
+		b='\013';// 8ì§„ìˆ˜ë¡œ 13ì´ë‹¤. (10ì§„ìˆ˜ë¡œ 11ì´ë‹¤)
 		System.out.println(b);
 		
-		a='\105';//10Áø¼ö 69 => A(65), B(66), C(67), D(68), E(69)
+		a='\105';//10ì§„ìˆ˜ 69 => A(65), B(66), C(67), D(68), E(69)
 		System.out.println(a);//E
 		
 		a=97;
@@ -19,19 +19,19 @@ public class TypeEx3 {
 		
 		System.out.println('\\');
 		
-		int c='´ë';
+		int c='ëŒ€';
 		System.out.println(c);
 		
-		a='A';//char·Î ¼±¾ğÇÏ¿´À½
+		a='A';//charë¡œ ì„ ì–¸í•˜ì˜€ìŒ
 //		a=a+10;//Type mismatch: cannot convert from int to char
-		a=(char)(a+10);//Ä³½ºÆÃ
+		a=(char)(a+10);//ìºìŠ¤íŒ…
 		System.out.println(a);
 		
-		b='A';//int·Î ¼±¾ğÇÏ¿´À½
-		b=b+'C'; // 65+67ÀÇ °á±£°ªÀÎ 132°¡ ÀúÀåµÈ´Ù.
+		b='A';//intë¡œ ì„ ì–¸í•˜ì˜€ìŒ
+		b=b+'C'; // 65+67ì˜ ê²°ê´ê°’ì¸ 132ê°€ ì €ì¥ëœë‹¤.
 		System.out.println(b);
 		
-		float d='A';//½Ç¼öÇüÀ¸·Î ¼±¾ğµÇ¾úÀ¸¹Ç·Î 65.0°ªÀÌ ÀúÀåµÈ´Ù.
+		float d='A';//ì‹¤ìˆ˜í˜•ìœ¼ë¡œ ì„ ì–¸ë˜ì—ˆìœ¼ë¯€ë¡œ 65.0ê°’ì´ ì €ì¥ëœë‹¤.
 		System.out.println(d);
 		
 		System.out.println(123+123+"123"+123);

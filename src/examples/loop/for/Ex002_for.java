@@ -1,7 +1,7 @@
-public class Ex002_for {
+ï»¿public class Ex002_for {
 	public static void main(String[] args) {
 /*
-		10~1 ±îÁö Á¤¼ö¸¦ ¿ªÀ¸·Î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		10~1 ê¹Œì§€ ì •ìˆ˜ë¥¼ ì—­ìœ¼ë¡œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */	
 		
 		int n;
@@ -13,7 +13,7 @@ public class Ex002_for {
 
 /*		
 		int n;
-		for(n=10; n<=1; n--) { // Á¶°ÇÀ» ¸¸Á·ÇÏÁö ¾ÊÀ¸¸é ÇÑ¹øµµ ½ÇÇàÇÏÁö ¾Ê´Â´Ù.
+		for(n=10; n<=1; n--) { // ì¡°ê±´ì„ ë§Œì¡±í•˜ì§€ ì•Šìœ¼ë©´ í•œë²ˆë„ ì‹¤í–‰í•˜ì§€ ì•ŠëŠ”ë‹¤.
 			System.out.print(n+"  ");
 		}
 		System.out.println();

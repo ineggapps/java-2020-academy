@@ -1,4 +1,4 @@
-package member;
+﻿package member;
 
 public class MemberVO {
 	private String name;

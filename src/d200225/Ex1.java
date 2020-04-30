@@ -1,4 +1,4 @@
-package d200225;
+ï»¿package d200225;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,42 +8,42 @@ public class Ex1 {
 	public static void main(String[] args) {
 		List<String> list1 = new ArrayList<String>();
 
-		list1.add("¼­¿ï");
-		list1.add("ºÎ»ê");
-		list1.add("´ë±¸");
+		list1.add("ì„œìš¸");
+		list1.add("ë¶€ì‚°");
+		list1.add("ëŒ€êµ¬");
 
 		List<String> list2 = new ArrayList<String>();
 
-		list2.add("°­¿ø");
-		list2.add("°æ±â");
-		list2.add("°æ»ó");
+		list2.add("ê°•ì›");
+		list2.add("ê²½ê¸°");
+		list2.add("ê²½ìƒ");
 
-		// list2¿¡ list1ÀÇ ¸ğµç µ¥ÀÌÅÍ¸¦ Ãß°¡ÇÏ±â
+		// list2ì— list1ì˜ ëª¨ë“  ë°ì´í„°ë¥¼ ì¶”ê°€í•˜ê¸°
 		list2.addAll(list1);
 		System.out.println(list2);
 
-		// List¿¡¼­ String¹è¿­·Î º¯È¯ÇÏ±â
+		// Listì—ì„œ Stringë°°ì—´ë¡œ ë³€í™˜í•˜ê¸°
 		String[] ss = list2.toArray(new String[list2.size()]);
 		for (String s : ss) {
 			System.out.print(s + " ");
 		}
 		System.out.println();
 
-		//String¹è¿­¿¡¼­ List·Î º¯È¯ÇÏ±â
+		//Stringë°°ì—´ì—ì„œ Listë¡œ ë³€í™˜í•˜ê¸°
 		List<String> list3 = Arrays.asList(ss);
-		System.out.println("¸®½ºÆ® º¯È¯ ÈÄ: " + list3);
+		System.out.println("ë¦¬ìŠ¤íŠ¸ ë³€í™˜ í›„: " + list3);
 		
-		//subList(a,b): aÀÎµ¦½º¿¡¼­ b-1ºÎºĞÀÇ List¸¸ ÃßÃâÇÏ±â
-		List<String> list4= list2.subList(2, 4); //2,3¹øÂ° ÀÎµ¦½ºÀÇ ÀÚ·á¸¦ ÃßÃâ
+		//subList(a,b): aì¸ë±ìŠ¤ì—ì„œ b-1ë¶€ë¶„ì˜ Listë§Œ ì¶”ì¶œí•˜ê¸°
+		List<String> list4= list2.subList(2, 4); //2,3ë²ˆì§¸ ì¸ë±ìŠ¤ì˜ ìë£Œë¥¼ ì¶”ì¶œ
 		System.out.println(list4);
 		
-		//ÀüÃ¼ »èÁ¦
+		//ì „ì²´ ì‚­ì œ
 		list1.clear();
 		System.out.println(list1.size());
 		
-		//list3ÀÇ °æ»ó, ¼­¿ï, ºÎ»ê »èÁ¦
-		System.out.println("»èÁ¦ Àü: "+list2);
-		list2.subList(2, 5).clear();//ÀÎµ¦½º 2, 3, 4 »èÁ¦
-		System.out.println("»èÁ¦ ÈÄ: "+list2);
+		//list3ì˜ ê²½ìƒ, ì„œìš¸, ë¶€ì‚° ì‚­ì œ
+		System.out.println("ì‚­ì œ ì „: "+list2);
+		list2.subList(2, 5).clear();//ì¸ë±ìŠ¤ 2, 3, 4 ì‚­ì œ
+		System.out.println("ì‚­ì œ í›„: "+list2);
 	}
 }

@@ -1,29 +1,29 @@
-package d200204;
+ï»¿package d200204;
 
 import java.util.Scanner;
 
 public class WhileQuizHard7 {
-	//¾çÀÇ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº Á¤¼ö¸¦ µÚÁı¾î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+	//ì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ì •ìˆ˜ë¥¼ ë’¤ì§‘ì–´ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num,reverse=0;
 		int tmp=1,size=0,cnt=0,down=1, up=1;
 		do {			
-			System.out.print("¼ö? ");
+			System.out.print("ìˆ˜? ");
 			num = sc.nextInt();
 		}while(num<0);
 		
-		//124°¡ ¿ÔÀ» ¶§ 421ÀÌ Ãâ·ÂµÇµµ·Ï ÇÏ´Â °Í¸¸ »ı°¢
-		//cnt´Â ÀÚ¸´¼ö ¸Å±â±â
+		//124ê°€ ì™”ì„ ë•Œ 421ì´ ì¶œë ¥ë˜ë„ë¡ í•˜ëŠ” ê²ƒë§Œ ìƒê°
+		//cntëŠ” ìë¦¿ìˆ˜ ë§¤ê¸°ê¸°
 		tmp=num;
 		while(tmp!=0) {
 			tmp/=10;
-			size++; //±æÀÌ¸¦ ¹ß°ßÇÒ ¶§¸¶´Ù 1¾¿ Áõ°¡
+			size++; //ê¸¸ì´ë¥¼ ë°œê²¬í•  ë•Œë§ˆë‹¤ 1ì”© ì¦ê°€
 		}
-		//ÀÚ¸´¼ö-1Àº 10ÀÇ Áö¼öÀÓ
-//		System.out.println("ÀÔ·Â ¹ŞÀº °ªÀÇ 10ÀÇ Áö¼ö´Â "+(size-1));
+		//ìë¦¿ìˆ˜-1ì€ 10ì˜ ì§€ìˆ˜ì„
+//		System.out.println("ì…ë ¥ ë°›ì€ ê°’ì˜ 10ì˜ ì§€ìˆ˜ëŠ” "+(size-1));
 		
-		//ÀÚ¸´¼ö-1·Î Áö¼ö ¸¸µé±â
+		//ìë¦¿ìˆ˜-1ë¡œ ì§€ìˆ˜ ë§Œë“¤ê¸°
 		cnt=size-1;
 		tmp=num;
 		while(cnt>0) {
@@ -31,39 +31,39 @@ public class WhileQuizHard7 {
 			down*=10;
 		}
 		
-		//124ÀÏ °æ¿ì down=100ÀÌ µÊ
-		//up=1ºÎÅÍ ½ÃÀÛ (10À» ´©ÀûÇÏ¿© °öÇÔ)
+		//124ì¼ ê²½ìš° down=100ì´ ë¨
+		//up=1ë¶€í„° ì‹œì‘ (10ì„ ëˆ„ì í•˜ì—¬ ê³±í•¨)
 		cnt=size;
 		tmp=num;
-		while(cnt>0) {//3È¸ ¹İº¹ (cnt=3, 2, 1) ±×¸®°í 0ÀÌ µÉ ¶§ Á¶°Çºñ±³ ÈÄ Á¾·á
-			cnt--;//¾Æ·¡ÀÇ ±¸¹®¿¡¼­´Â 2 , 1, 0À¸·Î È°¿ëÇÏ¸é µÈ´Ù.
+		while(cnt>0) {//3íšŒ ë°˜ë³µ (cnt=3, 2, 1) ê·¸ë¦¬ê³  0ì´ ë  ë•Œ ì¡°ê±´ë¹„êµ í›„ ì¢…ë£Œ
+			cnt--;//ì•„ë˜ì˜ êµ¬ë¬¸ì—ì„œëŠ” 2 , 1, 0ìœ¼ë¡œ í™œìš©í•˜ë©´ ëœë‹¤.
 			reverse+=(tmp/down) * up ;
 //			System.out.println((tmp/down) * up);
-//			System.out.println("tmpÀü: "+tmp);
+//			System.out.println("tmpì „: "+tmp);
 //			System.out.printf("((%d/%d)*%d)*%d=%d%n",tmp,down,up,down,((tmp/down) * up )*down);
 			tmp-= (tmp/down )*down;
-//			System.out.println("tmpÈÄ: "+tmp);
+//			System.out.println("tmpí›„: "+tmp);
 //			System.out.printf("reverse=%d\t tmp=%d\t down=%d\t up=%d%n",reverse,tmp, down,up);
 			down/=10;
 			up*=10;
 //			System.out.println("===");
 		}
 		
-		//ÀÚ¸´¼ö¸¦ ¿ªÀ¸·Î °öÇÏ°í ´õÇÏ¸é¼­ ¼ıÀÚ µÚÁı±â
+		//ìë¦¿ìˆ˜ë¥¼ ì—­ìœ¼ë¡œ ê³±í•˜ê³  ë”í•˜ë©´ì„œ ìˆ«ì ë’¤ì§‘ê¸°
 //		cnt=size;
 //		tmp=num;
 //		while(cnt>0) {
 ////			System.out.println(size-cnt+","+cnt);// size-cnt: 0 1 2 / cnt: 3 2 1
 //			reverse += tmp/(10*(cnt-1)) * 10*(size-cnt);
-//			System.out.printf("tmp=%d cnt=%d À¸=%d\n",tmp, cnt, (tmp/(10*(cnt-1))));
+//			System.out.printf("tmp=%d cnt=%d ìœ¼=%d\n",tmp, cnt, (tmp/(10*(cnt-1))));
 //			System.out.printf("reverse: %d / tmp/(cnt-1)=%d\n",reverse,tmp/(cnt-1));
 //			tmp %=(cnt-1);
 //			System.out.printf("tmp: %d%n",tmp);
 //			cnt--;		
 //		}
 		
-		System.out.printf("¿ø·¡ÀÇ ¼ö: %d%n",num);
-		System.out.printf("µÚÁıÀº ¼ö: %d%n",reverse);
+		System.out.printf("ì›ë˜ì˜ ìˆ˜: %d%n",num);
+		System.out.printf("ë’¤ì§‘ì€ ìˆ˜: %d%n",reverse);
 		sc.close();
 	}
 }

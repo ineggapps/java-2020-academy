@@ -1,7 +1,7 @@
-public class Ex008_Factorial {
+ï»¿public class Ex008_Factorial {
 	public static void main(String[] args) {
 /*
-		10!(ÆÑÅä¸®¾ó, factorial : 1*2*3...*10) °á°ú¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		10!(íŒ©í† ë¦¬ì–¼, factorial : 1*2*3...*10) ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
 */
 		int s, n;
 		s=1;
@@ -10,6 +10,6 @@ public class Ex008_Factorial {
 			n++;
 			s*=n;
 		}
-		System.out.println("°á°ú : "+s); // 3628800
+		System.out.println("ê²°ê³¼ : "+s); // 3628800
 	}
 }

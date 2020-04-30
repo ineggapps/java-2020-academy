@@ -1,26 +1,26 @@
-package d200204;
+ï»¿package d200204;
 
 public class WhileQuizBasic8 {
 	public static void main(String[] args) {
 		int n=0,s=0,ss=0;
-		//n: 20¹øÂ° Ç×±îÁö ¹Ýº¹¹®À» ½ÇÇà½ÃÅ°±â À§ÇÑ º¯¼ö
+		//n: 20ë²ˆì§¸ í•­ê¹Œì§€ ë°˜ë³µë¬¸ì„ ì‹¤í–‰ì‹œí‚¤ê¸° ìœ„í•œ ë³€ìˆ˜
 		
 		/*
-		°èÂ÷¼ö¿­: 		1		2		4		7		11
-		µîÂ÷¼ö¿­:		0		1		2		3		4
+		ê³„ì°¨ìˆ˜ì—´: 		1		2		4		7		11
+		ë“±ì°¨ìˆ˜ì—´:		0		1		2		3		4
 		
 		 IDEA: 
-		°èÂ÷¼ö¿­ÀÇ 4´Â 1(°èÂ÷¼ö¿­ÀÇ Ã¹ Ç×) + 0+1+2 (µîÂ÷¼ö¿­ÀÇ 1~3Ç×) ÀÌ´Ù.
+		ê³„ì°¨ìˆ˜ì—´ì˜ 4ëŠ” 1(ê³„ì°¨ìˆ˜ì—´ì˜ ì²« í•­) + 0+1+2 (ë“±ì°¨ìˆ˜ì—´ì˜ 1~3í•­) ì´ë‹¤.
 		 * */
 		while(n<20) {
-			s+=n++; //(°èÂ÷¼ö¿­ÀÇ °øÂ÷ ±¸ÇÏ±â)
+			s+=n++; //(ê³„ì°¨ìˆ˜ì—´ì˜ ê³µì°¨ êµ¬í•˜ê¸°)
 			ss+=1+s;
 		}
-		System.out.println("°á°ú: "+ss);
+		System.out.println("ê²°ê³¼: "+ss);
 	}
 	/*
 	 *
-	¼±»ý´Ô ´ä¾È TODO: µð¹ö±ë ÇØ º¸±â
+	ì„ ìƒë‹˜ ë‹µì•ˆ TODO: ë””ë²„ê¹… í•´ ë³´ê¸°
 	int n,s,t;
 	 n=0; s=0;
 	 t=1;
@@ -29,6 +29,6 @@ public class WhileQuizBasic8 {
 	 	n++;
 	 	t+=n;
 	 }
-	 °á°ú sÃâ·Â
+	 ê²°ê³¼ sì¶œë ¥
 	 * */
 }

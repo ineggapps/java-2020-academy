@@ -1,7 +1,7 @@
-public class Quiz108_Dice9 {
+ï»¿public class Quiz108_Dice9 {
 	public static void main(String[] args) {
 /*		
-		µÎ °³ÀÇ ÁÖ»çÀ§¸¦ ´øÁ® µÎ ÁÖ»çÀ§ÀÇ ´«ÀÇ ÇÕÀÌ 9°¡ µÇ´Â °æ¿ì¸¦ ¸ğµÎ Ãâ·Â
+		ë‘ ê°œì˜ ì£¼ì‚¬ìœ„ë¥¼ ë˜ì ¸ ë‘ ì£¼ì‚¬ìœ„ì˜ ëˆˆì˜ í•©ì´ 9ê°€ ë˜ëŠ” ê²½ìš°ë¥¼ ëª¨ë‘ ì¶œë ¥
 */		
 		for (int i = 1; i <= 6; i++) {
 			for (int j = 1; j <= 6; j++) {

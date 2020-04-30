@@ -1,8 +1,8 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex4 {
 	public static void main(String[] args) {
-//		Demo4 dd = new Demo4();//ÀÎÀÚ°¡ ¾ø´Â »ı¼ºÀÚ°¡ ¾øÀ¸¹Ç·Î È£ÃâÇÒ ¼ö ¾øÀ½..
+//		Demo4 dd = new Demo4();//ì¸ìê°€ ì—†ëŠ” ìƒì„±ìê°€ ì—†ìœ¼ë¯€ë¡œ í˜¸ì¶œí•  ìˆ˜ ì—†ìŒ..
 		Demo4 dd = new Demo4(5);
 		dd.print();
 		Test4 tt = new Test4();
@@ -15,7 +15,7 @@ class Demo4 {
 
 	public Demo4(int a) {
 		this.a = a;
-		System.out.println("Demo4 ÀÎÀÚ ÀÖ´Â »ı¼ºÀÚ...");
+		System.out.println("Demo4 ì¸ì ìˆëŠ” ìƒì„±ì...");
 	}
 
 	public void print() {
@@ -24,12 +24,12 @@ class Demo4 {
 }
 
 class Test4 extends Demo4 {
-	//»ı¼ºÀÚ¸¦ ¸¸µéÁö ¾ÊÀ¸¸é ¿À·ù: »óÀ§Å¬·¡½º°¡ ÀÎÀÚ°¡ 1°³ÀÎ »ı¼ºÀÚ¸¸À» °®°í ÀÖ´Ù.
-	//¹İµå½Ã »ı¼ºÀÚ¸¦ ¸¸µé°í super(°ª);À¸·Î È£ÃâÀ» ÇØ¾ß
-	//»óÀ§Å¬·¡½ºÀÇ °´Ã¼°¡ »ı¼ºµÈ´Ù.
+	//ìƒì„±ìë¥¼ ë§Œë“¤ì§€ ì•Šìœ¼ë©´ ì˜¤ë¥˜: ìƒìœ„í´ë˜ìŠ¤ê°€ ì¸ìê°€ 1ê°œì¸ ìƒì„±ìë§Œì„ ê°–ê³  ìˆë‹¤.
+	//ë°˜ë“œì‹œ ìƒì„±ìë¥¼ ë§Œë“¤ê³  super(ê°’);ìœ¼ë¡œ í˜¸ì¶œì„ í•´ì•¼
+	//ìƒìœ„í´ë˜ìŠ¤ì˜ ê°ì²´ê°€ ìƒì„±ëœë‹¤.
 	public Test4() {
 		super(78978);
-		System.out.println("ÀÌÁ¦ Test4 »ı¼ºÀÚ¸¦ ½ÇÇàÇÒ °Å¾ß");
+		System.out.println("ì´ì œ Test4 ìƒì„±ìë¥¼ ì‹¤í–‰í•  ê±°ì•¼");
 	}
 
 	

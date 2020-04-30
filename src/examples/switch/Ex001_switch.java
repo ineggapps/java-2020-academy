@@ -1,17 +1,17 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Ex001_switch {
 	public static void main(String[] args) {
 /*
-		1~3»çÀÌÀÇ ¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼ö¸¸Å­ * ¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		1~3ì‚¬ì´ì˜ ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ë§Œí¼ * ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 */
         Scanner sc=new Scanner(System.in);
         int input;
 
-		System.out.print("¼ö  ? ");
+		System.out.print("ìˆ˜  ? ");
 		input = sc.nextInt();
 
-		switch(input) { // byte, short, char, int, String(7.0), enum ¸¸ °¡´É.(long, float, double´Â ºÒ°¡´É)
+		switch(input) { // byte, short, char, int, String(7.0), enum ë§Œ ê°€ëŠ¥.(long, float, doubleëŠ” ë¶ˆê°€ëŠ¥)
 			case 3: System.out.print("*");
 			case 2: System.out.print("*");
 			case 1: System.out.print("*");

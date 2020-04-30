@@ -1,4 +1,4 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayQuiz5Advanced {
 	public static void main(String[] args) {
@@ -6,12 +6,12 @@ public class ArrayQuiz5Advanced {
 		int cnt = 1;
 		int k;
 		/*
-		 5X5 Çà·Ä¿¡¼­´Â ´ë°¢¼±À» 9¹ø ±ß´Â´Ù.
+		 5X5 í–‰ë ¬ì—ì„œëŠ” ëŒ€ê°ì„ ì„ 9ë²ˆ ê¸‹ëŠ”ë‹¤.
 		 
 		 */
-		// ¹è¿­ º¯¼ö Á¶Á¤
+		// ë°°ì—´ ë³€ìˆ˜ ì¡°ì •
 		for (int i = 0; i < a.length*2-1; i++) {
-			for (int j = 0; j < a[0].length; j++) {// ´ë°¢¼± ±×¸± ¶§ÀÇ Çà
+			for (int j = 0; j < a[0].length; j++) {// ëŒ€ê°ì„  ê·¸ë¦´ ë•Œì˜ í–‰
 				k=i-j;
 				/*
 				 k=0-0 *continue
@@ -35,7 +35,7 @@ public class ArrayQuiz5Advanced {
 				a[j][k] = cnt++;
 			}
 		}
-		// Ãâ·Â
+		// ì¶œë ¥
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.printf("%3d\t", a[i][j]);

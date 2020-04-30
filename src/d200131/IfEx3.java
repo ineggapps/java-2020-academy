@@ -1,20 +1,20 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
 public class IfEx3 {
 	public static void main(String[] args) {
-		// Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÀÔ·Â ¹ŞÀº ¼ö°¡ È¦¼öÀÎÁö ¾Æ´ÑÁö ÆÇº°
+		// ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì…ë ¥ ë°›ì€ ìˆ˜ê°€ í™€ìˆ˜ì¸ì§€ ì•„ë‹Œì§€ íŒë³„
 		Scanner sc = new Scanner(System.in);
 		int n;
 		String s;
 
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ì •ìˆ˜ ì…ë ¥: ");
 		n = sc.nextInt();
 
-		 s= "È¦¼ö°¡ ¾Æ´Ô";
+		 s= "í™€ìˆ˜ê°€ ì•„ë‹˜";
 		if (n % 2 == 1) {
-			s = "È¦¼ö";
+			s = "í™€ìˆ˜";
 		}
 		System.out.println(n + ": " + s);
 

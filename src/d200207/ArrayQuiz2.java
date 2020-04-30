@@ -1,10 +1,10 @@
-package d200207;
+ï»¿package d200207;
 
 import java.util.Scanner;
 
 public class ArrayQuiz2 {
 	public static void main(String[] args) {
-		// 5°³ÀÇ Á¡¼ö(0~10)¸¦ ÀÔ·Â ¹Ş¾Æ ÃÖ´ë Á¡¼ö¿Í ÃÖ¼Ò Á¡¼ö¸¦ »« ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+		// 5ê°œì˜ ì ìˆ˜(0~10)ë¥¼ ì…ë ¥ ë°›ì•„ ìµœëŒ€ ì ìˆ˜ì™€ ìµœì†Œ ì ìˆ˜ë¥¼ ëº€ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 		Scanner sc = new Scanner(System.in);
 		int scores[] = new int[5];
 		int sum = 0;
@@ -12,7 +12,7 @@ public class ArrayQuiz2 {
 
 		for (int i = 0; i < scores.length; i++) {
 			do {
-				System.out.printf("%d¹øÂ° Á¡¼ö: ", i + 1);
+				System.out.printf("%dë²ˆì§¸ ì ìˆ˜: ", i + 1);
 				scores[i] = sc.nextInt();
 			} while (scores[i] < 0 || scores[i] > 10);
 			sum+=scores[i];
@@ -28,12 +28,12 @@ public class ArrayQuiz2 {
 			}
 		}
 
-		System.out.print("Á¡¼ö ¸®½ºÆ®: ");
+		System.out.print("ì ìˆ˜ ë¦¬ìŠ¤íŠ¸: ");
 		for( int s: scores) {
 			System.out.printf("%d\t",s);
 		}
 		System.out.println();
-		System.out.printf("Ãëµæ Á¡¼ö: %d",sum-max-min
+		System.out.printf("ì·¨ë“ ì ìˆ˜: %d",sum-max-min
 				);
 		sc.close();
 	}

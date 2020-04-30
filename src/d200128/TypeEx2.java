@@ -1,8 +1,8 @@
-package d200128;
+ï»¿package d200128;
 
 public class TypeEx2 {	
 	public static void main(String[] args) {
-		byte a,b,c;//-128~127±îÁö¸¸ Ç¥ÇöÇÒ ¼ö ÀÖ´Ù.
+		byte a,b,c;//-128~127ê¹Œì§€ë§Œ í‘œí˜„í•  ìˆ˜ ìˆë‹¤.
 		
 		a=25; //'A'~'Z':65~90, 'a'~'z': 97~122
 		b='A';
@@ -10,12 +10,12 @@ public class TypeEx2 {
 
 		//		c=90;
 //		c=a+b;//mismatch error: cannot convert to from int to byte
-		//°á°ú°¡ intÇüÀÌ¹Ç·Î int ´Â byte¿¡ ´ëÀÔÇÒ ¼ö ¾ø´Ù. (byte+byteÀÇ ¿¬»êÀÏÁö¶óµµ ÄÄÇ»ÅÍ ÀÚµ¿À¸·Î intÇüÀ¸·Î º¯È¯ÇØ ÁØ´Ù)
-		c=(byte)(a+b);// intÇüÀ» byteÇüÀ¸·Î °­Á¦ º¯È¯ÇÏ¿© ´ëÀÔ
+		//ê²°ê³¼ê°€ intí˜•ì´ë¯€ë¡œ int ëŠ” byteì— ëŒ€ì…í•  ìˆ˜ ì—†ë‹¤. (byte+byteì˜ ì—°ì‚°ì¼ì§€ë¼ë„ ì»´í“¨í„° ìë™ìœ¼ë¡œ intí˜•ìœ¼ë¡œ ë³€í™˜í•´ ì¤€ë‹¤)
+		c=(byte)(a+b);// intí˜•ì„ byteí˜•ìœ¼ë¡œ ê°•ì œ ë³€í™˜í•˜ì—¬ ëŒ€ì…
 		System.out.println(c);
 		
-//		c=200; //ÄÄÆÄÀÏ ¿À·ù
-		c=(byte)200; //ÄÄÆÄÀÏ ¿À·ù
+//		c=200; //ì»´íŒŒì¼ ì˜¤ë¥˜
+		c=(byte)200; //ì»´íŒŒì¼ ì˜¤ë¥˜
 		System.out.println(c);
 	}
 }

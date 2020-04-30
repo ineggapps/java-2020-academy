@@ -1,27 +1,27 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayQuiz7 {
 	public static void main(String[] args) {
-		// 1~25±îÁöÀÇ ¼ö ½ÇÇà°á°úÃ³·³ ´ŞÆØÀÌ ¸ğ¾çÀ¸·Î Ã¤¿ö ³Ö±â
-		int size = 5; // ÇÑ ¶óÀÎ(°¡·Î, ¼¼·Î)´ç ¸î ¹øÀÇ ¼ıÀÚ¸¦ Ã¤¿ö³Ö´ÂÁö
+		// 1~25ê¹Œì§€ì˜ ìˆ˜ ì‹¤í–‰ê²°ê³¼ì²˜ëŸ¼ ë‹¬íŒ½ì´ ëª¨ì–‘ìœ¼ë¡œ ì±„ì›Œ ë„£ê¸°
+		int size = 5; // í•œ ë¼ì¸(ê°€ë¡œ, ì„¸ë¡œ)ë‹¹ ëª‡ ë²ˆì˜ ìˆ«ìë¥¼ ì±„ì›Œë„£ëŠ”ì§€
 		int[][] a = new int[size][size];
 		int n=0, r=0, c=-1;
-		// ¿¬»ê
+		// ì—°ì‚°
 		for (int i = 0; i < size* 2 - 1; i++) {
-			for(int j=0;j< size-(i/2);j++) {//¡Ú
+			for(int j=0;j< size-(i/2);j++) {//â˜…
 				n++;
-				if(i%4==1) // ÁÂ->¿ì
+				if(i%4==1) // ì¢Œ->ìš°
 					a[r][++c]=n;
-				else if(i%4==2) // À§->¾Æ·¡
+				else if(i%4==2) // ìœ„->ì•„ë˜
 					a[++r][c]=n;
-				else if(i%4==3) // ¿ì->ÁÂ
+				else if(i%4==3) // ìš°->ì¢Œ
 					a[r][--c]=n;
-				else // ¾Æ·¡->À§
+				else // ì•„ë˜->ìœ„
 					a[--r][c]=n;
 			}
 		}
 
-		// Ãâ·Â
+		// ì¶œë ¥
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.printf("%3d\t", a[i][j]);

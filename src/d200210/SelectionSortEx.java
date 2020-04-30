@@ -1,4 +1,4 @@
-package d200210;
+ï»¿package d200210;
 
 public class SelectionSortEx {
 	public static void main(String[] args) {
@@ -11,11 +11,11 @@ public class SelectionSortEx {
 		}
 		System.out.println();
 		
-		// ¼±ÅÃ Á¤·ÄÀÇ È¸Àü ¼ö (1~n-1È¸Àü) nÈ¸
+		// ì„ íƒ ì •ë ¬ì˜ íšŒì „ ìˆ˜ (1~n-1íšŒì „) níšŒ
 		for (int i = 0; i < num.length - 1; i++) {
-			// i´Â 0, 1, 2, 3¹øÂ°±îÁö¸¸ ¼øÈ¸ÇÏ°í
+			// iëŠ” 0, 1, 2, 3ë²ˆì§¸ê¹Œì§€ë§Œ ìˆœíšŒí•˜ê³ 
 			for (int j = i + 1; j < num.length; j++) {
-				// j´Â 1,2,3,4¹øÂ°¸¦ ¼øÈ¸ÇÏ¸é µÈ´Ù.
+				// jëŠ” 1,2,3,4ë²ˆì§¸ë¥¼ ìˆœíšŒí•˜ë©´ ëœë‹¤.
 				if (num[i] > num[j]) {
 					temp = num[i];
 					num[i] = num[j];

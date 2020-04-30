@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 import java.util.Calendar;
 
@@ -6,18 +6,18 @@ public class Ex9 {
 	public static void main(String[] args) {
 		Calendar now = Calendar.getInstance();
 		Calendar cal = Calendar.getInstance();
-		//»ıÀÏ ´ëÀÔ
+		//ìƒì¼ ëŒ€ì…
 		cal.set(1999,10-1,9);
 		
-		//¸¸ ³ªÀÌ °è»êÇÏ±â
+		//ë§Œ ë‚˜ì´ ê³„ì‚°í•˜ê¸°
 		int age = (now.get(Calendar.YEAR)-cal.get(Calendar.YEAR));
 		if(cal.get(Calendar.MONTH)>now.get(Calendar.MONTH) || 
 				cal.get(Calendar.DATE) > now.get(Calendar.DATE)) {
 			age--;
 		}
 		System.out.println(age);
-		//¶Ç´Â...
+		//ë˜ëŠ”...
 		long days = (now.getTimeInMillis() - cal.getTimeInMillis()) / (1000 * 60 * 60 * 24);
-		System.out.println("³ªÀÌ:" + days/30/12);
+		System.out.println("ë‚˜ì´:" + days/30/12);
 	}
 }

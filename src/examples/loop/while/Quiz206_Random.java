@@ -1,8 +1,8 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class Quiz206_Random {
 	public static void main(String[] args) {
-		// 1~100±îÁöÀÇ ³­¼ö¸¦ ¹ß»ı½ÃÄÑ ¸î¹ø¿¡ ¸ÂÃß´ÂÁö Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼º
+		// 1~100ê¹Œì§€ì˜ ë‚œìˆ˜ë¥¼ ë°œìƒì‹œì¼œ ëª‡ë²ˆì— ë§ì¶”ëŠ”ì§€ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±
 		Scanner sc = new Scanner(System.in);
 
 		int com, user, cnt;
@@ -10,18 +10,18 @@ public class Quiz206_Random {
 		com = (int) (Math.random() * 100) + 1;
 		cnt=0;
 		while (true) {
-			System.out.print("¼ö ? ");
+			System.out.print("ìˆ˜ ? ");
 			user = sc.nextInt();
 
 			cnt++;
 
 			if (user == com) {
-				System.out.println(cnt + "¹ø ¸¸¿¡ ¼º°øÇß½À´Ï´Ù.");
+				System.out.println(cnt + "ë²ˆ ë§Œì— ì„±ê³µí–ˆìŠµë‹ˆë‹¤.");
 				break;
 			} else if (user > com) {
-				System.out.println("ÀÔ·ÂÇÑ ¼öº¸´Ù´Â ÀûÀº¼ö ÀÔ´Ï´Ù.");
+				System.out.println("ì…ë ¥í•œ ìˆ˜ë³´ë‹¤ëŠ” ì ì€ìˆ˜ ì…ë‹ˆë‹¤.");
 			} else {
-				System.out.println("ÀÔ·ÂÇÑ ¼öº¸´Ù´Â Å«¼ö ÀÔ´Ï´Ù.");
+				System.out.println("ì…ë ¥í•œ ìˆ˜ë³´ë‹¤ëŠ” í°ìˆ˜ ì…ë‹ˆë‹¤.");
 			}
 		}
 		

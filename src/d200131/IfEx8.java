@@ -1,4 +1,4 @@
-package d200131;
+ï»¿package d200131;
 
 import java.util.Scanner;
 
@@ -6,17 +6,17 @@ public class IfEx8 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n;
-		System.out.println("Á¤¼ö ÀÔ·Â: ");
+		System.out.println("ì •ìˆ˜ ì…ë ¥: ");
 		n = sc.nextInt();
 		
-		if(n%2==0 && n%3==0) { // ==>  if(n%6==0)°ú °°Àº ÀÇ¹ÌÀÌ´Ù.
-			System.out.println(n+": 2ÀÇ ¹è¼ö¿Í 3ÀÇ ¹è¼ö");
+		if(n%2==0 && n%3==0) { // ==>  if(n%6==0)ê³¼ ê°™ì€ ì˜ë¯¸ì´ë‹¤.
+			System.out.println(n+": 2ì˜ ë°°ìˆ˜ì™€ 3ì˜ ë°°ìˆ˜");
 		}else if(n%2==0) {
-			System.out.println(n+": 2ÀÇ ¹è¼ö");
+			System.out.println(n+": 2ì˜ ë°°ìˆ˜");
 		}else if(n%3==0) {
-			System.out.println(n+ ": 3ÀÇ ¹è¼ö");			
+			System.out.println(n+ ": 3ì˜ ë°°ìˆ˜");			
 		}else {
-			System.out.println(n+": 2 ¶Ç´Â 3ÀÇ ¹è¼ö°¡ ¾Æ´Ô");
+			System.out.println(n+": 2 ë˜ëŠ” 3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹˜");
 		}
 		
 		sc.close();

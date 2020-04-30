@@ -1,4 +1,4 @@
-package r200207;
+ï»¿package r200207;
 
 class Card extends Object{
 	String kind;
@@ -16,8 +16,8 @@ class Card extends Object{
 
 public class ClassEx1 {
 	public static void main(String[] args) throws Exception {
-		Card c = new Card("HEART", 3); // new ¿¬»êÀÚ·Î °´Ã¼ »ı¼º
-		Card c2 = Card.class.newInstance();// Class°´Ã¼¸¦ ÅëÇØ¼­ °´Ã¼ »ı¼º
+		Card c = new Card("HEART", 3); // new ì—°ì‚°ìë¡œ ê°ì²´ ìƒì„±
+		Card c2 = Card.class.newInstance();// Classê°ì²´ë¥¼ í†µí•´ì„œ ê°ì²´ ìƒì„±
 		
 		Class cObj = c.getClass();
 		

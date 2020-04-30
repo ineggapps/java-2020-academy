@@ -1,10 +1,10 @@
-package bookEx;
+ï»¿package bookEx;
 
 public class RentalVO {
-	private String code;  // µµ¼­ÄÚµå
-	private String id;	  // ´ë¿© ¾ÆÀÌµğ
-	private String rentalDate;  // ´ë¿©ÀÏ
-	private String returnDate;	// ¹İ³³ÀÏ
+	private String code;  // ë„ì„œì½”ë“œ
+	private String id;	  // ëŒ€ì—¬ ì•„ì´ë””
+	private String rentalDate;  // ëŒ€ì—¬ì¼
+	private String returnDate;	// ë°˜ë‚©ì¼
 	
 	public String getCode() {
 		return code;

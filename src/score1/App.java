@@ -1,4 +1,4 @@
-package score1;
+ï»¿package score1;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class App {
 		ScoreService ss = new ScoreService();
 		while (ch!=5) {
 			do {
-				System.out.print("1.ÀÔ·Â 2.Ãâ·Â 3.°Ë»ö 4.»èÁ¦ 5.Á¾·á > ");
+				System.out.print("1.ì…ë ¥ 2.ì¶œë ¥ 3.ê²€ìƒ‰ 4.ì‚­ì œ 5.ì¢…ë£Œ > ");
 				ch = sc.nextInt();
 				if (ch == 5) {
 					break;
@@ -30,23 +30,23 @@ public class App {
 				}
 			} while (ch < 1 || ch > 5);
 		}
-//		// 1.ÀÔ·Â ¿µ¿ª
-//		System.out.println("µ¥ÀÌÅÍ ÀÔ·Â");
-//		System.out.print("ÇĞ¹ø ? ");
-//		System.out.print("ÀÌ¸§ ? ");
-//		System.out.print("±¹¾î ? ");
-//		System.out.print("¼öÇĞ ? ");
-//		System.out.print("¿µ¾î ? ");
-//		System.out.println("µ¥ÀÌÅÍ°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+//		// 1.ì…ë ¥ ì˜ì—­
+//		System.out.println("ë°ì´í„° ì…ë ¥");
+//		System.out.print("í•™ë²ˆ ? ");
+//		System.out.print("ì´ë¦„ ? ");
+//		System.out.print("êµ­ì–´ ? ");
+//		System.out.print("ìˆ˜í•™ ? ");
+//		System.out.print("ì˜ì–´ ? ");
+//		System.out.println("ë°ì´í„°ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
 //
-//		// 2. Ãâ·Â
+//		// 2. ì¶œë ¥
 //		// 1111 aaaa 80 80 80 240 80 1
 //		// 3.0 3.0 3.0 9.0 3.0
 //		// 2222 bbbb 70 70 70 210 70 2
 //		// 2.0 2.0 2.0 6.0 2.0
 //
-//		// 3. °Ë»ö
-//		System.out.print("ÀÌ¸§ ? "); // aaaa °Ë»ö
+//		// 3. ê²€ìƒ‰
+//		System.out.print("ì´ë¦„ ? "); // aaaa ê²€ìƒ‰
 //		// 1111 aaaa 80 80 80 240 80 1
 //		// 3.0 3.0 3.0 9.0 3.0
 

@@ -1,8 +1,8 @@
-package d200203;
+ï»¿package d200203;
 
 public class WhileEx20 {
 	public static void main(String[] args) {
-		//1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3+...10)ÀÇ °á±£°ª ±¸ÇÏ±â
+		//1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3+...10)ì˜ ê²°ê´ê°’ êµ¬í•˜ê¸°
 		
 //		int n=0,m,s=0;
 //		while(++n<=3) {
@@ -23,6 +23,6 @@ public class WhileEx20 {
 			System.out.printf("ss=> %d+%d=%d%n",ss,s,s+s);
 			ss+=s;
 		}
-		System.out.println("°á±£°ª: " + ss);
+		System.out.println("ê²°ê´ê°’: " + ss);
 	}
 }

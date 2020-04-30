@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 public class Ex1 {
 	public static void main(String[] args) {
@@ -7,76 +7,76 @@ public class Ex1 {
 		String s, s1, s2;
 		double d;
 
-		// °´Ã¼¿Í ±âº»ÀÚ·áÇüÀº ±âº»ÀûÀ¸·Î Çüº¯È¯ÀÌ ºÒ°¡´ÉÇÏ´Ù.
-		// »óÇÏ°ü°è°¡ ¾Æ´Ñ °æ¿ì °´Ã¼°£¿¡´Â Çüº¯È¯ÀÌ ºÒ°¡´ÉÇÏ´Ù.
+		// ê°ì²´ì™€ ê¸°ë³¸ìë£Œí˜•ì€ ê¸°ë³¸ì ìœ¼ë¡œ í˜•ë³€í™˜ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤.
+		// ìƒí•˜ê´€ê³„ê°€ ì•„ë‹Œ ê²½ìš° ê°ì²´ê°„ì—ëŠ” í˜•ë³€í™˜ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤.
 
-		// JDK 5.0ºÎÅÍ Autoboxing, AutounboxingÀ» Áö¿øÇÑ´Ù.
+		// JDK 5.0ë¶€í„° Autoboxing, Autounboxingì„ ì§€ì›í•œë‹¤.
 
 		ob = a;
-		// ±âº» ÀÚ·áÇü int°¡ Integer·Î ÇüÀÌ ÀÚµ¿À¸·Î º¯È¯µÇ¾ú´Ù.
-		// ½ÇÁ¦·Î´Â ob = new Integer(a);ÀÇ ¸í·É±¸¹®À» ÄÄÆÄÀÏÇÒ ¶§ º¯È¯ÇÑ °ÍÀÌ´Ù.
-		// ÀÌ¸¦ Auto boxingÀÌ¶ó°í ÇÑ´Ù.
+		// ê¸°ë³¸ ìë£Œí˜• intê°€ Integerë¡œ í˜•ì´ ìë™ìœ¼ë¡œ ë³€í™˜ë˜ì—ˆë‹¤.
+		// ì‹¤ì œë¡œëŠ” ob = new Integer(a);ì˜ ëª…ë ¹êµ¬ë¬¸ì„ ì»´íŒŒì¼í•  ë•Œ ë³€í™˜í•œ ê²ƒì´ë‹¤.
+		// ì´ë¥¼ Auto boxingì´ë¼ê³  í•œë‹¤.
 
 		b = ob;
-		// Integer °´Ã¼ÀÇ °ªÀÌ ÀÚµ¿À¸·Î ±âº»ÀÚ·áÇüÀÎ intÇüÀ¸·Î º¯È¯µÇ¾ú´Ù.
-		// ½ÇÁ¦·Î´Â b = ob.intValue();ÀÇ ¸í·É±¸¹®À» ÄÄÆÄÀÏÇÒ ¶§ º¯È¯ÇÑ °ÍÀÌ´Ù.
-		// ÀÌ¸¦ Auto unboxingÀÌ¶ó°í ÇÑ´Ù.
+		// Integer ê°ì²´ì˜ ê°’ì´ ìë™ìœ¼ë¡œ ê¸°ë³¸ìë£Œí˜•ì¸ intí˜•ìœ¼ë¡œ ë³€í™˜ë˜ì—ˆë‹¤.
+		// ì‹¤ì œë¡œëŠ” b = ob.intValue();ì˜ ëª…ë ¹êµ¬ë¬¸ì„ ì»´íŒŒì¼í•  ë•Œ ë³€í™˜í•œ ê²ƒì´ë‹¤.
+		// ì´ë¥¼ Auto unboxingì´ë¼ê³  í•œë‹¤.
 
 		System.out.println(a + ":" + ob + ":" + b);
 
 		s1 = "123";
 		s2 = "456";
-		// a=s1+s2; //´ç¿¬È÷ ÄÄÆÄÀÏ ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
+		// a=s1+s2; //ë‹¹ì—°íˆ ì»´íŒŒì¼ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
 
-		// ¹®ÀÚÇüÀÓ¿¡µµ ºÒ±¸ÇÏ°í IntegerÀÇ static method¸¦ »ç¿ëÇÏ¸é intÇüÀ¸·Î º¯È¯ÇÏ¿© ¿¬»êÀÌ °¡´ÉÇÏ´Ù.
+		// ë¬¸ìí˜•ì„ì—ë„ ë¶ˆêµ¬í•˜ê³  Integerì˜ static methodë¥¼ ì‚¬ìš©í•˜ë©´ intí˜•ìœ¼ë¡œ ë³€í™˜í•˜ì—¬ ì—°ì‚°ì´ ê°€ëŠ¥í•˜ë‹¤.
 		a = Integer.parseInt(s1) + Integer.parseInt(s2);
 		System.out.println(a);
 
-//		a = Integer.parseInt("123.5");// ·±Å¸ÀÓ ¿À·ù java.lang.NumberFormatException
-		// ¼Ò¼ıÁ¡ÀÌ ÀÖ´Â ¼ıÀÚ´Â Á¤¼ö·Î º¯È¯ÀÌ ºÒ°¡´ÉÇÏ¹Ç·Î ¿À·ù¸¦ ¹ß»ı½ÃÅ²´Ù.
+//		a = Integer.parseInt("123.5");// ëŸ°íƒ€ì„ ì˜¤ë¥˜ java.lang.NumberFormatException
+		// ì†Œìˆ«ì ì´ ìˆëŠ” ìˆ«ìëŠ” ì •ìˆ˜ë¡œ ë³€í™˜ì´ ë¶ˆê°€ëŠ¥í•˜ë¯€ë¡œ ì˜¤ë¥˜ë¥¼ ë°œìƒì‹œí‚¨ë‹¤.
 
-//		a = Integer.parseInt("1,234");//·±Å¸ÀÓ ¿À·ù java.lang.NumberFormatException
-		// ¼ıÀÚ·Î º¯È¯ÇÒ ¼ö ¾ø´Â ¸ğµç ¹®ÀÚ¿­ÀÌ »ğÀÔµÇ¾î ÀÖ´Â °æ¿ì¿¡´Â À§¿Í °°Àº ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
+//		a = Integer.parseInt("1,234");//ëŸ°íƒ€ì„ ì˜¤ë¥˜ java.lang.NumberFormatException
+		// ìˆ«ìë¡œ ë³€í™˜í•  ìˆ˜ ì—†ëŠ” ëª¨ë“  ë¬¸ìì—´ì´ ì‚½ì…ë˜ì–´ ìˆëŠ” ê²½ìš°ì—ëŠ” ìœ„ì™€ ê°™ì€ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
 
 		a = 10;
 		s = 'A' + a + "Korea";
 		System.out.println(s);// 75Korea
 
-		// IntegerÅ¬·¡½ºÀÇ ¹®ÀÚ¿­·Î ¹Ù²Ù´Â ¸Ş¼­µå°¡ Á¸ÀçÇÑ´Ù.
+		// Integerí´ë˜ìŠ¤ì˜ ë¬¸ìì—´ë¡œ ë°”ê¾¸ëŠ” ë©”ì„œë“œê°€ ì¡´ì¬í•œë‹¤.
 		s = 'A' + Integer.toString(a) + "Korea";
 		System.out.println(s);// A10Korea
 
 		a = Integer.parseInt("101");
 		System.out.println(a);// 101
 
-		a = Integer.parseInt("101", 2);// 2Áø¼ö·Î 101...
+		a = Integer.parseInt("101", 2);// 2ì§„ìˆ˜ë¡œ 101...
 		System.out.println(a);// 5
 
-		a = Integer.parseInt("A1", 16);// 16Áø¼ö·Î A1
-		System.out.println(a);// 10Áø¼ö·Î º¯È¯µÈ °á±£°ªÀÎ 161ÀÌ ¹İÈ¯µÈ´Ù.
+		a = Integer.parseInt("A1", 16);// 16ì§„ìˆ˜ë¡œ A1
+		System.out.println(a);// 10ì§„ìˆ˜ë¡œ ë³€í™˜ëœ ê²°ê´ê°’ì¸ 161ì´ ë°˜í™˜ëœë‹¤.
 
 		a = 123;
 		s = Integer.toBinaryString(a);
-		System.out.println(s);// 2Áø¼ö·Î º¯È¯µÈ 1111011
+		System.out.println(s);// 2ì§„ìˆ˜ë¡œ ë³€í™˜ëœ 1111011
 
 		s = Integer.toHexString(a);
-		System.out.println(s);// 16Áø¼ö·Î º¯È¯µÈ 7b
+		System.out.println(s);// 16ì§„ìˆ˜ë¡œ ë³€í™˜ëœ 7b
 
-		System.out.println(Integer.MAX_VALUE);//Á¤Àû »ó¼ö (Á¤¼öÀÇ ÃÖ´ñ°ªÀ» º¼ ¼ö ÀÖ´Ù)
-		System.out.println(Integer.MIN_VALUE);//Á¤Àû »ó¼ö (Á¤¼öÀÇ ÃÖ¼Ú°ªÀ» º¼ ¼ö ÀÖ´Ù)
-		System.out.println(Integer.BYTES);//Á¤Àû »ó¼ö (Á¤¼öÀÇ ¿ë·® 4byteÀÎ ¿ë·®À» È®ÀÎÇÒ ¼ö ÀÖÀ½)
+		System.out.println(Integer.MAX_VALUE);//ì •ì  ìƒìˆ˜ (ì •ìˆ˜ì˜ ìµœëŒ“ê°’ì„ ë³¼ ìˆ˜ ìˆë‹¤)
+		System.out.println(Integer.MIN_VALUE);//ì •ì  ìƒìˆ˜ (ì •ìˆ˜ì˜ ìµœì†Ÿê°’ì„ ë³¼ ìˆ˜ ìˆë‹¤)
+		System.out.println(Integer.BYTES);//ì •ì  ìƒìˆ˜ (ì •ìˆ˜ì˜ ìš©ëŸ‰ 4byteì¸ ìš©ëŸ‰ì„ í™•ì¸í•  ìˆ˜ ìˆìŒ)
 		System.out.println(Integer.TYPE);//int 
 		System.out.println(Integer.SIZE);//32(bit)
 		
 		
-		//½Ç¼ö ¿¹Á¦
+		//ì‹¤ìˆ˜ ì˜ˆì œ
 		
-		//¹®ÀÚ¿­À» ½Ç¼ö·Î
+		//ë¬¸ìì—´ì„ ì‹¤ìˆ˜ë¡œ
 		s="123.45";
 		d=Double.parseDouble(s);
 		System.out.println(d);
 		
-		//½Ç¼ö¸¦ ¹®ÀÚ¿­·Î
+		//ì‹¤ìˆ˜ë¥¼ ë¬¸ìì—´ë¡œ
 		s=Double.toString(d);
 		System.out.println(s);
 		

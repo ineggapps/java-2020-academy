@@ -1,4 +1,4 @@
-package d200210;
+ï»¿package d200210;
 
 public class BubbleSortEx {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class BubbleSortEx {
 		}
 		System.out.println();
 
-		// ¹öºí Á¤·Ä 
+		// ë²„ë¸” ì •ë ¬ 
 		for (int i = 1; i < num.length; i++) {
 			for (int j = 0; j < num.length - i; j++) {
 				if (num[j] > num[j + 1]) {

@@ -1,4 +1,4 @@
-package d200217;
+ï»¿package d200217;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -48,13 +48,13 @@ class Lotto {
 	public void buy() {
 		int n;
 		do {
-			System.out.print("±¸¸Å °³¼ö[1~5] ? ");
+			System.out.print("êµ¬ë§¤ ê°œìˆ˜[1~5] ? ");
 			n = sc.nextInt();
 		}while(n<1 || n>5);
 		
 		for(int i=1;i<=n;i++) {
 			lottoNum();
-			System.out.print(i+"¹øÂ°: ");
+			System.out.print(i+"ë²ˆì§¸: ");
 			write();
 		}
 		

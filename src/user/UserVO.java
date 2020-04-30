@@ -1,4 +1,4 @@
-package user;
+﻿package user;
 
 public class UserVO {
 	private String name;

@@ -1,15 +1,15 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayQuiz6Advanced {
 	public static void main(String[] args) {
 		char[][] a = new char[4][4];
 		char n;
 		/*
-		 A~Z±îÁö ¹®ÀÚ¸¦ ³­¼ö¸¦ ÀÌ¿ëÇÏ¿© ¹ß»ýÇÏ¿© ¹ß»ýµÈ ¹®ÀÚ¸¦ 4X4¹è¿­¿¡ 0Çà 0¿­ºÎÅÍ Çà¿ì¼±À¸·Î ´ëÀÔÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
-		 #2[½ÉÈ­]. 1Â÷¿ø¹è¿­À» »ç¿ëÇÏÁö ¾Ê°í 2Â÷¿ø¹è¿­ ¾È¿¡¼­¸¸ ÇØ°áÇÑ´Ù.
-		 => label°ú ÇÔ²² ¹Ýº¹¹®À» 2¹ø¾¿ ½á¼­ °ËÁõÇÏ´Â ÀÛ¾÷ÀÌ ÇÊ¿äÇÏ´Ù.
+		 A~Zê¹Œì§€ ë¬¸ìžë¥¼ ë‚œìˆ˜ë¥¼ ì´ìš©í•˜ì—¬ ë°œìƒí•˜ì—¬ ë°œìƒëœ ë¬¸ìžë¥¼ 4X4ë°°ì—´ì— 0í–‰ 0ì—´ë¶€í„° í–‰ìš°ì„ ìœ¼ë¡œ ëŒ€ìž…í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
+		 #2[ì‹¬í™”]. 1ì°¨ì›ë°°ì—´ì„ ì‚¬ìš©í•˜ì§€ ì•Šê³  2ì°¨ì›ë°°ì—´ ì•ˆì—ì„œë§Œ í•´ê²°í•œë‹¤.
+		 => labelê³¼ í•¨ê»˜ ë°˜ë³µë¬¸ì„ 2ë²ˆì”© ì¨ì„œ ê²€ì¦í•˜ëŠ” ìž‘ì—…ì´ í•„ìš”í•˜ë‹¤.
 		*/
-		// ¿¬»ê
+		// ì—°ì‚°
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				n = (char) ((Math.random() * 26) + 65);
@@ -27,7 +27,7 @@ public class ArrayQuiz6Advanced {
 				}
 			}
 		}
-		// Ãâ·Â
+		// ì¶œë ¥
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.printf("%4c\t", a[i][j]);

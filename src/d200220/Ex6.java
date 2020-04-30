@@ -1,4 +1,4 @@
-package d200220;
+ï»¿package d200220;
 
 public class Ex6 {
 	public static void packing(Fruit f) {
@@ -17,7 +17,7 @@ public class Ex6 {
 
 			@Override
 			public String getName() {
-				return "¸á·Ð";
+				return "ë©œë¡ ";
 			}
 		});
 	}
@@ -38,7 +38,7 @@ class Apple implements Fruit {
 
 	@Override
 	public String getName() {
-		return "»ç°ú";
+		return "ì‚¬ê³¼";
 	}
 
 }
@@ -52,7 +52,7 @@ class Orange implements Fruit {
 
 	@Override
 	public String getName() {
-		return "¿À·»Áö";
+		return "ì˜¤ë Œì§€";
 	}
 
 }

@@ -1,12 +1,12 @@
-package d200227;
+ï»¿package d200227;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ex3 {
 	public static void main(String[] args) {
-		// Shuffle ¿¹Á¦ 3
-		// ArrayList °´Ã¼¸¦ Á÷Á¢ shuffle ±¸ÇöÇÏ±â
+		// Shuffle ì˜ˆì œ 3
+		// ArrayList ê°ì²´ë¥¼ ì§ì ‘ shuffle êµ¬í˜„í•˜ê¸°
 		List<String> list = new ArrayList<String>();
 		list.add("java");
 		list.add("spring");
@@ -19,14 +19,14 @@ public class Ex3 {
 		String s;
 		int n;
 
-		// Shuffle ¾Ë°í¸®Áò ±¸Çö
+		// Shuffle ì•Œê³ ë¦¬ì¦˜ êµ¬í˜„
 		for (int i = 0; i < list.size(); i++) {
 			n = (int) (Math.random() * list.size());
-			if (n != i) {// ÇöÀç ¹è¿­ÀÇ ÀÎµ¦½ºi°ª°ú ÀÌµ¿½ÃÅ°·Á´Â ÀÎµ¦½º n°ªÀÌ °°Áö ¾ÊÀ¸¸é
+			if (n != i) {// í˜„ì¬ ë°°ì—´ì˜ ì¸ë±ìŠ¤iê°’ê³¼ ì´ë™ì‹œí‚¤ë ¤ëŠ” ì¸ë±ìŠ¤ nê°’ì´ ê°™ì§€ ì•Šìœ¼ë©´
 				s = list.get(i);
 				list.set(i, list.get(n));
 				list.set(n, s);
-			} else {// i¿Í nÀÌ °°Àº ÀÚ¸®ÀÌ¸é ÀÇ¹Ì¾øÀ¸´Ï±î ´Ù½Ã ÇÑ ¹ø ´õ ½ÇÇàÇÏµµ·Ï À¯µµÇÏ¸é ¼ÅÇÃ ¾Ë°í¸®ÁòÀÌ Á» ´õ ¼öÇàµÈ´Ù.
+			} else {// iì™€ nì´ ê°™ì€ ìë¦¬ì´ë©´ ì˜ë¯¸ì—†ìœ¼ë‹ˆê¹Œ ë‹¤ì‹œ í•œ ë²ˆ ë” ì‹¤í–‰í•˜ë„ë¡ ìœ ë„í•˜ë©´ ì…”í”Œ ì•Œê³ ë¦¬ì¦˜ì´ ì¢€ ë” ìˆ˜í–‰ëœë‹¤.
 				i--;
 			}
 		}

@@ -1,4 +1,4 @@
-package d200224;
+ï»¿package d200224;
 
 public class Ex2 {
 	public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Ex2 {
 
 		ob.set(new Integer(20));
 		System.out.println(ob.get());
-		s = (String) ob.get();// Integer¸¦ StringÇüÀ¸·Î º¯È¯À» ½ÃµµÇÏ¿´À¸¹Ç·Î ClassCastException ·±Å¸ÀÓ ¿À·ù°¡ ¹ß»ıÇÔ.
+		s = (String) ob.get();// Integerë¥¼ Stringí˜•ìœ¼ë¡œ ë³€í™˜ì„ ì‹œë„í•˜ì˜€ìœ¼ë¯€ë¡œ ClassCastException ëŸ°íƒ€ì„ ì˜¤ë¥˜ê°€ ë°œìƒí•¨.
 		System.out.println(s + ":" + s.length());
 	}
 }

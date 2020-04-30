@@ -1,12 +1,12 @@
-package d200204;
+ï»¿package d200204;
 
 public class ForTest5 {
 	public static void main(String[] args) {
-		//1~10±îÁö Á¤¼öÀÇ ÇÕÀ» °è»êÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		//1~10ê¹Œì§€ ì •ìˆ˜ì˜ í•©ì„ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 		int s=0;
 		for(int i=1;i<=100;i++){
 			s+=i;
 		}
-		System.out.println("°á°ú: " + s);
+		System.out.println("ê²°ê³¼: " + s);
 	}
 }

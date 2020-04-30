@@ -1,8 +1,8 @@
-package d200214;
+ï»¿package d200214;
 
 public class Ex5 {
 	public static void main(String[] args) {
-		String s = "    ÀÚ      ¹Ù    ";
+		String s = "    ì      ë°”    ";
 		System.out.println(":" + s + ":");
 		System.out.println(":" + s.trim() + ":");
 		System.out.println(":" + s.replaceAll(" ", "") + ":");
@@ -14,8 +14,8 @@ public class Ex5 {
 		System.out.println(s);
 
 		s = "KOREA";
-		System.out.println(s + "¸¦ ¹ÙÀÌÆ®·Î °íÄ¡¸é");
-		byte[] bb = s.getBytes();// ¹®ÀÚ¿­ÀÇ ASCII ÄÚµå°ªÀ» byte¹è¿­·Î ¹İÈ¯ÇÑ´Ù.
+		System.out.println(s + "ë¥¼ ë°”ì´íŠ¸ë¡œ ê³ ì¹˜ë©´");
+		byte[] bb = s.getBytes();// ë¬¸ìì—´ì˜ ASCII ì½”ë“œê°’ì„ byteë°°ì—´ë¡œ ë°˜í™˜í•œë‹¤.
 		for (byte b : bb) {
 			System.out.print(b + "\t");
 		}
@@ -24,7 +24,7 @@ public class Ex5 {
 		String s1 = new String(bb);
 		System.out.println(s1);
 
-		s = "´ëÇÑ¹Î±¹";
+		s = "ëŒ€í•œë¯¼êµ­";
 		System.out.println(s);
 		bb = s.getBytes();
 		for (byte b : bb) {
@@ -33,10 +33,10 @@ public class Ex5 {
 		System.out.println();
 		
 		String s2;
-//		s2=123;//ÄÄÆÄÀÏ ¿À·ù 
-		s2=""+123;//°¡´É(±ÇÀåÇÏÁö ¾ÊÀ½)
+//		s2=123;//ì»´íŒŒì¼ ì˜¤ë¥˜ 
+		s2=""+123;//ê°€ëŠ¥(ê¶Œì¥í•˜ì§€ ì•ŠìŒ)
 		
-		s2= Integer.toString(999);//Á¤¼ö¸¦ ¹®ÀÚ¿­·Î
+		s2= Integer.toString(999);//ì •ìˆ˜ë¥¼ ë¬¸ìì—´ë¡œ
 		System.out.println(s2);
 		
 		s2="100";

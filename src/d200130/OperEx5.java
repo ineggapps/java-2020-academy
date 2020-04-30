@@ -1,13 +1,13 @@
-package d200130;
+ï»¿package d200130;
 
 public class OperEx5 {
 	public static void main(String[] args) {
-		//³í¸®°ö ¿¹Á¦
+		//ë…¼ë¦¬ê³± ì˜ˆì œ
 		int a, b;
 		boolean c;
 		a = 10;
 		b = 5;
-		// c = a&& b; ÄÄÆÄÀÏ¿À·ù &&(³í¸®°ö)Àº ÇÇ¿¬»êÀÚ°¡ boolean typeÀÌ¾î¾ß ÇÑ´Ù.
+		// c = a&& b; ì»´íŒŒì¼ì˜¤ë¥˜ &&(ë…¼ë¦¬ê³±)ì€ í”¼ì—°ì‚°ìê°€ boolean typeì´ì–´ì•¼ í•œë‹¤.
 		c = a > b && false;// => true && false
 		System.out.println(c);// false
 		c = a > b && true;// => true && true

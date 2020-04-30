@@ -1,28 +1,28 @@
-package user;
+ï»¿package user;
 
 import java.util.Scanner;
 
 public class UserService {
 	private Scanner sc = new Scanner(System.in);
 	private User user = new User();
-	//»ı¼ºÀÚ¸¦ ÅëÇØ ÀÇÁ¸ °ü°è¸¦ ¼³Á¤ÇÑ´Ù.
+	//ìƒì„±ìë¥¼ í†µí•´ ì˜ì¡´ ê´€ê³„ë¥¼ ì„¤ì •í•œë‹¤.
 	private UserResult ur = new UserResult(user);
 
 	public void input() {
-		System.out.println("\nÀÚ·á µî·Ï...");
+		System.out.println("\nìë£Œ ë“±ë¡...");
 
 		UserVO vo = new UserVO();
 
-		//ÀÌ¸§ ÀÔ·Â
-		System.out.print("ÀÌ¸§ ? ");
+		//ì´ë¦„ ì…ë ¥
+		System.out.print("ì´ë¦„ ? ");
 		vo.setName(sc.next());
 	
-		//³ªÀÌ ÀÔ·Â
-		System.out.print("³ªÀÌ ? ");
+		//ë‚˜ì´ ì…ë ¥
+		System.out.print("ë‚˜ì´ ? ");
 		vo.setAge(sc.nextInt());
 
 		user.append(vo);
-		System.out.println(vo.getName() + "´Ô ÀÚ·á µî·Ï ¿Ï·á...");
+		System.out.println(vo.getName() + "ë‹˜ ìë£Œ ë“±ë¡ ì™„ë£Œ...");
 	}
 
 	public void print() {

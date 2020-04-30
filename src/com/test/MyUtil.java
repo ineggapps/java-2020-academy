@@ -1,4 +1,4 @@
-package com.test;
+﻿package com.test;
 
 public class MyUtil {
 	public String name;

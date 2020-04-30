@@ -1,21 +1,21 @@
-package d200217;
+ï»¿package d200217;
 
 public class Ex2 {
 	public static void main(String[] args) {
-//		Long ob1=10;//ÄÄÆÄÀÏ ¿À·ù. 
-		// ¿ø·¡´Â ±âº»ÀÚ·áÇü°ú Å¬·¡½º °£ÀÇ º¯È¯Àº ºÒ°¡´ÉÇÏ´Ù.
-		// µû¶ó¼­ LongÇü¿¡ ±âº»ÀÚ·áÇüÀ» ´ëÀÔÇÏ°í ½ÍÀ¸¸é 10LÀ» ÀÔ·ÂÇÑ´Ù.
+//		Long ob1=10;//ì»´íŒŒì¼ ì˜¤ë¥˜. 
+		// ì›ëž˜ëŠ” ê¸°ë³¸ìžë£Œí˜•ê³¼ í´ëž˜ìŠ¤ ê°„ì˜ ë³€í™˜ì€ ë¶ˆê°€ëŠ¥í•˜ë‹¤.
+		// ë”°ë¼ì„œ Longí˜•ì— ê¸°ë³¸ìžë£Œí˜•ì„ ëŒ€ìž…í•˜ê³  ì‹¶ìœ¼ë©´ 10Lì„ ìž…ë ¥í•œë‹¤.
 		Long ob1 = 10L;
-		ob1 = new Long(10); // ÀÌ ¹æ¹ýÀº °¡´ÉÇÏ´Ù. ±âº»ÀÚ·áÇü longÀº intÇü °ªÀ» Æ÷°ýÇÒ ¼ö ÀÖÀ¸´Ï±î.
-		long lll = 10; // <- °¡´ÉÇÏ´Ï±î new Long(10)µµ °¡´ÉÇÏ´Ü ¸»¾¸! »ý¼ºÀÚ´Â Long(long value)ÀÌ´Ù.
+		ob1 = new Long(10); // ì´ ë°©ë²•ì€ ê°€ëŠ¥í•˜ë‹¤. ê¸°ë³¸ìžë£Œí˜• longì€ intí˜• ê°’ì„ í¬ê´„í•  ìˆ˜ ìžˆìœ¼ë‹ˆê¹Œ.
+		long lll = 10; // <- ê°€ëŠ¥í•˜ë‹ˆê¹Œ new Long(10)ë„ ê°€ëŠ¥í•˜ë‹¨ ë§ì”€! ìƒì„±ìžëŠ” Long(long value)ì´ë‹¤.
 		Integer ob2 = 10;
 
 		Long ob3;
-//		ob3=ob2;//ÄÄÆÄÀÏ ¿À·ù Long°ú Integer´Â ´Ù¸¥ Å¬·¡½ºÀÌ¹Ç·Î ÀÌ¿Í °°Àº °´Ã¼ °£ÀÇ Çüº¯È¯Àº Àý´ë ºÒ°¡´ÉÇÏ´Ù
-//		ob3=(Long)ob2; //ÄÄÆÄÀÏ ¿À·ù (´ç¿¬È÷ Çüº¯È¯ ¾È µÊ)
+//		ob3=ob2;//ì»´íŒŒì¼ ì˜¤ë¥˜ Longê³¼ IntegerëŠ” ë‹¤ë¥¸ í´ëž˜ìŠ¤ì´ë¯€ë¡œ ì´ì™€ ê°™ì€ ê°ì²´ ê°„ì˜ í˜•ë³€í™˜ì€ ì ˆëŒ€ ë¶ˆê°€ëŠ¥í•˜ë‹¤
+//		ob3=(Long)ob2; //ì»´íŒŒì¼ ì˜¤ë¥˜ (ë‹¹ì—°ížˆ í˜•ë³€í™˜ ì•ˆ ë¨)
 		long a;
-		a=ob2;//Integer°´Ã¼°¡ auto unboxingµÇ¾î intÇüÀ¸·Î º¯È¯µÇ¾ú°í longÇüÀÌ ¹Þ¾ÆµéÀÏ ¼ö ÀÖ´Ù.
-		//a = ob2.intValue(); ÄÄÆÄÀÏ·¯°¡ ÀÌ ±¸¹®À» ÀÚµ¿À¸·Î ½ÇÇàÇÏ¿© longÇüÀ¸·Î Ä³½ºÆÃµÇ¾î µé¾î°£ °ÍÀÌ´Ù.
+		a=ob2;//Integerê°ì²´ê°€ auto unboxingë˜ì–´ intí˜•ìœ¼ë¡œ ë³€í™˜ë˜ì—ˆê³  longí˜•ì´ ë°›ì•„ë“¤ì¼ ìˆ˜ ìžˆë‹¤.
+		//a = ob2.intValue(); ì»´íŒŒì¼ëŸ¬ê°€ ì´ êµ¬ë¬¸ì„ ìžë™ìœ¼ë¡œ ì‹¤í–‰í•˜ì—¬ longí˜•ìœ¼ë¡œ ìºìŠ¤íŒ…ë˜ì–´ ë“¤ì–´ê°„ ê²ƒì´ë‹¤.
  		ob3= new Long(ob2);
  		
  		System.out.println(ob1);

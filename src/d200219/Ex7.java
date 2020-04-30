@@ -1,19 +1,19 @@
-package d200219;
+ï»¿package d200219;
 
 public class Ex7 {
 	public static void main(String[] args) {
 		Demo7 dd1 = new Demo7();
 		Demo7 dd2 = new Demo7();
-		System.out.println(dd1.equals(dd2));// ÁÖ¼Ú°ª ºñ±³. false ¹İÈ¯
-		//ObjectÀÇ equals() È£ÃâÇÑ´Ù.
-		System.out.println(dd1);//ÆĞÅ°ÁöÀÌ¸§.Å¬·¡½ºÀÌ¸§@ÇØ½Ã16Áø¼ı°ª
+		System.out.println(dd1.equals(dd2));// ì£¼ì†Ÿê°’ ë¹„êµ. false ë°˜í™˜
+		//Objectì˜ equals() í˜¸ì¶œí•œë‹¤.
+		System.out.println(dd1);//íŒ¨í‚¤ì§€ì´ë¦„.í´ë˜ìŠ¤ì´ë¦„@í•´ì‹œ16ì§„ìˆ«ê°’
 		
 		Test7 tt1 = new Test7();
 		Test7 tt2 = new Test7();
 		System.out.println(tt1.equals(tt2));// 1) tt1
-		//Test7¿¡ ÀçÁ¤ÀÇµÈ equals() ¸Ş¼­µå¸¦ È£ÃâÇÑ´Ù.
-		System.out.println(tt1);//ÆĞÅ°ÁöÀÌ¸§.Å¬·¡½ºÀÌ¸§@ÇØ½Ã16Áø¼ı°ª
-		System.out.println(tt1.toString());//ÆĞÅ°ÁöÀÌ¸§.Å¬·¡½ºÀÌ¸§@ÇØ½Ã16Áø¼ı°ª
+		//Test7ì— ì¬ì •ì˜ëœ equals() ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤.
+		System.out.println(tt1);//íŒ¨í‚¤ì§€ì´ë¦„.í´ë˜ìŠ¤ì´ë¦„@í•´ì‹œ16ì§„ìˆ«ê°’
+		System.out.println(tt1.toString());//íŒ¨í‚¤ì§€ì´ë¦„.í´ë˜ìŠ¤ì´ë¦„@í•´ì‹œ16ì§„ìˆ«ê°’
 		
 	}
 }
@@ -37,8 +37,8 @@ class Test7 extends Demo7 {
 
 	@Override
 	public boolean equals(Object obj) {
-		Test7 t = (Test7) obj; // obj´Â 1)ÀÇ tt2¸¦ ¹Ş´Â´Ù.
-		return this.a == t.a;// 1)¿¡¼­ È£ÃâµÈ °ÍÀ¸·Î ¹Ì·ç¾î º¼ ¶§ ¿©±â¼­ this´Â tt1À» ÀÇ¹ÌÇÑ´Ù.
+		Test7 t = (Test7) obj; // objëŠ” 1)ì˜ tt2ë¥¼ ë°›ëŠ”ë‹¤.
+		return this.a == t.a;// 1)ì—ì„œ í˜¸ì¶œëœ ê²ƒìœ¼ë¡œ ë¯¸ë£¨ì–´ ë³¼ ë•Œ ì—¬ê¸°ì„œ thisëŠ” tt1ì„ ì˜ë¯¸í•œë‹¤.
 //		if (obj instanceof Test7) {
 //			Test7 tobj = (Test7) obj;
 //			return a == tobj.a;

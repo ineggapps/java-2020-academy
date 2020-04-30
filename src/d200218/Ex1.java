@@ -1,4 +1,4 @@
-package d200218;
+ï»¿package d200218;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -14,7 +14,7 @@ public class Ex1 {
 		System.out.println(s);
 
 		NumberFormat nf = NumberFormat.getInstance();
-		s = nf.format(n);// ±×Àú formatÀÌ¶ó´Â ¸Ş¼­µå¿¡ nÀ» º¸³ÂÀ» »ÓÀÎµ¥ ,(comma)°¡ ÂïÈ÷³×?
+		s = nf.format(n);// ê·¸ì € formatì´ë¼ëŠ” ë©”ì„œë“œì— nì„ ë³´ëƒˆì„ ë¿ì¸ë° ,(comma)ê°€ ì°íˆë„¤?
 		System.out.println(s);
 		s = "1,234,567,890";
 		try {
@@ -28,15 +28,15 @@ public class Ex1 {
 		}
 
 		double d = 13456.262626262626;
-		s = nf.format(d);// ¼Ò¼ıÁ¡ 3ÀÚ¸®±îÁö¸¸ º¸ÀÓ. 4Â° ÀÚ¸®¿¡¼­ ¹İ¿Ã¸²
+		s = nf.format(d);// ì†Œìˆ«ì  3ìë¦¬ê¹Œì§€ë§Œ ë³´ì„. 4ì§¸ ìë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼
 		System.out.println(s);
 
-		NumberFormat nf2 = NumberFormat.getCurrencyInstance();// ÅëÈ­ ±âÈ£¸¦ Âï¾î ÁÖ´Â Instance°´Ã¼
-		s = nf2.format(n);// ¿î¿µÃ¼Á¦ ±¹°¡ ¼³Á¤¿¡ ¸Â°Ô ÅëÈ­±âÈ£°¡ ÀÚµ¿À¸·Î ÂïÈû
+		NumberFormat nf2 = NumberFormat.getCurrencyInstance();// í†µí™” ê¸°í˜¸ë¥¼ ì°ì–´ ì£¼ëŠ” Instanceê°ì²´
+		s = nf2.format(n);// ìš´ì˜ì²´ì œ êµ­ê°€ ì„¤ì •ì— ë§ê²Œ í†µí™”ê¸°í˜¸ê°€ ìë™ìœ¼ë¡œ ì°í˜
 		System.out.println(s);
 
-		NumberFormat nf3 = NumberFormat.getCurrencyInstance(Locale.US);// ÅëÈ­ ±âÈ£¸¦ Âï¾î ÁÖ´Â Instance°´Ã¼
-		s = nf3.format(n);// LocaleÀ» US·Î °íÁ¤ÇÏ¿´À¸¹Ç·Î ¾î¶°ÇÑ ±¹°¡ ¼³Á¤ÀÌµç US ÅëÈ­±âÈ£°¡ Ãâ·ÂµÈ´Ù.
+		NumberFormat nf3 = NumberFormat.getCurrencyInstance(Locale.US);// í†µí™” ê¸°í˜¸ë¥¼ ì°ì–´ ì£¼ëŠ” Instanceê°ì²´
+		s = nf3.format(n);// Localeì„ USë¡œ ê³ ì •í•˜ì˜€ìœ¼ë¯€ë¡œ ì–´ë– í•œ êµ­ê°€ ì„¤ì •ì´ë“  US í†µí™”ê¸°í˜¸ê°€ ì¶œë ¥ëœë‹¤.
 		System.out.println(s);
 
 	}

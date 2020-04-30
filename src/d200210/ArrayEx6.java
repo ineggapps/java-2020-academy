@@ -1,32 +1,32 @@
-package d200210;
+ï»¿package d200210;
 
 public class ArrayEx6 {
 	public static void main(String[] args) {
 		/*
-		 * ex3) 5X4 Çà·Ä¿¡ 1~100±îÁöÀÇ ³­¼ö¸¦ ¹ß»ıÇÏ¿© ´ëÀÔÇÑ ÈÄ Ãâ·ÂÇÏ°í, 5X4 Çà·ÄÀ» 4X5Çà·Ä·Î º¯È¯ÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ±â
+		 * ex3) 5X4 í–‰ë ¬ì— 1~100ê¹Œì§€ì˜ ë‚œìˆ˜ë¥¼ ë°œìƒí•˜ì—¬ ëŒ€ì…í•œ í›„ ì¶œë ¥í•˜ê³ , 5X4 í–‰ë ¬ì„ 4X5í–‰ë ¬ë¡œ ë³€í™˜í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ê¸°
 		 */
-		// º¯¼ö ¼±¾ğ
+		// ë³€ìˆ˜ ì„ ì–¸
 		int[][] a = new int[5][4];
 		int[][] b = new int[4][5];
 
-		// aº¯¼ö ÃÊ±âÈ­
+		// aë³€ìˆ˜ ì´ˆê¸°í™”
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
 				a[i][j] = (int) (Math.random() * 100) + 1;
 			}
 		}
 
-		// bº¯¼ö´Â aº¯¼öÀÇ ¸ğ¾çÀ» º¯È¯ÇÏ¿© ´ã´Â´Ù.
+		// bë³€ìˆ˜ëŠ” aë³€ìˆ˜ì˜ ëª¨ì–‘ì„ ë³€í™˜í•˜ì—¬ ë‹´ëŠ”ë‹¤.
 		for (int i = 0; i < b.length; i++) {// 0~3 (4)
 			for (int j = 0; j < b[i].length; j++) {// 0~4 (5)
-				// b´Â 4X5Çà·Ä, a´Â 5X4Çà·ÄÀÌ´Ï±î
-				// b[4Çà][5¿­] = a[5Çà][4¿­]
+				// bëŠ” 4X5í–‰ë ¬, aëŠ” 5X4í–‰ë ¬ì´ë‹ˆê¹Œ
+				// b[4í–‰][5ì—´] = a[5í–‰][4ì—´]
 				b[i][j] = a[j][i];
 			}
 		}
 
-		// aº¯¼ö Ãâ·Â
-		System.out.println("aº¯¼ö: 5X4 Çà·Ä");
+		// aë³€ìˆ˜ ì¶œë ¥
+		System.out.println("aë³€ìˆ˜: 5X4 í–‰ë ¬");
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
 				System.out.printf("%3d\t", a[i][j]);
@@ -34,8 +34,8 @@ public class ArrayEx6 {
 			System.out.println();
 		}
 		
-		// bº¯¼ö Ãâ·Â
-		System.out.println("bº¯¼ö: 4X5 Çà·Ä");
+		// bë³€ìˆ˜ ì¶œë ¥
+		System.out.println("bë³€ìˆ˜: 4X5 í–‰ë ¬");
 		for (int i = 0; i < b.length; i++) {
 			for (int j = 0; j < b[i].length; j++) {
 				System.out.printf("%3d\t", b[i][j]);
